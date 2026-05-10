@@ -979,6 +979,13 @@ window._grammarLoadFailed = false;
               <span>🏃 Марафон</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">все карточки подряд без лимита</span>
             </div>
+            <div id="marathon-input-options" style="display:none;margin:4px 0 2px 12px;gap:6px;flex-direction:column">
+              <div style="font-size:11px;color:var(--text3);margin-bottom:2px">Режим ответа:</div>
+              <div style="display:flex;gap:6px">
+                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:rgba(200,169,110,0.15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600">✍️ Написать</button>
+                <button id="marathon-opt-choice" onclick="setMarathonInputMode('choice')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif">☑️ Выбрать</button>
+              </div>
+            </div>
             <div class="ready-mode-browse" id="ready-mode-errors" onclick="setReadyMode('errors')" style="margin-top:6px">
               <span>❌ Только ошибки</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">последние слова с ошибками</span>
@@ -2206,6 +2213,9 @@ const AppState = {
   // Внутренние флаги type-режима
   _typeChecked: false,
   _typeCheckedValue: '',
+
+  // Подрежим марафона: 'type' | 'choice'
+  marathonInputMode: 'type',
 };
 
 
@@ -2263,6 +2273,10 @@ async function init() {
     if (savedMode && ['type','choice','browse','marathon','errors'].includes(savedMode)) {
       AppState.studyMode = savedMode;
     }
+    const savedMarathonInput = localStorage.getItem('marathonInputMode');
+    if (savedMarathonInput && ['type','choice'].includes(savedMarathonInput)) {
+      AppState.marathonInputMode = savedMarathonInput;
+    }
   } catch(e) {}
 
   loadSettings();
@@ -2272,6 +2286,7 @@ async function init() {
 
   // Применяем восстановленный режим к UI кнопок и тексту старта
   setReadyMode(AppState.studyMode);
+  setMarathonInputMode(AppState.marathonInputMode);
 
   // Если пользователь успел переключиться на cards/groups до завершения загрузки —
   // перерисовываем с уже готовыми данными.
@@ -2922,11 +2937,33 @@ function setReadyMode(mode) {
   document.getElementById('ready-mode-browse').classList.toggle('active', mode === 'browse');
   document.getElementById('ready-mode-marathon').classList.toggle('active', mode === 'marathon');
   document.getElementById('ready-mode-errors').classList.toggle('active', mode === 'errors');
+  // Показываем опции подрежима только для марафона
+  const marathonOpts = document.getElementById('marathon-input-options');
+  if (marathonOpts) marathonOpts.style.display = mode === 'marathon' ? 'flex' : 'none';
   // Сохраняем режим и обновляем надпись над кнопкой
   try { localStorage.setItem('lastStudyMode', mode); } catch(e) {}
   const label = document.getElementById('ready-mode-label');
   if (label) label.textContent = 'режим • ' + (MODE_LABELS[mode] || '');
   scheduleUpdateReadyCount();
+}
+
+function setMarathonInputMode(inputMode) {
+  AppState.marathonInputMode = inputMode;
+  try { localStorage.setItem('marathonInputMode', inputMode); } catch(e) {}
+  const btnType   = document.getElementById('marathon-opt-type');
+  const btnChoice = document.getElementById('marathon-opt-choice');
+  if (btnType) {
+    btnType.style.border      = inputMode === 'type' ? '1px solid var(--accent)' : '1px solid var(--border)';
+    btnType.style.background  = inputMode === 'type' ? 'rgba(200,169,110,0.15)' : 'transparent';
+    btnType.style.color       = inputMode === 'type' ? 'var(--accent)' : 'var(--text3)';
+    btnType.style.fontWeight  = inputMode === 'type' ? '600' : 'normal';
+  }
+  if (btnChoice) {
+    btnChoice.style.border     = inputMode === 'choice' ? '1px solid var(--accent)' : '1px solid var(--border)';
+    btnChoice.style.background = inputMode === 'choice' ? 'rgba(200,169,110,0.15)' : 'transparent';
+    btnChoice.style.color      = inputMode === 'choice' ? 'var(--accent)' : 'var(--text3)';
+    btnChoice.style.fontWeight = inputMode === 'choice' ? '600' : 'normal';
+  }
 }
 
 // ===== SESSION =====
@@ -3133,7 +3170,7 @@ function renderStudy() {
   btnNext.style.display = '';
   feedbackText.textContent = '';
 
-  if (AppState.studyMode === 'type') {
+  if (AppState.studyMode === 'type' || (AppState.studyMode === 'marathon' && AppState.marathonInputMode === 'type')) {
     persistChoice.style.display = 'none';
     persistType.style.display   = 'block';
     const inp     = document.getElementById('type-answer');
@@ -4666,6 +4703,9 @@ async function renderGrammarTestResults() {
   const pct = Math.round(GTS.correct / tot * 100);
   const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : '📚';
   const msg   = pct >= 80 ? 'Отлично!' : pct >= 60 ? 'Хороший результат!' : 'Продолжайте практиковаться!';
+
+  // Сохраняем результат в IndexedDB
+  await gtSaveProgress(GTS.packDbId, GTS.topicId, GTS.correct, tot);
 
   // Resolve topic name from pack
   let topicLabel = 'Все темы';
