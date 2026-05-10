@@ -1143,6 +1143,55 @@ window._grammarLoadFailed = false;
       </div>
       <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
     </div>
+    <div class="settings-section">
+      <div class="settings-section-title">О приложении</div>
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0 12px">
+        <div>
+          <div class="setting-label">Румынский тренажёр</div>
+          <div class="setting-sub">Версия 3.1.0</div>
+        </div>
+        <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT MODAL -->
+  <div id="about-modal" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.6);align-items:flex-end;justify-content:center" onclick="if(event.target===this)this.style.display='none'">
+    <div style="background:var(--bg2);border-radius:20px 20px 0 0;width:100%;max-width:480px;padding:28px 24px 40px;max-height:85vh;overflow-y:auto">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+        <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--text)">О приложении</div>
+        <button onclick="document.getElementById('about-modal').style.display='none'" style="background:none;border:none;color:var(--text3);cursor:pointer;padding:4px">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div style="text-align:center;padding:8px 0 24px">
+        <div style="font-size:48px;margin-bottom:10px">🇷🇴</div>
+        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Румынский тренажёр</div>
+        <div style="font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px">v3.1.0</div>
+      </div>
+      <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
+        <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что есть в приложении</div>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
+          <div>✍️ Три режима обучения — написать, выбрать, просмотр</div>
+          <div>🏃 Марафон — все карточки подряд с умной сортировкой</div>
+          <div>🧠 SRS-алгоритм — интервальное повторение</div>
+          <div>📚 Грамматический раздел с правилами и тестами</div>
+          <div>📊 Статистика и история по сессиям</div>
+          <div>💾 Экспорт и импорт всех данных</div>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:12px;padding:16px">
+        <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">💡 Идеи для следующих версий</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:var(--text2);line-height:1.5">
+          <div><span style="color:var(--accent);font-weight:600">Произношение</span> — аудио к каждой карточке с TTS или записью</div>
+          <div><span style="color:var(--accent);font-weight:600">Стрик и цели</span> — цепочка дней, дневная цель по карточкам</div>
+          <div><span style="color:var(--accent);font-weight:600">Теги</span> — несколько меток на карточку помимо групп</div>
+          <div><span style="color:var(--accent);font-weight:600">Спряжения</span> — отдельный тренажёр для глагольных форм</div>
+          <div><span style="color:var(--accent);font-weight:600">Виджет</span> — карточка дня на главном экране (PWA)</div>
+          <div><span style="color:var(--accent);font-weight:600">Темп марафона</span> — таймер на ответ для режима на скорость</div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- SESSION SUMMARY OVERLAY -->
