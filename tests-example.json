@@ -1,0 +1,66 @@
+{
+  "type": "testPack",
+  "name": "Мой пак тестов",
+  "icon": "🎯",
+  "description": "Описание пака (необязательно)",
+  "topics": {
+    "topic1": {
+      "name": "Тема 1",
+      "icon": "📘"
+    },
+    "topic2": {
+      "name": "Тема 2",
+      "icon": "📗"
+    }
+  },
+  "questions": [
+    {
+      "topicId": "topic1",
+      "type": "choice",
+      "q": "Как переводится «дом»?",
+      "options": [
+        "casă",
+        "masă",
+        "carte",
+        "ușă"
+      ],
+      "answer": "casă",
+      "explain": "casă — дом"
+    },
+    {
+      "topicId": "topic1",
+      "type": "fill",
+      "q": "Напишите: «большой»",
+      "answer": "mare"
+    },
+    {
+      "topicId": "topic1",
+      "type": "fill",
+      "q": "Напишите: «красивый»",
+      "answer": [
+        "frumos",
+        "frumoasă"
+      ],
+      "explain": "frumos (м.р.) / frumoasă (ж.р.)"
+    },
+    {
+      "topicId": "topic2",
+      "type": "choice",
+      "q": "Артикль мужского рода мн.ч.?",
+      "options": [
+        "-i",
+        "-le",
+        "-a",
+        "-ul"
+      ],
+      "answer": "-i"
+    },
+    {
+      "topicId": "topic2",
+      "type": "form",
+      "q": "«a fi», 1 л. ед.ч. — Eu ___ student.",
+      "answer": "sunt",
+      "explain": "eu sunt, tu ești, el este"
+    }
+  ]
+}
