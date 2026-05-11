@@ -326,7 +326,7 @@ select {
 .card-hint { font-size: 13px; color: var(--text3); }
 
 /* ===== TYPE INPUT MODE ===== */
-.type-area { width: 100%; max-width: 380px; margin: auto; padding: 0 20px; }
+.type-area { width: 100%; max-width: 380px; margin: auto auto 0; padding: 0 20px; }
 .type-input-wrap { position: relative; margin-bottom: 12px; }
 .type-input {
   width: 100%;
@@ -809,7 +809,7 @@ select {
 .vb-action-bar { display:flex; gap:8px; margin:12px 0 6px; }
 .vb-action-btn { flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:10px 8px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text3); font-size:12px; font-family:'DM Sans',sans-serif; cursor:pointer; }
 .vb-action-btn:active { background:var(--bg3); }
-.vb-tense-tabs { display:flex; gap:6px; padding:0 16px 12px; flex-shrink:0; }
+.vb-tense-tabs { display:flex; gap:6px; padding:0 20px 12px; flex-shrink:0; }
 .vb-tense-btn { flex:1; padding:6px 4px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text3); font-size:12px; font-family:'DM Sans',sans-serif; cursor:pointer; }
 .vb-tense-btn.active { background:rgba(94,196,154,0.12); border-color:rgba(94,196,154,0.3); color:var(--green); font-weight:600; }
 
@@ -927,8 +927,29 @@ select {
 .gt-results-btn-secondary { flex:1;padding:10px 8px;font-size:12px;font-weight:400;border-radius:var(--radius-sm);border:1px solid var(--border);font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;background:transparent;color:var(--text3); }
 .gt-results-btn-secondary:active { transform:scale(0.97); }
 
-/* ===== KEYBOARD COMPACT MODE ===== */
-@media(max-height: 444px) {
+/* ===== VERB SESSION COMPACT (legacy class — no longer used for focus) ===== */
+.vb-compact .vb-tense-tabs { padding: 4px 16px 4px; gap: 4px; }
+.vb-compact .vb-tense-btn { padding: 4px 3px; font-size: 11px; border-radius: 7px; }
+.vb-compact #vb-card-area { flex: 0; padding: 0; }
+.vb-compact #vb-card-area .flashcard { display: none; }
+.vb-compact .vb-card-strip { display: flex !important; }
+.vb-card-strip {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 16px 4px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 12px;
+  flex-shrink: 0;
+}
+.vb-card-strip-verb { font-size: 10px; color: var(--accent); background: rgba(200,169,110,0.1); border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; font-weight: 600; }
+.vb-card-strip-sep { font-size: 12px; color: var(--text3); flex-shrink: 0; }
+.vb-card-strip-pronoun { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--text); }
+
+/* ===== COMPACT MODE (small screen / keyboard open) ===== */
+@media(max-height: 470px) {
   .study-header { padding: 8px 16px; }
   .flashcard-area { padding: 6px 16px 8px; }
   .flashcard { padding: 14px 18px; margin-bottom: 10px; border-radius: 16px; }
@@ -938,7 +959,26 @@ select {
   .card-question { font-size: 20px; margin-bottom: 4px; }
   .card-hint { font-size: 12px; }
   .answer-reveal { padding: 10px 12px; font-size: 13px; }
+  .type-area {padding-left: 16px; padding-right: 16px;}
+
+  /* Verb session compact — purely media-query driven */
+  .vb-tense-tabs { padding: 3px 16px 3px; gap: 3px; }
+  .vb-tense-btn {
+    padding: 3px 2px;
+    font-size: 10px;
+    border-radius: 6px;
+    line-height: 1.3;
+    letter-spacing: -0.1px;
+  }
+  #vb-card-area { flex: 0; padding: 0; }
+  #vb-card-area .flashcard { display: none; }
+  .vb-card-strip { display: flex !important; }
+
+  .gt-question-type { display: none; }
+  .gt-question-text { font-size: 13px; }
+  .vb-card-strip-verb { font-size: 13px;}
 }
+
 
 </style>
 <script>
@@ -992,7 +1032,7 @@ window._grammarLoadFailed = false;
               <span>🏃 Марафон</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">все карточки подряд без лимита</span>
             </div>
-            <div id="marathon-input-options" style="display:none;margin:4px 0 2px 12px;gap:6px;flex-direction:column">
+            <div id="marathon-input-options" style="display:none;margin:4px 0 2px 0;gap:6px;flex-direction:column">
               <div style="font-size:11px;color:var(--text3);margin-bottom:2px">Режим ответа:</div>
               <div style="display:flex;gap:6px">
                 <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:rgba(200,169,110,0.15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600">✍️ Написать</button>
@@ -1166,7 +1206,7 @@ window._grammarLoadFailed = false;
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0 12px">
         <div>
           <div class="setting-label">Fișki</div>
-          <div class="setting-sub">Версия 3.2.0</div>
+          <div class="setting-sub">Версия 3.2.1</div>
         </div>
         <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
       </div>
@@ -1185,7 +1225,7 @@ window._grammarLoadFailed = false;
       <div style="text-align:center;padding:8px 0 24px">
         <div style="font-size:48px;margin-bottom:10px">🇷🇴</div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
-        <div style="font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px">v3.2.0</div>
+        <div style="font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px">v3.2.1</div>
       </div>
       <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
@@ -1194,7 +1234,7 @@ window._grammarLoadFailed = false;
           <div>🧠 <strong style="color:var(--text)">SRS-алгоритм</strong> — интервальное повторение по SM-2: карточки возвращаются в нужный момент</div>
           <div>🏃 <strong style="color:var(--text)">Марафон</strong> — прогоняй все карточки подряд с умной сортировкой по слабым местам</div>
           <div>📚 <strong style="color:var(--text)">Грамматика</strong> — правила с примерами, организованные по темам</div>
-          <div>📋 <strong style="color:var(--text)">Тесты</strong> — проверь знания по темам с выбором и вводом ответа; загружай свои паки через JSON</div>
+          <div>📋 <strong style="color:var(--text)">Тесты</strong> — проверь знания по темам с выбором и вводом ответа; загружай свои наборы через JSON</div>
           <div>🔤 <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
           <div>📊 <strong style="color:var(--text)">Статистика</strong> — история сессий, точность ответов и динамика по дням</div>
           <div>💾 <strong style="color:var(--text)">Импорт и экспорт</strong> — сохраняй все данные в JSON и переноси между устройствами</div>
@@ -1498,16 +1538,23 @@ async function vbGetProgress(packId) {
 async function exportVerbPackById(packId) {
   try {
     const pack = await vdbGet('verbPacks', packId);
-    if (!pack) { showToast('Пак не найден', 'red'); return; }
+    if (!pack) { showToast('Набор не найден', 'red'); return; }
     const { id: _drop, ...out } = pack;
     downloadBlob(JSON.stringify(out, null, 2), `verbs-${(pack.name||'pack').replace(/\s+/g,'-').toLowerCase()}.json`);
   } catch(e) { showToast('Ошибка экспорта', 'red'); }
 }
 
+async function exportVerbsBackup() {
+  const packs = await vdbGetAll('verbPacks').catch(()=>[]);
+  const progress = await vdbGetAll('verbProgress').catch(()=>[]);
+  const date = new Date().toISOString().slice(0, 10);
+  const out = { type: 'verbBackup', version: 1, exported: date, packs, progress };
+  downloadBlob(JSON.stringify(out, null, 2), `verbs-backup-${date}.json`);
+}
+
 async function renderVerbsHome() {
   _vbExitSession();
   const c = document.getElementById('grammar-verbs-container');
-  c.innerHTML = '<div class="gt-wrap"><div class="gt-topics" style="padding-top:8px"><div style="padding:20px 4px 8px;font-size:13px;color:var(--text3)">Загрузка...</div></div></div>';
 
   const packs = await vdbGetAll('verbPacks').catch(() => []);
 
@@ -1515,14 +1562,8 @@ async function renderVerbsHome() {
     c.innerHTML = `
       <div class="empty-state">
         <div class="empty-icon">🔤</div>
-        <div class="empty-title">Нет паков глаголов</div>
+        <div class="empty-title">Нет наборов глаголов</div>
         <div class="empty-sub"><span onclick="importVerbPack()" role="button" class="upload-tests-fake-link">Загрузите</span> JSON-файл с глаголами чтобы начать</div>
-      </div>
-      <div class="gt-action-bar">
-        <button class="gt-action-btn" onclick="importVerbPack()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 5 17 10"/><line x1="12" y1="5" x2="12" y2="17"/></svg>
-          Загрузить пак
-        </button>
       </div>
       <input type="file" id="vb-import-file" accept=".json" style="display:none" onchange="importVerbPackFile(event)">`;
     return;
@@ -1566,7 +1607,12 @@ async function renderVerbsHome() {
         <div class="gt-action-bar">
           <button class="gt-action-btn" onclick="importVerbPack()">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 5 17 10"/><line x1="12" y1="5" x2="12" y2="17"/></svg>
-            Загрузить пак
+            Загрузить набор
+          </button>
+          <span class="gt-action-sep"></span>
+          <button class="gt-action-btn" onclick="exportVerbsBackup()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Бэкап
           </button>
         </div>
       </div>
@@ -1592,7 +1638,7 @@ async function importVerbPackFile(event) {
     if (dup) {
       data.id = dup.id;
       await vdbPut('verbPacks', data);
-      showToast(`Пак «${data.name}» обновлён`);
+      showToast(`Набор «${data.name}» обновлён`);
     } else {
       delete data.id;
       await vdbPut('verbPacks', data);
@@ -1603,7 +1649,7 @@ async function importVerbPackFile(event) {
 }
 
 async function deleteVerbPack(packId) {
-  if (!confirm('Удалить пак глаголов и весь прогресс?')) return;
+  if (!confirm('Удалить набор глаголов и весь прогресс?')) return;
   await vdbDelete('verbPacks', packId);
   const all = await vdbGetAll('verbProgress').catch(()=>[]);
   for (const p of all) {
@@ -1615,7 +1661,7 @@ async function deleteVerbPack(packId) {
 // ===== VERB SESSION =====
 async function startVerbSession(packId, verbId) {
   const pack = await vdbGet('verbPacks', packId);
-  if (!pack) { showToast('Пак не найден', 'red'); return; }
+  if (!pack) { showToast('Набор не найден', 'red'); return; }
   const verb = pack.verbs.find(v => v.id === verbId);
   if (!verb) { showToast('Глагол не найден', 'red'); return; }
 
@@ -1676,6 +1722,11 @@ function renderVerbQuestion() {
         <div class="card-question-label">Спрягите глагол:</div>
         <div class="card-question" style="font-size:28px">${esc(q.pronoun)}</div>
       </div>
+    </div>
+    <div class="vb-card-strip">
+      <div class="vb-card-strip-verb" id="vb-strip-verb">${esc(VTS.verb.infinitive)}</div>
+      <div class="vb-card-strip-sep">→</div>
+      <div class="vb-card-strip-pronoun" id="vb-strip-pronoun">${esc(q.pronoun)}</div>
     </div>
     <div class="type-area" id="vb-type-area">
       <div class="type-input-wrap">
@@ -1748,6 +1799,7 @@ async function checkVerbAnswer() {
   btn.style.display = 'none';
   btn.disabled = false;
   next.style.display = '';
+  next.style.opacity = '1';
   next.classList.add('visible');
   inp.focus();
 }
@@ -1777,6 +1829,8 @@ async function nextVerbQuestion() {
     // Update card question
     const cardQ = document.querySelector('#vb-card-area .card-question');
     if (cardQ) cardQ.textContent = q.pronoun;
+    const stripP = document.getElementById('vb-strip-pronoun');
+    if (stripP) stripP.textContent = q.pronoun;
 
     // Reset input
     if (inp) {
@@ -1786,7 +1840,7 @@ async function nextVerbQuestion() {
     }
     if (reveal) { reveal.style.display = 'none'; reveal.innerHTML = ''; }
     if (check) { check.style.display = ''; }
-    if (next) { next.classList.remove('visible'); }
+    if (next) { next.classList.remove('visible'); next.style.display = 'none'; next.style.opacity = '0'; }
   }
 }
 
@@ -4817,7 +4871,7 @@ async function importTestPack() {
     if (existingId !== null) pack.id = existingId;
 
     await tdbPut('testPacks', pack);
-    showToast(`Пак «${pack.name}» загружен (${plural(pack.questions.length, 'вопрос', 'вопроса', 'вопросов')}) ✓`, 'green');
+    showToast(`Набор «${pack.name}» загружен (${plural(pack.questions.length, 'вопрос', 'вопроса', 'вопросов')}) ✓`, 'green');
     renderGrammarTestsHome();
   };
   input.click();
@@ -4825,7 +4879,7 @@ async function importTestPack() {
 
 // ---- Delete a pack ----
 async function deleteTestPack(packDbId) {
-  if (!confirm('Удалить этот пак тестов? Прогресс по нему тоже будет удалён.')) return;
+  if (!confirm('Удалить этот набор тестов? Прогресс по нему тоже будет удалён.')) return;
   try {
     await tdbDelete('testPacks', packDbId);
     const allProgress = await tdbGetAll('testProgress');
@@ -4834,7 +4888,7 @@ async function deleteTestPack(packDbId) {
         try { await tdbDelete('testProgress', p.id); } catch(e) {}
       }
     }
-    showToast('Пак удалён ✓');
+    showToast('Набор удалён ✓');
     renderGrammarTestsHome();
   } catch(e) { showToast('Ошибка удаления', 'red'); }
 }
@@ -4843,7 +4897,7 @@ async function deleteTestPack(packDbId) {
 async function exportTestPackById(dbId) {
   try {
     const pack = await tdbGet('testPacks', dbId);
-    if (!pack) { showToast('Пак не найден', 'red'); return; }
+    if (!pack) { showToast('Набор не найден', 'red'); return; }
     const out = {
       type: 'testPack',
       name: pack.name,
@@ -4885,7 +4939,7 @@ async function importTestsBackup(data) {
     await tdbPut('testProgress', prog);
     progressAdded++;
   }
-  showToast(`Бэкап загружен: ${plural(packsAdded, 'пак', 'пака', 'паков')}, ${plural(progressAdded, 'запись', 'записи', 'записей')} прогресса ✓`, 'green');
+  showToast(`Бэкап загружен: ${plural(packsAdded, 'набор', 'набора', 'наборов')}, ${plural(progressAdded, 'запись', 'записи', 'записей')} прогресса ✓`, 'green');
   renderGrammarTestsHome();
 }
 
@@ -4893,7 +4947,6 @@ async function importTestsBackup(data) {
 async function renderGrammarTestsHome() {
   _gtExitSession();
   const c = document.getElementById('grammar-tests-container');
-  c.innerHTML = '<div class="gt-wrap"><div class="gt-topics" style="padding-top:8px"><div style="padding:20px 4px 8px;font-size:13px;color:var(--text3)">Загрузка...</div></div></div>';
 
   const packs = await gtGetPacks();
   const allProgress = await gtGetAllProgress();
@@ -5022,9 +5075,9 @@ function _gtExitSession() {
 }
 
 async function startGrammarTest(topicId, packDbId) {
-  if (!packDbId) { showToast('Пак не найден', 'red'); return; }
+  if (!packDbId) { showToast('Набор не найден', 'red'); return; }
   const pack = await tdbGet('testPacks', packDbId);
-  if (!pack) { showToast('Пак не найден', 'red'); return; }
+  if (!pack) { showToast('Набор не найден', 'red'); return; }
 
   const pool = topicId
     ? pack.questions.filter(q => q.topicId === topicId)
