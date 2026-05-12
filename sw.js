@@ -4,7 +4,7 @@
 //  Обновление: проверка при старте, баннер для пользователя.
 // ============================================================
 
-const CACHE_VERSION = 'v3';
+const CACHE_VERSION = '3.2.2';
 const STATIC_CACHE  = `romana-static-${CACHE_VERSION}`;
 const FONT_CACHE    = 'romana-fonts';   // не версионируем — URL шрифтов иммутабельны
 
@@ -101,5 +101,8 @@ async function cacheFirst(request, cacheName) {
 self.addEventListener('message', event => {
   if (event.data?.type === 'SKIP_WAITING') {
     self.skipWaiting();
+  }
+  if (event.data?.type === 'GET_VERSION') {
+    event.source.postMessage({ type: 'VERSION', version: CACHE_VERSION });
   }
 });

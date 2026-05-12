@@ -812,6 +812,9 @@ select {
 .vb-tense-tabs { display:flex; gap:6px; padding:0 20px 12px; flex-shrink:0; }
 .vb-tense-btn { flex:1; padding:6px 4px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text3); font-size:12px; font-family:'DM Sans',sans-serif; cursor:pointer; }
 .vb-tense-btn.active { background:rgba(94,196,154,0.12); border-color:rgba(94,196,154,0.3); color:var(--green); font-weight:600; }
+.vb-tense-btn.done { color:var(--green); }
+.vb-tense-btn.done:not(.active) { opacity:0.6; }
+.vb-tense-check { font-size:9px; vertical-align:1px; margin-left:2px; }
 
 /* ===== GRAMMAR TESTS ===== */
 .gt-wrap { display:flex; flex-direction:column; height:100%; overflow:hidden; }
@@ -1206,7 +1209,7 @@ window._grammarLoadFailed = false;
       <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 0 12px">
         <div>
           <div class="setting-label">Fișki</div>
-          <div class="setting-sub">Версия 3.2.1</div>
+          <div class="setting-sub">Версия <span id="app-version">—</span></div>
         </div>
         <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
       </div>
@@ -1225,7 +1228,6 @@ window._grammarLoadFailed = false;
       <div style="text-align:center;padding:8px 0 24px">
         <div style="font-size:48px;margin-bottom:10px">🇷🇴</div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
-        <div style="font-size:13px;color:var(--accent);font-weight:600;letter-spacing:1px">v3.2.1</div>
       </div>
       <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
@@ -1583,9 +1585,10 @@ async function renderVerbsHome() {
       const tenses = Object.keys(verb.forms);
       const bests = tenses.map(t => {
         const p = progress[`${pack.id}:${verb.id}:${t}`];
-        return p ? p.bestPct : null;
-      }).filter(x => x !== null);
-      const avgBest = bests.length ? Math.round(bests.reduce((a,b)=>a+b,0)/bests.length) : null;
+        return p ? p.bestPct : 0;
+      });
+      const hasSome = bests.some((_, i) => progress[`${pack.id}:${verb.id}:${tenses[i]}`]);
+      const avgBest = hasSome ? Math.round(bests.reduce((a,b)=>a+b,0)/bests.length) : null;
       const badgeColor = avgBest === null ? 'var(--text3)' : avgBest >= 80 ? 'var(--green)' : avgBest >= 50 ? 'var(--accent)' : 'var(--text3)';
       const badge = avgBest !== null ? `<span style="font-size:11px;color:${badgeColor};opacity:0.85;white-space:nowrap;margin-left:2px">${avgBest}%</span>` : '';
       packsHTML += `<button class="gt-topic-btn" onclick="startVerbSession(${pack.id},'${esc(verb.id)}')">
@@ -1696,16 +1699,22 @@ function _vbExitSession() {
   if (hdr) hdr.style.display = '';
 }
 
-function renderVerbQuestion() {
+async function renderVerbQuestion() {
   const c = document.getElementById('grammar-verbs-container');
   const q = VTS.queue[VTS.index];
   const tot = VTS.queue.length;
   const pct = (VTS.index / tot * 100).toFixed(1);
 
+  // Load progress to show checkmarks on done tenses
+  const progress = await vbGetProgress(VTS.packId);
+
   // Tense selector tabs
-  const tenseTabs = Object.keys(VTS.verb.forms).map(t =>
-    `<button class="vb-tense-btn${t === VTS.tense ? ' active' : ''}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}</button>`
-  ).join('');
+  const tenseTabs = Object.keys(VTS.verb.forms).map(t => {
+    const isDone = !!progress[`${VTS.packId}:${VTS.verbId}:${t}`];
+    const check = isDone ? `<span class="vb-tense-check">✓</span>` : '';
+    const cls = `vb-tense-btn${t === VTS.tense ? ' active' : ''}${isDone ? ' done' : ''}`;
+    return `<button class="${cls}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}${check}</button>`;
+  }).join('');
 
   c.innerHTML = `<div style="display:flex;flex-direction:column;flex:1;overflow:hidden">
     <div class="study-header">
@@ -1850,6 +1859,16 @@ function renderVerbResults() {
   const pct = Math.round(VTS.correct / tot * 100);
   const grade = pct >= 90 ? 'A' : pct >= 75 ? 'B+' : pct >= 60 ? 'B' : pct >= 45 ? 'C' : 'D';
 
+  // Find next tense
+  const tenses = Object.keys(VTS.verb.forms);
+  const currentIdx = tenses.indexOf(VTS.tense);
+  const nextTense = currentIdx >= 0 && currentIdx < tenses.length - 1 ? tenses[currentIdx + 1] : null;
+  const nextTenseLabel = nextTense ? (TENSE_LABELS[nextTense] || nextTense) : null;
+
+  const primaryBtn = nextTense
+    ? `<button class="gt-results-btn-primary" onclick="vbStartTense('${nextTense}')">Следующее: ${esc(nextTenseLabel)} →</button>`
+    : `<button class="gt-results-btn-primary" onclick="startVerbSession(${VTS.packId},'${VTS.verbId}')">Ещё раз</button>`;
+
   c.innerHTML = `<div style="display:flex;flex-direction:column;flex:1;overflow:hidden">
     <div class="study-header">
       <div class="study-counter">${VTS.correct} / ${tot}</div>
@@ -1871,13 +1890,20 @@ function renderVerbResults() {
         <tr><td>Точность</td><td style="color:var(--accent)">${pct}%</td></tr>
       </table>
       <div class="gt-results-btns">
-        <button class="gt-results-btn-primary" onclick="startVerbSession(${VTS.packId},'${VTS.verbId}')">Ещё раз</button>
+        ${primaryBtn}
         <div class="gt-results-btns-secondary">
+          ${nextTense ? `<button class="gt-results-btn-secondary" onclick="startVerbSession(${VTS.packId},'${VTS.verbId}')">Ещё раз</button>` : ''}
           <button class="gt-results-btn-secondary" onclick="renderVerbsHome()">К глаголам</button>
         </div>
       </div>
     </div>
   </div>`;
+}
+
+function vbStartTense(tense) {
+  VTS.tense = tense;
+  _vbBuildQueue();
+  renderVerbQuestion();
 }
 
 
@@ -2406,6 +2432,25 @@ function pluralCards(n) {
 
   // ── Регистрация ────────────────────────────────────────────────
   navigator.serviceWorker.register('sw.js').then(reg => {
+
+    // ── Версия приложения ──────────────────────────────────────
+    navigator.serviceWorker.addEventListener('message', e => {
+      if (e.data?.type === 'VERSION') {
+        const el = document.getElementById('app-version');
+        if (el) el.textContent = e.data.version;
+      }
+    });
+    // Запрашиваем версию как только воркер готов
+    const askVersion = () => {
+      if (navigator.serviceWorker.controller) {
+        navigator.serviceWorker.controller.postMessage({ type: 'GET_VERSION' });
+      }
+    };
+    if (navigator.serviceWorker.controller) {
+      askVersion();
+    } else {
+      navigator.serviceWorker.addEventListener('controllerchange', askVersion, { once: true });
+    }
 
     // Уже есть ожидающий воркер (страница перезагружена не была)
     if (reg.waiting) {
