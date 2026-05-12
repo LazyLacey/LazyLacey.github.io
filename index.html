@@ -2990,12 +2990,16 @@ function showPage(name) {
     // Always reset to rules tab when navigating to grammar
     const rc = document.getElementById('grammar-container');
     const tc = document.getElementById('grammar-tests-container');
+    const vc = document.getElementById('grammar-verbs-container');
     if (rc) rc.style.display = 'flex';
     if (tc) tc.style.display = 'none';
+    if (vc) vc.style.display = 'none';
     const tr = document.getElementById('gr-tab-rules');
     const tt = document.getElementById('gr-tab-tests');
+    const vt = document.getElementById('gr-tab-verbs');
     if (tr) tr.classList.add('active');
     if (tt) tt.classList.remove('active');
+    if (vt) vt.classList.remove('active');
     if (window._grammarLoadFailed) {
       const c = document.getElementById('grammar-container');
       if (c) c.innerHTML = `<div class="empty-state">
@@ -5171,15 +5175,11 @@ function switchGrammarTab(tab) {
   verbsContainer.style.display = tab === 'verbs' ? 'flex' : 'none';
   tabRules.classList.toggle('active', tab === 'rules');
   tabTests.classList.toggle('active', tab === 'tests');
-  if (tabVerbs) tabVerbs.classList.toggle('active', tab === 'verbs');
+  tabVerbs.classList.toggle('active', tab === 'verbs');
   if (tab === 'tests') renderGrammarTestsHome();
   if (tab === 'verbs') renderVerbsHome();
 }
 
-function showGrammarTests() {
-  showPage('grammar');
-  switchGrammarTab('tests');
-}
 function _gtEnterSession() {
   document.getElementsByTagName('nav')[0].style.display = 'none';
   const tabs = document.getElementById('gr-tabs');
