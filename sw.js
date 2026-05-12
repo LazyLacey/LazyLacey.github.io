@@ -4,7 +4,7 @@
 //  Обновление: проверка при старте, баннер для пользователя.
 // ============================================================
 
-const CACHE_VERSION = '3.2.3';
+const CACHE_VERSION = '3.2.4';
 const STATIC_CACHE  = `romana-static-${CACHE_VERSION}`;
 const FONT_CACHE    = 'romana-fonts';   // не версионируем — URL шрифтов иммутабельны
 
@@ -19,9 +19,15 @@ const STATIC_ASSETS = [
 // ───────────────────────────── INSTALL ──────────────────────────────
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(STATIC_CACHE)
-      .then(cache => cache.addAll(STATIC_ASSETS))
-      .then(() => console.log('[SW] Установлен, ресурсы закешированы'))
+    caches.open(STATIC_CACHE).then(cache =>
+      Promise.all(
+        STATIC_ASSETS.map(url =>
+          fetch(url, { cache: 'no-store' })
+            .then(res => { if (res.ok) cache.put(url, res); })
+            .catch(() => {}) // нет сети при установке — не блокируем
+        )
+      )
+    ).then(() => console.log('[SW] Установлен, ресурсы закешированы'))
   );
 });
 
