@@ -4,7 +4,7 @@
 //  Обновление: проверка при старте, баннер для пользователя.
 // ============================================================
 
-const CACHE_VERSION = '3.2.2';
+const CACHE_VERSION = '3.2.3';
 const STATIC_CACHE  = `romana-static-${CACHE_VERSION}`;
 const FONT_CACHE    = 'romana-fonts';   // не версионируем — URL шрифтов иммутабельны
 
