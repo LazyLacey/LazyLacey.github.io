@@ -4,7 +4,7 @@
 //  Обновление: проверка при старте, баннер для пользователя.
 // ============================================================
 
-const CACHE_VERSION = '3.2.6';
+const CACHE_VERSION = '3.2.7';
 const STATIC_CACHE  = `romana-static-${CACHE_VERSION}`;
 const FONT_CACHE    = 'romana-fonts';   // не версионируем — URL шрифтов иммутабельны
 
@@ -16,13 +16,25 @@ const STATIC_ASSETS = [
   '/grammar-content.js',
 ];
 
+// ──────────────────────── УТИЛИТЫ ───────────────────────────
+
+const FETCH_TIMEOUT_MS = 5000;
+
+/** fetch с таймаутом 5 с. Бросает AbortError если сервер не ответил вовремя. */
+function fetchWithTimeout(input, init = {}) {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  return fetch(input, { ...init, signal: controller.signal })
+    .finally(() => clearTimeout(timeoutId));
+}
+
 // ───────────────────────────── INSTALL ──────────────────────────────
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(STATIC_CACHE).then(cache =>
       Promise.all(
         STATIC_ASSETS.map(url =>
-          fetch(url, { cache: 'no-store' })
+          fetchWithTimeout(url, { cache: 'no-store' })
             .then(res => { if (res.ok) cache.put(url, res); })
             .catch(() => {}) // нет сети при установке — не блокируем
         )
@@ -84,7 +96,7 @@ async function cacheFirst(request, cacheName) {
   if (cached) return cached;
 
   try {
-    const response = await fetch(request);
+    const response = await fetchWithTimeout(request);
     if (response.ok) {
       const cache = await caches.open(cacheName);
       cache.put(request, response.clone());
