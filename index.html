@@ -12,23 +12,266 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <style>
-/* ===== CSS VARIABLES ===== */
+/* ===== CSS VARIABLES — DEFAULT THEME: ПОЛНОЧЬ ===== */
 :root {
   --bg: #0f0f1a;
   --bg2: #16162a;
   --bg3: #1e1e35;
   --accent: #c8a96e;
   --accent2: #e8c98e;
+  --accent-rgb: 200,169,110;
   --purple: #8b7cf8;
+  --purple-rgb: 139,124,248;
   --green: #5ec49a;
+  --green-rgb: 94,196,154;
   --blue: #74b9ff;
+  --blue-rgb: 116,185,255;
   --red: #e8685a;
+  --red-rgb: 232,104,90;
+  --fire: #f97316;
   --text: #f0eee8;
   --text2: #a09e98;
   --text3: #6a6860;
   --border: rgba(255,255,255,0.08);
   --radius: 16px;
   --radius-sm: 10px;
+  --green-a08: rgba(94,196,154,0.08);
+  --green-a10: rgba(94,196,154,0.10);
+  --green-a12: rgba(94,196,154,0.12);
+  --green-a25: rgba(94,196,154,0.25);
+  --green-a30: rgba(94,196,154,0.30);
+  --red-a10: rgba(232,104,90,0.10);
+  --red-a12: rgba(232,104,90,0.12);
+  --red-a15: rgba(232,104,90,0.15);
+  --red-a25: rgba(232,104,90,0.25);
+  --red-a30: rgba(232,104,90,0.30);
+  --purple-a12: rgba(139,124,248,0.12);
+  --purple-a15: rgba(139,124,248,0.15);
+  --purple-a20: rgba(139,124,248,0.20);
+  --blue-a12: rgba(116,185,255,0.12);
+  --blue-a25: rgba(116,185,255,0.25);
+  --accent-a08: rgba(200,169,110,0.08);
+  --accent-a15: rgba(200,169,110,0.15);
+  --accent-a20: rgba(200,169,110,0.20);
+  --accent-a25: rgba(200,169,110,0.25);
+  --accent-a30: rgba(200,169,110,0.30);
+  --accent-a40: rgba(200,169,110,0.40);
+  --accent-a45: rgba(200,169,110,0.45);
+  --accent-a70: rgba(200,169,110,0.70);
+  --btn-primary-text: #0f0f1a;
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #e74c3c;
+}
+
+/* ТЕМА: ЛЕС */
+[data-theme="forest"] {
+  --bg: #0d1a12;
+  --bg2: #16261c;
+  --bg3: #1e3024;
+  --accent: #ff7c5c;
+  --accent2: #ff9c7c;
+  --accent-rgb: 255,124,92;
+  --purple: #c084fc;
+  --purple-rgb: 192,132,252;
+  --green: #5ec49a;
+  --green-rgb: 94,196,154;
+  --blue: #74b9ff;
+  --blue-rgb: 116,185,255;
+  --red: #e8685a;
+  --red-rgb: 232,104,90;
+  --fire: #f97316;
+  --text: #f0eee8;
+  --text2: #a8a090;
+  --text3: #706858;
+  --border: rgba(255,255,255,0.07);
+  --btn-primary-text: #1a0800;
+  --accent-a08: rgba(255,124,92,0.08);
+  --accent-a15: rgba(255,124,92,0.15);
+  --accent-a20: rgba(255,124,92,0.20);
+  --accent-a25: rgba(255,124,92,0.25);
+  --accent-a30: rgba(255,124,92,0.30);
+  --accent-a40: rgba(255,124,92,0.40);
+  --accent-a45: rgba(255,124,92,0.45);
+  --accent-a70: rgba(255,124,92,0.70);
+  --purple-a12: rgba(192,132,252,0.12);
+  --purple-a15: rgba(192,132,252,0.15);
+  --purple-a20: rgba(192,132,252,0.20);
+  --blue-a12: rgba(116,185,255,0.12);
+  --blue-a25: rgba(116,185,255,0.25);
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #e74c3c;
+}
+
+/* ТЕМА: ОКЕАН */
+[data-theme="ocean"] {
+  --bg: #0d1520;
+  --bg2: #14202e;
+  --bg3: #1c2d3e;
+  --accent: #f0a832;
+  --accent2: #f8c050;
+  --accent-rgb: 240,168,50;
+  --purple: #c084fc;
+  --purple-rgb: 192,132,252;
+  --green: #5ec49a;
+  --green-rgb: 94,196,154;
+  --blue: #74b9ff;
+  --blue-rgb: 116,185,255;
+  --red: #e8685a;
+  --red-rgb: 232,104,90;
+  --fire: #f97316;
+  --text: #f0eee8;
+  --text2: #a8a48c;
+  --text3: #70685c;
+  --border: rgba(255,255,255,0.07);
+  --btn-primary-text: #1a0e00;
+  --accent-a08: rgba(240,168,50,0.08);
+  --accent-a15: rgba(240,168,50,0.15);
+  --accent-a20: rgba(240,168,50,0.20);
+  --accent-a25: rgba(240,168,50,0.25);
+  --accent-a30: rgba(240,168,50,0.30);
+  --accent-a40: rgba(240,168,50,0.40);
+  --accent-a45: rgba(240,168,50,0.45);
+  --accent-a70: rgba(240,168,50,0.70);
+  --purple-a12: rgba(192,132,252,0.12);
+  --purple-a15: rgba(192,132,252,0.15);
+  --purple-a20: rgba(192,132,252,0.20);
+  --blue-a12: rgba(116,185,255,0.12);
+  --blue-a25: rgba(116,185,255,0.25);
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #e74c3c;
+}
+
+/* ТЕМА: ВИШНЯ */
+[data-theme="cherry"] {
+  --bg: #1a0d14;
+  --bg2: #26121e;
+  --bg3: #321828;
+  --accent: #5ecfb0;
+  --accent2: #7edfc8;
+  --accent-rgb: 94,207,176;
+  --purple: #c084fc;
+  --purple-rgb: 192,132,252;
+  --green: #5ec49a;
+  --green-rgb: 94,196,154;
+  --blue: #74b9ff;
+  --blue-rgb: 116,185,255;
+  --red: #e8685a;
+  --red-rgb: 232,104,90;
+  --fire: #f97316;
+  --text: #f0eee8;
+  --text2: #9ca4a8;
+  --text3: #647078;
+  --border: rgba(255,255,255,0.07);
+  --btn-primary-text: #001a14;
+  --accent-a08: rgba(94,207,176,0.08);
+  --accent-a15: rgba(94,207,176,0.15);
+  --accent-a20: rgba(94,207,176,0.20);
+  --accent-a25: rgba(94,207,176,0.25);
+  --accent-a30: rgba(94,207,176,0.30);
+  --accent-a40: rgba(94,207,176,0.40);
+  --accent-a45: rgba(94,207,176,0.45);
+  --accent-a70: rgba(94,207,176,0.70);
+  --purple-a12: rgba(192,132,252,0.12);
+  --purple-a15: rgba(192,132,252,0.15);
+  --purple-a20: rgba(192,132,252,0.20);
+  --blue-a12: rgba(116,185,255,0.12);
+  --blue-a25: rgba(116,185,255,0.25);
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #e74c3c;
+}
+
+/* ТЕМА: АМЕТИСТ */
+[data-theme="amethyst"] {
+  --bg: #12101a;
+  --bg2: #1c1830;
+  --bg3: #252040;
+  --accent: #f0926a;
+  --accent2: #f8aa84;
+  --accent-rgb: 240,146,106;
+  --purple: #a78bfa;
+  --purple-rgb: 167,139,250;
+  --green: #5ec49a;
+  --green-rgb: 94,196,154;
+  --blue: #f472b6;
+  --blue-rgb: 244,114,182;
+  --red: #e8685a;
+  --red-rgb: 232,104,90;
+  --fire: #f97316;
+  --text: #f0eee8;
+  --text2: #aaa49a;
+  --text3: #726c62;
+  --border: rgba(255,255,255,0.07);
+  --btn-primary-text: #12101a;
+  --accent-a08: rgba(240,146,106,0.08);
+  --accent-a15: rgba(240,146,106,0.15);
+  --accent-a20: rgba(240,146,106,0.20);
+  --accent-a25: rgba(240,146,106,0.25);
+  --accent-a30: rgba(240,146,106,0.30);
+  --accent-a40: rgba(240,146,106,0.40);
+  --accent-a45: rgba(240,146,106,0.45);
+  --accent-a70: rgba(240,146,106,0.70);
+  --purple-a12: rgba(167,139,250,0.12);
+  --purple-a15: rgba(167,139,250,0.15);
+  --purple-a20: rgba(167,139,250,0.20);
+  --blue-a12: rgba(167,139,250,0.12);
+  --blue-a25: rgba(167,139,250,0.25);
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #e74c3c;
+}
+
+/* ТЕМА: РАССВЕТ (светлая) */
+[data-theme="dawn"] {
+  --bg: #f5f2ed;
+  --bg2: #ede8e0;
+  --bg3: #e0d8cc;
+  --accent: #c0602a;
+  --accent2: #d4743e;
+  --accent-rgb: 192,96,42;
+  --purple: #7c5cbf;
+  --purple-rgb: 124,92,191;
+  --green: #2e8b57;
+  --green-rgb: 46,139,87;
+  --blue: #2563ab;
+  --blue-rgb: 37,99,171;
+  --red: #c0392b;
+  --red-rgb: 192,57,43;
+  --fire: #e07b1a;
+  --text: #2a2418;
+  --text2: #5a5040;
+  --text3: #8a8070;
+  --border: rgba(0,0,0,0.1);
+  --btn-primary-text: #f5f2ed;
+  --accent-a08: rgba(192,96,42,0.08);
+  --accent-a15: rgba(192,96,42,0.15);
+  --accent-a20: rgba(192,96,42,0.20);
+  --accent-a25: rgba(192,96,42,0.25);
+  --accent-a30: rgba(192,96,42,0.30);
+  --accent-a40: rgba(192,96,42,0.40);
+  --accent-a45: rgba(192,96,42,0.45);
+  --accent-a70: rgba(192,96,42,0.70);
+  --green-a08: rgba(46,139,87,0.08);
+  --green-a10: rgba(46,139,87,0.10);
+  --green-a12: rgba(46,139,87,0.12);
+  --green-a25: rgba(46,139,87,0.25);
+  --green-a30: rgba(46,139,87,0.30);
+  --red-a10: rgba(192,57,43,0.10);
+  --red-a12: rgba(192,57,43,0.12);
+  --red-a15: rgba(192,57,43,0.15);
+  --red-a25: rgba(192,57,43,0.25);
+  --red-a30: rgba(192,57,43,0.30);
+  --purple-a12: rgba(124,92,191,0.12);
+  --purple-a15: rgba(124,92,191,0.15);
+  --purple-a20: rgba(124,92,191,0.20);
+  --blue-a12: rgba(37,99,171,0.12);
+  --blue-a25: rgba(37,99,171,0.25);
+  --danger-bg: #c0392b;
+  --danger-text: #ffffff;
+  --danger-border: #a93226;
 }
 
 /* ===== RESET ===== */
@@ -115,11 +358,11 @@ nav {
   cursor: pointer;
   transition: all 0.15s;
 }
-.btn-primary { background: var(--accent); color: #0f0f1a; border: 1px solid var(--accent);}
+.btn-primary { background: var(--accent); color: var(--btn-primary-text); border: 1px solid var(--accent);}
 .btn-primary:active { transform: scale(0.97); }
 .btn-ghost { background: var(--bg3); color: var(--text2); border: 1px solid var(--border); }
 .btn-ghost:active { transform: scale(0.97); }
-.btn-danger { background: rgba(232,104,90,0.15); color: var(--red); border: 1px solid rgba(232,104,90,0.2); }
+.btn-danger { background: var(--danger-bg); color: var(--danger-text); border: 1px solid var(--danger-border); }
 .btn-icon {
   width: 36px; height: 36px;
   border-radius: var(--radius-sm);
@@ -183,8 +426,8 @@ nav {
 .word-ru { font-size: 13px; color: var(--text2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .word-stats { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
 .stat-pill { font-size: 11px; padding: 2px 8px; border-radius: 20px; background: var(--bg3); color: var(--text3); }
-.stat-pill.good { background: rgba(94,196,154,0.1); color: var(--green); }
-.stat-pill.bad { background: rgba(232,104,90,0.1); color: var(--red); }
+.stat-pill.good { background: var(--green-a10); color: var(--green); }
+.stat-pill.bad { background: var(--red-a10); color: var(--red); }
 .card-mini-bar { height: 2px; border-radius: 1px; background: var(--bg3); margin-top: 6px; overflow: hidden; }
 .card-mini-bar-fill { height: 100%; border-radius: 1px; transition: width 0.3s; }
 .card-mini-bar-fill.good { background: var(--green); }
@@ -308,7 +551,7 @@ select {
   top: -30px; right: -30px;
   width: 120px; height: 120px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,169,110,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--accent-a08) 0%, transparent 70%);
 }
 .card-group-tag {
   display: inline-block;
@@ -316,7 +559,7 @@ select {
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--accent);
-  background: rgba(200,169,110,0.1);
+  background: var(--accent-a15);
   padding: 4px 12px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -343,8 +586,8 @@ select {
   transition: border-color 0.15s;
 }
 .type-input:focus { border-color: var(--accent); }
-.type-input.correct { border-color: var(--green); background: rgba(94,196,154,0.06); color: var(--green); }
-.type-input.wrong { border-color: var(--red); background: rgba(232,104,90,0.06); color: var(--red); }
+.type-input.correct { border-color: var(--green); background: var(--green-a08); color: var(--green); }
+.type-input.wrong { border-color: var(--red); background: var(--red-a10); color: var(--red); }
 .type-submit { width: 100%; padding: 16px; font-size: 16px; font-weight: 600; justify-content: center; border-radius: var(--radius); margin-bottom: 12px; }
 .answer-reveal {
   margin-top: -12px;
@@ -385,9 +628,9 @@ select {
   justify-content: center;
 }
 .choice-btn:active { transform: scale(0.96); }
-.choice-btn.selected-correct { border-color: var(--green); background: rgba(94,196,154,0.1); color: var(--green); }
-.choice-btn.selected-wrong { border-color: var(--red); background: rgba(232,104,90,0.1); color: var(--red); }
-.choice-btn.reveal-correct { border-color: var(--green); background: rgba(94,196,154,0.08); color: var(--green); }
+.choice-btn.selected-correct { border-color: var(--green); background: var(--green-a10); color: var(--green); }
+.choice-btn.selected-wrong { border-color: var(--red); background: var(--red-a10); color: var(--red); }
+.choice-btn.reveal-correct { border-color: var(--green); background: var(--green-a08); color: var(--green); }
 
 /* ===== NEXT BUTTON ===== */
 .next-btn-wrapper { padding: 0 20px; }
@@ -464,7 +707,7 @@ select {
   cursor: pointer;
   transition: all 0.15s;
 }
-.ready-mode-card.active { border-color: var(--accent); background: rgba(200,169,110,0.07); }
+.ready-mode-card.active { border-color: var(--accent); background: var(--accent-a08); }
 .ready-mode-card:active { transform: scale(0.97); }
 .ready-mode-icon { font-size: 20px; line-height: 1; }
 .ready-mode-name { font-size: 13px; font-weight: 700; color: var(--text); font-family: 'Syne', sans-serif; }
@@ -477,7 +720,7 @@ select {
   border-radius: var(--radius);
   border: none;
   background: var(--accent);
-  color: #1a1000;
+  color: var(--btn-primary-text);
   cursor: pointer;
   font-family: 'Syne', sans-serif;
   letter-spacing: 0.3px;
@@ -499,7 +742,7 @@ select {
   color: var(--text2);
 }
 .ready-mode-browse:active { transform: scale(0.97); }
-.ready-mode-browse.active { border-color: var(--accent); background: rgba(200,169,110,0.07); color: var(--accent); }
+.ready-mode-browse.active { border-color: var(--accent); background: var(--accent-a08); color: var(--accent); }
 .mode-selector { display: flex; gap: 8px; padding: 0 20px 12px; flex-shrink: 0; overflow-x: auto; }
 .mode-btn {
   display: flex;
@@ -516,7 +759,7 @@ select {
   white-space: nowrap;
   transition: all 0.15s;
 }
-.mode-btn.active { background: rgba(200,169,110,0.12); border-color: var(--accent); color: var(--accent); }
+.mode-btn.active { background: var(--accent-a15); border-color: var(--accent); color: var(--accent); }
 
 /* ===== FLIP CARD ===== */
 .flip-card-wrap { cursor: pointer; max-width: 380px; flex: 1; display: flex; flex-direction: column; width: 100%; user-select: none; }
@@ -531,7 +774,7 @@ select {
   border: 1px solid var(--border);
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
-.flip-card-back { background: var(--bg3); border-color: rgba(200,169,110,0.2); opacity: 0; transform: scale(0.97); pointer-events: none; }
+.flip-card-back { background: var(--bg3); border-color: var(--accent-a20); opacity: 0; transform: scale(0.97); pointer-events: none; }
 .flip-card.flipped .flip-card-front { opacity: 0; transform: scale(0.97); pointer-events: none; }
 .flip-card.flipped .flip-card-back { opacity: 1; transform: scale(1); pointer-events: auto; }
 .flip-hint { font-size: 11px; color: var(--text3); margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
@@ -550,7 +793,7 @@ select {
   transition: all 0.15s;
 }
 .flip-nav-btn:active { transform: scale(0.97); }
-.flip-nav-btn.primary { background: var(--accent); color: #1a1000; border-color: transparent; font-weight: 600; }
+.flip-nav-btn.primary { background: var(--accent); color: var(--btn-primary-text); border-color: transparent; font-weight: 600; }
 
 /* ===== FEEDBACK ===== */
 .feedback-text { font-size: 13px; text-align: center; padding: 8px; color: var(--text3); display: none; }
@@ -588,7 +831,7 @@ select {
 .toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
 .toggle-track { display: block; width: 44px; height: 26px; background: var(--bg3); border-radius: 13px; border: 1px solid var(--border); transition: background 0.2s, border-color 0.2s; }
 .toggle-track::after { content: ''; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--text3); transition: transform 0.2s, background 0.2s; }
-.toggle input:checked + .toggle-track { background: rgba(200,169,110,0.2); border-color: var(--accent); }
+.toggle input:checked + .toggle-track { background: var(--accent-a20); border-color: var(--accent); }
 .toggle input:checked + .toggle-track::after { transform: translateX(18px); background: var(--accent); }
 
 /* ===== GROUPS ===== */
@@ -639,13 +882,13 @@ select {
   word-break: break-word;
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); z-index: 200; }
-.toast.green > div { border-color: rgba(94,196,154,0.3); color: var(--green); }
-.toast.red > div { border-color: rgba(232,104,90,0.3); color: var(--red); }
+.toast.green > div { border-color: var(--green-a30); color: var(--green); }
+.toast.red > div { border-color: var(--red-a30); color: var(--red); }
 
 /* ===== FILTER CHIPS ===== */
 .filter-chips { display: flex; gap: 8px; padding: 0 20px 12px; overflow-x: auto; flex-shrink: 0; }
 .chip { padding: 6px 14px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg3); color: var(--text3); font-size: 13px; cursor: pointer; white-space: nowrap; transition: all 0.15s; }
-.chip.active { background: rgba(200,169,110,0.12); border-color: var(--accent); color: var(--accent); }
+.chip.active { background: var(--accent-a15); border-color: var(--accent); color: var(--accent); }
 
 /* ===== SESSION SUMMARY ===== */
 #session-summary { display: none; position: fixed; inset: 0; z-index: 100; background: var(--bg); flex-direction: column; align-items: stretch; overflow-y: auto; justify-content: center; }
@@ -664,8 +907,8 @@ select {
 .summary-mistake-row { display: flex; align-items: center; justify-content: space-between; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 12px 16px; gap: 12px; }
 .summary-mistake-ro { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 600; color: var(--text); }
 .summary-mistake-ru { font-size: 13px; color: var(--text3); margin-top: 2px; }
-.summary-mistake-badge { font-size: 11px; color: var(--red); background: rgba(232,104,90,0.12); border-radius: 20px; padding: 3px 10px; white-space: nowrap; flex-shrink: 0; }
-.summary-done-btn { margin: 8px 20px 40px; width: calc(100% - 40px); padding: 17px; font-size: 15px; font-weight: 700; border-radius: var(--radius); border: none; background: var(--accent); color: #1a1000; font-family: 'Syne', sans-serif; cursor: pointer; letter-spacing: 0.3px; }
+.summary-mistake-badge { font-size: 11px; color: var(--red); background: var(--red-a12); border-radius: 20px; padding: 3px 10px; white-space: nowrap; flex-shrink: 0; }
+.summary-done-btn { margin: 8px 20px 40px; width: calc(100% - 40px); padding: 17px; font-size: 15px; font-weight: 700; border-radius: var(--radius); border: none; background: var(--accent); color: var(--btn-primary-text); font-family: 'Syne', sans-serif; cursor: pointer; letter-spacing: 0.3px; }
 .summary-done-btn:active { transform: scale(0.98); }
 
 
@@ -683,10 +926,10 @@ select {
 .heatmap-grid { display: table; border-spacing: 3px; border-collapse: separate; }
 .heatmap-row { display: table-row; }
 .heatmap-cell { display: table-cell; width: 12px; height: 12px; min-width: 12px; border-radius: 2px; background: var(--bg3); }
-.heatmap-cell.l1 { background: rgba(94,196,154,0.25); }
-.heatmap-cell.l2 { background: rgba(94,196,154,0.5); }
-.heatmap-cell.l3 { background: rgba(94,196,154,0.75); }
-.heatmap-cell.l4 { background: #5ec49a; }
+.heatmap-cell.l1 { background: var(--green-a10); }
+.heatmap-cell.l2 { background: var(--green-a25); }
+.heatmap-cell.l3 { background: var(--green); opacity: 0.6; }
+.heatmap-cell.l4 { background: var(--green); }
 .heatmap-cell.future { background: var(--bg3); opacity: 0.3; }
 
 /* ===== RECORD BLOCK ===== */
@@ -700,9 +943,23 @@ select {
 .record-item-val { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--text); }
 .record-item-val.accent { color: var(--accent); }
 .record-item-val.green { color: var(--green); }
-.record-item-val.fire { color: #f97316; }
+.record-item-val.fire { color: var(--fire); }
 .record-item-label { font-size: 10px; color: var(--text3); text-align: center; line-height: 1.3; }
-.record-badge.new { background:rgba(94,196,154,0.12); border:1px solid rgba(94,196,154,0.3); border-radius:20px; padding:4px 12px; font-size:12px; color:var(--green); display:inline-flex; align-items:center; gap:5px; margin: 0 20px 12px; }
+.setting-row-danger { background: var(--danger-bg) !important; border-color: var(--danger-border) !important; }
+.setting-row-reset { background: var(--purple-a12) !important; }
+
+/* ===== CHART PERIOD BUTTONS ===== */
+.chart-period-btn {
+  font-size: 11px; padding: 4px 10px; border-radius: 20px;
+  border: 1px solid var(--border); background: transparent;
+  color: var(--text3); font-family: 'DM Sans', sans-serif; cursor: pointer;
+  transition: all 0.15s;
+}
+.chart-period-btn-active {
+  border-color: var(--accent-a40);
+  background: var(--accent-a15);
+  color: var(--accent);
+}
 
 /* ===== SRS BADGE ===== */
 .srs-badge {
@@ -715,18 +972,18 @@ select {
   display: inline-block;
 }
 .srs-badge.due {
-  background: rgba(232,104,90,0.15);
+  background: var(--red-a15);
   color: var(--red);
-  border: 1px solid rgba(232,104,90,0.25);
+  border: 1px solid var(--red-a25);
 }
 .srs-badge.pending {
-  background: rgba(139,124,248,0.12);
+  background: var(--purple-a12);
   color: var(--purple);
-  border: 1px solid rgba(139,124,248,0.2);
+  border: 1px solid var(--purple-a20);
 }
 
 /* ===== MARATHON badge ===== */
-.marathon-badge { font-size:10px; background:rgba(139,124,248,0.15); color:var(--purple); border-radius:20px; padding:2px 8px; margin-left:6px; }
+.marathon-badge { font-size:10px; background:var(--purple-a15); color:var(--purple); border-radius:20px; padding:2px 8px; margin-left:6px; }
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
@@ -777,9 +1034,9 @@ select {
 .gr-example-ro { font-family:'Syne',sans-serif; font-size:14px; font-weight:600; color:var(--text,#f0eee8); line-height:1.4; }
 .gr-example-ru { font-size:12px; color:var(--text2,#a09e98); margin-top:2px; }
 .gr-example-note { font-size:11px; color:var(--text3,#6a6860); margin-top:3px; font-style:italic; }
-.gr-add-btn { flex-shrink:0; background:rgba(200,169,110,0.1); border:1px solid rgba(200,169,110,0.2); border-radius:8px; color:var(--accent,#c8a96e); font-size:11px; font-family:'DM Sans',sans-serif; padding:4px 9px; cursor:pointer; white-space:nowrap; transition:all 0.15s; align-self:center; }
-.gr-add-btn:active { background:rgba(200,169,110,0.25); transform:scale(0.95); }
-.gr-add-btn.added { background:rgba(94,196,154,0.12); border-color:rgba(94,196,154,0.25); color:var(--green,#5ec49a); pointer-events:none; }
+.gr-add-btn { flex-shrink:0; background:var(--accent-a15); border:1px solid var(--accent-a20); border-radius:8px; color:var(--accent,#c8a96e); font-size:11px; font-family:'DM Sans',sans-serif; padding:4px 9px; cursor:pointer; white-space:nowrap; transition:all 0.15s; align-self:center; }
+.gr-add-btn:active { background:var(--accent-a25); transform:scale(0.95); }
+.gr-add-btn.added { background:var(--green-a12); border-color:var(--green-a25); color:var(--green,#5ec49a); pointer-events:none; }
 
 /* Результаты поиска */
 .gr-search-results { flex:1; overflow-y:auto; padding:8px 16px 100px; display:none; }
@@ -797,9 +1054,9 @@ select {
 .gr-tabs { display:flex; gap:2px; padding:0 20px 12px; flex-shrink:0; }
 .gr-tab { display:flex; align-items:center; gap:5px; padding:7px 14px; border-radius:20px; border:1px solid transparent; background:transparent; color:var(--text3); font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; cursor:pointer; transition:all 0.15s; white-space:nowrap; }
 .gr-tab:active { transform:scale(0.97); }
-#gr-tab-rules.active { background:rgba(200,169,110,0.12); border-color:rgba(200,169,110,0.25); color:var(--accent); }
-#gr-tab-tests.active { background:rgba(116,185,255,0.12); border-color:rgba(116,185,255,0.25); color:var(--blue); }
-#gr-tab-verbs.active { background:rgba(94,196,154,0.12); border-color:rgba(94,196,154,0.25); color:var(--green); }
+#gr-tab-rules.active { background:rgba(234,179,8,0.12); border-color:rgba(234,179,8,0.25); color:#d4a008; }
+#gr-tab-tests.active { background:var(--blue-a12); border-color:var(--blue-a25); color:var(--blue); }
+#gr-tab-verbs.active { background:var(--green-a12); border-color:var(--green-a25); color:var(--green); }
 .vb-home { flex:1; overflow-y:auto; padding:8px 16px 100px; }
 .vb-verb-btn { display:flex; align-items:center; justify-content:space-between; width:100%; background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:12px 14px; margin-bottom:8px; cursor:pointer; font-family:'DM Sans',sans-serif; text-align:left; }
 .vb-verb-btn:active { transform:scale(0.98); }
@@ -811,7 +1068,7 @@ select {
 .vb-action-btn:active { background:var(--bg3); }
 .vb-tense-tabs { display:flex; gap:6px; padding:0 20px 12px; flex-shrink:0; }
 .vb-tense-btn { flex:1; padding:6px 4px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text3); font-size:12px; font-family:'DM Sans',sans-serif; cursor:pointer; }
-.vb-tense-btn.active { background:rgba(94,196,154,0.12); border-color:rgba(94,196,154,0.3); color:var(--green); font-weight:600; }
+.vb-tense-btn.active { background:var(--green-a12); border-color:var(--green-a30); color:var(--green); font-weight:600; }
 .vb-tense-btn.done { color:var(--green); }
 .vb-tense-btn.done:not(.active) { opacity:0.6; }
 .vb-tense-check { font-size:9px; vertical-align:1px; margin-left:2px; }
@@ -839,14 +1096,14 @@ select {
 /* Import card */
 .gt-import-card {
   display:flex; align-items:center; gap:12px;
-  background:var(--bg2); border:1px dashed rgba(200,169,110,0.25);
+  background:var(--bg2); border:1px dashed var(--accent-a25);
   border-radius:var(--radius); padding:14px 16px; margin-top:8px;
   cursor:pointer; transition:border-color 0.15s, background 0.15s;
 }
-.gt-import-card:active { border-color:var(--accent); background:rgba(200,169,110,0.06); }
+.gt-import-card:active { border-color:var(--accent); background:var(--accent-a08); }
 .gt-import-icon {
   width:36px; height:36px; border-radius:var(--radius-sm);
-  background:rgba(200,169,110,0.1); border:1px solid rgba(200,169,110,0.2);
+  background:var(--accent-a15); border:1px solid var(--accent-a20);
   display:flex; align-items:center; justify-content:center;
   color:var(--accent); flex-shrink:0;
 }
@@ -886,18 +1143,18 @@ select {
 .gt-choices { display:flex;flex-direction:column;gap:8px;margin-top:4px; }
 .gt-choice { width:100%;background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;font-family:'DM Sans',sans-serif;font-size:14px;color:var(--text);cursor:pointer;text-align:left;transition:all 0.15s;line-height:1.4; }
 .gt-choice:active { transform:scale(0.98); }
-.gt-choice.correct { border-color:var(--green);background:rgba(94,196,154,0.1);color:var(--green); }
-.gt-choice.wrong { border-color:var(--red);background:rgba(232,104,90,0.1);color:var(--red); }
-.gt-choice.reveal { border-color:var(--green);background:rgba(94,196,154,0.06);color:var(--green); }
+.gt-choice.correct { border-color:var(--green);background:var(--green-a10);color:var(--green); }
+.gt-choice.wrong { border-color:var(--red);background:var(--red-a10);color:var(--red); }
+.gt-choice.reveal { border-color:var(--green);background:var(--green-a08);color:var(--green); }
 .gt-choice:disabled { cursor:default; }
 
 /* Fill / form input */
 .gt-fill-wrap { margin-top:4px; }
 .gt-fill-input { width:100%;background:var(--bg3);border:2px solid var(--border);border-radius:var(--radius);color:var(--text);font-family:'Syne',sans-serif;font-size:20px;font-weight:600;padding:16px;outline:none;text-align:center;transition:border-color 0.15s; }
 .gt-fill-input:focus { border-color:var(--accent); }
-.gt-fill-input.correct { border-color:var(--green);background:rgba(94,196,154,0.06);color:var(--green); }
-.gt-fill-input.wrong { border-color:var(--red);background:rgba(232,104,90,0.06);color:var(--red); }
-.gt-check-btn { width:100%;margin-top:10px;padding:15px;font-size:15px;font-weight:700;border-radius:var(--radius);border:none;background:var(--accent);color:#1a1000;font-family:'Syne',sans-serif;cursor:pointer;transition:opacity 0.15s; }
+.gt-fill-input.correct { border-color:var(--green);background:var(--green-a08);color:var(--green); }
+.gt-fill-input.wrong { border-color:var(--red);background:var(--red-a10);color:var(--red); }
+.gt-check-btn { width:100%;margin-top:10px;padding:15px;font-size:15px;font-weight:700;border-radius:var(--radius);border:none;background:var(--accent);color:var(--btn-primary-text);font-family:'Syne',sans-serif;cursor:pointer;transition:opacity 0.15s; }
 .gt-check-btn:active { opacity:0.85; }
 .gt-check-btn:disabled { opacity:0.4;cursor:default; }
 
@@ -907,7 +1164,7 @@ select {
 .gt-explain strong { color:var(--text);font-family:'Syne',sans-serif; }
 
 /* Next button */
-.gt-next-btn { width:calc(100% - 32px);margin:8px 16px 16px;padding:15px;font-size:15px;font-weight:700;border-radius:var(--radius);border:none;background:var(--accent);color:#1a1000;font-family:'Syne',sans-serif;cursor:pointer;display:none;transition:opacity 0.15s;flex-shrink:0; }
+.gt-next-btn { width:calc(100% - 32px);margin:8px 16px 16px;padding:15px;font-size:15px;font-weight:700;border-radius:var(--radius);border:none;background:var(--accent);color:var(--btn-primary-text);font-family:'Syne',sans-serif;cursor:pointer;display:none;transition:opacity 0.15s;flex-shrink:0; }
 .gt-next-btn.visible { display:block; }
 .gt-next-btn:active { opacity:0.85; }
 
@@ -924,7 +1181,7 @@ select {
 .gt-results-table td:first-child { color:var(--text2); }
 .gt-results-table td:last-child { text-align:right;font-weight:600;font-family:'Syne',sans-serif;font-size:15px; }
 .gt-results-btns { display:flex;flex-direction:column;gap:8px;width:100%; }
-.gt-results-btn-primary { width:100%;padding:13px;font-size:14px;font-weight:600;border-radius:var(--radius-sm);border:none;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;background:var(--accent);color:#1a1000; }
+.gt-results-btn-primary { width:100%;padding:13px;font-size:14px;font-weight:600;border-radius:var(--radius-sm);border:none;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;background:var(--accent);color:var(--btn-primary-text); }
 .gt-results-btn-primary:active { transform:scale(0.97); }
 .gt-results-btns-secondary { display:flex;gap:8px;width:100%; }
 .gt-results-btn-secondary { flex:1;padding:10px 8px;font-size:12px;font-weight:400;border-radius:var(--radius-sm);border:1px solid var(--border);font-family:'DM Sans',sans-serif;cursor:pointer;transition:all 0.15s;background:transparent;color:var(--text3); }
@@ -947,9 +1204,146 @@ select {
   padding: 8px 12px;
   flex-shrink: 0;
 }
-.vb-card-strip-verb { font-size: 10px; color: var(--accent); background: rgba(200,169,110,0.1); border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; font-weight: 600; }
+.vb-card-strip-verb { font-size: 10px; color: var(--accent); background: var(--accent-a15); border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; font-weight: 600; }
 .vb-card-strip-sep { font-size: 12px; color: var(--text3); flex-shrink: 0; }
 .vb-card-strip-pronoun { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700; color: var(--text); }
+
+/* ===== ONBOARDING ===== */
+#onboarding-overlay {
+  position: fixed; inset: 0; z-index: 9000;
+  background: var(--bg);
+  display: flex; flex-direction: column;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.ob-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 20px 0; flex-shrink: 0;
+}
+.ob-skip-btn {
+  background: none; border: none; color: var(--text3);
+  font-family: 'DM Sans', sans-serif; font-size: 14px;
+  cursor: pointer; padding: 6px 0;
+}
+.ob-skip-btn:active { opacity: 0.7; }
+
+.ob-dots {
+  display: flex; gap: 6px; align-items: center;
+}
+.ob-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--border); transition: all 0.2s;
+}
+.ob-dot.active { background: var(--accent); width: 18px; border-radius: 3px; }
+
+.ob-body {
+  flex: 1; overflow-y: auto;
+  padding: 24px 28px 16px;
+  display: flex; flex-direction: column;
+}
+.ob-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.ob-title {
+  font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800;
+  color: var(--text); line-height: 1.2; margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.ob-title span { color: var(--accent); }
+.ob-desc { font-size: 15px; color: var(--text2); line-height: 1.65; margin-bottom: 20px; }
+.ob-note {
+  background: var(--bg3); border-radius: var(--radius-sm);
+  padding: 12px 16px; font-size: 13px; color: var(--text3);
+  line-height: 1.6; border-left: 3px solid var(--accent);
+}
+.ob-note strong { color: var(--text2); }
+
+.ob-feature-list {
+  display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;
+}
+.ob-feature {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 12px 14px;
+}
+.ob-feature-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
+.ob-feature-text { flex: 1; min-width: 0; }
+.ob-feature-title { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+.ob-feature-sub { font-size: 12px; color: var(--text3); line-height: 1.5; }
+
+.ob-footer {
+  padding: 12px 20px 40px; flex-shrink: 0;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.ob-btn-primary {
+  width: 100%; padding: 16px;
+  background: var(--accent); color: var(--btn-primary-text);
+  border: none; border-radius: var(--radius);
+  font-family: 'Syne', sans-serif; font-size: 16px; font-weight: 700;
+  cursor: pointer; transition: all 0.15s; letter-spacing: 0.2px;
+}
+.ob-btn-primary:active { transform: scale(0.98); }
+.ob-btn-secondary {
+  width: 100%; padding: 14px;
+  background: var(--bg2); color: var(--text2);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+  cursor: pointer; transition: all 0.15s;
+}
+.ob-btn-secondary:active { transform: scale(0.98); }
+.ob-btn-start-pair {
+  display: flex; gap: 10px;
+}
+.ob-btn-start-pair .ob-btn-primary,
+.ob-btn-start-pair .ob-btn-secondary {
+  flex: 1;
+}
+
+.ob-download-card {
+  background: var(--bg2); border: 1px dashed var(--accent-a30);
+  border-radius: var(--radius); padding: 20px;
+  display: flex; flex-direction: column; gap: 12px;
+  margin-bottom: 4px;
+}
+.ob-download-hint {
+  font-size: 12px; color: var(--text3); line-height: 1.6;
+  border-top: 1px solid var(--border); padding-top: 10px; margin-top: 4px;
+}
+
+/* ===== THEME DRAWER ===== */
+.theme-drawer-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,0.6);
+  z-index: 500; display: none; align-items: flex-end;
+}
+.theme-drawer-backdrop.open { display: flex; }
+.theme-drawer {
+  background: var(--bg2); border-radius: 24px 24px 0 0;
+  border-top: 1px solid var(--border); width: 100%;
+  padding: 0 20px 40px; animation: slideUp 0.25s ease;
+}
+.theme-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 10px; margin-bottom: 4px;
+}
+.theme-swatch {
+  border-radius: 12px; border: 2px solid transparent;
+  padding: 12px 10px; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  transition: all 0.15s; position: relative;
+}
+.theme-swatch.active { border-color: var(--accent); }
+.theme-swatch-preview {
+  width: 36px; height: 36px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+.theme-swatch-dot { width: 10px; height: 10px; border-radius: 50%; }
+.theme-swatch-name {
+  font-size: 11px; font-weight: 600; text-align: center; line-height: 1.2;
+}
+.theme-swatch.active::after {
+  content: '✓'; position: absolute; top: 6px; right: 8px;
+  font-size: 11px; font-weight: 700;
+}
+
 
 /* ===== COMPACT MODE (small screen / keyboard open) ===== */
 @media(max-height: 470px) {
@@ -1038,7 +1432,7 @@ window._grammarLoadFailed = false;
             <div id="marathon-input-options" style="display:none;margin:4px 0 2px 0;gap:6px;flex-direction:column">
               <div style="font-size:11px;color:var(--text3);margin-bottom:2px">Режим ответа:</div>
               <div style="display:flex;gap:6px">
-                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:rgba(200,169,110,0.15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600">✍️ Написать</button>
+                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent-a15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600">✍️ Написать</button>
                 <button id="marathon-opt-choice" onclick="setMarathonInputMode('choice')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif">☑️ Выбрать</button>
               </div>
             </div>
@@ -1126,8 +1520,8 @@ window._grammarLoadFailed = false;
     <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 8px">
       <div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--text3);font-weight:600">Прогресс</div>
       <div style="display:flex;gap:4px">
-        <button id="chart-btn-7" onclick="setChartPeriod(7)" style="font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid rgba(200,169,110,0.4);background:rgba(200,169,110,0.12);color:var(--accent);font-family:'DM Sans',sans-serif;cursor:pointer">7д</button>
-        <button id="chart-btn-30" onclick="setChartPeriod(30)" style="font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--text3);font-family:'DM Sans',sans-serif;cursor:pointer">30д</button>
+        <button id="chart-btn-7" onclick="setChartPeriod(7)" class="chart-period-btn chart-period-btn-active">7д</button>
+        <button id="chart-btn-30" onclick="setChartPeriod(30)" class="chart-period-btn">30д</button>
       </div>
     </div>
     <div style="padding:0 20px 8px"><canvas id="progress-chart" height="140" style="width:100%;display:block;border-radius:12px"></canvas></div>
@@ -1165,6 +1559,13 @@ window._grammarLoadFailed = false;
       <div class="page-title">Настр<span>ойки</span></div>
     </div>
     <div class="settings-section">
+      <div class="settings-section-title">Внешний вид</div>
+      <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:10px;padding:12px 16px">
+        <div class="setting-label" style="margin:0">Цветовая тема — <span id="current-theme-label" style="color:var(--accent);font-weight:600"></span></div>
+        <div id="theme-dots-row" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      </div>
+    </div>
+    <div class="settings-section">
       <div class="settings-section-title">Алгоритм обучения</div>
       <div class="setting-row">
         <div><div class="setting-label">Кол-во сессий</div><div class="setting-sub">Для повторения ошибок</div></div>
@@ -1182,29 +1583,33 @@ window._grammarLoadFailed = false;
     </div>
     <div class="settings-section">
       <div class="settings-section-title">Данные</div>
-      <div class="setting-row" style="cursor:pointer" onclick="exportData()">
-        <div><div class="setting-label">Экспорт данных</div><div class="setting-sub">Все карточки, группы, прогресс и настройки</div></div>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <div class="setting-row" style="cursor:pointer" onclick="openSampleDrawer()">
+        <div><div class="setting-label">Тестовые данные</div><div class="setting-sub">Скачать примеры карточек, тестов и глаголов</div></div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
+      <div class="setting-row" style="cursor:pointer" onclick="openExportDrawer()">
+        <div><div class="setting-label">Экспорт данных</div><div class="setting-sub">Полный бэкап или только карточки</div></div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
       </div>
       <div class="setting-row" style="cursor:pointer" onclick="document.getElementById('import-file').click()">
         <div><div class="setting-label">Импорт данных</div><div class="setting-sub">Загрузить JSON — замена, добавление или слияние</div></div>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 5 17 10"/><line x1="12" y1="5" x2="12" y2="17"/></svg>
       </div>
-      <div class="setting-row" style="cursor:pointer" onclick="exportCardsOnly()">
-        <div><div class="setting-label">Экспорт карточек</div><div class="setting-sub">Только карточки и группы (без статистики)</div></div>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      </div>
-      <div class="setting-row" style="cursor:pointer;background:rgba(139,124,248,0.08)" onclick="resetStats()">
-        <div><div class="setting-label">Сбросить статистику</div><div class="setting-sub">Обнулить прогресс, карточки останутся</div></div>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-      </div>
       <div class="setting-row" style="cursor:pointer" onclick="tryPersistFromSettings()" id="persist-settings-row">
         <div><div class="setting-label">Защита хранилища</div><div class="setting-sub" id="persist-settings-sub">Запросить постоянное хранилище у браузера</div></div>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       </div>
-      <div class="setting-row" style="cursor:pointer;background:#502929" onclick="clearData()">
-        <div><div class="setting-label">Очистить данные</div><div class="setting-sub">Сбросит все слова и группы</div></div>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+      <div class="setting-row" style="cursor:pointer" onclick="restartOnboarding()">
+        <div><div class="setting-label">Онбординг</div><div class="setting-sub">Посмотреть приветственный тур заново</div></div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <div class="setting-row" style="cursor:pointer" onclick="resetStats()">
+        <div><div class="setting-label">Сбросить статистику</div><div class="setting-sub">Обнулить прогресс, карточки останутся</div></div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+      </div>
+      <div class="setting-row setting-row-danger" style="cursor:pointer" onclick="clearData()">
+        <div><div class="setting-label" style="color:var(--danger-text)">Очистить данные</div><div class="setting-sub" style="color:rgba(255,255,255,0.7)">Сбросит все слова и группы</div></div>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
       </div>
       <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
     </div>
@@ -1215,7 +1620,7 @@ window._grammarLoadFailed = false;
           <div class="setting-label">Fișki</div>
           <div class="setting-sub">Версия <span id="app-version">—</span></div>
         </div>
-        <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:rgba(200,169,110,0.12);border:1px solid rgba(200,169,110,0.25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
+        <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:var(--accent-a15);border:1px solid var(--accent-a25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
       </div>
     </div>
   </div>
@@ -1232,7 +1637,9 @@ window._grammarLoadFailed = false;
       <div style="text-align:center;padding:8px 0 24px">
         <div style="font-size:48px;margin-bottom:10px">🇷🇴</div>
         <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
-              </div>
+        <div style="font-size:13px;color:var(--text3);margin-bottom:2px">Приложение для изучения румынского</div>
+        <div style="font-size:12px;color:var(--text3)" id="about-version-line">Версия <span id="about-version-span">—</span></div>
+      </div>
       <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
         <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
@@ -1240,13 +1647,76 @@ window._grammarLoadFailed = false;
           <div>🧠 <strong style="color:var(--text)">SRS-алгоритм</strong> — интервальное повторение по SM-2: карточки возвращаются в нужный момент</div>
           <div>🏃 <strong style="color:var(--text)">Марафон</strong> — прогоняй все карточки подряд с умной сортировкой по слабым местам</div>
           <div>📚 <strong style="color:var(--text)">Грамматика</strong> — правила с примерами, организованные по темам</div>
-          <div>📋 <strong style="color:var(--text)">Тесты</strong> — проверь знания по темам с выбором и вводом ответа; загружай свои наборы через JSON</div>
+          <div>📋 <strong style="color:var(--text)">Тесты</strong> — проверь знания с выбором и вводом ответа; загружай свои наборы через JSON</div>
           <div>🔤 <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
           <div>📊 <strong style="color:var(--text)">Статистика</strong> — история сессий, точность ответов и динамика по дням</div>
-          <div>💾 <strong style="color:var(--text)">Импорт и экспорт</strong> — сохраняй все данные в JSON и переноси между устройствами</div>
+          <div>💾 <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
+          <div>🎨 <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
+        </div>
+      </div>
+      <div style="background:var(--bg3);border-radius:12px;padding:14px 16px;margin-bottom:16px">
+        <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:10px">Технологии</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text2)">
+          <div>⚡ Работает офлайн — данные хранятся в IndexedDB прямо в браузере</div>
+          <div>📱 PWA — устанавливается на экран телефона как приложение</div>
+          <div>🔒 Приватно — никаких серверов, всё только на вашем устройстве</div>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- THEME DRAWER -->
+  <div class="theme-drawer-backdrop" id="theme-drawer-backdrop" onclick="if(event.target===this)closeThemeDrawer()">
+    <div class="theme-drawer">
+      <div class="modal-handle"></div>
+      <div class="modal-title" style="margin-bottom:16px">Цветовая тема</div>
+      <div class="theme-grid" id="theme-grid"></div>
+    </div>
+  </div>
+
+  <!-- SAMPLE DATA DRAWER -->
+  <div class="theme-drawer-backdrop" id="sample-drawer-backdrop" onclick="if(event.target===this)closeSampleDrawer()">
+    <div class="theme-drawer">
+      <div class="modal-handle"></div>
+      <div class="modal-title" style="margin-bottom:4px">Тестовые данные</div>
+      <div style="font-size:13px;color:var(--text3);margin-bottom:20px">Скачайте как шаблон — изучите структуру или отдайте нейросети для генерации своих паков</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button onclick="downloadSampleCards();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
+          <div style="font-size:26px;flex-shrink:0">🗂️</div>
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Карточки</div>
+            <div style="font-size:12px;color:var(--text3)">5 слов · импортируется через Настройки → Импорт</div>
+          </div>
+          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </button>
+        <button onclick="downloadSampleTests();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
+          <div style="font-size:26px;flex-shrink:0">📝</div>
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Тесты</div>
+            <div style="font-size:12px;color:var(--text3)">10 вопросов · загружается в Грамматика → Тесты</div>
+          </div>
+          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </button>
+        <button onclick="downloadSampleVerbs();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
+          <div style="font-size:26px;flex-shrink:0">🔤</div>
+          <div>
+            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Глаголы</div>
+            <div style="font-size:12px;color:var(--text3)">5 глаголов · загружается в Грамматика → Глаголы</div>
+          </div>
+          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ONBOARDING OVERLAY -->
+  <div id="onboarding-overlay" style="display:none">
+    <div class="ob-header">
+      <div class="ob-dots" id="ob-dots"></div>
+      <button class="ob-skip-btn" onclick="skipOnboarding()">Пропустить</button>
+    </div>
+    <div class="ob-body" id="ob-body"></div>
+    <div class="ob-footer" id="ob-footer"></div>
   </div>
 
   <!-- SESSION SUMMARY OVERLAY -->
@@ -2410,9 +2880,22 @@ function pluralCards(n) {
   return 'карточек';
 }
 
+// Автосохранение сессии при закрытии вкладки / сворачивании
+window.addEventListener('pagehide', (e) => { if (!e.persisted) saveSessionRecord(); });
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') persistSessionToStorage();
+});
+
 // ===== PWA / SERVICE WORKER =====
+function setVersionFallback(v) {
+  ['app-version', 'about-modal-version', 'about-version-span'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.textContent === '—') el.textContent = v;
+  });
+}
+
 (function initServiceWorker() {
-  if (!('serviceWorker' in navigator)) return;
+  if (!('serviceWorker' in navigator)) { setVersionFallback('н/д'); return; }
 
   // ── Баннер «Доступно обновление» ──────────────────────────────
   function showUpdateBanner(waitingWorker) {
@@ -2485,6 +2968,8 @@ function pluralCards(n) {
       if (e.data?.type === 'VERSION') {
         const el = document.getElementById('app-version');
         if (el) el.textContent = e.data.version;
+        const el3 = document.getElementById('about-version-span');
+        if (el3) el3.textContent = e.data.version;
       }
     });
     // Запрашиваем версию как только воркер готов
@@ -2524,8 +3009,12 @@ function pluralCards(n) {
       reg.update().catch(() => { /* нет сети — не беда */ });
     }, 5_000);
 
+    // Фолбэк: если SW не ответил на GET_VERSION за 3с — показываем «—»
+    setTimeout(() => setVersionFallback('н/д'), 3_000);
+
   }).catch(() => {
-    // Регистрация не удалась (http, приватный режим и т.п.) — молча игнорируем
+    // Регистрация не удалась (http, приватный режим и т.п.)
+    setVersionFallback('н/д');
   });
 
   // Когда новый воркер берёт управление — перезагружаем страницу
@@ -2858,6 +3347,7 @@ async function init() {
   }
   await openTestsDB();
   await openVerbsDB();
+  await recoverPendingSession();
   AppState.groups = await dbGetAll('groups');
   AppState.cards  = await dbGetAll('cards');
 
@@ -2983,7 +3473,7 @@ function showPage(name) {
   if (navBtn) navBtn.classList.add('active');
   if (name === 'stats') { renderStats(); _dirty.stats = false; }
   if (name === 'study') renderReadyScreen();
-  if (name === 'settings') initPersistSettingsRow();
+  if (name === 'settings') { initPersistSettingsRow(); loadSettings(); renderThemeDots(); }
   if (name === 'cards') { if (_initDone) renderCardsPage(); }
   if (name === 'groups') { if (_initDone) renderGroupsPage(); }
   if (name === 'grammar') {
@@ -3499,8 +3989,10 @@ async function renderReadyScreen() {
     } else {
       buildStudyQueue();
       const real = AppState.studyQueue.length;
+      const totalDue = pool.filter(c => isSrsOverdue(c)).length;
+      const extra = totalDue > real ? ` <span style="color:var(--text3);font-weight:400">из ${totalDue}</span>` : '';
       countEl.innerHTML = real > 0
-        ? `<strong>${real}</strong> ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению сегодня`
+        ? `<strong>${real}</strong>${extra} ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению сегодня`
         : 'На сегодня всё повторено 🎉';
     }
   }
@@ -3557,7 +4049,9 @@ async function updateReadyCount() {
   } else {
     buildStudyQueue();
     const real = AppState.studyQueue.length;
-    el.innerHTML = real > 0 ? `<strong>${real}</strong> ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению` : 'На сегодня всё повторено 🎉';
+    const totalDue = pool.filter(c => isSrsOverdue(c)).length;
+    const extra = totalDue > real ? ` <span style="color:var(--text3);font-weight:400">из ${totalDue}</span>` : '';
+    el.innerHTML = real > 0 ? `<strong>${real}</strong>${extra} ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению` : 'На сегодня всё повторено 🎉';
   }
 }
 
@@ -3593,13 +4087,13 @@ function setMarathonInputMode(inputMode) {
   const btnChoice = document.getElementById('marathon-opt-choice');
   if (btnType) {
     btnType.style.border      = inputMode === 'type' ? '1px solid var(--accent)' : '1px solid var(--border)';
-    btnType.style.background  = inputMode === 'type' ? 'rgba(200,169,110,0.15)' : 'transparent';
+    btnType.style.background  = inputMode === 'type' ? 'var(--accent-a15)' : 'transparent';
     btnType.style.color       = inputMode === 'type' ? 'var(--accent)' : 'var(--text3)';
     btnType.style.fontWeight  = inputMode === 'type' ? '600' : 'normal';
   }
   if (btnChoice) {
     btnChoice.style.border     = inputMode === 'choice' ? '1px solid var(--accent)' : '1px solid var(--border)';
-    btnChoice.style.background = inputMode === 'choice' ? 'rgba(200,169,110,0.15)' : 'transparent';
+    btnChoice.style.background = inputMode === 'choice' ? 'var(--accent-a15)' : 'transparent';
     btnChoice.style.color      = inputMode === 'choice' ? 'var(--accent)' : 'var(--text3)';
     btnChoice.style.fontWeight = inputMode === 'choice' ? '600' : 'normal';
   }
@@ -3615,6 +4109,7 @@ async function startSession() {
     ? crypto.randomUUID()
     : Date.now() + '_' + Math.random().toString(36).slice(2, 10);
   AppState.currentSessionId = _uuid;
+  clearPersistedSession();
   const sel = document.getElementById('ready-group-select');
   const gid = sel.value;
   AppState.studyFilter = gid === 'all' ? null : parseInt(gid) || null;
@@ -3639,10 +4134,12 @@ async function startSession() {
     const now = Date.now();
     const MS_PER_DAY = 86400000;
     pool.sort((a, b) => {
-      const efA = a.srsEf ?? EF_DEFAULT;
-      const efB = b.srsEf ?? EF_DEFAULT;
-      const daysA = a.lastSeen ? (now - a.lastSeen) / MS_PER_DAY : 999;
-      const daysB = b.lastSeen ? (now - b.lastSeen) / MS_PER_DAY : 999;
+      const sa = AppState.cardStats.get(a.id);
+      const sb = AppState.cardStats.get(b.id);
+      const efA = sa?.srsEf ?? EF_DEFAULT;
+      const efB = sb?.srsEf ?? EF_DEFAULT;
+      const daysA = sa?.lastSeen ? (now - sa.lastSeen) / MS_PER_DAY : 999;
+      const daysB = sb?.lastSeen ? (now - sb.lastSeen) / MS_PER_DAY : 999;
       // Новые/давно не виденные карточки обогащают начало (больше daysX → меньше score)
       const scoreA = efA / (1 + Math.min(daysA, 30) / 30);
       const scoreB = efB / (1 + Math.min(daysB, 30) / 30);
@@ -3682,18 +4179,56 @@ async function startSession() {
 
 function endSession() {
   invalidateErrorCards();
-  // Save session record
+  saveSessionRecord();
+  renderReadyScreen();
+}
+
+function persistSessionToStorage() {
+  if (!AppState.currentSessionId || !AppState.sessionResults?.length) return;
+  try {
+    localStorage.setItem('pendingSession', JSON.stringify({
+      sessionId: AppState.currentSessionId,
+      date: localDateKey(),
+      results: AppState.sessionResults.map(r => ({ id: r.card.id, correct: r.correct })),
+    }));
+  } catch(e) {}
+}
+
+function clearPersistedSession() {
+  try { localStorage.removeItem('pendingSession'); } catch(e) {}
+}
+
+async function recoverPendingSession() {
+  try {
+    const raw = localStorage.getItem('pendingSession');
+    if (!raw) return;
+    const s = JSON.parse(raw);
+    if (!s?.sessionId || !s?.results?.length) { clearPersistedSession(); return; }
+    const total   = s.results.length;
+    const correct = s.results.filter(r => r.correct).length;
+    const errorIds = s.results.filter(r => !r.correct).map(r => r.id);
+    await putSession({ sessionId: s.sessionId, date: s.date, total, correct, errorIds });
+    clearPersistedSession();
+    console.info(`Восстановлена незавершённая сессия: ${correct}/${total}`);
+    setTimeout(() => showToast(`Сессия восстановлена: ${correct}/${total} ✓`), 1500);
+  } catch(e) {
+    clearPersistedSession();
+  }
+}
+
+function saveSessionRecord() {
   if (AppState.sessionResults && AppState.sessionResults.length > 0) {
-    const total   = AppState.sessionResults.length;
-    const correct = AppState.sessionResults.filter(r => r.correct).length;
+    const total    = AppState.sessionResults.length;
+    const correct  = AppState.sessionResults.filter(r => r.correct).length;
     const errorIds = AppState.sessionResults.filter(r => !r.correct).map(r => r.card.id);
     putSession({
       sessionId: AppState.currentSessionId,
       date: localDateKey(),
       total, correct, errorIds,
     }).catch(e => console.warn('session write failed', e));
+    AppState.sessionResults = [];
+    clearPersistedSession();
   }
-  renderReadyScreen();
 }
 
 // ===== BROWSE MODE =====
@@ -3879,6 +4414,7 @@ async function checkTypeAnswer() {
   const isRetry = !!AppState.sessionRetries[card.id];
   if (!isRetry) await updateCardStats(card.id, isCorrect, similarity);
   if (!isRetry) AppState.sessionResults.push({card: {...card}, correct: isCorrect});
+  persistSessionToStorage();
   if (document.getElementById('page-stats').classList.contains('active')) renderStats();
 
   if (isCorrect) {
@@ -3910,6 +4446,7 @@ async function checkChoice(idx, chosen) {
   const isRetry2 = !!AppState.sessionRetries[card.id];
   if (!isRetry2) await updateCardStats(card.id, isCorrect);
   if (!isRetry2) AppState.sessionResults.push({card: {...card}, correct: isCorrect});
+  persistSessionToStorage();
   // Live stats refresh
   if (document.getElementById('page-stats').classList.contains('active')) renderStats();
 
@@ -4078,10 +4615,10 @@ async function renderStats() {
   if (legend) {
     legend.innerHTML = `
       <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3)">
-        <div style="width:14px;height:10px;border-radius:3px;background:rgba(200,169,110,0.25);flex-shrink:0"></div>Показано
+        <div style="width:14px;height:10px;border-radius:3px;background:var(--accent-a25);flex-shrink:0"></div>Показано
       </div>
       <div style="display:flex;align-items:center;gap:6px;font-size:11px;color:var(--text3)">
-        <div style="width:14px;height:10px;border-radius:3px;background:#5ec49a;flex-shrink:0"></div>Правильно
+        <div style="width:14px;height:10px;border-radius:3px;background:var(--green);flex-shrink:0"></div>Правильно
       </div>`;
   }
 
@@ -4135,10 +4672,8 @@ function setChartPeriod(days) {
   const btn7  = document.getElementById('chart-btn-7');
   const btn30 = document.getElementById('chart-btn-30');
   if (btn7 && btn30) {
-    const activeStyle  = 'font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid rgba(200,169,110,0.4);background:rgba(200,169,110,0.12);color:var(--accent);font-family:\'DM Sans\',sans-serif;cursor:pointer';
-    const inactiveStyle = 'font-size:11px;padding:4px 10px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--text3);font-family:\'DM Sans\',sans-serif;cursor:pointer';
-    btn7.style.cssText  = days === 7  ? activeStyle : inactiveStyle;
-    btn30.style.cssText = days === 30 ? activeStyle : inactiveStyle;
+    btn7.classList.toggle('chart-period-btn-active', days === 7);
+    btn30.classList.toggle('chart-period-btn-active', days === 30);
   }
   drawProgressChart();
 }
@@ -4185,11 +4720,11 @@ async function drawProgressChart() {
   const chartW = W - pad.left - pad.right;
   const chartH = H - pad.top - pad.bottom;
 
-  ctx.fillStyle = '#16162a';
+  ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg2').trim() || '#16162a';
   roundRect(ctx, 0, 0, W, H, 12); ctx.fill();
 
   if (!hasData) {
-    ctx.fillStyle = 'rgba(106,104,96,0.5)';
+    ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text3').trim() || 'rgba(106,104,96,0.5)';
     ctx.font = '13px DM Sans, sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('Данных пока нет — начните учить слова', W / 2, H / 2 + 5);
@@ -4199,13 +4734,18 @@ async function drawProgressChart() {
   const maxVal = Math.max(...dataTotal, 1);
 
   // Grid lines
-  ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+  const gridColor = getComputedStyle(document.documentElement).getPropertyValue('--border').trim() || 'rgba(255,255,255,0.05)';
+  const labelColor = getComputedStyle(document.documentElement).getPropertyValue('--text3').trim() || 'rgba(106,104,96,0.6)';
+  const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#c8a96e';
+  const greenColor = getComputedStyle(document.documentElement).getPropertyValue('--green').trim() || '#5ec49a';
+
+  ctx.strokeStyle = gridColor;
   ctx.lineWidth   = 1;
   for (let i = 0; i <= 3; i++) {
     const y = pad.top + (chartH / 3) * i;
     ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + chartW, y); ctx.stroke();
     if (i < 3) {
-      ctx.fillStyle = 'rgba(106,104,96,0.6)';
+      ctx.fillStyle = labelColor;
       ctx.font = '10px DM Sans, sans-serif';
       ctx.textAlign = 'right';
       ctx.fillText(Math.round(maxVal - (maxVal / 3) * i), pad.left - 4, y + 4);
@@ -4222,12 +4762,12 @@ async function drawProgressChart() {
       const tH = dataTotal[i]   > 0 ? (dataTotal[i]   / maxVal) * chartH : 0;
       const cH = dataCorrect[i] > 0 ? (dataCorrect[i] / maxVal) * chartH : 0;
       if (tH > 0) {
-        ctx.fillStyle = 'rgba(200,169,110,0.15)';
+        ctx.fillStyle = `rgba(${getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '200,169,110'},0.15)`;
         roundRect(ctx, x, pad.top + chartH - tH, bw, tH, 3); ctx.fill();
-        ctx.fillStyle = '#5ec49a';
+        ctx.fillStyle = greenColor;
         roundRect(ctx, x, pad.top + chartH - cH, bw, cH, 3); ctx.fill();
       }
-      ctx.fillStyle = i === days - 1 ? 'rgba(200,169,110,0.8)' : 'rgba(106,104,96,0.7)';
+      ctx.fillStyle = i === days - 1 ? `rgba(${getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '200,169,110'},0.8)` : labelColor;
       ctx.font = `${i === days - 1 ? '600 ' : ''}9px DM Sans, sans-serif`;
       ctx.textAlign = 'center';
       ctx.fillText(labels[i], x + bw / 2, H - 8);
@@ -4263,13 +4803,13 @@ async function drawProgressChart() {
       ctx.stroke();
     }
 
-    drawLine(dataTotal,   'rgba(200,169,110,0.7)', 'rgba(200,169,110,0.06)');
-    drawLine(dataCorrect, '#5ec49a',               'rgba(94,196,154,0.08)');
+    drawLine(dataTotal,   `rgba(${getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '200,169,110'},0.7)`, `rgba(${getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '200,169,110'},0.06)`);
+    drawLine(dataCorrect, greenColor, `rgba(${getComputedStyle(document.documentElement).getPropertyValue('--accent-rgb').trim() || '94,196,154'},0.08)`);
 
     // X-axis labels
     for (let i = 0; i < days; i++) {
       if (!labels[i]) continue;
-      ctx.fillStyle = 'rgba(106,104,96,0.7)';
+      ctx.fillStyle = labelColor;
       ctx.font = '9px DM Sans, sans-serif';
       ctx.textAlign = 'center';
       ctx.fillText(labels[i], xOf(i), H - 8);
@@ -4419,6 +4959,11 @@ function loadSettings() {
   document.getElementById('setting-hard-mode').checked    = AppState.settings.hardMode || false;
   document.getElementById('setting-show-summary').checked = AppState.settings.showSummary !== false;
   document.getElementById('setting-error-sessions').value = AppState.settings.errorSessions || 3;
+  // Refresh theme label
+  try {
+    const t = localStorage.getItem('appTheme') || '';
+    updateThemeUI(t);
+  } catch(e) {}
 }
 
 async function saveSettings() {
@@ -4647,6 +5192,33 @@ function importHasHistory(data) {
   if (data.dailyStats?.some(d => d.total > 0)) return true;
   if (data.version >= 3 && data.cards?.some(c => c.shows > 0)) return true;
   return false;
+}
+
+function openExportDrawer() {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:500;display:flex;align-items:flex-end';
+  overlay.innerHTML = `
+    <div style="background:var(--bg2);border-radius:24px 24px 0 0;border-top:1px solid var(--border);width:100%;padding:20px 20px 40px">
+      <div style="width:36px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 20px"></div>
+      <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px">Экспорт данных</div>
+      <div style="font-size:13px;color:var(--text3);margin-bottom:20px">Выберите что сохранить</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button class="btn btn-primary" style="justify-content:center;padding:14px" data-action="full">Полный бэкап — карточки, прогресс и статистика</button>
+        <button class="btn btn-ghost" style="justify-content:center;padding:14px" data-action="cards">Только карточки — без истории, удобно для переноса</button>
+        <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-action="cancel">Отмена</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', ev => {
+    const btn = ev.target.closest('[data-action]');
+    if (btn) {
+      document.body.removeChild(overlay);
+      if (btn.dataset.action === 'full') exportData();
+      else if (btn.dataset.action === 'cards') exportCardsOnly();
+    } else if (!overlay.firstElementChild.contains(ev.target)) {
+      document.body.removeChild(overlay);
+    }
+  });
 }
 
 function showImportModePicker(data) {
@@ -4889,7 +5461,7 @@ function showBackupReminder() {
   const banner = document.createElement('div');
   banner.style.cssText = `
     position:fixed;bottom:80px;left:12px;right:12px;z-index:300;
-    background:var(--bg2);border:1px solid rgba(200,169,110,0.3);border-radius:14px;
+    background:var(--bg2);border:1px solid var(--accent-a30);border-radius:14px;
     padding:14px 16px;display:flex;align-items:flex-start;gap:12px;
     box-shadow:0 4px 24px rgba(0,0,0,0.4);animation:slideUp 0.3s ease`;
   banner.innerHTML = `
@@ -4897,7 +5469,7 @@ function showBackupReminder() {
     <div style="flex:1;min-width:0">
       <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px">Время сделать бэкап</div>
       <div style="font-size:12px;color:var(--text3);line-height:1.5">Прошла неделя — сохраните прогресс через Настройки → Экспорт данных.</div>
-      <button id="_br_settings" style="margin-top:8px;background:var(--accent);color:#1a1000;border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">Перейти в настройки</button>
+      <button id="_br_settings" style="margin-top:8px;background:var(--accent);color:var(--btn-primary-text);border:none;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">Перейти в настройки</button>
     </div>
     <button id="_br_close" style="background:none;border:none;color:var(--text3);font-size:18px;cursor:pointer;flex-shrink:0;padding:0 0 0 4px;line-height:1">×</button>`;
   document.body.appendChild(banner);
@@ -5124,7 +5696,7 @@ async function renderGrammarTestsHome() {
           <button onclick="deleteTestPack(${pack.id})" title="Удалить" style="background:none;border:none;color:var(--red);font-size:12px;cursor:pointer;padding:2px 5px;opacity:0.5">✕</button>
         </div>
       </div>
-      <button class="gt-topic-btn" onclick="startGrammarTest(null, ${pack.id})" style="border-color:rgba(200,169,110,0.2);background:rgba(200,169,110,0.04)">
+      <button class="gt-topic-btn" onclick="startGrammarTest(null, ${pack.id})" style="border-color:var(--accent-a20);background:var(--accent-a08)">
         <div class="gt-topic-icon">${esc(pack.icon || '📝')}</div>
         <div class="gt-topic-info">
           <div class="gt-topic-name" style="color:var(--accent)">${hasTopics ? 'Все темы вперемешку' : esc(pack.name)}</div>
@@ -5401,7 +5973,418 @@ async function renderGrammarTestResults() {
   </div>`;
 }
 
-init();
+// ===== THEME SYSTEM =====
+const THEMES = [
+  { id: '',          name: 'Полночь',    bg: '#0f0f1a', accent: '#c8a96e', dot: '#c8a96e' },
+  { id: 'forest',    name: 'Лес',        bg: '#0d1a12', accent: '#ff7c5c', dot: '#ff7c5c' },
+  { id: 'ocean',     name: 'Океан',      bg: '#0d1520', accent: '#f0a832', dot: '#f0a832' },
+  { id: 'cherry',    name: 'Вишня',      bg: '#1a0d14', accent: '#5ecfb0', dot: '#5ecfb0' },
+  { id: 'amethyst',  name: 'Аметист',    bg: '#12101a', accent: '#f0926a', dot: '#f0926a' },
+  { id: 'dawn',      name: 'Рассвет',    bg: '#f5f2ed', accent: '#c0602a', dot: '#c0602a' },
+];
+
+function applyTheme(themeId) {
+  if (themeId) {
+    document.documentElement.setAttribute('data-theme', themeId);
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+  try { localStorage.setItem('appTheme', themeId); } catch(e) {}
+  updateThemeUI(themeId);
+}
+
+function updateThemeUI(themeId) {
+  const theme = THEMES.find(t => t.id === themeId) || THEMES[0];
+  const label = document.getElementById('current-theme-label');
+  if (label) label.textContent = theme.name;
+  renderThemeDots(themeId);
+  // Re-render chart if stats page open (colors changed)
+  if (document.getElementById('page-stats')?.classList.contains('active')) {
+    renderStats();
+  }
+}
+
+function renderThemeDots(activeId) {
+  const row = document.getElementById('theme-dots-row');
+  if (!row) return;
+  const currentTheme = activeId !== undefined ? activeId : (document.documentElement.getAttribute('data-theme') || '');
+  row.innerHTML = THEMES.map(t => {
+    const isActive = t.id === currentTheme;
+    return `<button title="${t.name}" onclick="applyTheme('${t.id}');updateThemeUI('${t.id}')"
+      style="width:28px;height:28px;border-radius:50%;background:${t.dot};
+             border:2.5px solid ${isActive ? 'var(--text)' : 'transparent'};
+             cursor:pointer;padding:0;transition:transform 0.15s,border-color 0.15s;
+             box-shadow:${isActive ? '0 0 0 1.5px var(--bg2)' : 'none'};
+             transform:${isActive ? 'scale(1.18)' : 'scale(1)'}"
+      onmouseenter="this.style.transform='scale(1.15)'"
+      onmouseleave="this.style.transform='${isActive ? 'scale(1.18)' : 'scale(1)'}'"></button>`;
+  }).join('');
+}
+
+function restartOnboarding() {
+  try { localStorage.removeItem('onboardingDone'); } catch(e) {}
+  showOnboarding();
+}
+
+function openThemeDrawer() {
+  const backdrop = document.getElementById('theme-drawer-backdrop');
+  const grid = document.getElementById('theme-grid');
+  if (!backdrop || !grid) return;
+  const currentTheme = document.documentElement.getAttribute('data-theme') || '';
+  grid.innerHTML = THEMES.map(t => `
+    <div class="theme-swatch ${t.id === currentTheme ? 'active' : ''}"
+         style="background:${t.bg};color:${t.id==='dawn'?'#2a2418':'#f0eee8'}"
+         onclick="applyTheme('${t.id}');renderThemeGrid();updateThemeUI('${t.id}')">
+      <div class="theme-swatch-preview" style="background:rgba(255,255,255,0.08)">
+        <div class="theme-swatch-dot" style="background:${t.dot}"></div>
+      </div>
+      <div class="theme-swatch-name" style="color:${t.id==='dawn'?'#5a5040':'#a09e98'}">${t.name}</div>
+    </div>`).join('');
+  backdrop.classList.add('open');
+}
+
+function renderThemeGrid() {
+  const grid = document.getElementById('theme-grid');
+  if (!grid) return;
+  const currentTheme = document.documentElement.getAttribute('data-theme') || '';
+  grid.querySelectorAll('.theme-swatch').forEach(sw => {
+    const themeId = sw.getAttribute('onclick').match(/'([^']*)'/)
+    if (themeId) {
+      const id = themeId[1];
+      sw.classList.toggle('active', id === currentTheme);
+    }
+  });
+}
+
+function closeThemeDrawer() {
+  document.getElementById('theme-drawer-backdrop')?.classList.remove('open');
+}
+
+function openSampleDrawer() {
+  document.getElementById('sample-drawer-backdrop')?.classList.add('open');
+}
+function closeSampleDrawer() {
+  document.getElementById('sample-drawer-backdrop')?.classList.remove('open');
+}
+
+function initTheme() {
+  try {
+    const saved = localStorage.getItem('appTheme') || '';
+    applyTheme(saved);
+  } catch(e) {}
+}
+
+// ===== SAMPLE CARDS DATA =====
+const SAMPLE_CARDS_DATA = {
+  version: 3,
+  exported: new Date().toISOString().slice(0, 10),
+  _comment: "Это тестовый набор карточек. Вы можете создавать такие файлы вручную или попросить нейросеть сгенерировать их в таком же формате. Попробуйте промпт: «Создай JSON файл с 20 румынскими словами в формате этого примера».",
+  groups: [{ id: 1, name: "Тестовые слова" }],
+  cards: [
+    { id: 1, groupId: 1, ro: "bună ziua", ru: "добрый день", note: "приветствие" },
+    { id: 2, groupId: 1, ro: "mulțumesc", ru: "спасибо", note: "ț = дж" },
+    { id: 3, groupId: 1, ro: "apă", ru: "вода", note: "ă = краткое а" },
+    { id: 4, groupId: 1, ro: "casă", ru: "дом", note: "" },
+    { id: 5, groupId: 1, ro: "prieteni", ru: "друзья", note: "prietenă — подруга" },
+  ]
+};
+
+function downloadSampleCards() {
+  const data = JSON.stringify(SAMPLE_CARDS_DATA, null, 2);
+  downloadBlob(data, 'romanian-sample-cards.json');
+  showToast('Файл скачан ✓', 'green');
+}
+
+// ===== SAMPLE VERBS DATA =====
+const SAMPLE_VERBS_DATA = {
+  type: "verbPack",
+  name: "Базовые глаголы",
+  icon: "🔤",
+  _comment: "Пак с глаголами для Fișki. Каждый глагол содержит формы для трёх времён: prezent, trecut (perfect compus), viitor. Порядок форм в массиве: eu, tu, el/ea, noi, voi, ei/ele. Попробуйте промпт для нейросети: «Создай JSON-пак глаголов для Fișki в формате этого примера. Добавь глаголы: [список]. Обязательно поля type, name, verbs с id, infinitive, translation, icon и forms с ключами prezent/trecut/viitor, каждый — массив из 6 форм».",
+  verbs: [
+    {
+      id: "a-fi",
+      infinitive: "a fi",
+      translation: "быть",
+      icon: "🟡",
+      forms: {
+        prezent: ["sunt", "ești", "este", "suntem", "sunteți", "sunt"],
+        trecut:  ["am fost", "ai fost", "a fost", "am fost", "ați fost", "au fost"],
+        viitor:  ["voi fi", "vei fi", "va fi", "vom fi", "veți fi", "vor fi"]
+      }
+    },
+    {
+      id: "a-avea",
+      infinitive: "a avea",
+      translation: "иметь",
+      icon: "🤲",
+      forms: {
+        prezent: ["am", "ai", "are", "avem", "aveți", "au"],
+        trecut:  ["am avut", "ai avut", "a avut", "am avut", "ați avut", "au avut"],
+        viitor:  ["voi avea", "vei avea", "va avea", "vom avea", "veți avea", "vor avea"]
+      }
+    },
+    {
+      id: "a-merge",
+      infinitive: "a merge",
+      translation: "идти, ехать",
+      icon: "🚶",
+      forms: {
+        prezent: ["merg", "mergi", "merge", "mergem", "mergeți", "merg"],
+        trecut:  ["am mers", "ai mers", "a mers", "am mers", "ați mers", "au mers"],
+        viitor:  ["voi merge", "vei merge", "va merge", "vom merge", "veți merge", "vor merge"]
+      }
+    },
+    {
+      id: "a-veni",
+      infinitive: "a veni",
+      translation: "приходить",
+      icon: "👋",
+      forms: {
+        prezent: ["vin", "vii", "vine", "venim", "veniți", "vin"],
+        trecut:  ["am venit", "ai venit", "a venit", "am venit", "ați venit", "au venit"],
+        viitor:  ["voi veni", "vei veni", "va veni", "vom veni", "veți veni", "vor veni"]
+      }
+    },
+    {
+      id: "a-face",
+      infinitive: "a face",
+      translation: "делать",
+      icon: "🛠️",
+      forms: {
+        prezent: ["fac", "faci", "face", "facem", "faceți", "fac"],
+        trecut:  ["am făcut", "ai făcut", "a făcut", "am făcut", "ați făcut", "au făcut"],
+        viitor:  ["voi face", "vei face", "va face", "vom face", "veți face", "vor face"]
+      }
+    }
+  ]
+};
+
+function downloadSampleVerbs() {
+  const data = JSON.stringify(SAMPLE_VERBS_DATA, null, 2);
+  downloadBlob(data, 'romanian-sample-verbs.json');
+  showToast('Файл скачан ✓', 'green');
+}
+
+// ===== SAMPLE TESTS DATA =====
+const SAMPLE_TESTS_DATA = {
+  type: "testPack",
+  name: "Приветствия и базовые фразы",
+  icon: "👋",
+  description: "Тест по базовым румынским фразам — приветствия, числа, вежливые слова",
+  _comment: "Пак с тестами для Fișki. Типы вопросов: choice (выбор из вариантов), fill (ввод слова), form (ввод фразы/предложения). Поля: q — вопрос, answer — правильный ответ, options — варианты (только для choice, минимум 2), hint — подсказка (необязательно), topic — категория (необязательно). Попробуйте промпт: «Создай JSON-пак тестов для Fișki в формате этого примера на тему [тема]. Используй все три типа вопросов: choice, fill, form».",
+  topics: {
+    greetings: "Приветствия",
+    numbers: "Числа",
+    polite: "Вежливые слова"
+  },
+  questions: [
+    { q: "Как будет «добрый день» по-румынски?", type: "choice", options: ["bună ziua", "noapte bună", "la revedere", "mulțumesc"], answer: "bună ziua", topic: "greetings" },
+    { q: "Что означает «bună dimineața»?", type: "choice", options: ["доброй ночи", "доброе утро", "добрый вечер", "до свидания"], answer: "доброе утро", topic: "greetings" },
+    { q: "Как сказать «спасибо» по-румынски?", type: "fill", answer: "mulțumesc", hint: "ț = ц, c = к", topic: "polite" },
+    { q: "Переведите: «пожалуйста» (в ответ на благодарность)", type: "choice", options: ["cu plăcere", "pardon", "scuze", "salut"], answer: "cu plăcere", topic: "polite" },
+    { q: "Как будет число 3 по-румынски?", type: "fill", answer: "trei", topic: "numbers" },
+    { q: "Что означает «zece»?", type: "choice", options: ["5", "7", "10", "20"], answer: "10", topic: "numbers" },
+    { q: "Как попрощаться по-румынски (до свидания)?", type: "choice", options: ["salut", "la revedere", "bună", "noroc"], answer: "la revedere", topic: "greetings" },
+    { q: "Напишите фразу «Как вас зовут?»", type: "form", answer: "Cum vă numiți?", hint: "Вежливая форма", topic: "greetings" },
+    { q: "Что значит «scuze»?", type: "choice", options: ["спасибо", "пожалуйста", "извините", "здравствуйте"], answer: "извините", topic: "polite" },
+    { q: "Как будет число 100 по-румынски?", type: "fill", answer: "o sută", hint: "Два слова", topic: "numbers" }
+  ]
+};
+
+function downloadSampleTests() {
+  const data = JSON.stringify(SAMPLE_TESTS_DATA, null, 2);
+  downloadBlob(data, 'romanian-sample-tests.json');
+  showToast('Файл скачан ✓', 'green');
+}
+
+// ===== ONBOARDING =====
+const OB_SCREENS = [
+  {
+    icon: '🇷🇴',
+    title: 'Добро пожаловать в <span>Fișki</span>',
+    desc: 'Приложение для изучения румынского языка с умным повторением карточек, грамматикой и тестами.',
+    features: null,
+    note: null,
+    primaryBtn: null,
+    secondaryBtn: null,
+    nextBtn: 'Далее →',
+  },
+  {
+    icon: '🗂️',
+    title: 'Карт<span>очки</span>',
+    desc: 'Добавляйте слова вручную или загрузите готовый файл. Карточки организованы по группам — например «Еда», «Путешествия», «Глаголы».',
+    features: [
+      { icon: '✍️', title: 'Вручную', sub: 'Нажмите «+ Добавить» в разделе Карточки' },
+      { icon: '📥', title: 'Импорт JSON', sub: 'Загрузите файл через Настройки → Импорт данных' },
+    ],
+    note: '<strong>Совет:</strong> Карточки можно создавать вручную или попросить нейросеть — ChatGPT, Claude и другие отлично генерируют их в нужном формате.',
+    primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
+  },
+  {
+    icon: '🧠',
+    title: 'Умное <span>повторение</span>',
+    desc: 'Алгоритм SRS (интервальное повторение) показывает каждую карточку ровно в тот момент, когда вы вот-вот забудете слово.',
+    features: [
+      { icon: '✍️', title: 'Написать', sub: 'Введите слово по-румынски — самый эффективный режим' },
+      { icon: '☑️', title: 'Выбрать', sub: 'Выберите из 4 вариантов, если хотите попроще' },
+      { icon: '🏃', title: 'Марафон', sub: 'Все карточки подряд — для интенсивной тренировки' },
+    ],
+    note: null, primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
+  },
+  {
+    icon: '📚',
+    title: 'Грам<span>матика</span>',
+    desc: 'Правила языка с примерами и таблицами. Попасть туда просто — на главном экране «Учить» есть иконка книги в правом верхнем углу.',
+    features: [
+      { icon: '📋', title: 'Правила', sub: 'Артикли, падежи, времена — с таблицами и примерами' },
+      { icon: '🔍', title: 'Как открыть', sub: 'Главный экран → иконка 📖 справа вверху' },
+    ],
+    note: null, primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
+  },
+  {
+    icon: '📝',
+    title: 'Тесты и <span>глаголы</span>',
+    desc: 'Тесты по темам и тренажёр спряжений — в разделе Грамматика, вкладки «Тесты» и «Глаголы».',
+    features: [
+      { icon: '📝', title: 'Тесты', sub: 'Загрузите JSON-пак с вопросами и проверьте знания' },
+      { icon: '🔤', title: 'Глаголы', sub: 'Спряжения по временам — тоже нужен JSON-пак с глаголами' },
+    ],
+    note: '<strong>Паки загружаются вручную</strong> — кнопка внутри вкладки «Тесты» или «Глаголы». Скачайте примеры ниже как шаблон для нейросети.',
+    primaryBtn: { label: '⬇️ Скачать пример тестов', action: 'downloadSampleTests()' },
+    secondaryBtn: { label: '⬇️ Скачать пример глаголов', action: 'downloadSampleVerbs()' },
+    nextBtn: 'Далее →',
+  },
+  {
+    icon: '📦',
+    title: 'Скачать тестовые <span>карточки</span>',
+    desc: 'Мы подготовили 5 слов для старта. Это обычный JSON-файл — можно изучить его структуру и попросить нейросеть сгенерировать больше.',
+    features: null,
+    note: '<strong>Нейросеть и карточки:</strong> Попробуйте промпт: «Создай JSON файл с 20 румынскими словами в формате этого примера» — и вставьте содержимое скачанного файла как образец.',
+    primaryBtn: { label: '⬇️ Скачать 5 карточек', action: 'downloadSampleCards()' },
+    secondaryBtn: null,
+    nextBtn: 'Далее →',
+  },
+  {
+    icon: '🚀',
+    title: 'Всё <span>готово!</span>',
+    desc: 'Выберите как начать: загрузите тестовые карточки сразу в приложение или начните с пустого пространства и добавьте слова сами.',
+    features: null,
+    note: null,
+    primaryBtn: null, secondaryBtn: null, nextBtn: null,
+    finalScreen: true,
+  },
+];
+
+let _obStep = 0;
+
+function showOnboarding() {
+  const overlay = document.getElementById('onboarding-overlay');
+  if (!overlay) return;
+  overlay.style.display = 'flex';
+  _obStep = 0;
+  renderObScreen();
+}
+
+function renderObScreen() {
+  const s = OB_SCREENS[_obStep];
+  const total = OB_SCREENS.length;
+
+  // Dots
+  const dotsEl = document.getElementById('ob-dots');
+  if (dotsEl) {
+    dotsEl.innerHTML = OB_SCREENS.map((_, i) =>
+      `<div class="ob-dot ${i === _obStep ? 'active' : ''}"></div>`
+    ).join('');
+  }
+
+  // Body
+  const body = document.getElementById('ob-body');
+  if (body) {
+    let html = `<div class="ob-icon">${s.icon}</div>`;
+    html += `<div class="ob-title">${s.title}</div>`;
+    html += `<div class="ob-desc">${s.desc}</div>`;
+    if (s.features) {
+      html += `<div class="ob-feature-list">`;
+      for (const f of s.features) {
+        html += `<div class="ob-feature">
+          <div class="ob-feature-icon">${f.icon}</div>
+          <div class="ob-feature-text">
+            <div class="ob-feature-title">${f.title}</div>
+            <div class="ob-feature-sub">${f.sub}</div>
+          </div>
+        </div>`;
+      }
+      html += `</div>`;
+    }
+    if (s.note) {
+      html += `<div class="ob-note">${s.note}</div>`;
+    }
+    body.innerHTML = html;
+  }
+
+  // Footer
+  const footer = document.getElementById('ob-footer');
+  if (footer) {
+    if (s.finalScreen) {
+      footer.innerHTML = `
+        <div class="ob-btn-start-pair">
+          <button class="ob-btn-secondary" onclick="obStartWithSample()">📦 Загрузить примеры</button>
+          <button class="ob-btn-primary" onclick="finishOnboarding()">Начать →</button>
+        </div>`;
+    } else {
+      let html = '';
+      if (s.primaryBtn) {
+        html += `<button class="ob-btn-secondary" onclick="${s.primaryBtn.action}">${s.primaryBtn.label}</button>`;
+      }
+      if (s.secondaryBtn) {
+        html += `<button class="ob-btn-secondary" onclick="${s.secondaryBtn.action}">${s.secondaryBtn.label}</button>`;
+      }
+      html += `<button class="ob-btn-primary" onclick="obNext()">${s.nextBtn}</button>`;
+      footer.innerHTML = html;
+    }
+  }
+}
+
+function obNext() {
+  if (_obStep < OB_SCREENS.length - 1) {
+    _obStep++;
+    renderObScreen();
+  }
+}
+
+function skipOnboarding() {
+  finishOnboarding();
+}
+
+function finishOnboarding() {
+  document.getElementById('onboarding-overlay').style.display = 'none';
+  try { localStorage.setItem('onboardingDone', '1'); } catch(e) {}
+}
+
+async function obStartWithSample() {
+  // Import sample cards into the app
+  const data = JSON.parse(JSON.stringify(SAMPLE_CARDS_DATA));
+  await doImportReplace(data);
+  finishOnboarding();
+  showPage('cards');
+  showToast('Тестовые карточки загружены ✓', 'green');
+}
+
+function checkOnboarding() {
+  try {
+    const done = localStorage.getItem('onboardingDone');
+    if (!done) {
+      showOnboarding();
+    }
+  } catch(e) {}
+}
+
+
+initTheme();
+init().then(() => {
+  checkOnboarding();
+});
 </script>
 </body>
 </html>
