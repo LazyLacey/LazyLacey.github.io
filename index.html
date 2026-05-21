@@ -881,7 +881,7 @@ select {
   border: 1px solid var(--border);
   word-break: break-word;
 }
-.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); z-index: 200; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); z-index: 99999; }
 .toast.green > div { border-color: var(--green-a30); color: var(--green); }
 .toast.red > div { border-color: var(--red-a30); color: var(--red); }
 
@@ -2621,6 +2621,12 @@ async function putDailyStats(date, total, correct) {
 
 async function putSession(session) {
   await dbPut('sessions', session);
+  // Increment historical counter in meta
+  try {
+    const rec = await dbGet('meta', 'totalSessionsEver');
+    const next = ((rec?.value) || 0) + 1;
+    await dbPut('meta', { id: 'totalSessionsEver', value: next });
+  } catch(e) {}
   // Prune: keep only last MAX_SESSIONS
   try {
     const all = await dbGetAll('sessions');
@@ -2663,8 +2669,19 @@ async function getBestAccuracy() {
 }
 
 async function getTotalSessions() {
-  const sessions = await dbGetAll('sessions');
-  return sessions.length;
+  try {
+    const rec = await dbGet('meta', 'totalSessionsEver');
+    if (rec?.value) return rec.value;
+    // Counter doesn't exist yet — initialize from current sessions store
+    // (may be capped at MAX_SESSIONS for existing users, but preserves what we know)
+    const sessions = await dbGetAll('sessions');
+    const known = sessions.length;
+    await dbPut('meta', { id: 'totalSessionsEver', value: known });
+    return known;
+  } catch(e) {
+    const sessions = await dbGetAll('sessions');
+    return sessions.length;
+  }
 }
 
 async function getSessionHistory() {
@@ -6363,12 +6380,16 @@ function finishOnboarding() {
 }
 
 async function obStartWithSample() {
-  // Import sample cards into the app
-  const data = JSON.parse(JSON.stringify(SAMPLE_CARDS_DATA));
-  await doImportReplace(data);
-  finishOnboarding();
-  showPage('cards');
-  showToast('Тестовые карточки загружены ✓', 'green');
+  try {
+    const data = JSON.parse(JSON.stringify(SAMPLE_CARDS_DATA));
+    await doImportReplace(data);
+    finishOnboarding();
+    showPage('cards');
+    showToast('Тестовые карточки загружены ✓', 'green');
+  } catch(e) {
+    console.error('obStartWithSample failed', e);
+    showToast('Не удалось загрузить карточки', 'red');
+  }
 }
 
 function checkOnboarding() {
