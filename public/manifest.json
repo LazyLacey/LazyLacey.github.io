@@ -1,7 +1,7 @@
 {
-  "name": "Fișki — учим румынский",
+  "name": "Fișki — учим слова",
   "short_name": "Fișki",
-  "description": "Приложение для изучения румынского языка",
+  "description": "Приложение для изучения языков",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f1a",

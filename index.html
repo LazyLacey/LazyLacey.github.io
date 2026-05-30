@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
-<title>Fișki — учим румынский</title>
+<title>Fișki — учим слова</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -39,7 +39,7 @@ window._grammarLoadFailed = false;
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </button>
         </div>
-        <div class="ready-title">Учим<br>румынский</div>
+        <div class="ready-title" id="ready-study-title">Учим<br>румынский</div>
         <div class="ready-count-line" id="ready-count-line">Загрузка...</div>
       </div>
       <div class="ready-bottom">
@@ -396,8 +396,8 @@ window._grammarLoadFailed = false;
     <div class="modal-title" id="modal-card-title">Новая карточка</div>
     <input type="hidden" id="card-id">
     <div class="form-row">
-      <div class="form-group"><label>Румынский</label><input type="text" id="card-ro" placeholder="cuvânt" autocomplete="off" autocorrect="off"></div>
-      <div class="form-group"><label>Русский</label><input type="text" id="card-ru" placeholder="слово" autocomplete="off"></div>
+      <div class="form-group"><label id="label-card-ro">Румынский</label><input type="text" id="card-ro" placeholder="cuvânt" autocomplete="off" autocorrect="off"></div>
+      <div class="form-group"><label id="label-card-ru">Русский</label><input type="text" id="card-ru" placeholder="слово" autocomplete="off"></div>
     </div>
     <div class="form-group"><label>Группа</label><select id="card-group"></select></div>
     <div class="form-group"><label>Заметка (необязательно)</label><input type="text" id="card-note" placeholder="подсказка или пример" autocomplete="off"></div>
@@ -1670,6 +1670,7 @@ async function init() {
   loadSettings();
   buildStudyQueue();
   renderAll();
+  _applyLangLabels();
   _initDone = true;
 
   // Применяем восстановленный режим к UI кнопок и тексту старта
@@ -1690,6 +1691,16 @@ async function init() {
 
 
 
+
+function _applyLangLabels() {
+  const lang = currentLang();
+  const title = document.getElementById('ready-study-title');
+  if (title) title.innerHTML = `Учим<br>${lang.targetLabel.toLowerCase()}`;
+  const ro = document.getElementById('label-card-ro');
+  const ru = document.getElementById('label-card-ru');
+  if (ro) ro.textContent = lang.targetLabel;
+  if (ru) ru.textContent = lang.nativeLabel;
+}
 
 // ===== DIRTY-FLAG RENDER SYSTEM =====
 // Вместо renderAll() — точечная инвалидация.
@@ -3291,7 +3302,7 @@ async function exportData() {
     sessions,
     settings: AppState.settings,
   }, null, 2);
-  downloadBlob(data, 'romanian-vocab.json');
+  downloadBlob(data, `${currentLang().id}-vocab.json`);
 }
 
 async function exportCardsOnly() {
@@ -3301,7 +3312,7 @@ async function exportCardsOnly() {
     groups: AppState.groups,
     cards:  AppState.cards.map(({id, groupId, ro, ru, note, ex}) => ({id, groupId, ro, ru, note, ex})),
   }, null, 2);
-  downloadBlob(data, 'romanian-cards.json');
+  downloadBlob(data, `${currentLang().id}-cards.json`);
 }
 
 // Конвертация старого бэкапа (v1/v2) в новый формат v3
@@ -3419,7 +3430,7 @@ function exportGroup(groupId) {
       ro: c.ro, ru: c.ru, groupName: g.name, note: c.note || '',
     })),
   };
-  downloadBlob(JSON.stringify(payload, null, 2), `romanian-group-${g.name}.json`);
+  downloadBlob(JSON.stringify(payload, null, 2), `${currentLang().id}-group-${g.name}.json`);
 }
 
 function downloadBlob(text, filename) {
