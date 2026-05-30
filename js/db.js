@@ -123,7 +123,7 @@ function openDB() {
       if (!d.objectStoreNames.contains('sessions'))  d.createObjectStore('sessions', {keyPath:'sessionId'});
       if (e.oldVersion > 0 && e.oldVersion < 6) _migrateV5toV6(tx, d);
     };
-    req.onsuccess = e => { db = e.target.result; resolve(db); };
+    req.onsuccess = e => { db = e.target.result; window.db = db; resolve(db); };
     req.onerror = () => reject(req.error);
   });
 }
@@ -218,7 +218,7 @@ function openTestsDB() {
       }
       if (!d.objectStoreNames.contains('testProgress')) d.createObjectStore('testProgress', {keyPath:'id'});
     };
-    req.onsuccess = e => { testsDb = e.target.result; resolve(testsDb); };
+    req.onsuccess = e => { testsDb = e.target.result; window.testsDb = testsDb; resolve(testsDb); };
     req.onerror = () => reject(req.error);
   });
 }
