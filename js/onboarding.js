@@ -201,3 +201,15 @@ function checkOnboarding() {
     if (!localStorage.getItem('onboardingDone')) showOnboarding();
   } catch(e) {}
 }
+
+// Expose to global scope for onclick handlers and main script
+Object.assign(window, {
+  showOnboarding,
+  checkOnboarding,
+  obNext,
+  skipOnboarding,
+  finishOnboarding,
+  loadReadyPack,
+  obDownloadPrompts,
+  obMarkAction,
+});

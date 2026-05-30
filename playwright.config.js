@@ -15,7 +15,7 @@ module.exports = defineConfig({
     { name: 'mobile-chrome', use: { ...devices['Pixel 5'] } },
   ],
   webServer: {
-    command: 'npx serve . --listen 8080 --no-clipboard',
+    command: 'npx vite --port 8080',
     url: 'http://localhost:8080',
     reuseExistingServer: true,
     stdout: 'ignore',

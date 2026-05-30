@@ -2527,3 +2527,5 @@ grammarTopics.push({
 
 // ES-модуль экспорт
 if (typeof module !== 'undefined') module.exports = { grammarTopics };
+
+window.grammarTopics = grammarTopics;

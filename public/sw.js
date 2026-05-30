@@ -13,7 +13,7 @@ const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
-  '/grammar-content.js',
+  '/js/grammar-content.js',
 ];
 
 // ──────────────────────── УТИЛИТЫ ───────────────────────────

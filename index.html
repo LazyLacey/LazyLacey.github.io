@@ -1385,8 +1385,8 @@ select {
 if (typeof grammarTopics === 'undefined') window.grammarTopics = [];
 window._grammarLoadFailed = false;
 </script>
-<script src="js/grammar-content.js" onerror="window.grammarTopics = []; window._grammarLoadFailed = true;" crossorigin="anonymous"></script>
-<script src="js/onboarding.js"></script>
+<script type="module" src="js/grammar-content.js" onerror="window.grammarTopics = []; window._grammarLoadFailed = true;"></script>
+<script type="module" src="js/onboarding.js"></script>
 
 </head>
 <body>
@@ -3585,8 +3585,9 @@ function renderCardsPage() {
   let filtered = AppState.cards.filter(c => {
     if (AppState.cardFilter !== null && c.groupId !== AppState.cardFilter) return false;
     if (AppState.searchQuery) {
-      const q = AppState.searchQuery.toLowerCase();
-      return c.ro.toLowerCase().includes(q) || c.ru.toLowerCase().includes(q);
+      const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+      const q = norm(AppState.searchQuery);
+      return norm(c.ro).includes(q) || norm(c.ru).includes(q);
     }
     return true;
   });
