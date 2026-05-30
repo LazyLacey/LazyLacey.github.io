@@ -175,7 +175,11 @@ function renderObScreen() {
   const footer = document.getElementById('ob-footer');
   if (footer) {
     if (s.finalScreen) {
-      footer.innerHTML = `<button class="ob-btn-primary" onclick="finishOnboarding()">Начать →</button>`;
+      footer.innerHTML = `
+        <div class="ob-btn-start-pair">
+          <button class="ob-btn-secondary" onclick="obBack()">← Назад</button>
+          <button class="ob-btn-primary" onclick="finishOnboarding()">Начать →</button>
+        </div>`;
     } else {
       footer.innerHTML = `<button class="ob-btn-primary" onclick="obNext()">${s.nextBtn}</button>`;
     }
@@ -187,6 +191,10 @@ function obNext() {
     _obStep++;
     renderObScreen();
   }
+}
+
+function obBack() {
+  if (_obStep > 0) { _obStep--; renderObScreen(); }
 }
 
 function skipOnboarding() { finishOnboarding(); }
@@ -212,4 +220,5 @@ Object.assign(window, {
   loadReadyPack,
   obDownloadPrompts,
   obMarkAction,
+  obBack,
 });
