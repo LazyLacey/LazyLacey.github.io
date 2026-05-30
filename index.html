@@ -1172,6 +1172,7 @@ function setVersionFallback(v) {
 
 (function initServiceWorker() {
   if (!('serviceWorker' in navigator)) { setVersionFallback('н/д'); return; }
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') { setVersionFallback('dev'); return; }
 
   // ── Баннер «Доступно обновление» ──────────────────────────────
   function showUpdateBanner(waitingWorker) {
