@@ -236,7 +236,7 @@ test.describe('Stats — Record block', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp && inp.offsetParent !== null && inp.className === 'type-input');
+          (inp && inp.offsetParent !== null && inp.value === '');
       }, { timeout: 5000 }).catch(() => {});
     }
 

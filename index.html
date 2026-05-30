@@ -212,7 +212,7 @@ window._grammarLoadFailed = false;
         <input class="setting-input" type="number" id="setting-error-sessions" min="1" max="10" value="3">
       </div>
       <div class="setting-row">
-        <div><div class="setting-label">Hard mode 🔥</div><div class="setting-sub">Диакритика обязательна (ă, â, î, ș, ț)</div></div>
+        <div><div class="setting-label">Hard mode 🔥</div><div class="setting-sub" id="hard-mode-sub">Диакритика обязательна (ă, â, î, ș, ț)</div></div>
         <label class="toggle" style="flex-shrink:0"><input type="checkbox" id="setting-hard-mode"><span class="toggle-track"></span></label>
       </div>
       <div class="setting-row">
@@ -1705,6 +1705,8 @@ function _applyLangLabels() {
   const ru = document.getElementById('label-card-ru');
   if (ro) ro.textContent = lang.targetLabel;
   if (ru) ru.textContent = lang.nativeLabel;
+  const hardSub = document.getElementById('hard-mode-sub');
+  if (hardSub) hardSub.textContent = `Диакритика обязательна (${lang.diacriticHints.join(', ')})`;
 }
 
 // ===== DIRTY-FLAG RENDER SYSTEM =====

@@ -102,7 +102,7 @@ test.describe('Study — Errors mode', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp.offsetParent !== null && inp.className === 'type-input');
+          (inp.offsetParent !== null && inp.value === '');
       }, { timeout: 5000 }).catch(() => {});
     }
 

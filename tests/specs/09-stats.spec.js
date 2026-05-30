@@ -68,7 +68,7 @@ test.describe('Stats page', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp.offsetParent !== null && !inp.readOnly);
+          (inp.offsetParent !== null && inp.value === '');
       }, { timeout: 5000 }).catch(() => {});
     }
     await expect(page.locator('#ready-screen')).toBeVisible({ timeout: 5000 });
@@ -117,7 +117,7 @@ test.describe('Stats page', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp.offsetParent !== null && !inp.readOnly);
+          (inp.offsetParent !== null && inp.value === '');
       }, { timeout: 5000 }).catch(() => {});
     }
     await expect(page.locator('#ready-screen')).toBeVisible({ timeout: 5000 });

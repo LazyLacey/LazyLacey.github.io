@@ -22,7 +22,7 @@ async function runSessionAllWrong(page) {
       const inp     = document.getElementById('type-answer');
       return (summary && summary.style.display === 'flex') ||
         (ready && !ready.classList.contains('hidden')) ||
-        (inp && inp.offsetParent !== null && inp.className === 'type-input');
+        (inp && inp.offsetParent !== null && inp.value === '');
     }, { timeout: 5000 }).catch(() => {});
   }
 }
@@ -50,7 +50,7 @@ async function runSessionAllCorrect(page) {
       const inp     = document.getElementById('type-answer');
       return (summary && summary.style.display === 'flex') ||
         (ready && !ready.classList.contains('hidden')) ||
-        (inp && inp.offsetParent !== null && inp.className === 'type-input');
+        (inp && inp.offsetParent !== null && inp.value === '');
     }, { timeout: 5000 }).catch(() => {});
   }
 }
