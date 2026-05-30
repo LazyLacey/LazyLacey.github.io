@@ -4497,8 +4497,10 @@ function downloadSampleTests() {
 
 
 initTheme();
-init().then(() => {
-  checkOnboarding();
+// Deferred modules (js/db.js etc.) execute before DOMContentLoaded —
+// wait for that event so openDB and friends are defined before init() runs.
+document.addEventListener('DOMContentLoaded', () => {
+  init().then(() => { window.checkOnboarding?.(); });
 });
 </script>
 </body>
