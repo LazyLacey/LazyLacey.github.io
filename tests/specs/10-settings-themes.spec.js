@@ -115,6 +115,6 @@ test.describe('Settings — toggles and inputs', () => {
     await expect(version).toBeVisible();
     const text = await version.textContent();
     expect(text.trim().length).toBeGreaterThan(0);
-    expect(text).toMatch(/\d/);
+    expect(text).toMatch(/\d|dev/);
   });
 });

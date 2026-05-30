@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const { resetState, seedTestPack } = require('../helpers/db');
 
-// Pack with a fill-in question as the first (and only) question
+// Pack with a single fill-in question — one question avoids shuffle ambiguity
 const FILL_PACK = {
   type: 'tests',
   name: 'Тест заполни',
@@ -15,14 +15,6 @@ const FILL_PACK = {
       q: 'Неопределённый артикль ж.р.: ___ carte',
       answer: 'o',
       explain: 'Неопределённый артикль ж.р. — o',
-    },
-    {
-      id: 'f2',
-      topic: 't1',
-      type: 'fill',
-      q: 'Определённый артикль м.р.: ___ băiat → ___',
-      answer: 'băiatul',
-      explain: 'Определённый артикль м.р. — суффикс -ul',
     },
   ],
 };
