@@ -39,12 +39,12 @@ function currentLang() {
 
 ---
 
-### Фаза 2 — `js/db.js` (следующее)
+### ✅ Фаза 2 — `js/db.js`
 Вынести все DB-хелперы (`openDB`, `dbGet/Put/GetAll/Clear/Batch` для всех трёх БД) из `index.html` в отдельный файл. ~150 строк. Готовит почву для параметризации.
 
 ---
 
-### Фаза 3 — `js/sample-data-romanian.js`
+### Фаза 3 — `js/sample-data-romanian.js` (следующее)
 Вынести `SAMPLE_CARDS_DATA`, `SAMPLE_VERBS_DATA`, `SAMPLE_TESTS_DATA` из `index.html`. При добавлении нового языка — свой файл `sample-data-italian.js`.
 
 ---
