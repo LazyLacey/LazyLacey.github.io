@@ -21,7 +21,6 @@ window._grammarLoadFailed = false;
 </script>
 <script type="module" src="js/db.js"></script>
 <script type="module" src="js/languages.js"></script>
-<script type="module" src="js/grammar-content.js" onerror="window.grammarTopics = []; window._grammarLoadFailed = true;"></script>
 <script type="module" src="js/onboarding.js"></script>
 <script type="module" src="js/sample-data-romanian.js"></script>
 
@@ -1303,7 +1302,7 @@ function setVersionFallback(v) {
 })();
 
 
-// grammarTopics загружается из grammar-content.js
+// grammarTopics загружается динамически из currentLang().grammarFile в init()
 // ─────────────────────────────────────────────
 // ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
 // ─────────────────────────────────────────────
@@ -1609,6 +1608,12 @@ let _initDone = false;
 
 // ===== INIT =====
 async function init() {
+  try {
+    await import(/* @vite-ignore */ './' + currentLang().grammarFile);
+  } catch(e) {
+    window.grammarTopics = [];
+    window._grammarLoadFailed = true;
+  }
   try {
     await openDB();
   } catch (err) {
