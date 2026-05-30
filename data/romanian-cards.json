@@ -1,0 +1,11376 @@
+{
+  "version": 3,
+  "exported": "2026-05-30",
+  "groups": [
+    {
+      "name": "Еда",
+      "id": 4
+    },
+    {
+      "name": "Глаголы",
+      "id": 5
+    },
+    {
+      "name": "Прилагательные",
+      "id": 6
+    },
+    {
+      "name": "Дом",
+      "id": 7
+    },
+    {
+      "name": "Путешествия",
+      "id": 8
+    },
+    {
+      "name": "Работа",
+      "id": 9
+    },
+    {
+      "name": "Эмоции",
+      "id": 10
+    },
+    {
+      "name": "Цвета",
+      "id": 11
+    },
+    {
+      "name": "Числа",
+      "id": 12
+    },
+    {
+      "name": "Животные",
+      "id": 13
+    },
+    {
+      "name": "Одежда",
+      "id": 14
+    },
+    {
+      "name": "Природа",
+      "id": 15
+    },
+    {
+      "name": "Тело",
+      "id": 16
+    },
+    {
+      "name": "Транспорт",
+      "id": 17
+    },
+    {
+      "name": "Погода",
+      "id": 18
+    },
+    {
+      "name": "Город",
+      "id": 19
+    },
+    {
+      "name": "Магазин",
+      "id": 20
+    },
+    {
+      "name": "Время",
+      "id": 21
+    },
+    {
+      "name": "Общение",
+      "id": 22
+    },
+    {
+      "name": "Здоровье",
+      "id": 23
+    },
+    {
+      "name": "Спорт",
+      "id": 24
+    },
+    {
+      "name": "Учёба",
+      "id": 25
+    },
+    {
+      "name": "Технологии",
+      "id": 26
+    },
+    {
+      "name": "Вопросы",
+      "id": 27
+    },
+    {
+      "name": "Служебные слова",
+      "id": 28
+    },
+    {
+      "name": "Направления",
+      "id": 29
+    },
+    {
+      "name": "Семья",
+      "id": 30
+    },
+    {
+      "name": "Государство",
+      "id": 31
+    },
+    {
+      "name": "Финансы",
+      "id": 32
+    },
+    {
+      "name": "Фигуры",
+      "id": 33
+    },
+    {
+      "name": "Профессии",
+      "id": 34
+    },
+    {
+      "name": "Посуда",
+      "id": 35
+    },
+    {
+      "name": "Культура",
+      "id": 36
+    },
+    {
+      "name": "Новости",
+      "id": 37
+    },
+    {
+      "name": "Материалы",
+      "id": 38
+    },
+    {
+      "name": "Инструменты",
+      "id": 39
+    },
+    {
+      "name": "Наречия",
+      "id": 40
+    },
+    {
+      "name": "Местоимения",
+      "id": 41
+    },
+    {
+      "name": "Внешность",
+      "id": 42
+    },
+    {
+      "name": "Жильё",
+      "id": 43
+    },
+    {
+      "name": "Конституция",
+      "id": 45
+    },
+    {
+      "name": "Молдова",
+      "id": 46
+    }
+  ],
+  "cards": [
+    {
+      "id": 9,
+      "groupId": 11,
+      "ro": "roșu",
+      "ru": "красный",
+      "note": ""
+    },
+    {
+      "id": 10,
+      "groupId": 11,
+      "ro": "albastru",
+      "ru": "синий",
+      "note": ""
+    },
+    {
+      "id": 11,
+      "groupId": 11,
+      "ro": "verde",
+      "ru": "зелёный",
+      "note": ""
+    },
+    {
+      "id": 12,
+      "groupId": 12,
+      "ro": "unu",
+      "ru": "один",
+      "note": ""
+    },
+    {
+      "id": 13,
+      "groupId": 12,
+      "ro": "doi",
+      "ru": "два",
+      "note": ""
+    },
+    {
+      "id": 14,
+      "groupId": 12,
+      "ro": "trei",
+      "ru": "три",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "groupId": 4,
+      "ro": "măr",
+      "ru": "яблоко",
+      "note": ""
+    },
+    {
+      "id": 16,
+      "groupId": 4,
+      "ro": "portocală",
+      "ru": "апельсин",
+      "note": ""
+    },
+    {
+      "id": 17,
+      "groupId": 4,
+      "ro": "lapte",
+      "ru": "молоко",
+      "note": ""
+    },
+    {
+      "id": 18,
+      "groupId": 4,
+      "ro": "ou",
+      "ru": "яйцо",
+      "note": ""
+    },
+    {
+      "id": 19,
+      "groupId": 4,
+      "ro": "unt",
+      "ru": "масло",
+      "note": ""
+    },
+    {
+      "id": 20,
+      "groupId": 4,
+      "ro": "orez",
+      "ru": "рис",
+      "note": ""
+    },
+    {
+      "id": 21,
+      "groupId": 4,
+      "ro": "paste",
+      "ru": "паста",
+      "note": ""
+    },
+    {
+      "id": 22,
+      "groupId": 4,
+      "ro": "pește",
+      "ru": "рыба",
+      "note": ""
+    },
+    {
+      "id": 23,
+      "groupId": 4,
+      "ro": "cartof",
+      "ru": "картофель",
+      "note": ""
+    },
+    {
+      "id": 24,
+      "groupId": 4,
+      "ro": "roșie",
+      "ru": "помидор",
+      "note": ""
+    },
+    {
+      "id": 25,
+      "groupId": 4,
+      "ro": "castravete",
+      "ru": "огурец",
+      "note": ""
+    },
+    {
+      "id": 26,
+      "groupId": 4,
+      "ro": "ceapă",
+      "ru": "лук",
+      "note": ""
+    },
+    {
+      "id": 27,
+      "groupId": 4,
+      "ro": "usturoi",
+      "ru": "чеснок",
+      "note": ""
+    },
+    {
+      "id": 28,
+      "groupId": 4,
+      "ro": "zahăr",
+      "ru": "сахар",
+      "note": ""
+    },
+    {
+      "id": 29,
+      "groupId": 4,
+      "ro": "sare",
+      "ru": "соль",
+      "note": ""
+    },
+    {
+      "id": 30,
+      "groupId": 4,
+      "ro": "piper",
+      "ru": "перец",
+      "note": ""
+    },
+    {
+      "id": 31,
+      "groupId": 4,
+      "ro": "miere",
+      "ru": "мёд",
+      "note": ""
+    },
+    {
+      "id": 32,
+      "groupId": 4,
+      "ro": "prăjitură",
+      "ru": "пирожное",
+      "note": ""
+    },
+    {
+      "id": 33,
+      "groupId": 4,
+      "ro": "înghețată",
+      "ru": "мороженое",
+      "note": ""
+    },
+    {
+      "id": 34,
+      "groupId": 4,
+      "ro": "salată",
+      "ru": "салат",
+      "note": ""
+    },
+    {
+      "id": 35,
+      "groupId": 4,
+      "ro": "cafea",
+      "ru": "кофе",
+      "note": ""
+    },
+    {
+      "id": 36,
+      "groupId": 5,
+      "ro": "a mânca",
+      "ru": "есть",
+      "note": ""
+    },
+    {
+      "id": 37,
+      "groupId": 5,
+      "ro": "a bea",
+      "ru": "пить",
+      "note": ""
+    },
+    {
+      "id": 38,
+      "groupId": 5,
+      "ro": "a scrie",
+      "ru": "писать",
+      "note": ""
+    },
+    {
+      "id": 39,
+      "groupId": 5,
+      "ro": "a citi",
+      "ru": "читать",
+      "note": ""
+    },
+    {
+      "id": 40,
+      "groupId": 5,
+      "ro": "a învăța",
+      "ru": "учить",
+      "note": ""
+    },
+    {
+      "id": 41,
+      "groupId": 5,
+      "ro": "a lucra",
+      "ru": "работать",
+      "note": ""
+    },
+    {
+      "id": 42,
+      "groupId": 5,
+      "ro": "a deschide",
+      "ru": "открывать",
+      "note": ""
+    },
+    {
+      "id": 43,
+      "groupId": 5,
+      "ro": "a închide",
+      "ru": "закрывать",
+      "note": ""
+    },
+    {
+      "id": 44,
+      "groupId": 5,
+      "ro": "a cumpăra",
+      "ru": "покупать",
+      "note": ""
+    },
+    {
+      "id": 45,
+      "groupId": 5,
+      "ro": "a vinde",
+      "ru": "продавать",
+      "note": ""
+    },
+    {
+      "id": 46,
+      "groupId": 5,
+      "ro": "a pleca",
+      "ru": "уходить",
+      "note": ""
+    },
+    {
+      "id": 47,
+      "groupId": 5,
+      "ro": "a veni",
+      "ru": "приходить",
+      "note": ""
+    },
+    {
+      "id": 48,
+      "groupId": 5,
+      "ro": "a ajunge",
+      "ru": "добраться",
+      "note": ""
+    },
+    {
+      "id": 49,
+      "groupId": 5,
+      "ro": "a începe",
+      "ru": "начинать",
+      "note": ""
+    },
+    {
+      "id": 50,
+      "groupId": 5,
+      "ro": "a termina",
+      "ru": "заканчивать",
+      "note": ""
+    },
+    {
+      "id": 51,
+      "groupId": 5,
+      "ro": "a crede",
+      "ru": "верить",
+      "note": ""
+    },
+    {
+      "id": 52,
+      "groupId": 5,
+      "ro": "a încerca",
+      "ru": "пытаться",
+      "note": ""
+    },
+    {
+      "id": 53,
+      "groupId": 5,
+      "ro": "a decide",
+      "ru": "решать",
+      "note": ""
+    },
+    {
+      "id": 54,
+      "groupId": 5,
+      "ro": "a explica",
+      "ru": "объяснять",
+      "note": ""
+    },
+    {
+      "id": 55,
+      "groupId": 5,
+      "ro": "a asculta",
+      "ru": "слушать",
+      "note": ""
+    },
+    {
+      "id": 56,
+      "groupId": 6,
+      "ro": "frumos",
+      "ru": "красивый",
+      "note": ""
+    },
+    {
+      "id": 57,
+      "groupId": 6,
+      "ro": "urât",
+      "ru": "некрасивый",
+      "note": ""
+    },
+    {
+      "id": 58,
+      "groupId": 6,
+      "ro": "nou",
+      "ru": "новый",
+      "note": ""
+    },
+    {
+      "id": 59,
+      "groupId": 6,
+      "ro": "vechi",
+      "ru": "старый",
+      "note": ""
+    },
+    {
+      "id": 60,
+      "groupId": 6,
+      "ro": "ieftin",
+      "ru": "дешёвый",
+      "note": ""
+    },
+    {
+      "id": 61,
+      "groupId": 6,
+      "ro": "scump",
+      "ru": "дорогой",
+      "note": ""
+    },
+    {
+      "id": 62,
+      "groupId": 6,
+      "ro": "ușor",
+      "ru": "лёгкий",
+      "note": ""
+    },
+    {
+      "id": 63,
+      "groupId": 6,
+      "ro": "greu",
+      "ru": "тяжёлый",
+      "note": ""
+    },
+    {
+      "id": 64,
+      "groupId": 6,
+      "ro": "clar",
+      "ru": "ясный / чёткий",
+      "note": ""
+    },
+    {
+      "id": 65,
+      "groupId": 6,
+      "ro": "simplu",
+      "ru": "простой",
+      "note": ""
+    },
+    {
+      "id": 66,
+      "groupId": 6,
+      "ro": "complicat",
+      "ru": "сложный",
+      "note": ""
+    },
+    {
+      "id": 67,
+      "groupId": 6,
+      "ro": "sigur",
+      "ru": "уверенный",
+      "note": "Также: уверен (разг.), конечно, точно"
+    },
+    {
+      "id": 68,
+      "groupId": 6,
+      "ro": "periculos",
+      "ru": "опасный",
+      "note": ""
+    },
+    {
+      "id": 69,
+      "groupId": 6,
+      "ro": "cald",
+      "ru": "тёплый",
+      "note": ""
+    },
+    {
+      "id": 70,
+      "groupId": 6,
+      "ro": "rece",
+      "ru": "холодный",
+      "note": ""
+    },
+    {
+      "id": 71,
+      "groupId": 7,
+      "ro": "bucătărie",
+      "ru": "кухня",
+      "note": ""
+    },
+    {
+      "id": 72,
+      "groupId": 7,
+      "ro": "baie",
+      "ru": "ванная",
+      "note": ""
+    },
+    {
+      "id": 73,
+      "groupId": 7,
+      "ro": "perete",
+      "ru": "стена",
+      "note": ""
+    },
+    {
+      "id": 74,
+      "groupId": 7,
+      "ro": "tavan",
+      "ru": "потолок",
+      "note": ""
+    },
+    {
+      "id": 75,
+      "groupId": 7,
+      "ro": "podea",
+      "ru": "пол",
+      "note": ""
+    },
+    {
+      "id": 76,
+      "groupId": 7,
+      "ro": "lampă",
+      "ru": "лампа",
+      "note": ""
+    },
+    {
+      "id": 77,
+      "groupId": 7,
+      "ro": "dulap",
+      "ru": "шкаф",
+      "note": ""
+    },
+    {
+      "id": 78,
+      "groupId": 7,
+      "ro": "frigider",
+      "ru": "холодильник",
+      "note": ""
+    },
+    {
+      "id": 79,
+      "groupId": 7,
+      "ro": "aragaz",
+      "ru": "плита",
+      "note": ""
+    },
+    {
+      "id": 80,
+      "groupId": 7,
+      "ro": "chiuvetă",
+      "ru": "раковина",
+      "note": ""
+    },
+    {
+      "id": 81,
+      "groupId": 17,
+      "ro": "autobuz",
+      "ru": "автобус",
+      "note": ""
+    },
+    {
+      "id": 82,
+      "groupId": 17,
+      "ro": "taxi",
+      "ru": "такси",
+      "note": ""
+    },
+    {
+      "id": 83,
+      "groupId": 8,
+      "ro": "hartă",
+      "ru": "карта",
+      "note": ""
+    },
+    {
+      "id": 84,
+      "groupId": 8,
+      "ro": "ghid",
+      "ru": "гид",
+      "note": ""
+    },
+    {
+      "id": 85,
+      "groupId": 8,
+      "ro": "valiză",
+      "ru": "чемодан",
+      "note": ""
+    },
+    {
+      "id": 86,
+      "groupId": 8,
+      "ro": "pașaport",
+      "ru": "паспорт",
+      "note": ""
+    },
+    {
+      "id": 87,
+      "groupId": 8,
+      "ro": "graniță",
+      "ru": "граница",
+      "note": "Синоним: frontieră — официальная граница (более формальное)"
+    },
+    {
+      "id": 88,
+      "groupId": 9,
+      "ro": "salariu",
+      "ru": "зарплата",
+      "note": ""
+    },
+    {
+      "id": 89,
+      "groupId": 9,
+      "ro": "contract",
+      "ru": "контракт",
+      "note": ""
+    },
+    {
+      "id": 90,
+      "groupId": 9,
+      "ro": "interviu",
+      "ru": "собеседование",
+      "note": ""
+    },
+    {
+      "id": 91,
+      "groupId": 9,
+      "ro": "carieră",
+      "ru": "карьера",
+      "note": ""
+    },
+    {
+      "id": 92,
+      "groupId": 9,
+      "ro": "responsabilitate",
+      "ru": "ответственность",
+      "note": ""
+    },
+    {
+      "id": 93,
+      "groupId": 10,
+      "ro": "calm",
+      "ru": "спокойный",
+      "note": ""
+    },
+    {
+      "id": 94,
+      "groupId": 10,
+      "ro": "stresat",
+      "ru": "напряжённый",
+      "note": ""
+    },
+    {
+      "id": 95,
+      "groupId": 10,
+      "ro": "mulțumit",
+      "ru": "довольный",
+      "note": ""
+    },
+    {
+      "id": 96,
+      "groupId": 10,
+      "ro": "dezamăgit",
+      "ru": "разочарованный",
+      "note": ""
+    },
+    {
+      "id": 97,
+      "groupId": 10,
+      "ro": "mândru",
+      "ru": "гордый",
+      "note": ""
+    },
+    {
+      "id": 98,
+      "groupId": 7,
+      "ro": "canapea",
+      "ru": "диван",
+      "note": ""
+    },
+    {
+      "id": 99,
+      "groupId": 7,
+      "ro": "covor",
+      "ru": "ковёр",
+      "note": ""
+    },
+    {
+      "id": 100,
+      "groupId": 7,
+      "ro": "oglindă",
+      "ru": "зеркало",
+      "note": ""
+    },
+    {
+      "id": 101,
+      "groupId": 7,
+      "ro": "raft",
+      "ru": "полка",
+      "note": "Полка (дома) — то же слово в магазинном контексте"
+    },
+    {
+      "id": 102,
+      "groupId": 7,
+      "ro": "pernă",
+      "ru": "подушка",
+      "note": ""
+    },
+    {
+      "id": 103,
+      "groupId": 7,
+      "ro": "pătură",
+      "ru": "одеяло",
+      "note": ""
+    },
+    {
+      "id": 104,
+      "groupId": 7,
+      "ro": "televizor",
+      "ru": "телевизор",
+      "note": ""
+    },
+    {
+      "id": 105,
+      "groupId": 7,
+      "ro": "calculator",
+      "ru": "компьютер",
+      "note": ""
+    },
+    {
+      "id": 106,
+      "groupId": 7,
+      "ro": "priză",
+      "ru": "розетка",
+      "note": ""
+    },
+    {
+      "id": 107,
+      "groupId": 7,
+      "ro": "cheie",
+      "ru": "ключ",
+      "note": ""
+    },
+    {
+      "id": 108,
+      "groupId": 7,
+      "ro": "balcon",
+      "ru": "балкон",
+      "note": ""
+    },
+    {
+      "id": 109,
+      "groupId": 7,
+      "ro": "scară",
+      "ru": "лестница",
+      "note": ""
+    },
+    {
+      "id": 110,
+      "groupId": 7,
+      "ro": "garaj",
+      "ru": "гараж",
+      "note": ""
+    },
+    {
+      "id": 111,
+      "groupId": 7,
+      "ro": "curte",
+      "ru": "двор",
+      "note": ""
+    },
+    {
+      "id": 112,
+      "groupId": 7,
+      "ro": "casă",
+      "ru": "дом",
+      "note": ""
+    },
+    {
+      "id": 113,
+      "groupId": 7,
+      "ro": "apartament",
+      "ru": "квартира",
+      "note": ""
+    },
+    {
+      "id": 114,
+      "groupId": 7,
+      "ro": "sonerie",
+      "ru": "звонок",
+      "note": ""
+    },
+    {
+      "id": 115,
+      "groupId": 7,
+      "ro": "interfon",
+      "ru": "домофон",
+      "note": ""
+    },
+    {
+      "id": 116,
+      "groupId": 7,
+      "ro": "sertar",
+      "ru": "ящик",
+      "note": ""
+    },
+    {
+      "id": 117,
+      "groupId": 8,
+      "ro": "direcție",
+      "ru": "направление",
+      "note": ""
+    },
+    {
+      "id": 118,
+      "groupId": 8,
+      "ro": "drum",
+      "ru": "дорога",
+      "note": ""
+    },
+    {
+      "id": 119,
+      "groupId": 8,
+      "ro": "stradă",
+      "ru": "улица",
+      "note": ""
+    },
+    {
+      "id": 120,
+      "groupId": 8,
+      "ro": "oraș",
+      "ru": "город",
+      "note": ""
+    },
+    {
+      "id": 121,
+      "groupId": 8,
+      "ro": "sat",
+      "ru": "деревня",
+      "note": ""
+    },
+    {
+      "id": 122,
+      "groupId": 8,
+      "ro": "centru",
+      "ru": "центр",
+      "note": ""
+    },
+    {
+      "id": 123,
+      "groupId": 8,
+      "ro": "stație",
+      "ru": "станция",
+      "note": ""
+    },
+    {
+      "id": 124,
+      "groupId": 8,
+      "ro": "peron",
+      "ru": "платформа",
+      "note": ""
+    },
+    {
+      "id": 125,
+      "groupId": 8,
+      "ro": "plecare",
+      "ru": "отправление",
+      "note": ""
+    },
+    {
+      "id": 126,
+      "groupId": 8,
+      "ro": "sosire",
+      "ru": "прибытие",
+      "note": ""
+    },
+    {
+      "id": 127,
+      "groupId": 8,
+      "ro": "rezervare",
+      "ru": "бронирование",
+      "note": ""
+    },
+    {
+      "id": 128,
+      "groupId": 8,
+      "ro": "turist",
+      "ru": "турист",
+      "note": ""
+    },
+    {
+      "id": 129,
+      "groupId": 8,
+      "ro": "ghiozdan",
+      "ru": "рюкзак",
+      "note": ""
+    },
+    {
+      "id": 130,
+      "groupId": 8,
+      "ro": "excursie",
+      "ru": "экскурсия",
+      "note": ""
+    },
+    {
+      "id": 131,
+      "groupId": 8,
+      "ro": "destinație",
+      "ru": "пункт назначения",
+      "note": ""
+    },
+    {
+      "id": 132,
+      "groupId": 8,
+      "ro": "ghiseu",
+      "ru": "касса",
+      "note": ""
+    },
+    {
+      "id": 133,
+      "groupId": 8,
+      "ro": "control",
+      "ru": "контроль",
+      "note": ""
+    },
+    {
+      "id": 134,
+      "groupId": 8,
+      "ro": "bagaj",
+      "ru": "багаж",
+      "note": ""
+    },
+    {
+      "id": 135,
+      "groupId": 8,
+      "ro": "traseu",
+      "ru": "маршрут",
+      "note": ""
+    },
+    {
+      "id": 136,
+      "groupId": 9,
+      "ro": "firmă",
+      "ru": "фирма",
+      "note": ""
+    },
+    {
+      "id": 137,
+      "groupId": 9,
+      "ro": "angajat",
+      "ru": "сотрудник",
+      "note": ""
+    },
+    {
+      "id": 138,
+      "groupId": 9,
+      "ro": "angajator",
+      "ru": "работодатель",
+      "note": ""
+    },
+    {
+      "id": 139,
+      "groupId": 9,
+      "ro": "program",
+      "ru": "график",
+      "note": "Омоним: график / программа / расписание"
+    },
+    {
+      "id": 140,
+      "groupId": 9,
+      "ro": "pauză",
+      "ru": "перерыв",
+      "note": ""
+    },
+    {
+      "id": 141,
+      "groupId": 9,
+      "ro": "echipă",
+      "ru": "команда",
+      "note": ""
+    },
+    {
+      "id": 142,
+      "groupId": 9,
+      "ro": "manager",
+      "ru": "менеджер",
+      "note": ""
+    },
+    {
+      "id": 143,
+      "groupId": 9,
+      "ro": "departament",
+      "ru": "отдел",
+      "note": ""
+    },
+    {
+      "id": 144,
+      "groupId": 9,
+      "ro": "raport",
+      "ru": "отчёт",
+      "note": ""
+    },
+    {
+      "id": 145,
+      "groupId": 9,
+      "ro": "document",
+      "ru": "документ",
+      "note": ""
+    },
+    {
+      "id": 146,
+      "groupId": 9,
+      "ro": "semnătură",
+      "ru": "подпись",
+      "note": ""
+    },
+    {
+      "id": 147,
+      "groupId": 9,
+      "ro": "experiență",
+      "ru": "опыт",
+      "note": ""
+    },
+    {
+      "id": 148,
+      "groupId": 9,
+      "ro": "abilitate",
+      "ru": "навык",
+      "note": ""
+    },
+    {
+      "id": 149,
+      "groupId": 9,
+      "ro": "obiectiv",
+      "ru": "цель",
+      "note": ""
+    },
+    {
+      "id": 150,
+      "groupId": 9,
+      "ro": "promovare",
+      "ru": "повышение",
+      "note": ""
+    },
+    {
+      "id": 151,
+      "groupId": 9,
+      "ro": "demisie",
+      "ru": "увольнение",
+      "note": ""
+    },
+    {
+      "id": 152,
+      "groupId": 9,
+      "ro": "training",
+      "ru": "обучение",
+      "note": ""
+    },
+    {
+      "id": 153,
+      "groupId": 9,
+      "ro": "deadline",
+      "ru": "срок",
+      "note": ""
+    },
+    {
+      "id": 154,
+      "groupId": 9,
+      "ro": "productivitate",
+      "ru": "продуктивность",
+      "note": ""
+    },
+    {
+      "id": 155,
+      "groupId": 10,
+      "ro": "teamă",
+      "ru": "страх",
+      "note": ""
+    },
+    {
+      "id": 156,
+      "groupId": 10,
+      "ro": "bucurie",
+      "ru": "радость",
+      "note": ""
+    },
+    {
+      "id": 157,
+      "groupId": 10,
+      "ro": "furie",
+      "ru": "гнев",
+      "note": ""
+    },
+    {
+      "id": 158,
+      "groupId": 10,
+      "ro": "dragoste",
+      "ru": "любовь",
+      "note": ""
+    },
+    {
+      "id": 159,
+      "groupId": 10,
+      "ro": "ură",
+      "ru": "ненависть",
+      "note": ""
+    },
+    {
+      "id": 160,
+      "groupId": 10,
+      "ro": "anxietate",
+      "ru": "тревога",
+      "note": ""
+    },
+    {
+      "id": 161,
+      "groupId": 10,
+      "ro": "speranță",
+      "ru": "надежда",
+      "note": ""
+    },
+    {
+      "id": 162,
+      "groupId": 10,
+      "ro": "rușine",
+      "ru": "стыд",
+      "note": ""
+    },
+    {
+      "id": 163,
+      "groupId": 10,
+      "ro": "invidie",
+      "ru": "зависть",
+      "note": ""
+    },
+    {
+      "id": 164,
+      "groupId": 10,
+      "ro": "entuziasm",
+      "ru": "энтузиазм",
+      "note": ""
+    },
+    {
+      "id": 165,
+      "groupId": 10,
+      "ro": "plictiseală",
+      "ru": "скука",
+      "note": ""
+    },
+    {
+      "id": 166,
+      "groupId": 10,
+      "ro": "neliniște",
+      "ru": "беспокойство",
+      "note": ""
+    },
+    {
+      "id": 167,
+      "groupId": 10,
+      "ro": "recunoștință",
+      "ru": "благодарность",
+      "note": ""
+    },
+    {
+      "id": 168,
+      "groupId": 10,
+      "ro": "vinovăție",
+      "ru": "вина",
+      "note": ""
+    },
+    {
+      "id": 169,
+      "groupId": 10,
+      "ro": "mândrie",
+      "ru": "гордость",
+      "note": ""
+    },
+    {
+      "id": 170,
+      "groupId": 10,
+      "ro": "uimire",
+      "ru": "изумление",
+      "note": ""
+    },
+    {
+      "id": 171,
+      "groupId": 10,
+      "ro": "liniște",
+      "ru": "спокойствие",
+      "note": ""
+    },
+    {
+      "id": 172,
+      "groupId": 10,
+      "ro": "frustrare",
+      "ru": "фрустрация",
+      "note": ""
+    },
+    {
+      "id": 173,
+      "groupId": 10,
+      "ro": "emoție",
+      "ru": "эмоция",
+      "note": ""
+    },
+    {
+      "id": 174,
+      "groupId": 10,
+      "ro": "senzație",
+      "ru": "ощущение",
+      "note": ""
+    },
+    {
+      "id": 175,
+      "groupId": 4,
+      "ro": "iaurt",
+      "ru": "йогурт",
+      "note": ""
+    },
+    {
+      "id": 176,
+      "groupId": 4,
+      "ro": "smântână",
+      "ru": "сметана",
+      "note": ""
+    },
+    {
+      "id": 177,
+      "groupId": 4,
+      "ro": "ciorbă",
+      "ru": "суп (кислый)",
+      "note": ""
+    },
+    {
+      "id": 178,
+      "groupId": 4,
+      "ro": "tocană",
+      "ru": "рагу",
+      "note": ""
+    },
+    {
+      "id": 179,
+      "groupId": 4,
+      "ro": "grătar",
+      "ru": "гриль",
+      "note": ""
+    },
+    {
+      "id": 180,
+      "groupId": 6,
+      "ro": "dulce",
+      "ru": "сладкое",
+      "note": ""
+    },
+    {
+      "id": 181,
+      "groupId": 6,
+      "ro": "acru",
+      "ru": "кислый",
+      "note": ""
+    },
+    {
+      "id": 182,
+      "groupId": 6,
+      "ro": "amar",
+      "ru": "горький",
+      "note": ""
+    },
+    {
+      "id": 183,
+      "groupId": 4,
+      "ro": "gust",
+      "ru": "вкус",
+      "note": ""
+    },
+    {
+      "id": 184,
+      "groupId": 4,
+      "ro": "porție",
+      "ru": "порция",
+      "note": ""
+    },
+    {
+      "id": 185,
+      "groupId": 4,
+      "ro": "meniu",
+      "ru": "меню",
+      "note": ""
+    },
+    {
+      "id": 186,
+      "groupId": 4,
+      "ro": "restaurant",
+      "ru": "ресторан",
+      "note": ""
+    },
+    {
+      "id": 187,
+      "groupId": 4,
+      "ro": "ospătar",
+      "ru": "официант",
+      "note": ""
+    },
+    {
+      "id": 188,
+      "groupId": 4,
+      "ro": "notă",
+      "ru": "счёт / оценка",
+      "note": "Омоним: счёт (ресторан) / оценка (учёба)"
+    },
+    {
+      "id": 189,
+      "groupId": 4,
+      "ro": "micul dejun",
+      "ru": "завтрак",
+      "note": ""
+    },
+    {
+      "id": 190,
+      "groupId": 4,
+      "ro": "prânz",
+      "ru": "обед",
+      "note": ""
+    },
+    {
+      "id": 191,
+      "groupId": 4,
+      "ro": "cină",
+      "ru": "ужин",
+      "note": ""
+    },
+    {
+      "id": 192,
+      "groupId": 4,
+      "ro": "gustare",
+      "ru": "перекус",
+      "note": ""
+    },
+    {
+      "id": 193,
+      "groupId": 4,
+      "ro": "foame",
+      "ru": "голод",
+      "note": ""
+    },
+    {
+      "id": 194,
+      "groupId": 4,
+      "ro": "sete",
+      "ru": "жажда",
+      "note": ""
+    },
+    {
+      "id": 195,
+      "groupId": 5,
+      "ro": "a găsi",
+      "ru": "находить",
+      "note": ""
+    },
+    {
+      "id": 196,
+      "groupId": 5,
+      "ro": "a pierde",
+      "ru": "терять / проигрывать",
+      "note": "Два значения: терять вещь и проигрывать в игре"
+    },
+    {
+      "id": 197,
+      "groupId": 5,
+      "ro": "a desena",
+      "ru": "рисовать",
+      "note": ""
+    },
+    {
+      "id": 198,
+      "groupId": 5,
+      "ro": "a conduce",
+      "ru": "водить",
+      "note": ""
+    },
+    {
+      "id": 199,
+      "groupId": 5,
+      "ro": "a căuta",
+      "ru": "искать",
+      "note": ""
+    },
+    {
+      "id": 200,
+      "groupId": 5,
+      "ro": "a schimba",
+      "ru": "менять",
+      "note": ""
+    },
+    {
+      "id": 201,
+      "groupId": 5,
+      "ro": "a închiria",
+      "ru": "арендовать",
+      "note": ""
+    },
+    {
+      "id": 202,
+      "groupId": 5,
+      "ro": "a vizita",
+      "ru": "посещать",
+      "note": ""
+    },
+    {
+      "id": 203,
+      "groupId": 5,
+      "ro": "a întâlni",
+      "ru": "встречать",
+      "note": ""
+    },
+    {
+      "id": 204,
+      "groupId": 5,
+      "ro": "a răspunde",
+      "ru": "отвечать",
+      "note": ""
+    },
+    {
+      "id": 205,
+      "groupId": 5,
+      "ro": "a întreba",
+      "ru": "спрашивать",
+      "note": ""
+    },
+    {
+      "id": 206,
+      "groupId": 5,
+      "ro": "a plăti",
+      "ru": "платить",
+      "note": ""
+    },
+    {
+      "id": 207,
+      "groupId": 5,
+      "ro": "a trimite",
+      "ru": "отправлять",
+      "note": ""
+    },
+    {
+      "id": 208,
+      "groupId": 5,
+      "ro": "a primi",
+      "ru": "получать",
+      "note": ""
+    },
+    {
+      "id": 209,
+      "groupId": 5,
+      "ro": "a câștiga",
+      "ru": "зарабатывать",
+      "note": ""
+    },
+    {
+      "id": 210,
+      "groupId": 5,
+      "ro": "a rezolva",
+      "ru": "решать (проблему)",
+      "note": ""
+    },
+    {
+      "id": 211,
+      "groupId": 5,
+      "ro": "a înțelege",
+      "ru": "понимать",
+      "note": ""
+    },
+    {
+      "id": 212,
+      "groupId": 6,
+      "ro": "rapid",
+      "ru": "быстрый",
+      "note": ""
+    },
+    {
+      "id": 213,
+      "groupId": 6,
+      "ro": "încet",
+      "ru": "медленный",
+      "note": ""
+    },
+    {
+      "id": 214,
+      "groupId": 6,
+      "ro": "puternic",
+      "ru": "сильный",
+      "note": ""
+    },
+    {
+      "id": 215,
+      "groupId": 6,
+      "ro": "slab",
+      "ru": "слабый",
+      "note": ""
+    },
+    {
+      "id": 216,
+      "groupId": 6,
+      "ro": "curat",
+      "ru": "чистый",
+      "note": ""
+    },
+    {
+      "id": 217,
+      "groupId": 6,
+      "ro": "murdar",
+      "ru": "грязный",
+      "note": ""
+    },
+    {
+      "id": 218,
+      "groupId": 6,
+      "ro": "plin",
+      "ru": "полный",
+      "note": ""
+    },
+    {
+      "id": 219,
+      "groupId": 6,
+      "ro": "gol",
+      "ru": "пустой",
+      "note": "Омоним: пустой (прилаг.) или гол (спорт)"
+    },
+    {
+      "id": 220,
+      "groupId": 6,
+      "ro": "corect",
+      "ru": "правильный",
+      "note": ""
+    },
+    {
+      "id": 221,
+      "groupId": 6,
+      "ro": "greșit",
+      "ru": "неправильный",
+      "note": ""
+    },
+    {
+      "id": 222,
+      "groupId": 6,
+      "ro": "liber",
+      "ru": "свободный",
+      "note": ""
+    },
+    {
+      "id": 223,
+      "groupId": 6,
+      "ro": "ocupat",
+      "ru": "занятый",
+      "note": ""
+    },
+    {
+      "id": 224,
+      "groupId": 6,
+      "ro": "deschis",
+      "ru": "открытый",
+      "note": ""
+    },
+    {
+      "id": 225,
+      "groupId": 6,
+      "ro": "închis",
+      "ru": "закрытый",
+      "note": ""
+    },
+    {
+      "id": 226,
+      "groupId": 6,
+      "ro": "posibil",
+      "ru": "возможный",
+      "note": ""
+    },
+    {
+      "id": 227,
+      "groupId": 6,
+      "ro": "imposibil",
+      "ru": "невозможный",
+      "note": ""
+    },
+    {
+      "id": 228,
+      "groupId": 6,
+      "ro": "adevărat",
+      "ru": "правдивый",
+      "note": ""
+    },
+    {
+      "id": 229,
+      "groupId": 6,
+      "ro": "fals",
+      "ru": "ложный",
+      "note": ""
+    },
+    {
+      "id": 230,
+      "groupId": 6,
+      "ro": "util",
+      "ru": "полезный",
+      "note": ""
+    },
+    {
+      "id": 231,
+      "groupId": 6,
+      "ro": "inutil",
+      "ru": "бесполезный",
+      "note": ""
+    },
+    {
+      "id": 232,
+      "groupId": 13,
+      "ro": "cal",
+      "ru": "лошадь",
+      "note": ""
+    },
+    {
+      "id": 233,
+      "groupId": 13,
+      "ro": "vacă",
+      "ru": "корова",
+      "note": ""
+    },
+    {
+      "id": 234,
+      "groupId": 13,
+      "ro": "oaie",
+      "ru": "овца",
+      "note": ""
+    },
+    {
+      "id": 235,
+      "groupId": 13,
+      "ro": "capră",
+      "ru": "коза",
+      "note": ""
+    },
+    {
+      "id": 236,
+      "groupId": 13,
+      "ro": "porc",
+      "ru": "свинья",
+      "note": ""
+    },
+    {
+      "id": 237,
+      "groupId": 13,
+      "ro": "iepure",
+      "ru": "кролик",
+      "note": ""
+    },
+    {
+      "id": 238,
+      "groupId": 13,
+      "ro": "urs",
+      "ru": "медведь",
+      "note": ""
+    },
+    {
+      "id": 239,
+      "groupId": 13,
+      "ro": "lup",
+      "ru": "волк",
+      "note": ""
+    },
+    {
+      "id": 240,
+      "groupId": 13,
+      "ro": "vulpe",
+      "ru": "лиса",
+      "note": ""
+    },
+    {
+      "id": 241,
+      "groupId": 13,
+      "ro": "leu",
+      "ru": "лев",
+      "note": ""
+    },
+    {
+      "id": 242,
+      "groupId": 14,
+      "ro": "cămașă",
+      "ru": "рубашка",
+      "note": ""
+    },
+    {
+      "id": 243,
+      "groupId": 14,
+      "ro": "tricou",
+      "ru": "футболка",
+      "note": ""
+    },
+    {
+      "id": 244,
+      "groupId": 14,
+      "ro": "pantaloni",
+      "ru": "брюки",
+      "note": ""
+    },
+    {
+      "id": 245,
+      "groupId": 14,
+      "ro": "blugi",
+      "ru": "джинсы",
+      "note": ""
+    },
+    {
+      "id": 246,
+      "groupId": 14,
+      "ro": "rochie",
+      "ru": "платье",
+      "note": ""
+    },
+    {
+      "id": 247,
+      "groupId": 14,
+      "ro": "fustă",
+      "ru": "юбка",
+      "note": ""
+    },
+    {
+      "id": 248,
+      "groupId": 14,
+      "ro": "geacă",
+      "ru": "куртка",
+      "note": ""
+    },
+    {
+      "id": 249,
+      "groupId": 14,
+      "ro": "palton",
+      "ru": "пальто",
+      "note": ""
+    },
+    {
+      "id": 250,
+      "groupId": 14,
+      "ro": "pantofi",
+      "ru": "туфли",
+      "note": ""
+    },
+    {
+      "id": 251,
+      "groupId": 14,
+      "ro": "adidași",
+      "ru": "кроссовки",
+      "note": ""
+    },
+    {
+      "id": 252,
+      "groupId": 15,
+      "ro": "munte",
+      "ru": "гора",
+      "note": ""
+    },
+    {
+      "id": 253,
+      "groupId": 15,
+      "ro": "râu",
+      "ru": "река",
+      "note": ""
+    },
+    {
+      "id": 254,
+      "groupId": 15,
+      "ro": "lac",
+      "ru": "озеро",
+      "note": ""
+    },
+    {
+      "id": 255,
+      "groupId": 15,
+      "ro": "mare",
+      "ru": "море",
+      "note": ""
+    },
+    {
+      "id": 256,
+      "groupId": 15,
+      "ro": "pădure",
+      "ru": "лес",
+      "note": ""
+    },
+    {
+      "id": 257,
+      "groupId": 15,
+      "ro": "cer",
+      "ru": "небо",
+      "note": ""
+    },
+    {
+      "id": 258,
+      "groupId": 18,
+      "ro": "soare",
+      "ru": "солнце",
+      "note": ""
+    },
+    {
+      "id": 259,
+      "groupId": 15,
+      "ro": "lună",
+      "ru": "луна",
+      "note": "Омоним: луна или месяц"
+    },
+    {
+      "id": 260,
+      "groupId": 15,
+      "ro": "stea",
+      "ru": "звезда",
+      "note": ""
+    },
+    {
+      "id": 261,
+      "groupId": 18,
+      "ro": "vânt",
+      "ru": "ветер",
+      "note": ""
+    },
+    {
+      "id": 262,
+      "groupId": 16,
+      "ro": "cap",
+      "ru": "голова",
+      "note": ""
+    },
+    {
+      "id": 263,
+      "groupId": 16,
+      "ro": "ochi",
+      "ru": "глаз",
+      "note": ""
+    },
+    {
+      "id": 264,
+      "groupId": 16,
+      "ro": "nas",
+      "ru": "нос",
+      "note": ""
+    },
+    {
+      "id": 265,
+      "groupId": 16,
+      "ro": "gură",
+      "ru": "рот",
+      "note": ""
+    },
+    {
+      "id": 266,
+      "groupId": 16,
+      "ro": "ureche",
+      "ru": "ухо",
+      "note": ""
+    },
+    {
+      "id": 267,
+      "groupId": 16,
+      "ro": "mână",
+      "ru": "рука",
+      "note": ""
+    },
+    {
+      "id": 268,
+      "groupId": 16,
+      "ro": "picior",
+      "ru": "нога",
+      "note": ""
+    },
+    {
+      "id": 269,
+      "groupId": 16,
+      "ro": "spate",
+      "ru": "спина",
+      "note": ""
+    },
+    {
+      "id": 270,
+      "groupId": 16,
+      "ro": "stomac",
+      "ru": "живот",
+      "note": ""
+    },
+    {
+      "id": 271,
+      "groupId": 16,
+      "ro": "deget",
+      "ru": "палец",
+      "note": ""
+    },
+    {
+      "id": 272,
+      "groupId": 17,
+      "ro": "mașină",
+      "ru": "машина",
+      "note": ""
+    },
+    {
+      "id": 273,
+      "groupId": 17,
+      "ro": "bicicletă",
+      "ru": "велосипед",
+      "note": ""
+    },
+    {
+      "id": 274,
+      "groupId": 17,
+      "ro": "motocicletă",
+      "ru": "мотоцикл",
+      "note": ""
+    },
+    {
+      "id": 275,
+      "groupId": 17,
+      "ro": "tren",
+      "ru": "поезд",
+      "note": ""
+    },
+    {
+      "id": 276,
+      "groupId": 17,
+      "ro": "avion",
+      "ru": "самолёт",
+      "note": ""
+    },
+    {
+      "id": 277,
+      "groupId": 17,
+      "ro": "barcă",
+      "ru": "лодка",
+      "note": ""
+    },
+    {
+      "id": 278,
+      "groupId": 17,
+      "ro": "navă",
+      "ru": "корабль",
+      "note": ""
+    },
+    {
+      "id": 279,
+      "groupId": 17,
+      "ro": "metrou",
+      "ru": "метро",
+      "note": ""
+    },
+    {
+      "id": 280,
+      "groupId": 18,
+      "ro": "ploaie",
+      "ru": "дождь",
+      "note": ""
+    },
+    {
+      "id": 281,
+      "groupId": 18,
+      "ro": "ceață",
+      "ru": "туман",
+      "note": ""
+    },
+    {
+      "id": 282,
+      "groupId": 18,
+      "ro": "nor",
+      "ru": "облако",
+      "note": ""
+    },
+    {
+      "id": 283,
+      "groupId": 18,
+      "ro": "furtună",
+      "ru": "буря",
+      "note": ""
+    },
+    {
+      "id": 284,
+      "groupId": 18,
+      "ro": "fulger",
+      "ru": "молния",
+      "note": ""
+    },
+    {
+      "id": 285,
+      "groupId": 18,
+      "ro": "tunet",
+      "ru": "гром",
+      "note": ""
+    },
+    {
+      "id": 286,
+      "groupId": 18,
+      "ro": "frig",
+      "ru": "холод",
+      "note": ""
+    },
+    {
+      "id": 287,
+      "groupId": 18,
+      "ro": "căldură",
+      "ru": "жара",
+      "note": ""
+    },
+    {
+      "id": 288,
+      "groupId": 18,
+      "ro": "temperatură",
+      "ru": "температура",
+      "note": ""
+    },
+    {
+      "id": 289,
+      "groupId": 19,
+      "ro": "clădire",
+      "ru": "здание",
+      "note": ""
+    },
+    {
+      "id": 290,
+      "groupId": 19,
+      "ro": "piață",
+      "ru": "площадь",
+      "note": ""
+    },
+    {
+      "id": 291,
+      "groupId": 19,
+      "ro": "parc",
+      "ru": "парк",
+      "note": ""
+    },
+    {
+      "id": 292,
+      "groupId": 19,
+      "ro": "magazin",
+      "ru": "магазин",
+      "note": ""
+    },
+    {
+      "id": 293,
+      "groupId": 19,
+      "ro": "școală",
+      "ru": "школа",
+      "note": ""
+    },
+    {
+      "id": 294,
+      "groupId": 19,
+      "ro": "universitate",
+      "ru": "университет",
+      "note": ""
+    },
+    {
+      "id": 295,
+      "groupId": 19,
+      "ro": "bancă",
+      "ru": "банк",
+      "note": ""
+    },
+    {
+      "id": 296,
+      "groupId": 19,
+      "ro": "poștă",
+      "ru": "почта",
+      "note": ""
+    },
+    {
+      "id": 297,
+      "groupId": 19,
+      "ro": "farmacie",
+      "ru": "аптека",
+      "note": ""
+    },
+    {
+      "id": 298,
+      "groupId": 20,
+      "ro": "preț",
+      "ru": "цена",
+      "note": ""
+    },
+    {
+      "id": 299,
+      "groupId": 20,
+      "ro": "reducere",
+      "ru": "скидка",
+      "note": ""
+    },
+    {
+      "id": 300,
+      "groupId": 20,
+      "ro": "ofertă",
+      "ru": "предложение",
+      "note": ""
+    },
+    {
+      "id": 301,
+      "groupId": 20,
+      "ro": "client",
+      "ru": "клиент",
+      "note": ""
+    },
+    {
+      "id": 302,
+      "groupId": 20,
+      "ro": "vânzător",
+      "ru": "продавец",
+      "note": ""
+    },
+    {
+      "id": 303,
+      "groupId": 20,
+      "ro": "bon",
+      "ru": "чек",
+      "note": ""
+    },
+    {
+      "id": 304,
+      "groupId": 20,
+      "ro": "rest",
+      "ru": "сдача",
+      "note": ""
+    },
+    {
+      "id": 305,
+      "groupId": 20,
+      "ro": "produs",
+      "ru": "товар",
+      "note": ""
+    },
+    {
+      "id": 306,
+      "groupId": 21,
+      "ro": "zi",
+      "ru": "день",
+      "note": ""
+    },
+    {
+      "id": 307,
+      "groupId": 21,
+      "ro": "noapte",
+      "ru": "ночь",
+      "note": ""
+    },
+    {
+      "id": 308,
+      "groupId": 21,
+      "ro": "dimineață",
+      "ru": "утро",
+      "note": ""
+    },
+    {
+      "id": 309,
+      "groupId": 21,
+      "ro": "seară",
+      "ru": "вечер",
+      "note": ""
+    },
+    {
+      "id": 310,
+      "groupId": 21,
+      "ro": "oră",
+      "ru": "час",
+      "note": ""
+    },
+    {
+      "id": 311,
+      "groupId": 21,
+      "ro": "minut",
+      "ru": "минута",
+      "note": ""
+    },
+    {
+      "id": 312,
+      "groupId": 21,
+      "ro": "secundă",
+      "ru": "секунда",
+      "note": ""
+    },
+    {
+      "id": 313,
+      "groupId": 21,
+      "ro": "azi",
+      "ru": "сегодня",
+      "note": ""
+    },
+    {
+      "id": 314,
+      "groupId": 21,
+      "ro": "mâine",
+      "ru": "завтра",
+      "note": ""
+    },
+    {
+      "id": 315,
+      "groupId": 21,
+      "ro": "ieri",
+      "ru": "вчера",
+      "note": ""
+    },
+    {
+      "id": 316,
+      "groupId": 22,
+      "ro": "salut",
+      "ru": "привет",
+      "note": ""
+    },
+    {
+      "id": 317,
+      "groupId": 22,
+      "ro": "bună ziua",
+      "ru": "здравствуйте",
+      "note": ""
+    },
+    {
+      "id": 318,
+      "groupId": 22,
+      "ro": "la revedere",
+      "ru": "до свидания",
+      "note": ""
+    },
+    {
+      "id": 319,
+      "groupId": 22,
+      "ro": "mulțumesc",
+      "ru": "спасибо",
+      "note": ""
+    },
+    {
+      "id": 320,
+      "groupId": 22,
+      "ro": "te rog",
+      "ru": "пожалуйста",
+      "note": ""
+    },
+    {
+      "id": 321,
+      "groupId": 22,
+      "ro": "scuze",
+      "ru": "извини",
+      "note": ""
+    },
+    {
+      "id": 322,
+      "groupId": 22,
+      "ro": "da",
+      "ru": "да",
+      "note": ""
+    },
+    {
+      "id": 323,
+      "groupId": 22,
+      "ro": "nu",
+      "ru": "нет",
+      "note": ""
+    },
+    {
+      "id": 324,
+      "groupId": 22,
+      "ro": "poate",
+      "ru": "может быть",
+      "note": ""
+    },
+    {
+      "id": 325,
+      "groupId": 22,
+      "ro": "înțeleg",
+      "ru": "понимаю",
+      "note": ""
+    },
+    {
+      "id": 326,
+      "groupId": 23,
+      "ro": "sănătate",
+      "ru": "здоровье",
+      "note": ""
+    },
+    {
+      "id": 327,
+      "groupId": 23,
+      "ro": "boală",
+      "ru": "болезнь",
+      "note": ""
+    },
+    {
+      "id": 328,
+      "groupId": 23,
+      "ro": "medic",
+      "ru": "врач",
+      "note": ""
+    },
+    {
+      "id": 329,
+      "groupId": 23,
+      "ro": "spital",
+      "ru": "больница",
+      "note": ""
+    },
+    {
+      "id": 330,
+      "groupId": 23,
+      "ro": "tratament",
+      "ru": "лечение",
+      "note": ""
+    },
+    {
+      "id": 331,
+      "groupId": 23,
+      "ro": "pastilă",
+      "ru": "таблетка",
+      "note": ""
+    },
+    {
+      "id": 332,
+      "groupId": 23,
+      "ro": "durere",
+      "ru": "боль",
+      "note": ""
+    },
+    {
+      "id": 333,
+      "groupId": 23,
+      "ro": "febră",
+      "ru": "жар",
+      "note": ""
+    },
+    {
+      "id": 334,
+      "groupId": 23,
+      "ro": "răceală",
+      "ru": "простуда",
+      "note": ""
+    },
+    {
+      "id": 335,
+      "groupId": 23,
+      "ro": "energie",
+      "ru": "энергия",
+      "note": ""
+    },
+    {
+      "id": 336,
+      "groupId": 24,
+      "ro": "sport",
+      "ru": "спорт",
+      "note": ""
+    },
+    {
+      "id": 337,
+      "groupId": 24,
+      "ro": "fotbal",
+      "ru": "футбол",
+      "note": ""
+    },
+    {
+      "id": 338,
+      "groupId": 24,
+      "ro": "baschet",
+      "ru": "баскетбол",
+      "note": ""
+    },
+    {
+      "id": 339,
+      "groupId": 24,
+      "ro": "tenis",
+      "ru": "теннис",
+      "note": ""
+    },
+    {
+      "id": 340,
+      "groupId": 24,
+      "ro": "alergare",
+      "ru": "бег",
+      "note": ""
+    },
+    {
+      "id": 341,
+      "groupId": 24,
+      "ro": "înot",
+      "ru": "плавание",
+      "note": ""
+    },
+    {
+      "id": 342,
+      "groupId": 24,
+      "ro": "antrenament",
+      "ru": "тренировка",
+      "note": ""
+    },
+    {
+      "id": 343,
+      "groupId": 24,
+      "ro": "jucător",
+      "ru": "игрок",
+      "note": ""
+    },
+    {
+      "id": 344,
+      "groupId": 25,
+      "ro": "lecție",
+      "ru": "урок",
+      "note": ""
+    },
+    {
+      "id": 345,
+      "groupId": 25,
+      "ro": "temă",
+      "ru": "домашнее задание",
+      "note": ""
+    },
+    {
+      "id": 346,
+      "groupId": 25,
+      "ro": "examen",
+      "ru": "экзамен",
+      "note": ""
+    },
+    {
+      "id": 347,
+      "groupId": 25,
+      "ro": "student",
+      "ru": "студент",
+      "note": ""
+    },
+    {
+      "id": 348,
+      "groupId": 25,
+      "ro": "profesor",
+      "ru": "преподаватель",
+      "note": ""
+    },
+    {
+      "id": 349,
+      "groupId": 25,
+      "ro": "manual",
+      "ru": "учебник",
+      "note": ""
+    },
+    {
+      "id": 350,
+      "groupId": 25,
+      "ro": "caiet",
+      "ru": "тетрадь",
+      "note": ""
+    },
+    {
+      "id": 351,
+      "groupId": 25,
+      "ro": "pix",
+      "ru": "ручка",
+      "note": ""
+    },
+    {
+      "id": 352,
+      "groupId": 25,
+      "ro": "creion",
+      "ru": "карандаш",
+      "note": ""
+    },
+    {
+      "id": 353,
+      "groupId": 26,
+      "ro": "aplicație",
+      "ru": "приложение",
+      "note": ""
+    },
+    {
+      "id": 354,
+      "groupId": 26,
+      "ro": "parolă",
+      "ru": "пароль",
+      "note": ""
+    },
+    {
+      "id": 355,
+      "groupId": 26,
+      "ro": "cont",
+      "ru": "аккаунт",
+      "note": "Омоним: аккаунт (интернет) или счёт (банк)"
+    },
+    {
+      "id": 356,
+      "groupId": 26,
+      "ro": "rețea",
+      "ru": "сеть",
+      "note": ""
+    },
+    {
+      "id": 357,
+      "groupId": 26,
+      "ro": "date",
+      "ru": "данные",
+      "note": ""
+    },
+    {
+      "id": 358,
+      "groupId": 26,
+      "ro": "fișier",
+      "ru": "файл",
+      "note": ""
+    },
+    {
+      "id": 359,
+      "groupId": 10,
+      "ro": "amabil",
+      "ru": "добрый",
+      "note": ""
+    },
+    {
+      "id": 360,
+      "groupId": 10,
+      "ro": "rău",
+      "ru": "злой",
+      "note": ""
+    },
+    {
+      "id": 361,
+      "groupId": 10,
+      "ro": "prietenos",
+      "ru": "дружелюбный",
+      "note": ""
+    },
+    {
+      "id": 362,
+      "groupId": 10,
+      "ro": "timid",
+      "ru": "застенчивый",
+      "note": ""
+    },
+    {
+      "id": 363,
+      "groupId": 10,
+      "ro": "leneș",
+      "ru": "ленивый",
+      "note": ""
+    },
+    {
+      "id": 364,
+      "groupId": 10,
+      "ro": "harnic",
+      "ru": "трудолюбивый",
+      "note": ""
+    },
+    {
+      "id": 365,
+      "groupId": 10,
+      "ro": "glumeț",
+      "ru": "шутливый",
+      "note": ""
+    },
+    {
+      "id": 366,
+      "groupId": 10,
+      "ro": "optimist",
+      "ru": "оптимистичный",
+      "note": ""
+    },
+    {
+      "id": 367,
+      "groupId": 13,
+      "ro": "girafă",
+      "ru": "жираф",
+      "note": ""
+    },
+    {
+      "id": 368,
+      "groupId": 13,
+      "ro": "elefant",
+      "ru": "слон",
+      "note": ""
+    },
+    {
+      "id": 369,
+      "groupId": 13,
+      "ro": "tigru",
+      "ru": "тигр",
+      "note": ""
+    },
+    {
+      "id": 370,
+      "groupId": 13,
+      "ro": "zebră",
+      "ru": "зебра",
+      "note": ""
+    },
+    {
+      "id": 371,
+      "groupId": 13,
+      "ro": "maimuță",
+      "ru": "обезьяна",
+      "note": ""
+    },
+    {
+      "id": 372,
+      "groupId": 14,
+      "ro": "șapcă",
+      "ru": "кепка",
+      "note": ""
+    },
+    {
+      "id": 373,
+      "groupId": 14,
+      "ro": "mănuși",
+      "ru": "перчатки",
+      "note": ""
+    },
+    {
+      "id": 374,
+      "groupId": 14,
+      "ro": "șosete",
+      "ru": "носки",
+      "note": ""
+    },
+    {
+      "id": 375,
+      "groupId": 14,
+      "ro": "eșarfă",
+      "ru": "шарф",
+      "note": ""
+    },
+    {
+      "id": 376,
+      "groupId": 14,
+      "ro": "curea",
+      "ru": "ремень",
+      "note": ""
+    },
+    {
+      "id": 377,
+      "groupId": 15,
+      "ro": "deal",
+      "ru": "холм",
+      "note": ""
+    },
+    {
+      "id": 378,
+      "groupId": 15,
+      "ro": "plajă",
+      "ru": "пляж",
+      "note": ""
+    },
+    {
+      "id": 379,
+      "groupId": 15,
+      "ro": "nisip",
+      "ru": "песок",
+      "note": ""
+    },
+    {
+      "id": 380,
+      "groupId": 15,
+      "ro": "insulă",
+      "ru": "остров",
+      "note": ""
+    },
+    {
+      "id": 381,
+      "groupId": 15,
+      "ro": "cascadă",
+      "ru": "водопад",
+      "note": ""
+    },
+    {
+      "id": 382,
+      "groupId": 16,
+      "ro": "gât",
+      "ru": "шея",
+      "note": ""
+    },
+    {
+      "id": 383,
+      "groupId": 16,
+      "ro": "umăr",
+      "ru": "плечо",
+      "note": ""
+    },
+    {
+      "id": 384,
+      "groupId": 16,
+      "ro": "genunchi",
+      "ru": "колено",
+      "note": ""
+    },
+    {
+      "id": 385,
+      "groupId": 16,
+      "ro": "cot",
+      "ru": "локоть",
+      "note": ""
+    },
+    {
+      "id": 386,
+      "groupId": 16,
+      "ro": "inimă",
+      "ru": "сердце",
+      "note": ""
+    },
+    {
+      "id": 387,
+      "groupId": 17,
+      "ro": "feribot",
+      "ru": "паром",
+      "note": ""
+    },
+    {
+      "id": 388,
+      "groupId": 17,
+      "ro": "elicopter",
+      "ru": "вертолёт",
+      "note": ""
+    },
+    {
+      "id": 389,
+      "groupId": 17,
+      "ro": "scuter",
+      "ru": "скутер",
+      "note": ""
+    },
+    {
+      "id": 390,
+      "groupId": 17,
+      "ro": "camion",
+      "ru": "грузовик",
+      "note": ""
+    },
+    {
+      "id": 391,
+      "groupId": 18,
+      "ro": "umezeală",
+      "ru": "влажность",
+      "note": ""
+    },
+    {
+      "id": 392,
+      "groupId": 18,
+      "ro": "briză",
+      "ru": "бриз",
+      "note": ""
+    },
+    {
+      "id": 393,
+      "groupId": 18,
+      "ro": "gheață",
+      "ru": "лёд",
+      "note": ""
+    },
+    {
+      "id": 394,
+      "groupId": 18,
+      "ro": "îngheț",
+      "ru": "мороз",
+      "note": ""
+    },
+    {
+      "id": 395,
+      "groupId": 18,
+      "ro": "senin",
+      "ru": "ясно",
+      "note": ""
+    },
+    {
+      "id": 396,
+      "groupId": 19,
+      "ro": "trafic",
+      "ru": "трафик",
+      "note": ""
+    },
+    {
+      "id": 397,
+      "groupId": 19,
+      "ro": "semafor",
+      "ru": "светофор",
+      "note": ""
+    },
+    {
+      "id": 398,
+      "groupId": 19,
+      "ro": "trotuar",
+      "ru": "тротуар",
+      "note": ""
+    },
+    {
+      "id": 399,
+      "groupId": 19,
+      "ro": "intersecție",
+      "ru": "перекрёсток",
+      "note": ""
+    },
+    {
+      "id": 400,
+      "groupId": 19,
+      "ro": "cartier",
+      "ru": "район",
+      "note": ""
+    },
+    {
+      "id": 401,
+      "groupId": 20,
+      "ro": "coș",
+      "ru": "корзина",
+      "note": ""
+    },
+    {
+      "id": 402,
+      "groupId": 20,
+      "ro": "raft",
+      "ru": "полка",
+      "note": "Полка (в магазине) — то же слово в домашнем контексте"
+    },
+    {
+      "id": 403,
+      "groupId": 20,
+      "ro": "etichetă",
+      "ru": "этикетка",
+      "note": ""
+    },
+    {
+      "id": 404,
+      "groupId": 20,
+      "ro": "garanție",
+      "ru": "гарантия",
+      "note": ""
+    },
+    {
+      "id": 405,
+      "groupId": 20,
+      "ro": "ambalaj",
+      "ru": "упаковка",
+      "note": ""
+    },
+    {
+      "id": 406,
+      "groupId": 21,
+      "ro": "săptămână",
+      "ru": "неделя",
+      "note": ""
+    },
+    {
+      "id": 407,
+      "groupId": 21,
+      "ro": "lună",
+      "ru": "месяц",
+      "note": "Омоним: месяц или луна"
+    },
+    {
+      "id": 408,
+      "groupId": 21,
+      "ro": "an",
+      "ru": "год",
+      "note": ""
+    },
+    {
+      "id": 409,
+      "groupId": 21,
+      "ro": "devreme",
+      "ru": "рано",
+      "note": ""
+    },
+    {
+      "id": 410,
+      "groupId": 21,
+      "ro": "târziu",
+      "ru": "поздно",
+      "note": ""
+    },
+    {
+      "id": 411,
+      "groupId": 23,
+      "ro": "simptom",
+      "ru": "симптом",
+      "note": ""
+    },
+    {
+      "id": 412,
+      "groupId": 23,
+      "ro": "consultație",
+      "ru": "консультация",
+      "note": ""
+    },
+    {
+      "id": 413,
+      "groupId": 23,
+      "ro": "rețetă",
+      "ru": "рецепт",
+      "note": ""
+    },
+    {
+      "id": 414,
+      "groupId": 23,
+      "ro": "injecție",
+      "ru": "укол",
+      "note": ""
+    },
+    {
+      "id": 415,
+      "groupId": 23,
+      "ro": "recuperare",
+      "ru": "восстановление",
+      "note": ""
+    },
+    {
+      "id": 416,
+      "groupId": 24,
+      "ro": "stadion",
+      "ru": "стадион",
+      "note": ""
+    },
+    {
+      "id": 417,
+      "groupId": 24,
+      "ro": "arbitru",
+      "ru": "судья",
+      "note": ""
+    },
+    {
+      "id": 418,
+      "groupId": 24,
+      "ro": "scor",
+      "ru": "счёт",
+      "note": ""
+    },
+    {
+      "id": 419,
+      "groupId": 24,
+      "ro": "victorie",
+      "ru": "победа",
+      "note": ""
+    },
+    {
+      "id": 420,
+      "groupId": 24,
+      "ro": "înfrângere",
+      "ru": "поражение",
+      "note": ""
+    },
+    {
+      "id": 421,
+      "groupId": 25,
+      "ro": "bibliotecă",
+      "ru": "библиотека",
+      "note": "Омоним: библиотека (здание) или книжный шкаф (мебель)"
+    },
+    {
+      "id": 422,
+      "groupId": 25,
+      "ro": "curs",
+      "ru": "курс",
+      "note": ""
+    },
+    {
+      "id": 423,
+      "groupId": 25,
+      "ro": "diplomă",
+      "ru": "диплом",
+      "note": ""
+    },
+    {
+      "id": 424,
+      "groupId": 25,
+      "ro": "absență",
+      "ru": "пропуск",
+      "note": ""
+    },
+    {
+      "id": 425,
+      "groupId": 25,
+      "ro": "prezență",
+      "ru": "посещение",
+      "note": ""
+    },
+    {
+      "id": 426,
+      "groupId": 26,
+      "ro": "program",
+      "ru": "программа",
+      "note": "Омоним: программа / график / расписание"
+    },
+    {
+      "id": 427,
+      "groupId": 26,
+      "ro": "descărcare",
+      "ru": "загрузка",
+      "note": ""
+    },
+    {
+      "id": 428,
+      "groupId": 26,
+      "ro": "actualizare",
+      "ru": "обновление",
+      "note": ""
+    },
+    {
+      "id": 429,
+      "groupId": 26,
+      "ro": "ecran",
+      "ru": "экран",
+      "note": ""
+    },
+    {
+      "id": 430,
+      "groupId": 26,
+      "ro": "tastatură",
+      "ru": "клавиатура",
+      "note": ""
+    },
+    {
+      "id": 431,
+      "groupId": 10,
+      "ro": "generos",
+      "ru": "щедрый",
+      "note": ""
+    },
+    {
+      "id": 432,
+      "groupId": 10,
+      "ro": "egoist",
+      "ru": "эгоистичный",
+      "note": ""
+    },
+    {
+      "id": 433,
+      "groupId": 10,
+      "ro": "sincer",
+      "ru": "честный",
+      "note": ""
+    },
+    {
+      "id": 434,
+      "groupId": 10,
+      "ro": "mincinos",
+      "ru": "лживый",
+      "note": ""
+    },
+    {
+      "id": 435,
+      "groupId": 10,
+      "ro": "responsabil",
+      "ru": "ответственный",
+      "note": ""
+    },
+    {
+      "id": 436,
+      "groupId": 13,
+      "ro": "delfin",
+      "ru": "дельфин",
+      "note": ""
+    },
+    {
+      "id": 437,
+      "groupId": 13,
+      "ro": "rechin",
+      "ru": "акула",
+      "note": ""
+    },
+    {
+      "id": 438,
+      "groupId": 13,
+      "ro": "broască",
+      "ru": "лягушка",
+      "note": ""
+    },
+    {
+      "id": 439,
+      "groupId": 13,
+      "ro": "șarpe",
+      "ru": "змея",
+      "note": ""
+    },
+    {
+      "id": 440,
+      "groupId": 13,
+      "ro": "vultur",
+      "ru": "орёл",
+      "note": ""
+    },
+    {
+      "id": 441,
+      "groupId": 14,
+      "ro": "hanorac",
+      "ru": "худи",
+      "note": ""
+    },
+    {
+      "id": 442,
+      "groupId": 14,
+      "ro": "costum",
+      "ru": "костюм",
+      "note": ""
+    },
+    {
+      "id": 443,
+      "groupId": 14,
+      "ro": "cravată",
+      "ru": "галстук",
+      "note": ""
+    },
+    {
+      "id": 444,
+      "groupId": 14,
+      "ro": "sandale",
+      "ru": "сандалии",
+      "note": ""
+    },
+    {
+      "id": 445,
+      "groupId": 14,
+      "ro": "papuci",
+      "ru": "тапки",
+      "note": ""
+    },
+    {
+      "id": 446,
+      "groupId": 15,
+      "ro": "câmp",
+      "ru": "поле",
+      "note": ""
+    },
+    {
+      "id": 447,
+      "groupId": 15,
+      "ro": "vale",
+      "ru": "долина",
+      "note": ""
+    },
+    {
+      "id": 448,
+      "groupId": 15,
+      "ro": "stâncă",
+      "ru": "скала",
+      "note": ""
+    },
+    {
+      "id": 449,
+      "groupId": 15,
+      "ro": "ghețar",
+      "ru": "ледник",
+      "note": ""
+    },
+    {
+      "id": 450,
+      "groupId": 16,
+      "ro": "frunte",
+      "ru": "лоб",
+      "note": ""
+    },
+    {
+      "id": 451,
+      "groupId": 16,
+      "ro": "sprânceană",
+      "ru": "бровь",
+      "note": ""
+    },
+    {
+      "id": 452,
+      "groupId": 16,
+      "ro": "pleoapă",
+      "ru": "веко",
+      "note": ""
+    },
+    {
+      "id": 453,
+      "groupId": 16,
+      "ro": "buze",
+      "ru": "губы",
+      "note": ""
+    },
+    {
+      "id": 454,
+      "groupId": 16,
+      "ro": "dinte",
+      "ru": "зуб",
+      "note": ""
+    },
+    {
+      "id": 455,
+      "groupId": 17,
+      "ro": "microbuz",
+      "ru": "микроавтобус",
+      "note": ""
+    },
+    {
+      "id": 456,
+      "groupId": 17,
+      "ro": "telecabină",
+      "ru": "канатная дорога",
+      "note": ""
+    },
+    {
+      "id": 457,
+      "groupId": 18,
+      "ro": "averse",
+      "ru": "ливни",
+      "note": ""
+    },
+    {
+      "id": 458,
+      "groupId": 18,
+      "ro": "caniculă",
+      "ru": "зной",
+      "note": ""
+    },
+    {
+      "id": 459,
+      "groupId": 18,
+      "ro": "rouă",
+      "ru": "роса",
+      "note": ""
+    },
+    {
+      "id": 460,
+      "groupId": 19,
+      "ro": "gară",
+      "ru": "вокзал",
+      "note": ""
+    },
+    {
+      "id": 461,
+      "groupId": 19,
+      "ro": "pasaj",
+      "ru": "переход",
+      "note": ""
+    },
+    {
+      "id": 462,
+      "groupId": 19,
+      "ro": "parcare",
+      "ru": "парковка",
+      "note": ""
+    },
+    {
+      "id": 463,
+      "groupId": 19,
+      "ro": "benzinărie",
+      "ru": "заправка",
+      "note": ""
+    },
+    {
+      "id": 464,
+      "groupId": 20,
+      "ro": "stoc",
+      "ru": "запас",
+      "note": ""
+    },
+    {
+      "id": 465,
+      "groupId": 20,
+      "ro": "comandă",
+      "ru": "заказ",
+      "note": ""
+    },
+    {
+      "id": 466,
+      "groupId": 20,
+      "ro": "livrare",
+      "ru": "доставка",
+      "note": ""
+    },
+    {
+      "id": 467,
+      "groupId": 20,
+      "ro": "retur",
+      "ru": "возврат",
+      "note": ""
+    },
+    {
+      "id": 468,
+      "groupId": 21,
+      "ro": "clipă",
+      "ru": "мгновение",
+      "note": ""
+    },
+    {
+      "id": 469,
+      "groupId": 21,
+      "ro": "perioadă",
+      "ru": "период",
+      "note": ""
+    },
+    {
+      "id": 470,
+      "groupId": 21,
+      "ro": "calendar",
+      "ru": "календарь",
+      "note": ""
+    },
+    {
+      "id": 471,
+      "groupId": 21,
+      "ro": "programare",
+      "ru": "запись",
+      "note": ""
+    },
+    {
+      "id": 472,
+      "groupId": 21,
+      "ro": "durată",
+      "ru": "длительность",
+      "note": ""
+    },
+    {
+      "id": 473,
+      "groupId": 22,
+      "ro": "explicație",
+      "ru": "объяснение",
+      "note": ""
+    },
+    {
+      "id": 474,
+      "groupId": 22,
+      "ro": "răspuns",
+      "ru": "ответ",
+      "note": ""
+    },
+    {
+      "id": 475,
+      "groupId": 22,
+      "ro": "întrebare",
+      "ru": "вопрос",
+      "note": ""
+    },
+    {
+      "id": 476,
+      "groupId": 22,
+      "ro": "discuție",
+      "ru": "разговор",
+      "note": ""
+    },
+    {
+      "id": 477,
+      "groupId": 22,
+      "ro": "opinie",
+      "ru": "мнение",
+      "note": ""
+    },
+    {
+      "id": 478,
+      "groupId": 23,
+      "ro": "vindecare",
+      "ru": "исцеление",
+      "note": ""
+    },
+    {
+      "id": 479,
+      "groupId": 23,
+      "ro": "analiză",
+      "ru": "анализ",
+      "note": ""
+    },
+    {
+      "id": 480,
+      "groupId": 23,
+      "ro": "dietă",
+      "ru": "диета",
+      "note": ""
+    },
+    {
+      "id": 481,
+      "groupId": 23,
+      "ro": "odihnă",
+      "ru": "отдых",
+      "note": ""
+    },
+    {
+      "id": 482,
+      "groupId": 24,
+      "ro": "echipament",
+      "ru": "экипировка",
+      "note": ""
+    },
+    {
+      "id": 483,
+      "groupId": 24,
+      "ro": "teren",
+      "ru": "поле (спорт)",
+      "note": ""
+    },
+    {
+      "id": 484,
+      "groupId": 24,
+      "ro": "campionat",
+      "ru": "чемпионат",
+      "note": ""
+    },
+    {
+      "id": 485,
+      "groupId": 24,
+      "ro": "antrenor",
+      "ru": "тренер",
+      "note": ""
+    },
+    {
+      "id": 486,
+      "groupId": 24,
+      "ro": "performanță",
+      "ru": "результат",
+      "note": ""
+    },
+    {
+      "id": 487,
+      "groupId": 25,
+      "ro": "seminar",
+      "ru": "семинар",
+      "note": ""
+    },
+    {
+      "id": 488,
+      "groupId": 25,
+      "ro": "proiect",
+      "ru": "проект",
+      "note": ""
+    },
+    {
+      "id": 489,
+      "groupId": 25,
+      "ro": "evaluare",
+      "ru": "оценивание",
+      "note": ""
+    },
+    {
+      "id": 490,
+      "groupId": 25,
+      "ro": "specialitate",
+      "ru": "специальность",
+      "note": ""
+    },
+    {
+      "id": 491,
+      "groupId": 26,
+      "ro": "programator",
+      "ru": "программист",
+      "note": ""
+    },
+    {
+      "id": 492,
+      "groupId": 26,
+      "ro": "interfață",
+      "ru": "интерфейс",
+      "note": ""
+    },
+    {
+      "id": 493,
+      "groupId": 10,
+      "ro": "modest",
+      "ru": "скромный",
+      "note": ""
+    },
+    {
+      "id": 494,
+      "groupId": 10,
+      "ro": "arogant",
+      "ru": "высокомерный",
+      "note": ""
+    },
+    {
+      "id": 495,
+      "groupId": 10,
+      "ro": "sensibil",
+      "ru": "чувствительный",
+      "note": ""
+    },
+    {
+      "id": 496,
+      "groupId": 10,
+      "ro": "dur",
+      "ru": "жёсткий",
+      "note": ""
+    },
+    {
+      "id": 497,
+      "groupId": 10,
+      "ro": "încrezător",
+      "ru": "уверенный",
+      "note": ""
+    },
+    {
+      "id": 498,
+      "groupId": 13,
+      "ro": "căprioară",
+      "ru": "олень",
+      "note": ""
+    },
+    {
+      "id": 499,
+      "groupId": 13,
+      "ro": "bufniță",
+      "ru": "сова",
+      "note": ""
+    },
+    {
+      "id": 500,
+      "groupId": 13,
+      "ro": "pinguin",
+      "ru": "пингвин",
+      "note": ""
+    },
+    {
+      "id": 501,
+      "groupId": 13,
+      "ro": "cangur",
+      "ru": "кенгуру",
+      "note": ""
+    },
+    {
+      "id": 502,
+      "groupId": 14,
+      "ro": "vestă",
+      "ru": "жилет",
+      "note": ""
+    },
+    {
+      "id": 503,
+      "groupId": 14,
+      "ro": "pulover",
+      "ru": "свитер",
+      "note": ""
+    },
+    {
+      "id": 504,
+      "groupId": 14,
+      "ro": "pijama",
+      "ru": "пижама",
+      "note": ""
+    },
+    {
+      "id": 505,
+      "groupId": 14,
+      "ro": "costum de baie",
+      "ru": "купальник",
+      "note": ""
+    },
+    {
+      "id": 506,
+      "groupId": 14,
+      "ro": "cizme",
+      "ru": "сапоги",
+      "note": ""
+    },
+    {
+      "id": 507,
+      "groupId": 15,
+      "ro": "junglă",
+      "ru": "джунгли",
+      "note": ""
+    },
+    {
+      "id": 508,
+      "groupId": 15,
+      "ro": "deșert",
+      "ru": "пустыня",
+      "note": ""
+    },
+    {
+      "id": 509,
+      "groupId": 15,
+      "ro": "vulcan",
+      "ru": "вулкан",
+      "note": ""
+    },
+    {
+      "id": 510,
+      "groupId": 15,
+      "ro": "recif",
+      "ru": "риф",
+      "note": ""
+    },
+    {
+      "id": 511,
+      "groupId": 15,
+      "ro": "golf",
+      "ru": "залив",
+      "note": ""
+    },
+    {
+      "id": 512,
+      "groupId": 16,
+      "ro": "călcâi",
+      "ru": "пятка",
+      "note": ""
+    },
+    {
+      "id": 513,
+      "groupId": 16,
+      "ro": "încheietură",
+      "ru": "запястье",
+      "note": ""
+    },
+    {
+      "id": 514,
+      "groupId": 16,
+      "ro": "gleznă",
+      "ru": "лодыжка",
+      "note": ""
+    },
+    {
+      "id": 515,
+      "groupId": 16,
+      "ro": "bărbie",
+      "ru": "подбородок",
+      "note": ""
+    },
+    {
+      "id": 516,
+      "groupId": 16,
+      "ro": "obraj",
+      "ru": "щека",
+      "note": ""
+    },
+    {
+      "id": 517,
+      "groupId": 17,
+      "ro": "remorcă",
+      "ru": "прицеп",
+      "note": ""
+    },
+    {
+      "id": 518,
+      "groupId": 17,
+      "ro": "limuzină",
+      "ru": "лимузин",
+      "note": ""
+    },
+    {
+      "id": 519,
+      "groupId": 17,
+      "ro": "submarin",
+      "ru": "подводная лодка",
+      "note": ""
+    },
+    {
+      "id": 520,
+      "groupId": 17,
+      "ro": "vehicul",
+      "ru": "транспортное средство",
+      "note": ""
+    },
+    {
+      "id": 521,
+      "groupId": 18,
+      "ro": "lapoviță",
+      "ru": "слякоть",
+      "note": ""
+    },
+    {
+      "id": 522,
+      "groupId": 18,
+      "ro": "viscol",
+      "ru": "метель",
+      "note": ""
+    },
+    {
+      "id": 523,
+      "groupId": 18,
+      "ro": "negură",
+      "ru": "мгла",
+      "note": ""
+    },
+    {
+      "id": 524,
+      "groupId": 19,
+      "ro": "monument",
+      "ru": "памятник",
+      "note": ""
+    },
+    {
+      "id": 525,
+      "groupId": 19,
+      "ro": "muzeu",
+      "ru": "музей",
+      "note": ""
+    },
+    {
+      "id": 526,
+      "groupId": 19,
+      "ro": "teatru",
+      "ru": "театр",
+      "note": ""
+    },
+    {
+      "id": 527,
+      "groupId": 19,
+      "ro": "cinematograf",
+      "ru": "кинотеатр",
+      "note": ""
+    },
+    {
+      "id": 528,
+      "groupId": 20,
+      "ro": "casier",
+      "ru": "кассир",
+      "note": ""
+    },
+    {
+      "id": 529,
+      "groupId": 20,
+      "ro": "terminal",
+      "ru": "терминал",
+      "note": ""
+    },
+    {
+      "id": 530,
+      "groupId": 20,
+      "ro": "promoție",
+      "ru": "акция",
+      "note": ""
+    },
+    {
+      "id": 531,
+      "groupId": 21,
+      "ro": "epocă",
+      "ru": "эпоха",
+      "note": ""
+    },
+    {
+      "id": 532,
+      "groupId": 21,
+      "ro": "moment",
+      "ru": "момент",
+      "note": ""
+    },
+    {
+      "id": 533,
+      "groupId": 21,
+      "ro": "interval",
+      "ru": "интервал",
+      "note": ""
+    },
+    {
+      "id": 534,
+      "groupId": 21,
+      "ro": "fix",
+      "ru": "ровно",
+      "note": ""
+    },
+    {
+      "id": 535,
+      "groupId": 22,
+      "ro": "propunere",
+      "ru": "предложение",
+      "note": ""
+    },
+    {
+      "id": 536,
+      "groupId": 22,
+      "ro": "acord",
+      "ru": "согласие",
+      "note": ""
+    },
+    {
+      "id": 537,
+      "groupId": 22,
+      "ro": "dezacord",
+      "ru": "несогласие",
+      "note": ""
+    },
+    {
+      "id": 538,
+      "groupId": 22,
+      "ro": "expresie",
+      "ru": "выражение",
+      "note": ""
+    },
+    {
+      "id": 539,
+      "groupId": 22,
+      "ro": "traducere",
+      "ru": "перевод",
+      "note": ""
+    },
+    {
+      "id": 540,
+      "groupId": 23,
+      "ro": "vaccin",
+      "ru": "вакцина",
+      "note": ""
+    },
+    {
+      "id": 541,
+      "groupId": 23,
+      "ro": "rană",
+      "ru": "рана",
+      "note": ""
+    },
+    {
+      "id": 542,
+      "groupId": 23,
+      "ro": "fractură",
+      "ru": "перелом",
+      "note": ""
+    },
+    {
+      "id": 543,
+      "groupId": 23,
+      "ro": "spitalizare",
+      "ru": "госпитализация",
+      "note": ""
+    },
+    {
+      "id": 544,
+      "groupId": 24,
+      "ro": "gol",
+      "ru": "гол (спорт)",
+      "note": "Омоним: гол (спорт) или пустой (прилаг.)"
+    },
+    {
+      "id": 545,
+      "groupId": 24,
+      "ro": "minge",
+      "ru": "мяч",
+      "note": ""
+    },
+    {
+      "id": 546,
+      "groupId": 24,
+      "ro": "maraton",
+      "ru": "марафон",
+      "note": ""
+    },
+    {
+      "id": 547,
+      "groupId": 24,
+      "ro": "record",
+      "ru": "рекорд",
+      "note": ""
+    },
+    {
+      "id": 548,
+      "groupId": 24,
+      "ro": "medalie",
+      "ru": "медаль",
+      "note": ""
+    },
+    {
+      "id": 549,
+      "groupId": 25,
+      "ro": "orar",
+      "ru": "расписание",
+      "note": ""
+    },
+    {
+      "id": 550,
+      "groupId": 25,
+      "ro": "disciplină",
+      "ru": "дисциплина",
+      "note": ""
+    },
+    {
+      "id": 551,
+      "groupId": 25,
+      "ro": "facultate",
+      "ru": "факультет",
+      "note": ""
+    },
+    {
+      "id": 552,
+      "groupId": 25,
+      "ro": "admitere",
+      "ru": "поступление",
+      "note": ""
+    },
+    {
+      "id": 553,
+      "groupId": 26,
+      "ro": "notificare",
+      "ru": "уведомление",
+      "note": ""
+    },
+    {
+      "id": 554,
+      "groupId": 10,
+      "ro": "ambițios",
+      "ru": "амбициозный",
+      "note": ""
+    },
+    {
+      "id": 555,
+      "groupId": 10,
+      "ro": "răbdător",
+      "ru": "терпеливый",
+      "note": ""
+    },
+    {
+      "id": 556,
+      "groupId": 10,
+      "ro": "nerăbdător",
+      "ru": "нетерпеливый",
+      "note": ""
+    },
+    {
+      "id": 557,
+      "groupId": 11,
+      "ro": "galben",
+      "ru": "жёлтый",
+      "note": ""
+    },
+    {
+      "id": 558,
+      "groupId": 11,
+      "ro": "negru",
+      "ru": "чёрный",
+      "note": ""
+    },
+    {
+      "id": 559,
+      "groupId": 11,
+      "ro": "alb",
+      "ru": "белый",
+      "note": ""
+    },
+    {
+      "id": 560,
+      "groupId": 11,
+      "ro": "gri",
+      "ru": "серый",
+      "note": ""
+    },
+    {
+      "id": 561,
+      "groupId": 11,
+      "ro": "roz",
+      "ru": "розовый",
+      "note": ""
+    },
+    {
+      "id": 562,
+      "groupId": 11,
+      "ro": "mov",
+      "ru": "фиолетовый",
+      "note": ""
+    },
+    {
+      "id": 563,
+      "groupId": 11,
+      "ro": "maro",
+      "ru": "коричневый",
+      "note": ""
+    },
+    {
+      "id": 564,
+      "groupId": 11,
+      "ro": "auriu",
+      "ru": "золотой",
+      "note": ""
+    },
+    {
+      "id": 565,
+      "groupId": 11,
+      "ro": "argintiu",
+      "ru": "серебряный",
+      "note": ""
+    },
+    {
+      "id": 566,
+      "groupId": 11,
+      "ro": "beige",
+      "ru": "бежевый",
+      "note": ""
+    },
+    {
+      "id": 567,
+      "groupId": 12,
+      "ro": "patru",
+      "ru": "четыре",
+      "note": ""
+    },
+    {
+      "id": 568,
+      "groupId": 12,
+      "ro": "cinci",
+      "ru": "пять",
+      "note": ""
+    },
+    {
+      "id": 569,
+      "groupId": 12,
+      "ro": "șase",
+      "ru": "шесть",
+      "note": ""
+    },
+    {
+      "id": 570,
+      "groupId": 12,
+      "ro": "șapte",
+      "ru": "семь",
+      "note": ""
+    },
+    {
+      "id": 571,
+      "groupId": 12,
+      "ro": "opt",
+      "ru": "восемь",
+      "note": ""
+    },
+    {
+      "id": 572,
+      "groupId": 12,
+      "ro": "nouă",
+      "ru": "девять",
+      "note": ""
+    },
+    {
+      "id": 573,
+      "groupId": 12,
+      "ro": "zece",
+      "ru": "десять",
+      "note": ""
+    },
+    {
+      "id": 574,
+      "groupId": 12,
+      "ro": "unsprezece",
+      "ru": "одиннадцать",
+      "note": ""
+    },
+    {
+      "id": 575,
+      "groupId": 12,
+      "ro": "doisprezece",
+      "ru": "двенадцать",
+      "note": ""
+    },
+    {
+      "id": 576,
+      "groupId": 11,
+      "ro": "turcoaz",
+      "ru": "бирюзовый",
+      "note": ""
+    },
+    {
+      "id": 577,
+      "groupId": 11,
+      "ro": "portocaliu",
+      "ru": "оранжевый",
+      "note": ""
+    },
+    {
+      "id": 578,
+      "groupId": 11,
+      "ro": "crem",
+      "ru": "кремовый",
+      "note": ""
+    },
+    {
+      "id": 579,
+      "groupId": 12,
+      "ro": "treisprezece",
+      "ru": "тринадцать",
+      "note": ""
+    },
+    {
+      "id": 580,
+      "groupId": 12,
+      "ro": "paisprezece",
+      "ru": "четырнадцать",
+      "note": ""
+    },
+    {
+      "id": 581,
+      "groupId": 12,
+      "ro": "cincisprezece",
+      "ru": "пятнадцать",
+      "note": ""
+    },
+    {
+      "id": 582,
+      "groupId": 12,
+      "ro": "șaisprezece",
+      "ru": "шестнадцать",
+      "note": ""
+    },
+    {
+      "id": 583,
+      "groupId": 12,
+      "ro": "șaptesprezece",
+      "ru": "семнадцать",
+      "note": ""
+    },
+    {
+      "id": 584,
+      "groupId": 12,
+      "ro": "optsprezece",
+      "ru": "восемнадцать",
+      "note": ""
+    },
+    {
+      "id": 585,
+      "groupId": 12,
+      "ro": "nouăsprezece",
+      "ru": "девятнадцать",
+      "note": ""
+    },
+    {
+      "id": 586,
+      "groupId": 12,
+      "ro": "treizeci",
+      "ru": "тридцать",
+      "note": ""
+    },
+    {
+      "id": 587,
+      "groupId": 12,
+      "ro": "patruzeci",
+      "ru": "сорок",
+      "note": ""
+    },
+    {
+      "id": 588,
+      "groupId": 12,
+      "ro": "cincizeci",
+      "ru": "пятьдесят",
+      "note": ""
+    },
+    {
+      "id": 589,
+      "groupId": 12,
+      "ro": "douăzeci",
+      "ru": "двадцать",
+      "note": ""
+    },
+    {
+      "id": 590,
+      "groupId": 12,
+      "ro": "șaizeci",
+      "ru": "шестьдесят",
+      "note": ""
+    },
+    {
+      "id": 591,
+      "groupId": 12,
+      "ro": "șaptezeci",
+      "ru": "семьдесят",
+      "note": ""
+    },
+    {
+      "id": 592,
+      "groupId": 12,
+      "ro": "optzeci",
+      "ru": "восемьдесят",
+      "note": ""
+    },
+    {
+      "id": 593,
+      "groupId": 12,
+      "ro": "nouăzeci",
+      "ru": "девяносто",
+      "note": ""
+    },
+    {
+      "id": 594,
+      "groupId": 12,
+      "ro": "o sută",
+      "ru": "сто",
+      "note": ""
+    },
+    {
+      "id": 595,
+      "groupId": 12,
+      "ro": "o mie",
+      "ru": "тысяча",
+      "note": ""
+    },
+    {
+      "id": 596,
+      "groupId": 12,
+      "ro": "primul",
+      "ru": "первый",
+      "note": ""
+    },
+    {
+      "id": 601,
+      "groupId": 12,
+      "ro": "ultimul",
+      "ru": "последний",
+      "note": ""
+    },
+    {
+      "id": 604,
+      "groupId": 4,
+      "ro": "șuncă",
+      "ru": "ветчина",
+      "note": ""
+    },
+    {
+      "id": 605,
+      "groupId": 4,
+      "ro": "cârnați",
+      "ru": "колбаски",
+      "note": ""
+    },
+    {
+      "id": 606,
+      "groupId": 4,
+      "ro": "friptură",
+      "ru": "жаркое",
+      "note": ""
+    },
+    {
+      "id": 607,
+      "groupId": 4,
+      "ro": "tocăniță",
+      "ru": "тушёное блюдо",
+      "note": ""
+    },
+    {
+      "id": 608,
+      "groupId": 4,
+      "ro": "clătite",
+      "ru": "блины",
+      "note": ""
+    },
+    {
+      "id": 609,
+      "groupId": 4,
+      "ro": "omletă",
+      "ru": "омлет",
+      "note": ""
+    },
+    {
+      "id": 610,
+      "groupId": 4,
+      "ro": "sandviș",
+      "ru": "сэндвич",
+      "note": ""
+    },
+    {
+      "id": 611,
+      "groupId": 4,
+      "ro": "cartofi prăjiți",
+      "ru": "картофель фри",
+      "note": ""
+    },
+    {
+      "id": 612,
+      "groupId": 4,
+      "ro": "sos",
+      "ru": "соус",
+      "note": ""
+    },
+    {
+      "id": 613,
+      "groupId": 4,
+      "ro": "maioneză",
+      "ru": "майонез",
+      "note": ""
+    },
+    {
+      "id": 614,
+      "groupId": 4,
+      "ro": "muștar",
+      "ru": "горчица",
+      "note": ""
+    },
+    {
+      "id": 615,
+      "groupId": 4,
+      "ro": "ciocolată",
+      "ru": "шоколад",
+      "note": ""
+    },
+    {
+      "id": 616,
+      "groupId": 4,
+      "ro": "bomboană",
+      "ru": "конфета",
+      "note": ""
+    },
+    {
+      "id": 617,
+      "groupId": 4,
+      "ro": "ceai",
+      "ru": "чай",
+      "note": ""
+    },
+    {
+      "id": 618,
+      "groupId": 4,
+      "ro": "suc",
+      "ru": "сок",
+      "note": ""
+    },
+    {
+      "id": 619,
+      "groupId": 4,
+      "ro": "morcov",
+      "ru": "морковь",
+      "note": ""
+    },
+    {
+      "id": 620,
+      "groupId": 4,
+      "ro": "varză",
+      "ru": "капуста",
+      "note": ""
+    },
+    {
+      "id": 621,
+      "groupId": 4,
+      "ro": "broccoli",
+      "ru": "брокколи",
+      "note": ""
+    },
+    {
+      "id": 622,
+      "groupId": 4,
+      "ro": "conopidă",
+      "ru": "цветная капуста",
+      "note": ""
+    },
+    {
+      "id": 623,
+      "groupId": 4,
+      "ro": "dovlecel",
+      "ru": "кабачок",
+      "note": ""
+    },
+    {
+      "id": 624,
+      "groupId": 4,
+      "ro": "vânătă",
+      "ru": "баклажан",
+      "note": ""
+    },
+    {
+      "id": 625,
+      "groupId": 4,
+      "ro": "ardei",
+      "ru": "перец (овощ)",
+      "note": ""
+    },
+    {
+      "id": 626,
+      "groupId": 4,
+      "ro": "mazăre",
+      "ru": "горох",
+      "note": ""
+    },
+    {
+      "id": 627,
+      "groupId": 4,
+      "ro": "fasole",
+      "ru": "фасоль",
+      "note": ""
+    },
+    {
+      "id": 628,
+      "groupId": 4,
+      "ro": "linte",
+      "ru": "чечевица",
+      "note": ""
+    },
+    {
+      "id": 629,
+      "groupId": 4,
+      "ro": "porumb",
+      "ru": "кукуруза",
+      "note": ""
+    },
+    {
+      "id": 630,
+      "groupId": 4,
+      "ro": "spanac",
+      "ru": "шпинат",
+      "note": ""
+    },
+    {
+      "id": 631,
+      "groupId": 4,
+      "ro": "ridiche",
+      "ru": "редис",
+      "note": ""
+    },
+    {
+      "id": 632,
+      "groupId": 4,
+      "ro": "sfeclă",
+      "ru": "свёкла",
+      "note": ""
+    },
+    {
+      "id": 633,
+      "groupId": 4,
+      "ro": "ciupercă",
+      "ru": "гриб",
+      "note": ""
+    },
+    {
+      "id": 634,
+      "groupId": 4,
+      "ro": "dovleac",
+      "ru": "тыква",
+      "note": ""
+    },
+    {
+      "id": 635,
+      "groupId": 4,
+      "ro": "banană",
+      "ru": "банан",
+      "note": ""
+    },
+    {
+      "id": 636,
+      "groupId": 4,
+      "ro": "pară",
+      "ru": "груша",
+      "note": ""
+    },
+    {
+      "id": 637,
+      "groupId": 4,
+      "ro": "piersică",
+      "ru": "персик",
+      "note": ""
+    },
+    {
+      "id": 638,
+      "groupId": 4,
+      "ro": "vișină",
+      "ru": "вишня",
+      "note": ""
+    },
+    {
+      "id": 639,
+      "groupId": 4,
+      "ro": "prună",
+      "ru": "слива",
+      "note": ""
+    },
+    {
+      "id": 640,
+      "groupId": 4,
+      "ro": "strugure",
+      "ru": "виноград",
+      "note": ""
+    },
+    {
+      "id": 641,
+      "groupId": 4,
+      "ro": "pepene",
+      "ru": "дыня",
+      "note": ""
+    },
+    {
+      "id": 642,
+      "groupId": 4,
+      "ro": "kiwi",
+      "ru": "киви",
+      "note": ""
+    },
+    {
+      "id": 643,
+      "groupId": 5,
+      "ro": "a urca",
+      "ru": "подниматься",
+      "note": ""
+    },
+    {
+      "id": 644,
+      "groupId": 5,
+      "ro": "a coborî",
+      "ru": "спускаться",
+      "note": ""
+    },
+    {
+      "id": 645,
+      "groupId": 5,
+      "ro": "a intra",
+      "ru": "входить",
+      "note": ""
+    },
+    {
+      "id": 646,
+      "groupId": 5,
+      "ro": "a ieși",
+      "ru": "выходить",
+      "note": ""
+    },
+    {
+      "id": 647,
+      "groupId": 5,
+      "ro": "a alege",
+      "ru": "выбирать",
+      "note": ""
+    },
+    {
+      "id": 648,
+      "groupId": 5,
+      "ro": "a muta",
+      "ru": "перемещать",
+      "note": ""
+    },
+    {
+      "id": 649,
+      "groupId": 5,
+      "ro": "a aduce",
+      "ru": "приносить",
+      "note": ""
+    },
+    {
+      "id": 650,
+      "groupId": 5,
+      "ro": "a duce",
+      "ru": "относить",
+      "note": ""
+    },
+    {
+      "id": 651,
+      "groupId": 5,
+      "ro": "a ține",
+      "ru": "держать",
+      "note": ""
+    },
+    {
+      "id": 652,
+      "groupId": 5,
+      "ro": "a lăsa",
+      "ru": "оставлять",
+      "note": ""
+    },
+    {
+      "id": 653,
+      "groupId": 5,
+      "ro": "a opri",
+      "ru": "останавливать",
+      "note": ""
+    },
+    {
+      "id": 654,
+      "groupId": 5,
+      "ro": "a porni",
+      "ru": "запускать",
+      "note": ""
+    },
+    {
+      "id": 655,
+      "groupId": 5,
+      "ro": "a continua",
+      "ru": "продолжать",
+      "note": ""
+    },
+    {
+      "id": 656,
+      "groupId": 5,
+      "ro": "a repeta",
+      "ru": "повторять",
+      "note": ""
+    },
+    {
+      "id": 657,
+      "groupId": 5,
+      "ro": "a uita",
+      "ru": "забывать",
+      "note": ""
+    },
+    {
+      "id": 658,
+      "groupId": 5,
+      "ro": "a aminti",
+      "ru": "вспоминать",
+      "note": ""
+    },
+    {
+      "id": 659,
+      "groupId": 5,
+      "ro": "a dori",
+      "ru": "желать",
+      "note": ""
+    },
+    {
+      "id": 660,
+      "groupId": 5,
+      "ro": "a spera",
+      "ru": "надеяться",
+      "note": ""
+    },
+    {
+      "id": 661,
+      "groupId": 5,
+      "ro": "a reuși",
+      "ru": "удаваться",
+      "note": ""
+    },
+    {
+      "id": 662,
+      "groupId": 5,
+      "ro": "a eșua",
+      "ru": "проваливаться",
+      "note": ""
+    },
+    {
+      "id": 663,
+      "groupId": 5,
+      "ro": "a accepta",
+      "ru": "принимать",
+      "note": ""
+    },
+    {
+      "id": 664,
+      "groupId": 5,
+      "ro": "a refuza",
+      "ru": "отказываться",
+      "note": ""
+    },
+    {
+      "id": 665,
+      "groupId": 5,
+      "ro": "a propune",
+      "ru": "предлагать",
+      "note": ""
+    },
+    {
+      "id": 666,
+      "groupId": 5,
+      "ro": "a observa",
+      "ru": "замечать",
+      "note": ""
+    },
+    {
+      "id": 667,
+      "groupId": 5,
+      "ro": "a compara",
+      "ru": "сравнивать",
+      "note": ""
+    },
+    {
+      "id": 668,
+      "groupId": 5,
+      "ro": "a descrie",
+      "ru": "описывать",
+      "note": ""
+    },
+    {
+      "id": 669,
+      "groupId": 5,
+      "ro": "a povesti",
+      "ru": "рассказывать",
+      "note": ""
+    },
+    {
+      "id": 670,
+      "groupId": 5,
+      "ro": "a demonstra",
+      "ru": "доказывать",
+      "note": ""
+    },
+    {
+      "id": 671,
+      "groupId": 5,
+      "ro": "a calcula",
+      "ru": "вычислять",
+      "note": ""
+    },
+    {
+      "id": 672,
+      "groupId": 5,
+      "ro": "a măsura",
+      "ru": "измерять",
+      "note": ""
+    },
+    {
+      "id": 673,
+      "groupId": 5,
+      "ro": "a cântări",
+      "ru": "взвешивать",
+      "note": ""
+    },
+    {
+      "id": 674,
+      "groupId": 5,
+      "ro": "a umple",
+      "ru": "наполнять",
+      "note": ""
+    },
+    {
+      "id": 675,
+      "groupId": 5,
+      "ro": "a goli",
+      "ru": "опустошать",
+      "note": ""
+    },
+    {
+      "id": 676,
+      "groupId": 5,
+      "ro": "a curăța",
+      "ru": "чистить",
+      "note": ""
+    },
+    {
+      "id": 677,
+      "groupId": 5,
+      "ro": "a spăla",
+      "ru": "мыть",
+      "note": ""
+    },
+    {
+      "id": 678,
+      "groupId": 5,
+      "ro": "a usca",
+      "ru": "сушить",
+      "note": ""
+    },
+    {
+      "id": 679,
+      "groupId": 5,
+      "ro": "a găti",
+      "ru": "готовить",
+      "note": ""
+    },
+    {
+      "id": 680,
+      "groupId": 5,
+      "ro": "a prăji",
+      "ru": "жарить",
+      "note": ""
+    },
+    {
+      "id": 681,
+      "groupId": 5,
+      "ro": "a fierbe",
+      "ru": "варить",
+      "note": ""
+    },
+    {
+      "id": 682,
+      "groupId": 5,
+      "ro": "a coace",
+      "ru": "печь",
+      "note": ""
+    },
+    {
+      "id": 683,
+      "groupId": 5,
+      "ro": "a tăia",
+      "ru": "резать",
+      "note": ""
+    },
+    {
+      "id": 684,
+      "groupId": 5,
+      "ro": "a împărți",
+      "ru": "делить",
+      "note": ""
+    },
+    {
+      "id": 685,
+      "groupId": 5,
+      "ro": "a adăuga",
+      "ru": "добавлять",
+      "note": ""
+    },
+    {
+      "id": 686,
+      "groupId": 5,
+      "ro": "a scoate",
+      "ru": "вынимать",
+      "note": ""
+    },
+    {
+      "id": 687,
+      "groupId": 5,
+      "ro": "a împinge",
+      "ru": "толкать",
+      "note": ""
+    },
+    {
+      "id": 688,
+      "groupId": 5,
+      "ro": "a trage",
+      "ru": "тянуть",
+      "note": ""
+    },
+    {
+      "id": 689,
+      "groupId": 5,
+      "ro": "a lovi",
+      "ru": "ударять",
+      "note": ""
+    },
+    {
+      "id": 690,
+      "groupId": 5,
+      "ro": "a proteja",
+      "ru": "защищать",
+      "note": ""
+    },
+    {
+      "id": 691,
+      "groupId": 5,
+      "ro": "a ataca",
+      "ru": "атаковать",
+      "note": ""
+    },
+    {
+      "id": 692,
+      "groupId": 5,
+      "ro": "a construi",
+      "ru": "строить",
+      "note": ""
+    },
+    {
+      "id": 693,
+      "groupId": 5,
+      "ro": "a distruge",
+      "ru": "разрушать",
+      "note": ""
+    },
+    {
+      "id": 694,
+      "groupId": 5,
+      "ro": "a organiza",
+      "ru": "организовывать",
+      "note": ""
+    },
+    {
+      "id": 695,
+      "groupId": 5,
+      "ro": "a planifica",
+      "ru": "планировать",
+      "note": ""
+    },
+    {
+      "id": 696,
+      "groupId": 7,
+      "ro": "bibliotecă",
+      "ru": "книжный шкаф",
+      "note": "Омоним: книжный шкаф (мебель) или библиотека (здание)"
+    },
+    {
+      "id": 697,
+      "groupId": 7,
+      "ro": "noptieră",
+      "ru": "тумбочка",
+      "note": ""
+    },
+    {
+      "id": 698,
+      "groupId": 7,
+      "ro": "cuier",
+      "ru": "вешалка",
+      "note": ""
+    },
+    {
+      "id": 699,
+      "groupId": 7,
+      "ro": "perdea",
+      "ru": "штора",
+      "note": ""
+    },
+    {
+      "id": 700,
+      "groupId": 7,
+      "ro": "jaluzea",
+      "ru": "жалюзи",
+      "note": ""
+    },
+    {
+      "id": 701,
+      "groupId": 7,
+      "ro": "aspirator",
+      "ru": "пылесос",
+      "note": ""
+    },
+    {
+      "id": 702,
+      "groupId": 7,
+      "ro": "mătură",
+      "ru": "метла",
+      "note": ""
+    },
+    {
+      "id": 703,
+      "groupId": 7,
+      "ro": "găleată",
+      "ru": "ведро",
+      "note": ""
+    },
+    {
+      "id": 704,
+      "groupId": 7,
+      "ro": "cârpă",
+      "ru": "тряпка",
+      "note": ""
+    },
+    {
+      "id": 705,
+      "groupId": 7,
+      "ro": "detergent",
+      "ru": "моющее средство",
+      "note": ""
+    },
+    {
+      "id": 706,
+      "groupId": 7,
+      "ro": "cuptor",
+      "ru": "духовка",
+      "note": ""
+    },
+    {
+      "id": 707,
+      "groupId": 7,
+      "ro": "coș de gunoi",
+      "ru": "мусорное ведро",
+      "note": ""
+    },
+    {
+      "id": 708,
+      "groupId": 7,
+      "ro": "prosoape",
+      "ru": "полотенца",
+      "note": ""
+    },
+    {
+      "id": 709,
+      "groupId": 7,
+      "ro": "saltea",
+      "ru": "матрас",
+      "note": ""
+    },
+    {
+      "id": 710,
+      "groupId": 7,
+      "ro": "lustra",
+      "ru": "люстра",
+      "note": ""
+    },
+    {
+      "id": 711,
+      "groupId": 7,
+      "ro": "bec",
+      "ru": "лампочка",
+      "note": ""
+    },
+    {
+      "id": 712,
+      "groupId": 7,
+      "ro": "întrerupător",
+      "ru": "выключатель",
+      "note": ""
+    },
+    {
+      "id": 713,
+      "groupId": 7,
+      "ro": "extensie",
+      "ru": "удлинитель",
+      "note": ""
+    },
+    {
+      "id": 714,
+      "groupId": 7,
+      "ro": "termometru",
+      "ru": "термометр",
+      "note": ""
+    },
+    {
+      "id": 715,
+      "groupId": 7,
+      "ro": "încălzire",
+      "ru": "отопление",
+      "note": ""
+    },
+    {
+      "id": 716,
+      "groupId": 13,
+      "ro": "furnică",
+      "ru": "муравей",
+      "note": ""
+    },
+    {
+      "id": 717,
+      "groupId": 13,
+      "ro": "albină",
+      "ru": "пчела",
+      "note": ""
+    },
+    {
+      "id": 718,
+      "groupId": 13,
+      "ro": "viespe",
+      "ru": "оса",
+      "note": ""
+    },
+    {
+      "id": 719,
+      "groupId": 13,
+      "ro": "țânțar",
+      "ru": "комар",
+      "note": ""
+    },
+    {
+      "id": 720,
+      "groupId": 13,
+      "ro": "muscă",
+      "ru": "муха",
+      "note": ""
+    },
+    {
+      "id": 721,
+      "groupId": 13,
+      "ro": "gândac",
+      "ru": "таракан",
+      "note": ""
+    },
+    {
+      "id": 722,
+      "groupId": 13,
+      "ro": "păianjen",
+      "ru": "паук",
+      "note": ""
+    },
+    {
+      "id": 723,
+      "groupId": 13,
+      "ro": "melc",
+      "ru": "улитка",
+      "note": ""
+    },
+    {
+      "id": 724,
+      "groupId": 13,
+      "ro": "vierme",
+      "ru": "червь",
+      "note": ""
+    },
+    {
+      "id": 725,
+      "groupId": 13,
+      "ro": "fluture",
+      "ru": "бабочка",
+      "note": ""
+    },
+    {
+      "id": 726,
+      "groupId": 22,
+      "ro": "cuvânt",
+      "ru": "слово",
+      "note": ""
+    },
+    {
+      "id": 727,
+      "groupId": 27,
+      "ro": "cine",
+      "ru": "кто?",
+      "note": ""
+    },
+    {
+      "id": 728,
+      "groupId": 27,
+      "ro": "ce",
+      "ru": "что?",
+      "note": ""
+    },
+    {
+      "id": 729,
+      "groupId": 27,
+      "ro": "unde",
+      "ru": "где?",
+      "note": ""
+    },
+    {
+      "id": 730,
+      "groupId": 27,
+      "ro": "când",
+      "ru": "когда?",
+      "note": ""
+    },
+    {
+      "id": 731,
+      "groupId": 27,
+      "ro": "de ce",
+      "ru": "почему?",
+      "note": ""
+    },
+    {
+      "id": 732,
+      "groupId": 27,
+      "ro": "cum",
+      "ru": "как?",
+      "note": ""
+    },
+    {
+      "id": 733,
+      "groupId": 27,
+      "ro": "cât",
+      "ru": "сколько?",
+      "note": ""
+    },
+    {
+      "id": 734,
+      "groupId": 27,
+      "ro": "câți",
+      "ru": "сколько? (м. род, мн.ч.)",
+      "note": ""
+    },
+    {
+      "id": 735,
+      "groupId": 27,
+      "ro": "câte",
+      "ru": "сколько? (ж. род/неисч.)",
+      "note": ""
+    },
+    {
+      "id": 736,
+      "groupId": 27,
+      "ro": "care",
+      "ru": "который?",
+      "note": ""
+    },
+    {
+      "id": 737,
+      "groupId": 28,
+      "ro": "în",
+      "ru": "в",
+      "note": ""
+    },
+    {
+      "id": 738,
+      "groupId": 28,
+      "ro": "pe",
+      "ru": "на",
+      "note": ""
+    },
+    {
+      "id": 739,
+      "groupId": 28,
+      "ro": "la",
+      "ru": "к / у / на",
+      "note": ""
+    },
+    {
+      "id": 740,
+      "groupId": 28,
+      "ro": "cu",
+      "ru": "с",
+      "note": ""
+    },
+    {
+      "id": 741,
+      "groupId": 28,
+      "ro": "fără",
+      "ru": "без",
+      "note": ""
+    },
+    {
+      "id": 742,
+      "groupId": 28,
+      "ro": "pentru",
+      "ru": "для",
+      "note": ""
+    },
+    {
+      "id": 743,
+      "groupId": 28,
+      "ro": "despre",
+      "ru": "о / про",
+      "note": ""
+    },
+    {
+      "id": 744,
+      "groupId": 28,
+      "ro": "de",
+      "ru": "из / от / о",
+      "note": ""
+    },
+    {
+      "id": 745,
+      "groupId": 28,
+      "ro": "din",
+      "ru": "из",
+      "note": ""
+    },
+    {
+      "id": 746,
+      "groupId": 28,
+      "ro": "spre",
+      "ru": "к / по направлению к",
+      "note": ""
+    },
+    {
+      "id": 747,
+      "groupId": 28,
+      "ro": "către",
+      "ru": "к",
+      "note": ""
+    },
+    {
+      "id": 748,
+      "groupId": 28,
+      "ro": "până la",
+      "ru": "до",
+      "note": ""
+    },
+    {
+      "id": 749,
+      "groupId": 28,
+      "ro": "după",
+      "ru": "после",
+      "note": ""
+    },
+    {
+      "id": 750,
+      "groupId": 28,
+      "ro": "înainte de",
+      "ru": "перед / до",
+      "note": ""
+    },
+    {
+      "id": 751,
+      "groupId": 28,
+      "ro": "între",
+      "ru": "между",
+      "note": ""
+    },
+    {
+      "id": 752,
+      "groupId": 28,
+      "ro": "lângă",
+      "ru": "рядом с",
+      "note": ""
+    },
+    {
+      "id": 753,
+      "groupId": 28,
+      "ro": "sub",
+      "ru": "под",
+      "note": ""
+    },
+    {
+      "id": 754,
+      "groupId": 28,
+      "ro": "contra",
+      "ru": "против",
+      "note": ""
+    },
+    {
+      "id": 755,
+      "groupId": 21,
+      "ro": "program",
+      "ru": "расписание",
+      "note": "Омоним: расписание / программа / график"
+    },
+    {
+      "id": 756,
+      "groupId": 21,
+      "ro": "oră fixă",
+      "ru": "точное время",
+      "note": ""
+    },
+    {
+      "id": 757,
+      "groupId": 21,
+      "ro": "termen",
+      "ru": "срок",
+      "note": ""
+    },
+    {
+      "id": 758,
+      "groupId": 21,
+      "ro": "anotimp",
+      "ru": "сезон",
+      "note": ""
+    },
+    {
+      "id": 759,
+      "groupId": 21,
+      "ro": "primăvară",
+      "ru": "весна",
+      "note": ""
+    },
+    {
+      "id": 760,
+      "groupId": 21,
+      "ro": "vară",
+      "ru": "лето",
+      "note": ""
+    },
+    {
+      "id": 761,
+      "groupId": 21,
+      "ro": "toamnă",
+      "ru": "осень",
+      "note": ""
+    },
+    {
+      "id": 762,
+      "groupId": 21,
+      "ro": "iarnă",
+      "ru": "зима",
+      "note": ""
+    },
+    {
+      "id": 763,
+      "groupId": 21,
+      "ro": "început",
+      "ru": "начало",
+      "note": ""
+    },
+    {
+      "id": 764,
+      "groupId": 21,
+      "ro": "sfârșit",
+      "ru": "конец",
+      "note": ""
+    },
+    {
+      "id": 765,
+      "groupId": 21,
+      "ro": "mijloc",
+      "ru": "середина",
+      "note": ""
+    },
+    {
+      "id": 766,
+      "groupId": 21,
+      "ro": "trecut",
+      "ru": "прошлое",
+      "note": ""
+    },
+    {
+      "id": 767,
+      "groupId": 21,
+      "ro": "prezent",
+      "ru": "настоящее",
+      "note": ""
+    },
+    {
+      "id": 768,
+      "groupId": 21,
+      "ro": "viitor",
+      "ru": "будущее",
+      "note": ""
+    },
+    {
+      "id": 769,
+      "groupId": 21,
+      "ro": "curând",
+      "ru": "скоро",
+      "note": ""
+    },
+    {
+      "id": 770,
+      "groupId": 21,
+      "ro": "imediat",
+      "ru": "сразу",
+      "note": ""
+    },
+    {
+      "id": 771,
+      "groupId": 21,
+      "ro": "deja",
+      "ru": "уже",
+      "note": ""
+    },
+    {
+      "id": 772,
+      "groupId": 21,
+      "ro": "încă",
+      "ru": "ещё",
+      "note": ""
+    },
+    {
+      "id": 773,
+      "groupId": 21,
+      "ro": "tocmai",
+      "ru": "только что",
+      "note": ""
+    },
+    {
+      "id": 774,
+      "groupId": 21,
+      "ro": "odată",
+      "ru": "однажды / ещё раз",
+      "note": "Два значения: однажды (в прошлом) и ещё раз (повтор)"
+    },
+    {
+      "id": 775,
+      "groupId": 21,
+      "ro": "mereu",
+      "ru": "всегда",
+      "note": ""
+    },
+    {
+      "id": 776,
+      "groupId": 21,
+      "ro": "niciodată",
+      "ru": "никогда",
+      "note": ""
+    },
+    {
+      "id": 777,
+      "groupId": 21,
+      "ro": "uneori",
+      "ru": "иногда",
+      "note": ""
+    },
+    {
+      "id": 778,
+      "groupId": 21,
+      "ro": "luni",
+      "ru": "понедельник",
+      "note": ""
+    },
+    {
+      "id": 779,
+      "groupId": 21,
+      "ro": "marți",
+      "ru": "вторник",
+      "note": ""
+    },
+    {
+      "id": 780,
+      "groupId": 21,
+      "ro": "miercuri",
+      "ru": "среда",
+      "note": ""
+    },
+    {
+      "id": 781,
+      "groupId": 21,
+      "ro": "joi",
+      "ru": "четверг",
+      "note": ""
+    },
+    {
+      "id": 782,
+      "groupId": 21,
+      "ro": "vineri",
+      "ru": "пятница",
+      "note": ""
+    },
+    {
+      "id": 783,
+      "groupId": 21,
+      "ro": "sâmbătă",
+      "ru": "суббота",
+      "note": ""
+    },
+    {
+      "id": 784,
+      "groupId": 21,
+      "ro": "duminică",
+      "ru": "воскресенье",
+      "note": ""
+    },
+    {
+      "id": 785,
+      "groupId": 21,
+      "ro": "deceniu",
+      "ru": "десятилетие",
+      "note": ""
+    },
+    {
+      "id": 786,
+      "groupId": 21,
+      "ro": "secol",
+      "ru": "век",
+      "note": ""
+    },
+    {
+      "id": 787,
+      "groupId": 21,
+      "ro": "mileniu",
+      "ru": "тысячелетие",
+      "note": ""
+    },
+    {
+      "id": 788,
+      "groupId": 29,
+      "ro": "dreapta",
+      "ru": "право",
+      "note": ""
+    },
+    {
+      "id": 789,
+      "groupId": 29,
+      "ro": "stânga",
+      "ru": "лево",
+      "note": ""
+    },
+    {
+      "id": 790,
+      "groupId": 29,
+      "ro": "înainte",
+      "ru": "вперёд",
+      "note": ""
+    },
+    {
+      "id": 791,
+      "groupId": 29,
+      "ro": "înapoi",
+      "ru": "назад",
+      "note": ""
+    },
+    {
+      "id": 792,
+      "groupId": 29,
+      "ro": "sus",
+      "ru": "вверх",
+      "note": ""
+    },
+    {
+      "id": 793,
+      "groupId": 29,
+      "ro": "jos",
+      "ru": "вниз",
+      "note": ""
+    },
+    {
+      "id": 794,
+      "groupId": 29,
+      "ro": "direct",
+      "ru": "прямо",
+      "note": ""
+    },
+    {
+      "id": 795,
+      "groupId": 29,
+      "ro": "în jur",
+      "ru": "вокруг",
+      "note": ""
+    },
+    {
+      "id": 796,
+      "groupId": 29,
+      "ro": "în față",
+      "ru": "впереди",
+      "note": ""
+    },
+    {
+      "id": 797,
+      "groupId": 29,
+      "ro": "în spate",
+      "ru": "сзади",
+      "note": ""
+    },
+    {
+      "id": 798,
+      "groupId": 29,
+      "ro": "aproape",
+      "ru": "близко",
+      "note": ""
+    },
+    {
+      "id": 799,
+      "groupId": 29,
+      "ro": "departe",
+      "ru": "далеко",
+      "note": ""
+    },
+    {
+      "id": 800,
+      "groupId": 29,
+      "ro": "de-a lungul",
+      "ru": "вдоль",
+      "note": ""
+    },
+    {
+      "id": 801,
+      "groupId": 29,
+      "ro": "peste",
+      "ru": "через",
+      "note": ""
+    },
+    {
+      "id": 802,
+      "groupId": 29,
+      "ro": "printre",
+      "ru": "сквозь",
+      "note": "Омоним: сквозь (направление) или среди (предлог)"
+    },
+    {
+      "id": 803,
+      "groupId": 29,
+      "ro": "nord",
+      "ru": "север",
+      "note": ""
+    },
+    {
+      "id": 804,
+      "groupId": 29,
+      "ro": "sud",
+      "ru": "юг",
+      "note": ""
+    },
+    {
+      "id": 805,
+      "groupId": 29,
+      "ro": "est",
+      "ru": "восток",
+      "note": ""
+    },
+    {
+      "id": 806,
+      "groupId": 29,
+      "ro": "vest",
+      "ru": "запад",
+      "note": ""
+    },
+    {
+      "id": 807,
+      "groupId": 16,
+      "ro": "creier",
+      "ru": "мозг",
+      "note": ""
+    },
+    {
+      "id": 808,
+      "groupId": 16,
+      "ro": "plămân",
+      "ru": "лёгкое",
+      "note": ""
+    },
+    {
+      "id": 809,
+      "groupId": 16,
+      "ro": "rinichi",
+      "ru": "почка",
+      "note": ""
+    },
+    {
+      "id": 810,
+      "groupId": 16,
+      "ro": "intestin",
+      "ru": "кишечник",
+      "note": ""
+    },
+    {
+      "id": 811,
+      "groupId": 16,
+      "ro": "sânge",
+      "ru": "кровь",
+      "note": ""
+    },
+    {
+      "id": 812,
+      "groupId": 16,
+      "ro": "piele",
+      "ru": "кожа",
+      "note": ""
+    },
+    {
+      "id": 813,
+      "groupId": 16,
+      "ro": "os",
+      "ru": "кость",
+      "note": ""
+    },
+    {
+      "id": 814,
+      "groupId": 16,
+      "ro": "mușchi",
+      "ru": "мышца",
+      "note": ""
+    },
+    {
+      "id": 815,
+      "groupId": 16,
+      "ro": "articulație",
+      "ru": "сустав",
+      "note": ""
+    },
+    {
+      "id": 816,
+      "groupId": 16,
+      "ro": "coloană vertebrală",
+      "ru": "позвоночник",
+      "note": ""
+    },
+    {
+      "id": 817,
+      "groupId": 16,
+      "ro": "nerv",
+      "ru": "нерв",
+      "note": ""
+    },
+    {
+      "id": 818,
+      "groupId": 16,
+      "ro": "venă",
+      "ru": "вена",
+      "note": ""
+    },
+    {
+      "id": 819,
+      "groupId": 16,
+      "ro": "arteră",
+      "ru": "артерия",
+      "note": ""
+    },
+    {
+      "id": 820,
+      "groupId": 16,
+      "ro": "talie",
+      "ru": "талия",
+      "note": ""
+    },
+    {
+      "id": 821,
+      "groupId": 16,
+      "ro": "șold",
+      "ru": "бедро (таз)",
+      "note": ""
+    },
+    {
+      "id": 822,
+      "groupId": 16,
+      "ro": "coapsă",
+      "ru": "бедро",
+      "note": ""
+    },
+    {
+      "id": 823,
+      "groupId": 16,
+      "ro": "gambe",
+      "ru": "икры",
+      "note": ""
+    },
+    {
+      "id": 824,
+      "groupId": 16,
+      "ro": "tălpă",
+      "ru": "стопа",
+      "note": ""
+    },
+    {
+      "id": 825,
+      "groupId": 16,
+      "ro": "unghie",
+      "ru": "ноготь",
+      "note": ""
+    },
+    {
+      "id": 826,
+      "groupId": 16,
+      "ro": "păr",
+      "ru": "волосы",
+      "note": ""
+    },
+    {
+      "id": 827,
+      "groupId": 16,
+      "ro": "barbă",
+      "ru": "борода",
+      "note": ""
+    },
+    {
+      "id": 828,
+      "groupId": 16,
+      "ro": "mustață",
+      "ru": "усы",
+      "note": ""
+    },
+    {
+      "id": 829,
+      "groupId": 16,
+      "ro": "gene",
+      "ru": "ресницы",
+      "note": ""
+    },
+    {
+      "id": 830,
+      "groupId": 16,
+      "ro": "pupilă",
+      "ru": "зрачок",
+      "note": ""
+    },
+    {
+      "id": 831,
+      "groupId": 16,
+      "ro": "retină",
+      "ru": "сетчатка",
+      "note": ""
+    },
+    {
+      "id": 832,
+      "groupId": 16,
+      "ro": "mandibulă",
+      "ru": "челюсть",
+      "note": ""
+    },
+    {
+      "id": 833,
+      "groupId": 16,
+      "ro": "maxilar",
+      "ru": "верхняя челюсть",
+      "note": ""
+    },
+    {
+      "id": 834,
+      "groupId": 16,
+      "ro": "schelet",
+      "ru": "скелет",
+      "note": ""
+    },
+    {
+      "id": 835,
+      "groupId": 16,
+      "ro": "ligament",
+      "ru": "связка",
+      "note": ""
+    },
+    {
+      "id": 836,
+      "groupId": 16,
+      "ro": "tendon",
+      "ru": "сухожилие",
+      "note": ""
+    },
+    {
+      "id": 837,
+      "groupId": 16,
+      "ro": "transpirație",
+      "ru": "пот",
+      "note": ""
+    },
+    {
+      "id": 838,
+      "groupId": 16,
+      "ro": "respirație",
+      "ru": "дыхание",
+      "note": ""
+    },
+    {
+      "id": 839,
+      "groupId": 16,
+      "ro": "iris",
+      "ru": "радужка",
+      "note": ""
+    },
+    {
+      "id": 840,
+      "groupId": 16,
+      "ro": "cuticulă",
+      "ru": "кутикула",
+      "note": ""
+    },
+    {
+      "id": 841,
+      "groupId": 16,
+      "ro": "voce",
+      "ru": "голос",
+      "note": ""
+    },
+    {
+      "id": 842,
+      "groupId": 16,
+      "ro": "vezică",
+      "ru": "мочевой пузырь",
+      "note": ""
+    },
+    {
+      "id": 843,
+      "groupId": 6,
+      "ro": "înalt",
+      "ru": "высокий",
+      "note": ""
+    },
+    {
+      "id": 844,
+      "groupId": 6,
+      "ro": "scund",
+      "ru": "низкий",
+      "note": ""
+    },
+    {
+      "id": 845,
+      "groupId": 6,
+      "ro": "larg",
+      "ru": "широкий",
+      "note": ""
+    },
+    {
+      "id": 846,
+      "groupId": 6,
+      "ro": "lung",
+      "ru": "длинный",
+      "note": ""
+    },
+    {
+      "id": 847,
+      "groupId": 6,
+      "ro": "scurt",
+      "ru": "короткий",
+      "note": ""
+    },
+    {
+      "id": 848,
+      "groupId": 6,
+      "ro": "gros",
+      "ru": "толстый (журнал)",
+      "note": ""
+    },
+    {
+      "id": 849,
+      "groupId": 6,
+      "ro": "subțire",
+      "ru": "тонкий",
+      "note": ""
+    },
+    {
+      "id": 850,
+      "groupId": 6,
+      "ro": "tare",
+      "ru": "твёрдый",
+      "note": ""
+    },
+    {
+      "id": 851,
+      "groupId": 6,
+      "ro": "moale",
+      "ru": "мягкий",
+      "note": ""
+    },
+    {
+      "id": 852,
+      "groupId": 6,
+      "ro": "umed",
+      "ru": "влажный",
+      "note": ""
+    },
+    {
+      "id": 853,
+      "groupId": 6,
+      "ro": "uscat",
+      "ru": "сухой",
+      "note": ""
+    },
+    {
+      "id": 854,
+      "groupId": 6,
+      "ro": "plăcut",
+      "ru": "приятный",
+      "note": ""
+    },
+    {
+      "id": 855,
+      "groupId": 6,
+      "ro": "neplăcut",
+      "ru": "неприятный",
+      "note": ""
+    },
+    {
+      "id": 856,
+      "groupId": 6,
+      "ro": "interesant",
+      "ru": "интересный",
+      "note": ""
+    },
+    {
+      "id": 857,
+      "groupId": 6,
+      "ro": "plictisitor",
+      "ru": "скучный",
+      "note": ""
+    },
+    {
+      "id": 858,
+      "groupId": 6,
+      "ro": "bogat",
+      "ru": "богатый",
+      "note": ""
+    },
+    {
+      "id": 859,
+      "groupId": 6,
+      "ro": "sărac",
+      "ru": "бедный",
+      "note": ""
+    },
+    {
+      "id": 860,
+      "groupId": 6,
+      "ro": "curajos",
+      "ru": "смелый",
+      "note": ""
+    },
+    {
+      "id": 861,
+      "groupId": 6,
+      "ro": "fricos",
+      "ru": "пугливый",
+      "note": ""
+    },
+    {
+      "id": 862,
+      "groupId": 6,
+      "ro": "sănătos",
+      "ru": "здоровый",
+      "note": ""
+    },
+    {
+      "id": 863,
+      "groupId": 6,
+      "ro": "bolnav",
+      "ru": "больной",
+      "note": ""
+    },
+    {
+      "id": 864,
+      "groupId": 6,
+      "ro": "curios",
+      "ru": "любопытный",
+      "note": ""
+    },
+    {
+      "id": 865,
+      "groupId": 6,
+      "ro": "serios",
+      "ru": "серьёзный",
+      "note": ""
+    },
+    {
+      "id": 866,
+      "groupId": 6,
+      "ro": "vesel",
+      "ru": "весёлый",
+      "note": ""
+    },
+    {
+      "id": 867,
+      "groupId": 6,
+      "ro": "trist",
+      "ru": "грустный",
+      "note": ""
+    },
+    {
+      "id": 868,
+      "groupId": 6,
+      "ro": "obosit",
+      "ru": "уставший",
+      "note": ""
+    },
+    {
+      "id": 869,
+      "groupId": 6,
+      "ro": "energic",
+      "ru": "энергичный",
+      "note": ""
+    },
+    {
+      "id": 870,
+      "groupId": 6,
+      "ro": "modern",
+      "ru": "современный",
+      "note": ""
+    },
+    {
+      "id": 871,
+      "groupId": 6,
+      "ro": "popular",
+      "ru": "популярный",
+      "note": ""
+    },
+    {
+      "id": 872,
+      "groupId": 6,
+      "ro": "rar",
+      "ru": "редкий",
+      "note": ""
+    },
+    {
+      "id": 873,
+      "groupId": 6,
+      "ro": "sărat",
+      "ru": "солёный",
+      "note": ""
+    },
+    {
+      "id": 874,
+      "groupId": 6,
+      "ro": "zgomotos",
+      "ru": "шумный",
+      "note": ""
+    },
+    {
+      "id": 875,
+      "groupId": 6,
+      "ro": "liniștit",
+      "ru": "тихий",
+      "note": ""
+    },
+    {
+      "id": 876,
+      "groupId": 30,
+      "ro": "familie",
+      "ru": "семья",
+      "note": ""
+    },
+    {
+      "id": 877,
+      "groupId": 30,
+      "ro": "mamă",
+      "ru": "мама",
+      "note": ""
+    },
+    {
+      "id": 878,
+      "groupId": 30,
+      "ro": "tată",
+      "ru": "папа",
+      "note": ""
+    },
+    {
+      "id": 879,
+      "groupId": 30,
+      "ro": "părinți",
+      "ru": "родители",
+      "note": ""
+    },
+    {
+      "id": 880,
+      "groupId": 30,
+      "ro": "fiu",
+      "ru": "сын",
+      "note": ""
+    },
+    {
+      "id": 881,
+      "groupId": 30,
+      "ro": "fiică",
+      "ru": "дочь",
+      "note": ""
+    },
+    {
+      "id": 882,
+      "groupId": 30,
+      "ro": "copil",
+      "ru": "ребёнок",
+      "note": ""
+    },
+    {
+      "id": 883,
+      "groupId": 30,
+      "ro": "frate",
+      "ru": "брат",
+      "note": ""
+    },
+    {
+      "id": 884,
+      "groupId": 30,
+      "ro": "soră",
+      "ru": "сестра",
+      "note": ""
+    },
+    {
+      "id": 885,
+      "groupId": 30,
+      "ro": "bunică",
+      "ru": "бабушка",
+      "note": ""
+    },
+    {
+      "id": 886,
+      "groupId": 30,
+      "ro": "bunic",
+      "ru": "дедушка",
+      "note": ""
+    },
+    {
+      "id": 887,
+      "groupId": 30,
+      "ro": "soț",
+      "ru": "муж",
+      "note": ""
+    },
+    {
+      "id": 888,
+      "groupId": 30,
+      "ro": "soție",
+      "ru": "жена",
+      "note": ""
+    },
+    {
+      "id": 889,
+      "groupId": 30,
+      "ro": "unchi",
+      "ru": "дядя",
+      "note": ""
+    },
+    {
+      "id": 890,
+      "groupId": 30,
+      "ro": "mătușă",
+      "ru": "тётя",
+      "note": ""
+    },
+    {
+      "id": 891,
+      "groupId": 30,
+      "ro": "văr",
+      "ru": "двоюродный брат",
+      "note": ""
+    },
+    {
+      "id": 892,
+      "groupId": 30,
+      "ro": "verișoară",
+      "ru": "двоюродная сестра",
+      "note": ""
+    },
+    {
+      "id": 893,
+      "groupId": 30,
+      "ro": "nepot",
+      "ru": "внук / племянник",
+      "note": ""
+    },
+    {
+      "id": 894,
+      "groupId": 30,
+      "ro": "nepoată",
+      "ru": "внучка / племянница",
+      "note": ""
+    },
+    {
+      "id": 895,
+      "groupId": 30,
+      "ro": "socru",
+      "ru": "свёкор / тесть",
+      "note": ""
+    },
+    {
+      "id": 896,
+      "groupId": 30,
+      "ro": "soacră",
+      "ru": "свекровь / тёща",
+      "note": ""
+    },
+    {
+      "id": 897,
+      "groupId": 30,
+      "ro": "ginere",
+      "ru": "зять",
+      "note": ""
+    },
+    {
+      "id": 898,
+      "groupId": 30,
+      "ro": "noră",
+      "ru": "невестка",
+      "note": ""
+    },
+    {
+      "id": 899,
+      "groupId": 30,
+      "ro": "rudă",
+      "ru": "родственник",
+      "note": ""
+    },
+    {
+      "id": 900,
+      "groupId": 30,
+      "ro": "cuplu",
+      "ru": "пара",
+      "note": ""
+    },
+    {
+      "id": 901,
+      "groupId": 30,
+      "ro": "logodnic",
+      "ru": "жених",
+      "note": ""
+    },
+    {
+      "id": 902,
+      "groupId": 30,
+      "ro": "logodnică",
+      "ru": "невеста",
+      "note": ""
+    },
+    {
+      "id": 903,
+      "groupId": 30,
+      "ro": "căsătorie",
+      "ru": "брак",
+      "note": ""
+    },
+    {
+      "id": 904,
+      "groupId": 30,
+      "ro": "divorț",
+      "ru": "развод",
+      "note": ""
+    },
+    {
+      "id": 905,
+      "groupId": 30,
+      "ro": "generație",
+      "ru": "поколение",
+      "note": ""
+    },
+    {
+      "id": 906,
+      "groupId": 31,
+      "ro": "stat",
+      "ru": "государство",
+      "note": ""
+    },
+    {
+      "id": 907,
+      "groupId": 31,
+      "ro": "țară",
+      "ru": "страна",
+      "note": ""
+    },
+    {
+      "id": 908,
+      "groupId": 31,
+      "ro": "guvern",
+      "ru": "правительство",
+      "note": ""
+    },
+    {
+      "id": 909,
+      "groupId": 31,
+      "ro": "președinte",
+      "ru": "президент",
+      "note": ""
+    },
+    {
+      "id": 910,
+      "groupId": 31,
+      "ro": "parlament",
+      "ru": "парламент",
+      "note": ""
+    },
+    {
+      "id": 911,
+      "groupId": 31,
+      "ro": "lege",
+      "ru": "закон",
+      "note": ""
+    },
+    {
+      "id": 912,
+      "groupId": 31,
+      "ro": "constituție",
+      "ru": "конституция",
+      "note": ""
+    },
+    {
+      "id": 913,
+      "groupId": 31,
+      "ro": "alegeri",
+      "ru": "выборы",
+      "note": ""
+    },
+    {
+      "id": 914,
+      "groupId": 31,
+      "ro": "cetățean",
+      "ru": "гражданин",
+      "note": ""
+    },
+    {
+      "id": 915,
+      "groupId": 31,
+      "ro": "drept",
+      "ru": "право",
+      "note": ""
+    },
+    {
+      "id": 916,
+      "groupId": 31,
+      "ro": "obligație",
+      "ru": "обязанность",
+      "note": ""
+    },
+    {
+      "id": 917,
+      "groupId": 31,
+      "ro": "autoritate",
+      "ru": "власть",
+      "note": ""
+    },
+    {
+      "id": 918,
+      "groupId": 31,
+      "ro": "minister",
+      "ru": "министерство",
+      "note": ""
+    },
+    {
+      "id": 919,
+      "groupId": 31,
+      "ro": "ministru",
+      "ru": "министр",
+      "note": ""
+    },
+    {
+      "id": 920,
+      "groupId": 31,
+      "ro": "politică",
+      "ru": "политика",
+      "note": ""
+    },
+    {
+      "id": 921,
+      "groupId": 31,
+      "ro": "partid",
+      "ru": "партия",
+      "note": ""
+    },
+    {
+      "id": 922,
+      "groupId": 31,
+      "ro": "opoziție",
+      "ru": "оппозиция",
+      "note": ""
+    },
+    {
+      "id": 923,
+      "groupId": 31,
+      "ro": "diplomație",
+      "ru": "дипломатия",
+      "note": ""
+    },
+    {
+      "id": 924,
+      "groupId": 31,
+      "ro": "ambasadă",
+      "ru": "посольство",
+      "note": ""
+    },
+    {
+      "id": 925,
+      "groupId": 31,
+      "ro": "ambasador",
+      "ru": "посол",
+      "note": ""
+    },
+    {
+      "id": 926,
+      "groupId": 31,
+      "ro": "frontieră",
+      "ru": "государственная граница",
+      "note": "Официальная граница государства; graniță — более общее слово"
+    },
+    {
+      "id": 927,
+      "groupId": 31,
+      "ro": "capitală",
+      "ru": "столица",
+      "note": ""
+    },
+    {
+      "id": 928,
+      "groupId": 31,
+      "ro": "regiune",
+      "ru": "регион",
+      "note": ""
+    },
+    {
+      "id": 929,
+      "groupId": 31,
+      "ro": "administrație",
+      "ru": "администрация",
+      "note": ""
+    },
+    {
+      "id": 930,
+      "groupId": 31,
+      "ro": "justiție",
+      "ru": "правосудие",
+      "note": ""
+    },
+    {
+      "id": 931,
+      "groupId": 31,
+      "ro": "tribunal",
+      "ru": "суд",
+      "note": ""
+    },
+    {
+      "id": 932,
+      "groupId": 31,
+      "ro": "poliție",
+      "ru": "полиция",
+      "note": ""
+    },
+    {
+      "id": 933,
+      "groupId": 31,
+      "ro": "armată",
+      "ru": "армия",
+      "note": ""
+    },
+    {
+      "id": 934,
+      "groupId": 31,
+      "ro": "viză",
+      "ru": "виза",
+      "note": ""
+    },
+    {
+      "id": 935,
+      "groupId": 31,
+      "ro": "cerere",
+      "ru": "заявление",
+      "note": ""
+    },
+    {
+      "id": 936,
+      "groupId": 31,
+      "ro": "formular",
+      "ru": "анкета",
+      "note": ""
+    },
+    {
+      "id": 937,
+      "groupId": 31,
+      "ro": "act de identitate",
+      "ru": "удостоверение личности",
+      "note": ""
+    },
+    {
+      "id": 938,
+      "groupId": 31,
+      "ro": "taxă consulară",
+      "ru": "консульский сбор",
+      "note": ""
+    },
+    {
+      "id": 939,
+      "groupId": 31,
+      "ro": "chitanță",
+      "ru": "квитанция",
+      "note": ""
+    },
+    {
+      "id": 940,
+      "groupId": 31,
+      "ro": "ștampilă",
+      "ru": "печать",
+      "note": ""
+    },
+    {
+      "id": 941,
+      "groupId": 31,
+      "ro": "traducător",
+      "ru": "переводчик",
+      "note": ""
+    },
+    {
+      "id": 942,
+      "groupId": 31,
+      "ro": "legalizare",
+      "ru": "легализация",
+      "note": ""
+    },
+    {
+      "id": 943,
+      "groupId": 31,
+      "ro": "apostilă",
+      "ru": "апостиль",
+      "note": ""
+    },
+    {
+      "id": 944,
+      "groupId": 31,
+      "ro": "permis de ședere",
+      "ru": "вид на жительство",
+      "note": ""
+    },
+    {
+      "id": 945,
+      "groupId": 31,
+      "ro": "cetățenie",
+      "ru": "гражданство",
+      "note": ""
+    },
+    {
+      "id": 946,
+      "groupId": 31,
+      "ro": "invitație",
+      "ru": "приглашение",
+      "note": ""
+    },
+    {
+      "id": 947,
+      "groupId": 31,
+      "ro": "dovadă",
+      "ru": "доказательство",
+      "note": ""
+    },
+    {
+      "id": 948,
+      "groupId": 31,
+      "ro": "asigurare",
+      "ru": "страховка",
+      "note": ""
+    },
+    {
+      "id": 949,
+      "groupId": 31,
+      "ro": "fotografie",
+      "ru": "фото",
+      "note": ""
+    },
+    {
+      "id": 950,
+      "groupId": 31,
+      "ro": "valabilitate",
+      "ru": "срок действия",
+      "note": ""
+    },
+    {
+      "id": 951,
+      "groupId": 31,
+      "ro": "refuz",
+      "ru": "отказ",
+      "note": ""
+    },
+    {
+      "id": 952,
+      "groupId": 31,
+      "ro": "aprobare",
+      "ru": "одобрение",
+      "note": ""
+    },
+    {
+      "id": 953,
+      "groupId": 31,
+      "ro": "dosar",
+      "ru": "досье",
+      "note": ""
+    },
+    {
+      "id": 954,
+      "groupId": 31,
+      "ro": "funcționar",
+      "ru": "сотрудник",
+      "note": ""
+    },
+    {
+      "id": 955,
+      "groupId": 31,
+      "ro": "secție consulară",
+      "ru": "консульский отдел",
+      "note": ""
+    },
+    {
+      "id": 956,
+      "groupId": 28,
+      "ro": "deci",
+      "ru": "значит",
+      "note": ""
+    },
+    {
+      "id": 957,
+      "groupId": 28,
+      "ro": "însă",
+      "ru": "однако",
+      "note": ""
+    },
+    {
+      "id": 958,
+      "groupId": 28,
+      "ro": "totuși",
+      "ru": "всё же",
+      "note": ""
+    },
+    {
+      "id": 959,
+      "groupId": 28,
+      "ro": "în plus",
+      "ru": "кроме того",
+      "note": ""
+    },
+    {
+      "id": 960,
+      "groupId": 28,
+      "ro": "deoarece",
+      "ru": "потому что",
+      "note": ""
+    },
+    {
+      "id": 961,
+      "groupId": 28,
+      "ro": "astfel",
+      "ru": "таким образом",
+      "note": ""
+    },
+    {
+      "id": 962,
+      "groupId": 28,
+      "ro": "din nou",
+      "ru": "снова",
+      "note": ""
+    },
+    {
+      "id": 963,
+      "groupId": 28,
+      "ro": "la început",
+      "ru": "сначала",
+      "note": ""
+    },
+    {
+      "id": 964,
+      "groupId": 28,
+      "ro": "la sfârșit",
+      "ru": "в конце",
+      "note": ""
+    },
+    {
+      "id": 965,
+      "groupId": 28,
+      "ro": "în loc de",
+      "ru": "вместо",
+      "note": ""
+    },
+    {
+      "id": 966,
+      "groupId": 28,
+      "ro": "mai ales",
+      "ru": "особенно",
+      "note": ""
+    },
+    {
+      "id": 967,
+      "groupId": 28,
+      "ro": "de fapt",
+      "ru": "на самом деле",
+      "note": ""
+    },
+    {
+      "id": 968,
+      "groupId": 5,
+      "ro": "a trebui",
+      "ru": "нужно",
+      "note": ""
+    },
+    {
+      "id": 969,
+      "groupId": 5,
+      "ro": "a putea",
+      "ru": "мочь",
+      "note": ""
+    },
+    {
+      "id": 970,
+      "groupId": 5,
+      "ro": "a vrea",
+      "ru": "хотеть",
+      "note": ""
+    },
+    {
+      "id": 971,
+      "groupId": 5,
+      "ro": "a avea voie",
+      "ru": "иметь право",
+      "note": ""
+    },
+    {
+      "id": 975,
+      "groupId": 5,
+      "ro": "a intenționa",
+      "ru": "намереваться",
+      "note": ""
+    },
+    {
+      "id": 976,
+      "groupId": 22,
+      "ro": "exact",
+      "ru": "точно",
+      "note": ""
+    },
+    {
+      "id": 977,
+      "groupId": 22,
+      "ro": "bineînțeles",
+      "ru": "конечно",
+      "note": ""
+    },
+    {
+      "id": 978,
+      "groupId": 22,
+      "ro": "desigur",
+      "ru": "разумеется",
+      "note": ""
+    },
+    {
+      "id": 979,
+      "groupId": 32,
+      "ro": "chirie",
+      "ru": "аренда",
+      "note": ""
+    },
+    {
+      "id": 980,
+      "groupId": 32,
+      "ro": "factură",
+      "ru": "счёт",
+      "note": ""
+    },
+    {
+      "id": 981,
+      "groupId": 32,
+      "ro": "economie",
+      "ru": "экономия",
+      "note": ""
+    },
+    {
+      "id": 982,
+      "groupId": 32,
+      "ro": "card",
+      "ru": "карта (банковская)",
+      "note": ""
+    },
+    {
+      "id": 983,
+      "groupId": 32,
+      "ro": "transfer",
+      "ru": "перевод",
+      "note": ""
+    },
+    {
+      "id": 984,
+      "groupId": 32,
+      "ro": "numerar",
+      "ru": "наличные",
+      "note": ""
+    },
+    {
+      "id": 985,
+      "groupId": 32,
+      "ro": "plată",
+      "ru": "платёж",
+      "note": ""
+    },
+    {
+      "id": 986,
+      "groupId": 32,
+      "ro": "cont",
+      "ru": "счёт (банковский)",
+      "note": "Омоним: счёт (банк) или аккаунт (интернет)"
+    },
+    {
+      "id": 987,
+      "groupId": 32,
+      "ro": "dobândă",
+      "ru": "процент",
+      "note": ""
+    },
+    {
+      "id": 988,
+      "groupId": 32,
+      "ro": "împrumut",
+      "ru": "кредит",
+      "note": ""
+    },
+    {
+      "id": 989,
+      "groupId": 10,
+      "ro": "relaxat",
+      "ru": "расслабленный",
+      "note": ""
+    },
+    {
+      "id": 990,
+      "groupId": 10,
+      "ro": "surprins",
+      "ru": "удивлённый",
+      "note": ""
+    },
+    {
+      "id": 991,
+      "groupId": 10,
+      "ro": "entuziasmat",
+      "ru": "воодушевлённый",
+      "note": ""
+    },
+    {
+      "id": 992,
+      "groupId": 10,
+      "ro": "confuz",
+      "ru": "запутанный",
+      "note": ""
+    },
+    {
+      "id": 993,
+      "groupId": 10,
+      "ro": "rușinat",
+      "ru": "смущённый",
+      "note": ""
+    },
+    {
+      "id": 994,
+      "groupId": 10,
+      "ro": "fericit",
+      "ru": "счастливый",
+      "note": ""
+    },
+    {
+      "id": 995,
+      "groupId": 10,
+      "ro": "nervos",
+      "ru": "нервный",
+      "note": ""
+    },
+    {
+      "id": 996,
+      "groupId": 5,
+      "ro": "a realiza",
+      "ru": "осознавать / осуществлять",
+      "note": ""
+    },
+    {
+      "id": 997,
+      "groupId": 5,
+      "ro": "a permite",
+      "ru": "позволять",
+      "note": ""
+    },
+    {
+      "id": 998,
+      "groupId": 5,
+      "ro": "a evita",
+      "ru": "избегать",
+      "note": ""
+    },
+    {
+      "id": 999,
+      "groupId": 5,
+      "ro": "a presupune",
+      "ru": "предполагать",
+      "note": ""
+    },
+    {
+      "id": 1000,
+      "groupId": 5,
+      "ro": "a sugera",
+      "ru": "предлагать",
+      "note": ""
+    },
+    {
+      "id": 1001,
+      "groupId": 5,
+      "ro": "a dezvolta",
+      "ru": "развивать",
+      "note": ""
+    },
+    {
+      "id": 1002,
+      "groupId": 5,
+      "ro": "a crește",
+      "ru": "расти",
+      "note": ""
+    },
+    {
+      "id": 1003,
+      "groupId": 5,
+      "ro": "a scădea",
+      "ru": "уменьшаться",
+      "note": ""
+    },
+    {
+      "id": 1004,
+      "groupId": 5,
+      "ro": "a influența",
+      "ru": "влиять",
+      "note": ""
+    },
+    {
+      "id": 1005,
+      "groupId": 5,
+      "ro": "a controla",
+      "ru": "контролировать",
+      "note": ""
+    },
+    {
+      "id": 1006,
+      "groupId": 5,
+      "ro": "a depinde",
+      "ru": "зависеть",
+      "note": ""
+    },
+    {
+      "id": 1007,
+      "groupId": 5,
+      "ro": "a aparține",
+      "ru": "принадлежать",
+      "note": ""
+    },
+    {
+      "id": 1008,
+      "groupId": 5,
+      "ro": "a participa",
+      "ru": "участвовать",
+      "note": ""
+    },
+    {
+      "id": 1009,
+      "groupId": 5,
+      "ro": "a îmbunătăți",
+      "ru": "улучшать",
+      "note": ""
+    },
+    {
+      "id": 1010,
+      "groupId": 28,
+      "ro": "mai mult",
+      "ru": "больше",
+      "note": ""
+    },
+    {
+      "id": 1011,
+      "groupId": 28,
+      "ro": "mai puțin",
+      "ru": "меньше",
+      "note": ""
+    },
+    {
+      "id": 1012,
+      "groupId": 28,
+      "ro": "de aceea",
+      "ru": "поэтому",
+      "note": ""
+    },
+    {
+      "id": 1013,
+      "groupId": 28,
+      "ro": "în schimb",
+      "ru": "вместо этого",
+      "note": ""
+    },
+    {
+      "id": 1014,
+      "groupId": 28,
+      "ro": "ar trebui",
+      "ru": "следовало бы",
+      "note": ""
+    },
+    {
+      "id": 1015,
+      "groupId": 22,
+      "ro": "deloc",
+      "ru": "совсем",
+      "note": ""
+    },
+    {
+      "id": 1016,
+      "groupId": 32,
+      "ro": "venit",
+      "ru": "доход",
+      "note": ""
+    },
+    {
+      "id": 1017,
+      "groupId": 32,
+      "ro": "cheltuială",
+      "ru": "расход",
+      "note": ""
+    },
+    {
+      "id": 1018,
+      "groupId": 32,
+      "ro": "economii",
+      "ru": "сбережения",
+      "note": ""
+    },
+    {
+      "id": 1019,
+      "groupId": 32,
+      "ro": "sold",
+      "ru": "баланс",
+      "note": ""
+    },
+    {
+      "id": 1020,
+      "groupId": 32,
+      "ro": "bancomat",
+      "ru": "банкомат",
+      "note": ""
+    },
+    {
+      "id": 1021,
+      "groupId": 32,
+      "ro": "servicii",
+      "ru": "услуги",
+      "note": ""
+    },
+    {
+      "id": 1022,
+      "groupId": 32,
+      "ro": "abonament",
+      "ru": "подписка",
+      "note": ""
+    },
+    {
+      "id": 1023,
+      "groupId": 32,
+      "ro": "taxă",
+      "ru": "налог / сбор",
+      "note": ""
+    },
+    {
+      "id": 1024,
+      "groupId": 10,
+      "ro": "neliniștit",
+      "ru": "тревожный",
+      "note": ""
+    },
+    {
+      "id": 1025,
+      "groupId": 10,
+      "ro": "nemulțumit",
+      "ru": "недовольный",
+      "note": ""
+    },
+    {
+      "id": 1026,
+      "groupId": 10,
+      "ro": "recunoscător",
+      "ru": "благодарный",
+      "note": ""
+    },
+    {
+      "id": 1027,
+      "groupId": 10,
+      "ro": "plictisit",
+      "ru": "скучающий",
+      "note": ""
+    },
+    {
+      "id": 1028,
+      "groupId": 10,
+      "ro": "interesat",
+      "ru": "заинтересованный",
+      "note": ""
+    },
+    {
+      "id": 1029,
+      "groupId": 10,
+      "ro": "emoționat",
+      "ru": "взволнованный",
+      "note": ""
+    },
+    {
+      "id": 1030,
+      "groupId": 10,
+      "ro": "motivat",
+      "ru": "мотивированный",
+      "note": ""
+    },
+    {
+      "id": 1031,
+      "groupId": 10,
+      "ro": "demotivat",
+      "ru": "демотивированный",
+      "note": ""
+    },
+    {
+      "id": 1032,
+      "groupId": 32,
+      "ro": "cheltuieli",
+      "ru": "расходы",
+      "note": ""
+    },
+    {
+      "id": 1033,
+      "groupId": 32,
+      "ro": "card bancar",
+      "ru": "банковская карта",
+      "note": ""
+    },
+    {
+      "id": 1034,
+      "groupId": 32,
+      "ro": "plată online",
+      "ru": "онлайн-платёж",
+      "note": ""
+    },
+    {
+      "id": 1035,
+      "groupId": 32,
+      "ro": "factură lunară",
+      "ru": "ежемесячный счёт",
+      "note": ""
+    },
+    {
+      "id": 1036,
+      "groupId": 6,
+      "ro": "gras",
+      "ru": "толстый (жирный)",
+      "note": ""
+    },
+    {
+      "id": 1037,
+      "groupId": 33,
+      "ro": "cerc",
+      "ru": "круг",
+      "note": ""
+    },
+    {
+      "id": 1038,
+      "groupId": 33,
+      "ro": "oval",
+      "ru": "овал",
+      "note": ""
+    },
+    {
+      "id": 1039,
+      "groupId": 33,
+      "ro": "elipsă",
+      "ru": "эллипс",
+      "note": ""
+    },
+    {
+      "id": 1040,
+      "groupId": 33,
+      "ro": "pătrat",
+      "ru": "квадрат",
+      "note": ""
+    },
+    {
+      "id": 1041,
+      "groupId": 33,
+      "ro": "dreptunghi",
+      "ru": "прямоугольник",
+      "note": ""
+    },
+    {
+      "id": 1042,
+      "groupId": 33,
+      "ro": "triunghi",
+      "ru": "треугольник",
+      "note": ""
+    },
+    {
+      "id": 1043,
+      "groupId": 33,
+      "ro": "linie",
+      "ru": "линия",
+      "note": ""
+    },
+    {
+      "id": 1044,
+      "groupId": 33,
+      "ro": "rază",
+      "ru": "луч",
+      "note": ""
+    },
+    {
+      "id": 1045,
+      "groupId": 33,
+      "ro": "unghi",
+      "ru": "угол",
+      "note": ""
+    },
+    {
+      "id": 1046,
+      "groupId": 33,
+      "ro": "muchie",
+      "ru": "ребро",
+      "note": ""
+    },
+    {
+      "id": 1047,
+      "groupId": 33,
+      "ro": "cub",
+      "ru": "куб",
+      "note": ""
+    },
+    {
+      "id": 1048,
+      "groupId": 33,
+      "ro": "sferă",
+      "ru": "сфера",
+      "note": ""
+    },
+    {
+      "id": 1049,
+      "groupId": 33,
+      "ro": "con",
+      "ru": "конус",
+      "note": ""
+    },
+    {
+      "id": 1050,
+      "groupId": 33,
+      "ro": "solid",
+      "ru": "твёрдое тело",
+      "note": ""
+    },
+    {
+      "id": 1051,
+      "groupId": 33,
+      "ro": "suprafață",
+      "ru": "поверхность",
+      "note": ""
+    },
+    {
+      "id": 1052,
+      "groupId": 33,
+      "ro": "vârf",
+      "ru": "вершина",
+      "note": ""
+    },
+    {
+      "id": 1053,
+      "groupId": 15,
+      "ro": "natură",
+      "ru": "природа",
+      "note": ""
+    },
+    {
+      "id": 1054,
+      "groupId": 15,
+      "ro": "copac",
+      "ru": "дерево",
+      "note": ""
+    },
+    {
+      "id": 1055,
+      "groupId": 15,
+      "ro": "frunză",
+      "ru": "лист",
+      "note": ""
+    },
+    {
+      "id": 1056,
+      "groupId": 15,
+      "ro": "iarbă",
+      "ru": "трава",
+      "note": ""
+    },
+    {
+      "id": 1057,
+      "groupId": 15,
+      "ro": "floare",
+      "ru": "цветок",
+      "note": ""
+    },
+    {
+      "id": 1058,
+      "groupId": 15,
+      "ro": "ramură",
+      "ru": "ветка",
+      "note": ""
+    },
+    {
+      "id": 1059,
+      "groupId": 15,
+      "ro": "pământ",
+      "ru": "земля",
+      "note": ""
+    },
+    {
+      "id": 1060,
+      "groupId": 15,
+      "ro": "piatră",
+      "ru": "камень",
+      "note": ""
+    },
+    {
+      "id": 1061,
+      "groupId": 4,
+      "ro": "apă",
+      "ru": "вода",
+      "note": ""
+    },
+    {
+      "id": 1062,
+      "groupId": 18,
+      "ro": "zăpadă",
+      "ru": "снег",
+      "note": ""
+    },
+    {
+      "id": 1063,
+      "groupId": 5,
+      "ro": "a strică",
+      "ru": "портить",
+      "note": ""
+    },
+    {
+      "id": 1064,
+      "groupId": 5,
+      "ro": "a rupta",
+      "ru": "разорвать",
+      "note": ""
+    },
+    {
+      "id": 1065,
+      "groupId": 22,
+      "ro": "zgomot",
+      "ru": "шум",
+      "note": ""
+    },
+    {
+      "id": 1066,
+      "groupId": 5,
+      "ro": "a repara",
+      "ru": "чинить",
+      "note": ""
+    },
+    {
+      "id": 1067,
+      "groupId": 7,
+      "ro": "instalator",
+      "ru": "сантехник",
+      "note": ""
+    },
+    {
+      "id": 1068,
+      "groupId": 7,
+      "ro": "electrician",
+      "ru": "электрик",
+      "note": ""
+    },
+    {
+      "id": 1069,
+      "groupId": 9,
+      "ro": "sarcină",
+      "ru": "задача",
+      "note": ""
+    },
+    {
+      "id": 1070,
+      "groupId": 9,
+      "ro": "coleg",
+      "ru": "коллега",
+      "note": ""
+    },
+    {
+      "id": 1071,
+      "groupId": 9,
+      "ro": "șef",
+      "ru": "начальник",
+      "note": ""
+    },
+    {
+      "id": 1072,
+      "groupId": 22,
+      "ro": "întâlnire",
+      "ru": "встреча",
+      "note": ""
+    },
+    {
+      "id": 1073,
+      "groupId": 5,
+      "ro": "a discuta",
+      "ru": "обсуждать",
+      "note": ""
+    },
+    {
+      "id": 1074,
+      "groupId": 14,
+      "ro": "haină",
+      "ru": "одежда",
+      "note": ""
+    },
+    {
+      "id": 1075,
+      "groupId": 5,
+      "ro": "a interzice",
+      "ru": "запрещать",
+      "note": ""
+    },
+    {
+      "id": 1076,
+      "groupId": 22,
+      "ro": "gând",
+      "ru": "мысль",
+      "note": ""
+    },
+    {
+      "id": 1077,
+      "groupId": 22,
+      "ro": "atenție",
+      "ru": "внимание",
+      "note": ""
+    },
+    {
+      "id": 1078,
+      "groupId": 25,
+      "ro": "greșeală",
+      "ru": "ошибка",
+      "note": ""
+    },
+    {
+      "id": 1079,
+      "groupId": 22,
+      "ro": "adevăr",
+      "ru": "правда",
+      "note": ""
+    },
+    {
+      "id": 1080,
+      "groupId": 22,
+      "ro": "minciună",
+      "ru": "ложь",
+      "note": ""
+    },
+    {
+      "id": 1081,
+      "groupId": 4,
+      "ro": "pâine",
+      "ru": "хлеб",
+      "note": ""
+    },
+    {
+      "id": 1082,
+      "groupId": 4,
+      "ro": "ulei",
+      "ru": "растительное масло",
+      "note": ""
+    },
+    {
+      "id": 1083,
+      "groupId": 4,
+      "ro": "brânză",
+      "ru": "сыр",
+      "note": ""
+    },
+    {
+      "id": 1084,
+      "groupId": 4,
+      "ro": "supă",
+      "ru": "суп",
+      "note": ""
+    },
+    {
+      "id": 1085,
+      "groupId": 4,
+      "ro": "pizza",
+      "ru": "пицца",
+      "note": ""
+    },
+    {
+      "id": 1086,
+      "groupId": 4,
+      "ro": "oțet",
+      "ru": "уксус",
+      "note": ""
+    },
+    {
+      "id": 1087,
+      "groupId": 4,
+      "ro": "făină",
+      "ru": "мука",
+      "note": ""
+    },
+    {
+      "id": 1088,
+      "groupId": 4,
+      "ro": "smochină",
+      "ru": "инжир",
+      "note": ""
+    },
+    {
+      "id": 1089,
+      "groupId": 4,
+      "ro": "căpșună",
+      "ru": "клубника",
+      "note": ""
+    },
+    {
+      "id": 1090,
+      "groupId": 4,
+      "ro": "zmeură",
+      "ru": "малина",
+      "note": ""
+    },
+    {
+      "id": 1091,
+      "groupId": 4,
+      "ro": "cireașă",
+      "ru": "черешня",
+      "note": ""
+    },
+    {
+      "id": 1092,
+      "groupId": 4,
+      "ro": "afină",
+      "ru": "черника",
+      "note": ""
+    },
+    {
+      "id": 1093,
+      "groupId": 4,
+      "ro": "nucă",
+      "ru": "грецкий орех",
+      "note": ""
+    },
+    {
+      "id": 1094,
+      "groupId": 4,
+      "ro": "alună",
+      "ru": "лесной орех",
+      "note": ""
+    },
+    {
+      "id": 1095,
+      "groupId": 4,
+      "ro": "migdală",
+      "ru": "миндаль",
+      "note": ""
+    },
+    {
+      "id": 1096,
+      "groupId": 4,
+      "ro": "carne",
+      "ru": "мясо",
+      "note": ""
+    },
+    {
+      "id": 1097,
+      "groupId": 4,
+      "ro": "pui",
+      "ru": "курица",
+      "note": ""
+    },
+    {
+      "id": 1098,
+      "groupId": 4,
+      "ro": "vită",
+      "ru": "говядина",
+      "note": ""
+    },
+    {
+      "id": 1099,
+      "groupId": 4,
+      "ro": "miel",
+      "ru": "баранина",
+      "note": ""
+    },
+    {
+      "id": 1100,
+      "groupId": 5,
+      "ro": "a gândi",
+      "ru": "думать",
+      "note": ""
+    },
+    {
+      "id": 1101,
+      "groupId": 5,
+      "ro": "a ști",
+      "ru": "знать",
+      "note": ""
+    },
+    {
+      "id": 1102,
+      "groupId": 5,
+      "ro": "a vedea",
+      "ru": "видеть",
+      "note": ""
+    },
+    {
+      "id": 1103,
+      "groupId": 5,
+      "ro": "a auzi",
+      "ru": "слышать",
+      "note": ""
+    },
+    {
+      "id": 1104,
+      "groupId": 5,
+      "ro": "a simți",
+      "ru": "чувствовать",
+      "note": ""
+    },
+    {
+      "id": 1105,
+      "groupId": 5,
+      "ro": "a vorbi",
+      "ru": "говорить",
+      "note": ""
+    },
+    {
+      "id": 1106,
+      "groupId": 5,
+      "ro": "a spune",
+      "ru": "сказать",
+      "note": ""
+    },
+    {
+      "id": 1107,
+      "groupId": 5,
+      "ro": "a suna",
+      "ru": "звонить",
+      "note": ""
+    },
+    {
+      "id": 1108,
+      "groupId": 5,
+      "ro": "a aștepta",
+      "ru": "ждать",
+      "note": ""
+    },
+    {
+      "id": 1109,
+      "groupId": 5,
+      "ro": "a ajuta",
+      "ru": "помогать",
+      "note": ""
+    },
+    {
+      "id": 1110,
+      "groupId": 5,
+      "ro": "a plăcea",
+      "ru": "нравиться",
+      "note": ""
+    },
+    {
+      "id": 1111,
+      "groupId": 5,
+      "ro": "a costa",
+      "ru": "стоить",
+      "note": ""
+    },
+    {
+      "id": 1112,
+      "groupId": 5,
+      "ro": "a traduce",
+      "ru": "переводить",
+      "note": ""
+    },
+    {
+      "id": 1114,
+      "groupId": 5,
+      "ro": "a urî",
+      "ru": "ненавидеть",
+      "note": ""
+    },
+    {
+      "id": 1115,
+      "groupId": 5,
+      "ro": "a iubi",
+      "ru": "любить",
+      "note": ""
+    },
+    {
+      "id": 1116,
+      "groupId": 5,
+      "ro": "a da",
+      "ru": "давать",
+      "note": ""
+    },
+    {
+      "id": 1117,
+      "groupId": 5,
+      "ro": "a lua",
+      "ru": "брать",
+      "note": ""
+    },
+    {
+      "id": 1118,
+      "groupId": 5,
+      "ro": "a pune",
+      "ru": "класть / ставить",
+      "note": ""
+    },
+    {
+      "id": 1119,
+      "groupId": 5,
+      "ro": "a merge",
+      "ru": "идти / ехать",
+      "note": "Универсальный глагол движения (идти, ехать)"
+    },
+    {
+      "id": 1120,
+      "groupId": 5,
+      "ro": "a sta",
+      "ru": "стоять / оставаться",
+      "note": ""
+    },
+    {
+      "id": 1121,
+      "groupId": 5,
+      "ro": "a dormi",
+      "ru": "спать",
+      "note": ""
+    },
+    {
+      "id": 1122,
+      "groupId": 5,
+      "ro": "a se trezi",
+      "ru": "просыпаться",
+      "note": ""
+    },
+    {
+      "id": 1123,
+      "groupId": 5,
+      "ro": "a cânta",
+      "ru": "петь / играть (на инструменте)",
+      "note": ""
+    },
+    {
+      "id": 1124,
+      "groupId": 5,
+      "ro": "a dansa",
+      "ru": "танцевать",
+      "note": ""
+    },
+    {
+      "id": 1125,
+      "groupId": 5,
+      "ro": "a râde",
+      "ru": "смеяться",
+      "note": ""
+    },
+    {
+      "id": 1126,
+      "groupId": 5,
+      "ro": "a plânge",
+      "ru": "плакать",
+      "note": ""
+    },
+    {
+      "id": 1127,
+      "groupId": 5,
+      "ro": "a se îmbrăca",
+      "ru": "одеваться",
+      "note": ""
+    },
+    {
+      "id": 1128,
+      "groupId": 5,
+      "ro": "a se dezbrăca",
+      "ru": "раздеваться",
+      "note": ""
+    },
+    {
+      "id": 1129,
+      "groupId": 5,
+      "ro": "a semna",
+      "ru": "подписывать",
+      "note": ""
+    },
+    {
+      "id": 1130,
+      "groupId": 5,
+      "ro": "a număra",
+      "ru": "считать",
+      "note": ""
+    },
+    {
+      "id": 1131,
+      "groupId": 5,
+      "ro": "a verifica",
+      "ru": "проверять",
+      "note": ""
+    },
+    {
+      "id": 1132,
+      "groupId": 5,
+      "ro": "a confirma",
+      "ru": "подтверждать",
+      "note": ""
+    },
+    {
+      "id": 1133,
+      "groupId": 5,
+      "ro": "a anula",
+      "ru": "отменять",
+      "note": ""
+    },
+    {
+      "id": 1134,
+      "groupId": 5,
+      "ro": "a alerga",
+      "ru": "бежать",
+      "note": ""
+    },
+    {
+      "id": 1135,
+      "groupId": 5,
+      "ro": "a sări",
+      "ru": "прыгать",
+      "note": ""
+    },
+    {
+      "id": 1136,
+      "groupId": 5,
+      "ro": "a înota",
+      "ru": "плавать",
+      "note": ""
+    },
+    {
+      "id": 1137,
+      "groupId": 5,
+      "ro": "a zbura",
+      "ru": "летать",
+      "note": ""
+    },
+    {
+      "id": 1138,
+      "groupId": 6,
+      "ro": "tânăr",
+      "ru": "молодой",
+      "note": ""
+    },
+    {
+      "id": 1139,
+      "groupId": 6,
+      "ro": "bătrân",
+      "ru": "старый (о человеке)",
+      "note": "Только о людях; для вещей — vechi (старый)"
+    },
+    {
+      "id": 1140,
+      "groupId": 6,
+      "ro": "inteligent",
+      "ru": "умный",
+      "note": ""
+    },
+    {
+      "id": 1141,
+      "groupId": 6,
+      "ro": "deștept",
+      "ru": "умный / сообразительный",
+      "note": "Более разговорный вариант, чем inteligent"
+    },
+    {
+      "id": 1142,
+      "groupId": 6,
+      "ro": "prost",
+      "ru": "глупый",
+      "note": ""
+    },
+    {
+      "id": 1143,
+      "groupId": 6,
+      "ro": "important",
+      "ru": "важный",
+      "note": ""
+    },
+    {
+      "id": 1144,
+      "groupId": 6,
+      "ro": "urgent",
+      "ru": "срочный",
+      "note": ""
+    },
+    {
+      "id": 1145,
+      "groupId": 6,
+      "ro": "similar",
+      "ru": "похожий",
+      "note": ""
+    },
+    {
+      "id": 1146,
+      "groupId": 6,
+      "ro": "diferit",
+      "ru": "разный / отличный",
+      "note": ""
+    },
+    {
+      "id": 1147,
+      "groupId": 6,
+      "ro": "special",
+      "ru": "особенный",
+      "note": ""
+    },
+    {
+      "id": 1148,
+      "groupId": 6,
+      "ro": "normal",
+      "ru": "нормальный",
+      "note": ""
+    },
+    {
+      "id": 1149,
+      "groupId": 6,
+      "ro": "oficial",
+      "ru": "официальный",
+      "note": ""
+    },
+    {
+      "id": 1150,
+      "groupId": 6,
+      "ro": "privat",
+      "ru": "частный / личный",
+      "note": ""
+    },
+    {
+      "id": 1151,
+      "groupId": 6,
+      "ro": "public",
+      "ru": "публичный / общественный",
+      "note": ""
+    },
+    {
+      "id": 1152,
+      "groupId": 6,
+      "ro": "gratuit",
+      "ru": "бесплатный",
+      "note": ""
+    },
+    {
+      "id": 1153,
+      "groupId": 6,
+      "ro": "obligatoriu",
+      "ru": "обязательный",
+      "note": ""
+    },
+    {
+      "id": 1154,
+      "groupId": 6,
+      "ro": "opțional",
+      "ru": "необязательный",
+      "note": ""
+    },
+    {
+      "id": 1155,
+      "groupId": 6,
+      "ro": "necesar",
+      "ru": "необходимый",
+      "note": ""
+    },
+    {
+      "id": 1156,
+      "groupId": 6,
+      "ro": "suficient",
+      "ru": "достаточный",
+      "note": ""
+    },
+    {
+      "id": 1157,
+      "groupId": 22,
+      "ro": "nume",
+      "ru": "фамилия",
+      "note": "Внимание: в румынском — фамилия (prenume = имя)"
+    },
+    {
+      "id": 1158,
+      "groupId": 22,
+      "ro": "prenume",
+      "ru": "имя (личное)",
+      "note": "Внимание: в румынском — имя (nume = фамилия)"
+    },
+    {
+      "id": 1159,
+      "groupId": 22,
+      "ro": "adresă",
+      "ru": "адрес",
+      "note": ""
+    },
+    {
+      "id": 1160,
+      "groupId": 22,
+      "ro": "rugăminte",
+      "ru": "просьба",
+      "note": ""
+    },
+    {
+      "id": 1161,
+      "groupId": 22,
+      "ro": "sfat",
+      "ru": "совет",
+      "note": ""
+    },
+    {
+      "id": 1162,
+      "groupId": 22,
+      "ro": "mesaj",
+      "ru": "сообщение",
+      "note": ""
+    },
+    {
+      "id": 1163,
+      "groupId": 22,
+      "ro": "telefon",
+      "ru": "телефон",
+      "note": ""
+    },
+    {
+      "id": 1164,
+      "groupId": 26,
+      "ro": "internet",
+      "ru": "интернет",
+      "note": ""
+    },
+    {
+      "id": 1165,
+      "groupId": 26,
+      "ro": "wi-fi",
+      "ru": "Wi-Fi",
+      "note": ""
+    },
+    {
+      "id": 1166,
+      "groupId": 26,
+      "ro": "încărcător",
+      "ru": "зарядка",
+      "note": ""
+    },
+    {
+      "id": 1167,
+      "groupId": 26,
+      "ro": "cablu",
+      "ru": "кабель",
+      "note": ""
+    },
+    {
+      "id": 1168,
+      "groupId": 26,
+      "ro": "imprimantă",
+      "ru": "принтер",
+      "note": ""
+    },
+    {
+      "id": 1169,
+      "groupId": 26,
+      "ro": "cameră",
+      "ru": "камера",
+      "note": "Омоним: камера или комната"
+    },
+    {
+      "id": 1170,
+      "groupId": 26,
+      "ro": "microfon",
+      "ru": "микрофон",
+      "note": ""
+    },
+    {
+      "id": 1171,
+      "groupId": 26,
+      "ro": "difuzor",
+      "ru": "динамик",
+      "note": ""
+    },
+    {
+      "id": 1172,
+      "groupId": 26,
+      "ro": "memorie",
+      "ru": "память (устройства)",
+      "note": ""
+    },
+    {
+      "id": 1173,
+      "groupId": 26,
+      "ro": "procesor",
+      "ru": "процессор",
+      "note": ""
+    },
+    {
+      "id": 1174,
+      "groupId": 26,
+      "ro": "server",
+      "ru": "сервер",
+      "note": ""
+    },
+    {
+      "id": 1175,
+      "groupId": 26,
+      "ro": "cod",
+      "ru": "код",
+      "note": ""
+    },
+    {
+      "id": 1176,
+      "groupId": 23,
+      "ro": "alergie",
+      "ru": "аллергия",
+      "note": ""
+    },
+    {
+      "id": 1177,
+      "groupId": 23,
+      "ro": "operație",
+      "ru": "операция",
+      "note": ""
+    },
+    {
+      "id": 1178,
+      "groupId": 23,
+      "ro": "ambulanță",
+      "ru": "скорая помощь",
+      "note": ""
+    },
+    {
+      "id": 1179,
+      "groupId": 23,
+      "ro": "tensiune",
+      "ru": "давление (кровяное)",
+      "note": ""
+    },
+    {
+      "id": 1180,
+      "groupId": 23,
+      "ro": "diabet",
+      "ru": "диабет",
+      "note": ""
+    },
+    {
+      "id": 1181,
+      "groupId": 23,
+      "ro": "virus",
+      "ru": "вирус",
+      "note": ""
+    },
+    {
+      "id": 1182,
+      "groupId": 23,
+      "ro": "infecție",
+      "ru": "инфекция",
+      "note": ""
+    },
+    {
+      "id": 1183,
+      "groupId": 23,
+      "ro": "bandaj",
+      "ru": "бинт / повязка",
+      "note": ""
+    },
+    {
+      "id": 1184,
+      "groupId": 23,
+      "ro": "urgență",
+      "ru": "скорая / неотложка",
+      "note": ""
+    },
+    {
+      "id": 1185,
+      "groupId": 19,
+      "ro": "hotel",
+      "ru": "отель",
+      "note": ""
+    },
+    {
+      "id": 1186,
+      "groupId": 19,
+      "ro": "restaurant",
+      "ru": "ресторан",
+      "note": ""
+    },
+    {
+      "id": 1187,
+      "groupId": 19,
+      "ro": "cafenea",
+      "ru": "кафе",
+      "note": ""
+    },
+    {
+      "id": 1188,
+      "groupId": 19,
+      "ro": "stație de autobuz",
+      "ru": "автобусная остановка",
+      "note": ""
+    },
+    {
+      "id": 1189,
+      "groupId": 19,
+      "ro": "aeroport",
+      "ru": "аэропорт",
+      "note": ""
+    },
+    {
+      "id": 1190,
+      "groupId": 19,
+      "ro": "port",
+      "ru": "порт",
+      "note": ""
+    },
+    {
+      "id": 1191,
+      "groupId": 19,
+      "ro": "piață (market)",
+      "ru": "рынок",
+      "note": ""
+    },
+    {
+      "id": 1192,
+      "groupId": 19,
+      "ro": "supermarket",
+      "ru": "супермаркет",
+      "note": ""
+    },
+    {
+      "id": 1193,
+      "groupId": 19,
+      "ro": "biserică",
+      "ru": "церковь",
+      "note": ""
+    },
+    {
+      "id": 1194,
+      "groupId": 19,
+      "ro": "primărie",
+      "ru": "мэрия",
+      "note": ""
+    },
+    {
+      "id": 1195,
+      "groupId": 32,
+      "ro": "monedă",
+      "ru": "монета / валюта",
+      "note": ""
+    },
+    {
+      "id": 1196,
+      "groupId": 32,
+      "ro": "leu",
+      "ru": "лей (румынская валюта)",
+      "note": "Омоним: лей (валюта) или лев (животное)"
+    },
+    {
+      "id": 1197,
+      "groupId": 32,
+      "ro": "euro",
+      "ru": "евро",
+      "note": ""
+    },
+    {
+      "id": 1198,
+      "groupId": 32,
+      "ro": "schimb valutar",
+      "ru": "обмен валюты",
+      "note": ""
+    },
+    {
+      "id": 1199,
+      "groupId": 32,
+      "ro": "curs valutar",
+      "ru": "курс валюты",
+      "note": ""
+    },
+    {
+      "id": 1200,
+      "groupId": 32,
+      "ro": "investiție",
+      "ru": "инвестиция",
+      "note": ""
+    },
+    {
+      "id": 1201,
+      "groupId": 32,
+      "ro": "profit",
+      "ru": "прибыль",
+      "note": ""
+    },
+    {
+      "id": 1202,
+      "groupId": 32,
+      "ro": "pierdere",
+      "ru": "убыток",
+      "note": ""
+    },
+    {
+      "id": 1203,
+      "groupId": 32,
+      "ro": "buget",
+      "ru": "бюджет",
+      "note": ""
+    },
+    {
+      "id": 1204,
+      "groupId": 32,
+      "ro": "pensie",
+      "ru": "пенсия",
+      "note": ""
+    },
+    {
+      "id": 1205,
+      "groupId": 32,
+      "ro": "asigurare",
+      "ru": "страхование",
+      "note": ""
+    },
+    {
+      "id": 1206,
+      "groupId": 15,
+      "ro": "ocean",
+      "ru": "океан",
+      "note": ""
+    },
+    {
+      "id": 1207,
+      "groupId": 15,
+      "ro": "câmpie",
+      "ru": "равнина",
+      "note": ""
+    },
+    {
+      "id": 1208,
+      "groupId": 15,
+      "ro": "mlaștină",
+      "ru": "болото",
+      "note": ""
+    },
+    {
+      "id": 1209,
+      "groupId": 15,
+      "ro": "peșteră",
+      "ru": "пещера",
+      "note": ""
+    },
+    {
+      "id": 1210,
+      "groupId": 15,
+      "ro": "vârf de munte",
+      "ru": "горная вершина",
+      "note": ""
+    },
+    {
+      "id": 1211,
+      "groupId": 15,
+      "ro": "pădure tropicală",
+      "ru": "тропический лес",
+      "note": ""
+    },
+    {
+      "id": 1212,
+      "groupId": 15,
+      "ro": "rădăcină",
+      "ru": "корень",
+      "note": ""
+    },
+    {
+      "id": 1213,
+      "groupId": 15,
+      "ro": "trunchi",
+      "ru": "ствол",
+      "note": ""
+    },
+    {
+      "id": 1214,
+      "groupId": 15,
+      "ro": "sămânță",
+      "ru": "семя",
+      "note": ""
+    },
+    {
+      "id": 1215,
+      "groupId": 34,
+      "ro": "medic",
+      "ru": "врач",
+      "note": ""
+    },
+    {
+      "id": 1216,
+      "groupId": 34,
+      "ro": "profesor",
+      "ru": "учитель / преподаватель",
+      "note": ""
+    },
+    {
+      "id": 1217,
+      "groupId": 34,
+      "ro": "avocat",
+      "ru": "юрист / адвокат",
+      "note": ""
+    },
+    {
+      "id": 1218,
+      "groupId": 34,
+      "ro": "inginer",
+      "ru": "инженер",
+      "note": ""
+    },
+    {
+      "id": 1219,
+      "groupId": 34,
+      "ro": "bucătar",
+      "ru": "повар",
+      "note": ""
+    },
+    {
+      "id": 1220,
+      "groupId": 34,
+      "ro": "șofer",
+      "ru": "водитель",
+      "note": ""
+    },
+    {
+      "id": 1221,
+      "groupId": 34,
+      "ro": "polițist",
+      "ru": "полицейский",
+      "note": ""
+    },
+    {
+      "id": 1222,
+      "groupId": 34,
+      "ro": "pompier",
+      "ru": "пожарный",
+      "note": ""
+    },
+    {
+      "id": 1223,
+      "groupId": 34,
+      "ro": "constructor",
+      "ru": "строитель",
+      "note": ""
+    },
+    {
+      "id": 1224,
+      "groupId": 34,
+      "ro": "traducător",
+      "ru": "переводчик",
+      "note": ""
+    },
+    {
+      "id": 1225,
+      "groupId": 34,
+      "ro": "contabil",
+      "ru": "бухгалтер",
+      "note": ""
+    },
+    {
+      "id": 1226,
+      "groupId": 34,
+      "ro": "arhitect",
+      "ru": "архитектор",
+      "note": ""
+    },
+    {
+      "id": 1227,
+      "groupId": 34,
+      "ro": "scriitor",
+      "ru": "писатель",
+      "note": ""
+    },
+    {
+      "id": 1228,
+      "groupId": 34,
+      "ro": "jurnalist",
+      "ru": "журналист",
+      "note": ""
+    },
+    {
+      "id": 1229,
+      "groupId": 34,
+      "ro": "pilot",
+      "ru": "пилот",
+      "note": ""
+    },
+    {
+      "id": 1230,
+      "groupId": 34,
+      "ro": "actor",
+      "ru": "актёр",
+      "note": ""
+    },
+    {
+      "id": 1231,
+      "groupId": 34,
+      "ro": "muzician",
+      "ru": "музыкант",
+      "note": ""
+    },
+    {
+      "id": 1232,
+      "groupId": 34,
+      "ro": "artist",
+      "ru": "художник / артист",
+      "note": ""
+    },
+    {
+      "id": 1233,
+      "groupId": 34,
+      "ro": "antreprenor",
+      "ru": "предприниматель",
+      "note": ""
+    },
+    {
+      "id": 1234,
+      "groupId": 34,
+      "ro": "economist",
+      "ru": "экономист",
+      "note": ""
+    },
+    {
+      "id": 1235,
+      "groupId": 34,
+      "ro": "psiholog",
+      "ru": "психолог",
+      "note": ""
+    },
+    {
+      "id": 1236,
+      "groupId": 34,
+      "ro": "farmacist",
+      "ru": "фармацевт",
+      "note": ""
+    },
+    {
+      "id": 1237,
+      "groupId": 34,
+      "ro": "stomatolog",
+      "ru": "стоматолог",
+      "note": ""
+    },
+    {
+      "id": 1238,
+      "groupId": 34,
+      "ro": "veterinar",
+      "ru": "ветеринар",
+      "note": ""
+    },
+    {
+      "id": 1239,
+      "groupId": 34,
+      "ro": "secretar",
+      "ru": "секретарь",
+      "note": ""
+    },
+    {
+      "id": 1240,
+      "groupId": 35,
+      "ro": "farfurie",
+      "ru": "тарелка",
+      "note": ""
+    },
+    {
+      "id": 1241,
+      "groupId": 35,
+      "ro": "furculiță",
+      "ru": "вилка",
+      "note": ""
+    },
+    {
+      "id": 1242,
+      "groupId": 35,
+      "ro": "lingură",
+      "ru": "ложка",
+      "note": ""
+    },
+    {
+      "id": 1243,
+      "groupId": 35,
+      "ro": "cuțit",
+      "ru": "нож",
+      "note": ""
+    },
+    {
+      "id": 1244,
+      "groupId": 35,
+      "ro": "oală",
+      "ru": "кастрюля",
+      "note": ""
+    },
+    {
+      "id": 1245,
+      "groupId": 35,
+      "ro": "tigaie",
+      "ru": "сковорода",
+      "note": ""
+    },
+    {
+      "id": 1246,
+      "groupId": 35,
+      "ro": "pahar",
+      "ru": "стакан",
+      "note": ""
+    },
+    {
+      "id": 1247,
+      "groupId": 35,
+      "ro": "ceașcă",
+      "ru": "чашка",
+      "note": ""
+    },
+    {
+      "id": 1248,
+      "groupId": 35,
+      "ro": "cană",
+      "ru": "кружка",
+      "note": ""
+    },
+    {
+      "id": 1249,
+      "groupId": 35,
+      "ro": "castron",
+      "ru": "миска",
+      "note": ""
+    },
+    {
+      "id": 1250,
+      "groupId": 35,
+      "ro": "tavă",
+      "ru": "поднос / противень",
+      "note": ""
+    },
+    {
+      "id": 1251,
+      "groupId": 35,
+      "ro": "sticlă",
+      "ru": "бутылка",
+      "note": "Омоним: бутылка или стекло (материал)"
+    },
+    {
+      "id": 1252,
+      "groupId": 35,
+      "ro": "borcan",
+      "ru": "банка (стеклянная)",
+      "note": ""
+    },
+    {
+      "id": 1253,
+      "groupId": 35,
+      "ro": "cutie",
+      "ru": "коробка / банка (жестяная)",
+      "note": ""
+    },
+    {
+      "id": 1254,
+      "groupId": 35,
+      "ro": "ibric",
+      "ru": "чайник (турецкий)",
+      "note": ""
+    },
+    {
+      "id": 1255,
+      "groupId": 35,
+      "ro": "fierbător",
+      "ru": "электрочайник",
+      "note": ""
+    },
+    {
+      "id": 1256,
+      "groupId": 35,
+      "ro": "strecurătoare",
+      "ru": "дуршлаг",
+      "note": ""
+    },
+    {
+      "id": 1257,
+      "groupId": 35,
+      "ro": "polonică",
+      "ru": "половник",
+      "note": ""
+    },
+    {
+      "id": 1258,
+      "groupId": 35,
+      "ro": "spatulă",
+      "ru": "лопатка (кухонная)",
+      "note": ""
+    },
+    {
+      "id": 1259,
+      "groupId": 35,
+      "ro": "tocător",
+      "ru": "разделочная доска",
+      "note": ""
+    },
+    {
+      "id": 1260,
+      "groupId": 36,
+      "ro": "cântec",
+      "ru": "песня",
+      "note": ""
+    },
+    {
+      "id": 1261,
+      "groupId": 36,
+      "ro": "instrument",
+      "ru": "инструмент",
+      "note": ""
+    },
+    {
+      "id": 1262,
+      "groupId": 36,
+      "ro": "chitară",
+      "ru": "гитара",
+      "note": ""
+    },
+    {
+      "id": 1263,
+      "groupId": 36,
+      "ro": "pian",
+      "ru": "пианино",
+      "note": ""
+    },
+    {
+      "id": 1264,
+      "groupId": 36,
+      "ro": "vioară",
+      "ru": "скрипка",
+      "note": ""
+    },
+    {
+      "id": 1265,
+      "groupId": 36,
+      "ro": "tobe",
+      "ru": "барабаны",
+      "note": ""
+    },
+    {
+      "id": 1266,
+      "groupId": 36,
+      "ro": "flaut",
+      "ru": "флейта",
+      "note": ""
+    },
+    {
+      "id": 1267,
+      "groupId": 36,
+      "ro": "trompetă",
+      "ru": "труба",
+      "note": ""
+    },
+    {
+      "id": 1268,
+      "groupId": 36,
+      "ro": "ritm",
+      "ru": "ритм",
+      "note": ""
+    },
+    {
+      "id": 1269,
+      "groupId": 36,
+      "ro": "melodie",
+      "ru": "мелодия",
+      "note": ""
+    },
+    {
+      "id": 1270,
+      "groupId": 36,
+      "ro": "concert",
+      "ru": "концерт",
+      "note": ""
+    },
+    {
+      "id": 1271,
+      "groupId": 36,
+      "ro": "album",
+      "ru": "альбом",
+      "note": ""
+    },
+    {
+      "id": 1272,
+      "groupId": 36,
+      "ro": "versuri",
+      "ru": "текст песни / стихи",
+      "note": ""
+    },
+    {
+      "id": 1273,
+      "groupId": 36,
+      "ro": "cor",
+      "ru": "хор",
+      "note": ""
+    },
+    {
+      "id": 1274,
+      "groupId": 36,
+      "ro": "orchestră",
+      "ru": "оркестр",
+      "note": ""
+    },
+    {
+      "id": 1275,
+      "groupId": 36,
+      "ro": "solist",
+      "ru": "солист",
+      "note": ""
+    },
+    {
+      "id": 1276,
+      "groupId": 36,
+      "ro": "gen muzical",
+      "ru": "музыкальный жанр",
+      "note": ""
+    },
+    {
+      "id": 1277,
+      "groupId": 36,
+      "ro": "volum",
+      "ru": "громкость",
+      "note": ""
+    },
+    {
+      "id": 1278,
+      "groupId": 36,
+      "ro": "căști",
+      "ru": "наушники",
+      "note": ""
+    },
+    {
+      "id": 1279,
+      "groupId": 36,
+      "ro": "boxă",
+      "ru": "колонка",
+      "note": ""
+    },
+    {
+      "id": 1280,
+      "groupId": 36,
+      "ro": "pictură",
+      "ru": "картина / живопись",
+      "note": ""
+    },
+    {
+      "id": 1281,
+      "groupId": 36,
+      "ro": "sculptură",
+      "ru": "скульптура",
+      "note": ""
+    },
+    {
+      "id": 1282,
+      "groupId": 36,
+      "ro": "expoziție",
+      "ru": "выставка",
+      "note": ""
+    },
+    {
+      "id": 1283,
+      "groupId": 36,
+      "ro": "pictor",
+      "ru": "художник",
+      "note": ""
+    },
+    {
+      "id": 1284,
+      "groupId": 36,
+      "ro": "galerie",
+      "ru": "галерея",
+      "note": ""
+    },
+    {
+      "id": 1285,
+      "groupId": 36,
+      "ro": "operă",
+      "ru": "опера / произведение",
+      "note": ""
+    },
+    {
+      "id": 1286,
+      "groupId": 36,
+      "ro": "fotografie",
+      "ru": "фотография",
+      "note": ""
+    },
+    {
+      "id": 1287,
+      "groupId": 36,
+      "ro": "film",
+      "ru": "фильм",
+      "note": ""
+    },
+    {
+      "id": 1288,
+      "groupId": 36,
+      "ro": "regie",
+      "ru": "режиссура",
+      "note": ""
+    },
+    {
+      "id": 1289,
+      "groupId": 36,
+      "ro": "regizor",
+      "ru": "режиссёр",
+      "note": ""
+    },
+    {
+      "id": 1290,
+      "groupId": 36,
+      "ro": "spectacol",
+      "ru": "спектакль / шоу",
+      "note": ""
+    },
+    {
+      "id": 1291,
+      "groupId": 36,
+      "ro": "scenă",
+      "ru": "сцена",
+      "note": ""
+    },
+    {
+      "id": 1292,
+      "groupId": 36,
+      "ro": "culoare",
+      "ru": "краска / цвет",
+      "note": ""
+    },
+    {
+      "id": 1293,
+      "groupId": 36,
+      "ro": "pensulă",
+      "ru": "кисть",
+      "note": ""
+    },
+    {
+      "id": 1294,
+      "groupId": 36,
+      "ro": "pânză",
+      "ru": "холст",
+      "note": ""
+    },
+    {
+      "id": 1295,
+      "groupId": 36,
+      "ro": "stil",
+      "ru": "стиль",
+      "note": ""
+    },
+    {
+      "id": 1296,
+      "groupId": 36,
+      "ro": "creație",
+      "ru": "творчество / создание",
+      "note": ""
+    },
+    {
+      "id": 1297,
+      "groupId": 36,
+      "ro": "inspirație",
+      "ru": "вдохновение",
+      "note": ""
+    },
+    {
+      "id": 1298,
+      "groupId": 36,
+      "ro": "dumnezeu",
+      "ru": "бог",
+      "note": ""
+    },
+    {
+      "id": 1299,
+      "groupId": 36,
+      "ro": "rugăciune",
+      "ru": "молитва",
+      "note": ""
+    },
+    {
+      "id": 1300,
+      "groupId": 36,
+      "ro": "biserică",
+      "ru": "церковь",
+      "note": ""
+    },
+    {
+      "id": 1301,
+      "groupId": 36,
+      "ro": "cruce",
+      "ru": "крест",
+      "note": ""
+    },
+    {
+      "id": 1302,
+      "groupId": 36,
+      "ro": "Paște",
+      "ru": "Пасха",
+      "note": ""
+    },
+    {
+      "id": 1303,
+      "groupId": 36,
+      "ro": "Crăciun",
+      "ru": "Рождество",
+      "note": ""
+    },
+    {
+      "id": 1304,
+      "groupId": 36,
+      "ro": "preot",
+      "ru": "священник",
+      "note": ""
+    },
+    {
+      "id": 1305,
+      "groupId": 36,
+      "ro": "credință",
+      "ru": "вера",
+      "note": ""
+    },
+    {
+      "id": 1306,
+      "groupId": 36,
+      "ro": "religie",
+      "ru": "религия",
+      "note": ""
+    },
+    {
+      "id": 1307,
+      "groupId": 36,
+      "ro": "suflet",
+      "ru": "душа",
+      "note": ""
+    },
+    {
+      "id": 1308,
+      "groupId": 36,
+      "ro": "rai",
+      "ru": "рай",
+      "note": ""
+    },
+    {
+      "id": 1309,
+      "groupId": 36,
+      "ro": "iad",
+      "ru": "ад",
+      "note": ""
+    },
+    {
+      "id": 1310,
+      "groupId": 36,
+      "ro": "sfânt",
+      "ru": "святой",
+      "note": ""
+    },
+    {
+      "id": 1311,
+      "groupId": 36,
+      "ro": "moschee",
+      "ru": "мечеть",
+      "note": ""
+    },
+    {
+      "id": 1312,
+      "groupId": 36,
+      "ro": "sinagogă",
+      "ru": "синагога",
+      "note": ""
+    },
+    {
+      "id": 1313,
+      "groupId": 36,
+      "ro": "botez",
+      "ru": "крещение",
+      "note": ""
+    },
+    {
+      "id": 1314,
+      "groupId": 36,
+      "ro": "nuntă",
+      "ru": "свадьба",
+      "note": ""
+    },
+    {
+      "id": 1315,
+      "groupId": 36,
+      "ro": "înmormântare",
+      "ru": "похороны",
+      "note": ""
+    },
+    {
+      "id": 1316,
+      "groupId": 37,
+      "ro": "știri",
+      "ru": "новости",
+      "note": ""
+    },
+    {
+      "id": 1317,
+      "groupId": 37,
+      "ro": "articol",
+      "ru": "статья",
+      "note": ""
+    },
+    {
+      "id": 1318,
+      "groupId": 37,
+      "ro": "ziar",
+      "ru": "газета",
+      "note": ""
+    },
+    {
+      "id": 1319,
+      "groupId": 37,
+      "ro": "revistă",
+      "ru": "журнал",
+      "note": ""
+    },
+    {
+      "id": 1320,
+      "groupId": 37,
+      "ro": "televiziune",
+      "ru": "телевидение",
+      "note": ""
+    },
+    {
+      "id": 1321,
+      "groupId": 37,
+      "ro": "radio",
+      "ru": "радио",
+      "note": ""
+    },
+    {
+      "id": 1322,
+      "groupId": 37,
+      "ro": "reporter",
+      "ru": "репортёр",
+      "note": ""
+    },
+    {
+      "id": 1323,
+      "groupId": 37,
+      "ro": "interviu",
+      "ru": "интервью",
+      "note": ""
+    },
+    {
+      "id": 1324,
+      "groupId": 37,
+      "ro": "eveniment",
+      "ru": "событие",
+      "note": ""
+    },
+    {
+      "id": 1325,
+      "groupId": 37,
+      "ro": "criză",
+      "ru": "кризис",
+      "note": ""
+    },
+    {
+      "id": 1326,
+      "groupId": 37,
+      "ro": "război",
+      "ru": "война",
+      "note": ""
+    },
+    {
+      "id": 1327,
+      "groupId": 37,
+      "ro": "pace",
+      "ru": "мир (спокойствие / отсутствие войны)",
+      "note": ""
+    },
+    {
+      "id": 1328,
+      "groupId": 37,
+      "ro": "protest",
+      "ru": "протест",
+      "note": ""
+    },
+    {
+      "id": 1329,
+      "groupId": 37,
+      "ro": "scandal",
+      "ru": "скандал",
+      "note": ""
+    },
+    {
+      "id": 1330,
+      "groupId": 37,
+      "ro": "acuzație",
+      "ru": "обвинение",
+      "note": ""
+    },
+    {
+      "id": 1331,
+      "groupId": 37,
+      "ro": "anchetă",
+      "ru": "расследование",
+      "note": ""
+    },
+    {
+      "id": 1332,
+      "groupId": 37,
+      "ro": "corupție",
+      "ru": "коррупция",
+      "note": ""
+    },
+    {
+      "id": 1333,
+      "groupId": 37,
+      "ro": "acord",
+      "ru": "соглашение",
+      "note": "В контексте политики/договоров"
+    },
+    {
+      "id": 1334,
+      "groupId": 38,
+      "ro": "lemn",
+      "ru": "дерево (материал)",
+      "note": ""
+    },
+    {
+      "id": 1335,
+      "groupId": 38,
+      "ro": "metal",
+      "ru": "металл",
+      "note": ""
+    },
+    {
+      "id": 1336,
+      "groupId": 38,
+      "ro": "sticlă",
+      "ru": "стекло",
+      "note": "Омоним: стекло или бутылка"
+    },
+    {
+      "id": 1337,
+      "groupId": 38,
+      "ro": "plastic",
+      "ru": "пластик",
+      "note": ""
+    },
+    {
+      "id": 1338,
+      "groupId": 38,
+      "ro": "pânză",
+      "ru": "ткань / полотно",
+      "note": ""
+    },
+    {
+      "id": 1339,
+      "groupId": 38,
+      "ro": "piele",
+      "ru": "кожа (материал)",
+      "note": "То же слово, что кожа (тело)"
+    },
+    {
+      "id": 1340,
+      "groupId": 38,
+      "ro": "hârtie",
+      "ru": "бумага",
+      "note": ""
+    },
+    {
+      "id": 1341,
+      "groupId": 38,
+      "ro": "piatră",
+      "ru": "камень",
+      "note": ""
+    },
+    {
+      "id": 1342,
+      "groupId": 38,
+      "ro": "beton",
+      "ru": "бетон",
+      "note": ""
+    },
+    {
+      "id": 1343,
+      "groupId": 38,
+      "ro": "cărămidă",
+      "ru": "кирпич",
+      "note": ""
+    },
+    {
+      "id": 1344,
+      "groupId": 38,
+      "ro": "cauciuc",
+      "ru": "резина",
+      "note": ""
+    },
+    {
+      "id": 1345,
+      "groupId": 38,
+      "ro": "fier",
+      "ru": "железо",
+      "note": ""
+    },
+    {
+      "id": 1346,
+      "groupId": 38,
+      "ro": "oțel",
+      "ru": "сталь",
+      "note": ""
+    },
+    {
+      "id": 1347,
+      "groupId": 38,
+      "ro": "cupru",
+      "ru": "медь",
+      "note": ""
+    },
+    {
+      "id": 1348,
+      "groupId": 38,
+      "ro": "aluminiu",
+      "ru": "алюминий",
+      "note": ""
+    },
+    {
+      "id": 1349,
+      "groupId": 38,
+      "ro": "aur",
+      "ru": "золото",
+      "note": ""
+    },
+    {
+      "id": 1350,
+      "groupId": 38,
+      "ro": "argint",
+      "ru": "серебро",
+      "note": ""
+    },
+    {
+      "id": 1351,
+      "groupId": 38,
+      "ro": "lână",
+      "ru": "шерсть",
+      "note": ""
+    },
+    {
+      "id": 1352,
+      "groupId": 38,
+      "ro": "bumbac",
+      "ru": "хлопок",
+      "note": ""
+    },
+    {
+      "id": 1353,
+      "groupId": 38,
+      "ro": "mătase",
+      "ru": "шёлк",
+      "note": ""
+    },
+    {
+      "id": 1354,
+      "groupId": 39,
+      "ro": "ciocan",
+      "ru": "молоток",
+      "note": ""
+    },
+    {
+      "id": 1355,
+      "groupId": 39,
+      "ro": "șurubelniță",
+      "ru": "отвёртка",
+      "note": ""
+    },
+    {
+      "id": 1356,
+      "groupId": 39,
+      "ro": "cui",
+      "ru": "гвоздь",
+      "note": ""
+    },
+    {
+      "id": 1357,
+      "groupId": 39,
+      "ro": "șurub",
+      "ru": "винт / шуруп",
+      "note": ""
+    },
+    {
+      "id": 1358,
+      "groupId": 39,
+      "ro": "cheie",
+      "ru": "гаечный ключ",
+      "note": ""
+    },
+    {
+      "id": 1359,
+      "groupId": 39,
+      "ro": "clești",
+      "ru": "плоскогубцы / клещи",
+      "note": ""
+    },
+    {
+      "id": 1360,
+      "groupId": 39,
+      "ro": "ferăstrău",
+      "ru": "пила",
+      "note": ""
+    },
+    {
+      "id": 1361,
+      "groupId": 39,
+      "ro": "burghiu",
+      "ru": "дрель / сверло",
+      "note": ""
+    },
+    {
+      "id": 1362,
+      "groupId": 39,
+      "ro": "bandă adezivă",
+      "ru": "скотч / клейкая лента",
+      "note": ""
+    },
+    {
+      "id": 1363,
+      "groupId": 39,
+      "ro": "lipici",
+      "ru": "клей",
+      "note": ""
+    },
+    {
+      "id": 1364,
+      "groupId": 39,
+      "ro": "vopsea",
+      "ru": "краска (для стен)",
+      "note": ""
+    },
+    {
+      "id": 1365,
+      "groupId": 39,
+      "ro": "pensulă (vopsit)",
+      "ru": "малярная кисть",
+      "note": ""
+    },
+    {
+      "id": 1366,
+      "groupId": 39,
+      "ro": "trafalet",
+      "ru": "валик (малярный)",
+      "note": ""
+    },
+    {
+      "id": 1367,
+      "groupId": 39,
+      "ro": "riglă",
+      "ru": "линейка",
+      "note": ""
+    },
+    {
+      "id": 1368,
+      "groupId": 39,
+      "ro": "metru",
+      "ru": "рулетка",
+      "note": ""
+    },
+    {
+      "id": 1369,
+      "groupId": 39,
+      "ro": "nivel",
+      "ru": "уровень (строительный)",
+      "note": ""
+    },
+    {
+      "id": 1370,
+      "groupId": 39,
+      "ro": "cutter",
+      "ru": "канцелярский нож",
+      "note": ""
+    },
+    {
+      "id": 1371,
+      "groupId": 39,
+      "ro": "foarfece",
+      "ru": "ножницы",
+      "note": ""
+    },
+    {
+      "id": 1372,
+      "groupId": 21,
+      "ro": "ianuarie",
+      "ru": "январь",
+      "note": ""
+    },
+    {
+      "id": 1373,
+      "groupId": 21,
+      "ro": "februarie",
+      "ru": "февраль",
+      "note": ""
+    },
+    {
+      "id": 1374,
+      "groupId": 21,
+      "ro": "martie",
+      "ru": "март",
+      "note": ""
+    },
+    {
+      "id": 1375,
+      "groupId": 21,
+      "ro": "aprilie",
+      "ru": "апрель",
+      "note": ""
+    },
+    {
+      "id": 1376,
+      "groupId": 21,
+      "ro": "mai",
+      "ru": "май",
+      "note": ""
+    },
+    {
+      "id": 1377,
+      "groupId": 21,
+      "ro": "iunie",
+      "ru": "июнь",
+      "note": ""
+    },
+    {
+      "id": 1378,
+      "groupId": 21,
+      "ro": "iulie",
+      "ru": "июль",
+      "note": ""
+    },
+    {
+      "id": 1379,
+      "groupId": 21,
+      "ro": "august",
+      "ru": "август",
+      "note": ""
+    },
+    {
+      "id": 1380,
+      "groupId": 21,
+      "ro": "septembrie",
+      "ru": "сентябрь",
+      "note": ""
+    },
+    {
+      "id": 1381,
+      "groupId": 21,
+      "ro": "octombrie",
+      "ru": "октябрь",
+      "note": ""
+    },
+    {
+      "id": 1382,
+      "groupId": 21,
+      "ro": "noiembrie",
+      "ru": "ноябрь",
+      "note": ""
+    },
+    {
+      "id": 1383,
+      "groupId": 21,
+      "ro": "decembrie",
+      "ru": "декабрь",
+      "note": ""
+    },
+    {
+      "id": 1384,
+      "groupId": 40,
+      "ro": "repede",
+      "ru": "быстро",
+      "note": ""
+    },
+    {
+      "id": 1385,
+      "groupId": 40,
+      "ro": "încet",
+      "ru": "медленно",
+      "note": "Омоним: медленный (прилаг.) или медленно (нареч.)"
+    },
+    {
+      "id": 1386,
+      "groupId": 40,
+      "ro": "bine",
+      "ru": "хорошо",
+      "note": ""
+    },
+    {
+      "id": 1387,
+      "groupId": 40,
+      "ro": "rău",
+      "ru": "плохо",
+      "note": "Омоним: плохой (прилаг.) или плохо (нареч.)"
+    },
+    {
+      "id": 1388,
+      "groupId": 40,
+      "ro": "foarte",
+      "ru": "очень",
+      "note": ""
+    },
+    {
+      "id": 1389,
+      "groupId": 40,
+      "ro": "puțin",
+      "ru": "немного / мало",
+      "note": ""
+    },
+    {
+      "id": 1390,
+      "groupId": 40,
+      "ro": "mult",
+      "ru": "много",
+      "note": ""
+    },
+    {
+      "id": 1391,
+      "groupId": 40,
+      "ro": "prea",
+      "ru": "слишком",
+      "note": ""
+    },
+    {
+      "id": 1392,
+      "groupId": 40,
+      "ro": "împreună",
+      "ru": "вместе",
+      "note": ""
+    },
+    {
+      "id": 1393,
+      "groupId": 40,
+      "ro": "separat",
+      "ru": "отдельно",
+      "note": ""
+    },
+    {
+      "id": 1394,
+      "groupId": 40,
+      "ro": "singur",
+      "ru": "один / в одиночку",
+      "note": ""
+    },
+    {
+      "id": 1395,
+      "groupId": 40,
+      "ro": "aproape",
+      "ru": "почти / близко",
+      "note": ""
+    },
+    {
+      "id": 1396,
+      "groupId": 40,
+      "ro": "exact",
+      "ru": "точно / именно",
+      "note": ""
+    },
+    {
+      "id": 1397,
+      "groupId": 40,
+      "ro": "aproximativ",
+      "ru": "примерно",
+      "note": ""
+    },
+    {
+      "id": 1398,
+      "groupId": 40,
+      "ro": "complet",
+      "ru": "полностью",
+      "note": ""
+    },
+    {
+      "id": 1399,
+      "groupId": 40,
+      "ro": "parțial",
+      "ru": "частично",
+      "note": ""
+    },
+    {
+      "id": 1400,
+      "groupId": 40,
+      "ro": "evident",
+      "ru": "очевидно",
+      "note": ""
+    },
+    {
+      "id": 1401,
+      "groupId": 40,
+      "ro": "probabil",
+      "ru": "вероятно",
+      "note": ""
+    },
+    {
+      "id": 1402,
+      "groupId": 40,
+      "ro": "sigur",
+      "ru": "конечно / точно",
+      "note": ""
+    },
+    {
+      "id": 1403,
+      "groupId": 40,
+      "ro": "din păcate",
+      "ru": "к сожалению",
+      "note": ""
+    },
+    {
+      "id": 1404,
+      "groupId": 40,
+      "ro": "din fericire",
+      "ru": "к счастью",
+      "note": ""
+    },
+    {
+      "id": 1405,
+      "groupId": 40,
+      "ro": "în sfârșit",
+      "ru": "наконец",
+      "note": ""
+    },
+    {
+      "id": 1406,
+      "groupId": 40,
+      "ro": "deja",
+      "ru": "уже",
+      "note": ""
+    },
+    {
+      "id": 1407,
+      "groupId": 40,
+      "ro": "încă",
+      "ru": "ещё",
+      "note": ""
+    },
+    {
+      "id": 1408,
+      "groupId": 40,
+      "ro": "acum",
+      "ru": "сейчас",
+      "note": ""
+    },
+    {
+      "id": 1409,
+      "groupId": 40,
+      "ro": "atunci",
+      "ru": "тогда",
+      "note": ""
+    },
+    {
+      "id": 1410,
+      "groupId": 40,
+      "ro": "aici",
+      "ru": "здесь",
+      "note": ""
+    },
+    {
+      "id": 1411,
+      "groupId": 40,
+      "ro": "acolo",
+      "ru": "там",
+      "note": ""
+    },
+    {
+      "id": 1412,
+      "groupId": 40,
+      "ro": "nicăieri",
+      "ru": "нигде",
+      "note": ""
+    },
+    {
+      "id": 1413,
+      "groupId": 40,
+      "ro": "oriunde",
+      "ru": "везде / где угодно",
+      "note": ""
+    },
+    {
+      "id": 1414,
+      "groupId": 40,
+      "ro": "altfel",
+      "ru": "иначе",
+      "note": ""
+    },
+    {
+      "id": 1415,
+      "groupId": 40,
+      "ro": "totuși",
+      "ru": "всё же",
+      "note": ""
+    },
+    {
+      "id": 1416,
+      "groupId": 40,
+      "ro": "mai degrabă",
+      "ru": "скорее",
+      "note": ""
+    },
+    {
+      "id": 1417,
+      "groupId": 41,
+      "ro": "eu",
+      "ru": "я",
+      "note": ""
+    },
+    {
+      "id": 1418,
+      "groupId": 41,
+      "ro": "tu",
+      "ru": "ты",
+      "note": ""
+    },
+    {
+      "id": 1419,
+      "groupId": 41,
+      "ro": "el",
+      "ru": "он",
+      "note": ""
+    },
+    {
+      "id": 1420,
+      "groupId": 41,
+      "ro": "ea",
+      "ru": "она",
+      "note": ""
+    },
+    {
+      "id": 1421,
+      "groupId": 41,
+      "ro": "noi",
+      "ru": "мы",
+      "note": ""
+    },
+    {
+      "id": 1422,
+      "groupId": 41,
+      "ro": "voi",
+      "ru": "вы",
+      "note": ""
+    },
+    {
+      "id": 1423,
+      "groupId": 41,
+      "ro": "ei",
+      "ru": "они (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1424,
+      "groupId": 41,
+      "ro": "ele",
+      "ru": "они (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1425,
+      "groupId": 41,
+      "ro": "mă",
+      "ru": "меня / мне (акуз.)",
+      "note": ""
+    },
+    {
+      "id": 1426,
+      "groupId": 41,
+      "ro": "îmi",
+      "ru": "мне (дат.)",
+      "note": ""
+    },
+    {
+      "id": 1427,
+      "groupId": 41,
+      "ro": "te",
+      "ru": "тебя (акуз.)",
+      "note": ""
+    },
+    {
+      "id": 1428,
+      "groupId": 41,
+      "ro": "îți",
+      "ru": "тебе (дат.)",
+      "note": ""
+    },
+    {
+      "id": 1429,
+      "groupId": 41,
+      "ro": "îl",
+      "ru": "его (акуз., м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1430,
+      "groupId": 41,
+      "ro": "o",
+      "ru": "её (акуз., ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1431,
+      "groupId": 41,
+      "ro": "îi",
+      "ru": "ему / ей (дат.)",
+      "note": ""
+    },
+    {
+      "id": 1432,
+      "groupId": 41,
+      "ro": "ne",
+      "ru": "нас / нам",
+      "note": ""
+    },
+    {
+      "id": 1433,
+      "groupId": 41,
+      "ro": "vă",
+      "ru": "вас / вам",
+      "note": ""
+    },
+    {
+      "id": 1434,
+      "groupId": 41,
+      "ro": "le",
+      "ru": "их (дат.)",
+      "note": ""
+    },
+    {
+      "id": 1435,
+      "groupId": 41,
+      "ro": "se",
+      "ru": "себя (возвратное)",
+      "note": ""
+    },
+    {
+      "id": 1436,
+      "groupId": 41,
+      "ro": "cineva",
+      "ru": "кто-то",
+      "note": ""
+    },
+    {
+      "id": 1437,
+      "groupId": 41,
+      "ro": "nimeni",
+      "ru": "никто",
+      "note": "Требует двойного отрицания"
+    },
+    {
+      "id": 1438,
+      "groupId": 41,
+      "ro": "ceva",
+      "ru": "что-то",
+      "note": ""
+    },
+    {
+      "id": 1439,
+      "groupId": 41,
+      "ro": "nimic",
+      "ru": "ничто / ничего",
+      "note": ""
+    },
+    {
+      "id": 1440,
+      "groupId": 41,
+      "ro": "fiecare",
+      "ru": "каждый",
+      "note": ""
+    },
+    {
+      "id": 1441,
+      "groupId": 41,
+      "ro": "altul",
+      "ru": "другой",
+      "note": ""
+    },
+    {
+      "id": 1442,
+      "groupId": 41,
+      "ro": "același",
+      "ru": "тот же",
+      "note": ""
+    },
+    {
+      "id": 1443,
+      "groupId": 41,
+      "ro": "toți",
+      "ru": "все (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1444,
+      "groupId": 41,
+      "ro": "unii",
+      "ru": "некоторые (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1445,
+      "groupId": 41,
+      "ro": "oricine",
+      "ru": "кто угодно",
+      "note": ""
+    },
+    {
+      "id": 1446,
+      "groupId": 41,
+      "ro": "orice",
+      "ru": "что угодно / любой",
+      "note": ""
+    },
+    {
+      "id": 1447,
+      "groupId": 41,
+      "ro": "acesta",
+      "ru": "этот",
+      "note": ""
+    },
+    {
+      "id": 1448,
+      "groupId": 41,
+      "ro": "acela",
+      "ru": "тот",
+      "note": ""
+    },
+    {
+      "id": 1449,
+      "groupId": 28,
+      "ro": "și",
+      "ru": "и",
+      "note": ""
+    },
+    {
+      "id": 1450,
+      "groupId": 28,
+      "ro": "sau",
+      "ru": "или",
+      "note": ""
+    },
+    {
+      "id": 1451,
+      "groupId": 28,
+      "ro": "dar",
+      "ru": "но",
+      "note": ""
+    },
+    {
+      "id": 1452,
+      "groupId": 28,
+      "ro": "că",
+      "ru": "что (союз)",
+      "note": ""
+    },
+    {
+      "id": 1453,
+      "groupId": 28,
+      "ro": "dacă",
+      "ru": "если",
+      "note": ""
+    },
+    {
+      "id": 1454,
+      "groupId": 28,
+      "ro": "când",
+      "ru": "когда (союз)",
+      "note": ""
+    },
+    {
+      "id": 1455,
+      "groupId": 28,
+      "ro": "pentru că",
+      "ru": "потому что",
+      "note": ""
+    },
+    {
+      "id": 1456,
+      "groupId": 28,
+      "ro": "deși",
+      "ru": "хотя",
+      "note": ""
+    },
+    {
+      "id": 1457,
+      "groupId": 28,
+      "ro": "ca să",
+      "ru": "чтобы (с конъюнктивом)",
+      "note": ""
+    },
+    {
+      "id": 1458,
+      "groupId": 28,
+      "ro": "după ce",
+      "ru": "после того как",
+      "note": ""
+    },
+    {
+      "id": 1459,
+      "groupId": 28,
+      "ro": "înainte să",
+      "ru": "прежде чем",
+      "note": ""
+    },
+    {
+      "id": 1460,
+      "groupId": 28,
+      "ro": "în timp ce",
+      "ru": "в то время как / пока",
+      "note": ""
+    },
+    {
+      "id": 1461,
+      "groupId": 28,
+      "ro": "fie... fie",
+      "ru": "либо... либо",
+      "note": ""
+    },
+    {
+      "id": 1462,
+      "groupId": 28,
+      "ro": "nici nici",
+      "ru": "ни... ни",
+      "note": ""
+    },
+    {
+      "id": 1463,
+      "groupId": 28,
+      "ro": "care",
+      "ru": "который / которая",
+      "note": ""
+    },
+    {
+      "id": 1464,
+      "groupId": 28,
+      "ro": "unde",
+      "ru": "где / куда (союз)",
+      "note": ""
+    },
+    {
+      "id": 1465,
+      "groupId": 42,
+      "ro": "înalt",
+      "ru": "высокий",
+      "note": ""
+    },
+    {
+      "id": 1466,
+      "groupId": 42,
+      "ro": "scund",
+      "ru": "низкий (о росте)",
+      "note": ""
+    },
+    {
+      "id": 1467,
+      "groupId": 42,
+      "ro": "slab",
+      "ru": "худой",
+      "note": ""
+    },
+    {
+      "id": 1468,
+      "groupId": 42,
+      "ro": "gras",
+      "ru": "полный / толстый",
+      "note": ""
+    },
+    {
+      "id": 1469,
+      "groupId": 42,
+      "ro": "brunet",
+      "ru": "брюнет / тёмноволосый",
+      "note": ""
+    },
+    {
+      "id": 1470,
+      "groupId": 42,
+      "ro": "blond",
+      "ru": "блондин / светловолосый",
+      "note": ""
+    },
+    {
+      "id": 1471,
+      "groupId": 42,
+      "ro": "roșcat",
+      "ru": "рыжеволосый",
+      "note": ""
+    },
+    {
+      "id": 1472,
+      "groupId": 42,
+      "ro": "chel",
+      "ru": "лысый",
+      "note": ""
+    },
+    {
+      "id": 1473,
+      "groupId": 42,
+      "ro": "cu ochelari",
+      "ru": "в очках",
+      "note": ""
+    },
+    {
+      "id": 1474,
+      "groupId": 42,
+      "ro": "barbă",
+      "ru": "борода",
+      "note": ""
+    },
+    {
+      "id": 1475,
+      "groupId": 42,
+      "ro": "mustață",
+      "ru": "усы",
+      "note": ""
+    },
+    {
+      "id": 1476,
+      "groupId": 42,
+      "ro": "păr lung",
+      "ru": "длинные волосы",
+      "note": ""
+    },
+    {
+      "id": 1477,
+      "groupId": 42,
+      "ro": "păr scurt",
+      "ru": "короткие волосы",
+      "note": ""
+    },
+    {
+      "id": 1478,
+      "groupId": 42,
+      "ro": "tânăr",
+      "ru": "молодой",
+      "note": ""
+    },
+    {
+      "id": 1479,
+      "groupId": 42,
+      "ro": "bătrân",
+      "ru": "пожилой / старый (о человеке)",
+      "note": "Только о людях; для вещей — vechi (старый)"
+    },
+    {
+      "id": 1480,
+      "groupId": 42,
+      "ro": "frumos",
+      "ru": "красивый",
+      "note": ""
+    },
+    {
+      "id": 1481,
+      "groupId": 42,
+      "ro": "urât",
+      "ru": "некрасивый",
+      "note": ""
+    },
+    {
+      "id": 1482,
+      "groupId": 42,
+      "ro": "îngrijit",
+      "ru": "ухоженный",
+      "note": ""
+    },
+    {
+      "id": 1483,
+      "groupId": 42,
+      "ro": "neglijent",
+      "ru": "неряшливый",
+      "note": ""
+    },
+    {
+      "id": 1484,
+      "groupId": 42,
+      "ro": "mărime",
+      "ru": "размер",
+      "note": ""
+    },
+    {
+      "id": 1485,
+      "groupId": 42,
+      "ro": "greutate",
+      "ru": "вес",
+      "note": ""
+    },
+    {
+      "id": 1486,
+      "groupId": 42,
+      "ro": "înălțime",
+      "ru": "рост",
+      "note": ""
+    },
+    {
+      "id": 1487,
+      "groupId": 43,
+      "ro": "proprietar",
+      "ru": "хозяин / собственник",
+      "note": ""
+    },
+    {
+      "id": 1488,
+      "groupId": 43,
+      "ro": "chiriaș",
+      "ru": "квартиросъёмщик / жилец",
+      "note": ""
+    },
+    {
+      "id": 1489,
+      "groupId": 43,
+      "ro": "chirie",
+      "ru": "аренда / плата за жильё",
+      "note": ""
+    },
+    {
+      "id": 1490,
+      "groupId": 43,
+      "ro": "utilități",
+      "ru": "коммунальные услуги",
+      "note": "свет, газ, вода"
+    },
+    {
+      "id": 1491,
+      "groupId": 43,
+      "ro": "bloc",
+      "ru": "многоквартирный дом",
+      "note": ""
+    },
+    {
+      "id": 1492,
+      "groupId": 43,
+      "ro": "etaj",
+      "ru": "этаж",
+      "note": ""
+    },
+    {
+      "id": 1493,
+      "groupId": 43,
+      "ro": "lift",
+      "ru": "лифт",
+      "note": ""
+    },
+    {
+      "id": 1494,
+      "groupId": 43,
+      "ro": "scară",
+      "ru": "подъезд / лестница",
+      "note": "подъезд (scara) нумеруется отдельно от этажа"
+    },
+    {
+      "id": 1495,
+      "groupId": 43,
+      "ro": "cameră",
+      "ru": "комната",
+      "note": "Омоним: комната или камера"
+    },
+    {
+      "id": 1496,
+      "groupId": 43,
+      "ro": "dormitor",
+      "ru": "спальня",
+      "note": ""
+    },
+    {
+      "id": 1497,
+      "groupId": 43,
+      "ro": "sufragerie",
+      "ru": "гостиная / столовая",
+      "note": ""
+    },
+    {
+      "id": 1498,
+      "groupId": 43,
+      "ro": "hol",
+      "ru": "коридор / прихожая",
+      "note": ""
+    },
+    {
+      "id": 1499,
+      "groupId": 43,
+      "ro": "contract de închiriere",
+      "ru": "договор аренды",
+      "note": ""
+    },
+    {
+      "id": 1500,
+      "groupId": 43,
+      "ro": "depozit",
+      "ru": "залог (при аренде)",
+      "note": ""
+    },
+    {
+      "id": 1501,
+      "groupId": 43,
+      "ro": "vecin",
+      "ru": "сосед",
+      "note": ""
+    },
+    {
+      "id": 1502,
+      "groupId": 43,
+      "ro": "asociație de proprietari",
+      "ru": "ТСЖ / домовой комитет",
+      "note": ""
+    },
+    {
+      "id": 1503,
+      "groupId": 43,
+      "ro": "întreținere",
+      "ru": "квартплата / содержание",
+      "note": ""
+    },
+    {
+      "id": 1504,
+      "groupId": 43,
+      "ro": "reparație",
+      "ru": "ремонт",
+      "note": ""
+    },
+    {
+      "id": 1505,
+      "groupId": 43,
+      "ro": "mobilat",
+      "ru": "меблированный",
+      "note": "с мебелью"
+    },
+    {
+      "id": 1506,
+      "groupId": 43,
+      "ro": "nemobilat",
+      "ru": "немеблированный",
+      "note": ""
+    },
+    {
+      "id": 1507,
+      "groupId": 43,
+      "ro": "suprafață",
+      "ru": "площадь (кв. метры)",
+      "note": ""
+    },
+    {
+      "id": 1508,
+      "groupId": 43,
+      "ro": "metru pătrat",
+      "ru": "квадратный метр",
+      "note": ""
+    },
+    {
+      "id": 1509,
+      "groupId": 6,
+      "ro": "mai",
+      "ru": "более / -ее (сравн. степень)",
+      "note": "частица сравнительной степени"
+    },
+    {
+      "id": 1510,
+      "groupId": 6,
+      "ro": "cel mai",
+      "ru": "самый (превосх.)",
+      "note": ""
+    },
+    {
+      "id": 1511,
+      "groupId": 6,
+      "ro": "decât",
+      "ru": "чем (при сравнении)",
+      "note": ""
+    },
+    {
+      "id": 1512,
+      "groupId": 6,
+      "ro": "la fel de",
+      "ru": "так же... как",
+      "note": "конструкция равного сравнения"
+    },
+    {
+      "id": 1513,
+      "groupId": 5,
+      "ro": "a fi",
+      "ru": "быть",
+      "note": ""
+    },
+    {
+      "id": 1514,
+      "groupId": 5,
+      "ro": "a avea",
+      "ru": "иметь",
+      "note": ""
+    },
+    {
+      "id": 1515,
+      "groupId": 5,
+      "ro": "a deveni",
+      "ru": "становиться",
+      "note": ""
+    },
+    {
+      "id": 1516,
+      "groupId": 5,
+      "ro": "a părea",
+      "ru": "казаться",
+      "note": ""
+    },
+    {
+      "id": 1517,
+      "groupId": 5,
+      "ro": "a rămâne",
+      "ru": "оставаться",
+      "note": ""
+    },
+    {
+      "id": 1518,
+      "groupId": 5,
+      "ro": "a exista",
+      "ru": "существовать",
+      "note": ""
+    },
+    {
+      "id": 1519,
+      "groupId": 5,
+      "ro": "a conta",
+      "ru": "иметь значение",
+      "note": ""
+    },
+    {
+      "id": 1520,
+      "groupId": 5,
+      "ro": "a merita",
+      "ru": "заслуживать / стоить (того)",
+      "note": ""
+    },
+    {
+      "id": 1521,
+      "groupId": 5,
+      "ro": "a funcționa",
+      "ru": "работать / функционировать",
+      "note": ""
+    },
+    {
+      "id": 1522,
+      "groupId": 5,
+      "ro": "a se întâmpla",
+      "ru": "происходить / случаться",
+      "note": ""
+    },
+    {
+      "id": 1523,
+      "groupId": 5,
+      "ro": "a se întoarce",
+      "ru": "возвращаться",
+      "note": ""
+    },
+    {
+      "id": 1524,
+      "groupId": 5,
+      "ro": "a se grăbi",
+      "ru": "торопиться",
+      "note": ""
+    },
+    {
+      "id": 1525,
+      "groupId": 5,
+      "ro": "a se gândi",
+      "ru": "думать / размышлять",
+      "note": ""
+    },
+    {
+      "id": 1526,
+      "groupId": 5,
+      "ro": "a se bucura",
+      "ru": "радоваться",
+      "note": ""
+    },
+    {
+      "id": 1527,
+      "groupId": 5,
+      "ro": "a se simți",
+      "ru": "чувствовать себя",
+      "note": ""
+    },
+    {
+      "id": 1528,
+      "groupId": 5,
+      "ro": "a se uita",
+      "ru": "смотреть / глядеть",
+      "note": ""
+    },
+    {
+      "id": 1529,
+      "groupId": 5,
+      "ro": "a se culca",
+      "ru": "ложиться спать",
+      "note": ""
+    },
+    {
+      "id": 1530,
+      "groupId": 5,
+      "ro": "a se ridica",
+      "ru": "вставать / подниматься",
+      "note": ""
+    },
+    {
+      "id": 1531,
+      "groupId": 5,
+      "ro": "a greși",
+      "ru": "ошибаться",
+      "note": ""
+    },
+    {
+      "id": 1532,
+      "groupId": 5,
+      "ro": "a recunoaște",
+      "ru": "признавать / узнавать",
+      "note": ""
+    },
+    {
+      "id": 1533,
+      "groupId": 5,
+      "ro": "a afla",
+      "ru": "узнавать (новость)",
+      "note": ""
+    },
+    {
+      "id": 1534,
+      "groupId": 5,
+      "ro": "a promite",
+      "ru": "обещать",
+      "note": ""
+    },
+    {
+      "id": 1535,
+      "groupId": 5,
+      "ro": "a minți",
+      "ru": "лгать / врать",
+      "note": ""
+    },
+    {
+      "id": 1536,
+      "groupId": 5,
+      "ro": "a ierta",
+      "ru": "прощать",
+      "note": ""
+    },
+    {
+      "id": 1537,
+      "groupId": 5,
+      "ro": "a mulțumi",
+      "ru": "благодарить",
+      "note": ""
+    },
+    {
+      "id": 1538,
+      "groupId": 5,
+      "ro": "a saluta",
+      "ru": "приветствовать",
+      "note": ""
+    },
+    {
+      "id": 1539,
+      "groupId": 5,
+      "ro": "a se prezenta",
+      "ru": "представляться",
+      "note": ""
+    },
+    {
+      "id": 1540,
+      "groupId": 5,
+      "ro": "a locui",
+      "ru": "жить / проживать",
+      "note": ""
+    },
+    {
+      "id": 1541,
+      "groupId": 5,
+      "ro": "a rezerva",
+      "ru": "бронировать",
+      "note": ""
+    },
+    {
+      "id": 1542,
+      "groupId": 5,
+      "ro": "a înregistra",
+      "ru": "регистрировать / записывать",
+      "note": ""
+    },
+    {
+      "id": 1543,
+      "groupId": 5,
+      "ro": "a completa",
+      "ru": "заполнять (форму)",
+      "note": ""
+    },
+    {
+      "id": 1544,
+      "groupId": 5,
+      "ro": "a circula",
+      "ru": "ездить / курсировать",
+      "note": ""
+    },
+    {
+      "id": 1545,
+      "groupId": 40,
+      "ro": "niciodată",
+      "ru": "никогда",
+      "note": ""
+    },
+    {
+      "id": 1546,
+      "groupId": 40,
+      "ro": "întotdeauna",
+      "ru": "всегда",
+      "note": ""
+    },
+    {
+      "id": 1547,
+      "groupId": 40,
+      "ro": "uneori",
+      "ru": "иногда",
+      "note": ""
+    },
+    {
+      "id": 1548,
+      "groupId": 40,
+      "ro": "rar",
+      "ru": "редко",
+      "note": ""
+    },
+    {
+      "id": 1549,
+      "groupId": 40,
+      "ro": "des",
+      "ru": "часто",
+      "note": ""
+    },
+    {
+      "id": 1550,
+      "groupId": 40,
+      "ro": "adesea",
+      "ru": "зачастую",
+      "note": ""
+    },
+    {
+      "id": 1551,
+      "groupId": 40,
+      "ro": "cam",
+      "ru": "примерно / как-то",
+      "note": "приблизительность (примерно так, минут десять)"
+    },
+    {
+      "id": 1552,
+      "groupId": 40,
+      "ro": "chiar",
+      "ru": "именно / даже",
+      "note": ""
+    },
+    {
+      "id": 1553,
+      "groupId": 40,
+      "ro": "doar",
+      "ru": "только / лишь",
+      "note": ""
+    },
+    {
+      "id": 1554,
+      "groupId": 40,
+      "ro": "măcar",
+      "ru": "хотя бы",
+      "note": ""
+    },
+    {
+      "id": 1555,
+      "groupId": 40,
+      "ro": "parcă",
+      "ru": "как будто / кажется",
+      "note": ""
+    },
+    {
+      "id": 1556,
+      "groupId": 40,
+      "ro": "oare",
+      "ru": "интересно / разве",
+      "note": "риторическая частица сомнения или интереса"
+    },
+    {
+      "id": 1557,
+      "groupId": 40,
+      "ro": "mai",
+      "ru": "ещё / больше (нареч.)",
+      "note": ""
+    },
+    {
+      "id": 1558,
+      "groupId": 40,
+      "ro": "tot",
+      "ru": "всё ещё / по-прежнему",
+      "note": "всё ещё, по-прежнему"
+    },
+    {
+      "id": 1559,
+      "groupId": 40,
+      "ro": "abia",
+      "ru": "едва / только что",
+      "note": "едва / только что"
+    },
+    {
+      "id": 1561,
+      "groupId": 40,
+      "ro": "destul",
+      "ru": "достаточно",
+      "note": ""
+    },
+    {
+      "id": 1562,
+      "groupId": 27,
+      "ro": "cât",
+      "ru": "сколько?",
+      "note": ""
+    },
+    {
+      "id": 1563,
+      "groupId": 27,
+      "ro": "câți",
+      "ru": "сколько? (Мж. род)",
+      "note": ""
+    },
+    {
+      "id": 1564,
+      "groupId": 27,
+      "ro": "al cui",
+      "ru": "чей?",
+      "note": ""
+    },
+    {
+      "id": 1565,
+      "groupId": 45,
+      "ro": "republică",
+      "ru": "республика",
+      "note": ""
+    },
+    {
+      "id": 1566,
+      "groupId": 45,
+      "ro": "suveranitate",
+      "ru": "суверенитет",
+      "note": ""
+    },
+    {
+      "id": 1567,
+      "groupId": 45,
+      "ro": "independență",
+      "ru": "независимость",
+      "note": ""
+    },
+    {
+      "id": 1568,
+      "groupId": 45,
+      "ro": "Curtea Constituțională",
+      "ru": "Конституционный суд",
+      "note": ""
+    },
+    {
+      "id": 1569,
+      "groupId": 45,
+      "ro": "deputat",
+      "ru": "депутат",
+      "note": ""
+    },
+    {
+      "id": 1570,
+      "groupId": 45,
+      "ro": "mandat",
+      "ru": "мандат / срок полномочий",
+      "note": ""
+    },
+    {
+      "id": 1571,
+      "groupId": 45,
+      "ro": "Prim-ministru",
+      "ru": "Премьер-министр",
+      "note": "глава правительства"
+    },
+    {
+      "id": 1572,
+      "groupId": 45,
+      "ro": "teritoriul",
+      "ru": "территория",
+      "note": ""
+    },
+    {
+      "id": 1573,
+      "groupId": 45,
+      "ro": "scrutin",
+      "ru": "голосование / выборы",
+      "note": ""
+    },
+    {
+      "id": 1574,
+      "groupId": 45,
+      "ro": "referendum",
+      "ru": "референдум",
+      "note": ""
+    },
+    {
+      "id": 1575,
+      "groupId": 46,
+      "ro": "Chișinău",
+      "ru": "Кишинёв (столица)",
+      "note": ""
+    },
+    {
+      "id": 1576,
+      "groupId": 46,
+      "ro": "Bălți",
+      "ru": "Бельцы (второй по величине город)",
+      "note": ""
+    },
+    {
+      "id": 1577,
+      "groupId": 46,
+      "ro": "raion",
+      "ru": "район (административная единица)",
+      "note": ""
+    },
+    {
+      "id": 1578,
+      "groupId": 46,
+      "ro": "Mărțișor",
+      "ru": "Мэрцишор (праздник 1 марта)",
+      "note": "символ весны, красно-белый шнурок"
+    },
+    {
+      "id": 1579,
+      "groupId": 46,
+      "ro": "mămăligă",
+      "ru": "мамалыга (кукурузная каша)",
+      "note": "традиционное блюдо"
+    },
+    {
+      "id": 1580,
+      "groupId": 46,
+      "ro": "plăcintă",
+      "ru": "плэчинтэ (молдавский пирог)",
+      "note": ""
+    },
+    {
+      "id": 1581,
+      "groupId": 46,
+      "ro": "sarmale",
+      "ru": "сармале (голубцы)",
+      "note": "традиционное блюдо"
+    },
+    {
+      "id": 1582,
+      "groupId": 46,
+      "ro": "IDNO",
+      "ru": "идентификационный номер организации",
+      "note": ""
+    },
+    {
+      "id": 1583,
+      "groupId": 46,
+      "ro": "IDNP",
+      "ru": "персональный идентификационный номер",
+      "note": "номер в удостоверении личности"
+    },
+    {
+      "id": 1584,
+      "groupId": 46,
+      "ro": "notar",
+      "ru": "нотариус",
+      "note": ""
+    },
+    {
+      "id": 1585,
+      "groupId": 46,
+      "ro": "primărie",
+      "ru": "мэрия / управление",
+      "note": ""
+    },
+    {
+      "id": 1586,
+      "groupId": 46,
+      "ro": "primar",
+      "ru": "мэр / примар",
+      "note": ""
+    },
+    {
+      "id": 1587,
+      "groupId": 45,
+      "ro": "suveran",
+      "ru": "суверенный",
+      "note": ""
+    },
+    {
+      "id": 1588,
+      "groupId": 45,
+      "ro": "unitar",
+      "ru": "унитарный",
+      "note": ""
+    },
+    {
+      "id": 1589,
+      "groupId": 45,
+      "ro": "democratic",
+      "ru": "демократический",
+      "note": ""
+    },
+    {
+      "id": 1590,
+      "groupId": 45,
+      "ro": "libertate",
+      "ru": "свобода",
+      "note": ""
+    },
+    {
+      "id": 1591,
+      "groupId": 45,
+      "ro": "egalitate",
+      "ru": "равенство",
+      "note": ""
+    },
+    {
+      "id": 1592,
+      "groupId": 45,
+      "ro": "vot",
+      "ru": "голос / голосование",
+      "note": ""
+    },
+    {
+      "id": 1593,
+      "groupId": 45,
+      "ro": "teritoriu",
+      "ru": "территория",
+      "note": ""
+    },
+    {
+      "id": 1594,
+      "groupId": 45,
+      "ro": "neutralitate",
+      "ru": "нейтралитет",
+      "note": ""
+    },
+    {
+      "id": 1595,
+      "groupId": 45,
+      "ro": "imn",
+      "ru": "гимн",
+      "note": ""
+    },
+    {
+      "id": 1596,
+      "groupId": 45,
+      "ro": "stemă",
+      "ru": "герб",
+      "note": ""
+    },
+    {
+      "id": 1597,
+      "groupId": 45,
+      "ro": "drapel",
+      "ru": "флаг",
+      "note": ""
+    },
+    {
+      "id": 1598,
+      "groupId": 45,
+      "ro": "judecător",
+      "ru": "судья",
+      "note": ""
+    },
+    {
+      "id": 1599,
+      "groupId": 45,
+      "ro": "procuror",
+      "ru": "прокурор",
+      "note": ""
+    },
+    {
+      "id": 1600,
+      "groupId": 45,
+      "ro": "impozit",
+      "ru": "налог",
+      "note": ""
+    },
+    {
+      "id": 1601,
+      "groupId": 45,
+      "ro": "proprietate",
+      "ru": "собственность",
+      "note": ""
+    },
+    {
+      "id": 1602,
+      "groupId": 45,
+      "ro": "naționalitate",
+      "ru": "национальность",
+      "note": ""
+    },
+    {
+      "id": 1603,
+      "groupId": 45,
+      "ro": "limbă oficială",
+      "ru": "официальный язык",
+      "note": ""
+    },
+    {
+      "id": 1604,
+      "groupId": 46,
+      "ro": "Nistru",
+      "ru": "Днестр",
+      "note": ""
+    },
+    {
+      "id": 1605,
+      "groupId": 46,
+      "ro": "Prut",
+      "ru": "Прут",
+      "note": "граница с Румынией"
+    },
+    {
+      "id": 1606,
+      "groupId": 46,
+      "ro": "Găgăuzia",
+      "ru": "Гагаузия",
+      "note": "автономное образование"
+    },
+    {
+      "id": 1607,
+      "groupId": 46,
+      "ro": "moldovean",
+      "ru": "молдаванин / молдавский",
+      "note": ""
+    },
+    {
+      "id": 1608,
+      "groupId": 46,
+      "ro": "buletin",
+      "ru": "удостоверение личности",
+      "note": "разг. название buletin de identitate"
+    },
+    {
+      "id": 1609,
+      "groupId": 12,
+      "ro": "prima",
+      "ru": "первая",
+      "note": ""
+    },
+    {
+      "id": 1611,
+      "groupId": 12,
+      "ro": "ultima",
+      "ru": "последняя",
+      "note": ""
+    },
+    {
+      "id": 1612,
+      "groupId": 27,
+      "ro": "a cui",
+      "ru": "чья?",
+      "note": ""
+    },
+    {
+      "id": 1613,
+      "groupId": 41,
+      "ro": "alta",
+      "ru": "другая",
+      "note": ""
+    },
+    {
+      "id": 1614,
+      "groupId": 41,
+      "ro": "aceeași",
+      "ru": "та же",
+      "note": ""
+    },
+    {
+      "id": 1615,
+      "groupId": 41,
+      "ro": "toate",
+      "ru": "все (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1616,
+      "groupId": 41,
+      "ro": "unele",
+      "ru": "некоторые (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1617,
+      "groupId": 41,
+      "ro": "aceasta",
+      "ru": "эта",
+      "note": ""
+    },
+    {
+      "id": 1618,
+      "groupId": 41,
+      "ro": "aceea",
+      "ru": "та",
+      "note": ""
+    },
+    {
+      "id": 1619,
+      "groupId": 5,
+      "ro": "a descărca",
+      "ru": "загружать / разгружать",
+      "note": ""
+    },
+    {
+      "id": 1620,
+      "groupId": 22,
+      "ro": "numai",
+      "ru": "только",
+      "note": ""
+    }
+  ]
+}

@@ -1386,6 +1386,7 @@ if (typeof grammarTopics === 'undefined') window.grammarTopics = [];
 window._grammarLoadFailed = false;
 </script>
 <script src="grammar-content.js" onerror="window.grammarTopics = []; window._grammarLoadFailed = true;" crossorigin="anonymous"></script>
+<script src="onboarding.js"></script>
 
 </head>
 <body>
@@ -1646,13 +1647,14 @@ window._grammarLoadFailed = false;
       <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
         <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
-          <div>✍️ <strong style="color:var(--text)">Карточки</strong> — учи слова в режимах «написать», «выбрать» и «просмотр»</div>
-          <div>🧠 <strong style="color:var(--text)">SRS-алгоритм</strong> — интервальное повторение по SM-2: карточки возвращаются в нужный момент</div>
-          <div>🏃 <strong style="color:var(--text)">Марафон</strong> — прогоняй все карточки подряд с умной сортировкой по слабым местам</div>
-          <div>📚 <strong style="color:var(--text)">Грамматика</strong> — правила с примерами, организованные по темам</div>
-          <div>📋 <strong style="color:var(--text)">Тесты</strong> — проверь знания с выбором и вводом ответа; загружай свои наборы через JSON</div>
+          <div>🧠 <strong style="color:var(--text)">Умное повторение</strong> — SRS-алгоритм показывает карточку ровно когда вы вот-вот забудете</div>
+          <div>✍️ <strong style="color:var(--text)">Режимы учёбы</strong> — написать перевод, выбрать из вариантов, просмотр без оценки</div>
+          <div>🏃 <strong style="color:var(--text)">Марафон и ошибки</strong> — все карточки подряд или только те, где вы ошиблись</div>
+          <div>🔒 <strong style="color:var(--text)">Строгий режим</strong> — ответ засчитывается только с правильными диакритиками</div>
+          <div>📚 <strong style="color:var(--text)">Грамматика</strong> — правила с таблицами и примерами, организованные по темам</div>
+          <div>📝 <strong style="color:var(--text)">Тесты</strong> — выбор из вариантов и ввод ответа; загружай свои наборы или генерируй через нейросеть</div>
           <div>🔤 <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
-          <div>📊 <strong style="color:var(--text)">Статистика</strong> — история сессий, точность ответов и динамика по дням</div>
+          <div>📊 <strong style="color:var(--text)">Статистика</strong> — история сессий, точность по дням, рекорды</div>
           <div>💾 <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
           <div>🎨 <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
         </div>
@@ -5070,17 +5072,21 @@ async function doImportReplace(data) {
     const cleanCards  = [];
     const cardStatsList = [];
     for (const c of (data.cards || [])) {
-      cleanCards.push({id:c.id, groupId:c.groupId, ro:c.ro, ru:c.ru||'', note:c.note||'', ...(c.ex !== undefined ? {ex:c.ex} : {})});
-      cardStatsList.push({
-        cardId:      c.id,
-        shows:       c.shows       ?? 0,
-        correct:     c.correct     ?? 0,
-        srsLevel:    c.srsLevel    ?? 0,
-        srsEf:       c.srsEf      ?? 2.5,
-        srsInterval: c.srsInterval ?? 1,
-        nextReview:  c.nextReview  ?? null,
-        lastSeen:    c.lastSeen    ?? null,
-      });
+      const card = {groupId:c.groupId, ro:c.ro, ru:c.ru||'', note:c.note||'', ...(c.ex !== undefined ? {ex:c.ex} : {})};
+      if (c.id !== undefined) card.id = c.id;
+      cleanCards.push(card);
+      if (c.id !== undefined) {
+        cardStatsList.push({
+          cardId:      c.id,
+          shows:       c.shows       ?? 0,
+          correct:     c.correct     ?? 0,
+          srsLevel:    c.srsLevel    ?? 0,
+          srsEf:       c.srsEf      ?? 2.5,
+          srsInterval: c.srsInterval ?? 1,
+          nextReview:  c.nextReview  ?? null,
+          lastSeen:    c.lastSeen    ?? null,
+        });
+      }
     }
     await dbPutBatch('cards', cleanCards);
     await dbPutBatch('cardStats', cardStatsList);
@@ -5547,7 +5553,7 @@ function validateTestPack(data) {
   if (!data.name || typeof data.name !== 'string') return 'Нет поля name';
   if (!Array.isArray(data.questions) || data.questions.length === 0) return 'Поле questions должно быть непустым массивом';
   for (const q of data.questions) {
-    if (!q.q) return 'У вопроса нет поля q';
+    if (!q.question) return 'У вопроса нет поля question';
     if (!q.type || !['choice','fill','form'].includes(q.type)) return `Неверный тип вопроса: ${q.type}`;
     if (q.type === 'choice' && (!Array.isArray(q.options) || q.options.length < 2)) return 'У choice-вопроса нет вариантов';
     if (!q.answer) return 'У вопроса нет поля answer';
@@ -5725,15 +5731,15 @@ async function renderGrammarTestsHome() {
           <button onclick="deleteTestPack(${pack.id})" title="Удалить" style="background:none;border:none;color:var(--red);font-size:12px;cursor:pointer;padding:2px 5px;opacity:0.5">✕</button>
         </div>
       </div>
-      <button class="gt-topic-btn" onclick="startGrammarTest(null, ${pack.id})" style="border-color:var(--accent-a20);background:var(--accent-a08)">
+      ${!hasTopics ? `<button class="gt-topic-btn" onclick="startGrammarTest(null, ${pack.id})" style="border-color:var(--accent-a20);background:var(--accent-a08)">
         <div class="gt-topic-icon">${esc(pack.icon || '📝')}</div>
         <div class="gt-topic-info">
-          <div class="gt-topic-name" style="color:var(--accent)">${hasTopics ? 'Все темы вперемешку' : esc(pack.name)}</div>
+          <div class="gt-topic-name" style="color:var(--accent)">${esc(pack.name)}</div>
           <div class="gt-topic-count">${plural(pack.questions.length, 'вопрос', 'вопроса', 'вопросов')}${pack.description ? ' · ' + esc(pack.description) : ''}</div>
         </div>
         ${allBadge}
         <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" width="16" height="16"><path d="M9 18l6-6-6-6"/></svg>
-      </button>
+      </button>` : ''}
       ${topicBtns}`;
   }
 
@@ -5861,7 +5867,7 @@ function renderGrammarTestQuestion() {
       </div>
       <div class="gt-question-card">
         <div class="gt-question-type">${typeLabel}</div>
-        <div class="gt-question-text">${esc(q.q)}</div>
+        <div class="gt-question-text">${esc(q.question)}</div>
         ${q.prompt ? `<div class="gt-question-prompt">${esc(q.prompt)}</div>` : ''}
       </div>
       <div class="gt-answer-area">
@@ -6231,191 +6237,7 @@ function downloadSampleTests() {
   showToast('Файл скачан ✓', 'green');
 }
 
-// ===== ONBOARDING =====
-const OB_SCREENS = [
-  {
-    icon: '🇷🇴',
-    title: 'Добро пожаловать в <span>Fișki</span>',
-    desc: 'Приложение для изучения румынского языка с умным повторением карточек, грамматикой и тестами.',
-    features: null,
-    note: null,
-    primaryBtn: null,
-    secondaryBtn: null,
-    nextBtn: 'Далее →',
-  },
-  {
-    icon: '🗂️',
-    title: 'Карт<span>очки</span>',
-    desc: 'Добавляйте слова вручную или загрузите готовый файл. Карточки организованы по группам — например «Еда», «Путешествия», «Глаголы».',
-    features: [
-      { icon: '✍️', title: 'Вручную', sub: 'Нажмите «+ Добавить» в разделе Карточки' },
-      { icon: '📥', title: 'Импорт JSON', sub: 'Загрузите файл через Настройки → Импорт данных' },
-    ],
-    note: '<strong>Совет:</strong> Карточки можно создавать вручную или попросить нейросеть — ChatGPT, Claude и другие отлично генерируют их в нужном формате.',
-    primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
-  },
-  {
-    icon: '🧠',
-    title: 'Умное <span>повторение</span>',
-    desc: 'Алгоритм SRS (интервальное повторение) показывает каждую карточку ровно в тот момент, когда вы вот-вот забудете слово.',
-    features: [
-      { icon: '✍️', title: 'Написать', sub: 'Введите слово по-румынски — самый эффективный режим' },
-      { icon: '☑️', title: 'Выбрать', sub: 'Выберите из 4 вариантов, если хотите попроще' },
-      { icon: '🏃', title: 'Марафон', sub: 'Все карточки подряд — для интенсивной тренировки' },
-    ],
-    note: null, primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
-  },
-  {
-    icon: '📚',
-    title: 'Грам<span>матика</span>',
-    desc: 'Правила языка с примерами и таблицами. Попасть туда просто — на главном экране «Учить» есть иконка книги в правом верхнем углу.',
-    features: [
-      { icon: '📋', title: 'Правила', sub: 'Артикли, падежи, времена — с таблицами и примерами' },
-      { icon: '🔍', title: 'Как открыть', sub: 'Главный экран → иконка 📖 справа вверху' },
-    ],
-    note: null, primaryBtn: null, secondaryBtn: null, nextBtn: 'Далее →',
-  },
-  {
-    icon: '📝',
-    title: 'Тесты и <span>глаголы</span>',
-    desc: 'Тесты по темам и тренажёр спряжений — в разделе Грамматика, вкладки «Тесты» и «Глаголы».',
-    features: [
-      { icon: '📝', title: 'Тесты', sub: 'Загрузите JSON-пак с вопросами и проверьте знания' },
-      { icon: '🔤', title: 'Глаголы', sub: 'Спряжения по временам — тоже нужен JSON-пак с глаголами' },
-    ],
-    note: '<strong>Паки загружаются вручную</strong> — кнопка внутри вкладки «Тесты» или «Глаголы». Скачайте примеры ниже как шаблон для нейросети.',
-    primaryBtn: { label: '⬇️ Скачать пример тестов', action: 'downloadSampleTests()' },
-    secondaryBtn: { label: '⬇️ Скачать пример глаголов', action: 'downloadSampleVerbs()' },
-    nextBtn: 'Далее →',
-  },
-  {
-    icon: '📦',
-    title: 'Скачать тестовые <span>карточки</span>',
-    desc: 'Мы подготовили 5 слов для старта. Это обычный JSON-файл — можно изучить его структуру и попросить нейросеть сгенерировать больше.',
-    features: null,
-    note: '<strong>Нейросеть и карточки:</strong> Попробуйте промпт: «Создай JSON файл с 20 румынскими словами в формате этого примера» — и вставьте содержимое скачанного файла как образец.',
-    primaryBtn: { label: '⬇️ Скачать 5 карточек', action: 'downloadSampleCards()' },
-    secondaryBtn: null,
-    nextBtn: 'Далее →',
-  },
-  {
-    icon: '🚀',
-    title: 'Всё <span>готово!</span>',
-    desc: 'Выберите как начать: загрузите тестовые карточки сразу в приложение или начните с пустого пространства и добавьте слова сами.',
-    features: null,
-    note: null,
-    primaryBtn: null, secondaryBtn: null, nextBtn: null,
-    finalScreen: true,
-  },
-];
-
-let _obStep = 0;
-
-function showOnboarding() {
-  const overlay = document.getElementById('onboarding-overlay');
-  if (!overlay) return;
-  overlay.style.display = 'flex';
-  _obStep = 0;
-  renderObScreen();
-}
-
-function renderObScreen() {
-  const s = OB_SCREENS[_obStep];
-  const total = OB_SCREENS.length;
-
-  // Dots
-  const dotsEl = document.getElementById('ob-dots');
-  if (dotsEl) {
-    dotsEl.innerHTML = OB_SCREENS.map((_, i) =>
-      `<div class="ob-dot ${i === _obStep ? 'active' : ''}"></div>`
-    ).join('');
-  }
-
-  // Body
-  const body = document.getElementById('ob-body');
-  if (body) {
-    let html = `<div class="ob-icon">${s.icon}</div>`;
-    html += `<div class="ob-title">${s.title}</div>`;
-    html += `<div class="ob-desc">${s.desc}</div>`;
-    if (s.features) {
-      html += `<div class="ob-feature-list">`;
-      for (const f of s.features) {
-        html += `<div class="ob-feature">
-          <div class="ob-feature-icon">${f.icon}</div>
-          <div class="ob-feature-text">
-            <div class="ob-feature-title">${f.title}</div>
-            <div class="ob-feature-sub">${f.sub}</div>
-          </div>
-        </div>`;
-      }
-      html += `</div>`;
-    }
-    if (s.note) {
-      html += `<div class="ob-note">${s.note}</div>`;
-    }
-    body.innerHTML = html;
-  }
-
-  // Footer
-  const footer = document.getElementById('ob-footer');
-  if (footer) {
-    if (s.finalScreen) {
-      footer.innerHTML = `
-        <div class="ob-btn-start-pair">
-          <button class="ob-btn-secondary" onclick="obStartWithSample()">📦 Загрузить примеры</button>
-          <button class="ob-btn-primary" onclick="finishOnboarding()">Начать →</button>
-        </div>`;
-    } else {
-      let html = '';
-      if (s.primaryBtn) {
-        html += `<button class="ob-btn-secondary" onclick="${s.primaryBtn.action}">${s.primaryBtn.label}</button>`;
-      }
-      if (s.secondaryBtn) {
-        html += `<button class="ob-btn-secondary" onclick="${s.secondaryBtn.action}">${s.secondaryBtn.label}</button>`;
-      }
-      html += `<button class="ob-btn-primary" onclick="obNext()">${s.nextBtn}</button>`;
-      footer.innerHTML = html;
-    }
-  }
-}
-
-function obNext() {
-  if (_obStep < OB_SCREENS.length - 1) {
-    _obStep++;
-    renderObScreen();
-  }
-}
-
-function skipOnboarding() {
-  finishOnboarding();
-}
-
-function finishOnboarding() {
-  document.getElementById('onboarding-overlay').style.display = 'none';
-  try { localStorage.setItem('onboardingDone', '1'); } catch(e) {}
-}
-
-async function obStartWithSample() {
-  try {
-    const data = JSON.parse(JSON.stringify(SAMPLE_CARDS_DATA));
-    await doImportReplace(data);
-    finishOnboarding();
-    showPage('cards');
-    showToast('Тестовые карточки загружены ✓', 'green');
-  } catch(e) {
-    console.error('obStartWithSample failed', e);
-    showToast('Не удалось загрузить карточки', 'red');
-  }
-}
-
-function checkOnboarding() {
-  try {
-    const done = localStorage.getItem('onboardingDone');
-    if (!done) {
-      showOnboarding();
-    }
-  } catch(e) {}
-}
+// checkOnboarding, showOnboarding, renderObScreen — в onboarding.js
 
 
 initTheme();

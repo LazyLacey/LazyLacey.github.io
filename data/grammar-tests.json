@@ -121,7 +121,7 @@
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "Неопределённый артикль для «băiat» (мальчик, м.р.)?",
+      "question": "Неопределённый артикль для «băiat» (мальчик, м.р.)?",
       "options": [
         "un",
         "o",
@@ -134,7 +134,7 @@
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "Неопределённый артикль для «casă» (дом, ж.р.)?",
+      "question": "Неопределённый артикль для «casă» (дом, ж.р.)?",
       "options": [
         "o",
         "un",
@@ -147,7 +147,7 @@
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "Какого рода «oraș» (город)?",
+      "question": "Какого рода «oraș» (город)?",
       "options": [
         "среднего",
         "мужского",
@@ -159,28 +159,28 @@
     {
       "topicId": "articles",
       "type": "fill",
-      "q": "«băiat» с определённым артиклем?",
+      "question": "«băiat» с определённым артиклем?",
       "answer": "băiatul",
       "explain": "М.р. ед.ч.: băiat + ul = băiatul"
     },
     {
       "topicId": "articles",
       "type": "fill",
-      "q": "«fată» с определённым артиклем?",
+      "question": "«fată» с определённым артиклем?",
       "answer": "fata",
       "explain": "Ж.р. на -ă: -ă заменяется на -a → fata"
     },
     {
       "topicId": "articles",
       "type": "fill",
-      "q": "«carte» с определённым артиклем?",
+      "question": "«carte» с определённым артиклем?",
       "answer": "cartea",
       "explain": "carte + a = cartea"
     },
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "«Мальчики (те самые)» по-румынски?",
+      "question": "«Мальчики (те самые)» по-румынски?",
       "options": [
         "băieții",
         "băieți",
@@ -193,7 +193,7 @@
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "«Девочки (те самые)» по-румынски?",
+      "question": "«Девочки (те самые)» по-румынски?",
       "options": [
         "fetele",
         "fata",
@@ -206,7 +206,7 @@
     {
       "topicId": "articles",
       "type": "choice",
-      "q": "Как артикль крепится к слову?",
+      "question": "Как артикль крепится к слову?",
       "options": [
         "Сзади (суффикс)",
         "Спереди (префикс)",
@@ -219,7 +219,7 @@
     {
       "topicId": "articles",
       "type": "fill",
-      "q": "«Несколько яблок» по-румынски.",
+      "question": "«Несколько яблок» по-румынски.",
       "prompt": "măr → mere (мн.ч.)",
       "answer": "niște mere",
       "explain": "niște = несколько"
@@ -227,70 +227,70 @@
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Мн.ч. от «băiat»",
+      "question": "Мн.ч. от «băiat»",
       "answer": "băieți",
       "explain": "băiat → băieți"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Мн.ч. от «fată»",
+      "question": "Мн.ч. от «fată»",
       "answer": "fete",
       "explain": "Ж.р. на -ă: fată → fete"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Мн.ч. от «carte»",
+      "question": "Мн.ч. от «carte»",
       "answer": "cărți",
       "explain": "carte → cărți (чередование a/ă)"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Мн.ч. от «lucru»",
+      "question": "Мн.ч. от «lucru»",
       "answer": "lucruri",
       "explain": "Ср.р. на -u: lucru → lucruri"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Мн.ч. от «frate»",
+      "question": "Мн.ч. от «frate»",
       "answer": "frați",
       "explain": "frate → frați"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Переведите: «дом девочки».",
+      "question": "Переведите: «дом девочки».",
       "answer": "casa fetei",
       "explain": "Ж.р. генитив с артиклем: fată → fetei"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Переведите: «комната мальчика».",
+      "question": "Переведите: «комната мальчика».",
       "answer": "camera băiatului",
       "explain": "М.р. генитив с артиклем: băiatul → băiatului"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Переведите: «дом Иона».",
+      "question": "Переведите: «дом Иона».",
       "answer": "casa lui Ion",
       "explain": "Для имён м.р. используется неизменяемое lui"
     },
     {
       "topicId": "nouns",
       "type": "fill",
-      "q": "Переведите: «центр города».",
+      "question": "Переведите: «центр города».",
       "answer": "centrul orașului",
       "explain": "Ср.р.: oraș + ului = orașului"
     },
     {
       "topicId": "nouns",
       "type": "choice",
-      "q": "Что такое «ambigen» (двуродовой)?",
+      "question": "Что такое «ambigen» (двуродовой)?",
       "options": [
         "Ср.р.: ед.ч. как м.р., мн.ч. как ж.р.",
         "Слова без рода",
@@ -303,7 +303,7 @@
     {
       "topicId": "adjectives",
       "type": "choice",
-      "q": "«Красивая девочка» (frumos)?",
+      "question": "«Красивая девочка» (frumos)?",
       "options": [
         "o fată frumoasă",
         "un băiat frumos",
@@ -316,21 +316,21 @@
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "«frumos» в ж.р. мн.ч.?",
+      "question": "«frumos» в ж.р. мн.ч.?",
       "answer": "frumoase",
       "explain": "Ж.р./ср.р. мн.ч.: frumoase"
     },
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "«frumos» в м.р. мн.ч.?",
+      "question": "«frumos» в м.р. мн.ч.?",
       "answer": "frumoși",
       "explain": "М.р. мн.ч.: frumoși"
     },
     {
       "topicId": "adjectives",
       "type": "choice",
-      "q": "Как образуется сравнительная степень?",
+      "question": "Как образуется сравнительная степень?",
       "options": [
         "mai + прилагательное",
         "cel mai + прилагательное",
@@ -343,21 +343,21 @@
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "Переведите: «лучший ресторан» (м.р.).",
+      "question": "Переведите: «лучший ресторан» (м.р.).",
       "answer": "cel mai bun restaurant",
       "explain": "Превосходная м.р.: cel mai bun"
     },
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "Переведите: «лучшая (ж.р.) подруга».",
+      "question": "Переведите: «лучшая (ж.р.) подруга».",
       "answer": "cea mai bună prietenă",
       "explain": "Ж.р. превосходная: cea mai bună"
     },
     {
       "topicId": "adjectives",
       "type": "choice",
-      "q": "Где обычно стоит прилагательное?",
+      "question": "Где обычно стоит прилагательное?",
       "options": [
         "После существительного",
         "Перед существительным",
@@ -370,21 +370,21 @@
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "Переведите: «она выше, чем он».",
+      "question": "Переведите: «она выше, чем он».",
       "answer": "Ea este mai înaltă decât el.",
       "explain": "mai + adj + decât"
     },
     {
       "topicId": "adjectives",
       "type": "fill",
-      "q": "Переведите: «новый дом» (м.р.)",
+      "question": "Переведите: «новый дом» (м.р.)",
       "answer": "un apartament nou",
       "explain": "М.р. ед.ч.: nou; ж.р.: nouă (un apartament nou / o casă nouă)"
     },
     {
       "topicId": "adjectives",
       "type": "choice",
-      "q": "«Очень» перед прилагательным по-румынски?",
+      "question": "«Очень» перед прилагательным по-румынски?",
       "options": [
         "foarte",
         "mult",
@@ -397,7 +397,7 @@
     {
       "topicId": "pronouns",
       "type": "choice",
-      "q": "«Мой» для ж.р. ед.ч. (моя книга)?",
+      "question": "«Мой» для ж.р. ед.ч. (моя книга)?",
       "options": [
         "mea",
         "meu",
@@ -410,21 +410,21 @@
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Переведите: «его дом».",
+      "question": "Переведите: «его дом».",
       "answer": "casa lui",
       "explain": "Притяжательное 3 л. м.р.: lui — не изменяется"
     },
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Переведите: «их машина».",
+      "question": "Переведите: «их машина».",
       "answer": "mașina lor",
       "explain": "Притяжательное 3 мн.ч.: lor — не изменяется"
     },
     {
       "topicId": "pronouns",
       "type": "choice",
-      "q": "«Наш» для м.р. ед.ч.?",
+      "question": "«Наш» для м.р. ед.ч.?",
       "options": [
         "nostru",
         "noastră",
@@ -437,7 +437,7 @@
     {
       "topicId": "pronouns",
       "type": "choice",
-      "q": "Акузатив «меня» (краткая форма)?",
+      "question": "Акузатив «меня» (краткая форма)?",
       "options": [
         "mă",
         "îmi",
@@ -450,14 +450,14 @@
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Переведите: «Меня зовут Ана».",
+      "question": "Переведите: «Меня зовут Ана».",
       "answer": "Mă cheamă Ana.",
       "explain": "mă cheamă = меня зовут"
     },
     {
       "topicId": "pronouns",
       "type": "choice",
-      "q": "Указательное «это» (м.р., разговорное)?",
+      "question": "Указательное «это» (м.р., разговорное)?",
       "options": [
         "ăsta",
         "asta",
@@ -470,28 +470,28 @@
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Переведите: «наши друзья».",
+      "question": "Переведите: «наши друзья».",
       "answer": "prietenii noștri",
       "explain": "М.р. мн.ч.: noștri"
     },
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Датив «мне» (краткая форма)?",
+      "question": "Датив «мне» (краткая форма)?",
       "answer": "îmi",
       "explain": "Краткий датив 1 л.: îmi; полная: mie"
     },
     {
       "topicId": "pronouns",
       "type": "fill",
-      "q": "Переведите: «ваш паспорт» (м.р.)",
+      "question": "Переведите: «ваш паспорт» (м.р.)",
       "answer": "pașaportul vostru",
       "explain": "М.р. ед.ч.: vostru"
     },
     {
       "topicId": "numerals",
       "type": "choice",
-      "q": "«Два» для ж.р.?",
+      "question": "«Два» для ж.р.?",
       "options": [
         "două",
         "doi",
@@ -504,14 +504,14 @@
     {
       "topicId": "numerals",
       "type": "fill",
-      "q": "Переведите: «два мальчика».",
+      "question": "Переведите: «два мальчика».",
       "answer": "doi băieți",
       "explain": "М.р.: doi + мн.ч."
     },
     {
       "topicId": "numerals",
       "type": "choice",
-      "q": "«Первый» (порядковое, м.р.)?",
+      "question": "«Первый» (порядковое, м.р.)?",
       "options": [
         "primul",
         "prima",
@@ -524,7 +524,7 @@
     {
       "topicId": "numerals",
       "type": "choice",
-      "q": "«Второй» (м.р.)?",
+      "question": "«Второй» (м.р.)?",
       "options": [
         "al doilea",
         "a doua",
@@ -537,14 +537,14 @@
     {
       "topicId": "numerals",
       "type": "fill",
-      "q": "Переведите: «первый день» (zi — ж.р.).",
+      "question": "Переведите: «первый день» (zi — ж.р.).",
       "answer": "prima zi",
       "explain": "Zi — ж.р., поэтому prima"
     },
     {
       "topicId": "numerals",
       "type": "choice",
-      "q": "Что ставится между числом 20+ и существительным?",
+      "question": "Что ставится между числом 20+ и существительным?",
       "options": [
         "de",
         "din",
@@ -557,21 +557,21 @@
     {
       "topicId": "numerals",
       "type": "fill",
-      "q": "Переведите: «двадцать три года».",
+      "question": "Переведите: «двадцать три года».",
       "answer": "douăzeci și trei de ani",
       "explain": "После 20: de перед существительным обязателен"
     },
     {
       "topicId": "numerals",
       "type": "fill",
-      "q": "Переведите: «пять книг»",
+      "question": "Переведите: «пять книг»",
       "answer": "cinci cărți",
       "explain": "После 2 до 19: мн.ч. без предлога de"
     },
     {
       "topicId": "numerals",
       "type": "choice",
-      "q": "«Третья» (ж.р.) по-румынски?",
+      "question": "«Третья» (ж.р.) по-румынски?",
       "options": [
         "a treia",
         "al treilea",
@@ -584,49 +584,49 @@
     {
       "topicId": "numerals",
       "type": "fill",
-      "q": "Переведите: «сто леев»",
+      "question": "Переведите: «сто леев»",
       "answer": "o sută de lei",
       "explain": "После sută обязательно de"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a lucra, «eu»",
+      "question": "a lucra, «eu»",
       "answer": "lucrez",
       "explain": "Группа -a с -ez: eu lucrez"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a lucra, «el»",
+      "question": "a lucra, «el»",
       "answer": "lucrează",
       "explain": "3 л. ед.ч. с -ez: lucrează"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a cânta, «noi»",
+      "question": "a cânta, «noi»",
       "answer": "cântăm",
       "explain": "Группа -a без -ez: noi cântăm"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a dormi, «el»",
+      "question": "a dormi, «el»",
       "answer": "doarme",
       "explain": "a dormi: el doarme (чередование o/oa)"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a vorbi, «eu»",
+      "question": "a vorbi, «eu»",
       "answer": "vorbesc",
       "explain": "Группа -i с -esc: eu vorbesc"
     },
     {
       "topicId": "verbs-present",
       "type": "choice",
-      "q": "«Я есть» (a fi)?",
+      "question": "«Я есть» (a fi)?",
       "options": [
         "sunt",
         "ești",
@@ -639,77 +639,77 @@
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a fi, «tu»",
+      "question": "a fi, «tu»",
       "answer": "ești",
       "explain": "a fi: tu ești"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a fi, «noi»",
+      "question": "a fi, «noi»",
       "answer": "suntem",
       "explain": "a fi: noi suntem"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a avea, «tu»",
+      "question": "a avea, «tu»",
       "answer": "ai",
       "explain": "a avea: tu ai"
     },
     {
       "topicId": "verbs-present",
       "type": "fill",
-      "q": "a avea, «ei»",
+      "question": "a avea, «ei»",
       "answer": "au",
       "explain": "a avea: ei/ele au"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Перфект: a merge, «eu»",
+      "question": "Перфект: a merge, «eu»",
       "answer": "am mers",
       "explain": "eu am + причастие mers"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Перфект: a merge, «ea»",
+      "question": "Перфект: a merge, «ea»",
       "answer": "a mers",
       "explain": "el/ea a + mers"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Перфект: a merge, «ei»",
+      "question": "Перфект: a merge, «ei»",
       "answer": "au mers",
       "explain": "ei/ele au + mers"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Причастие от a vedea",
+      "question": "Причастие от a vedea",
       "answer": "văzut",
       "explain": "a vedea → văzut (нерегулярное)"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Причастие от a face",
+      "question": "Причастие от a face",
       "answer": "făcut",
       "explain": "a face → făcut"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Причастие от a veni",
+      "question": "Причастие от a veni",
       "answer": "venit",
       "explain": "a veni → venit"
     },
     {
       "topicId": "verbs-past",
       "type": "choice",
-      "q": "Причастие группы -a образуется как?",
+      "question": "Причастие группы -a образуется как?",
       "options": [
         "основа + -at",
         "основа + -ut",
@@ -722,28 +722,28 @@
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Переведите: «Я плохо спал».",
+      "question": "Переведите: «Я плохо спал».",
       "answer": "Nu am dormit bine.",
       "explain": "nu + am + причастие"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Переведите: «Где ты был?»",
+      "question": "Переведите: «Где ты был?»",
       "answer": "Unde ai fost?",
       "explain": "a fi перфект: tu ai fost"
     },
     {
       "topicId": "verbs-past",
       "type": "fill",
-      "q": "Имперфект: a fi, «el»",
+      "question": "Имперфект: a fi, «el»",
       "answer": "era",
       "explain": "a fi имперфект: eu eram, tu erai, el era"
     },
     {
       "topicId": "verbs-future",
       "type": "choice",
-      "q": "Как образуется разговорное будущее?",
+      "question": "Как образуется разговорное будущее?",
       "options": [
         "o să + конъюнктив",
         "am + инфинитив",
@@ -756,21 +756,21 @@
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Переведите: «Я пойду домой» (разг.).",
+      "question": "Переведите: «Я пойду домой» (разг.).",
       "answer": "O să merg acasă.",
       "explain": "o să + merg"
     },
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Переведите: «Он тоже придёт» (are să).",
+      "question": "Переведите: «Он тоже придёт» (are să).",
       "answer": "Are să vină și el.",
       "explain": "are să = he is going to; vină = конъюнктив a veni"
     },
     {
       "topicId": "verbs-future",
       "type": "choice",
-      "q": "Чем отличается «am să» от «o să»?",
+      "question": "Чем отличается «am să» от «o să»?",
       "options": [
         "am să — намерение/план; o să — нейтральное",
         "o să — намерение; am să — нейтральное",
@@ -783,35 +783,35 @@
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Переведите: «Что ты собираешься делать?» (am să)",
+      "question": "Переведите: «Что ты собираешься делать?» (am să)",
       "answer": "Ce ai să faci?",
       "explain": "ai să = ты собираешься"
     },
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Переведите: «Она придёт завтра» (o să)",
+      "question": "Переведите: «Она придёт завтра» (o să)",
       "answer": "O să vină mâine.",
       "explain": "o să + vină (конъюнктив 3 л. от a veni)"
     },
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Книжное будущее: a merge, «eu»",
+      "question": "Книжное будущее: a merge, «eu»",
       "answer": "voi merge",
       "explain": "Литературное будущее: voi/vei/va/vom/veți/vor + инфинитив без a"
     },
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Книжное будущее: a veni, «ei»",
+      "question": "Книжное будущее: a veni, «ei»",
       "answer": "vor veni",
       "explain": "ei/ele → vor + veni"
     },
     {
       "topicId": "verbs-future",
       "type": "choice",
-      "q": "Форма «va» используется для:",
+      "question": "Форма «va» используется для:",
       "options": [
         "el/ea (3 л. ед.ч.)",
         "eu (1 л.)",
@@ -824,14 +824,14 @@
     {
       "topicId": "verbs-future",
       "type": "fill",
-      "q": "Переведите: «Мы не опоздаем» (o să)",
+      "question": "Переведите: «Мы не опоздаем» (o să)",
       "answer": "O să nu întârziem.",
       "explain": "o să + nu + конъюнктив"
     },
     {
       "topicId": "subjunctive",
       "type": "choice",
-      "q": "Какая частица вводит конъюнктив?",
+      "question": "Какая частица вводит конъюнктив?",
       "options": [
         "să",
         "că",
@@ -844,56 +844,56 @@
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Переведите: «Я хочу пойти домой».",
+      "question": "Переведите: «Я хочу пойти домой».",
       "answer": "Vreau să merg acasă.",
       "explain": "a vrea требует конъюнктива: vreau să merg"
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Конъюнктив: a merge, «el»",
+      "question": "Конъюнктив: a merge, «el»",
       "answer": "să meargă",
       "explain": "3 л. ед.ч.: să meargă (не să merge!)"
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Конъюнктив: a fi, «eu»",
+      "question": "Конъюнктив: a fi, «eu»",
       "answer": "să fiu",
       "explain": "a fi: să fiu, să fii, să fie"
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Переведите: «Нужно быть внимательным».",
+      "question": "Переведите: «Нужно быть внимательным».",
       "answer": "Trebuie să fii atent.",
       "explain": "trebuie să = нужно; să fii = конъюнктив a fi, 2 л."
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Переведите: «Я не могу спать».",
+      "question": "Переведите: «Я не могу спать».",
       "answer": "Nu pot să dorm.",
       "explain": "a putea + să: pot să dorm"
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Переведите: «Важно учиться».",
+      "question": "Переведите: «Важно учиться».",
       "answer": "E important să înveți.",
       "explain": "E + adj + să + конъюнктив"
     },
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Конъюнктив: a vorbi, «noi»",
+      "question": "Конъюнктив: a vorbi, «noi»",
       "answer": "să vorbim",
       "explain": "noi: să vorbim"
     },
     {
       "topicId": "subjunctive",
       "type": "choice",
-      "q": "После «prefer» нужен:",
+      "question": "После «prefer» нужен:",
       "options": [
         "să + конъюнктив",
         "инфинитив с a",
@@ -906,14 +906,14 @@
     {
       "topicId": "subjunctive",
       "type": "fill",
-      "q": "Переведите: «Он должен знать»",
+      "question": "Переведите: «Он должен знать»",
       "answer": "Trebuie să știe.",
       "explain": "trebuie să + știe (конъюнктив 3 л.)"
     },
     {
       "topicId": "conditional",
       "type": "choice",
-      "q": "Как образуется condițional prezent?",
+      "question": "Как образуется condițional prezent?",
       "options": [
         "aș/ai/ar/am/ați/ar + инфинитив без «a»",
         "am + причастие",
@@ -926,35 +926,35 @@
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Кондиционал: a merge, «eu»",
+      "question": "Кондиционал: a merge, «eu»",
       "answer": "aș merge",
       "explain": "eu → aș + merge"
     },
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Кондиционал: a face, «el»",
+      "question": "Кондиционал: a face, «el»",
       "answer": "ar face",
       "explain": "el/ea → ar + face"
     },
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Переведите вежливо: «Я бы хотел чай».",
+      "question": "Переведите вежливо: «Я бы хотел чай».",
       "answer": "Aș vrea un ceai.",
       "explain": "Кондиционал для вежливости: aș vrea"
     },
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Переведите: «Если бы я знал, я бы сказал».",
+      "question": "Переведите: «Если бы я знал, я бы сказал».",
       "answer": "Dacă aș ști, ți-aș spune.",
       "explain": "Нереальное условие: dacă + кондиционал → кондиционал"
     },
     {
       "topicId": "conditional",
       "type": "choice",
-      "q": "Реальное условие строится как?",
+      "question": "Реальное условие строится как?",
       "options": [
         "dacă + настоящее → будущее",
         "dacă + кондиционал → кондиционал",
@@ -967,28 +967,28 @@
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Кондиционал: a veni, «noi»",
+      "question": "Кондиционал: a veni, «noi»",
       "answer": "am veni",
       "explain": "noi → am + veni (не путать с перфектом!)"
     },
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Кондиционал: a putea, «tu»",
+      "question": "Кондиционал: a putea, «tu»",
       "answer": "ai putea",
       "explain": "tu → ai + putea"
     },
     {
       "topicId": "conditional",
       "type": "fill",
-      "q": "Переведите: «Ты мог бы мне помочь?»",
+      "question": "Переведите: «Ты мог бы мне помочь?»",
       "answer": "Ai putea să mă ajuți?",
       "explain": "ai putea = ты мог бы; să mă ajuți = помочь мне"
     },
     {
       "topicId": "conditional",
       "type": "choice",
-      "q": "Кондиционал прошедшего образуется как?",
+      "question": "Кондиционал прошедшего образуется как?",
       "options": [
         "aș/ai/ar... + fi + причастие",
         "aș + инфинитив",
@@ -1001,35 +1001,35 @@
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Императив (tu): a veni",
+      "question": "Императив (tu): a veni",
       "answer": "vino",
       "explain": "a veni → vino! (нерегулярное)"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Императив (tu): a fi",
+      "question": "Императив (tu): a fi",
       "answer": "fii",
       "explain": "a fi → fii! (нерегулярное)"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Императив (tu): a face",
+      "question": "Императив (tu): a face",
       "answer": "fă",
       "explain": "a face → fă! (нерегулярное)"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Императив (voi): a merge",
+      "question": "Императив (voi): a merge",
       "answer": "mergeți",
       "explain": "Форма voi = 2 л. мн.ч.: mergeți!"
     },
     {
       "topicId": "imperative",
       "type": "choice",
-      "q": "Отрицательный императив для «tu»?",
+      "question": "Отрицательный императив для «tu»?",
       "options": [
         "nu + инфинитив без «a»",
         "nu + форма tu",
@@ -1042,70 +1042,70 @@
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Переведите: «Не забудь!» (ты)",
+      "question": "Переведите: «Не забудь!» (ты)",
       "answer": "Nu uita!",
       "explain": "Nu + uita (инфинитив без «a»)"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Переведите: «Пожалуйста, помоги мне!»",
+      "question": "Переведите: «Пожалуйста, помоги мне!»",
       "answer": "Te rog, ajută-mă!",
       "explain": "Клитика -mă крепится к императиву через дефис"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Переведите: «Будьте внимательны!» (вы)",
+      "question": "Переведите: «Будьте внимательны!» (вы)",
       "answer": "Fiți atenți!",
       "explain": "Императив voi от a fi: fiți"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Императив (tu): a lua",
+      "question": "Императив (tu): a lua",
       "answer": "ia",
       "explain": "a lua → ia! (нерегулярное)"
     },
     {
       "topicId": "imperative",
       "type": "fill",
-      "q": "Переведите: «Слушай меня!» (ты)",
+      "question": "Переведите: «Слушай меня!» (ты)",
       "answer": "Ascultă-mă!",
       "explain": "Императив + клитика через дефис: Ascultă-mă!"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "a se spăla, «eu»",
+      "question": "a se spăla, «eu»",
       "answer": "mă spăl",
       "explain": "eu → mă + спрягаемая форма"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "a se spăla, «el»",
+      "question": "a se spăla, «el»",
       "answer": "se spală",
       "explain": "el/ea → se + спрягаемая форма"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "Переведите: «Мы торопимся».",
+      "question": "Переведите: «Мы торопимся».",
       "answer": "Ne grăbim.",
       "explain": "a se grăbi, noi: ne grăbim"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "Переведите: «Он быстро одевается».",
+      "question": "Переведите: «Он быстро одевается».",
       "answer": "Se îmbracă repede.",
       "explain": "a se îmbrăca, el: se îmbracă"
     },
     {
       "topicId": "reflexive",
       "type": "choice",
-      "q": "«Ты проснулся?» (перфект)?",
+      "question": "«Ты проснулся?» (перфект)?",
       "options": [
         "Te-ai trezit?",
         "Mă-ai trezit?",
@@ -1118,35 +1118,35 @@
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "Переведите: «Как ты себя чувствуешь?»",
+      "question": "Переведите: «Как ты себя чувствуешь?»",
       "answer": "Cum te simți?",
       "explain": "a se simți, tu: te simți"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "Переведите: «Увидимся завтра».",
+      "question": "Переведите: «Увидимся завтра».",
       "answer": "Ne vedem mâine.",
       "explain": "Взаимное: ne vedem = видимся"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "a se culca, «eu»",
+      "question": "a se culca, «eu»",
       "answer": "mă culc",
       "explain": "eu → mă culc (ложусь спать)"
     },
     {
       "topicId": "reflexive",
       "type": "fill",
-      "q": "Переведите: «Они поженились»",
+      "question": "Переведите: «Они поженились»",
       "answer": "S-au căsătorit.",
       "explain": "ei → s-au + căsătorit (перфект рефлексив)"
     },
     {
       "topicId": "reflexive",
       "type": "choice",
-      "q": "«Voi» — рефлексивное местоимение (акузатив)?",
+      "question": "«Voi» — рефлексивное местоимение (акузатив)?",
       "options": [
         "vă",
         "se",
@@ -1159,7 +1159,7 @@
     {
       "topicId": "gerund",
       "type": "choice",
-      "q": "Герундий группы -a образуется как?",
+      "question": "Герундий группы -a образуется как?",
       "options": [
         "основа + -ând",
         "основа + -ind",
@@ -1172,28 +1172,28 @@
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Герундий: a dormi",
+      "question": "Герундий: a dormi",
       "answer": "dormind",
       "explain": "Группа -i → -ind: dormi → dormind"
     },
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Герундий: a veni",
+      "question": "Герундий: a veni",
       "answer": "venind",
       "explain": "a veni → venind"
     },
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Переведите: «Он заснул, слушая музыку».",
+      "question": "Переведите: «Он заснул, слушая музыку».",
       "answer": "A adormit ascultând muzică.",
       "explain": "ascultând = слушая (герундий от a asculta)"
     },
     {
       "topicId": "gerund",
       "type": "choice",
-      "q": "Как рефлексивное местоимение крепится к герундию?",
+      "question": "Как рефлексивное местоимение крепится к герундию?",
       "options": [
         "Через дефис после герундия",
         "Перед герундием",
@@ -1206,35 +1206,35 @@
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Переведите: «Торопясь, он забыл ключи».",
+      "question": "Переведите: «Торопясь, он забыл ключи».",
       "answer": "Grăbindu-se, a uitat cheile.",
       "explain": "grăbindu-se — рефлексивный герундий"
     },
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Герундий: a face",
+      "question": "Герундий: a face",
       "answer": "făcând",
       "explain": "a face → făcând (нерегулярное)"
     },
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Герундий: a merge",
+      "question": "Герундий: a merge",
       "answer": "mergând",
       "explain": "a merge → mergând"
     },
     {
       "topicId": "gerund",
       "type": "fill",
-      "q": "Переведите: «Читая, он засыпал»",
+      "question": "Переведите: «Читая, он засыпал»",
       "answer": "Citind, adormea.",
       "explain": "citind = читая (герундий от a citi)"
     },
     {
       "topicId": "gerund",
       "type": "choice",
-      "q": "Герундий изменяется по лицам и числам?",
+      "question": "Герундий изменяется по лицам и числам?",
       "options": [
         "Нет, он неизменяем",
         "Да, как прилагательное",
@@ -1247,7 +1247,7 @@
     {
       "topicId": "passive",
       "type": "choice",
-      "q": "«Здесь говорят по-румынски»?",
+      "question": "«Здесь говорят по-румынски»?",
       "options": [
         "Se vorbește română aici.",
         "Vorbesc română aici.",
@@ -1260,28 +1260,28 @@
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Говорят, что...»",
+      "question": "Переведите: «Говорят, что...»",
       "answer": "Se spune că...",
       "explain": "Безличный пассив: se spune că"
     },
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Книга написана им».",
+      "question": "Переведите: «Книга написана им».",
       "answer": "Cartea este scrisă de el.",
       "explain": "Пассив с a fi: este + причастие (ж.р.) + de"
     },
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Курить запрещено».",
+      "question": "Переведите: «Курить запрещено».",
       "answer": "Nu se fumează.",
       "explain": "nu + se + глагол = запрет"
     },
     {
       "topicId": "passive",
       "type": "choice",
-      "q": "Как глагол согласуется в пассиве с se?",
+      "question": "Как глагол согласуется в пассиве с se?",
       "options": [
         "По числу субъекта",
         "Всегда в ед.ч.",
@@ -1294,28 +1294,28 @@
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Кофе продаётся здесь»",
+      "question": "Переведите: «Кофе продаётся здесь»",
       "answer": "Se vinde cafea aici.",
       "explain": "se + vinde (ед.ч., согласуется с cafea)"
     },
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Цветы продаются на рынке»",
+      "question": "Переведите: «Цветы продаются на рынке»",
       "answer": "Se vând flori la piață.",
       "explain": "se + vând (мн.ч., согласуется с flori)"
     },
     {
       "topicId": "passive",
       "type": "fill",
-      "q": "Переведите: «Дом был построен в 1900 году»",
+      "question": "Переведите: «Дом был построен в 1900 году»",
       "answer": "Casa a fost construită în 1900.",
       "explain": "a fi + причастие в роде/числе подлежащего"
     },
     {
       "topicId": "passive",
       "type": "choice",
-      "q": "Причастие в пассиве с a fi согласуется:",
+      "question": "Причастие в пассиве с a fi согласуется:",
       "options": [
         "С подлежащим по роду и числу",
         "С дополнением",
@@ -1328,7 +1328,7 @@
     {
       "topicId": "passive",
       "type": "choice",
-      "q": "Как вводится деятель в пассиве?",
+      "question": "Как вводится деятель в пассиве?",
       "options": [
         "de + деятель",
         "cu + деятель",
@@ -1341,21 +1341,21 @@
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Могу я тебе помочь?»",
+      "question": "Переведите: «Могу я тебе помочь?»",
       "answer": "Pot să te ajut?",
       "explain": "a putea + să: pot să + конъюнктив"
     },
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Нам надо идти».",
+      "question": "Переведите: «Нам надо идти».",
       "answer": "Trebuie să mergem.",
       "explain": "trebuie să = надо"
     },
     {
       "topicId": "modals",
       "type": "choice",
-      "q": "Что значит «ar trebui să»?",
+      "question": "Что значит «ar trebui să»?",
       "options": [
         "следовало бы / стоит",
         "нужно было",
@@ -1368,14 +1368,14 @@
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Мне удалось закончить».",
+      "question": "Переведите: «Мне удалось закончить».",
       "answer": "Am reușit să termin.",
       "explain": "a reuși = суметь; перфект: am reușit"
     },
     {
       "topicId": "modals",
       "type": "choice",
-      "q": "Чем отличается «a ști să» от «a putea să»?",
+      "question": "Чем отличается «a ști să» от «a putea să»?",
       "options": [
         "a ști — навык; a putea — возможность сейчас",
         "Одинаковы",
@@ -1388,28 +1388,28 @@
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Мне пришлось ждать».",
+      "question": "Переведите: «Мне пришлось ждать».",
       "answer": "A trebuit să aștept.",
       "explain": "Перфект от a trebui: a trebuit"
     },
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Умеешь ли ты плавать?»",
+      "question": "Переведите: «Умеешь ли ты плавать?»",
       "answer": "Știi să înoți?",
       "explain": "a ști să = уметь"
     },
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Ему не нужно идти»",
+      "question": "Переведите: «Ему не нужно идти»",
       "answer": "Nu trebuie să meargă.",
       "explain": "nu trebuie să + конъюнктив"
     },
     {
       "topicId": "modals",
       "type": "choice",
-      "q": "Что значит «a vrea să»?",
+      "question": "Что значит «a vrea să»?",
       "options": [
         "хотеть",
         "мочь",
@@ -1422,14 +1422,14 @@
     {
       "topicId": "modals",
       "type": "fill",
-      "q": "Переведите: «Мне разрешено выйти?»",
+      "question": "Переведите: «Мне разрешено выйти?»",
       "answer": "Am voie să ies?",
       "explain": "a avea voie să = иметь разрешение"
     },
     {
       "topicId": "negation",
       "type": "choice",
-      "q": "Куда ставится «nu» в перфекте?",
+      "question": "Куда ставится «nu» в перфекте?",
       "options": [
         "Перед вспомогательным (am, ai...)",
         "После причастия",
@@ -1442,28 +1442,28 @@
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «Никто не приходит».",
+      "question": "Переведите: «Никто не приходит».",
       "answer": "Nu vine nimeni.",
       "explain": "nu + глагол + nimeni"
     },
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «Я ничего не знаю».",
+      "question": "Переведите: «Я ничего не знаю».",
       "answer": "Nu știu nimic.",
       "explain": "nu + știu + nimic — двойное отрицание обязательно"
     },
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «Я никогда не лгу».",
+      "question": "Переведите: «Я никогда не лгу».",
       "answer": "Nu mint niciodată.",
       "explain": "nu + глагол + niciodată"
     },
     {
       "topicId": "negation",
       "type": "choice",
-      "q": "Как сказать «Не торопись»?",
+      "question": "Как сказать «Не торопись»?",
       "options": [
         "Nu te grăbi!",
         "Nu grăbi!",
@@ -1476,7 +1476,7 @@
     {
       "topicId": "negation",
       "type": "choice",
-      "q": "Можно ли опустить «nu» если уже есть «nimeni»?",
+      "question": "Можно ли опустить «nu» если уже есть «nimeni»?",
       "options": [
         "Нет, nu обязательно при глаголе",
         "Да, необязательно",
@@ -1489,21 +1489,21 @@
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «ещё не»",
+      "question": "Переведите: «ещё не»",
       "answer": "încă nu",
       "explain": "încă nu = ещё не"
     },
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «больше не»",
+      "question": "Переведите: «больше не»",
       "answer": "nu mai",
       "explain": "nu mai = больше не; Nu mai vin = Больше не приду"
     },
     {
       "topicId": "negation",
       "type": "choice",
-      "q": "«Нигде» по-румынски?",
+      "question": "«Нигде» по-румынски?",
       "options": [
         "nicăieri",
         "niciodată",
@@ -1516,14 +1516,14 @@
     {
       "topicId": "negation",
       "type": "fill",
-      "q": "Переведите: «Никто никогда ничего не говорил»",
+      "question": "Переведите: «Никто никогда ничего не говорил»",
       "answer": "Nimeni nu a spus niciodată nimic.",
       "explain": "nu обязательно при глаголе даже при нескольких отрицаниях"
     },
     {
       "topicId": "clitics",
       "type": "choice",
-      "q": "«Я его вижу» (м.р.)?",
+      "question": "«Я его вижу» (м.р.)?",
       "options": [
         "Îl văd.",
         "O văd.",
@@ -1536,7 +1536,7 @@
     {
       "topicId": "clitics",
       "type": "choice",
-      "q": "«Я её вижу» (ж.р.)?",
+      "question": "«Я её вижу» (ж.р.)?",
       "options": [
         "O văd.",
         "Îl văd.",
@@ -1549,7 +1549,7 @@
     {
       "topicId": "clitics",
       "type": "choice",
-      "q": "Куда ставится клитика в утверждении?",
+      "question": "Куда ставится клитика в утверждении?",
       "options": [
         "Перед глаголом",
         "После глагола",
@@ -1562,35 +1562,35 @@
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Помоги мне!» (императив)",
+      "question": "Переведите: «Помоги мне!» (императив)",
       "answer": "Ajută-mă!",
       "explain": "Императив: клитика через дефис после глагола"
     },
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Я тебя не вижу».",
+      "question": "Переведите: «Я тебя не вижу».",
       "answer": "Nu te văd.",
       "explain": "nu + клитика + глагол"
     },
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Я скажу тебе кое-что».",
+      "question": "Переведите: «Я скажу тебе кое-что».",
       "answer": "Îți spun ceva.",
       "explain": "Датив «тебе» = îți"
     },
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Я даю ему книгу»",
+      "question": "Переведите: «Я даю ему книгу»",
       "answer": "Îi dau cartea.",
       "explain": "Датив 3 л. ед.ч.: îi"
     },
     {
       "topicId": "clitics",
       "type": "choice",
-      "q": "Что такое «le» в функции датива?",
+      "question": "Что такое «le» в функции датива?",
       "options": [
         "Датив мн.ч. 3 л.",
         "Акузатив ж.р. ед.ч.",
@@ -1603,21 +1603,21 @@
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Не бей его!» (императив)",
+      "question": "Переведите: «Не бей его!» (императив)",
       "answer": "Nu-l lovi!",
       "explain": "Отрицательный императив: клитика после nu через дефис"
     },
     {
       "topicId": "clitics",
       "type": "fill",
-      "q": "Переведите: «Она сказала нам»",
+      "question": "Переведите: «Она сказала нам»",
       "answer": "Ne-a spus.",
       "explain": "Датив «нам»: ne; перфект ea: a spus → ne-a spus"
     },
     {
       "topicId": "prepositions",
       "type": "choice",
-      "q": "Предлог для «в понедельник»?",
+      "question": "Предлог для «в понедельник»?",
       "options": [
         "pe",
         "în",
@@ -1630,14 +1630,14 @@
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "Переведите: «я иду на рынок».",
+      "question": "Переведите: «я иду на рынок».",
       "answer": "Merg la piață.",
       "explain": "Направление: la piață"
     },
     {
       "topicId": "prepositions",
       "type": "choice",
-      "q": "Предлог для месяцев и сезонов?",
+      "question": "Предлог для месяцев и сезонов?",
       "options": [
         "în",
         "pe",
@@ -1650,21 +1650,21 @@
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "Переведите: «на столе».",
+      "question": "Переведите: «на столе».",
       "answer": "pe masă",
       "explain": "Поверхность: pe masă"
     },
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "Переведите: «я прихожу с работы».",
+      "question": "Переведите: «я прихожу с работы».",
       "answer": "Vin de la muncă.",
       "explain": "От места: de la"
     },
     {
       "topicId": "prepositions",
       "type": "choice",
-      "q": "«Я из Румынии»?",
+      "question": "«Я из Румынии»?",
       "options": [
         "Sunt din România.",
         "Sunt de România.",
@@ -1677,7 +1677,7 @@
     {
       "topicId": "prepositions",
       "type": "choice",
-      "q": "«deasupra» требует какого падежа?",
+      "question": "«deasupra» требует какого падежа?",
       "options": [
         "Genitiv",
         "Acuzativ",
@@ -1690,7 +1690,7 @@
     {
       "topicId": "conjunctions",
       "type": "choice",
-      "q": "«Тем не менее» по-румынски?",
+      "question": "«Тем не менее» по-румынски?",
       "options": [
         "totuși",
         "deci",
@@ -1703,14 +1703,14 @@
     {
       "topicId": "conjunctions",
       "type": "fill",
-      "q": "Переведите: «Хотя холодно, мы идём на улицу».",
+      "question": "Переведите: «Хотя холодно, мы идём на улицу».",
       "answer": "Deși e frig, mergem afară.",
       "explain": "deși = хотя"
     },
     {
       "topicId": "conjunctions",
       "type": "choice",
-      "q": "Союз цели («чтобы»)?",
+      "question": "Союз цели («чтобы»)?",
       "options": [
         "ca să / pentru a",
         "deoarece",
@@ -1723,14 +1723,14 @@
     {
       "topicId": "conjunctions",
       "type": "fill",
-      "q": "Переведите: «Я знаю, что ты устал».",
+      "question": "Переведите: «Я знаю, что ты устал».",
       "answer": "Știu că ești obosit.",
       "explain": "că = что (изъяснительный союз)"
     },
     {
       "topicId": "conjunctions",
       "type": "choice",
-      "q": "Относительное местоимение «который/которая»?",
+      "question": "Относительное местоимение «который/которая»?",
       "options": [
         "care",
         "ce",
@@ -1743,7 +1743,7 @@
     {
       "topicId": "conjunctions",
       "type": "fill",
-      "q": "Переведите: «Ухожу, потому что поздно».",
+      "question": "Переведите: «Ухожу, потому что поздно».",
       "answer": [
         "Plec deoarece e târziu.",
         "Plec pentru că e târziu."
@@ -1753,7 +1753,7 @@
     {
       "topicId": "conjunctions",
       "type": "choice",
-      "q": "«Либо…либо» по-румынски?",
+      "question": "«Либо…либо» по-румынски?",
       "options": [
         "fie…fie",
         "sau…sau",
@@ -1766,21 +1766,21 @@
     {
       "topicId": "conjunctions",
       "type": "fill",
-      "q": "Переведите: «Ни я, ни ты»",
+      "question": "Переведите: «Ни я, ни ты»",
       "answer": "Nici eu, nici tu",
       "explain": "nici…nici = ни…ни"
     },
     {
       "topicId": "conjunctions",
       "type": "fill",
-      "q": "Переведите: «Пока он ждал, я читал»",
+      "question": "Переведите: «Пока он ждал, я читал»",
       "answer": "În timp ce el aștepta, eu citeam.",
       "explain": "în timp ce = пока / в то время как"
     },
     {
       "topicId": "conjunctions",
       "type": "choice",
-      "q": "«Как только» по-румынски?",
+      "question": "«Как только» по-румынски?",
       "options": [
         "de îndată ce",
         "după ce",
@@ -1793,7 +1793,7 @@
     {
       "topicId": "questions",
       "type": "choice",
-      "q": "«Почему» по-румынски?",
+      "question": "«Почему» по-румынски?",
       "options": [
         "de ce",
         "cum",
@@ -1806,21 +1806,21 @@
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Как тебя зовут?»",
+      "question": "Переведите: «Как тебя зовут?»",
       "answer": "Cum te cheamă?",
       "explain": "cum = как; te cheamă = зовут тебя"
     },
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Где ты живёшь?»",
+      "question": "Переведите: «Где ты живёшь?»",
       "answer": "Unde locuiești?",
       "explain": "unde = где"
     },
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Сколько это стоит?»",
+      "question": "Переведите: «Сколько это стоит?»",
       "answer": [
         "Cât costă asta?",
         "Cât costă?"
@@ -1830,7 +1830,7 @@
     {
       "topicId": "questions",
       "type": "choice",
-      "q": "Ответ на «Nu ești obosit?» (да, устал)?",
+      "question": "Ответ на «Nu ești obosit?» (да, устал)?",
       "options": [
         "Ba da, sunt.",
         "Da, sunt.",
@@ -1843,7 +1843,7 @@
     {
       "topicId": "questions",
       "type": "choice",
-      "q": "«Care» означает?",
+      "question": "«Care» означает?",
       "options": [
         "который (из нескольких)",
         "кто",
@@ -1856,21 +1856,21 @@
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Когда ты пришёл?»",
+      "question": "Переведите: «Когда ты пришёл?»",
       "answer": "Când ai venit?",
       "explain": "când = когда"
     },
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Чей это телефон?»",
+      "question": "Переведите: «Чей это телефон?»",
       "answer": "Al cui este telefonul?",
       "explain": "al cui = чей (м.р.)"
     },
     {
       "topicId": "questions",
       "type": "choice",
-      "q": "«Сколько» для исчисляемых?",
+      "question": "«Сколько» для исчисляемых?",
       "options": [
         "câți / câte",
         "cât",
@@ -1883,14 +1883,14 @@
     {
       "topicId": "questions",
       "type": "fill",
-      "q": "Переведите: «Какой у тебя любимый цвет?»",
+      "question": "Переведите: «Какой у тебя любимый цвет?»",
       "answer": "Care este culoarea ta preferată?",
       "explain": "care = который/какой при выборе"
     },
     {
       "topicId": "place",
       "type": "choice",
-      "q": "«Мне нравятся кошки»?",
+      "question": "«Мне нравятся кошки»?",
       "options": [
         "Îmi plac pisicile.",
         "Îmi place pisicile.",
@@ -1903,7 +1903,7 @@
     {
       "topicId": "place",
       "type": "choice",
-      "q": "«Тебе нравится фильм?»",
+      "question": "«Тебе нравится фильм?»",
       "options": [
         "Îți place filmul?",
         "Îmi place filmul?",
@@ -1916,21 +1916,21 @@
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Ему нравится петь».",
+      "question": "Переведите: «Ему нравится петь».",
       "answer": "Îi place să cânte.",
       "explain": "ему → îi; с действием → place ед.ч."
     },
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Мне жаль».",
+      "question": "Переведите: «Мне жаль».",
       "answer": "Îmi pare rău.",
       "explain": "Устойчивое: îmi pare rău"
     },
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Я голоден».",
+      "question": "Переведите: «Я голоден».",
       "answer": [
         "Îmi e foame.",
         "Mi-e foame."
@@ -1940,14 +1940,14 @@
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Рад познакомиться».",
+      "question": "Переведите: «Рад познакомиться».",
       "answer": "Îmi pare bine.",
       "explain": "Буквально: мне кажется хорошим"
     },
     {
       "topicId": "place",
       "type": "choice",
-      "q": "Как изменяется place/plac?",
+      "question": "Как изменяется place/plac?",
       "options": [
         "По числу того, что нравится",
         "По тому, кому нравится",
@@ -1960,21 +1960,21 @@
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Нам нравятся эти песни»",
+      "question": "Переведите: «Нам нравятся эти песни»",
       "answer": "Ne plac aceste cântece.",
       "explain": "ne = нам; cântece мн.ч. → plac"
     },
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Вам понравилось?»",
+      "question": "Переведите: «Вам понравилось?»",
       "answer": "V-a plăcut?",
       "explain": "vă → v- (перед гласной); a plăcut = перфект от a plăcea"
     },
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "Что означает «a face față»?",
+      "question": "Что означает «a face față»?",
       "options": [
         "справляться",
         "понимать",
@@ -1987,7 +1987,7 @@
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "Что означает «a avea loc»?",
+      "question": "Что означает «a avea loc»?",
       "options": [
         "происходить",
         "иметь место жительства",
@@ -2000,7 +2000,7 @@
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "Что означает «Nu-i bai»?",
+      "question": "Что означает «Nu-i bai»?",
       "options": [
         "Ничего страшного",
         "Неважно",
@@ -2013,7 +2013,7 @@
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "Что означает «a fi la curent»?",
+      "question": "Что означает «a fi la curent»?",
       "options": [
         "быть в курсе",
         "быть под напряжением",
@@ -2026,7 +2026,7 @@
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "«Следовательно / поэтому»?",
+      "question": "«Следовательно / поэтому»?",
       "options": [
         "prin urmare / deci",
         "totuși",
@@ -2039,14 +2039,14 @@
     {
       "topicId": "phraseology",
       "type": "fill",
-      "q": "Переведите: «Удачи на экзамене!»",
+      "question": "Переведите: «Удачи на экзамене!»",
       "answer": "Mult succes la examen!",
       "explain": "Mult succes = Удачи"
     },
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "«Să dăm drumul!» означает?",
+      "question": "«Să dăm drumul!» означает?",
       "options": [
         "Поехали! / Начнём!",
         "Берегись!",
@@ -2059,21 +2059,21 @@
     {
       "topicId": "phraseology",
       "type": "fill",
-      "q": "Переведите: «Другими словами, ты не можешь этого делать».",
+      "question": "Переведите: «Другими словами, ты не можешь этого делать».",
       "answer": "Cu alte cuvinte, nu poți face asta.",
       "explain": "cu alte cuvinte = другими словами"
     },
     {
       "topicId": "phraseology",
       "type": "fill",
-      "q": "Переведите: «Между прочим / кстати»",
+      "question": "Переведите: «Между прочим / кстати»",
       "answer": "De altfel / Apropo",
       "explain": "de altfel или apropo — оба верны"
     },
     {
       "topicId": "phraseology",
       "type": "choice",
-      "q": "Что значит «a pierde vremea»?",
+      "question": "Что значит «a pierde vremea»?",
       "options": [
         "терять время",
         "терять дорогу",
@@ -2086,7 +2086,7 @@
     {
       "topicId": "time-calendar",
       "type": "choice",
-      "q": "«В понедельник» (конкретный день)?",
+      "question": "«В понедельник» (конкретный день)?",
       "options": [
         "luni",
         "pe luni",
@@ -2099,14 +2099,14 @@
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «по пятницам» (регулярно).",
+      "question": "Переведите: «по пятницам» (регулярно).",
       "answer": "pe vineri",
       "explain": "Регулярное действие: pe + день недели"
     },
     {
       "topicId": "time-calendar",
       "type": "choice",
-      "q": "«Март» по-румынски?",
+      "question": "«Март» по-румынски?",
       "options": [
         "martie",
         "mai",
@@ -2119,7 +2119,7 @@
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «летом».",
+      "question": "Переведите: «летом».",
       "answer": [
         "în vară",
         "vara"
@@ -2129,7 +2129,7 @@
     {
       "topicId": "time-calendar",
       "type": "choice",
-      "q": "«Joi» — это какой день?",
+      "question": "«Joi» — это какой день?",
       "options": [
         "четверг",
         "среда",
@@ -2142,28 +2142,28 @@
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «в сентябре».",
+      "question": "Переведите: «в сентябре».",
       "answer": "în septembrie",
       "explain": "Месяцы: în + название"
     },
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «Позавчера»",
+      "question": "Переведите: «Позавчера»",
       "answer": "alaltăieri",
       "explain": "ieri = вчера; alaltăieri = позавчера"
     },
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «Через неделю»",
+      "question": "Переведите: «Через неделю»",
       "answer": "peste o săptămână",
       "explain": "peste = через (для времени)"
     },
     {
       "topicId": "time-calendar",
       "type": "choice",
-      "q": "«Сколько времени?» по-румынски?",
+      "question": "«Сколько времени?» по-румынски?",
       "options": [
         "Cât este ceasul?",
         "Care este ora?",
@@ -2176,14 +2176,14 @@
     {
       "topicId": "time-calendar",
       "type": "fill",
-      "q": "Переведите: «полдень»",
+      "question": "Переведите: «полдень»",
       "answer": "amiază",
       "explain": "la amiază = в полдень; miezul nopții = полночь"
     },
     {
       "topicId": "body",
       "type": "choice",
-      "q": "«У меня болит голова»?",
+      "question": "«У меня болит голова»?",
       "options": [
         "Mă doare capul.",
         "Am durere capul.",
@@ -2196,14 +2196,14 @@
     {
       "topicId": "body",
       "type": "fill",
-      "q": "Переведите: «Я мою (свои) руки».",
+      "question": "Переведите: «Я мою (свои) руки».",
       "answer": "Îmi spăl mâinile.",
       "explain": "îmi + артикль вместо «мои»"
     },
     {
       "topicId": "body",
       "type": "choice",
-      "q": "«Сердце» по-румынски?",
+      "question": "«Сердце» по-румынски?",
       "options": [
         "inimă",
         "gură",
@@ -2216,7 +2216,7 @@
     {
       "topicId": "body",
       "type": "choice",
-      "q": "Как описывают действия со своим телом?",
+      "question": "Как описывают действия со своим телом?",
       "options": [
         "Датив + определённый артикль вместо притяжательного",
         "Притяжательное после существительного",
@@ -2229,14 +2229,14 @@
     {
       "topicId": "body",
       "type": "fill",
-      "q": "Переведите: «У меня болит горло»",
+      "question": "Переведите: «У меня болит горло»",
       "answer": "Mă doare gâtul.",
       "explain": "mă doare gâtul — буквально: меня болит горло"
     },
     {
       "topicId": "body",
       "type": "choice",
-      "q": "«Нога» по-румынски?",
+      "question": "«Нога» по-румынски?",
       "options": [
         "picior",
         "mână",
@@ -2249,14 +2249,14 @@
     {
       "topicId": "body",
       "type": "fill",
-      "q": "Переведите: «Он сломал руку»",
+      "question": "Переведите: «Он сломал руку»",
       "answer": "Și-a rupt mâna.",
       "explain": "Датив рефлексив + артикль: și-a rupt mâna"
     },
     {
       "topicId": "body",
       "type": "choice",
-      "q": "«Спина» по-румынски?",
+      "question": "«Спина» по-румынски?",
       "options": [
         "spate",
         "umăr",
@@ -2269,14 +2269,14 @@
     {
       "topicId": "body",
       "type": "fill",
-      "q": "Переведите: «Я чувствую себя лучше сегодня»",
+      "question": "Переведите: «Я чувствую себя лучше сегодня»",
       "answer": "Mă simt mai bine astăzi.",
       "explain": "a se simți = чувствовать себя; mai bine = лучше"
     },
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что означает «de fapt»?",
+      "question": "Что означает «de fapt»?",
       "options": [
         "на самом деле",
         "поэтому",
@@ -2289,7 +2289,7 @@
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "«Кстати» по-румынски?",
+      "question": "«Кстати» по-румынски?",
       "options": [
         "apropo",
         "adică",
@@ -2302,7 +2302,7 @@
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что означает «adică»?",
+      "question": "Что означает «adică»?",
       "options": [
         "то есть / иными словами",
         "наконец",
@@ -2315,7 +2315,7 @@
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что такое «uite»?",
+      "question": "Что такое «uite»?",
       "options": [
         "вот (привлечение внимания)",
         "иди",
@@ -2328,7 +2328,7 @@
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что означает «mă rog»?",
+      "question": "Что означает «mă rog»?",
       "options": [
         "ладно / ну что ж",
         "я прошу",
@@ -2341,14 +2341,14 @@
     {
       "topicId": "particles",
       "type": "fill",
-      "q": "Переведите: «Итак, что делаем?»",
+      "question": "Переведите: «Итак, что делаем?»",
       "answer": "Deci, ce facem?",
       "explain": "deci = итак, значит"
     },
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что значит «în sfârșit»?",
+      "question": "Что значит «în sfârșit»?",
       "options": [
         "наконец",
         "в конечном счёте",
@@ -2361,14 +2361,14 @@
     {
       "topicId": "particles",
       "type": "fill",
-      "q": "Переведите: «В любом случае»",
+      "question": "Переведите: «В любом случае»",
       "answer": "Oricum",
       "explain": "Oricum, nu contează = В любом случае, не важно"
     },
     {
       "topicId": "particles",
       "type": "choice",
-      "q": "Что значит «mai ales»?",
+      "question": "Что значит «mai ales»?",
       "options": [
         "особенно / прежде всего",
         "тем более",
@@ -2381,14 +2381,14 @@
     {
       "topicId": "particles",
       "type": "fill",
-      "q": "Переведите: «Например»",
+      "question": "Переведите: «Например»",
       "answer": "de exemplu",
       "explain": "de exemplu = например"
     },
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "«Домик» (уменьшительное от casă)?",
+      "question": "«Домик» (уменьшительное от casă)?",
       "options": [
         "căsuță",
         "căsică",
@@ -2401,7 +2401,7 @@
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "«Девочка» ласкательно?",
+      "question": "«Девочка» ласкательно?",
       "options": [
         "fetiță",
         "fetică",
@@ -2414,7 +2414,7 @@
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "Зачем уменьшительные в просьбах?",
+      "question": "Зачем уменьшительные в просьбах?",
       "options": [
         "Для смягчения / вежливости",
         "Только для малого размера",
@@ -2427,14 +2427,14 @@
     {
       "topicId": "diminutives",
       "type": "fill",
-      "q": "«Хочешь ещё чуточку?» (уменьшительное от puțin)?",
+      "question": "«Хочешь ещё чуточку?» (уменьшительное от puțin)?",
       "answer": "Mai vrei puțintel?",
       "explain": "puțin → puțintel"
     },
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "«Братик» (уменьшительное от frate)?",
+      "question": "«Братик» (уменьшительное от frate)?",
       "options": [
         "frățior",
         "frătel",
@@ -2447,14 +2447,14 @@
     {
       "topicId": "diminutives",
       "type": "fill",
-      "q": "Уменьшительное от «om» (человек)?",
+      "question": "Уменьшительное от «om» (человек)?",
       "answer": "omuleț",
       "explain": "om → omuleț (суффикс -uleț)"
     },
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "Какой суффикс самый распространённый для ж.р.?",
+      "question": "Какой суффикс самый распространённый для ж.р.?",
       "options": [
         "-iță / -ică",
         "-uleț",
@@ -2467,14 +2467,14 @@
     {
       "topicId": "diminutives",
       "type": "fill",
-      "q": "Переведите: «Подождите секундочку»",
+      "question": "Переведите: «Подождите секундочку»",
       "answer": "Un momentel!",
       "explain": "momentel — уменьшительное от moment; смягчает просьбу"
     },
     {
       "topicId": "diminutives",
       "type": "choice",
-      "q": "Уменьшительные в просьбах взрослых используются для:",
+      "question": "Уменьшительные в просьбах взрослых используются для:",
       "options": [
         "Смягчения / вежливости",
         "Обращения только к детям",
@@ -2487,14 +2487,14 @@
     {
       "topicId": "diminutives",
       "type": "fill",
-      "q": "Уменьшительное от «puțin» (немного)?",
+      "question": "Уменьшительное от «puțin» (немного)?",
       "answer": "puțintel",
       "explain": "puțin → puțintel = совсем чуточку"
     },
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Базовый порядок слов в румынском?",
+      "question": "Базовый порядок слов в румынском?",
       "options": [
         "SVO (как в русском)",
         "SOV",
@@ -2507,7 +2507,7 @@
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Как подчеркнуть тему — поставить её?",
+      "question": "Как подчеркнуть тему — поставить её?",
       "options": [
         "В начало предложения",
         "В конец",
@@ -2520,7 +2520,7 @@
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "«Nu» в отрицании ставится?",
+      "question": "«Nu» в отрицании ставится?",
       "options": [
         "Перед глаголом",
         "После глагола",
@@ -2533,7 +2533,7 @@
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Как строится вопрос?",
+      "question": "Как строится вопрос?",
       "options": [
         "Интонацией или вопросительным словом, без инверсии",
         "Инверсией глагол-подлежащее",
@@ -2546,7 +2546,7 @@
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Где стоит наречие «bine» (хорошо)?",
+      "question": "Где стоит наречие «bine» (хорошо)?",
       "options": [
         "После глагола",
         "Перед глаголом",
@@ -2559,7 +2559,7 @@
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "В придаточных предложениях порядок слов:",
+      "question": "В придаточных предложениях порядок слов:",
       "options": [
         "Такой же, как в главном",
         "Инвертированный",
@@ -2572,14 +2572,14 @@
     {
       "topicId": "word-order",
       "type": "fill",
-      "q": "Переведите с акцентом на «мне»: «Книгу дали МНЕ»",
+      "question": "Переведите с акцентом на «мне»: «Книгу дали МНЕ»",
       "answer": "Cartea mi s-a dat mie.",
       "explain": "mie — ударная форма датива, выносится в конец для акцента"
     },
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Маркер одушевлённого прямого дополнения:",
+      "question": "Маркер одушевлённого прямого дополнения:",
       "options": [
         "pe",
         "de",
@@ -2592,14 +2592,14 @@
     {
       "topicId": "word-order",
       "type": "fill",
-      "q": "Переведите: «Только она знает правду»",
+      "question": "Переведите: «Только она знает правду»",
       "answer": "Numai ea știe adevărul.",
       "explain": "numai / doar + подлежащее для акцента"
     },
     {
       "topicId": "word-order",
       "type": "choice",
-      "q": "Если объект вынесен в начало предложения, клитика:",
+      "question": "Если объект вынесен в начало предложения, клитика:",
       "options": [
         "Дублирует его перед глаголом",
         "Исчезает",
@@ -2612,7 +2612,7 @@
     {
       "topicId": "register",
       "type": "choice",
-      "q": "Как обратиться к незнакомому взрослому?",
+      "question": "Как обратиться к незнакомому взрослому?",
       "options": [
         "dumneavoastră (вежливое «вы»)",
         "tu (ты)",
@@ -2625,7 +2625,7 @@
     {
       "topicId": "register",
       "type": "choice",
-      "q": "В разговорной речи чаще: «o să» или «voi»?",
+      "question": "В разговорной речи чаще: «o să» или «voi»?",
       "options": [
         "o să (разговорное)",
         "voi (литературное)",
@@ -2638,7 +2638,7 @@
     {
       "topicId": "register",
       "type": "choice",
-      "q": "Что типично для разговорной речи?",
+      "question": "Что типично для разговорной речи?",
       "options": [
         "Сокращение «este» → «e»",
         "Добавление «-ul» везде",
@@ -2651,7 +2651,7 @@
     {
       "topicId": "register",
       "type": "fill",
-      "q": "Переведите вежливо: «Вы не могли бы помочь?»",
+      "question": "Переведите вежливо: «Вы не могли бы помочь?»",
       "answer": [
         "Ați putea să mă ajutați?",
         "Puteți să mă ajutați?"
@@ -2661,7 +2661,7 @@
     {
       "topicId": "register",
       "type": "choice",
-      "q": "«Salut» используется:",
+      "question": "«Salut» используется:",
       "options": [
         "Только в неформальной обстановке",
         "Везде",
@@ -2674,7 +2674,7 @@
     {
       "topicId": "register",
       "type": "choice",
-      "q": "В деловом письме приветствие:",
+      "question": "В деловом письме приветствие:",
       "options": [
         "Stimate/Stimată + имя",
         "Salut",
@@ -2687,14 +2687,14 @@
     {
       "topicId": "register",
       "type": "fill",
-      "q": "Переведите формально: «С уважением»",
+      "question": "Переведите формально: «С уважением»",
       "answer": "Cu respect / Cu stimă",
       "explain": "Стандартные завершения делового письма"
     },
     {
       "topicId": "register",
       "type": "choice",
-      "q": "Разговорное «nu știu» часто редуцируется до:",
+      "question": "Разговорное «nu știu» часто редуцируется до:",
       "options": [
         "n-știu",
         "nu o știu",
@@ -2707,14 +2707,14 @@
     {
       "topicId": "register",
       "type": "fill",
-      "q": "Переведите вежливо: «Не могли бы вы повторить?»",
+      "question": "Переведите вежливо: «Не могли бы вы повторить?»",
       "answer": "Ați putea să repetați, vă rog?",
       "explain": "ați putea — кондиционал dumneavoastră; vă rog = пожалуйста"
     },
     {
       "topicId": "register",
       "type": "choice",
-      "q": "Чем «dumneata» отличается от «dumneavoastră»?",
+      "question": "Чем «dumneata» отличается от «dumneavoastră»?",
       "options": [
         "dumneata — полувежливое (знакомым); dumneavoastră — строго официальное",
         "Синонимы",
@@ -2727,28 +2727,28 @@
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "Переведите: «рядом с домом».",
+      "question": "Переведите: «рядом с домом».",
       "answer": "lângă casă",
       "explain": "lângă = рядом с; без артикля после предлога"
     },
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "Переведите: «перед школой».",
+      "question": "Переведите: «перед школой».",
       "answer": "în fața școlii",
       "explain": "în față = перед; școlii — G/D от școală"
     },
     {
       "topicId": "prepositions",
       "type": "fill",
-      "q": "«за» в значении направления (я иду за хлебом)?",
+      "question": "«за» в значении направления (я иду за хлебом)?",
       "answer": "după",
       "explain": "a merge după pâine = идти за хлебом"
     },
     {
       "topicId": "place",
       "type": "fill",
-      "q": "Переведите: «Мне жарко».",
+      "question": "Переведите: «Мне жарко».",
       "answer": [
         "Îmi e cald.",
         "Mi-e cald."
@@ -2758,7 +2758,7 @@
     {
       "topicId": "body",
       "type": "fill",
-      "q": "Переведите: «У меня болит нога».",
+      "question": "Переведите: «У меня болит нога».",
       "answer": [
         "Mă doare piciorul.",
         "Mă doare piciorul"
