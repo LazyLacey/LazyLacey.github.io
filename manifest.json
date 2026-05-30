@@ -1,7 +1,7 @@
 {
-  "name": "Română — учим румынский",
-  "short_name": "Română",
-  "description": "Приложение для изучения румынских слов",
+  "name": "Fișki — учим румынский",
+  "short_name": "Fișki",
+  "description": "Приложение для изучения румынского языка",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f0f1a",
@@ -9,9 +9,15 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='40' fill='%230f0f1a'/><text y='130' x='50%' font-size='110' text-anchor='middle' font-family='serif'>🇷🇴</text></svg>",
+      "src": "assets/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

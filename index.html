@@ -6,9 +6,12 @@
 <meta name="theme-color" content="#1a1a2e">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Română">
+<meta name="apple-mobile-web-app-title" content="Fișki">
 <link rel="manifest" href="manifest.json">
-<title>Română — учим румынский</title>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<title>Fișki — учим румынский</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <style>
@@ -4520,6 +4523,10 @@ function scheduleRetry(card) {
 async function nextCard() {
   AppState.studyIndex++;
   if (AppState.studyIndex >= AppState.studyQueue.length) {
+    // Hide the session screen synchronously before any await so that external
+    // observers (Playwright, etc.) never see the session as "still active" after
+    // this function yields for the first time.
+    document.getElementById('study-session').style.display = 'none';
     if (AppState.settings.showSummary && AppState.sessionResults.length > 0) {
       // Capture prevBest NOW — before endSession() clears the agg cache —
       // so it reflects all previous sessions but NOT the one just completed.
@@ -4537,7 +4544,6 @@ async function nextCard() {
 
 // ===== SESSION SUMMARY =====
 async function showSessionSummary(results, prevBest = 0) {
-  document.getElementById('study-session').style.display = 'none';
   const overlay = document.getElementById('session-summary');
   overlay.style.display = 'flex';
 
@@ -5659,7 +5665,13 @@ async function importTestsBackup(data) {
 }
 
 // ---- Render home screen ----
+let _renderGTHomeInflight = false;
+let _renderGTHomePending  = false;
 async function renderGrammarTestsHome() {
+  if (_renderGTHomeInflight) { _renderGTHomePending = true; return; }
+  _renderGTHomePending = false;
+  _renderGTHomeInflight = true;
+  try {
   _gtExitSession();
   const c = document.getElementById('grammar-tests-container');
 
@@ -5750,6 +5762,10 @@ async function renderGrammarTestsHome() {
     </div>
   </div>`
 }`
+  } finally {
+    _renderGTHomeInflight = false;
+    if (_renderGTHomePending) renderGrammarTestsHome();
+  }
 }
 
 function switchGrammarTab(tab) {
