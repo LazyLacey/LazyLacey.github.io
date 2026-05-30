@@ -5,7 +5,7 @@ const MAX_SESSIONS = 100;
 // ===== MAIN DB (RomanianVocab) =====
 
 let db;
-const DB_NAME    = 'RomanianVocab';
+function _dbName() { return (window.currentLang?.() ?? {dbPrefix:'Romanian'}).dbPrefix + 'Vocab'; }
 const DB_VERSION = 6;
 
 function _migrateV5toV6(tx, d) {
@@ -104,7 +104,7 @@ function _migrateV5toV6(tx, d) {
 
 function openDB() {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    const req = indexedDB.open(_dbName(), DB_VERSION);
     req.onupgradeneeded = e => {
       const d = e.target.result;
       const tx = e.target.transaction;
@@ -204,12 +204,12 @@ function dbGetAllByIndex(store, indexName, value) {
 // ===== TESTS DB =====
 
 let testsDb;
-const TESTS_DB_NAME    = 'RomanianTests';
+function _testsDbName() { return (window.currentLang?.() ?? {dbPrefix:'Romanian'}).dbPrefix + 'Tests'; }
 const TESTS_DB_VERSION = 1;
 
 function openTestsDB() {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(TESTS_DB_NAME, TESTS_DB_VERSION);
+    const req = indexedDB.open(_testsDbName(), TESTS_DB_VERSION);
     req.onupgradeneeded = e => {
       const d = e.target.result;
       if (!d.objectStoreNames.contains('testPacks')) {
@@ -280,12 +280,12 @@ function tdbPutBatch(store, items) {
 // ===== VERBS DB =====
 
 let verbsDb;
-const VERBS_DB_NAME    = 'RomanianVerbs';
+function _verbsDbName() { return (window.currentLang?.() ?? {dbPrefix:'Romanian'}).dbPrefix + 'Verbs'; }
 const VERBS_DB_VERSION = 1;
 
 function openVerbsDB() {
   return new Promise((resolve, reject) => {
-    const req = indexedDB.open(VERBS_DB_NAME, VERBS_DB_VERSION);
+    const req = indexedDB.open(_verbsDbName(), VERBS_DB_VERSION);
     req.onupgradeneeded = e => {
       const d = e.target.result;
       if (!d.objectStoreNames.contains('verbPacks')) {
