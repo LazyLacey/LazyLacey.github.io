@@ -62,14 +62,20 @@ test.describe('Study — Choice mode', () => {
 
   test('clicking wrong button marks it as selected-wrong', async ({ page }) => {
     await page.click('#ready-start-btn');
+    await page.locator('.choice-btn').first().waitFor();
 
-    const cardText = await page.locator('#flashcard-area').textContent();
-    const card = CARDS.basic.find(c => cardText.includes(c.ru));
-    const texts = await page.locator('.choice-btn').allTextContents();
-    const wrongText = texts.find(t => t.trim() !== card?.ro);
-    if (!wrongText) return;
+    // Atomic: read correct answer and click a wrong button in one evaluate to avoid RAF race
+    const clicked = await page.evaluate(() => {
+      const card = AppState.studyQueue[AppState.studyIndex];
+      if (!card) return false;
+      const wrongBtn = Array.from(document.querySelectorAll('.choice-btn'))
+        .find(b => b.textContent.trim() !== card.ro);
+      if (!wrongBtn) return false;
+      wrongBtn.click();
+      return true;
+    });
+    if (!clicked) return;
 
-    await page.locator('.choice-btn', { hasText: wrongText.trim() }).click();
     await expect(page.locator('.choice-btn.selected-wrong')).toBeVisible();
   });
 

@@ -68,7 +68,7 @@ test.describe('Stats page', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp.offsetParent !== null && inp.className === 'type-input');
+          (inp.offsetParent !== null && !inp.readOnly);
       }, { timeout: 5000 }).catch(() => {});
     }
     await expect(page.locator('#ready-screen')).toBeVisible({ timeout: 5000 });
@@ -78,19 +78,18 @@ test.describe('Stats page', () => {
     expect(sessions.length).toBeGreaterThan(0);
 
     // Verify stats grid shows non-zero "Всего показов"
+    // renderStats() is async (awaits heatmap + record before updating grid.innerHTML),
+    // so we poll until the value appears rather than reading immediately.
     await page.click('#nav-stats');
-    await expect(page.locator('#stats-grid')).toBeVisible({ timeout: 5000 });
-    // "Всего показов" must be > 0 after a session (MINI_DECK has 3 cards)
-    const showsValue = await page.evaluate(() => {
+    await page.waitForFunction(() => {
       const cells = document.querySelectorAll('#stats-grid .stat-card');
       for (const cell of cells) {
         if (cell.textContent.includes('показов')) {
-          return parseInt(cell.querySelector('.stat-card-value')?.textContent || '0');
+          return parseInt(cell.querySelector('.stat-card-value')?.textContent || '0') > 0;
         }
       }
-      return 0;
-    });
-    expect(showsValue).toBeGreaterThan(0);
+      return false;
+    }, { timeout: 5000 });
   });
 
   test('worst cards section is empty with no data', async ({ page }) => {
@@ -118,7 +117,7 @@ test.describe('Stats page', () => {
         const ready = document.getElementById('ready-screen');
         const inp   = document.getElementById('type-answer');
         return !ready.classList.contains('hidden') ||
-          (inp.offsetParent !== null && inp.className === 'type-input');
+          (inp.offsetParent !== null && !inp.readOnly);
       }, { timeout: 5000 }).catch(() => {});
     }
     await expect(page.locator('#ready-screen')).toBeVisible({ timeout: 5000 });
