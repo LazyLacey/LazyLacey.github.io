@@ -1,9 +1,7 @@
-// grammar-content.js — только данные, без логики рендера
-// Подключай до grammar.js:
-//   <script src="grammar-content.js"></script>
-//   <script src="grammar.js"></script>
+// Данные грамматики для румынского языка.
+// Загружается динамически через import() в init() — должен писать на window.
 
-const grammarTopics = [
+window.grammarTopics = [
   // ─────────────────────────────────────────────
   // 1. РОД И АРТИКЛИ
   // ─────────────────────────────────────────────
@@ -2525,7 +2523,3 @@ grammarTopics.push({
   ],
 })
 
-// ES-модуль экспорт
-if (typeof module !== 'undefined') module.exports = { grammarTopics };
-
-window.grammarTopics = grammarTopics;
