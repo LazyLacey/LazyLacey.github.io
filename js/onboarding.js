@@ -1,17 +1,13 @@
 // onboarding.js — экраны онбординга, загрузка готовых паков
 
-const READY_PACKS = [
-  { phIcon: 'ph-cards-three', color: '#7b79ff', obIcon: '🗂️', title: 'Карточки',             sub: '~800 слов · 14 тем',                fn: "loadReadyPack('data/romanian-cards.json','cards')" },
-  { phIcon: 'ph-book-open',   color: '#30d158', obIcon: '📖', title: 'Грамматика — пак 1',   sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
-  { phIcon: 'ph-books',       color: '#0a84ff', obIcon: '📗', title: 'Грамматика — пак 2',   sub: 'Продвинутые темы',                   fn: "loadReadyPack('data/grammar-tests-2.json','tests')" },
-  { phIcon: 'ph-text-aa',     color: '#ff6b35', obIcon: '🔤', title: 'Глаголы',               sub: '20 базовых глаголов',                fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
-  { phIcon: 'ph-sparkle',     color: '#f4c430', obIcon: '✨', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
-];
+function getReadyPacks() {
+  return (window.currentLang && window.currentLang().readyPacks) || [];
+}
 
 function renderSampleDrawer(el) {
   if (!el) return;
   el.style.cssText = 'display:flex;flex-direction:column;gap:10px';
-  el.innerHTML = READY_PACKS.map(p => {
+  el.innerHTML = getReadyPacks().map(p => {
     const border  = p.download ? '1px dashed var(--border)' : 'none';
     const arrow   = p.download ? 'ph-arrow-down' : 'ph-arrow-right';
     const onclick = p.download ? p.fn : `${p.fn};closeDrawer()`;
@@ -76,6 +72,13 @@ const OB_SCREENS = [
     nextBtn: 'Далее →',
   },
   {
+    icon: '<i class="ph ph-globe"></i>',
+    title: 'Язык',
+    desc: 'Выберите язык — начнём с него.',
+    langPicker: true,
+    nextBtn: 'Далее →',
+  },
+  {
     icon: '<i class="ph ph-cards-three"></i>',
     title: 'Карт<span>очки</span>',
     desc: 'Основа приложения. Добавляйте слова вручную или загрузите готовый набор.',
@@ -112,7 +115,7 @@ const OB_SCREENS = [
     icon: '<i class="ph ph-package"></i>',
     title: 'Готовые <span>паки</span>',
     desc: 'Загрузите прямо сейчас — и сразу есть с чем работать.',
-    actions: READY_PACKS.map(p => ({ icon: `<i class="ph ${p.phIcon}" style="color:${p.color}"></i>`, title: p.title, sub: p.sub, fn: p.fn, download: p.download })),
+    dynamicActions: true,
     nextBtn: 'Далее →',
   },
   {
@@ -149,6 +152,22 @@ function renderObScreen() {
     html += `<div class="ob-title">${s.title}</div>`;
     html += `<div class="ob-desc">${s.desc}</div>`;
 
+    if (s.langPicker) {
+      const curLangId = localStorage.getItem('lang') || 'romanian';
+      html += `<div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">`;
+      html += Object.values(window.LANGUAGES || {}).map(lang => {
+        const active = lang.id === curLangId;
+        return `<button onclick="obSelectLang('${lang.id}')" style="display:flex;align-items:center;gap:14px;background:${active ? 'var(--accent-a15)' : 'var(--bg3)'};border:2px solid ${active ? 'var(--accent)' : 'transparent'};border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
+          <span style="font-size:28px">${lang.flag}</span>
+          <div style="flex:1;min-width:0">
+            <div style="font-size:15px;font-weight:600;color:${active ? 'var(--accent)' : 'var(--text)'}">${lang.name}</div>
+          </div>
+          ${active ? '<i class="ph-fill ph-check-circle" style="font-size:22px;color:var(--accent)"></i>' : '<i class="ph ph-circle" style="font-size:22px;color:var(--border)"></i>'}
+        </button>`;
+      }).join('');
+      html += `</div>`;
+    }
+
     if (s.features) {
       html += `<div class="ob-feature-list">`;
       for (const f of s.features) {
@@ -163,15 +182,17 @@ function renderObScreen() {
       html += `</div>`;
     }
 
-    if (s.actions) {
+    if (s.dynamicActions) {
+      const packs = getReadyPacks();
       html += `<div style="display:flex;flex-direction:column;gap:8px" id="ob-actions">`;
-      for (let i = 0; i < s.actions.length; i++) {
-        const a = s.actions[i];
+      for (let i = 0; i < packs.length; i++) {
+        const a = packs[i];
         const isDownload = !!a.download;
         const border = isDownload ? '1px dashed var(--border)' : '1px solid var(--border)';
         const arrow = isDownload ? '↓' : '→';
-        html += `<button id="ob-action-${i}" onclick="${a.fn.replace(/'/g, '&apos;')}${isDownload ? '' : ';obMarkAction(' + i + ')'}" style="display:flex;align-items:center;gap:12px;background:var(--bg2);border:${border};border-radius:var(--radius);padding:12px 14px;cursor:pointer;text-align:left;width:100%">
-          <div style="font-size:22px;flex-shrink:0">${a.icon}</div>
+        const clickFn = (isDownload ? a.fn : `${a.fn};obMarkAction(${i})`).replace(/'/g, '&apos;');
+        html += `<button id="ob-action-${i}" onclick="${clickFn}" style="display:flex;align-items:center;gap:12px;background:var(--bg2);border:${border};border-radius:var(--radius);padding:12px 14px;cursor:pointer;text-align:left;width:100%">
+          <div style="font-size:22px;flex-shrink:0"><i class="ph ${a.phIcon}" style="color:${a.color}"></i></div>
           <div style="flex:1;min-width:0">
             <div style="font-size:14px;font-weight:700;color:var(--text);margin-bottom:2px">${a.title}</div>
             <div style="font-size:12px;color:var(--text3)">${a.sub}</div>
@@ -203,6 +224,12 @@ function renderObScreen() {
   }
 }
 
+function obSelectLang(id) {
+  if (!window.LANGUAGES || !window.LANGUAGES[id]) return;
+  localStorage.setItem('lang', id);
+  renderObScreen();
+}
+
 function obNext() {
   if (_obStep < OB_SCREENS.length - 1) {
     _obStep++;
@@ -232,11 +259,12 @@ Object.assign(window, {
   showOnboarding,
   checkOnboarding,
   obNext,
+  obBack,
+  obSelectLang,
   skipOnboarding,
   finishOnboarding,
   loadReadyPack,
   obDownloadPrompts,
   obMarkAction,
-  obBack,
   renderSampleDrawer,
 });

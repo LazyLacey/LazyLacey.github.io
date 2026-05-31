@@ -883,8 +883,11 @@ select {
 
 /* ===== SESSION SUMMARY ===== */
 #session-summary { display: none; position: fixed; inset: 0; z-index: 100; background: var(--bg); flex-direction: column; align-items: stretch; overflow-y: auto; justify-content: center; }
-.summary-hero { padding: 48px 28px 32px; text-align: center; flex-shrink: 0; }
-.summary-emoji { font-size: 56px; line-height: 1; margin-bottom: 16px; }
+.summary-hero { padding: 32px 28px 24px; text-align: center; flex-shrink: 0; }
+.summary-emoji { width: 100px; height: 100px; margin: 0 auto 16px; color: var(--text2); opacity: 0.85; }
+.summary-emoji svg { width: 100%; height: 100%; fill: currentColor; }
+.cat-illus { color: var(--text3); opacity: 0.6; }
+.cat-illus svg { width: 100%; height: 100%; fill: currentColor; }
 .summary-title { font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800; color: var(--text); margin-bottom: 6px; }
 .summary-sub { font-size: 14px; color: var(--text3); }
 .summary-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding: 0 20px 28px; }
