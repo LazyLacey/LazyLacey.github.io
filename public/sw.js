@@ -4,7 +4,7 @@
 //  Обновление: проверка при старте, баннер для пользователя.
 // ============================================================
 
-const CACHE_VERSION = '3.5.8';
+const CACHE_VERSION = '3.5.9';
 const STATIC_CACHE  = `romana-static-${CACHE_VERSION}`;
 const FONT_CACHE    = 'romana-fonts';   // не версионируем — URL шрифтов иммутабельны
 
@@ -14,6 +14,10 @@ const STATIC_ASSETS = [
   '/',
   '/index.html',
   '/manifest.json',
+  '/icons/phosphor/regular/style.css',
+  '/icons/phosphor/regular/Phosphor.woff2',
+  '/icons/phosphor/fill/style.css',
+  '/icons/phosphor/fill/Phosphor-Fill.woff2',
 ];
 
 // ──────────────────────── УТИЛИТЫ ───────────────────────────

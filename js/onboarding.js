@@ -1,5 +1,28 @@
 // onboarding.js — экраны онбординга, загрузка готовых паков
 
+const READY_PACKS = [
+  { phIcon: 'ph-cards-three', obIcon: '🗂️', title: 'Карточки',             sub: '~800 слов · 14 тем',                fn: "loadReadyPack('data/romanian-cards.json','cards')" },
+  { phIcon: 'ph-book-open',   obIcon: '📖', title: 'Грамматика — пак 1',   sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
+  { phIcon: 'ph-books',       obIcon: '📗', title: 'Грамматика — пак 2',   sub: 'Продвинутые темы',                   fn: "loadReadyPack('data/grammar-tests-2.json','tests')" },
+  { phIcon: 'ph-text-aa',     obIcon: '🔤', title: 'Глаголы',               sub: '20 базовых глаголов',                fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
+  { phIcon: 'ph-sparkle',     obIcon: '✨', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
+];
+
+function renderSampleDrawer(el) {
+  if (!el) return;
+  el.style.cssText = 'display:flex;flex-direction:column;gap:10px';
+  el.innerHTML = READY_PACKS.map(p => {
+    const border  = p.download ? '1px dashed var(--border)' : 'none';
+    const arrow   = p.download ? 'ph-arrow-down' : 'ph-arrow-right';
+    const onclick = p.download ? p.fn : `${p.fn};closeDrawer()`;
+    return `<button onclick="${onclick}" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:${border};border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
+      <div style="flex-shrink:0"><i class="ph ${p.phIcon}" style="font-size:24px;color:var(--accent)"></i></div>
+      <div><div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">${p.title}</div><div style="font-size:12px;color:var(--text3)">${p.sub}</div></div>
+      <i class="ph ${arrow}" style="margin-left:auto;flex-shrink:0;color:var(--text3)"></i>
+    </button>`;
+  }).join('');
+}
+
 function obDownloadPrompts() {
   const a = document.createElement('a');
   a.href = 'data/prompts.txt';
@@ -89,13 +112,7 @@ const OB_SCREENS = [
     icon: '📦',
     title: 'Готовые <span>паки</span>',
     desc: 'Загрузите прямо сейчас — и сразу есть с чем работать.',
-    actions: [
-      { icon: '🗂️', title: 'Карточки', sub: '~800 слов · 14 тем', fn: "loadReadyPack('data/romanian-cards.json','cards')" },
-      { icon: '📖', title: 'Грамматика — пак 1', sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
-      { icon: '📗', title: 'Грамматика — пак 2', sub: 'Продвинутые темы', fn: "loadReadyPack('data/grammar-tests-2.json','tests')" },
-      { icon: '🔤', title: 'Глаголы', sub: '20 базовых глаголов', fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
-      { icon: '✨', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: "obDownloadPrompts()", download: true },
-    ],
+    actions: READY_PACKS.map(p => ({ icon: p.obIcon, title: p.title, sub: p.sub, fn: p.fn, download: p.download })),
     nextBtn: 'Далее →',
   },
   {
@@ -221,4 +238,5 @@ Object.assign(window, {
   obDownloadPrompts,
   obMarkAction,
   obBack,
+  renderSampleDrawer,
 });

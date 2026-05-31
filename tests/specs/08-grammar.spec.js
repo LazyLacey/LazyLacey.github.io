@@ -8,6 +8,14 @@ test.describe('Grammar — Rules tab', () => {
   test.beforeEach(async ({ page }) => {
     await resetState(page);
     await page.evaluate(() => showPage('grammar'));
+    // Verify dynamic import in init() actually populated window.grammarTopics
+    const count = await page.evaluate(() => window.grammarTopics?.length ?? 0);
+    expect(count).toBeGreaterThan(0);
+  });
+
+  test('grammarTopics populated by dynamic import in init()', async ({ page }) => {
+    const count = await page.evaluate(() => window.grammarTopics?.length ?? 0);
+    expect(count).toBeGreaterThan(0);
   });
 
   test('rules tab is active by default', async ({ page }) => {

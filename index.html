@@ -15,6 +15,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/icons/phosphor/regular/style.css">
+<link rel="stylesheet" href="/icons/phosphor/fill/style.css">
 <script>
 if (typeof grammarTopics === 'undefined') window.grammarTopics = [];
 window._grammarLoadFailed = false;
@@ -58,30 +60,30 @@ window._grammarLoadFailed = false;
           <div>
             <div class="ready-section-label">Режим</div>
              <div class="ready-mode-browse active" id="ready-mode-type" onclick="setReadyMode('type')" style="margin-top:6px">
-              <span>✍️ Написать</span>
+              <span><i class="ph ph-pencil-simple"></i> Написать</span>
               <span style="font-size:11px;color:var(--text3); text-align: right;">введите слово на румынском</span>
             </div>
              <div class="ready-mode-browse" id="ready-mode-choice" onclick="setReadyMode('choice')" style="margin-top:6px">
-              <span>☑️ Выбор</span>
+              <span><i class="ph ph-check-square"></i> Выбор</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">выберите из 4 вариантов</span>
             </div>
             <div class="ready-mode-browse" id="ready-mode-marathon" onclick="setReadyMode('marathon')" style="margin-top:6px">
-              <span>🏃 Марафон</span>
+              <span><i class="ph ph-person-simple-run"></i> Марафон</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">все карточки подряд без лимита</span>
             </div>
             <div id="marathon-input-options" style="display:none;margin:4px 0 2px 0;gap:6px;flex-direction:column">
               <div style="font-size:11px;color:var(--text3);margin-bottom:2px">Режим ответа:</div>
               <div style="display:flex;gap:6px">
-                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent-a15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600">✍️ Написать</button>
-                <button id="marathon-opt-choice" onclick="setMarathonInputMode('choice')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif">☑️ Выбрать</button>
+                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent-a15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600"><i class="ph ph-pencil-simple"></i> Написать</button>
+                <button id="marathon-opt-choice" onclick="setMarathonInputMode('choice')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif"><i class="ph ph-check-square"></i> Выбрать</button>
               </div>
             </div>
             <div class="ready-mode-browse" id="ready-mode-errors" onclick="setReadyMode('errors')" style="margin-top:6px">
-              <span>❌ Только ошибки</span>
+              <span><i class="ph ph-x-circle"></i> Только ошибки</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">последние слова с ошибками</span>
             </div>
              <div class="ready-mode-browse" id="ready-mode-browse" onclick="setReadyMode('browse')" style="margin-top:6px">
-              <span>👁 Просмотр</span>
+              <span><i class="ph ph-eye"></i> Просмотр</span>
               <span style="font-size:11px;color:var(--text3);text-align: right;">листать карточки без оценки</span>
             </div>
           </div>
@@ -212,7 +214,7 @@ window._grammarLoadFailed = false;
         <input class="setting-input" type="number" id="setting-error-sessions" min="1" max="10" value="3">
       </div>
       <div class="setting-row">
-        <div><div class="setting-label">Hard mode 🔥</div><div class="setting-sub" id="hard-mode-sub">Диакритика обязательна (ă, â, î, ș, ț)</div></div>
+        <div><div class="setting-label">Hard mode <i class="ph ph-fire"></i></div><div class="setting-sub" id="hard-mode-sub">Диакритика обязательна (ă, â, î, ș, ț)</div></div>
         <label class="toggle" style="flex-shrink:0"><input type="checkbox" id="setting-hard-mode"><span class="toggle-track"></span></label>
       </div>
       <div class="setting-row">
@@ -224,7 +226,7 @@ window._grammarLoadFailed = false;
     <div class="settings-section">
       <div class="settings-section-title">Данные</div>
       <div class="setting-row" style="cursor:pointer" onclick="openSampleDrawer()">
-        <div><div class="setting-label">Тестовые данные</div><div class="setting-sub">Скачать примеры карточек, тестов и глаголов</div></div>
+        <div><div class="setting-label">Готовые паки</div><div class="setting-sub">Карточки, грамматика, глаголы — загрузка одним нажатием</div></div>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
       </div>
       <div class="setting-row" style="cursor:pointer" onclick="openExportDrawer()">
@@ -283,70 +285,36 @@ window._grammarLoadFailed = false;
       <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
         <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
-          <div>🧠 <strong style="color:var(--text)">Умное повторение</strong> — SRS-алгоритм показывает карточку ровно когда вы вот-вот забудете</div>
-          <div>✍️ <strong style="color:var(--text)">Режимы учёбы</strong> — написать перевод, выбрать из вариантов, просмотр без оценки</div>
-          <div>🏃 <strong style="color:var(--text)">Марафон и ошибки</strong> — все карточки подряд или только те, где вы ошиблись</div>
-          <div>🔒 <strong style="color:var(--text)">Строгий режим</strong> — ответ засчитывается только с правильными диакритиками</div>
-          <div>📚 <strong style="color:var(--text)">Грамматика</strong> — правила с таблицами и примерами, организованные по темам</div>
-          <div>📝 <strong style="color:var(--text)">Тесты</strong> — выбор из вариантов и ввод ответа; загружай свои наборы или генерируй через нейросеть</div>
-          <div>🔤 <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
-          <div>📊 <strong style="color:var(--text)">Статистика</strong> — история сессий, точность по дням, рекорды</div>
-          <div>💾 <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
-          <div>🎨 <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
+          <div><i class="ph ph-brain"></i> <strong style="color:var(--text)">Умное повторение</strong> — SRS-алгоритм показывает карточку ровно когда вы вот-вот забудете</div>
+          <div><i class="ph ph-pencil-simple"></i> <strong style="color:var(--text)">Режимы учёбы</strong> — написать перевод, выбрать из вариантов, просмотр без оценки</div>
+          <div><i class="ph ph-person-simple-run"></i> <strong style="color:var(--text)">Марафон и ошибки</strong> — все карточки подряд или только те, где вы ошиблись</div>
+          <div><i class="ph ph-lock-simple"></i> <strong style="color:var(--text)">Строгий режим</strong> — ответ засчитывается только с правильными диакритиками</div>
+          <div><i class="ph ph-books"></i> <strong style="color:var(--text)">Грамматика</strong> — правила с таблицами и примерами, организованные по темам</div>
+          <div><i class="ph ph-note-pencil"></i> <strong style="color:var(--text)">Тесты</strong> — выбор из вариантов и ввод ответа; загружай свои наборы или генерируй через нейросеть</div>
+          <div><i class="ph ph-text-aa"></i> <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
+          <div><i class="ph ph-chart-bar"></i> <strong style="color:var(--text)">Статистика</strong> — история сессий, точность по дням, рекорды</div>
+          <div><i class="ph ph-floppy-disk"></i> <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
+          <div><i class="ph ph-palette"></i> <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
         </div>
       </div>
       <div style="background:var(--bg3);border-radius:12px;padding:14px 16px;margin-bottom:16px">
         <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:10px">Технологии</div>
         <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text2)">
-          <div>⚡ Работает офлайн — данные хранятся в IndexedDB прямо в браузере</div>
-          <div>📱 PWA — устанавливается на экран телефона как приложение</div>
-          <div>🔒 Приватно — никаких серверов, всё только на вашем устройстве</div>
+          <div><i class="ph ph-wifi-slash"></i> Работает офлайн — данные хранятся в IndexedDB прямо в браузере</div>
+          <div><i class="ph ph-device-mobile"></i> PWA — устанавливается на экран телефона как приложение</div>
+          <div><i class="ph ph-lock-simple"></i> Приватно — никаких серверов, всё только на вашем устройстве</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- THEME DRAWER -->
-  <div class="theme-drawer-backdrop" id="theme-drawer-backdrop" onclick="if(event.target===this)closeThemeDrawer()">
+  <!-- DRAWER (shared bottom sheet) -->
+  <div class="theme-drawer-backdrop" id="app-drawer">
     <div class="theme-drawer">
       <div class="modal-handle"></div>
-      <div class="modal-title" style="margin-bottom:16px">Цветовая тема</div>
-      <div class="theme-grid" id="theme-grid"></div>
-    </div>
-  </div>
-
-  <!-- SAMPLE DATA DRAWER -->
-  <div class="theme-drawer-backdrop" id="sample-drawer-backdrop" onclick="if(event.target===this)closeSampleDrawer()">
-    <div class="theme-drawer">
-      <div class="modal-handle"></div>
-      <div class="modal-title" style="margin-bottom:4px">Тестовые данные</div>
-      <div style="font-size:13px;color:var(--text3);margin-bottom:20px">Скачайте как шаблон — изучите структуру или отдайте нейросети для генерации своих паков</div>
-      <div style="display:flex;flex-direction:column;gap:10px">
-        <button onclick="downloadSampleCards();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
-          <div style="font-size:26px;flex-shrink:0">🗂️</div>
-          <div>
-            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Карточки</div>
-            <div style="font-size:12px;color:var(--text3)">5 слов · импортируется через Настройки → Импорт</div>
-          </div>
-          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </button>
-        <button onclick="downloadSampleTests();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
-          <div style="font-size:26px;flex-shrink:0">📝</div>
-          <div>
-            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Тесты</div>
-            <div style="font-size:12px;color:var(--text3)">10 вопросов · загружается в Грамматика → Тесты</div>
-          </div>
-          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </button>
-        <button onclick="downloadSampleVerbs();closeSampleDrawer()" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:none;border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
-          <div style="font-size:26px;flex-shrink:0">🔤</div>
-          <div>
-            <div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">Глаголы</div>
-            <div style="font-size:12px;color:var(--text3)">5 глаголов · загружается в Грамматика → Глаголы</div>
-          </div>
-          <svg style="margin-left:auto;flex-shrink:0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </button>
-      </div>
+      <div class="modal-title" id="app-drawer-title"></div>
+      <div id="app-drawer-subtitle" style="display:none;font-size:13px;color:var(--text3);margin-bottom:20px"></div>
+      <div id="app-drawer-body"></div>
     </div>
   </div>
 
@@ -1206,7 +1174,7 @@ function setVersionFallback(v) {
     ].join(';');
 
     banner.innerHTML = `
-      <span style="font-size:1.1rem">🔄</span>
+      <i class="ph ph-arrows-clockwise" style="font-size:1.1rem;flex-shrink:0"></i>
       <span>Доступна новая версия</span>
       <button id="sw-update-btn" style="
         padding:0.35rem 0.85rem;
@@ -2634,7 +2602,7 @@ function renderStudy() {
     <div class="card-question-label">Как по-румынски?</div>
     <div class="card-question">${esc(card.ru)}</div>
     ${card.note ? `<div class="card-hint">${esc(card.note)}</div>` : ''}
-    ${AppState.settings.hardMode && AppState.studyMode === 'type' ? `<div class="card-hint" style="margin-top:10px;color:var(--red);opacity:0.7;font-size:12px">🔥 Hard mode: диакритика обязательна</div>` : ''}
+    ${AppState.settings.hardMode && AppState.studyMode === 'type' ? `<div class="card-hint" style="margin-top:10px;color:var(--red);opacity:0.7;font-size:12px"><i class="ph ph-fire"></i> Hard mode: диакритика обязательна</div>` : ''}
   </div>`;
 
   btnNext.classList.remove('visible');
@@ -3499,60 +3467,48 @@ function importHasHistory(data) {
 }
 
 function openExportDrawer() {
-  const overlay = document.createElement('div');
-  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:500;display:flex;align-items:flex-end';
-  overlay.innerHTML = `
-    <div style="background:var(--bg2);border-radius:24px 24px 0 0;border-top:1px solid var(--border);width:100%;padding:20px 20px 40px">
-      <div style="width:36px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 20px"></div>
-      <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px">Экспорт данных</div>
-      <div style="font-size:13px;color:var(--text3);margin-bottom:20px">Выберите что сохранить</div>
-      <div style="display:flex;flex-direction:column;gap:10px">
+  showDrawer('Экспорт данных', {
+    subtitle: 'Выберите что сохранить',
+    render(body) {
+      body.style.cssText = 'display:flex;flex-direction:column;gap:10px';
+      body.innerHTML = `
         <button class="btn btn-primary" style="justify-content:center;padding:14px" data-action="full">Полный бэкап — карточки, прогресс и статистика</button>
         <button class="btn btn-ghost" style="justify-content:center;padding:14px" data-action="cards">Только карточки — без истории, удобно для переноса</button>
-        <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-action="cancel">Отмена</button>
-      </div>
-    </div>`;
-  document.body.appendChild(overlay);
-  overlay.addEventListener('click', ev => {
-    const btn = ev.target.closest('[data-action]');
-    if (btn) {
-      document.body.removeChild(overlay);
-      if (btn.dataset.action === 'full') exportData();
-      else if (btn.dataset.action === 'cards') exportCardsOnly();
-    } else if (!overlay.firstElementChild.contains(ev.target)) {
-      document.body.removeChild(overlay);
-    }
+        <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-action="cancel">Отмена</button>`;
+      body.addEventListener('click', ev => {
+        const btn = ev.target.closest('[data-action]');
+        if (!btn) return;
+        closeDrawer();
+        if (btn.dataset.action === 'full') exportData();
+        else if (btn.dataset.action === 'cards') exportCardsOnly();
+      });
+    },
   });
 }
 
 function showImportModePicker(data) {
   return new Promise(resolve => {
-    const overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:500;display:flex;align-items:flex-end';
-    overlay.innerHTML = `
-      <div style="background:var(--bg2);border-radius:24px 24px 0 0;border-top:1px solid var(--border);width:100%;padding:20px 20px 40px">
-        <div style="width:36px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 20px"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px">Режим импорта</div>
-        <div style="font-size:13px;color:var(--text3);margin-bottom:20px">${data.version >= 3 ? `Резервная копия v${data.version}` : data.version === 2 ? 'Резервная копия v2' : 'Файл v1 (без истории)'}</div>
-        <div style="display:flex;flex-direction:column;gap:10px">
+    const subtitle = data.version >= 3 ? `Резервная копия v${data.version}`
+                   : data.version === 2 ? 'Резервная копия v2'
+                   : 'Файл v1 (без истории)';
+    showDrawer('Режим импорта', {
+      subtitle,
+      onClose: () => resolve(null),
+      render(body) {
+        body.style.cssText = 'display:flex;flex-direction:column;gap:10px';
+        body.innerHTML = `
           <button class="btn btn-primary" style="justify-content:center;padding:14px" data-mode="replace">Заменить всё — полный сброс и загрузка</button>
           <button class="btn btn-ghost" style="justify-content:center;padding:14px" data-mode="words">Добавить слова — только новые карточки, история не трогается</button>
           ${importHasHistory(data) ? `<button class="btn btn-ghost" style="justify-content:center;padding:14px" data-mode="merge">Слить историю — объединить без потерь</button>` : ''}
-          <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-mode="cancel">Отмена</button>
-        </div>
-      </div>`;
-    document.body.appendChild(overlay);
-    overlay.addEventListener('click', ev => {
-      const btn = ev.target.closest('[data-mode]');
-      if (btn) {
-        document.body.removeChild(overlay);
-        const m = btn.dataset.mode;
-        resolve(m === 'cancel' ? null : m);
-      } else if (!ev.target.closest('[data-mode]') && ev.target !== overlay.firstElementChild && !overlay.firstElementChild.contains(ev.target)) {
-        // Tapped the dark backdrop (outside the sheet)
-        document.body.removeChild(overlay);
-        resolve(null);
-      }
+          <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-mode="cancel">Отмена</button>`;
+        body.addEventListener('click', ev => {
+          const btn = ev.target.closest('[data-mode]');
+          if (!btn) return;
+          closeDrawer();
+          const m = btn.dataset.mode;
+          resolve(m === 'cancel' ? null : m);
+        });
+      },
     });
   });
 }
@@ -3730,7 +3686,7 @@ function showStorageBanner() {
     padding:14px 16px;display:flex;align-items:flex-start;gap:12px;
     box-shadow:0 4px 24px rgba(0,0,0,0.4);animation:slideUp 0.3s ease`;
   banner.innerHTML = `
-    <div style="font-size:20px;flex-shrink:0">💾</div>
+    <i class="ph ph-floppy-disk" style="font-size:20px;flex-shrink:0"></i>
     <div style="flex:1;min-width:0">
       <div style="font-size:13px;font-weight:600;color:var(--text);margin-bottom:4px">Сохраните резервную копию</div>
       <div style="font-size:12px;color:var(--text3);line-height:1.5">Браузер может очистить хранилище. Экспортируйте данные в Настройках чтобы не потерять прогресс.</div>
@@ -4340,45 +4296,30 @@ function restartOnboarding() {
   showOnboarding();
 }
 
-function openThemeDrawer() {
-  const backdrop = document.getElementById('theme-drawer-backdrop');
-  const grid = document.getElementById('theme-grid');
-  if (!backdrop || !grid) return;
-  const currentTheme = document.documentElement.getAttribute('data-theme') || '';
-  grid.innerHTML = THEMES.map(t => `
-    <div class="theme-swatch ${t.id === currentTheme ? 'active' : ''}"
-         style="background:${t.bg};color:${t.id==='dawn'?'#2a2418':'#f0eee8'}"
-         onclick="applyTheme('${t.id}');renderThemeGrid();updateThemeUI('${t.id}')">
-      <div class="theme-swatch-preview" style="background:rgba(255,255,255,0.08)">
-        <div class="theme-swatch-dot" style="background:${t.dot}"></div>
-      </div>
-      <div class="theme-swatch-name" style="color:${t.id==='dawn'?'#5a5040':'#a09e98'}">${t.name}</div>
-    </div>`).join('');
-  backdrop.classList.add('open');
+function showDrawer(title, { subtitle = '', render, onClose } = {}) {
+  const el = document.getElementById('app-drawer');
+  const titleEl = document.getElementById('app-drawer-title');
+  titleEl.textContent = title;
+  titleEl.style.marginBottom = subtitle ? '4px' : '20px';
+  const subEl = document.getElementById('app-drawer-subtitle');
+  subEl.textContent = subtitle;
+  subEl.style.display = subtitle ? '' : 'none';
+  const body = document.getElementById('app-drawer-body');
+  body.innerHTML = '';
+  render?.(body);
+  el.onclick = (e) => { if (e.target === el) { closeDrawer(); onClose?.(); } };
+  el.classList.add('open');
 }
 
-function renderThemeGrid() {
-  const grid = document.getElementById('theme-grid');
-  if (!grid) return;
-  const currentTheme = document.documentElement.getAttribute('data-theme') || '';
-  grid.querySelectorAll('.theme-swatch').forEach(sw => {
-    const themeId = sw.getAttribute('onclick').match(/'([^']*)'/)
-    if (themeId) {
-      const id = themeId[1];
-      sw.classList.toggle('active', id === currentTheme);
-    }
-  });
-}
-
-function closeThemeDrawer() {
-  document.getElementById('theme-drawer-backdrop')?.classList.remove('open');
+function closeDrawer() {
+  document.getElementById('app-drawer')?.classList.remove('open');
 }
 
 function openSampleDrawer() {
-  document.getElementById('sample-drawer-backdrop')?.classList.add('open');
-}
-function closeSampleDrawer() {
-  document.getElementById('sample-drawer-backdrop')?.classList.remove('open');
+  showDrawer('Готовые паки', {
+    subtitle: 'Загрузите прямо сейчас — и сразу есть с чем работать',
+    render: (body) => window.renderSampleDrawer?.(body),
+  });
 }
 
 function initTheme() {
