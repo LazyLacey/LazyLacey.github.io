@@ -298,7 +298,9 @@ nav {
   position: relative;
 }
 .nav-btn svg { width: 22px; height: 22px; }
+.nav-btn i { font-size: 22px; line-height: 1; }
 .nav-btn.active { color: var(--accent); }
+.nav-btn.active i { font-family: "Phosphor-Fill" !important; }
 .nav-btn.active::after {
   content: '';
   position: absolute;
@@ -729,6 +731,7 @@ select {
 }
 .ready-mode-browse:active { transform: scale(0.97); }
 .ready-mode-browse.active { border-color: var(--accent); background: var(--accent-a08); color: var(--accent); }
+.ready-mode-browse i { font-size: 18px; vertical-align: -3px; flex-shrink: 0; }
 .mode-selector { display: flex; gap: 8px; padding: 0 20px 12px; flex-shrink: 0; overflow-x: auto; }
 .mode-btn {
   display: flex;
@@ -746,6 +749,8 @@ select {
   transition: all 0.15s;
 }
 .mode-btn.active { background: var(--accent-a15); border-color: var(--accent); color: var(--accent); }
+.mode-btn i { font-size: 18px; line-height: 1; vertical-align: -2px; flex-shrink: 0; }
+#marathon-opt-type i, #marathon-opt-choice i { font-size: 18px; line-height: 1; vertical-align: -2px; }
 
 /* ===== FLIP CARD ===== */
 .flip-card-wrap { cursor: pointer; max-width: 380px; flex: 1; display: flex; flex-direction: column; width: 100%; user-select: none; }
@@ -1229,6 +1234,7 @@ select {
   display: flex; flex-direction: column;
 }
 .ob-icon { font-size: 52px; margin-bottom: 20px; line-height: 1; }
+.ob-icon i { color: var(--accent2); }
 .ob-title {
   font-family: 'Syne', sans-serif; font-size: 26px; font-weight: 800;
   color: var(--text); line-height: 1.2; margin-bottom: 12px;
@@ -1251,7 +1257,7 @@ select {
   background: var(--bg2); border: 1px solid var(--border);
   border-radius: var(--radius-sm); padding: 12px 14px;
 }
-.ob-feature-icon { font-size: 22px; flex-shrink: 0; line-height: 1; }
+.ob-feature-icon { font-size: 22px; flex-shrink: 0; line-height: 1; color: #7b79ff; }
 .ob-feature-text { flex: 1; min-width: 0; }
 .ob-feature-title { font-family: 'Syne', sans-serif; font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
 .ob-feature-sub { font-size: 12px; color: var(--text3); line-height: 1.5; }

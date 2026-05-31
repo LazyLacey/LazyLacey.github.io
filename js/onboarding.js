@@ -1,11 +1,11 @@
 // onboarding.js — экраны онбординга, загрузка готовых паков
 
 const READY_PACKS = [
-  { phIcon: 'ph-cards-three', obIcon: '🗂️', title: 'Карточки',             sub: '~800 слов · 14 тем',                fn: "loadReadyPack('data/romanian-cards.json','cards')" },
-  { phIcon: 'ph-book-open',   obIcon: '📖', title: 'Грамматика — пак 1',   sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
-  { phIcon: 'ph-books',       obIcon: '📗', title: 'Грамматика — пак 2',   sub: 'Продвинутые темы',                   fn: "loadReadyPack('data/grammar-tests-2.json','tests')" },
-  { phIcon: 'ph-text-aa',     obIcon: '🔤', title: 'Глаголы',               sub: '20 базовых глаголов',                fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
-  { phIcon: 'ph-sparkle',     obIcon: '✨', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
+  { phIcon: 'ph-cards-three', color: '#7b79ff', obIcon: '🗂️', title: 'Карточки',             sub: '~800 слов · 14 тем',                fn: "loadReadyPack('data/romanian-cards.json','cards')" },
+  { phIcon: 'ph-book-open',   color: '#30d158', obIcon: '📖', title: 'Грамматика — пак 1',   sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
+  { phIcon: 'ph-books',       color: '#0a84ff', obIcon: '📗', title: 'Грамматика — пак 2',   sub: 'Продвинутые темы',                   fn: "loadReadyPack('data/grammar-tests-2.json','tests')" },
+  { phIcon: 'ph-text-aa',     color: '#ff6b35', obIcon: '🔤', title: 'Глаголы',               sub: '20 базовых глаголов',                fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
+  { phIcon: 'ph-sparkle',     color: '#f4c430', obIcon: '✨', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
 ];
 
 function renderSampleDrawer(el) {
@@ -16,7 +16,7 @@ function renderSampleDrawer(el) {
     const arrow   = p.download ? 'ph-arrow-down' : 'ph-arrow-right';
     const onclick = p.download ? p.fn : `${p.fn};closeDrawer()`;
     return `<button onclick="${onclick}" style="display:flex;align-items:center;gap:14px;background:var(--bg3);border:${border};border-radius:14px;padding:14px 16px;cursor:pointer;text-align:left;width:100%">
-      <div style="flex-shrink:0"><i class="ph ${p.phIcon}" style="font-size:24px;color:var(--accent)"></i></div>
+      <div style="flex-shrink:0"><i class="ph ${p.phIcon}" style="font-size:24px;color:${p.color}"></i></div>
       <div><div style="font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px">${p.title}</div><div style="font-size:12px;color:var(--text3)">${p.sub}</div></div>
       <i class="ph ${arrow}" style="margin-left:auto;flex-shrink:0;color:var(--text3)"></i>
     </button>`;
@@ -70,53 +70,53 @@ async function loadReadyPack(path, type) {
 
 const OB_SCREENS = [
   {
-    icon: '🇷🇴',
+    icon: '<img src="assets/icon-source.png" width="80" height="80">',
     title: 'Добро пожаловать в <span>Fișki</span>',
-    desc: 'Приложение для изучения румынского языка: карточки с умным повторением, грамматика и тесты.',
+    desc: 'Карточки с умным повторением, грамматика и тесты для изучения иностранных языков.',
     nextBtn: 'Далее →',
   },
   {
-    icon: '🗂️',
+    icon: '<i class="ph ph-cards-three"></i>',
     title: 'Карт<span>очки</span>',
     desc: 'Основа приложения. Добавляйте слова вручную или загрузите готовый набор.',
     features: [
-      { icon: '✍️', title: 'Вручную', sub: '«+ Добавить» в разделе Карточки' },
-      { icon: '📥', title: 'Импорт', sub: 'Настройки → Импорт данных' },
+      { icon: '<i class="ph ph-pencil-simple"></i>', title: 'Вручную', sub: '«+ Добавить» в разделе Карточки' },
+      { icon: '<i class="ph ph-download-simple"></i>', title: 'Импорт', sub: 'Настройки → Импорт данных' },
     ],
     note: '<strong>Совет:</strong> карточки можно нагенерировать нейросетью — ChatGPT, Claude и другие справляются отлично. Промпты с форматами ждут в конце онбординга.',
     nextBtn: 'Далее →',
   },
   {
-    icon: '🧠',
+    icon: '<i class="ph ph-brain"></i>',
     title: 'Умное <span>повторение</span>',
     desc: 'SRS-алгоритм запоминает, как хорошо вы знаете каждое слово, и показывает карточку ровно в тот момент, когда вы вот-вот забудете.',
     features: [
-      { icon: '✍️', title: 'Написать', sub: 'Вводите перевод вручную — самый эффективный режим' },
-      { icon: '☑️', title: 'Выбрать', sub: 'Выберите из вариантов — хорошо для старта' },
-      { icon: '🏃', title: 'Марафон и ошибки', sub: 'Все карточки подряд или только те, где вы ошиблись' },
+      { icon: '<i class="ph ph-pencil-simple"></i>', title: 'Написать', sub: 'Вводите перевод вручную — самый эффективный режим' },
+      { icon: '<i class="ph ph-check-square"></i>', title: 'Выбрать', sub: 'Выберите из вариантов — хорошо для старта' },
+      { icon: '<i class="ph ph-person-simple-run"></i>', title: 'Марафон и ошибки', sub: 'Все карточки подряд или только те, где вы ошиблись' },
     ],
     nextBtn: 'Далее →',
   },
   {
-    icon: '📚',
+    icon: '<i class="ph ph-books"></i>',
     title: 'Грам<span>матика</span>',
     desc: 'Отдельный раздел для изучения языка в глубину — три вкладки.',
     features: [
-      { icon: '📖', title: 'Правила', sub: 'Артикли, падежи, времена — с таблицами и примерами прямо в приложении' },
-      { icon: '📝', title: 'Тесты', sub: 'Выбор из вариантов и заполнение пропусков — по темам' },
-      { icon: '🔤', title: 'Глаголы', sub: 'Тренажёр спряжений: вводите форму глагола для каждого лица' },
+      { icon: '<i class="ph ph-book-open"></i>', title: 'Правила', sub: 'Артикли, падежи, времена — с таблицами и примерами прямо в приложении' },
+      { icon: '<i class="ph ph-note-pencil"></i>', title: 'Тесты', sub: 'Выбор из вариантов и заполнение пропусков — по темам' },
+      { icon: '<i class="ph ph-text-aa"></i>', title: 'Глаголы', sub: 'Тренажёр спряжений: вводите форму глагола для каждого лица' },
     ],
     nextBtn: 'Далее →',
   },
   {
-    icon: '📦',
+    icon: '<i class="ph ph-package"></i>',
     title: 'Готовые <span>паки</span>',
     desc: 'Загрузите прямо сейчас — и сразу есть с чем работать.',
-    actions: READY_PACKS.map(p => ({ icon: p.obIcon, title: p.title, sub: p.sub, fn: p.fn, download: p.download })),
+    actions: READY_PACKS.map(p => ({ icon: `<i class="ph ${p.phIcon}" style="color:${p.color}"></i>`, title: p.title, sub: p.sub, fn: p.fn, download: p.download })),
     nextBtn: 'Далее →',
   },
   {
-    icon: '🚀',
+    icon: '<i class="ph ph-rocket-launch"></i>',
     title: 'Всё <span>готово!</span>',
     desc: 'Загрузите карточки на предыдущем шаге — или добавьте первое слово вручную в разделе Карточки. Первая сессия займёт пару минут.',
     finalScreen: true,
