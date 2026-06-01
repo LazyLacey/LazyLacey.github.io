@@ -26,6 +26,7 @@ function _migrateV5toV6(tx, d) {
           lastSeen:    c.lastSeen    ?? null,
         };
         cardStatsStore.put(stats);
+        // ro/ru — универсальные внутренние ключи для всех языков; лейблы берутся из currentLang()
         const clean = {id:c.id, groupId:c.groupId, ro:c.ro, ru:c.ru, note:c.note||''};
         if (c.ex !== undefined) clean.ex = c.ex;
         cardStore.put(clean);

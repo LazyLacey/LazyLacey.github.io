@@ -27,7 +27,6 @@ window._grammarLoadFailed = false;
 <script type="module" src="js/db.js"></script>
 <script type="module" src="js/languages.js"></script>
 <script type="module" src="js/onboarding.js"></script>
-<script type="module" src="js/sample-data-romanian.js"></script>
 <script type="module" src="js/pwa.js"></script>
 
 </head>
@@ -425,12 +424,11 @@ const CAT_BAD = `<svg viewBox="0 0 50.8554 51.749863" fill="currentColor" xmlns=
 
 // ===== VERB TRAINER STATE =====
 const VTS = {
-  packId: null, verbId: null, tense: 'prezent',
+  packId: null, verbId: null, tense: null,
   queue: [], index: 0, correct: 0, answered: false,
 };
 
 const TENSE_LABELS = { prezent: 'Prezent', trecut: 'Trecut', viitor: 'Viitor' };
-const PRONOUNS = ['eu', 'tu', 'el/ea', 'noi', 'voi', 'ei/ele'];
 
 async function vbSaveProgress(packId, verbId, tense, correct, total) {
   if (!verbsDb) return;
@@ -585,7 +583,7 @@ async function startVerbSession(packId, verbId) {
   VTS.packId = packId;
   VTS.verbId = verbId;
   VTS.verb   = verb;
-  VTS.tense  = 'prezent';
+  VTS.tense  = Object.keys(verb.forms)[0];
   _vbBuildQueue();
   _vbEnterSession();
   renderVerbQuestion();
@@ -593,7 +591,7 @@ async function startVerbSession(packId, verbId) {
 
 function _vbBuildQueue() {
   const forms = VTS.verb.forms[VTS.tense];
-  VTS.queue = PRONOUNS.map((pr, i) => ({ pronoun: pr, answer: forms[i], index: i }));
+  VTS.queue = currentLang().verbPronouns.map((pr, i) => ({ pronoun: pr, answer: forms[i], index: i }));
   VTS.index = 0; VTS.correct = 0; VTS.answered = false;
 }
 
@@ -1412,6 +1410,13 @@ async function init() {
   } catch(e) {
     window.grammarTopics = [];
     window._grammarLoadFailed = true;
+  }
+  try {
+    await import(/* @vite-ignore */ `./js/sample-data-${currentLang().id}.js`);
+  } catch(e) {
+    window.SAMPLE_CARDS_DATA = null;
+    window.SAMPLE_VERBS_DATA = null;
+    window.SAMPLE_TESTS_DATA = null;
   }
   try {
     await openDB();
