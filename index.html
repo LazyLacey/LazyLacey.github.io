@@ -588,7 +588,7 @@ function _applyLangLabels() {
   const readyLangLabel = document.getElementById('ready-lang-label');
   if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
   const modeTypeHint = document.getElementById('mode-type-hint');
-  if (modeTypeHint) modeTypeHint.textContent = `введите слово на ${lang.targetLabel.toLowerCase()}`;
+  if (modeTypeHint) modeTypeHint.textContent = `введите слово на ${lang.targetLabel.toLowerCase().replace(/ский$/, 'ском')}`;
   const typeInp = document.getElementById('type-answer');
   if (typeInp) typeInp.placeholder = `Введите по-${lang.targetLabel.toLowerCase()}...`;
   renderLangPicker();
