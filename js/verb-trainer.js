@@ -384,6 +384,7 @@ function vbStartTense(tense) {
 }
 
 Object.assign(window, {
+  VTS,
   exportVerbPackById, exportVerbsBackup,
   renderVerbsHome, importVerbPack, importVerbPackFile, deleteVerbPack,
   startVerbSession, checkVerbAnswer, nextVerbQuestion,

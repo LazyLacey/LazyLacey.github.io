@@ -482,6 +482,8 @@ async function renderGrammarTestResults() {
 
 Object.assign(window, {
   GTS,
+  gtGetPacks, gtGetAllProgress,
+  _gtEnterSession, renderGrammarTestQuestion,
   importTestPack, deleteTestPack,
   exportTestPackById, exportTestsBackup,
   renderGrammarTestsHome, switchGrammarTab,

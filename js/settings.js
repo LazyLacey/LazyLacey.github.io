@@ -642,6 +642,6 @@ Object.assign(window, {
   checkStorageWarning, scheduleAutoBackupReminder,
   loadSettings, saveSettings,
   exportData, exportCardsOnly, exportGroup, openExportDrawer,
-  importData, clearData, resetStats,
+  importData, doImportWordsOnly, doImportMergeHistory, clearData, resetStats,
   downloadBlob,
 });
