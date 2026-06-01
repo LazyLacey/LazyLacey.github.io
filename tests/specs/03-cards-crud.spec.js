@@ -119,6 +119,7 @@ test.describe('Cards CRUD', () => {
     await page.locator('#card-delete-wrap button').click();
 
     await expect(page.locator('#cards-list')).not.toContainText('casă');
+    await expect(page.locator('#toast')).toContainText(/удалено/i);
   });
 
   test('deleting the last card restores the empty state', async ({ page }) => {

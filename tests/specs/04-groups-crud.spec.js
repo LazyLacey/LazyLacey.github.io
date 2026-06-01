@@ -88,6 +88,7 @@ test.describe('Groups CRUD', () => {
     await page.locator('#group-delete-wrap button').click();
 
     await expect(page.locator('#groups-list')).not.toContainText('Еда');
+    await expect(page.locator('#toast')).toContainText(/удалена/i);
   });
 
   test('deleting the last group restores empty state', async ({ page }) => {

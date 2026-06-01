@@ -21,6 +21,7 @@
 if (typeof grammarTopics === 'undefined') window.grammarTopics = [];
 window._grammarLoadFailed = false;
 </script>
+<script type="module" src="js/toast.js"></script>
 <script type="module" src="js/db.js"></script>
 <script type="module" src="js/languages.js"></script>
 <script type="module" src="js/onboarding.js"></script>
@@ -1086,15 +1087,6 @@ async function dismissStorageWarning() {
   const el = document.getElementById('storage-banner');
   if (el) el.remove();
   try { await dbPut('meta', { id: 'persistenceWarned', granted: false }); } catch(e) {}
-}
-let toastTimer;
-function showToast(msg, type = '') {
-  const t = document.getElementById('toast');
-  const ti = document.getElementById('toast-inner');
-  ti.textContent = msg;
-  t.className   = 'toast show' + (type ? ' ' + type : '');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
 }
 
 // ===== UTILS =====

@@ -103,6 +103,9 @@ test.describe('Settings — toggles and inputs', () => {
     const toggleLabel = page.locator('label.toggle').filter({ has: page.locator('#setting-hard-mode') });
     await toggleLabel.click();
     await page.locator('button', { hasText: /сохранить настройки/i }).click();
+
+    await expect(page.locator('#toast')).toContainText(/сохранены/i);
+
     // Navigate away and back
     await page.click('#nav-study');
     await page.click('#nav-settings');
