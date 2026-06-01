@@ -29,6 +29,11 @@ function plural(n, form1, form2, form5) {
   return `${n} ${form}`;
 }
 
+function emptyState(icon, title, sub) {
+  return `<div class="empty-state"><div class="empty-icon">${icon}</div><div class="empty-title">${title}</div><div class="empty-sub">${sub}</div></div>`;
+}
+
 window.esc = esc;
 window.diffHighlightInline = diffHighlightInline;
 window.plural = plural;
+window.emptyState = emptyState;

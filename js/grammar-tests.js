@@ -224,11 +224,7 @@ async function renderGrammarTestsHome() {
 
   c.innerHTML = `
       ${packs.length === 0 ?
-      `<div class="empty-state">
-        <div class="empty-icon">📋</div>
-        <div class="empty-title">Нет тестов</div>
-        <div class="empty-sub"><span onclick="importTestPack()" role="button" aria-role="button" class="upload-tests-fake-link">Загрузите</span> JSON-файл с тестами чтобы начать</div>
-      </div>`
+      emptyState('📋', 'Нет тестов', '<span onclick="importTestPack()" role="button" aria-role="button" class="upload-tests-fake-link">Загрузите</span> JSON-файл с тестами чтобы начать')
       :
       `<div class="gt-wrap">
         <div class="gt-topics">

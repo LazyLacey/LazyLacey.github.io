@@ -2,6 +2,7 @@ const LANGUAGES = {
   romanian: {
     id: 'romanian',
     name: 'Румынский',
+    nativeName: 'Română',
     flag: '🇷🇴',
     targetLabel: 'Румынский',
     nativeLabel: 'Русский',
@@ -19,6 +20,7 @@ const LANGUAGES = {
   spanish: {
     id: 'spanish',
     name: 'Испанский',
+    nativeName: 'Español',
     flag: '🇪🇸',
     targetLabel: 'Испанский',
     nativeLabel: 'Русский',

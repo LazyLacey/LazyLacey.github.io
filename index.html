@@ -44,7 +44,7 @@ window._grammarLoadFailed = false;
     <div class="ready-screen" id="ready-screen">
       <div class="ready-top">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
-          <div class="ready-label" style="margin-bottom:0">Română</div>
+          <div class="ready-label" id="ready-lang-label" style="margin-bottom:0">Română</div>
           <button class="btn-icon" onclick="showPage('grammar')" title="Грамматика" style="border-color:transparent;background:transparent">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </button>
@@ -70,7 +70,7 @@ window._grammarLoadFailed = false;
             <div class="ready-section-label">Режим</div>
              <div class="ready-mode-browse active" id="ready-mode-type" onclick="setReadyMode('type')" style="margin-top:6px">
               <span><i class="ph ph-pencil-simple"></i> Написать</span>
-              <span style="font-size:11px;color:var(--text3); text-align: right;">введите слово на румынском</span>
+              <span id="mode-type-hint" style="font-size:11px;color:var(--text3); text-align: right;">введите слово на целевом языке</span>
             </div>
              <div class="ready-mode-browse" id="ready-mode-choice" onclick="setReadyMode('choice')" style="margin-top:6px">
               <span><i class="ph ph-check-square"></i> Выбор</span>
@@ -117,7 +117,7 @@ window._grammarLoadFailed = false;
       </div>
       <div class="type-area" id="persistent-type-area" style="display:none">
         <div class="type-input-wrap">
-          <input class="type-input" type="text" id="type-answer" placeholder="Введите по-румынски..."
+          <input class="type-input" type="text" id="type-answer" placeholder="Введите ответ..."
                  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
         </div>
         <button class="btn btn-primary type-submit" id="btn-check" onpointerdown="event.preventDefault()" onclick="checkTypeAnswer()">Проверить</button>
@@ -585,6 +585,12 @@ function _applyLangLabels() {
   if (hardSub) hardSub.textContent = `Диакритика обязательна (${lang.diacriticHints.join(', ')})`;
   const aboutName = document.getElementById('about-lang-name');
   if (aboutName) aboutName.textContent = `Изучаем ${lang.name.toLowerCase()}`;
+  const readyLangLabel = document.getElementById('ready-lang-label');
+  if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
+  const modeTypeHint = document.getElementById('mode-type-hint');
+  if (modeTypeHint) modeTypeHint.textContent = `введите слово на ${lang.targetLabel.toLowerCase()}`;
+  const typeInp = document.getElementById('type-answer');
+  if (typeInp) typeInp.placeholder = `Введите по-${lang.targetLabel.toLowerCase()}...`;
   renderLangPicker();
 }
 
@@ -696,11 +702,7 @@ function showPage(name) {
     if (vt) vt.classList.remove('active');
     if (window._grammarLoadFailed) {
       const c = document.getElementById('grammar-container');
-      if (c) c.innerHTML = `<div class="empty-state">
-        <div class="empty-icon">📚</div>
-        <div class="empty-title">Грамматика недоступна</div>
-        <div class="empty-sub">Файл grammar-content.js не загрузился. Проверьте подключение к сети.</div>
-      </div>`;
+      if (c) c.innerHTML = emptyState('📚', 'Грамматика недоступна', 'Файл grammar-content.js не загрузился. Проверьте подключение к сети.');
     } else if (!window._grammarInited) {
       window._grammarInited = true;
       const container = document.getElementById('grammar-container');
@@ -775,7 +777,7 @@ function renderCardsPage() {
   });
 
   if (filtered.length === 0) {
-    list.innerHTML = `<div class="empty-state"><div class="empty-icon">📭</div><div class="empty-title">Нет карточек</div><div class="empty-sub">Нажмите «+ Добавить» чтобы создать карточку</div></div>`;
+    list.innerHTML = emptyState('📭', 'Нет карточек', 'Нажмите «+ Добавить» чтобы создать карточку');
     return;
   }
 
@@ -921,7 +923,7 @@ document.getElementById('btn-add-card').onclick = openAddCard;
 function renderGroupsPage() {
   const list = document.getElementById('groups-list');
   if (AppState.groups.length === 0) {
-    list.innerHTML = `<div class="empty-state"><div class="empty-icon">📁</div><div class="empty-title">Нет групп</div><div class="empty-sub">Создайте группу, например «Фрукты» или «Цвета»</div></div>`;
+    list.innerHTML = emptyState('📁', 'Нет групп', 'Создайте группу, например «Фрукты» или «Цвета»');
     return;
   }
   list.innerHTML = AppState.groups.map(g => {
@@ -1337,7 +1339,7 @@ function renderBrowse() {
           ${card.note ? `<div class="flip-sub">${esc(card.note)}</div>` : ''}
         </div>
         <div class="flip-card-back">
-          <div class="flip-hint">По-румынски</div>
+          <div class="flip-hint">${currentLang().targetLabel}</div>
           <div class="flip-word" style="color:var(--accent)">${esc(card.ro)}</div>
         </div>
       </div>
@@ -1411,7 +1413,7 @@ function renderStudy() {
 
   area.innerHTML = `<div class="flashcard">
     ${g ? `<div class="card-group-tag">${esc(g.name)}</div>` : ''}
-    <div class="card-question-label">Как по-румынски?</div>
+    <div class="card-question-label">Как по-${currentLang().targetLabel.toLowerCase()}?</div>
     <div class="card-question">${esc(card.ru)}</div>
     ${card.note ? `<div class="card-hint">${esc(card.note)}</div>` : ''}
     ${AppState.settings.hardMode && AppState.studyMode === 'type' ? `<div class="card-hint" style="margin-top:10px;color:var(--red);opacity:0.7;font-size:12px"><i class="ph ph-fire"></i> Hard mode: диакритика обязательна</div>` : ''}
