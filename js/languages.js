@@ -27,7 +27,8 @@ const LANGUAGES = {
     diacriticHints: ['á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', '¡'],
     verbPronouns: ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'],
     readyPacks: [
-      { phIcon: 'ph-sparkle', color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 42 темы',                fn: "loadReadyPack('data/spanish-cards.json','cards')" },
+      { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
     ],
   },
 };
