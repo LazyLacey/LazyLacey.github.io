@@ -25,6 +25,7 @@ window._grammarLoadFailed = false;
 <script type="module" src="js/languages.js"></script>
 <script type="module" src="js/onboarding.js"></script>
 <script type="module" src="js/sample-data-romanian.js"></script>
+<script type="module" src="js/pwa.js"></script>
 
 </head>
 <body>
@@ -1141,144 +1142,7 @@ document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'hidden') persistSessionToStorage();
 });
 
-// ===== PWA / SERVICE WORKER =====
-function setVersionFallback(v) {
-  ['app-version', 'about-modal-version', 'about-version-span'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el && el.textContent === '—') el.textContent = v;
-  });
-}
-
-(function initServiceWorker() {
-  if (!('serviceWorker' in navigator)) { setVersionFallback('н/д'); return; }
-  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') { setVersionFallback('dev'); return; }
-
-  // ── Баннер «Доступно обновление» ──────────────────────────────
-  function showUpdateBanner(waitingWorker) {
-    // Не показываем дважды
-    if (document.getElementById('sw-update-banner')) return;
-
-    const banner = document.createElement('div');
-    banner.id = 'sw-update-banner';
-    banner.setAttribute('role', 'alert');
-    banner.style.cssText = [
-      'position:fixed',
-      'bottom:max(1rem, env(safe-area-inset-bottom))',
-      'left:50%',
-      'transform:translateX(-50%)',
-      'z-index:99999',
-      'display:flex',
-      'align-items:center',
-      'gap:0.75rem',
-      'padding:0.75rem 1rem',
-      'border-radius:14px',
-      'background:rgba(30,30,60,0.97)',
-      'backdrop-filter:blur(12px)',
-      '-webkit-backdrop-filter:blur(12px)',
-      'border:1px solid rgba(100,100,255,0.25)',
-      'box-shadow:0 8px 32px rgba(0,0,0,0.5)',
-      'font-family:var(--font-ui,"DM Sans",sans-serif)',
-      'font-size:0.875rem',
-      'color:#e8e8f0',
-      'max-width:calc(100vw - 2rem)',
-      'width:max-content',
-    ].join(';');
-
-    banner.innerHTML = `
-      <i class="ph ph-arrows-clockwise" style="font-size:1.1rem;flex-shrink:0"></i>
-      <span>Доступна новая версия</span>
-      <button id="sw-update-btn" style="
-        padding:0.35rem 0.85rem;
-        border-radius:8px;
-        border:none;
-        background:linear-gradient(135deg,#6464ff,#a064ff);
-        color:#fff;
-        font-weight:600;
-        font-size:0.8125rem;
-        cursor:pointer;
-        white-space:nowrap;
-      ">Обновить</button>
-      <button id="sw-dismiss-btn" aria-label="Закрыть" style="
-        background:none;border:none;color:#888;cursor:pointer;
-        font-size:1.1rem;padding:0 0.25rem;line-height:1;
-      ">✕</button>
-    `;
-
-    document.body.appendChild(banner);
-
-    document.getElementById('sw-update-btn').addEventListener('click', () => {
-      waitingWorker.postMessage({ type: 'SKIP_WAITING' });
-      banner.remove();
-    });
-
-    document.getElementById('sw-dismiss-btn').addEventListener('click', () => {
-      banner.remove();
-    });
-  }
-
-  // ── Регистрация ────────────────────────────────────────────────
-  navigator.serviceWorker.register('sw.js').then(reg => {
-
-    // ── Версия приложения ──────────────────────────────────────
-    navigator.serviceWorker.addEventListener('message', e => {
-      if (e.data?.type === 'VERSION') {
-        const el = document.getElementById('app-version');
-        if (el) el.textContent = e.data.version;
-        const el3 = document.getElementById('about-version-span');
-        if (el3) el3.textContent = e.data.version;
-      }
-    });
-    // Запрашиваем версию как только воркер готов
-    const askVersion = () => {
-      if (navigator.serviceWorker.controller) {
-        navigator.serviceWorker.controller.postMessage({ type: 'GET_VERSION' });
-      }
-    };
-    if (navigator.serviceWorker.controller) {
-      askVersion();
-    } else {
-      navigator.serviceWorker.addEventListener('controllerchange', askVersion, { once: true });
-    }
-
-    // Уже есть ожидающий воркер (страница перезагружена не была)
-    if (reg.waiting) {
-      showUpdateBanner(reg.waiting);
-    }
-
-    // Новый воркер установился и ждёт
-    reg.addEventListener('updatefound', () => {
-      const newWorker = reg.installing;
-      if (!newWorker) return;
-
-      newWorker.addEventListener('statechange', () => {
-        if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-          // Новый воркер готов, старый ещё управляет страницей
-          showUpdateBanner(newWorker);
-        }
-      });
-    });
-
-    // ── Проверка обновления при загрузке ───────────────────────
-    // Через 5 с после старта: браузер сравнит sw.js с сервером,
-    // и если файл изменился — установит новый воркер → покажется баннер.
-    setTimeout(() => {
-      reg.update().catch(() => { /* нет сети — не беда */ });
-    }, 5_000);
-
-    // Фолбэк: если SW не ответил на GET_VERSION за 3с — показываем «—»
-    setTimeout(() => setVersionFallback('н/д'), 3_000);
-
-  }).catch(() => {
-    // Регистрация не удалась (http, приватный режим и т.п.)
-    setVersionFallback('н/д');
-  });
-
-  // Когда новый воркер берёт управление — перезагружаем страницу
-  // чтобы клиент получил свежие ресурсы без ручного F5.
-  navigator.serviceWorker.addEventListener('controllerchange', () => {
-    window.location.reload();
-  });
-})();
+// ===== PWA handled by js/pwa.js (vite-plugin-pwa) =====
 
 
 // grammarTopics загружается динамически из currentLang().grammarFile в init()
