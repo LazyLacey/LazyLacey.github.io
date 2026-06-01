@@ -1,12 +1,15 @@
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
+
+const { version } = JSON.parse(readFileSync('./package.json', 'utf8'));
 
 export default defineConfig({
   server:  { port: 8080 },
   preview: { port: 8080 },
   build: { outDir: 'dist', emptyOutDir: true },
   define: {
-    __APP_VERSION__: JSON.stringify('3.7.0'),
+    __APP_VERSION__: JSON.stringify(version),
   },
   plugins: [
     VitePWA({
