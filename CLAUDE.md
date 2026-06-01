@@ -2,7 +2,7 @@
 
 ## Проект
 
-**Fișki** — мобильная PWA для изучения иностранных языков. Vanilla JS, single `index.html` (~4200 строк JS inline + HTML), никаких фреймворков.
+**Fișki** — мобильная PWA для изучения иностранных языков. Vanilla JS, single `index.html` (~4200 строк JS inline + HTML → цель ~1900 строк), никаких фреймворков.
 
 - **Stack:** Node 20 (`.nvmrc`), Vite (dev/build), vite-plugin-pwa (workbox), Playwright e2e, GitHub Pages
 - **Тесты:** Playwright, эмуляция Pixel 5, `workers:1 retries:1`, 17 spec-файлов / 174 теста
@@ -19,9 +19,11 @@ js/languages.js              — реестр языков + currentLang() + rea
 js/onboarding.js             — онбординг (langPicker, dynamicActions из readyPacks)
 js/pwa.js                    — регистрация SW (vite-plugin-pwa), update-баннер, версия
 js/sample-data-romanian.js   — SAMPLE_CARDS/VERBS/TESTS_DATA (window-экспорт)
+js/toast.js                  — showToast (window-экспорт)
+js/utils.js                  — esc, diffHighlightInline, plural (window-экспорт)
 public/                      — manifest.json, assets, data/*.json, js/grammar-romanian.js
 tests/specs/                 — e2e тесты
-PLAN.md                      — детальный план рефакторинга под мультиязычность
+PLAN.md                      — план мультиязычности (фазы 0–8, все выполнены)
 ```
 
 **IndexedDB:** три БД — `RomanianVocab` v6, `RomanianTests` v1, `RomanianVerbs` v1.
@@ -42,22 +44,23 @@ PLAN.md                      — детальный план рефактори�
 | 7 — Диакритика из конфига | diacriticHints из языка |
 | 8 — Language picker в UI | Переключатель в настройках + экран в онбординге |
 
-### Модуляризация (фазы 9–16) — ⬜ следующий этап
+### Модуляризация (фазы 9–17) — 🔄 в процессе
 
-Цель: сократить `index.html` с ~4200 до ~2000 строк.
+Цель: сократить `index.html` с ~4200 до ~1900 строк.
 
-| Фаза | Файл | Сложность |
-|------|------|-----------|
-| 9  | `js/toast.js` | низкая — нет зависимостей, разблокирует все остальные |
-| 10 | `js/utils.js` | низкая — `esc`, `diffHighlightInline`, `plural` |
-| 11 | `js/srs.js` | низкая — SM-2 алгоритм, чистые функции |
-| 12 | `js/theme.js` | низкая — `applyTheme`, `renderThemeDots` |
-| 13 | `js/grammar-ui.js` | средняя — `renderGrammar`, `renderTable`, search |
-| 14 | `js/verb-trainer.js` | средняя — VERB TRAINER STATE + UI |
-| 15 | `js/settings.js` | высокая — SETTINGS + EXPORT + IMPORT |
-| 16 | `js/grammar-tests.js` | средняя — Grammar tests UI |
+| Фаза | Файл | Строк | Сложность |
+|------|------|-------|-----------|
+| 9 ✅ | `js/toast.js` | −9 | низкая — нет зависимостей |
+| 10 ✅ | `js/utils.js` | −44 | низкая — `esc`, `diffHighlightInline`, `plural` |
+| 11 | `js/srs.js` | −127 | низкая — SM-2 алгоритм, чистые функции |
+| 12 | `js/theme.js` | −117 | низкая — `applyTheme`, `renderThemeDots` |
+| 13 | `js/grammar-ui.js` | −258 | средняя — `renderGrammar`, `renderTable`, search, topic helpers |
+| 14 | `js/answer-log.js` | −297 | низкая — `putCardStats`, `putDailyStats`, `putSession`, `getStreak` и др.; чистые функции, зависит только от db.js |
+| 15 | `js/verb-trainer.js` | −400 | средняя — VERB TRAINER STATE + UI + SESSION |
+| 16 | `js/settings.js` | −605 | высокая — SETTINGS + EXPORT + IMPORT + STORAGE PERSISTENCE + STORAGE SAFETY |
+| 17 | `js/grammar-tests.js` | −500 | средняя — Grammar tests UI |
 
-**Начинать с фазы 9** — все остальные модули вызывают `showToast`.
+**Порядок важен:** 11→12→13 можно в любом порядке; 14 (answer-log) не блокирует никого — можно делать параллельно с 13; 15–17 после всех предыдущих.
 
 ## Правила работы
 
