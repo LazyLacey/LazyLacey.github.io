@@ -1,0 +1,916 @@
+{
+  "type": "testPack",
+  "name": "Грамматика испанского",
+  "icon": "🇪🇸",
+  "description": "A1–A2: артикли, ser/estar, времена, числа, вопросы, предлоги — 10 тем по 10 вопросов",
+  "topics": {
+    "articles": {
+      "name": "Артикли и род",
+      "icon": "🏷️"
+    },
+    "ser-estar": {
+      "name": "Ser vs Estar",
+      "icon": "⚡"
+    },
+    "presente": {
+      "name": "Presente de indicativo",
+      "icon": "📖"
+    },
+    "preterito": {
+      "name": "Pretérito indefinido",
+      "icon": "⏮️"
+    },
+    "futuro": {
+      "name": "Futuro simple",
+      "icon": "⏭️"
+    },
+    "imperfecto": {
+      "name": "Pretérito imperfecto",
+      "icon": "🌀"
+    },
+    "numbers": {
+      "name": "Числа и время",
+      "icon": "🔢"
+    },
+    "questions": {
+      "name": "Вопросительные слова",
+      "icon": "❓"
+    },
+    "reflexive": {
+      "name": "Возвратные глаголы",
+      "icon": "🔄"
+    },
+    "prepositions": {
+      "name": "Предлоги",
+      "icon": "🔗"
+    }
+  },
+  "questions": [
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Выберите определённый артикль: ___ libro (книга)",
+      "answer": "el",
+      "options": [
+        "el",
+        "la",
+        "los",
+        "lo"
+      ]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте определённый артикль: ___ ciudad (город)",
+      "answer": "la",
+      "explain": "слова на -dad женского рода"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте определённый артикль: ___ problema (проблема)",
+      "answer": "el",
+      "explain": "исключение: слова греч. происхождения на -ma/-pa/-ta — мужской род"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Почему говорят «el agua», а не «la agua»?",
+      "answer": "Перед ударным «а» ставится el вместо la, но agua — женского рода",
+      "options": [
+        "agua — мужского рода",
+        "Перед ударным «а» ставится el вместо la, но agua — женского рода",
+        "Устаревшая форма",
+        "Правило для всех слов на гласную"
+      ]
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Какое слово женского рода несмотря на окончание -o?",
+      "answer": "la mano",
+      "options": [
+        "el libro",
+        "el banco",
+        "la mano",
+        "el vaso"
+      ]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Поставьте во множественное число: el libro → ___",
+      "answer": "los libros"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Неопределённый артикль (м.р. ед.ч.): ___ hombre",
+      "answer": "un"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Неопределённый артикль мн.ч.: ___ libros (несколько книг)",
+      "answer": "unos"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Определённый артикль мн.ч.: ___ naciones (нации)",
+      "answer": "las",
+      "explain": "nación — женский род"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Слова на -ión относятся к:",
+      "answer": "женскому роду",
+      "options": [
+        "мужскому роду",
+        "женскому роду",
+        "зависит от слова",
+        "нейтральному роду"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "La Torre Eiffel ___ en París",
+      "answer": "está",
+      "options": [
+        "es",
+        "está",
+        "son",
+        "están"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "Ella ___ médica (профессия)",
+      "answer": "es",
+      "options": [
+        "está",
+        "es",
+        "tiene",
+        "hace"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "fill",
+      "question": "Переведите: «Я устал» (мужской род)",
+      "answer": "Estoy cansado",
+      "explain": "estar + прилагательное состояния"
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "«El café está frío» — почему estar, а не ser?",
+      "answer": "Временное состояние (кофе остыл)",
+      "options": [
+        "Кофе неодушевлённый",
+        "Временное состояние (кофе остыл)",
+        "Постоянное свойство кофе",
+        "После café всегда estar"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "fill",
+      "question": "¿De dónde ___ tú? (происхождение)",
+      "answer": "eres"
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "La mesa ___ de madera (материал, из чего сделана)",
+      "answer": "es",
+      "options": [
+        "es",
+        "está",
+        "son",
+        "están"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "Hoy ella ___ muy guapa (сегодня выглядит красиво, временно)",
+      "answer": "está",
+      "options": [
+        "es",
+        "está",
+        "son",
+        "están"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "fill",
+      "question": "Nosotros ___ estudiantes",
+      "answer": "somos"
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "La reunión ___ en la sala (событие, мероприятие — где проходит)",
+      "answer": "es",
+      "options": [
+        "es",
+        "está",
+        "son",
+        "están"
+      ]
+    },
+    {
+      "topicId": "ser-estar",
+      "type": "choice",
+      "question": "«Estar muerto» — правильно ли использовать estar?",
+      "answer": "Да, «мёртв» — состояние → estar",
+      "options": [
+        "Да, «мёртв» — состояние → estar",
+        "Нет, смерть постоянна → ser muerto",
+        "Нет, только ser для людей",
+        "Зависит от контекста"
+      ]
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "hablar → yo ___",
+      "answer": "hablo"
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "comer → tú ___",
+      "answer": "comes"
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "vivir → él ___",
+      "answer": "vive"
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "tener → nosotros ___",
+      "answer": "tenemos"
+    },
+    {
+      "topicId": "presente",
+      "type": "choice",
+      "question": "poder → ella ___ (чередование o→ue)",
+      "answer": "puede",
+      "options": [
+        "pode",
+        "puedo",
+        "puede",
+        "podes"
+      ]
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "ir → yo ___",
+      "answer": "voy",
+      "explain": "нерегулярный глагол"
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "hacer → yo ___",
+      "answer": "hago",
+      "explain": "yo-нерегулярный: основа + -go"
+    },
+    {
+      "topicId": "presente",
+      "type": "choice",
+      "question": "conocer → yo ___",
+      "answer": "conozco",
+      "options": [
+        "conoco",
+        "conozco",
+        "conoceo",
+        "conoczo"
+      ]
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "ser → tú ___",
+      "answer": "eres"
+    },
+    {
+      "topicId": "presente",
+      "type": "fill",
+      "question": "querer → ellos ___ (чередование e→ie)",
+      "answer": "quieren",
+      "explain": "чередование только в ударных слогах (не nosotros/vosotros)"
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "hablar → yo (pretérito) ___",
+      "answer": "hablé"
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "comer → tú (pretérito) ___",
+      "answer": "comiste"
+    },
+    {
+      "topicId": "preterito",
+      "type": "choice",
+      "question": "ir/ser → él (pretérito) — формы совпадают!",
+      "answer": "fue",
+      "options": [
+        "iba",
+        "era",
+        "fue",
+        "iba"
+      ]
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "tener → nosotros (pretérito) ___",
+      "answer": "tuvimos",
+      "explain": "нерегулярная основа tuv-"
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "hacer → yo (pretérito) ___",
+      "answer": "hice",
+      "explain": "нерегулярная основа hic- (he → hice, hizo)"
+    },
+    {
+      "topicId": "preterito",
+      "type": "choice",
+      "question": "llegar → yo (pretérito) — написание:",
+      "answer": "llegué",
+      "options": [
+        "llegé",
+        "llegué",
+        "llegí",
+        "lleguí"
+      ],
+      "explain": "g→gu перед e для сохранения звука /g/"
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "estar → ella (pretérito) ___",
+      "answer": "estuvo",
+      "explain": "нерегулярная основа estuv-"
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "poder → ellos (pretérito) ___",
+      "answer": "pudieron",
+      "explain": "нерегулярная основа pud-"
+    },
+    {
+      "topicId": "preterito",
+      "type": "choice",
+      "question": "«Ayer ___ al cine» (ir, yo)",
+      "answer": "fui",
+      "options": [
+        "iba",
+        "iré",
+        "fui",
+        "voy"
+      ]
+    },
+    {
+      "topicId": "preterito",
+      "type": "fill",
+      "question": "decir → tú (pretérito) ___",
+      "answer": "dijiste",
+      "explain": "нерегулярная основа dij-"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "hablar → yo (futuro) ___",
+      "answer": "hablaré"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "comer → tú (futuro) ___",
+      "answer": "comerás"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "vivir → él (futuro) ___",
+      "answer": "vivirá"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "hacer → ella (futuro) ___",
+      "answer": "hará",
+      "explain": "нерегулярная основа har-"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "poder → nosotros (futuro) ___",
+      "answer": "podremos",
+      "explain": "нерегулярная основа podr-"
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "venir → yo (futuro) ___",
+      "answer": "vendré",
+      "explain": "нерегулярная основа vendr-"
+    },
+    {
+      "topicId": "futuro",
+      "type": "choice",
+      "question": "decir → ellos (futuro) ___",
+      "answer": "dirán",
+      "options": [
+        "decirán",
+        "dirán",
+        "dicirán",
+        "dirían"
+      ]
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "saber → tú (futuro) ___",
+      "answer": "sabrás",
+      "explain": "нерегулярная основа sabr-"
+    },
+    {
+      "topicId": "futuro",
+      "type": "choice",
+      "question": "Какой глагол образует futuro от основы «pondr-»?",
+      "answer": "poner",
+      "options": [
+        "poder",
+        "tener",
+        "poner",
+        "valer"
+      ]
+    },
+    {
+      "topicId": "futuro",
+      "type": "fill",
+      "question": "tener → vosotros (futuro) ___",
+      "answer": "tendréis",
+      "explain": "нерегулярная основа tendr-"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "hablar → yo (imperfecto) ___",
+      "answer": "hablaba"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "comer → tú (imperfecto) ___",
+      "answer": "comías"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "choice",
+      "question": "ir → él (imperfecto) — нерегулярный",
+      "answer": "iba",
+      "options": [
+        "fue",
+        "irá",
+        "iba",
+        "iría"
+      ]
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "ser → yo (imperfecto) ___",
+      "answer": "era"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "ver → nosotros (imperfecto) ___",
+      "answer": "veíamos",
+      "explain": "ver нерегулярный: veía, veías, veía, veíamos…"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "choice",
+      "question": "Когда imperfecto, а не indefinido?",
+      "answer": "Фоновое или повторяющееся действие в прошлом",
+      "options": [
+        "Однократное завершённое действие",
+        "Фоновое или повторяющееся действие в прошлом",
+        "Действие произошло только вчера",
+        "Всегда с «ayer»"
+      ]
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "hablar → ellos (imperfecto) ___",
+      "answer": "hablaban"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "choice",
+      "question": "«Cuando era niño, ___ mucho» (jugar, yo)",
+      "answer": "jugaba",
+      "options": [
+        "jugué",
+        "jugaré",
+        "juegue",
+        "jugaba"
+      ]
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "fill",
+      "question": "estar → yo (imperfecto) ___",
+      "answer": "estaba"
+    },
+    {
+      "topicId": "imperfecto",
+      "type": "choice",
+      "question": "Три нерегулярных глагола в imperfecto:",
+      "answer": "ser, ir, ver",
+      "options": [
+        "ser, estar, ir",
+        "ser, ir, ver",
+        "ir, ver, hacer",
+        "ser, ver, tener"
+      ]
+    },
+    {
+      "topicId": "numbers",
+      "type": "fill",
+      "question": "Напишите по-испански: 11",
+      "answer": "once"
+    },
+    {
+      "topicId": "numbers",
+      "type": "fill",
+      "question": "Напишите по-испански: 15",
+      "answer": "quince"
+    },
+    {
+      "topicId": "numbers",
+      "type": "choice",
+      "question": "100 перед существительным: ___ personas",
+      "answer": "cien",
+      "options": [
+        "ciento",
+        "cien",
+        "cientos",
+        "un cien"
+      ]
+    },
+    {
+      "topicId": "numbers",
+      "type": "fill",
+      "question": "Напишите по-испански: 1000",
+      "answer": "mil"
+    },
+    {
+      "topicId": "numbers",
+      "type": "choice",
+      "question": "21 перед мужским существительным: veintiún/veintiuno?",
+      "answer": "veintiún",
+      "options": [
+        "veintiuno",
+        "veinte y uno",
+        "veintiún",
+        "veinte uno"
+      ],
+      "explain": "перед существительным — veintiún (апокопа)"
+    },
+    {
+      "topicId": "numbers",
+      "type": "form",
+      "question": "Как спросить «Который час?»",
+      "answer": "¿Qué hora es?"
+    },
+    {
+      "topicId": "numbers",
+      "type": "choice",
+      "question": "«Son las tres y media» — это:",
+      "answer": "15:30",
+      "options": [
+        "03:15",
+        "03:30",
+        "15:30",
+        "15:15"
+      ]
+    },
+    {
+      "topicId": "numbers",
+      "type": "fill",
+      "question": "Как сказать «в 8 утра»: a las ___ de la mañana",
+      "answer": "ocho"
+    },
+    {
+      "topicId": "numbers",
+      "type": "choice",
+      "question": "Первый день недели в Испании:",
+      "answer": "lunes",
+      "options": [
+        "domingo",
+        "sábado",
+        "viernes",
+        "lunes"
+      ]
+    },
+    {
+      "topicId": "numbers",
+      "type": "fill",
+      "question": "«Полдень» по-испански:",
+      "answer": "mediodía"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "«Кто?»",
+      "answer": "¿Quién?",
+      "options": [
+        "¿Qué?",
+        "¿Cuándo?",
+        "¿Quién?",
+        "¿Cómo?"
+      ]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Что?» (вопрос о предмете или определении)",
+      "answer": "¿Qué?"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Где?» (местонахождение)",
+      "answer": "¿Dónde?"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "«Когда?»",
+      "answer": "¿Cuándo?",
+      "options": [
+        "¿Cómo?",
+        "¿Dónde?",
+        "¿Cuándo?",
+        "¿Por qué?"
+      ]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Почему?» (в вопросе, два слова)",
+      "answer": "¿Por qué?",
+      "explain": "два слова, акцент на qué"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "«Как?»",
+      "answer": "¿Cómo?",
+      "options": [
+        "¿Cuál?",
+        "¿Cuánto?",
+        "¿Cómo?",
+        "¿Qué?"
+      ]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Сколько?» (количество, мн.ч. м.р.)",
+      "answer": "¿Cuántos?",
+      "explain": "согласуется в роде и числе"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "¿Cuál es tu nombre? — почему cuál, а не qué?",
+      "answer": "Идентификация / выбор из множества",
+      "options": [
+        "Cuál всегда с глаголом ser",
+        "Идентификация / выбор из множества",
+        "Qué нельзя использовать с ser",
+        "Только устойчивое выражение"
+      ]
+    },
+    {
+      "topicId": "questions",
+      "type": "form",
+      "question": "Переведите: «Откуда ты?»",
+      "answer": "¿De dónde eres?",
+      "explain": "de + dónde + eres"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "«¿Por qué?» vs «porque» — разница?",
+      "answer": "¿Por qué? — вопрос, porque — ответ/причина",
+      "options": [
+        "Только орфография, смысл один",
+        "¿Por qué? — вопрос, porque — ответ/причина",
+        "porque для прошлого, ¿por qué? для настоящего",
+        "Оба пишутся слитно"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "Возвратное местоимение для «yo»:",
+      "answer": "me",
+      "options": [
+        "te",
+        "se",
+        "nos",
+        "me"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "llamarse → yo ___ Pedro",
+      "answer": "me llamo"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "levantarse → tú (presente) ___",
+      "answer": "te levantas",
+      "options": [
+        "se levanta",
+        "me levanto",
+        "te levantas",
+        "os levantáis"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "form",
+      "question": "Переведите: «Как тебя зовут?»",
+      "answer": "¿Cómo te llamas?"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "Почему «ducharse» (принять душ) — возвратный глагол?",
+      "answer": "Действие направлено на самого себя",
+      "options": [
+        "Традиционное исключение",
+        "Действие направлено на самого себя",
+        "Глагол на -se всегда непереходный",
+        "Только в Испании"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "sentarse → nosotros ___",
+      "answer": "nos sentamos"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "«Me quiero levantar» и «Quiero levantarme» — оба правильны?",
+      "answer": "Да, оба варианта верны",
+      "options": [
+        "Да, оба варианта верны",
+        "Нет, только в конце инфинитива",
+        "Нет, только перед вспомогательным",
+        "Зависит от глагола"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "Me levanto → отрицание: ___ me levanto",
+      "answer": "No",
+      "explain": "отрицание ставится перед местоимением"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "«Se venden pisos» — se здесь:",
+      "answer": "Пассивное / безличное se",
+      "options": [
+        "Возвратное действие",
+        "Пассивное / безличное se",
+        "Косвенное дополнение",
+        "Ошибочная форма"
+      ]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "form",
+      "question": "Переведите: «Её зовут Мария»",
+      "answer": "Se llama María"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "«в городе / в стране» (нахождение):",
+      "answer": "en",
+      "options": [
+        "a",
+        "de",
+        "en",
+        "por"
+      ]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«на столе»: ___ la mesa",
+      "answer": "en"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "a + el = ___",
+      "answer": "al",
+      "explain": "обязательное слияние"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "de + el = ___",
+      "answer": "del",
+      "explain": "обязательное слияние"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "para vs por — para выражает:",
+      "answer": "цель, назначение, получателя",
+      "options": [
+        "причину, обмен, длительность",
+        "цель, назначение, получателя",
+        "место, средство движения",
+        "агента в пассивных конструкциях"
+      ]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Voy ___ Madrid» (движение к месту)",
+      "answer": "a"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«без сахара»: ___ azúcar",
+      "answer": "sin"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "«sobre» означает:",
+      "answer": "о (тема) / над, на (место)",
+      "options": [
+        "под",
+        "между",
+        "о (тема) / над, на (место)",
+        "через"
+      ]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "form",
+      "question": "Переведите: «Я иду в школу»",
+      "answer": "Voy a la escuela"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "«Trabajo desde las 9» — «desde» означает:",
+      "answer": "с (начальная точка)",
+      "options": [
+        "до",
+        "около",
+        "с (начальная точка)",
+        "после"
+      ]
+    }
+  ]
+}

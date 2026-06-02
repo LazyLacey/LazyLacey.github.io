@@ -487,13 +487,6 @@ async function init() {
     window._grammarLoadFailed = true;
   }
   try {
-    await import(/* @vite-ignore */ `./js/sample-data-${currentLang().id}.js`);
-  } catch(e) {
-    window.SAMPLE_CARDS_DATA = null;
-    window.SAMPLE_VERBS_DATA = null;
-    window.SAMPLE_TESTS_DATA = null;
-  }
-  try {
     await openDB();
   } catch (err) {
     if (err && err.name === 'VersionError') {
@@ -772,25 +765,6 @@ function openSampleDrawer() {
   });
 }
 
-// SAMPLE_CARDS_DATA, SAMPLE_VERBS_DATA, SAMPLE_TESTS_DATA — в js/sample-data-romanian.js
-
-function downloadSampleCards() {
-  const data = JSON.stringify(SAMPLE_CARDS_DATA, null, 2);
-  downloadBlob(data, 'romanian-sample-cards.json');
-  showToast('Файл скачан ✓', 'green');
-}
-
-function downloadSampleVerbs() {
-  const data = JSON.stringify(SAMPLE_VERBS_DATA, null, 2);
-  downloadBlob(data, 'romanian-sample-verbs.json');
-  showToast('Файл скачан ✓', 'green');
-}
-
-function downloadSampleTests() {
-  const data = JSON.stringify(SAMPLE_TESTS_DATA, null, 2);
-  downloadBlob(data, 'romanian-sample-tests.json');
-  showToast('Файл скачан ✓', 'green');
-}
 
 // checkOnboarding, showOnboarding, renderObScreen — в onboarding.js
 // initTheme() — вызывается в js/theme.js

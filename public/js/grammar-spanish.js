@@ -1178,4 +1178,114 @@ window.grammarTopics = [
       },
     ],
   },
+  // ─────────────────────────────────────────────
+  // 19. ESTAR + GERUNDIO
+  // ─────────────────────────────────────────────
+  {
+    id: 'estar-gerundio',
+    title: 'Estar + gerundio',
+    icon: '🔄',
+    description: 'Продолженное время — действие, происходящее прямо сейчас',
+    sections: [
+      {
+        id: 'gerundio-when',
+        title: 'Когда использовать',
+        body: 'Estar + gerundio описывает действие, которое происходит прямо сейчас или в этот период — аналог русского «я делаю это в данный момент».\n\nОтличие от Presente:\n— Trabajo en casa → работаю из дома вообще (привычка)\n— Estoy trabajando en casa → работаю из дома прямо сейчас\n\nЧасто сопровождается: ahora (сейчас), ahora mismo (прямо сейчас), en este momento (в данный момент).',
+        examples: [
+          { ro: 'Estoy comiendo', ru: 'Я ем (прямо сейчас)' },
+          { ro: '¿Qué estás haciendo?', ru: 'Что ты сейчас делаешь?' },
+          { ro: 'Está lloviendo', ru: 'Идёт дождь', note: 'llover → lloviendo' },
+          { ro: 'Estamos estudiando español', ru: 'Мы учим испанский (сейчас)' },
+        ],
+      },
+      {
+        id: 'gerundio-form',
+        title: 'Образование герундия',
+        body: 'Герундий образуется от основы инфинитива:\n— Глаголы на -ar: основа + -ando\n— Глаголы на -er/-ir: основа + -iendo\n\nЕсли основа оканчивается на гласный, -iendo → -yendo (иначе три гласных подряд): leer → leyendo, construir → construyendo, ir → yendo.\n\nГлаголы -ir с чередованием основы (те же, что в presente):\ne→i: pedir → pidiendo, servir → sirviendo, seguir → siguiendo, decir → diciendo\no→u: dormir → durmiendo, morir → muriendo',
+        table: {
+          headers: ['Инфинитив', 'Герундий', 'Правило'],
+          rows: [
+            ['hablar', 'hablando', '-ar → -ando'],
+            ['comer', 'comiendo', '-er → -iendo'],
+            ['vivir', 'viviendo', '-ir → -iendo'],
+            ['leer', 'leyendo', 'гласный + iendo → yendo'],
+            ['ir', 'yendo', 'нерегулярный'],
+            ['pedir', 'pidiendo', '-ir, e→i'],
+            ['dormir', 'durmiendo', '-ir, o→u'],
+          ],
+        },
+        examples: [
+          { ro: 'El niño está durmiendo', ru: 'Ребёнок спит (сейчас)', note: 'dormir → durmiendo' },
+          { ro: 'Sigo leyendo el libro', ru: 'Я продолжаю читать книгу', note: 'leer → leyendo' },
+          { ro: '¿Estás siguiendo?', ru: 'Ты следишь (понимаешь)?', note: 'seguir → siguiendo' },
+        ],
+      },
+    ],
+  },
+  // ─────────────────────────────────────────────
+  // 20. IMPERATIVO
+  // ─────────────────────────────────────────────
+  {
+    id: 'imperativo',
+    title: 'Imperativo',
+    icon: '👉',
+    description: 'Команды, просьбы, советы и инструкции',
+    sections: [
+      {
+        id: 'imperativo-uses',
+        title: 'Когда использовать',
+        body: 'Imperativo — глагольная форма для прямых команд, просьб, советов и инструкций. У него нет формы yo.\n\n— Команда: ¡Ven aquí! (Иди сюда!)\n— Просьба: Habla más despacio, por favor (Говори помедленнее)\n— Совет: Come más verdura (Ешь больше овощей)\n— Инструкция: Gira a la derecha (Поверни направо)\n\nКлючевой момент: утвердительные и отрицательные формы образуются по-разному.',
+        examples: [
+          { ro: '¡Escúchame!', ru: 'Слушай меня!', note: 'tú, утвердительный' },
+          { ro: 'Por favor, abra la ventana', ru: 'Откройте, пожалуйста, окно', note: 'usted, вежливо' },
+          { ro: '¡No toques eso!', ru: 'Не трогай это!', note: 'tú, отрицательный → субхунтиво' },
+        ],
+      },
+      {
+        id: 'imperativo-tu',
+        title: 'Форма tú — правила и исключения',
+        body: 'Утвердительный imperativo tú = 3-е лицо ед.ч. presente:\nhablar → habla, comer → come, escribir → escribe\n\n8 нерегулярных форм (обязательно запомнить):\ndi (decir), haz (hacer), pon (poner), sal (salir),\nsé (ser), ten (tener), ve (ir), ven (venir)\n\nОтрицательный imperativo tú = no + presente de subjuntivo:\nno hables, no comas, no escribas\nнерегулярные: no vayas (ir), no vengas (venir), no hagas (hacer)',
+        table: {
+          headers: ['Глагол', 'Афф. tú', 'Отриц. tú'],
+          rows: [
+            ['hablar', 'habla', 'no hables'],
+            ['comer', 'come', 'no comas'],
+            ['venir', 'ven ⚠️', 'no vengas'],
+            ['tener', 'ten ⚠️', 'no tengas'],
+            ['hacer', 'haz ⚠️', 'no hagas'],
+            ['decir', 'di ⚠️', 'no digas'],
+            ['ser', 'sé ⚠️', 'no seas'],
+            ['ir', 've ⚠️', 'no vayas'],
+          ],
+        },
+        examples: [
+          { ro: '¡Ven aquí!', ru: 'Иди сюда!', note: 'venir → ven' },
+          { ro: 'Hazlo ahora', ru: 'Сделай это сейчас', note: 'hacer → haz' },
+          { ro: 'Di la verdad', ru: 'Говори правду', note: 'decir → di' },
+          { ro: 'No vengas tarde', ru: 'Не приходи поздно', note: 'no + vengas (субхунтиво)' },
+        ],
+      },
+      {
+        id: 'imperativo-other',
+        title: 'Другие формы и местоимения',
+        body: 'Usted/Ustedes и nosotros используют presente de subjuntivo — вежливые формы или предложение «давайте».\n\nVosotros (только Испания): инфинитив − r + d.\n\nМестоимения:\n— Утвердительный: присоединяются в конце → dámelo, escúchame (нужен акцент!)\n— Отрицательный: ставятся перед глаголом → no me lo des',
+        table: {
+          headers: ['Лицо', 'hablar', 'comer', 'venir'],
+          rows: [
+            ['tú', 'habla', 'come', 'ven ⚠️'],
+            ['usted', 'hable', 'coma', 'venga'],
+            ['nosotros', 'hablemos', 'comamos', 'vengamos'],
+            ['vosotros', 'hablad', 'comed', 'venid'],
+            ['ustedes', 'hablen', 'coman', 'vengan'],
+          ],
+        },
+        examples: [
+          { ro: 'Dámelo', ru: 'Дай мне это', note: 'da + me + lo, ударение сохраняется' },
+          { ro: 'No me lo des', ru: 'Не давай мне это', note: 'me lo стоят перед глаголом' },
+          { ro: '¡Escúchenme!', ru: 'Слушайте меня! (ustedes)', note: 'escuchen + me' },
+          { ro: 'Hablad más despacio', ru: 'Говорите помедленнее (vosotros)', note: 'hablar → hablad' },
+        ],
+      },
+    ],
+  },
 ];
