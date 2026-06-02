@@ -15,13 +15,13 @@ test.describe('Cards CRUD', () => {
 
   // ── Add card ─────────────────────────────────────────────────────────────
   test('opens add-card modal on button click', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await expect(page.locator('#modal-card')).toBeVisible();
     await expect(page.locator('#modal-card-title')).toContainText(/новая/i);
   });
 
   test('adds a card and it appears in the list', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'bună ziua');
     await page.fill('#card-ru', 'добрый день');
     await page.click('#modal-card .btn-primary');
@@ -35,7 +35,7 @@ test.describe('Cards CRUD', () => {
     // seedGroups updates AppState directly — no reload needed
     await seedGroups(page, [GROUPS.basics]);
 
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'frumos');
     await page.fill('#card-ru', 'красивый');
     await page.fill('#card-note', 'прилагательное');
@@ -49,7 +49,7 @@ test.describe('Cards CRUD', () => {
   });
 
   test('shows a toast after saving a card', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'casă');
     await page.fill('#card-ru', 'дом');
     await page.click('#modal-card .btn-primary');
@@ -60,7 +60,7 @@ test.describe('Cards CRUD', () => {
 
   // ── Validation ───────────────────────────────────────────────────────────
   test('does not save a card with empty Romanian field', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ru', 'дом');
     // leave #card-ro empty
     await page.click('#modal-card .btn-primary');
@@ -70,7 +70,7 @@ test.describe('Cards CRUD', () => {
   });
 
   test('does not save a card with empty Russian field', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'casă');
     await page.click('#modal-card .btn-primary');
 
@@ -78,7 +78,7 @@ test.describe('Cards CRUD', () => {
   });
 
   test('cancel button closes modal without saving', async ({ page }) => {
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'pom');
     await page.fill('#card-ru', 'дерево');
     await page.click('#modal-card .btn-ghost');
@@ -146,12 +146,17 @@ test.describe('Cards CRUD', () => {
     const countBefore = await page.locator('#ready-count-line').textContent();
 
     await page.click('#nav-cards');
-    await page.click('#btn-add-card');
+    await page.click('[data-testid="btn-add-card"]');
     await page.fill('#card-ro', 'ploaie');
     await page.fill('#card-ru', 'дождь');
     await page.click('#modal-card .btn-primary');
 
     await page.click('#nav-study');
+    await page.waitForFunction(
+      (before) => document.getElementById('ready-count-line')?.textContent !== before,
+      countBefore,
+      { timeout: 3000 }
+    );
     const countAfter = await page.locator('#ready-count-line').textContent();
     expect(countAfter).not.toEqual(countBefore);
   });

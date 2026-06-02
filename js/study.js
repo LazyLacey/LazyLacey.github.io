@@ -104,7 +104,7 @@ function renderReadyChips() {
   }
 
   container.innerHTML = html;
-  scheduleUpdateReadyCount();
+  updateReadyCount();
 }
 
 function openStudyGroupDrawer() {
