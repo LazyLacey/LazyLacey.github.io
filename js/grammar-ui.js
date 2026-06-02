@@ -67,7 +67,7 @@ function renderTable(table) {
   return `<div class="gr-table-wrap"><table class="gr-table"><thead><tr>${headers}</tr></thead><tbody>${rows}</tbody></table></div>`
 }
 
-function renderExamples(examples, onAddCard) {
+function renderExamples(examples) {
   return `<div class="gr-examples">${examples.map(ex => `
     <div class="gr-example">
       <div class="gr-example-text">
@@ -75,11 +75,10 @@ function renderExamples(examples, onAddCard) {
         <div class="gr-example-ru">${esc(ex.ru)}</div>
         ${ex.note ? `<div class="gr-example-note">${esc(ex.note)}</div>` : ''}
       </div>
-      ${onAddCard ? `<button class="gr-add-btn" data-ro="${esc(ex.ro)}" data-ru="${esc(ex.ru)}" data-note="${esc(ex.note||'')}">+ карточка</button>` : ''}
     </div>`).join('')}</div>`
 }
 
-function renderTopics(topics, onAddCard) {
+function renderTopics(topics) {
   return topics.map(topic => `
     <div class="gr-topic-card" data-topic-id="${topic.id}">
       <div class="gr-topic-head">
@@ -96,13 +95,13 @@ function renderTopics(topics, onAddCard) {
             <div class="gr-section-title">${esc(section.title)}</div>
             <div class="gr-section-body">${esc(section.body)}</div>
             ${renderTable(section.table)}
-            ${renderExamples(section.examples, onAddCard)}
+            ${renderExamples(section.examples)}
           </div>`).join('')}
       </div>
     </div>`).join('')
 }
 
-function renderSearchResults(query, onAddCard) {
+function renderSearchResults(query) {
   const results = search(query)
   if (results.length === 0) {
     return `<div class="gr-no-results">Ничего не найдено по «${esc(query)}»</div>`
@@ -113,13 +112,10 @@ function renderSearchResults(query, onAddCard) {
         <div class="gr-result-item">
           <div class="gr-result-topic">${esc(topic.icon)} ${esc(topic.title)}</div>
           <div class="gr-result-section">${esc(section.title)}</div>
-          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px">
-            <div>
-              <div class="gr-result-ro">${esc(example.ro)}</div>
-              <div class="gr-result-ru">${esc(example.ru)}</div>
-              ${example.note ? `<div class="gr-result-note">${esc(example.note)}</div>` : ''}
-            </div>
-            ${onAddCard ? `<button class="gr-add-btn" data-ro="${esc(example.ro)}" data-ru="${esc(example.ru)}" data-note="${esc(example.note||'')}">+ карточка</button>` : ''}
+          <div>
+            <div class="gr-result-ro">${esc(example.ro)}</div>
+            <div class="gr-result-ru">${esc(example.ru)}</div>
+            ${example.note ? `<div class="gr-result-note">${esc(example.note)}</div>` : ''}
           </div>
         </div>`
     } else {
@@ -139,7 +135,7 @@ function renderGrammar(container, options = {}) {
     : container
   if (!el) { console.error('Grammar: контейнер не найден:', container); return }
 
-  const { onAddCard, topics: topicFilter } = options
+  const { topics: topicFilter } = options
   const visibleTopics = topicFilter
     ? grammarTopics.filter(t => topicFilter.includes(t.id))
     : grammarTopics
@@ -149,7 +145,7 @@ function renderGrammar(container, options = {}) {
       <div class="gr-search-wrap">
         <input class="gr-search" type="search" placeholder="Поиск по грамматике..." autocomplete="off" />
       </div>
-      <div class="gr-topics">${renderTopics(visibleTopics, onAddCard)}</div>
+      <div class="gr-topics">${renderTopics(visibleTopics)}</div>
       <div class="gr-search-results"></div>
     </div>`
 
@@ -159,8 +155,6 @@ function renderGrammar(container, options = {}) {
 
   function toggle(e) {
     const card = e.target.closest('.gr-topic-card')
-    const btn = e.target.closest('.gr-add-btn')
-    if (btn) return
     if (!card) return
     const isOpen = card.classList.contains('open')
     topicsEl.querySelectorAll('.gr-topic-card.open').forEach(c => c.classList.remove('open'))
@@ -168,33 +162,6 @@ function renderGrammar(container, options = {}) {
     card.querySelector('.gr-topic-head').scrollIntoView({ block: 'start' })
   }
   topicsEl.addEventListener('click', toggle)
-
-  // Use variables so cleanup can removeEventListener across the if-block boundary
-  let topicsClickHandler = null;
-  let searchResClickHandler = null;
-
-  if (onAddCard) {
-    topicsClickHandler = function(e) {
-      const btn = e.target.closest('.gr-add-btn')
-      if (!btn) return
-      e.stopPropagation()
-      const { ro, ru, note } = btn.dataset
-      onAddCard({ ro, ru, note: note || '' })
-      btn.textContent = '✓ добавлено'
-      btn.classList.add('added')
-    }
-    topicsEl.addEventListener('click', topicsClickHandler)
-
-    searchResClickHandler = function(e) {
-      const btn = e.target.closest('.gr-add-btn')
-      if (!btn) return
-      const { ro, ru, note } = btn.dataset
-      onAddCard({ ro, ru, note: note || '' })
-      btn.textContent = '✓ добавлено'
-      btn.classList.add('added')
-    }
-    searchResultsEl.addEventListener('click', searchResClickHandler)
-  }
 
   let searchTimer = null
   function input() {
@@ -208,7 +175,7 @@ function renderGrammar(container, options = {}) {
       } else {
         topicsEl.classList.add('hidden')
         searchResultsEl.classList.add('active')
-        searchResultsEl.innerHTML = renderSearchResults(q, onAddCard)
+        searchResultsEl.innerHTML = renderSearchResults(q)
       }
     }, 200)
   }
@@ -225,10 +192,6 @@ function renderGrammar(container, options = {}) {
 
   return function cleanup() {
     topicsEl.removeEventListener('click', toggle)
-    if (onAddCard) {
-      topicsEl.removeEventListener('click', topicsClickHandler)
-      searchResultsEl.removeEventListener('click', searchResClickHandler)
-    }
     searchInput.removeEventListener('input', input)
     searchInput.removeEventListener('search', onSearchClear)
     clearTimeout(searchTimer)

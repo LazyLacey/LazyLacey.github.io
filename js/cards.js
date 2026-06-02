@@ -1,16 +1,5 @@
 // ===== CARDS & GROUPS =====
 
-async function addCardFromGrammar(ro, ru, note) {
-  if (!AppState.groups.length) { showToast('Сначала создайте группу', 'red'); return; }
-  const gramGroup = AppState.groups.find(g => g.name === 'Грамматика') || AppState.groups[0];
-  const exists = AppState.cards.find(c => c.ro === ro && c.groupId === gramGroup.id);
-  if (exists) { showToast('Уже в карточках ✓'); return; }
-  await dbPut('cards', { ro, ru, groupId: gramGroup.id, note: note || '' });
-  AppState.cards = await dbGetAll('cards');
-  invalidate('cards', 'ready');
-  showToast('Добавлено в карточки ✓');
-}
-
 function renderFilterChips() {
   const wrap = document.getElementById('cards-filter-chips');
   let html = `<div class="chip ${AppState.cardFilter === null ? 'active' : ''}" onclick="setCardFilter(null)">Все</div>`;
@@ -304,7 +293,6 @@ async function deleteGroup(id) {
 document.getElementById('btn-add-group').onclick = openAddGroup;
 
 Object.assign(window, {
-  addCardFromGrammar,
   renderFilterChips,
   setCardFilter,
   renderCardsPage,

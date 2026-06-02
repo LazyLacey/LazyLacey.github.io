@@ -1022,15 +1022,11 @@ select {
 .gr-table tr:nth-child(even) td { background:rgba(255,255,255,0.02); }
 
 /* Примеры */
-.gr-examples { display:flex; flex-direction:column; gap:6px; }
-.gr-example { background:var(--bg3,#1e1e35); border-radius:10px; padding:10px 12px; display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
-.gr-example-text { flex:1; min-width:0; }
+.gr-examples { display:flex; flex-direction:column; gap:10px; }
+.gr-example { border-left:2px solid var(--accent,#c8a96e); padding:4px 12px; }
 .gr-example-ro { font-family:'Syne',sans-serif; font-size:14px; font-weight:600; color:var(--text,#f0eee8); line-height:1.4; }
 .gr-example-ru { font-size:12px; color:var(--text2,#a09e98); margin-top:2px; }
-.gr-example-note { font-size:11px; color:var(--text3,#6a6860); margin-top:3px; font-style:italic; }
-.gr-add-btn { flex-shrink:0; background:var(--accent-a15); border:1px solid var(--accent-a20); border-radius:8px; color:var(--accent,#c8a96e); font-size:11px; font-family:'DM Sans',sans-serif; padding:4px 9px; cursor:pointer; white-space:nowrap; transition:all 0.15s; align-self:center; }
-.gr-add-btn:active { background:var(--accent-a25); transform:scale(0.95); }
-.gr-add-btn.added { background:var(--green-a12); border-color:var(--green-a25); color:var(--green,#5ec49a); pointer-events:none; }
+.gr-example-note { font-size:11px; color:var(--text3,#6a6860); margin-top:2px; font-style:italic; }
 
 /* Результаты поиска */
 .gr-search-results { flex:1; overflow-y:auto; padding:8px 16px 100px; display:none; }

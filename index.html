@@ -501,6 +501,7 @@ async function onLangChange(id) {
   const lang = (window.LANGUAGES || {})[id];
   if (!lang) return;
   await _loadGrammarForLang(lang);
+  resetGrammar();
   await switchLangDB();
   AppState.groups = await dbGetAll('groups');
   AppState.cards  = await dbGetAll('cards');
@@ -748,9 +749,7 @@ function showPage(name) {
       // Store a cleanup handle on the element so resetGrammar() can tear down
       // listeners before re-rendering without duplicating them.
       if (container._grammarCleanup) container._grammarCleanup();
-      container._grammarCleanup = renderGrammar(container, {
-        onAddCard: ({ ro, ru, note }) => addCardFromGrammar(ro, ru, note),
-      });
+      container._grammarCleanup = renderGrammar(container);
     }
   }
 }
@@ -769,7 +768,7 @@ function resetGrammar() {
   if (AppState.currentPage === 'grammar') showPage('grammar');
 }
 
-// addCardFromGrammar, renderFilterChips/setCardFilter, renderCardsPage,
+// renderFilterChips/setCardFilter, renderCardsPage,
 // card/group modals, renderGroupsPage — в js/cards.js
 
 // renderReadyScreen, setReadyMode, startSession, study session, renderBrowse,
