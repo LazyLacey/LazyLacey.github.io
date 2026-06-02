@@ -484,6 +484,7 @@ Object.assign(window, {
   GTS,
   gtGetPacks, gtGetAllProgress,
   _gtEnterSession, renderGrammarTestQuestion,
+  validateTestPack,
   importTestPack, deleteTestPack,
   exportTestPackById, exportTestsBackup,
   renderGrammarTestsHome, switchGrammarTab,
