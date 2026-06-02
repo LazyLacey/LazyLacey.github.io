@@ -139,11 +139,11 @@ const OB_SCREENS = [
 
 let _obStep = 0;
 
-function showOnboarding() {
+function showOnboarding(step) {
   const overlay = document.getElementById('onboarding-overlay');
   if (!overlay) return;
   overlay.style.display = 'flex';
-  _obStep = 0;
+  _obStep = step ?? 0;
   renderObScreen();
 }
 
@@ -235,9 +235,14 @@ function renderObScreen() {
   }
 }
 
-function obSelectLang(id) {
+async function obSelectLang(id) {
   if (!window.LANGUAGES || !window.LANGUAGES[id]) return;
+  const prev = localStorage.getItem('lang') || 'romanian';
   localStorage.setItem('lang', id);
+  if (id !== prev) {
+    // Re-open DB connections for the new language without page reload
+    await switchLangDB();
+  }
   renderObScreen();
 }
 
@@ -257,6 +262,8 @@ function skipOnboarding() { finishOnboarding(); }
 function finishOnboarding() {
   document.getElementById('onboarding-overlay').style.display = 'none';
   try { localStorage.setItem('onboardingDone', '1'); } catch(e) {}
+  const chosenLang = localStorage.getItem('lang') || 'romanian';
+  if (chosenLang !== currentLang().id) location.reload();
 }
 
 function checkOnboarding() {

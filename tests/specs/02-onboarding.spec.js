@@ -1,5 +1,17 @@
 const { test, expect } = require('@playwright/test');
-const { resetState, waitForInit } = require('../helpers/db');
+const { resetState, waitForInit, seedCards } = require('../helpers/db');
+
+/** Navigate onboarding to the packs step (step 5, dynamicActions). */
+async function goToPacksStep(page) {
+  await page.evaluate(() => localStorage.removeItem('onboardingDone'));
+  await page.reload();
+  await waitForInit(page);
+  // Advance through 5 steps (0→5) via obNext()
+  for (let i = 0; i < 5; i++) {
+    await page.evaluate(() => obNext());
+  }
+  await page.waitForSelector('#ob-actions', { state: 'visible' });
+}
 
 test.describe('Onboarding', () => {
   test('shows onboarding overlay on first load (no localStorage flag)', async ({ page }) => {
@@ -61,5 +73,76 @@ test.describe('Onboarding', () => {
     await restartRow.click();
 
     await expect(page.locator('#onboarding-overlay')).toBeVisible();
+  });
+
+  test('loading a ready pack (cards) from onboarding imports cards into the DB', async ({ page }) => {
+    await resetState(page);
+    await goToPacksStep(page);
+
+    // Click the first non-download pack button (cards)
+    const cardsPack = page.locator('#ob-actions button').first();
+    await cardsPack.click();
+
+    // Toast confirms success
+    await expect(page.locator('#toast')).toContainText(/загружен|загружены/i, { timeout: 10000 });
+
+    // Cards are actually in the DB
+    const count = await page.evaluate(() => AppState.cards.length);
+    expect(count).toBeGreaterThan(0);
+  });
+
+  test('switching language in onboarding switches DB without reload', async ({ page }) => {
+    await resetState(page);
+    await page.evaluate(() => localStorage.removeItem('onboardingDone'));
+    await page.reload();
+    await waitForInit(page);
+
+    // Advance to the lang picker step (step 1) via obNext
+    await page.evaluate(() => obNext());
+    await page.waitForSelector('#ob-body button[onclick*="obSelectLang(\'spanish\')"]', { state: 'visible' });
+
+    // Pick Spanish — should NOT reload, just switch DB
+    await page.evaluate(() => obSelectLang('spanish'));
+
+    // Onboarding stays visible, no reload
+    await expect(page.locator('#onboarding-overlay')).toBeVisible();
+    // Language is now Spanish
+    const lang = await page.evaluate(() => currentLang().id);
+    expect(lang).toBe('spanish');
+  });
+
+  test('cards loaded from onboarding go into the correct language DB after lang switch', async ({ page }) => {
+    await resetState(page);
+    await goToPacksStep(page);
+
+    // Switch to Spanish via obSelectLang (switches DB without reload)
+    await page.evaluate(async () => {
+      await obSelectLang('spanish');
+    });
+    const lang = await page.evaluate(() => currentLang().id);
+    expect(lang).toBe('spanish');
+
+    // Click the cards pack — should load into SpanishVocab
+    const cardsPack = page.locator('#ob-actions button').first();
+    await cardsPack.click();
+    await expect(page.locator('#toast')).toContainText(/загружен|загружены/i, { timeout: 10000 });
+
+    const count = await page.evaluate(() => AppState.cards.length);
+    expect(count).toBeGreaterThan(0);
+
+    // Romanian DB stays empty
+    const romanianCount = await page.evaluate(async () => {
+      const req = indexedDB.open('RomanianVocab');
+      return new Promise(res => {
+        req.onsuccess = e => {
+          const d = e.target.result;
+          const tx = d.transaction('cards', 'readonly');
+          const countReq = tx.objectStore('cards').count();
+          countReq.onsuccess = () => { d.close(); res(countReq.result); };
+        };
+        req.onerror = () => res(0);
+      });
+    });
+    expect(romanianCount).toBe(0);
   });
 });

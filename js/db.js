@@ -333,9 +333,19 @@ function vdbDelete(store, key) {
 }
 
 // Expose all to global scope for main classic script
+async function switchLangDB() {
+  try { if (db)      db.close();      } catch(e) {}
+  try { if (testsDb) testsDb.close(); } catch(e) {}
+  try { if (verbsDb) verbsDb.close(); } catch(e) {}
+  await openDB();
+  await openTestsDB();
+  await openVerbsDB();
+}
+
 Object.assign(window, {
   MAX_SESSIONS,
   openDB, dbGet, dbGetAll, dbPut, dbDelete, dbPutBatch, dbClear, dbDeleteBatch, dbGetAllByIndex,
   openTestsDB, tdbGet, tdbGetAll, tdbPut, tdbDelete, tdbClear, tdbPutBatch,
   openVerbsDB, vdbGet, vdbGetAll, vdbPut, vdbDelete,
+  switchLangDB,
 });
