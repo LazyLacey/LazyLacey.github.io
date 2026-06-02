@@ -247,8 +247,7 @@ async function obSelectLang(id) {
   const prev = localStorage.getItem('lang') || 'romanian';
   localStorage.setItem('lang', id);
   if (id !== prev) {
-    // Re-open DB connections for the new language without page reload
-    await switchLangDB();
+    await window.onLangChange?.(id);
   }
   renderObScreen();
 }
@@ -269,8 +268,6 @@ function skipOnboarding() { finishOnboarding(); }
 function finishOnboarding() {
   document.getElementById('onboarding-overlay').style.display = 'none';
   try { localStorage.setItem('onboardingDone', '1'); } catch(e) {}
-  const chosenLang = localStorage.getItem('lang') || 'romanian';
-  if (chosenLang !== currentLang().id) location.reload();
 }
 
 function checkOnboarding() {

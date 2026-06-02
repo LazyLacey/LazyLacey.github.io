@@ -477,11 +477,56 @@ const AppState = {
 
 
 let _initDone = false;
+const _grammarCache = {};
+
+async function _loadGrammarForLang(lang) {
+  if (lang.id in _grammarCache) {
+    window.grammarTopics = _grammarCache[lang.id];
+    window._grammarLoadFailed = false;
+    return;
+  }
+  try {
+    await import(/* @vite-ignore */ './' + lang.grammarFile);
+    _grammarCache[lang.id] = window.grammarTopics || [];
+    window._grammarLoadFailed = false;
+  } catch(e) {
+    _grammarCache[lang.id] = [];
+    window.grammarTopics = [];
+    window._grammarLoadFailed = true;
+  }
+}
+
+async function onLangChange(id) {
+  const lang = (window.LANGUAGES || {})[id];
+  if (!lang) return;
+  await _loadGrammarForLang(lang);
+  await switchLangDB();
+  AppState.groups = await dbGetAll('groups');
+  AppState.cards  = await dbGetAll('cards');
+  const allStats  = await dbGetAll('cardStats');
+  AppState.cardStats = new Map(allStats.map(s => [s.cardId, s]));
+  invalidateAggCache?.();
+  invalidateErrorCards?.();
+  for (const key of Object.keys(SETTINGS_DEFAULTS || {})) {
+    AppState.settings[key] = await getSetting(key, (SETTINGS_DEFAULTS || {})[key]);
+  }
+  AppState.studyQueue = [];
+  AppState.studyIndex = 0;
+  AppState.sessionResults = [];
+  AppState.currentSessionId = null;
+  AppState.studyFilter = null;
+  buildStudyQueue?.();
+  renderAll();
+  _applyLangLabels();
+  loadSettings?.();
+}
+window.onLangChange = onLangChange;
 
 // ===== INIT =====
 async function init() {
   try {
     await import(/* @vite-ignore */ './' + currentLang().grammarFile);
+    _grammarCache[currentLang().id] = window.grammarTopics || [];
   } catch(e) {
     window.grammarTopics = [];
     window._grammarLoadFailed = true;
@@ -610,9 +655,9 @@ function switchLang(id) {
   if (id === currentLang().id) return;
   const lang = window.LANGUAGES[id];
   if (!lang) return;
-  if (!confirm(`Переключить язык на ${lang.flag} ${lang.name}?\n\nПриложение перезагрузится. Данные текущего языка сохранятся.`)) return;
+  if (!confirm(`Переключить язык на ${lang.flag} ${lang.name}?\n\nДанные текущего языка сохранятся.`)) return;
   localStorage.setItem('lang', id);
-  location.reload();
+  onLangChange(id);
 }
 window.switchLang = switchLang;
 
