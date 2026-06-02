@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.3...v1.2.0) (2026-06-02)
+
+
+### Features
+
+* switch language without page reload via onLangChange ([6b9de0e](https://github.com/LazyLacey/LazyLacey.github.io/commit/6b9de0e9ddf74ae8748dba02a1e03bad6f606e0b))
+
+
+### Bug Fixes
+
+* doImportWordsOnly reads groups and cards from DB before dedup ([7b53d1f](https://github.com/LazyLacey/LazyLacey.github.io/commit/7b53d1f40bfc825d41272a33c21b03f309374990))
+
 ## [1.1.3](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.2...v1.1.3) (2026-06-02)
 
 
