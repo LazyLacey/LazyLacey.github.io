@@ -40,8 +40,15 @@ async function loadReadyPack(path, type) {
     const data = await resp.json();
 
     if (type === 'cards') {
-      await doImportReplace(data);
-      showToast('Карточки загружены ✓', 'green');
+      // Enrich cards with groupName so doImportWordsOnly maps groups correctly
+      // (pack files use numeric groupId; doImportWordsOnly deduplicates by name)
+      const groupById = {};
+      for (const g of (data.groups || [])) groupById[g.id] = g.name;
+      for (const c of (data.cards || [])) {
+        if (!c.groupName && c.groupId != null) c.groupName = groupById[c.groupId] || null;
+      }
+      await doImportWordsOnly(data);
+      // doImportWordsOnly shows its own toast with the added count
     } else if (type === 'tests') {
       const err = validateTestPack(data);
       if (err) { showToast(err, 'red'); return; }

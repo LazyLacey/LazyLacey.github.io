@@ -84,7 +84,7 @@ test.describe('Onboarding', () => {
     await cardsPack.click();
 
     // Toast confirms success
-    await expect(page.locator('#toast')).toContainText(/загружен|загружены/i, { timeout: 10000 });
+    await expect(page.locator('#toast')).toContainText(/добавлено|загружен/i, { timeout: 10000 });
 
     // Cards are actually in the DB
     const count = await page.evaluate(() => AppState.cards.length);
@@ -125,7 +125,7 @@ test.describe('Onboarding', () => {
     // Click the cards pack — should load into SpanishVocab
     const cardsPack = page.locator('#ob-actions button').first();
     await cardsPack.click();
-    await expect(page.locator('#toast')).toContainText(/загружен|загружены/i, { timeout: 10000 });
+    await expect(page.locator('#toast')).toContainText(/добавлено|загружен/i, { timeout: 10000 });
 
     const count = await page.evaluate(() => AppState.cards.length);
     expect(count).toBeGreaterThan(0);
