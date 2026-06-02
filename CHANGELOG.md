@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.2.0...v1.3.0) (2026-06-02)
+
+
+### Features
+
+* overhaul PWA icons and add iOS splash screen ([5e459f9](https://github.com/LazyLacey/LazyLacey.github.io/commit/5e459f9a4a33322a59411854292d8822fcaf6422))
+
 ## [1.2.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.3...v1.2.0) (2026-06-02)
 
 
