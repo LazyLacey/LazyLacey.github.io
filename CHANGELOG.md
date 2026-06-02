@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.0...v1.1.1) (2026-06-02)
+
+
+### Bug Fixes
+
+* ready pack loading and language switch in onboarding ([a42851a](https://github.com/LazyLacey/LazyLacey.github.io/commit/a42851ab2e35f0bddfdd7ba46db09d7af1ecdbd4))
+
 ## [1.1.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.0.0...v1.1.0) (2026-06-02)
 
 
