@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.2...v1.1.3) (2026-06-02)
+
+
+### Bug Fixes
+
+* deduplicate cards by ro+ru, export validateTestPack, fix pack counts ([a5316f1](https://github.com/LazyLacey/LazyLacey.github.io/commit/a5316f1adaa11137b3c1b29843443a121cad9726))
+* export validateTestPack to window so loadReadyPack can call it ([22aab52](https://github.com/LazyLacey/LazyLacey.github.io/commit/22aab5214f60b004dc1c8772e1566e8ec2983317))
+
 ## [1.1.2](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.1...v1.1.2) (2026-06-02)
 
 
