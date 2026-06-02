@@ -317,11 +317,18 @@ nav {
 
 /* ===== HEADER ===== */
 .page-header {
-  padding: 20px 20px 8px;
+  height: 68px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
+  box-sizing: border-box;
+}
+.page-header-action {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 .page-title {
   font-family: 'Syne', sans-serif;
@@ -754,7 +761,7 @@ select {
 /* ===== FEEDBACK ===== */
 .feedback-text { font-size: 13px; text-align: center; padding: 8px; color: var(--text3); display: none; }
 .feedback-text.visible { display: block; }
-.search-row { display:flex; align-items:center; gap:10px; padding:10px 20px; border-bottom:1px solid var(--border); flex-shrink:0; }
+.search-row { display:flex; align-items:center; gap:10px; height:52px; padding:0 20px; border-bottom:1px solid var(--border); flex-shrink:0; box-sizing:border-box; }
 .search-row > i { color:var(--text3); font-size:17px; flex-shrink:0; }
 .search-row input { flex:1; background:none; border:none; outline:none; color:var(--text); font-size:14px; font-family:'DM Sans',sans-serif; min-width:0; padding:0; }
 .search-row input::placeholder { color:var(--text3); }
@@ -968,10 +975,8 @@ select {
 
 /* ===== GRAMMAR ===== */
 /* Поиск */
-.gr-search-wrap { padding:12px 16px 8px; flex-shrink:0; }
-.gr-search { width:100%; background:var(--bg3,#1e1e35); border:1px solid var(--border,rgba(255,255,255,0.08)); border-radius:10px; color:var(--text,#f0eee8); font-family:'DM Sans',sans-serif; font-size:14px; padding:10px 14px; outline:none; -webkit-appearance:none; }
-.gr-search:focus { border-color:var(--accent,#c8a96e); }
-.gr-search::placeholder { color:var(--text3,#6a6860); }
+.gr-search { flex:1; background:none; border:none; outline:none; color:var(--text); font-family:'DM Sans',sans-serif; font-size:14px; padding:0; min-width:0; -webkit-appearance:none; }
+.gr-search::placeholder { color:var(--text3); }
 
 /* Список тем */
 .gr-topics { flex:1; overflow-y:auto; padding:4px 16px 100px; }
@@ -1021,15 +1026,11 @@ select {
 .gr-no-results { text-align:center; color:var(--text3,#6a6860); padding:40px 20px; font-size:14px; }
 
 /* ===== GRAMMAR TABS ===== */
-.gr-tabs { display:flex; gap:0; border-bottom:1px solid var(--border); padding:0 20px; flex-shrink:0; }
-.gr-tab { display:flex; align-items:center; gap:5px; padding:10px 14px; border-radius:0; border:none; border-bottom:2px solid transparent; margin-bottom:-1px; background:transparent; color:var(--text3); font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; cursor:pointer; transition:color 0.15s,border-color 0.15s; white-space:nowrap; }
-.gr-tab:active { opacity:0.7; }
-#gr-tab-rules.active { color:var(--accent); border-bottom-color:var(--accent); font-weight:600; }
-.cards-tabs { display:flex; gap:0; border-bottom:1px solid var(--border); padding:0 20px; flex-shrink:0; }
-.cards-tab { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:var(--text3); padding:10px 16px; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px; transition:color 0.15s,border-color 0.15s; }
-.cards-tab.active { color:var(--accent); border-bottom-color:var(--accent); font-weight:600; }
-#gr-tab-tests.active { color:var(--blue); border-bottom-color:var(--blue); font-weight:600; }
-#gr-tab-verbs.active { color:var(--green); border-bottom-color:var(--green); font-weight:600; }
+.page-tabs { display:flex; gap:0; border-bottom:1px solid var(--border); padding:0 20px; flex-shrink:0; height:32px; box-sizing:border-box; align-items:flex-start; }
+.page-tab { font-family:'DM Sans',sans-serif; font-size:14px; font-weight:500; color:var(--text3); padding:0 16px; border:none; background:none; cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px; transition:color 0.15s,border-color 0.15s; white-space:nowrap; height:100%; display:flex; align-items:flex-start; }
+.page-tab.active { color:var(--accent); border-bottom-color:var(--accent); font-weight:600; }
+#gr-tab-tests.active { color:var(--blue); border-bottom-color:var(--blue); }
+#gr-tab-verbs.active { color:var(--green); border-bottom-color:var(--green); }
 .vb-home { flex:1; overflow-y:auto; padding:8px 16px 100px; }
 .vb-verb-btn { display:flex; align-items:center; justify-content:space-between; width:100%; background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:12px 14px; margin-bottom:8px; cursor:pointer; font-family:'DM Sans',sans-serif; text-align:left; }
 .vb-verb-btn:active { transform:scale(0.98); }

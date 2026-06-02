@@ -9,7 +9,7 @@ test.describe('Navigation', () => {
   const tabs = [
     { id: 'nav-study',    page: 'page-study',    label: 'Study' },
     { id: 'nav-cards',    page: 'page-cards',    label: 'Cards' },
-    { id: 'nav-groups',   page: 'page-groups',   label: 'Groups' },
+    { id: 'nav-grammar',  page: 'page-grammar',  label: 'Grammar' },
     { id: 'nav-stats',    page: 'page-stats',    label: 'Stats' },
     { id: 'nav-settings', page: 'page-settings', label: 'Settings' },
   ];
@@ -44,8 +44,8 @@ test.describe('Navigation', () => {
   });
 
   test('clicking the same tab twice stays on the same page', async ({ page }) => {
-    await page.click('#nav-groups');
-    await page.click('#nav-groups');
-    await expect(page.locator('#page-groups')).toHaveClass(/active/);
+    await page.click('#nav-grammar');
+    await page.click('#nav-grammar');
+    await expect(page.locator('#page-grammar')).toHaveClass(/active/);
   });
 });

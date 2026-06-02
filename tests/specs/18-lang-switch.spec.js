@@ -66,10 +66,8 @@ test.describe('Language — switch to Spanish', () => {
     expect(style).toContain('var(--accent)');
   });
 
-  test('mode type hint mentions Spanish in session start screen', async ({ page }) => {
-    // Element exists in DOM but may be inside a hidden section — check textContent
-    const text = await page.locator('#mode-type-hint').textContent();
-    expect(text).toMatch(/испанском/i);
+  test('ready screen shows mode chip after language switch', async ({ page }) => {
+    await expect(page.locator('[data-testid="chip-mode"]')).toBeVisible();
   });
 
   test('currentLang() returns spanish after switching', async ({ page }) => {

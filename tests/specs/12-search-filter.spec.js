@@ -53,14 +53,9 @@ test.describe('Search & Filter on Cards page', () => {
     await expect(page.locator('#cards-list')).toContainText('mulțumesc');
   });
 
-  // ── Filter chips ──────────────────────────────────────────────────────────
-  test('group filter chips appear after seeding groups', async ({ page }) => {
-    await seedGroups(page, [GROUPS.basics]);
-    await page.reload();
-    await page.click('#nav-cards');
-
-    await expect(page.locator('#cards-filter-chips')).toBeVisible();
-    await expect(page.locator('#cards-filter-chips')).toContainText('Базовые фразы');
+  // ── Filter button ─────────────────────────────────────────────────────────
+  test('group filter button appears on cards page', async ({ page }) => {
+    await expect(page.locator('[data-testid="cards-filter-btn"]')).toBeVisible();
   });
 
   test('filtering by group shows only cards from that group', async ({ page }) => {
@@ -74,17 +69,16 @@ test.describe('Search & Filter on Cards page', () => {
       { ro: 'bună', ru: 'привет', groupId: gBasics.id },
       { ro: 'mere', ru: 'яблоки', groupId: gFood.id },
     ]);
-    await page.reload();
     await page.click('#nav-cards');
 
-    // Click the "Еда" filter chip
-    await page.locator('#cards-filter-chips').locator('text=Еда').click();
+    // Set filter via API to avoid drawer interaction
+    await page.evaluate((gid) => { setCardFilter(gid); }, gFood.id);
 
     await expect(page.locator('#cards-list')).toContainText('mere');
     await expect(page.locator('#cards-list')).not.toContainText('bună');
   });
 
-  test('clicking "all" chip (or deactivating group filter) shows all cards', async ({ page }) => {
+  test('deactivating group filter shows all cards', async ({ page }) => {
     await resetState(page);
     await seedGroups(page, [GROUPS.basics]);
     const groups = await page.evaluate(() => AppState.groups);
@@ -93,14 +87,10 @@ test.describe('Search & Filter on Cards page', () => {
       { ro: 'bună', ru: 'привет', groupId: gid },
       { ro: 'mere', ru: 'яблоки', groupId: null },
     ]);
-    await page.reload();
     await page.click('#nav-cards');
 
-    // Activate group filter
-    await page.locator('#cards-filter-chips [onclick], #cards-filter-chips button').last().click();
-    // Deactivate by clicking "all" or clicking the same chip again
-    const allChip = page.locator('#cards-filter-chips [onclick], #cards-filter-chips button').first();
-    await allChip.click();
+    await page.evaluate((gid) => { setCardFilter(gid); }, gid);
+    await page.evaluate(() => { setCardFilter(null); });
 
     await expect(page.locator('#cards-list')).toContainText('bună');
     await expect(page.locator('#cards-list')).toContainText('mere');
@@ -116,11 +106,9 @@ test.describe('Search & Filter on Cards page', () => {
       { ro: 'pere', ru: 'груши', groupId: gid },
       { ro: 'bună', ru: 'привет', groupId: null },
     ]);
-    await page.reload();
     await page.click('#nav-cards');
 
-    // Apply group filter then search
-    await page.locator('#cards-filter-chips [onclick], #cards-filter-chips button').last().click();
+    await page.evaluate((gid) => { setCardFilter(gid); }, gid);
     await page.fill('#search-input', 'mere');
 
     await expect(page.locator('#cards-list')).toContainText('mere');

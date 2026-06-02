@@ -33,12 +33,6 @@ function getStudyPool() {
   return AppState.cards.filter(c => AppState.studyFilter.includes(c.groupId));
 }
 
-let _updateReadyCountTimer = null;
-function scheduleUpdateReadyCount() {
-  clearTimeout(_updateReadyCountTimer);
-  _updateReadyCountTimer = setTimeout(updateReadyCount, 50);
-}
-
 async function updateReadyCount() {
   const el = document.getElementById('ready-count-line');
   if (!el) return;

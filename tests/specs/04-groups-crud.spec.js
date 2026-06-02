@@ -5,7 +5,8 @@ const { CARDS, GROUPS } = require('../helpers/fixtures');
 test.describe('Groups CRUD', () => {
   test.beforeEach(async ({ page }) => {
     await resetState(page);
-    await page.click('#nav-groups');
+    await page.evaluate(() => showPage('groups'));
+    await page.waitForSelector('#groups-list', { state: 'attached' });
   });
 
   // ── Empty state ──────────────────────────────────────────────────────────
@@ -15,13 +16,13 @@ test.describe('Groups CRUD', () => {
 
   // ── Add group ────────────────────────────────────────────────────────────
   test('opens add-group modal on button click', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await expect(page.locator('#modal-group')).toBeVisible();
     await expect(page.locator('#modal-group-title')).toContainText(/новая/i);
   });
 
   test('adds a group and it appears in the list', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await page.fill('#group-name', 'Базовые фразы');
     await page.click('#modal-group .btn-primary');
 
@@ -30,7 +31,7 @@ test.describe('Groups CRUD', () => {
   });
 
   test('shows a toast after saving a group', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await page.fill('#group-name', 'Цвета');
     await page.click('#modal-group .btn-primary');
 
@@ -40,7 +41,7 @@ test.describe('Groups CRUD', () => {
 
   // ── Validation ───────────────────────────────────────────────────────────
   test('does not save group with empty name', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await page.click('#modal-group .btn-primary');
 
     await expect(page.locator('#modal-group')).toBeVisible();
@@ -48,7 +49,7 @@ test.describe('Groups CRUD', () => {
   });
 
   test('cancel closes modal without saving', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await page.fill('#group-name', 'Временная группа');
     await page.click('#modal-group .btn-ghost');
 
@@ -58,11 +59,10 @@ test.describe('Groups CRUD', () => {
 
   // ── Edit group ───────────────────────────────────────────────────────────
   test('opens edit modal with pre-filled name', async ({ page }) => {
-    // seedGroups updates AppState directly — no reload needed
     await seedGroups(page, [GROUPS.food]);
 
-    // Each group has 2 .btn-icon buttons: export (first) and edit (last)
-    await page.locator('#groups-list .btn-icon').last().click();
+    await page.locator('#groups-list .group-more-btn').first().click();
+    await page.locator('.group-menu.open .group-menu-item').first().click();
     await expect(page.locator('#modal-group')).toBeVisible();
     await expect(page.locator('#group-name')).toHaveValue('Еда');
     await expect(page.locator('#modal-group-title')).toContainText(/редактировать/i);
@@ -71,7 +71,8 @@ test.describe('Groups CRUD', () => {
   test('edit updates the group name in the list', async ({ page }) => {
     await seedGroups(page, [GROUPS.food]);
 
-    await page.locator('#groups-list .btn-icon').last().click();
+    await page.locator('#groups-list .group-more-btn').first().click();
+    await page.locator('.group-menu.open .group-menu-item').first().click();
     await page.fill('#group-name', 'Напитки');
     await page.click('#modal-group .btn-primary');
 
@@ -83,9 +84,9 @@ test.describe('Groups CRUD', () => {
   test('delete button removes the group', async ({ page }) => {
     await seedGroups(page, [GROUPS.food]);
 
-    await page.locator('#groups-list .btn-icon').last().click();
     page.once('dialog', dialog => dialog.accept());
-    await page.locator('#group-delete-wrap button').click();
+    await page.locator('#groups-list .group-more-btn').first().click();
+    await page.locator('.group-menu.open .group-menu-item.danger').click();
 
     await expect(page.locator('#groups-list')).not.toContainText('Еда');
     await expect(page.locator('#toast')).toContainText(/удалена/i);
@@ -94,9 +95,9 @@ test.describe('Groups CRUD', () => {
   test('deleting the last group restores empty state', async ({ page }) => {
     await seedGroups(page, [GROUPS.numbers]);
 
-    await page.locator('#groups-list .btn-icon').last().click();
     page.once('dialog', dialog => dialog.accept());
-    await page.locator('#group-delete-wrap button').click();
+    await page.locator('#groups-list .group-more-btn').first().click();
+    await page.locator('.group-menu.open .group-menu-item.danger').click();
 
     await expect(page.locator('#groups-list')).toContainText(/нет групп/i);
   });
@@ -120,12 +121,12 @@ test.describe('Groups CRUD', () => {
 
   // ── Group appears in card modal select ───────────────────────────────────
   test('new group appears in add-card group select', async ({ page }) => {
-    await page.click('#btn-add-group');
+    await page.click('#btn-add-cards-page');
     await page.fill('#group-name', 'Животные');
     await page.click('#modal-group .btn-primary');
 
-    await page.click('#nav-cards');
-    await page.click('#btn-add-card');
+    await page.evaluate(() => showPage('cards'));
+    await page.click('#btn-add-cards-page');
 
     const options = page.locator('#card-group option');
     const texts = await options.allTextContents();

@@ -33,7 +33,24 @@ function emptyState(icon, title, sub) {
   return `<div class="empty-state"><div class="empty-icon">${icon}</div><div class="empty-title">${title}</div><div class="empty-sub">${sub}</div></div>`;
 }
 
+function pageTabs(tabs) {
+  return `<div class="page-tabs">${tabs.map(t =>
+    `<button class="page-tab${t.active ? ' active' : ''}" id="${t.id}" onclick="${t.onclick}">${esc(t.label)}</button>`
+  ).join('')}</div>`;
+}
+
+function pageHeader(titleHTML, actionHTML = '') {
+  return `<div class="page-header"><div class="page-title">${titleHTML}</div><div class="page-header-action">${actionHTML}</div></div>`;
+}
+
+function searchRow(inputId, placeholder = 'Поиск...', extraHTML = '') {
+  return `<div class="search-row"><i class="ph ph-magnifying-glass"></i><input type="search" id="${inputId}" placeholder="${placeholder}" autocomplete="off">${extraHTML}</div>`;
+}
+
 window.esc = esc;
 window.diffHighlightInline = diffHighlightInline;
 window.plural = plural;
 window.emptyState = emptyState;
+window.pageTabs = pageTabs;
+window.pageHeader = pageHeader;
+window.searchRow = searchRow;

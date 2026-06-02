@@ -142,7 +142,8 @@ function renderGrammar(container, options = {}) {
 
   el.innerHTML = `
     <div class="gr-wrap">
-      <div class="gr-search-wrap">
+      <div class="search-row">
+        <i class="ph ph-magnifying-glass"></i>
         <input class="gr-search" type="search" placeholder="Поиск по грамматике..." autocomplete="off" />
       </div>
       <div class="gr-topics">${renderTopics(visibleTopics)}</div>
