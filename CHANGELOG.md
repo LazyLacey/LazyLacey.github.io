@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.0.0...v1.1.0) (2026-06-02)
+
+
+### Features
+
+* complete Spanish content — grammar packs, test pack, verb pack ([09b91d9](https://github.com/LazyLacey/LazyLacey.github.io/commit/09b91d98731146bf355826653dd0c1e023fa7956))
+
+
+### Bug Fixes
+
+* auto-merge release PRs after checks pass, fix flaky e2e tests ([35ac4a1](https://github.com/LazyLacey/LazyLacey.github.io/commit/35ac4a117fff9c9d9f3103662e44cfa46f8f24ef))
+
 ## 1.0.0 (2026-06-01)
 
 
