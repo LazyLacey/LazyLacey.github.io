@@ -188,16 +188,20 @@ function renderGroupsPage() {
         <div class="group-name">${esc(g.name)}</div>
         <div class="group-count">${plural(count, 'карточка', 'карточки', 'карточек')}</div>
       </div>
-      <div class="group-actions">
-        <button class="btn-icon" title="Экспорт группы" onclick="exportGroup(${g.id})">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        </button>
-        <button class="btn-icon" onclick="openEditGroup(${g.id})">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        </button>
+      <div class="group-more">
+        <button class="group-more-btn" onclick="toggleGroupMenu(this)">···</button>
+        <div class="group-menu">
+          <div class="group-menu-item" onclick="closeGroupMenus();openEditGroup(${g.id})"><i class="ph ph-pencil-simple"></i>Редактировать</div>
+          <div class="group-menu-item" onclick="closeGroupMenus();exportGroup(${g.id})"><i class="ph ph-download-simple"></i>Экспорт</div>
+          <div class="group-menu-item danger" onclick="closeGroupMenus();deleteGroup(${g.id})"><i class="ph ph-trash"></i>Удалить</div>
+        </div>
       </div>
     </div>`;
   }).join('');
+
+  document.getElementById('groups-list').addEventListener('click', e => {
+    if (!e.target.closest('.group-more')) closeGroupMenus();
+  }, { once: true });
 }
 
 function openAddGroup() {
@@ -290,6 +294,21 @@ async function deleteGroup(id) {
 }
 
 
+function toggleGroupMenu(btn) {
+  const menu = btn.nextElementSibling;
+  const isOpen = menu.classList.contains('open');
+  closeGroupMenus();
+  if (!isOpen) menu.classList.add('open');
+}
+
+function closeGroupMenus() {
+  document.querySelectorAll('.group-menu.open').forEach(m => m.classList.remove('open'));
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.group-more')) closeGroupMenus();
+});
+
 Object.assign(window, {
   renderFilterChips,
   setCardFilter,
@@ -301,6 +320,8 @@ Object.assign(window, {
   renderGroupsPage,
   openAddGroup,
   openEditGroup,
+  toggleGroupMenu,
+  closeGroupMenus,
   saveGroup,
   deleteGroup,
 });
