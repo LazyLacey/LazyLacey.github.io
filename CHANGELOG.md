@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.3.0...v1.4.0) (2026-06-02)
+
+
+### Features
+
+* move Grammar to bottom nav, merge Cards/Groups into one page ([6e15cdd](https://github.com/LazyLacey/LazyLacey.github.io/commit/6e15cdd960974d827962d29b7547acef623a2317))
+* replace group action buttons with three-dot dropdown menu ([79575c4](https://github.com/LazyLacey/LazyLacey.github.io/commit/79575c411565fd7eeefcf75f2e9e4f262b8bbfc5))
+
+
+### Bug Fixes
+
+* reset grammar on lang switch, remove add-from-grammar, restyle examples ([3d4a458](https://github.com/LazyLacey/LazyLacey.github.io/commit/3d4a45814c5d0baf390f81e8a2ae254429a18f68))
+
 ## [1.3.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.2.0...v1.3.0) (2026-06-02)
 
 
