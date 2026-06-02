@@ -509,15 +509,15 @@ async function doImportWordsOnly(data) {
   AppState.groups = await dbGetAll('groups');
   AppState.groups.forEach(g => { groupNameToId[g.name.toLowerCase()] = g.id; });
 
-  const existingKeys = new Set(AppState.cards.map(c => `${c.ro}__${c.groupId}`));
+  const existingKeys = new Set(AppState.cards.map(c => `${c.ro.toLowerCase()}__${(c.ru || '').toLowerCase()}`));
   for (const c of (data.cards || [])) {
     if (!c.ro) continue;
+    const key = `${c.ro.toLowerCase()}__${(c.ru || '').toLowerCase()}`;
+    if (existingKeys.has(key)) continue;
     let gid = null;
     if (c.groupName) gid = groupNameToId[c.groupName.toLowerCase()] ?? null;
     else if (c.groupId) gid = AppState.groups.find(g => g.id === c.groupId)?.id ?? null;
     if (!gid && AppState.groups.length > 0) gid = AppState.groups[0].id;
-    const key = `${c.ro}__${gid}`;
-    if (existingKeys.has(key)) continue;
     await dbPut('cards', {ro: c.ro, ru: c.ru || '', groupId: gid, note: c.note || ''});
     existingKeys.add(key);
     addedCards++;

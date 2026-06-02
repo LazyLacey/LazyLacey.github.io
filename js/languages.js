@@ -11,7 +11,7 @@ const LANGUAGES = {
     diacriticHints: ['ă', 'â', 'î', 'ș', 'ț'],
     verbPronouns: ['eu', 'tu', 'el/ea', 'noi', 'voi', 'ei/ele'],
     readyPacks: [
-      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~800 слов · 14 тем',                fn: "loadReadyPack('data/romanian-cards.json','cards')" },
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1600 слов · 42 темы',               fn: "loadReadyPack('data/romanian-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — пак 1',   sub: 'Артикли, падежи, времена, глаголы', fn: "loadReadyPack('data/grammar-tests.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '20 базовых глаголов',                fn: "loadReadyPack('data/verbs-pack-1.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
@@ -29,7 +29,7 @@ const LANGUAGES = {
     diacriticHints: ['á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', '¡'],
     verbPronouns: ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'],
     readyPacks: [
-      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 42 темы',                fn: "loadReadyPack('data/spanish-cards.json','cards')" },
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 45 тем',                fn: "loadReadyPack('data/spanish-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '10 тем, 100 вопросов A1–A2',          fn: "loadReadyPack('data/grammar-tests-spanish.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '10 базовых глаголов, 3 времени',       fn: "loadReadyPack('data/verbs-spanish.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
