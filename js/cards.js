@@ -173,7 +173,6 @@ async function deleteCardById(id) {
   showToast('Удалено');
 }
 
-document.getElementById('btn-add-card').onclick = openAddCard;
 
 // ===== GROUPS PAGE =====
 function renderGroupsPage() {
@@ -290,7 +289,6 @@ async function deleteGroup(id) {
   showToast('Группа удалена');
 }
 
-document.getElementById('btn-add-group').onclick = openAddGroup;
 
 Object.assign(window, {
   renderFilterChips,

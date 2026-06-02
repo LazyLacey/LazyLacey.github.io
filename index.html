@@ -49,9 +49,6 @@ window._grammarLoadFailed = false;
       <div class="ready-top">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
           <div class="ready-label" id="ready-lang-label" style="margin-bottom:0">Română</div>
-          <button class="btn-icon" onclick="showPage('grammar')" title="Грамматика" style="border-color:transparent;background:transparent">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </button>
         </div>
         <div class="ready-title" id="ready-study-title">Учим<br>румынский</div>
         <div class="ready-count-line" id="ready-count-line">Загрузка...</div>
@@ -138,23 +135,23 @@ window._grammarLoadFailed = false;
   <!-- ===== CARDS PAGE ===== -->
   <div id="page-cards" class="page">
     <div class="page-header">
-      <div class="page-title">Карт<span>очки</span></div>
-      <button class="btn btn-primary" id="btn-add-card" style="padding:10px 14px">+ Добавить</button>
+      <div class="page-title" id="cards-page-title">Карт<span>очки</span></div>
+      <button class="btn btn-primary" id="btn-add-cards-page" onclick="addFromCardsPage()" style="padding:10px 14px">+ Добавить</button>
     </div>
-    <div class="search-wrap">
-      <input type="search" id="search-input" placeholder="Поиск..." autocomplete="off">
+    <div class="cards-tabs">
+      <button class="cards-tab active" id="tab-cards" onclick="switchCardsTab('cards')">Карточки</button>
+      <button class="cards-tab" id="tab-groups" onclick="switchCardsTab('groups')">Группы</button>
     </div>
-    <div class="filter-chips" id="cards-filter-chips" style="padding-top:12px"></div>
-    <div class="list-scroll" id="cards-list"></div>
-  </div>
-
-  <!-- ===== GROUPS PAGE ===== -->
-  <div id="page-groups" class="page">
-    <div class="page-header">
-      <div class="page-title">Гру<span>ппы</span></div>
-      <button class="btn btn-primary" id="btn-add-group" style="padding:10px 14px">+ Добавить</button>
+    <div id="cards-tab-content" style="display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden">
+      <div class="search-wrap">
+        <input type="search" id="search-input" placeholder="Поиск..." autocomplete="off">
+      </div>
+      <div class="filter-chips" id="cards-filter-chips" style="padding-top:12px"></div>
+      <div class="list-scroll" id="cards-list"></div>
     </div>
-    <div class="groups-list" id="groups-list"></div>
+    <div id="groups-tab-content" style="display:none;flex:1;overflow-y:auto;min-height:0">
+      <div class="groups-list" id="groups-list"></div>
+    </div>
   </div>
 
   <!-- ===== STATS PAGE ===== -->
@@ -358,9 +355,9 @@ window._grammarLoadFailed = false;
       <i class="ph ph-cards-three"></i>
       Карточки
     </button>
-    <button class="nav-btn" onclick="showPage('groups')" id="nav-groups">
-      <i class="ph ph-folder"></i>
-      Группы
+    <button class="nav-btn" onclick="showPage('grammar')" id="nav-grammar">
+      <i class="ph ph-books"></i>
+      Грамматика
     </button>
     <button class="nav-btn" onclick="showPage('stats')" id="nav-stats">
       <i class="ph ph-chart-bar"></i>
@@ -713,8 +710,27 @@ function renderAll() {
   renderReadyScreen();
 }
 
+// ===== CARDS/GROUPS TABS =====
+function switchCardsTab(tab) {
+  const isCards = tab === 'cards';
+  document.getElementById('cards-tab-content').style.display = isCards ? 'flex' : 'none';
+  document.getElementById('cards-tab-content').style.flexDirection = isCards ? 'column' : '';
+  document.getElementById('groups-tab-content').style.display = isCards ? 'none' : 'flex';
+  document.getElementById('groups-tab-content').style.flexDirection = 'column';
+  document.getElementById('tab-cards').classList.toggle('active', isCards);
+  document.getElementById('tab-groups').classList.toggle('active', !isCards);
+  if (!isCards && _initDone) renderGroupsPage();
+}
+window.switchCardsTab = switchCardsTab;
+
+function addFromCardsPage() {
+  document.getElementById('tab-groups').classList.contains('active') ? openAddGroup() : openAddCard();
+}
+window.addFromCardsPage = addFromCardsPage;
+
 // ===== NAVIGATION =====
 function showPage(name) {
+  if (name === 'groups') { showPage('cards'); switchCardsTab('groups'); return; }
   AppState.currentPage = name;
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -724,8 +740,7 @@ function showPage(name) {
   if (name === 'stats') { renderStats(); _dirty.stats = false; }
   if (name === 'study') renderReadyScreen();
   if (name === 'settings') { initPersistSettingsRow(); loadSettings(); renderThemeDots(); }
-  if (name === 'cards') { if (_initDone) renderCardsPage(); }
-  if (name === 'groups') { if (_initDone) renderGroupsPage(); }
+  if (name === 'cards') { switchCardsTab('cards'); if (_initDone) renderCardsPage(); }
   if (name === 'grammar') {
     // Always reset to rules tab when navigating to grammar
     const rc = document.getElementById('grammar-container');
