@@ -492,6 +492,9 @@ async function doImportMergeHistory(data) {
 async function doImportWordsOnly(data) {
   let addedGroups = 0, addedCards = 0;
   const groupNameToId = {};
+
+  // Always read from DB — AppState may be stale (language switch, concurrent writes)
+  AppState.groups = await dbGetAll('groups');
   AppState.groups.forEach(g => { groupNameToId[g.name.toLowerCase()] = g.id; });
 
   for (const g of (data.groups || [])) {
@@ -502,6 +505,7 @@ async function doImportWordsOnly(data) {
       groupNameToId[key] = newId;
       addedGroups++;
     } catch(e) {
+      // Group with this name already exists in DB (unique constraint) — re-sync and continue
       AppState.groups = await dbGetAll('groups');
       AppState.groups.forEach(g2 => { groupNameToId[g2.name.toLowerCase()] = g2.id; });
     }
@@ -509,6 +513,7 @@ async function doImportWordsOnly(data) {
   AppState.groups = await dbGetAll('groups');
   AppState.groups.forEach(g => { groupNameToId[g.name.toLowerCase()] = g.id; });
 
+  AppState.cards = await dbGetAll('cards');
   const existingKeys = new Set(AppState.cards.map(c => `${c.ro.toLowerCase()}__${(c.ru || '').toLowerCase()}`));
   for (const c of (data.cards || [])) {
     if (!c.ro) continue;
