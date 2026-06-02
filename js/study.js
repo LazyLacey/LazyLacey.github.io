@@ -8,56 +8,29 @@ async function renderReadyScreen() {
   }
   _renderReadyPending = false;
   try {
-  _renderReadyInflight = true;
-  await getErrorCards(); // prime the cache before rendering
-  const sel = document.getElementById('ready-group-select');
-  if (!sel) return;
-  const cur = sel.value;
-  sel.innerHTML = '<option value="all">Все группы</option>' +
-    AppState.groups.map(g => `<option value="${g.id}">${esc(g.name)}</option>`).join('');
-  if (cur && [...sel.options].some(o => o.value === cur)) sel.value = cur;
+    _renderReadyInflight = true;
+    await getErrorCards(); // prime the cache before rendering
 
-  const gid = sel.value;
-  AppState.studyFilter = gid === 'all' ? null : parseInt(gid) || null;
-  const pool = AppState.studyFilter === null ? AppState.cards : AppState.cards.filter(c => String(c.groupId) === gid);
-  const countEl = document.getElementById('ready-count-line');
-  if (countEl) {
-    if (pool.length === 0) {
-      countEl.innerHTML = 'Нет карточек — добавьте слова';
-    } else {
-      buildStudyQueue();
-      const real = AppState.studyQueue.length;
-      const totalDue = pool.filter(c => isSrsOverdue(c)).length;
-      const extra = totalDue > real ? ` <span style="color:var(--text3);font-weight:400">из ${totalDue}</span>` : '';
-      countEl.innerHTML = real > 0
-        ? `<strong>${real}</strong>${extra} ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению сегодня`
-        : 'На сегодня всё повторено 🎉';
-    }
-  }
+    const rs  = document.getElementById('ready-screen');
+    const ss  = document.getElementById('study-session');
+    const nav = document.getElementsByTagName('nav')[0];
+    if (rs) rs.classList.remove('hidden');
+    if (ss) ss.style.display = 'none';
+    if (nav) nav.style.display = 'flex';
 
-  const rs  = document.getElementById('ready-screen');
-  const ss  = document.getElementById('study-session');
-  const nav = document.getElementsByTagName('nav')[0];
-  if (rs) rs.classList.remove('hidden');
-  if (ss) ss.style.display = 'none';
-  if (nav) nav.style.display = 'flex';
+    renderReadyChips();
   } finally {
     _renderReadyInflight = false;
     if (_renderReadyPending) renderReadyScreen();
   }
 }
 
-function toggleReadyOptions() {
-  const opts = document.getElementById('ready-options');
-  const isOpen = opts.dataset.open === '1';
-  if (isOpen) {
-    opts.style.display = 'none';
-    opts.dataset.open = '0';
-  } else {
-    opts.style.display = 'flex';
-    opts.style.flexDirection = 'column';
-    opts.dataset.open = '1';
-  }
+// no-op: legacy function kept for test compatibility
+function toggleReadyOptions() {}
+
+function getStudyPool() {
+  if (AppState.studyFilter === null) return AppState.cards;
+  return AppState.cards.filter(c => AppState.studyFilter.includes(c.groupId));
 }
 
 let _updateReadyCountTimer = null;
@@ -67,70 +40,174 @@ function scheduleUpdateReadyCount() {
 }
 
 async function updateReadyCount() {
-  const sel = document.getElementById('ready-group-select');
-  if (!sel) return;
-  const gid = sel.value;
-  AppState.studyFilter = gid === 'all' ? null : parseInt(gid) || null;
-  const pool = AppState.studyFilter === null ? AppState.cards : AppState.cards.filter(c => String(c.groupId) === gid);
   const el = document.getElementById('ready-count-line');
   if (!el) return;
+  const pool = getStudyPool();
   if (pool.length === 0) { el.innerHTML = 'Нет карточек — добавьте слова'; return; }
   if (AppState.studyMode === 'browse') {
-    el.innerHTML = `<strong>${pool.length}</strong> ${pool.length === 1 ? 'карточка' : pool.length <= 4 ? 'карточки' : 'карточек'} для просмотра`;
+    el.innerHTML = `<strong>${pool.length}</strong> ${plural(pool.length, 'карточка', 'карточки', 'карточек')} для просмотра`;
   } else if (AppState.studyMode === 'marathon') {
-    el.innerHTML = `<strong>${pool.length}</strong> ${pool.length === 1 ? 'карточка' : pool.length <= 4 ? 'карточки' : 'карточек'} — марафон без лимита`;
+    el.innerHTML = `<strong>${pool.length}</strong> ${plural(pool.length, 'карточка', 'карточки', 'карточек')} — марафон без лимита`;
   } else if (AppState.studyMode === 'errors') {
     const errCards = await getErrorCards();
-    el.innerHTML = errCards.length > 0 ? `<strong>${errCards.length}</strong> ${errCards.length === 1 ? 'карточка' : errCards.length <= 4 ? 'карточки' : 'карточек'} с ошибками` : 'Нет ошибок за последние ' + plural(AppState.settings.errorSessions, 'сессию', 'сессии', 'сессий') + ' 🎉';
+    el.innerHTML = errCards.length > 0
+      ? `<strong>${errCards.length}</strong> ${plural(errCards.length, 'карточка', 'карточки', 'карточек')} с ошибками`
+      : 'Нет ошибок за последние ' + plural(AppState.settings.errorSessions, 'сессию', 'сессии', 'сессий') + ' 🎉';
   } else {
     buildStudyQueue();
     const real = AppState.studyQueue.length;
     const totalDue = pool.filter(c => isSrsOverdue(c)).length;
     const extra = totalDue > real ? ` <span style="color:var(--text3);font-weight:400">из ${totalDue}</span>` : '';
-    el.innerHTML = real > 0 ? `<strong>${real}</strong>${extra} ${real === 1 ? 'карточка' : real <= 4 ? 'карточки' : 'карточек'} к повторению` : 'На сегодня всё повторено 🎉';
+    el.innerHTML = real > 0
+      ? `<strong>${real}</strong>${extra} ${plural(real, 'карточка', 'карточки', 'карточек')} к повторению`
+      : 'На сегодня всё повторено 🎉';
   }
 }
 
 const MODE_LABELS = {
-  type:    'написать',
-  choice:  'выбор',
-  browse:  'просмотр',
-  marathon:'марафон',
-  errors:  'только ошибки',
+  type:    'Написать',
+  choice:  'Выбрать',
+  browse:  'Просмотр',
+  marathon:'Марафон',
+  errors:  'Только ошибки',
 };
+
+function renderReadyChips() {
+  const container = document.getElementById('ready-chips');
+  if (!container) return;
+
+  // Chip 1: Groups
+  let groupLabel = 'Все группы';
+  if (AppState.studyFilter !== null && AppState.studyFilter.length > 0) {
+    if (AppState.studyFilter.length === 1) {
+      const g = AppState.groups.find(x => x.id === AppState.studyFilter[0]);
+      groupLabel = g ? g.name : '?';
+    } else {
+      groupLabel = AppState.studyFilter.length + ' ' + plural(AppState.studyFilter.length, 'группа', 'группы', 'групп');
+    }
+  }
+
+  // Chip 2: Mode
+  const modeLabel = MODE_LABELS[AppState.studyMode] || AppState.studyMode;
+
+  const groupActive = AppState.studyFilter !== null ? ' chip-active' : '';
+  let html = `
+    <div class="ready-chip${groupActive}" data-testid="chip-groups" onclick="openStudyGroupDrawer()">${esc(groupLabel)} ›</div>
+    <div class="ready-chip chip-active" data-testid="chip-mode" onclick="openStudyModeDrawer()">${modeLabel} ›</div>
+  `;
+
+  // Chip 3: sub-mode input type for marathon/errors
+  if (AppState.studyMode === 'marathon' || AppState.studyMode === 'errors') {
+    const inputMode = AppState.studyMode === 'marathon' ? AppState.marathonInputMode : AppState.errorsInputMode;
+    const subLabel = inputMode === 'type' ? 'Написать' : 'Выбрать';
+    html += `<div class="ready-chip chip-active" data-testid="chip-submode" onclick="openStudySubModeDrawer()">${subLabel} ›</div>`;
+  }
+
+  container.innerHTML = html;
+  scheduleUpdateReadyCount();
+}
+
+function openStudyGroupDrawer() {
+  showDrawer('Группы', {
+    render(body) {
+      function renderItems() {
+        body.innerHTML = '';
+        const makeItem = (id, name) => {
+          const isSelected = id === null
+            ? AppState.studyFilter === null
+            : (AppState.studyFilter !== null && AppState.studyFilter.includes(id));
+          const el = document.createElement('div');
+          el.className = 'filter-drawer-item' + (isSelected ? ' active' : '');
+
+          if (id === null) {
+            el.innerHTML = `<span>${esc(name)}</span><span class="radio-dot${isSelected ? ' selected' : ''}"></span>`;
+            el.onclick = () => {
+              AppState.studyFilter = null;
+              renderItems();
+              renderReadyChips();
+            };
+          } else {
+            el.innerHTML = `<span>${esc(name)}</span><span class="check-dot${isSelected ? ' selected' : ''}"></span>`;
+            el.onclick = () => {
+              let f = AppState.studyFilter ? [...AppState.studyFilter] : [];
+              const idx = f.indexOf(id);
+              if (idx === -1) f.push(id);
+              else f.splice(idx, 1);
+              AppState.studyFilter = f.length === 0 ? null : f;
+              renderItems();
+              renderReadyChips();
+            };
+          }
+          return el;
+        };
+        body.appendChild(makeItem(null, 'Все группы'));
+        AppState.groups.forEach(g => body.appendChild(makeItem(g.id, g.name)));
+      }
+      renderItems();
+    }
+  });
+}
+
+function openStudyModeDrawer() {
+  const modes = [
+    { id: 'type',     label: 'Написать' },
+    { id: 'choice',   label: 'Выбрать' },
+    { id: 'marathon', label: 'Марафон' },
+    { id: 'errors',   label: 'Только ошибки' },
+    { id: 'browse',   label: 'Просмотр' },
+  ];
+  showDrawer('Режим', {
+    render(body) {
+      modes.forEach(m => {
+        const isActive = AppState.studyMode === m.id;
+        const el = document.createElement('div');
+        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
+        el.setAttribute('data-testid', 'mode-option-' + m.id);
+        el.innerHTML = `<span>${esc(m.label)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        el.onclick = () => { setReadyMode(m.id); closeDrawer(); };
+        body.appendChild(el);
+      });
+    }
+  });
+}
+
+function openStudySubModeDrawer() {
+  const currentMode = AppState.studyMode === 'marathon' ? AppState.marathonInputMode : AppState.errorsInputMode;
+  showDrawer('Ввод', {
+    render(body) {
+      [{ id: 'type', label: 'Написать' }, { id: 'choice', label: 'Выбрать' }].forEach(m => {
+        const isActive = currentMode === m.id;
+        const el = document.createElement('div');
+        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
+        el.setAttribute('data-testid', 'submode-option-' + m.id);
+        el.innerHTML = `<span>${esc(m.label)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        el.onclick = () => {
+          if (AppState.studyMode === 'marathon') {
+            AppState.marathonInputMode = m.id;
+            try { localStorage.setItem('marathonInputMode', m.id); } catch(e) {}
+          } else {
+            AppState.errorsInputMode = m.id;
+            try { localStorage.setItem('errorsInputMode', m.id); } catch(e) {}
+          }
+          renderReadyChips();
+          closeDrawer();
+        };
+        body.appendChild(el);
+      });
+    }
+  });
+}
 
 function setReadyMode(mode) {
   AppState.studyMode = mode;
-  document.getElementById('ready-mode-type').classList.toggle('active', mode === 'type');
-  document.getElementById('ready-mode-choice').classList.toggle('active', mode === 'choice');
-  document.getElementById('ready-mode-browse').classList.toggle('active', mode === 'browse');
-  document.getElementById('ready-mode-marathon').classList.toggle('active', mode === 'marathon');
-  document.getElementById('ready-mode-errors').classList.toggle('active', mode === 'errors');
-  const marathonOpts = document.getElementById('marathon-input-options');
-  if (marathonOpts) marathonOpts.style.display = mode === 'marathon' ? 'flex' : 'none';
   try { localStorage.setItem('lastStudyMode', mode); } catch(e) {}
-  const label = document.getElementById('ready-mode-label');
-  if (label) label.textContent = 'режим • ' + (MODE_LABELS[mode] || '');
-  scheduleUpdateReadyCount();
+  renderReadyChips();
 }
 
 function setMarathonInputMode(inputMode) {
   AppState.marathonInputMode = inputMode;
   try { localStorage.setItem('marathonInputMode', inputMode); } catch(e) {}
-  const btnType   = document.getElementById('marathon-opt-type');
-  const btnChoice = document.getElementById('marathon-opt-choice');
-  if (btnType) {
-    btnType.style.border      = inputMode === 'type' ? '1px solid var(--accent)' : '1px solid var(--border)';
-    btnType.style.background  = inputMode === 'type' ? 'var(--accent-a15)' : 'transparent';
-    btnType.style.color       = inputMode === 'type' ? 'var(--accent)' : 'var(--text3)';
-    btnType.style.fontWeight  = inputMode === 'type' ? '600' : 'normal';
-  }
-  if (btnChoice) {
-    btnChoice.style.border     = inputMode === 'choice' ? '1px solid var(--accent)' : '1px solid var(--border)';
-    btnChoice.style.background = inputMode === 'choice' ? 'var(--accent-a15)' : 'transparent';
-    btnChoice.style.color      = inputMode === 'choice' ? 'var(--accent)' : 'var(--text3)';
-    btnChoice.style.fontWeight = inputMode === 'choice' ? '600' : 'normal';
-  }
+  renderReadyChips();
 }
 
 // ===== SESSION =====
@@ -139,69 +216,67 @@ async function startSession() {
   if (_startSessionInflight) return;
   _startSessionInflight = true;
   try {
-  const _uuid = (typeof crypto !== 'undefined' && crypto.randomUUID)
-    ? crypto.randomUUID()
-    : Date.now() + '_' + Math.random().toString(36).slice(2, 10);
-  AppState.currentSessionId = _uuid;
-  clearPersistedSession();
-  const sel = document.getElementById('ready-group-select');
-  const gid = sel.value;
-  AppState.studyFilter = gid === 'all' ? null : parseInt(gid) || null;
+    const _uuid = (typeof crypto !== 'undefined' && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+    AppState.currentSessionId = _uuid;
+    clearPersistedSession();
 
-  if (AppState.studyMode === 'browse') {
-    const pool = AppState.studyFilter === null ? [...AppState.cards] : AppState.cards.filter(c => String(c.groupId) === String(AppState.studyFilter));
-    if (pool.length === 0) { showToast('Нет карточек для просмотра'); return; }
-    AppState.browseCards = pool.sort(() => Math.random() - 0.5);
-    AppState.browseIndex = 0;
+    const pool = getStudyPool();
+
+    if (AppState.studyMode === 'browse') {
+      if (pool.length === 0) { showToast('Нет карточек для просмотра'); return; }
+      AppState.browseCards = [...pool].sort(() => Math.random() - 0.5);
+      AppState.browseIndex = 0;
+      document.getElementById('ready-screen').classList.add('hidden');
+      const sess = document.getElementById('study-session');
+      sess.style.display = 'flex';
+      document.getElementsByTagName('nav')[0].style.display = 'none';
+      renderBrowse();
+      return;
+    }
+    if (AppState.studyMode === 'marathon') {
+      if (pool.length === 0) { showToast('Нет карточек'); return; }
+      const sorted = [...pool];
+      const now = Date.now();
+      const MS_PER_DAY = 86400000;
+      sorted.sort((a, b) => {
+        const sa = AppState.cardStats.get(a.id);
+        const sb = AppState.cardStats.get(b.id);
+        const efA = sa?.srsEf ?? EF_DEFAULT;
+        const efB = sb?.srsEf ?? EF_DEFAULT;
+        const daysA = sa?.lastSeen ? (now - sa.lastSeen) / MS_PER_DAY : 999;
+        const daysB = sb?.lastSeen ? (now - sb.lastSeen) / MS_PER_DAY : 999;
+        const scoreA = efA / (1 + Math.min(daysA, 30) / 30);
+        const scoreB = efB / (1 + Math.min(daysB, 30) / 30);
+        return (scoreA - scoreB) + (Math.random() - 0.5) * 0.3;
+      });
+      AppState.studyQueue = sorted; AppState.studyIndex = 0; AppState.sessionRetries = {}; AppState.sessionResults = [];
+      document.getElementById('ready-screen').classList.add('hidden');
+      document.getElementById('study-session').style.display = 'flex';
+      document.getElementsByTagName('nav')[0].style.display = 'none';
+      renderStudy(); return;
+    }
+    if (AppState.studyMode === 'errors') {
+      const errCards = await getErrorCards();
+      if (errCards.length === 0) { showToast('Нет ошибок за последние ' + plural(AppState.settings.errorSessions, 'сессию', 'сессии', 'сессий') + ' 🎉'); return; }
+      AppState.studyQueue = errCards.sort(() => Math.random() - 0.5);
+      AppState.studyIndex = 0; AppState.sessionRetries = {}; AppState.sessionResults = [];
+      document.getElementById('ready-screen').classList.add('hidden');
+      document.getElementById('study-session').style.display = 'flex';
+      document.getElementsByTagName('nav')[0].style.display = 'none';
+      renderStudy(); return;
+    }
+
+    buildStudyQueue();
+    if (AppState.studyQueue.length === 0) { showToast('Нет карточек для изучения'); return; }
     document.getElementById('ready-screen').classList.add('hidden');
     const sess = document.getElementById('study-session');
     sess.style.display = 'flex';
     document.getElementsByTagName('nav')[0].style.display = 'none';
-    renderBrowse();
-    return;
-  }
-  if (AppState.studyMode === 'marathon') {
-    const pool = AppState.studyFilter === null ? [...AppState.cards] : AppState.cards.filter(c => String(c.groupId) === String(AppState.studyFilter));
-    if (pool.length === 0) { showToast('Нет карточек'); return; }
-    const now = Date.now();
-    const MS_PER_DAY = 86400000;
-    pool.sort((a, b) => {
-      const sa = AppState.cardStats.get(a.id);
-      const sb = AppState.cardStats.get(b.id);
-      const efA = sa?.srsEf ?? EF_DEFAULT;
-      const efB = sb?.srsEf ?? EF_DEFAULT;
-      const daysA = sa?.lastSeen ? (now - sa.lastSeen) / MS_PER_DAY : 999;
-      const daysB = sb?.lastSeen ? (now - sb.lastSeen) / MS_PER_DAY : 999;
-      const scoreA = efA / (1 + Math.min(daysA, 30) / 30);
-      const scoreB = efB / (1 + Math.min(daysB, 30) / 30);
-      return (scoreA - scoreB) + (Math.random() - 0.5) * 0.3;
-    });
-    AppState.studyQueue = pool; AppState.studyIndex = 0; AppState.sessionRetries = {}; AppState.sessionResults = [];
-    document.getElementById('ready-screen').classList.add('hidden');
-    document.getElementById('study-session').style.display = 'flex';
-    document.getElementsByTagName('nav')[0].style.display = 'none';
-    renderStudy(); return;
-  }
-  if (AppState.studyMode === 'errors') {
-    const errCards = await getErrorCards();
-    if (errCards.length === 0) { showToast('Нет ошибок за последние ' + plural(AppState.settings.errorSessions, 'сессию', 'сессии', 'сессий') + ' 🎉'); return; }
-    AppState.studyQueue = errCards.sort(() => Math.random() - 0.5);
-    AppState.studyIndex = 0; AppState.sessionRetries = {}; AppState.sessionResults = [];
-    document.getElementById('ready-screen').classList.add('hidden');
-    document.getElementById('study-session').style.display = 'flex';
-    document.getElementsByTagName('nav')[0].style.display = 'none';
-    renderStudy(); return;
-  }
-
-  buildStudyQueue();
-  if (AppState.studyQueue.length === 0) { showToast('Нет карточек для изучения'); return; }
-  document.getElementById('ready-screen').classList.add('hidden');
-  const sess = document.getElementById('study-session');
-  sess.style.display = 'flex';
-  document.getElementsByTagName('nav')[0].style.display = 'none';
-  AppState.sessionRetries = {};
-  AppState.sessionResults = [];
-  renderStudy();
+    AppState.sessionRetries = {};
+    AppState.sessionResults = [];
+    renderStudy();
   } finally {
     _startSessionInflight = false;
   }
@@ -372,7 +447,11 @@ function renderStudy() {
   btnNext.style.display = '';
   feedbackText.textContent = '';
 
-  if (AppState.studyMode === 'type' || (AppState.studyMode === 'marathon' && AppState.marathonInputMode === 'type')) {
+  const useTypeInput = AppState.studyMode === 'type'
+    || (AppState.studyMode === 'marathon' && AppState.marathonInputMode === 'type')
+    || (AppState.studyMode === 'errors' && AppState.errorsInputMode === 'type');
+
+  if (useTypeInput) {
     persistChoice.style.display = 'none';
     persistType.style.display   = 'block';
     const inp     = document.getElementById('type-answer');
@@ -590,6 +669,10 @@ function dismissSummary() {
 Object.assign(window, {
   renderReadyScreen,
   toggleReadyOptions,
+  renderReadyChips,
+  openStudyGroupDrawer,
+  openStudyModeDrawer,
+  openStudySubModeDrawer,
   updateReadyCount,
   setReadyMode,
   setMarathonInputMode,

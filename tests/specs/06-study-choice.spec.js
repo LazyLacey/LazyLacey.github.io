@@ -11,8 +11,8 @@ test.describe('Study — Choice mode', () => {
     await page.evaluate(() => setReadyMode('choice'));
   });
 
-  test('switching to choice mode updates the mode button appearance', async ({ page }) => {
-    await expect(page.locator('#ready-mode-choice')).toHaveClass(/active/);
+  test('switching to choice mode updates the mode chip label', async ({ page }) => {
+    await expect(page.locator('[data-testid="chip-mode"]')).toContainText('Выбрать');
   });
 
   test('starting session shows choice buttons', async ({ page }) => {

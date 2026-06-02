@@ -1,16 +1,39 @@
 // ===== CARDS & GROUPS =====
 
-function renderFilterChips() {
-  const wrap = document.getElementById('cards-filter-chips');
-  let html = `<div class="chip ${AppState.cardFilter === null ? 'active' : ''}" onclick="setCardFilter(null)">Все</div>`;
-  AppState.groups.forEach(g => {
-    html += `<div class="chip ${AppState.cardFilter === g.id ? 'active' : ''}" onclick="setCardFilter(${g.id})">${esc(g.name)}</div>`;
+function updateFilterBtn() {
+  const btn = document.getElementById('cards-filter-btn');
+  const label = document.getElementById('cards-filter-label');
+  if (!btn || !label) return;
+  if (AppState.cardFilter === null) {
+    btn.classList.remove('active');
+    label.textContent = 'Все группы';
+  } else {
+    const g = AppState.groups.find(x => x.id === AppState.cardFilter);
+    btn.classList.add('active');
+    label.textContent = (g ? g.name : '?') + ' ×';
+  }
+}
+
+function openGroupFilter() {
+  showDrawer('Группа', {
+    render(body) {
+      const makeItem = (id, name) => {
+        const isActive = AppState.cardFilter === id;
+        const el = document.createElement('div');
+        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
+        el.innerHTML = `<span>${esc(name)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        el.onclick = () => { setCardFilter(id); closeDrawer(); };
+        return el;
+      };
+      body.appendChild(makeItem(null, 'Все группы'));
+      AppState.groups.forEach(g => body.appendChild(makeItem(g.id, g.name)));
+    }
   });
-  wrap.innerHTML = html;
 }
 
 function setCardFilter(gid) {
   AppState.cardFilter = gid;
+  updateFilterBtn();
   invalidate('cards');
 }
 
@@ -310,7 +333,8 @@ document.addEventListener('click', e => {
 });
 
 Object.assign(window, {
-  renderFilterChips,
+  updateFilterBtn,
+  openGroupFilter,
   setCardFilter,
   renderCardsPage,
   openAddCard,

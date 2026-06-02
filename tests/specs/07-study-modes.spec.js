@@ -10,8 +10,8 @@ test.describe('Study — Marathon mode', () => {
     await page.evaluate(() => setReadyMode('marathon'));
   });
 
-  test('marathon mode button becomes active', async ({ page }) => {
-    await expect(page.locator('#ready-mode-marathon')).toHaveClass(/active/);
+  test('marathon mode chip shows active label', async ({ page }) => {
+    await expect(page.locator('[data-testid="chip-mode"]')).toContainText('Марафон');
   });
 
   test('marathon session starts and shows a card', async ({ page }) => {
@@ -49,8 +49,8 @@ test.describe('Study — Browse mode', () => {
     await page.evaluate(() => setReadyMode('browse'));
   });
 
-  test('browse mode button becomes active', async ({ page }) => {
-    await expect(page.locator('#ready-mode-browse')).toHaveClass(/active/);
+  test('browse mode chip shows active label', async ({ page }) => {
+    await expect(page.locator('[data-testid="chip-mode"]')).toContainText('Просмотр');
   });
 
   test('browse session starts and shows a card', async ({ page }) => {
@@ -138,9 +138,11 @@ test.describe('Study — Group filter', () => {
     ]);
 
     // Select group B in the ready-screen filter
-    await page.evaluate(() => toggleReadyOptions());
-    await page.locator('#ready-group-select').selectOption({ label: 'ГруппаБ' });
-    await page.evaluate(() => updateReadyCount());
+    await page.evaluate(async (gBId) => {
+      AppState.studyFilter = [gBId];
+      renderReadyChips();
+      await updateReadyCount();
+    }, gB.id);
 
     await page.click('#ready-start-btn');
 

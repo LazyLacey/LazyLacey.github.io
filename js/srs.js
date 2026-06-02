@@ -65,7 +65,7 @@ function formatSrsDate(ts) {
 
 function buildStudyQueue() {
   let pool = AppState.studyFilter !== null
-    ? AppState.cards.filter(c => c.groupId === AppState.studyFilter)
+    ? AppState.cards.filter(c => AppState.studyFilter.includes(c.groupId))
     : [...AppState.cards];
 
   pool = pool.filter(c => isSrsOverdue(c));

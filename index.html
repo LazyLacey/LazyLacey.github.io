@@ -54,50 +54,8 @@ window._grammarLoadFailed = false;
         <div class="ready-count-line" id="ready-count-line">Загрузка...</div>
       </div>
       <div class="ready-bottom">
-        <div id="ready-mode-label" style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--text3);font-weight:600;text-align:left;margin-bottom:4px"></div>
-        <button class="ready-start-btn" id="ready-start-btn" onclick="startSession()">Начать →</button>
-        <button class="ready-configure-btn" onclick="toggleReadyOptions()" id="ready-configure-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          Настроить
-        </button>
-        <div class="ready-options" id="ready-options" style="display:none">
-          <div>
-            <div class="ready-section-label">Группа слов</div>
-            <select class="ready-group-select" id="ready-group-select" onchange="updateReadyCount()">
-              <option value="all">Все группы</option>
-            </select>
-          </div>
-          <div>
-            <div class="ready-section-label">Режим</div>
-             <div class="ready-mode-browse active" id="ready-mode-type" onclick="setReadyMode('type')" style="margin-top:6px">
-              <span><i class="ph ph-pencil-simple"></i> Написать</span>
-              <span id="mode-type-hint" style="font-size:11px;color:var(--text3); text-align: right;">введите слово на целевом языке</span>
-            </div>
-             <div class="ready-mode-browse" id="ready-mode-choice" onclick="setReadyMode('choice')" style="margin-top:6px">
-              <span><i class="ph ph-check-square"></i> Выбор</span>
-              <span style="font-size:11px;color:var(--text3);text-align: right;">выберите из 4 вариантов</span>
-            </div>
-            <div class="ready-mode-browse" id="ready-mode-marathon" onclick="setReadyMode('marathon')" style="margin-top:6px">
-              <span><i class="ph ph-person-simple-run"></i> Марафон</span>
-              <span style="font-size:11px;color:var(--text3);text-align: right;">все карточки подряд без лимита</span>
-            </div>
-            <div id="marathon-input-options" style="display:none;margin:4px 0 2px 0;gap:6px;flex-direction:column">
-              <div style="font-size:11px;color:var(--text3);margin-bottom:2px">Режим ответа:</div>
-              <div style="display:flex;gap:6px">
-                <button id="marathon-opt-type" onclick="setMarathonInputMode('type')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--accent);background:var(--accent-a15);color:var(--accent);cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600"><i class="ph ph-pencil-simple"></i> Написать</button>
-                <button id="marathon-opt-choice" onclick="setMarathonInputMode('choice')" style="flex:1;padding:6px 8px;font-size:12px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif"><i class="ph ph-check-square"></i> Выбрать</button>
-              </div>
-            </div>
-            <div class="ready-mode-browse" id="ready-mode-errors" onclick="setReadyMode('errors')" style="margin-top:6px">
-              <span><i class="ph ph-x-circle"></i> Только ошибки</span>
-              <span style="font-size:11px;color:var(--text3);text-align: right;">последние слова с ошибками</span>
-            </div>
-             <div class="ready-mode-browse" id="ready-mode-browse" onclick="setReadyMode('browse')" style="margin-top:6px">
-              <span><i class="ph ph-eye"></i> Просмотр</span>
-              <span style="font-size:11px;color:var(--text3);text-align: right;">листать карточки без оценки</span>
-            </div>
-          </div>
-        </div>
+        <div class="ready-chips" id="ready-chips"></div>
+        <button class="ready-start-btn" id="ready-start-btn" data-testid="ready-start-btn" onclick="startSession()">Начать →</button>
       </div>
     </div>
 
@@ -143,10 +101,13 @@ window._grammarLoadFailed = false;
       <button class="cards-tab" id="tab-groups" onclick="switchCardsTab('groups')">Группы</button>
     </div>
     <div id="cards-tab-content" style="display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden">
-      <div class="search-wrap">
+      <div class="search-row">
+        <i class="ph ph-magnifying-glass"></i>
         <input type="search" id="search-input" placeholder="Поиск..." autocomplete="off">
+        <button class="filter-btn" id="cards-filter-btn" onclick="openGroupFilter()">
+          <i class="ph ph-funnel"></i><span id="cards-filter-label">Все группы</span>
+        </button>
       </div>
-      <div class="filter-chips" id="cards-filter-chips" style="padding-top:12px"></div>
       <div class="list-scroll" id="cards-list"></div>
     </div>
     <div id="groups-tab-content" style="display:none;flex:1;overflow-y:auto;min-height:0">
@@ -469,8 +430,9 @@ const AppState = {
   _typeChecked: false,
   _typeCheckedValue: '',
 
-  // Подрежим марафона: 'type' | 'choice'
+  // Подрежим марафона/ошибок: 'type' | 'choice'
   marathonInputMode: 'type',
+  errorsInputMode:   'type',
 };
 
 
@@ -583,17 +545,18 @@ async function init() {
     if (savedMarathonInput && ['type','choice'].includes(savedMarathonInput)) {
       AppState.marathonInputMode = savedMarathonInput;
     }
+    const savedErrorsInput = localStorage.getItem('errorsInputMode');
+    if (savedErrorsInput && ['type','choice'].includes(savedErrorsInput)) {
+      AppState.errorsInputMode = savedErrorsInput;
+    }
   } catch(e) {}
 
   loadSettings();
   buildStudyQueue();
   renderAll();
   _applyLangLabels();
+  renderReadyChips();
   _initDone = true;
-
-  // Применяем восстановленный режим к UI кнопок и тексту старта
-  setReadyMode(AppState.studyMode);
-  setMarathonInputMode(AppState.marathonInputMode);
 
   // Если пользователь успел переключиться на cards/groups до завершения загрузки —
   // перерисовываем с уже готовыми данными.
@@ -624,8 +587,6 @@ function _applyLangLabels() {
   if (aboutName) aboutName.textContent = `Изучаем ${lang.name.toLowerCase()}`;
   const readyLangLabel = document.getElementById('ready-lang-label');
   if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
-  const modeTypeHint = document.getElementById('mode-type-hint');
-  if (modeTypeHint) modeTypeHint.textContent = `введите слово на ${lang.targetLabel.toLowerCase().replace(/ский$/, 'ском')}`;
   const typeInp = document.getElementById('type-answer');
   if (typeInp) typeInp.placeholder = `Введите по-${lang.targetLabel.toLowerCase()}...`;
   renderLangPicker();
@@ -674,7 +635,7 @@ let _rafPending = false;
 
 function _flushDirty() {
   _rafPending = false;
-  if (_dirty.cards)  { renderCardsPage(); renderFilterChips(); _dirty.cards  = false; }
+  if (_dirty.cards)  { renderCardsPage(); updateFilterBtn(); _dirty.cards  = false; }
   if (_dirty.groups) { renderGroupsPage(); _dirty.groups = false; }
   if (_dirty.stats)  {
     // Перерисовываем статистику только если вкладка активна
@@ -704,7 +665,7 @@ function invalidate(...parts) {
 /** Полная перерисовка — только для случаев массового изменения данных (импорт, очистка). */
 function renderAll() {
   renderCardsPage();
-  renderFilterChips();
+  updateFilterBtn();
   renderGroupsPage();
   if (document.getElementById('page-stats').classList.contains('active')) renderStats();
   renderReadyScreen();
@@ -731,6 +692,13 @@ window.addFromCardsPage = addFromCardsPage;
 // ===== NAVIGATION =====
 function showPage(name) {
   if (name === 'groups') { showPage('cards'); switchCardsTab('groups'); return; }
+  if (AppState.currentPage === 'cards' && name !== 'cards') {
+    AppState.cardFilter = null;
+    AppState.searchQuery = '';
+    const si = document.getElementById('search-input');
+    if (si) si.value = '';
+    updateFilterBtn();
+  }
   AppState.currentPage = name;
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -783,7 +751,7 @@ function resetGrammar() {
   if (AppState.currentPage === 'grammar') showPage('grammar');
 }
 
-// renderFilterChips/setCardFilter, renderCardsPage,
+// updateFilterBtn/openGroupFilter/setCardFilter, renderCardsPage,
 // card/group modals, renderGroupsPage — в js/cards.js
 
 // renderReadyScreen, setReadyMode, startSession, study session, renderBrowse,
