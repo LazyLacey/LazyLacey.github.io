@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.2](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.1...v1.1.2) (2026-06-02)
+
+
+### Bug Fixes
+
+* **ci:** add --repo flag to gh pr merge so it works without git checkout ([284f31f](https://github.com/LazyLacey/LazyLacey.github.io/commit/284f31fe004c55e5a21758657024fb8fc7ac9d9e))
+* **ci:** drop --auto from gh pr merge (requires branch protection rules) ([fe287eb](https://github.com/LazyLacey/LazyLacey.github.io/commit/fe287ebe1adb85400814a58f7733e7e4504f1110))
+* **ci:** extract PR number from release-please JSON output for auto-merge ([0cfaa8c](https://github.com/LazyLacey/LazyLacey.github.io/commit/0cfaa8c4771be5bc8749db62c1a70bf0f90eb3c0))
+* **ci:** use --squash only (--merge and --squash are mutually exclusive) ([f739ec1](https://github.com/LazyLacey/LazyLacey.github.io/commit/f739ec1c80d1156c12bc69078f40b3be974c297a))
+* use doImportWordsOnly for ready pack cards to preserve existing stats ([f76e5fc](https://github.com/LazyLacey/LazyLacey.github.io/commit/f76e5fcb6cc159482fc7efa2d87f27aaec5a62d9))
+
 ## [1.1.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.1.0...v1.1.1) (2026-06-02)
 
 
