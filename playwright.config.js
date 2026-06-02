@@ -3,7 +3,7 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests/specs',
   fullyParallel: false,
-  workers: 1,
+  workers: 4,
   retries: 1,
   reporter: [['html', { open: 'never' }], ['list']],
   use: {

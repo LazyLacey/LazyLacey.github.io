@@ -83,19 +83,13 @@ test.describe('Verb conjugation session', () => {
         document.getElementById('vb-answer').value = q.answer;
         document.getElementById('vb-check-btn').click();
       });
-      const nextBtn = page.locator('#vb-next-btn');
-      await expect(nextBtn).toBeVisible({ timeout: 6000 });
-      await nextBtn.click();
-      // Wait for either next question or results
-      await page.waitForFunction(() => {
-        const ans = document.getElementById('vb-answer');
-        const results = document.querySelector('.gt-results');
-        return (ans && ans.value === '') || !!results;
-      }, { timeout: 3000 }).catch(() => {});
+      await page.waitForSelector('#vb-next-btn', { state: 'visible' });
+      await page.click('#vb-next-btn');
+      await page.waitForSelector('#vb-answer, .gt-results', { state: 'visible' });
       const done = await page.evaluate(() => !!document.querySelector('.gt-results'));
       if (done) break;
     }
-    await expect(page.locator('.gt-results')).toBeVisible({ timeout: 5000 });
+    await expect(page.locator('.gt-results')).toBeVisible();
   });
 
   test('results screen shows score and grade', async ({ page }) => {

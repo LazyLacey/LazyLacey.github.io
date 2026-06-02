@@ -211,3 +211,67 @@ test.describe('Grammar — Verbs tab', () => {
     await expect(tenseBtn.first()).toBeVisible({ timeout: 3000 });
   });
 });
+
+// ── Grammar Search ────────────────────────────────────────────────────────
+
+test.describe('Grammar — Search', () => {
+  test.beforeEach(async ({ page }) => {
+    await resetState(page);
+    await page.evaluate(() => showPage('grammar'));
+    await page.waitForSelector('#grammar-container .gr-topic-card', { state: 'visible' });
+  });
+
+  test('typing 2+ chars in search shows results', async ({ page }) => {
+    // Get a real term from the first topic so the query always matches
+    const term = await page.evaluate(() => {
+      const topic = grammarTopics[0];
+      for (const section of topic.sections) {
+        if (section.examples.length > 0) return section.examples[0].ro.slice(0, 4);
+      }
+      return topic.sections[0].title.slice(0, 4);
+    });
+    expect(term.length).toBeGreaterThanOrEqual(2);
+
+    await page.fill('.gr-search', term);
+    await page.waitForSelector('.gr-search-results.active', { state: 'visible' });
+    const count = await page.locator('.gr-result-item').count();
+    expect(count).toBeGreaterThan(0);
+  });
+
+  test('topics list hides while search is active', async ({ page }) => {
+    const term = await page.evaluate(() => grammarTopics[0].sections[0].title.slice(0, 4));
+    await page.fill('.gr-search', term);
+    await page.waitForSelector('.gr-search-results.active', { state: 'visible' });
+
+    const topicsHidden = await page.evaluate(() =>
+      document.querySelector('.gr-topics')?.classList.contains('hidden')
+    );
+    expect(topicsHidden).toBe(true);
+  });
+
+  test('clearing search restores topics list', async ({ page }) => {
+    const term = await page.evaluate(() => grammarTopics[0].sections[0].title.slice(0, 4));
+    await page.fill('.gr-search', term);
+    await page.waitForSelector('.gr-search-results.active', { state: 'visible' });
+
+    // Clear the input
+    await page.fill('.gr-search', '');
+    // Dispatch 'search' event (what browsers fire on clear button)
+    await page.evaluate(() => {
+      const inp = document.querySelector('.gr-search');
+      inp.dispatchEvent(new Event('search'));
+    });
+
+    await page.waitForFunction(() =>
+      !document.querySelector('.gr-topics')?.classList.contains('hidden')
+    );
+    await expect(page.locator('.gr-topics')).toBeVisible();
+  });
+
+  test('unknown term shows "nothing found" message', async ({ page }) => {
+    await page.fill('.gr-search', 'xyzxyzxyz_notfound');
+    await page.waitForSelector('.gr-search-results.active', { state: 'visible' });
+
+    await expect(page.locator('.gr-no-results')).toBeVisible();
+  });
+});
