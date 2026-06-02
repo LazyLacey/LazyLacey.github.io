@@ -15,14 +15,14 @@ async function runSessionAllWrong(page) {
     await page.fill('#type-answer', 'хахаошибка');
     await page.click('#btn-check');
     await page.click('#btn-next');
-    // Wait for async session-end chain or next card to settle before re-checking done
+    // Wait for session end OR next card — input visibility not reliable after session ends
     await page.waitForFunction(() => {
       const summary = document.getElementById('session-summary');
       const ready   = document.getElementById('ready-screen');
       const inp     = document.getElementById('type-answer');
       return (summary && summary.style.display === 'flex') ||
         (ready && !ready.classList.contains('hidden')) ||
-        (inp && inp.offsetParent !== null && inp.value === '');
+        (inp && inp.value === '');
     }, { timeout: 5000 }).catch(() => {});
   }
 }
@@ -43,14 +43,14 @@ async function runSessionAllCorrect(page) {
     });
     await page.click('#btn-check');
     await page.click('#btn-next');
-    // Wait for async session-end chain or next card to settle before re-checking done
+    // Wait for session end OR next card — input visibility not reliable after session ends
     await page.waitForFunction(() => {
       const summary = document.getElementById('session-summary');
       const ready   = document.getElementById('ready-screen');
       const inp     = document.getElementById('type-answer');
       return (summary && summary.style.display === 'flex') ||
         (ready && !ready.classList.contains('hidden')) ||
-        (inp && inp.offsetParent !== null && inp.value === '');
+        (inp && inp.value === '');
     }, { timeout: 5000 }).catch(() => {});
   }
 }

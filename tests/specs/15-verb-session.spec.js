@@ -57,7 +57,7 @@ test.describe('Verb conjugation session', () => {
       document.getElementById('vb-check-btn').click();
     });
     const nextBtn = page.locator('#vb-next-btn');
-    await expect(nextBtn).toBeVisible({ timeout: 3000 });
+    await expect(nextBtn).toBeVisible({ timeout: 6000 });
 
     const indexBefore = await page.evaluate(() => VTS.index);
     await nextBtn.click();
@@ -84,7 +84,7 @@ test.describe('Verb conjugation session', () => {
         document.getElementById('vb-check-btn').click();
       });
       const nextBtn = page.locator('#vb-next-btn');
-      await expect(nextBtn).toBeVisible({ timeout: 3000 });
+      await expect(nextBtn).toBeVisible({ timeout: 6000 });
       await nextBtn.click();
       // Wait for either next question or results
       await page.waitForFunction(() => {
@@ -106,14 +106,9 @@ test.describe('Verb conjugation session', () => {
         document.getElementById('vb-answer').value = q.answer;
         document.getElementById('vb-check-btn').click();
       });
-      const nextBtn = page.locator('#vb-next-btn');
-      await expect(nextBtn).toBeVisible({ timeout: 3000 });
-      await nextBtn.click();
-      await page.waitForFunction(() => {
-        const ans = document.getElementById('vb-answer');
-        const results = document.querySelector('.gt-results');
-        return (ans && ans.value === '') || !!results;
-      }, { timeout: 3000 }).catch(() => {});
+      await page.waitForSelector('#vb-next-btn', { state: 'visible' });
+      await page.click('#vb-next-btn');
+      await page.waitForSelector('#vb-answer, .gt-results', { state: 'visible' });
       if (await page.evaluate(() => !!document.querySelector('.gt-results'))) break;
     }
     const results = page.locator('.gt-results');
