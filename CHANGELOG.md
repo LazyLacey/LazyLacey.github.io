@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.4.0...v1.5.0) (2026-06-02)
+
+
+### Features
+
+* replace study screen settings panel with chips + drawers ([68d1277](https://github.com/LazyLacey/LazyLacey.github.io/commit/68d127766b22a5a05770971a9c1e19eb5265f61e))
+* unified page components + study screen chip redesign ([657bcdf](https://github.com/LazyLacey/LazyLacey.github.io/commit/657bcdf367be727c06ad29d2940cfe47b1544de4))
+
+
+### Bug Fixes
+
+* correct btn-add-card selector and async count update ([1b150ed](https://github.com/LazyLacey/LazyLacey.github.io/commit/1b150ed568dc873028708338fa4a74fe1aebff8d))
+
 ## [1.4.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.3.0...v1.4.0) (2026-06-02)
 
 
