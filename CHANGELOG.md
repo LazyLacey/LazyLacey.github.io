@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.5.0...v1.6.0) (2026-06-03)
+
+
+### Features
+
+* virtualize cards list with virtual-scroller/dom ([b549f3d](https://github.com/LazyLacey/LazyLacey.github.io/commit/b549f3ded30cabecd457a4130a031d00107d46e0))
+
+
+### Bug Fixes
+
+* stabilize flaky tests in specs 03 and 06 ([9d6eaf3](https://github.com/LazyLacey/LazyLacey.github.io/commit/9d6eaf3e05ab74c1a506e1844a661cfbaad4e8a5))
+
 ## [1.5.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.4.0...v1.5.0) (2026-06-02)
 
 
