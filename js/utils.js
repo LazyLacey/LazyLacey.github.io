@@ -47,6 +47,14 @@ function searchRow(inputId, placeholder = 'Поиск...', extraHTML = '') {
   return `<div class="search-row"><i class="ph ph-magnifying-glass"></i><input type="search" id="${inputId}" placeholder="${placeholder}" autocomplete="off">${extraHTML}</div>`;
 }
 
+function drawerItem(label, selected, { testid } = {}) {
+  const el = document.createElement('div');
+  el.className = 'filter-drawer-item' + (selected ? ' active' : '');
+  if (testid) el.setAttribute('data-testid', testid);
+  el.innerHTML = `<span>${esc(label)}</span><span class="select-check">✓</span>`;
+  return el;
+}
+
 function showDrawer(title, { subtitle = '', render, onClose } = {}) {
   const el = document.getElementById('app-drawer');
   const titleEl = document.getElementById('app-drawer-title');
@@ -76,6 +84,7 @@ function dismissDrawer() {
   cb?.();
 }
 
+window.drawerItem = drawerItem;
 window.esc = esc;
 window.diffHighlightInline = diffHighlightInline;
 window.plural = plural;

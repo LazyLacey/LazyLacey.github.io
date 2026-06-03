@@ -10,7 +10,7 @@ function updateFilterBtn() {
   } else {
     const g = AppState.groups.find(x => x.id === AppState.cardFilter);
     btn.classList.add('active');
-    label.textContent = (g ? g.name : '?') + ' ×';
+    label.textContent = g ? g.name : '?';
   }
 }
 
@@ -19,9 +19,7 @@ function openGroupFilter() {
     render(body) {
       const makeItem = (id, name) => {
         const isActive = AppState.cardFilter === id;
-        const el = document.createElement('div');
-        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
-        el.innerHTML = `<span>${esc(name)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        const el = drawerItem(name, isActive);
         el.onclick = () => { setCardFilter(id); closeDrawer(); };
         return el;
       };

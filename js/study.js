@@ -110,18 +110,14 @@ function openStudyGroupDrawer() {
           const isSelected = id === null
             ? AppState.studyFilter === null
             : (AppState.studyFilter !== null && AppState.studyFilter.includes(id));
-          const el = document.createElement('div');
-          el.className = 'filter-drawer-item' + (isSelected ? ' active' : '');
-
+          const el = drawerItem(name, isSelected);
           if (id === null) {
-            el.innerHTML = `<span>${esc(name)}</span><span class="radio-dot${isSelected ? ' selected' : ''}"></span>`;
             el.onclick = () => {
               AppState.studyFilter = null;
               renderItems();
               renderReadyChips();
             };
           } else {
-            el.innerHTML = `<span>${esc(name)}</span><span class="check-dot${isSelected ? ' selected' : ''}"></span>`;
             el.onclick = () => {
               let f = AppState.studyFilter ? [...AppState.studyFilter] : [];
               const idx = f.indexOf(id);
@@ -154,10 +150,7 @@ function openStudyModeDrawer() {
     render(body) {
       modes.forEach(m => {
         const isActive = AppState.studyMode === m.id;
-        const el = document.createElement('div');
-        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
-        el.setAttribute('data-testid', 'mode-option-' + m.id);
-        el.innerHTML = `<span>${esc(m.label)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        const el = drawerItem(m.label, isActive, { testid: 'mode-option-' + m.id });
         el.onclick = () => { setReadyMode(m.id); closeDrawer(); };
         body.appendChild(el);
       });
@@ -171,10 +164,7 @@ function openStudySubModeDrawer() {
     render(body) {
       [{ id: 'type', label: 'Написать' }, { id: 'choice', label: 'Выбрать' }].forEach(m => {
         const isActive = currentMode === m.id;
-        const el = document.createElement('div');
-        el.className = 'filter-drawer-item' + (isActive ? ' active' : '');
-        el.setAttribute('data-testid', 'submode-option-' + m.id);
-        el.innerHTML = `<span>${esc(m.label)}</span><span class="radio-dot${isActive ? ' selected' : ''}"></span>`;
+        const el = drawerItem(m.label, isActive, { testid: 'submode-option-' + m.id });
         el.onclick = () => {
           if (AppState.studyMode === 'marathon') {
             AppState.marathonInputMode = m.id;
