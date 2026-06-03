@@ -456,7 +456,7 @@ function renderStudy() {
     persistChoice.className     = 'choices-grid';
     const choices = buildChoices(card);
     persistChoice.innerHTML = choices.map((ch, i) =>
-      `<button class="choice-btn" id="choice-${i}">${esc(ch)}</button>`
+      `<button class="choice-btn" id="choice-${i}" data-testid="choice-btn">${esc(ch)}</button>`
     ).join('');
     choices.forEach((ch, i) => {
       document.getElementById('choice-' + i).addEventListener('click', () => checkChoice(i, ch));
@@ -540,14 +540,16 @@ async function checkChoice(idx, chosen) {
 
   const next = document.getElementById('btn-next');
   document.querySelectorAll('.choice-btn').forEach(b => {
-    if (b.textContent === card.ro) b.classList.add('reveal-correct');
+    if (b.textContent === card.ro) { b.classList.add('reveal-correct'); b.dataset.state = 'revealed'; }
   });
   const clicked = document.getElementById('choice-' + idx);
   if (isCorrect) {
     clicked.classList.add('selected-correct');
+    clicked.dataset.state = 'correct';
     showToast('Правильно! ✓', 'green');
   } else {
     clicked.classList.add('selected-wrong');
+    clicked.dataset.state = 'wrong';
     showToast('Неверно', 'red');
     scheduleRetry(card);
   }

@@ -77,6 +77,7 @@ function _renderCardItem(item) {
     ? `<div class="srs-badge ${isSrsOverdue(c) ? 'due' : 'pending'}">${formatSrsDate(stats.nextReview)}</div>` : '';
   const el = document.createElement('div');
   el.className = 'word-card';
+  el.dataset.testid = 'word-card';
   el.onclick = () => openEditCard(c.id);
   el.innerHTML = `
     <div class="word-main">

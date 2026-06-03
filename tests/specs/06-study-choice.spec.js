@@ -18,12 +18,12 @@ test.describe('Study — Choice mode', () => {
   test('starting session shows choice buttons', async ({ page }) => {
     await page.click('#ready-start-btn');
     await expect(page.locator('#persistent-choices-area')).toBeVisible();
-    await expect(page.locator('.choice-btn')).toHaveCount(4);
+    await expect(page.locator('[data-testid="choice-btn"]')).toHaveCount(4);
   });
 
   test('all 4 choice buttons have non-empty text', async ({ page }) => {
     await page.click('#ready-start-btn');
-    const texts = await page.locator('.choice-btn').allTextContents();
+    const texts = await page.locator('[data-testid="choice-btn"]').allTextContents();
     for (const text of texts) {
       expect(text.trim().length).toBeGreaterThan(0);
     }
@@ -31,7 +31,7 @@ test.describe('Study — Choice mode', () => {
 
   test('one of the choice buttons matches the correct answer', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Read directly from AppState — no DOM text matching, no silent skip
     const correctRo = await page.evaluate(() => {
@@ -39,12 +39,12 @@ test.describe('Study — Choice mode', () => {
       return card ? card.ro : null;
     });
     expect(correctRo).toBeTruthy();
-    await expect(page.locator('.choice-btn', { hasText: correctRo })).toBeVisible();
+    await expect(page.locator('[data-testid="choice-btn"]', { hasText: correctRo })).toBeVisible();
   });
 
   test('clicking the correct button marks it as selected-correct', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Atomic: read card and click correct button in one evaluate to avoid RAF race
     const clicked = await page.evaluate(() => {
@@ -57,12 +57,12 @@ test.describe('Study — Choice mode', () => {
     });
     if (!clicked) return;
 
-    await expect(page.locator('.choice-btn.selected-correct')).toBeVisible();
+    await expect(page.locator('[data-testid="choice-btn"][data-state="correct"]')).toBeVisible();
   });
 
   test('clicking wrong button marks it as selected-wrong', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Atomic: read correct answer and click a wrong button in one evaluate to avoid RAF race
     const clicked = await page.evaluate(() => {
@@ -76,12 +76,12 @@ test.describe('Study — Choice mode', () => {
     });
     if (!clicked) return;
 
-    await expect(page.locator('.choice-btn.selected-wrong')).toBeVisible();
+    await expect(page.locator('[data-testid="choice-btn"][data-state="wrong"]')).toBeVisible();
   });
 
   test('clicking wrong button also reveals the correct button', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Atomic: find and click a wrong button in one evaluate to avoid RAF race
     const clicked = await page.evaluate(() => {
@@ -94,15 +94,15 @@ test.describe('Study — Choice mode', () => {
     });
     if (!clicked) return;
 
-    await expect(page.locator('.choice-btn.reveal-correct')).toBeVisible();
+    await expect(page.locator('[data-testid="choice-btn"][data-state="revealed"]')).toBeVisible();
   });
 
   test('all choice buttons are disabled after an answer', async ({ page }) => {
     await page.click('#ready-start-btn');
     await page.locator('#ready-start-btn').waitFor({ state: 'hidden' });
-    await page.locator('.choice-btn').first().click();
+    await page.locator('[data-testid="choice-btn"]').first().click();
 
-    const buttons = page.locator('.choice-btn');
+    const buttons = page.locator('[data-testid="choice-btn"]');
     const count = await buttons.count();
     for (let i = 0; i < count; i++) {
       await expect(buttons.nth(i)).toBeDisabled();
@@ -111,13 +111,13 @@ test.describe('Study — Choice mode', () => {
 
   test('"Next" button appears after answering', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().click();
+    await page.locator('[data-testid="choice-btn"]').first().click();
     await expect(page.locator('#btn-next')).toBeVisible();
   });
 
   test('correct answer shows green toast', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Atomic: read card and click correct button in one evaluate to avoid RAF race
     const clicked = await page.evaluate(() => {
@@ -136,7 +136,7 @@ test.describe('Study — Choice mode', () => {
 
   test('wrong answer shows red toast', async ({ page }) => {
     await page.click('#ready-start-btn');
-    await page.locator('.choice-btn').first().waitFor();
+    await page.locator('[data-testid="choice-btn"]').first().waitFor();
 
     // Click a wrong button atomically to avoid RAF queue reshuffling the answer
     const clicked = await page.evaluate(() => {

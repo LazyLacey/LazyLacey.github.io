@@ -88,7 +88,7 @@ test.describe('Cards CRUD', () => {
   test('opens edit modal with pre-filled values', async ({ page }) => {
     await seedCards(page, [CARDS.single]);
 
-    await page.locator('#cards-list .word-card').first().click();
+    await page.locator('[data-testid="word-card"]').first().click();
     await expect(page.locator('#app-drawer')).toBeVisible();
     await expect(page.locator('#card-ro')).toHaveValue('casă');
     await expect(page.locator('#card-ru')).toHaveValue('дом');
@@ -97,7 +97,7 @@ test.describe('Cards CRUD', () => {
   test('edit updates the card in the list', async ({ page }) => {
     await seedCards(page, [CARDS.single]);
 
-    await page.locator('#cards-list .word-card').first().click();
+    await page.locator('[data-testid="word-card"]').first().click();
     await page.fill('#card-ro', 'câine');
     await page.fill('#card-ru', 'собака');
     await page.click('[data-testid="drawer-save"]');
@@ -110,7 +110,7 @@ test.describe('Cards CRUD', () => {
   test('delete button removes the card from the list', async ({ page }) => {
     await seedCards(page, [CARDS.single]);
 
-    await page.locator('#cards-list .word-card').first().click();
+    await page.locator('[data-testid="word-card"]').first().click();
     page.once('dialog', dialog => dialog.accept());
     await page.click('[data-testid="drawer-delete-card"]');
 
@@ -121,7 +121,7 @@ test.describe('Cards CRUD', () => {
   test('deleting the last card restores the empty state', async ({ page }) => {
     await seedCards(page, [CARDS.single]);
 
-    await page.locator('#cards-list .word-card').first().click();
+    await page.locator('[data-testid="word-card"]').first().click();
     page.once('dialog', dialog => dialog.accept());
     await page.click('[data-testid="drawer-delete-card"]');
 
