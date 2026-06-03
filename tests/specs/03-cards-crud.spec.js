@@ -125,6 +125,7 @@ test.describe('Cards CRUD', () => {
     page.once('dialog', dialog => dialog.accept());
     await page.click('[data-testid="drawer-delete-card"]');
 
+    await page.locator('#app-drawer').waitFor({ state: 'hidden' });
     await expect(page.locator('#cards-list')).toContainText(/нет карточек/i);
   });
 

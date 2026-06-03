@@ -99,6 +99,7 @@ test.describe('Study — Choice mode', () => {
 
   test('all choice buttons are disabled after an answer', async ({ page }) => {
     await page.click('#ready-start-btn');
+    await page.locator('#ready-start-btn').waitFor({ state: 'hidden' });
     await page.locator('.choice-btn').first().click();
 
     const buttons = page.locator('.choice-btn');
