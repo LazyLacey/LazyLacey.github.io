@@ -276,6 +276,13 @@ function checkOnboarding() {
   } catch(e) {}
 }
 
+function openSampleDrawer() {
+  showDrawer('Готовые паки', {
+    subtitle: 'Загрузите прямо сейчас — и сразу есть с чем работать',
+    render: (body) => renderSampleDrawer(body),
+  });
+}
+
 // Expose to global scope for onclick handlers and main script
 Object.assign(window, {
   showOnboarding,
@@ -289,4 +296,5 @@ Object.assign(window, {
   obDownloadPrompts,
   obMarkAction,
   renderSampleDrawer,
+  openSampleDrawer,
 });

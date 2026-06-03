@@ -99,59 +99,66 @@ function renderCardsPage() {
 
 // ===== CARD MODAL =====
 function openAddCard() {
-  document.getElementById('modal-card-title').textContent = 'Новая карточка';
-  document.getElementById('card-id').value = '';
-  document.getElementById('card-ro').value = '';
-  document.getElementById('card-ru').value = '';
-  document.getElementById('card-note').value = '';
-  document.getElementById('card-delete-wrap').innerHTML = '';
-  document.getElementById('card-stats-block').innerHTML = '';
-  populateGroupSelect();
-  openModal('modal-card');
-  requestAnimationFrame(() => document.getElementById('card-ro').focus());
+  const lang = currentLang();
+  showDrawer('Новая карточка', {
+    render(body) {
+      body.innerHTML = `
+        <input type="hidden" id="card-id">
+        <div class="form-row">
+          <div class="form-group"><label>${esc(lang.targetLabel)}</label><input type="text" id="card-ro" placeholder="cuvânt" autocomplete="off" autocorrect="off"></div>
+          <div class="form-group"><label>${esc(lang.nativeLabel)}</label><input type="text" id="card-ru" placeholder="слово" autocomplete="off"></div>
+        </div>
+        <div class="form-group"><label>Группа</label><select id="card-group"></select></div>
+        <div class="form-group"><label>Заметка (необязательно)</label><input type="text" id="card-note" placeholder="подсказка или пример" autocomplete="off"></div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" data-testid="drawer-cancel" onclick="closeDrawer()">Отмена</button>
+          <button class="btn btn-primary" data-testid="drawer-save" onclick="saveCard()">Сохранить</button>
+        </div>
+        <div style="margin-top:10px" id="card-delete-wrap"></div>
+        <div id="card-stats-block"></div>`;
+      populateGroupSelect();
+      requestAnimationFrame(() => document.getElementById('card-ro')?.focus());
+    }
+  });
 }
 
 function openEditCard(id) {
   const c = AppState.cards.find(x => x.id === id);
   if (!c) return;
-  document.getElementById('modal-card-title').textContent = 'Редактировать';
-  document.getElementById('card-id').value = id;
-  document.getElementById('card-ro').value = c.ro;
-  document.getElementById('card-ru').value = c.ru;
-  document.getElementById('card-note').value = c.note || '';
-  populateGroupSelect(c.groupId);
-  document.getElementById('card-delete-wrap').innerHTML =
-    `<button class="btn btn-danger" style="width:100%;justify-content:center;" onclick="deleteCardById(${id})">Удалить карточку</button>`;
-
-  const s = AppState.cardStats.get(id) || {};
-  const shows   = s.shows   || 0;
-  const correct = s.correct || 0;
-  const pct     = shows > 0 ? Math.round(correct / shows * 100) : null;
-  const level   = s.srsLevel || 0;
-  const nextRev = s.nextReview ? formatSrsDate(s.nextReview) : '—';
-  const pctColor = pct === null ? 'var(--text3)' : pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--accent)' : 'var(--red)';
-
-  document.getElementById('card-stats-block').innerHTML = shows > 0 ? `
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
-      <div style="text-align:center">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:3px">Показов</div>
-        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${shows}</div>
-      </div>
-      <div style="text-align:center">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:3px">Точность</div>
-        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:${pctColor}">${pct !== null ? pct + '%' : '—'}</div>
-      </div>
-      <div style="text-align:center">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:3px">Уровень</div>
-        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${level}</div>
-      </div>
-      <div style="text-align:center">
-        <div style="font-size:10px;color:var(--text3);margin-bottom:3px">Повтор</div>
-        <div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${nextRev}</div>
-      </div>
-    </div>` : '';
-
-  openModal('modal-card');
+  const lang = currentLang();
+  showDrawer('Редактировать', {
+    render(body) {
+      const s = AppState.cardStats.get(id) || {};
+      const shows    = s.shows   || 0;
+      const correct  = s.correct || 0;
+      const pct      = shows > 0 ? Math.round(correct / shows * 100) : null;
+      const level    = s.srsLevel || 0;
+      const nextRev  = s.nextReview ? formatSrsDate(s.nextReview) : '—';
+      const pctColor = pct === null ? 'var(--text3)' : pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--accent)' : 'var(--red)';
+      body.innerHTML = `
+        <input type="hidden" id="card-id" value="${id}">
+        <div class="form-row">
+          <div class="form-group"><label>${esc(lang.targetLabel)}</label><input type="text" id="card-ro" value="${esc(c.ro)}" autocomplete="off" autocorrect="off"></div>
+          <div class="form-group"><label>${esc(lang.nativeLabel)}</label><input type="text" id="card-ru" value="${esc(c.ru)}" autocomplete="off"></div>
+        </div>
+        <div class="form-group"><label>Группа</label><select id="card-group"></select></div>
+        <div class="form-group"><label>Заметка (необязательно)</label><input type="text" id="card-note" value="${esc(c.note || '')}" placeholder="подсказка или пример" autocomplete="off"></div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" data-testid="drawer-cancel" onclick="closeDrawer()">Отмена</button>
+          <button class="btn btn-primary" data-testid="drawer-save" onclick="saveCard()">Сохранить</button>
+        </div>
+        <div style="margin-top:10px" id="card-delete-wrap">
+          <button class="btn btn-danger" data-testid="drawer-delete-card" style="width:100%;justify-content:center;" onclick="deleteCardById(${id})">Удалить карточку</button>
+        </div>
+        ${shows > 0 ? `<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)">
+          <div style="text-align:center"><div style="font-size:10px;color:var(--text3);margin-bottom:3px">Показов</div><div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${shows}</div></div>
+          <div style="text-align:center"><div style="font-size:10px;color:var(--text3);margin-bottom:3px">Точность</div><div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:${pctColor}">${pct !== null ? pct + '%' : '—'}</div></div>
+          <div style="text-align:center"><div style="font-size:10px;color:var(--text3);margin-bottom:3px">Уровень</div><div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${level}</div></div>
+          <div style="text-align:center"><div style="font-size:10px;color:var(--text3);margin-bottom:3px">Повтор</div><div style="font-family:'Syne',sans-serif;font-size:16px;font-weight:700">${nextRev}</div></div>
+        </div>` : ''}`;
+      populateGroupSelect(c.groupId);
+    }
+  });
 }
 
 function populateGroupSelect(selectedId) {
@@ -181,7 +188,7 @@ async function saveCard() {
     await dbPut('cards', {ro, ru, groupId: gid, note});
   }
   AppState.cards = await dbGetAll('cards');
-  closeModal('modal-card');
+  closeDrawer();
   buildStudyQueue();
   invalidate('cards', 'ready');
   showToast('Сохранено ✓');
@@ -190,7 +197,7 @@ async function saveCard() {
 async function deleteCardById(id) {
   if (!confirm('Удалить карточку и всю её историю ответов?')) return;
   await deleteCard(id);
-  closeModal('modal-card');
+  closeDrawer();
   buildStudyQueue();
   invalidate('cards', 'ready');
   showToast('Удалено');
@@ -228,23 +235,38 @@ function renderGroupsPage() {
 }
 
 function openAddGroup() {
-  document.getElementById('modal-group-title').textContent = 'Новая группа';
-  document.getElementById('group-id').value = '';
-  document.getElementById('group-name').value = '';
-  document.getElementById('group-delete-wrap').innerHTML = '';
-  openModal('modal-group');
-  requestAnimationFrame(() => document.getElementById('group-name').focus());
+  showDrawer('Новая группа', {
+    render(body) {
+      body.innerHTML = `
+        <input type="hidden" id="group-id">
+        <div class="form-group"><label>Название группы</label><input type="text" id="group-name" placeholder="Фрукты, Цвета..." autocomplete="off"></div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" data-testid="drawer-cancel" onclick="closeDrawer()">Отмена</button>
+          <button class="btn btn-primary" data-testid="drawer-save" onclick="saveGroup()">Сохранить</button>
+        </div>
+        <div style="margin-top:10px" id="group-delete-wrap"></div>`;
+      requestAnimationFrame(() => document.getElementById('group-name')?.focus());
+    }
+  });
 }
 
 function openEditGroup(id) {
   const g = AppState.groups.find(x => x.id === id);
   if (!g) return;
-  document.getElementById('modal-group-title').textContent = 'Редактировать группу';
-  document.getElementById('group-id').value = id;
-  document.getElementById('group-name').value = g.name;
-  document.getElementById('group-delete-wrap').innerHTML =
-    `<button class="btn btn-danger" style="width:100%;justify-content:center;" onclick="deleteGroup(${id})">Удалить группу</button>`;
-  openModal('modal-group');
+  showDrawer('Редактировать группу', {
+    render(body) {
+      body.innerHTML = `
+        <input type="hidden" id="group-id" value="${id}">
+        <div class="form-group"><label>Название группы</label><input type="text" id="group-name" value="${esc(g.name)}" autocomplete="off"></div>
+        <div class="modal-actions">
+          <button class="btn btn-ghost" data-testid="drawer-cancel" onclick="closeDrawer()">Отмена</button>
+          <button class="btn btn-primary" data-testid="drawer-save" onclick="saveGroup()">Сохранить</button>
+        </div>
+        <div style="margin-top:10px" id="group-delete-wrap">
+          <button class="btn btn-danger" data-testid="drawer-delete-group" style="width:100%;justify-content:center;" onclick="deleteGroup(${id})">Удалить группу</button>
+        </div>`;
+    }
+  });
 }
 
 async function saveGroup() {
@@ -260,58 +282,52 @@ async function saveGroup() {
     await dbPut('groups', {name});
   }
   AppState.groups = await dbGetAll('groups');
-  closeModal('modal-group');
+  closeDrawer();
   invalidate('groups', 'cards', 'ready');
   showToast('Сохранено ✓');
 }
 
 async function deleteGroup(id) {
   const count = AppState.cards.filter(c => c.groupId === id).length;
-
   if (count > 0) {
-    const choice = await new Promise(resolve => {
-      const overlay = document.createElement('div');
-      overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:500;display:flex;align-items:flex-end';
-      const g = AppState.groups.find(x => x.id === id);
-      overlay.innerHTML = `
-        <div style="background:var(--bg2);border-radius:24px 24px 0 0;border-top:1px solid var(--border);width:100%;padding:20px 20px 40px">
-          <div style="width:36px;height:4px;background:var(--border);border-radius:2px;margin:0 auto 20px"></div>
-          <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:6px">Удалить группу?</div>
+    const g = AppState.groups.find(x => x.id === id);
+    showDrawer('Удалить группу?', {
+      render(body) {
+        body.innerHTML = `
           <div style="font-size:13px;color:var(--text3);margin-bottom:20px">В группе «${esc(g?.name || '')}» ${plural(count, 'карточка', 'карточки', 'карточек')}. Что сделать со словами?</div>
           <div style="display:flex;flex-direction:column;gap:10px">
             <button class="btn btn-ghost" style="justify-content:center;padding:14px" data-choice="keep">Оставить слова без группы</button>
             <button class="btn btn-danger" style="justify-content:center;padding:14px" data-choice="delete">Удалить слова вместе с группой</button>
             <button class="btn btn-ghost" style="justify-content:center;padding:14px;color:var(--text3)" data-choice="cancel">Отмена</button>
-          </div>
-        </div>`;
-      document.body.appendChild(overlay);
-      overlay.addEventListener('click', ev => {
-        const btn = ev.target.closest('[data-choice]');
-        if (btn) { document.body.removeChild(overlay); resolve(btn.dataset.choice); }
-        else if (!overlay.firstElementChild.contains(ev.target)) { document.body.removeChild(overlay); resolve('cancel'); }
-      });
-    });
-    if (choice === 'cancel') return;
-
-    await dbDelete('groups', id);
-    if (choice === 'delete') {
-      const toDelete = AppState.cards.filter(c => c.groupId === id);
-      for (const c of toDelete) {
-        await dbDelete('cards', c.id);
+          </div>`;
+        body.addEventListener('click', async ev => {
+          const btn = ev.target.closest('[data-choice]');
+          if (!btn) return;
+          closeDrawer();
+          if (btn.dataset.choice === 'cancel') return;
+          await _doDeleteGroup(id, btn.dataset.choice);
+        });
       }
-    } else {
-      const orphaned = AppState.cards.filter(c => c.groupId === id);
-      orphaned.forEach(c => { c.groupId = null; });
-      if (orphaned.length > 0) await dbPutBatch('cards', orphaned);
-    }
+    });
   } else {
     if (!confirm('Удалить пустую группу?')) return;
-    await dbDelete('groups', id);
+    await _doDeleteGroup(id, 'delete');
   }
+}
 
+async function _doDeleteGroup(id, choice) {
+  await dbDelete('groups', id);
+  if (choice === 'delete') {
+    for (const c of AppState.cards.filter(c => c.groupId === id)) {
+      await dbDelete('cards', c.id);
+    }
+  } else {
+    const orphaned = AppState.cards.filter(c => c.groupId === id);
+    orphaned.forEach(c => { c.groupId = null; });
+    if (orphaned.length > 0) await dbPutBatch('cards', orphaned);
+  }
   AppState.groups = AppState.groups.filter(g => g.id !== id);
   AppState.cards = await dbGetAll('cards');
-  closeModal('modal-group');
   invalidate('groups', 'cards', 'ready', 'stats');
   showToast('Группа удалена');
 }

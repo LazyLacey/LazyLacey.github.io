@@ -232,57 +232,21 @@ window._grammarLoadFailed = false;
           <div class="setting-label">Fișki</div>
           <div class="setting-sub">Версия <span id="app-version">—</span></div>
         </div>
-        <button onclick="document.getElementById('about-modal').style.display='flex'" style="background:var(--accent-a15);border:1px solid var(--accent-a25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
+        <button onclick="openAboutDrawer()" style="background:var(--accent-a15);border:1px solid var(--accent-a25);color:var(--accent);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif">О приложении</button>
       </div>
     </div>
   </div>
 
   <!-- ABOUT MODAL -->
-  <div id="about-modal" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.6);align-items:flex-end;justify-content:center" onclick="if(event.target===this)this.style.display='none'">
-    <div style="background:var(--bg2);border-radius:20px 20px 0 0;width:100%;max-width:480px;padding:28px 24px 40px;max-height:85vh;overflow-y:auto">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-        <div style="font-family:'Syne',sans-serif;font-size:18px;font-weight:800;color:var(--text)">О приложении</div>
-        <button onclick="document.getElementById('about-modal').style.display='none'" style="background:none;border:none;color:var(--text3);cursor:pointer;padding:4px">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 6L6 18M6 6l12 12"/></svg>
-        </button>
-      </div>
-      <div style="text-align:center;padding:8px 0 24px">
-        <div style="margin-bottom:14px"><img src="assets/icon-source.png" width="72" height="72" style="display:block;margin:0 auto"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
-        <div style="font-size:13px;color:var(--text3);margin-bottom:2px" id="about-lang-name">Учи иностранные языки</div>
-        <div style="font-size:12px;color:var(--text3)" id="about-version-line">Версия <span id="about-version-span">—</span></div>
-      </div>
-      <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
-        <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
-        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
-          <div><i class="ph ph-brain" style="color:#7b79ff"></i> <strong style="color:var(--text)">Умное повторение</strong> — SRS-алгоритм показывает карточку ровно когда вы вот-вот забудете</div>
-          <div><i class="ph ph-pencil-simple" style="color:#0a84ff"></i> <strong style="color:var(--text)">Режимы учёбы</strong> — написать перевод, выбрать из вариантов, просмотр без оценки</div>
-          <div><i class="ph ph-person-simple-run" style="color:#ff6b35"></i> <strong style="color:var(--text)">Марафон и ошибки</strong> — все карточки подряд или только те, где вы ошиблись</div>
-          <div><i class="ph ph-lock-simple" style="color:#ff453a"></i> <strong style="color:var(--text)">Строгий режим</strong> — ответ засчитывается только с правильными диакритиками</div>
-          <div><i class="ph ph-books" style="color:#30d158"></i> <strong style="color:var(--text)">Грамматика</strong> — правила с таблицами и примерами, организованные по темам</div>
-          <div><i class="ph ph-note-pencil" style="color:#0a84ff"></i> <strong style="color:var(--text)">Тесты</strong> — выбор из вариантов и ввод ответа; загружай свои наборы или генерируй через нейросеть</div>
-          <div><i class="ph ph-text-aa" style="color:#ff6b35"></i> <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
-          <div><i class="ph ph-chart-bar" style="color:#30d158"></i> <strong style="color:var(--text)">Статистика</strong> — история сессий, точность по дням, рекорды</div>
-          <div><i class="ph ph-floppy-disk" style="color:#f4c430"></i> <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
-          <div><i class="ph ph-palette" style="color:#7b79ff"></i> <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
-        </div>
-      </div>
-      <div style="background:var(--bg3);border-radius:12px;padding:14px 16px;margin-bottom:16px">
-        <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:10px">Технологии</div>
-        <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text2)">
-          <div><i class="ph ph-wifi-slash" style="color:var(--text)"></i> Работает офлайн — данные хранятся в IndexedDB прямо в браузере</div>
-          <div><i class="ph ph-device-mobile" style="color:var(--text)"></i> PWA — устанавливается на экран телефона как приложение</div>
-          <div><i class="ph ph-lock-simple" style="color:var(--text)"></i> Приватно — никаких серверов, всё только на вашем устройстве</div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- DRAWER (shared bottom sheet) -->
   <div class="theme-drawer-backdrop" id="app-drawer">
     <div class="theme-drawer">
       <div class="modal-handle"></div>
-      <div class="modal-title" id="app-drawer-title"></div>
+      <div class="drawer-header">
+        <div class="modal-title" id="app-drawer-title"></div>
+        <button class="drawer-close" onclick="dismissDrawer()" aria-label="Закрыть"><i class="ph ph-x"></i></button>
+      </div>
       <div id="app-drawer-subtitle" style="display:none;font-size:13px;color:var(--text3);margin-bottom:20px"></div>
       <div id="app-drawer-body"></div>
     </div>
@@ -327,39 +291,6 @@ window._grammarLoadFailed = false;
 </div>
 
 <!-- MODALS -->
-<div class="modal-backdrop hidden" id="modal-card">
-  <div class="modal">
-    <div class="modal-handle"></div>
-    <div class="modal-title" id="modal-card-title">Новая карточка</div>
-    <input type="hidden" id="card-id">
-    <div class="form-row">
-      <div class="form-group"><label id="label-card-ro">Румынский</label><input type="text" id="card-ro" placeholder="cuvânt" autocomplete="off" autocorrect="off"></div>
-      <div class="form-group"><label id="label-card-ru">Русский</label><input type="text" id="card-ru" placeholder="слово" autocomplete="off"></div>
-    </div>
-    <div class="form-group"><label>Группа</label><select id="card-group"></select></div>
-    <div class="form-group"><label>Заметка (необязательно)</label><input type="text" id="card-note" placeholder="подсказка или пример" autocomplete="off"></div>
-    <div class="modal-actions">
-      <button class="btn btn-ghost" onclick="closeModal('modal-card')">Отмена</button>
-      <button class="btn btn-primary" onclick="saveCard()">Сохранить</button>
-    </div>
-    <div style="margin-top:10px" id="card-delete-wrap"></div>
-    <div id="card-stats-block"></div>
-  </div>
-</div>
-
-<div class="modal-backdrop hidden" id="modal-group">
-  <div class="modal">
-    <div class="modal-handle"></div>
-    <div class="modal-title" id="modal-group-title">Новая группа</div>
-    <input type="hidden" id="group-id">
-    <div class="form-group"><label>Название группы</label><input type="text" id="group-name" placeholder="Фрукты, Цвета..." autocomplete="off"></div>
-    <div class="modal-actions">
-      <button class="btn btn-ghost" onclick="closeModal('modal-group')">Отмена</button>
-      <button class="btn btn-primary" onclick="saveGroup()">Сохранить</button>
-    </div>
-    <div style="margin-top:10px" id="group-delete-wrap"></div>
-  </div>
-</div>
 
 <div class="toast" id="toast">
   <div id="toast-inner"></div>
@@ -572,14 +503,9 @@ function _applyLangLabels() {
   const lang = currentLang();
   const title = document.getElementById('ready-study-title');
   if (title) title.innerHTML = `Учим<br>${lang.targetLabel.toLowerCase()}`;
-  const ro = document.getElementById('label-card-ro');
-  const ru = document.getElementById('label-card-ru');
-  if (ro) ro.textContent = lang.targetLabel;
-  if (ru) ru.textContent = lang.nativeLabel;
   const hardSub = document.getElementById('hard-mode-sub');
   if (hardSub) hardSub.textContent = `Диакритика обязательна (${lang.diacriticHints.join(', ')})`;
-  const aboutName = document.getElementById('about-lang-name');
-  if (aboutName) aboutName.textContent = `Изучаем ${lang.name.toLowerCase()}`;
+
   const readyLangLabel = document.getElementById('ready-lang-label');
   if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
   const typeInp = document.getElementById('type-answer');
@@ -761,33 +687,6 @@ function restartOnboarding() {
   try { localStorage.removeItem('onboardingDone'); } catch(e) {}
   showOnboarding();
 }
-
-function showDrawer(title, { subtitle = '', render, onClose } = {}) {
-  const el = document.getElementById('app-drawer');
-  const titleEl = document.getElementById('app-drawer-title');
-  titleEl.textContent = title;
-  titleEl.style.marginBottom = subtitle ? '4px' : '20px';
-  const subEl = document.getElementById('app-drawer-subtitle');
-  subEl.textContent = subtitle;
-  subEl.style.display = subtitle ? '' : 'none';
-  const body = document.getElementById('app-drawer-body');
-  body.innerHTML = '';
-  render?.(body);
-  el.onclick = (e) => { if (e.target === el) { closeDrawer(); onClose?.(); } };
-  el.classList.add('open');
-}
-
-function closeDrawer() {
-  document.getElementById('app-drawer')?.classList.remove('open');
-}
-
-function openSampleDrawer() {
-  showDrawer('Готовые паки', {
-    subtitle: 'Загрузите прямо сейчас — и сразу есть с чем работать',
-    render: (body) => window.renderSampleDrawer?.(body),
-  });
-}
-
 
 // checkOnboarding, showOnboarding, renderObScreen — в onboarding.js
 // initTheme() — вызывается в js/theme.js

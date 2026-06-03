@@ -36,19 +36,6 @@ async function deleteCard(id) {
   AppState.cards = AppState.cards.filter(c => c.id !== id);
 }
 
-function openModal(id) {
-  document.getElementById(id).classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal(id) {
-  document.getElementById(id).classList.add('hidden');
-  document.body.style.overflow = '';
-}
-
-document.querySelectorAll('.modal-backdrop').forEach(m => {
-  m.addEventListener('click', e => { if (e.target === m) closeModal(m.id); });
-});
 
 // ===== STORAGE PERSISTENCE =====
 async function requestPersistentStorage() {
@@ -638,15 +625,55 @@ function showBackupReminder() {
   banner.querySelector('#_br_settings').addEventListener('click', () => { showPage('settings'); close(); });
 }
 
+function openAboutDrawer() {
+  showDrawer('О приложении', {
+    render: (body) => {
+      const lang = currentLang?.();
+      const langName = lang ? `Изучаем ${lang.name.toLowerCase()}` : 'Учи иностранные языки';
+      const version = window._appVersion || '—';
+      body.innerHTML = `
+        <div style="text-align:center;padding:4px 0 20px">
+          <div style="margin-bottom:14px"><img src="assets/icon-source.png" width="72" height="72" style="display:block;margin:0 auto"></div>
+          <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
+          <div style="font-size:13px;color:var(--text3);margin-bottom:2px">${esc(langName)}</div>
+          <div style="font-size:12px;color:var(--text3)">Версия <span>${esc(version)}</span></div>
+        </div>
+        <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
+          <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text2);line-height:1.5">
+            <div><i class="ph ph-brain" style="color:#7b79ff"></i> <strong style="color:var(--text)">Умное повторение</strong> — SRS-алгоритм показывает карточку ровно когда вы вот-вот забудете</div>
+            <div><i class="ph ph-pencil-simple" style="color:#0a84ff"></i> <strong style="color:var(--text)">Режимы учёбы</strong> — написать перевод, выбрать из вариантов, просмотр без оценки</div>
+            <div><i class="ph ph-person-simple-run" style="color:#ff6b35"></i> <strong style="color:var(--text)">Марафон и ошибки</strong> — все карточки подряд или только те, где вы ошиблись</div>
+            <div><i class="ph ph-lock-simple" style="color:#ff453a"></i> <strong style="color:var(--text)">Строгий режим</strong> — ответ засчитывается только с правильными диакритиками</div>
+            <div><i class="ph ph-books" style="color:#30d158"></i> <strong style="color:var(--text)">Грамматика</strong> — правила с таблицами и примерами, организованные по темам</div>
+            <div><i class="ph ph-note-pencil" style="color:#0a84ff"></i> <strong style="color:var(--text)">Тесты</strong> — выбор из вариантов и ввод ответа; загружай свои наборы или генерируй через нейросеть</div>
+            <div><i class="ph ph-text-aa" style="color:#ff6b35"></i> <strong style="color:var(--text)">Глаголы</strong> — тренажёр спряжений по временам с отслеживанием прогресса</div>
+            <div><i class="ph ph-chart-bar" style="color:#30d158"></i> <strong style="color:var(--text)">Статистика</strong> — история сессий, точность по дням, рекорды</div>
+            <div><i class="ph ph-floppy-disk" style="color:#f4c430"></i> <strong style="color:var(--text)">Импорт / экспорт</strong> — данные в JSON, легко переносить между устройствами</div>
+            <div><i class="ph ph-palette" style="color:#7b79ff"></i> <strong style="color:var(--text)">Темы</strong> — 6 цветовых схем на любой вкус, включая светлую</div>
+          </div>
+        </div>
+        <div style="background:var(--bg3);border-radius:12px;padding:14px 16px;margin-bottom:16px">
+          <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:10px">Технологии</div>
+          <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text2)">
+            <div><i class="ph ph-wifi-slash" style="color:var(--text)"></i> Работает офлайн — данные хранятся в IndexedDB прямо в браузере</div>
+            <div><i class="ph ph-device-mobile" style="color:var(--text)"></i> PWA — устанавливается на экран телефона как приложение</div>
+            <div><i class="ph ph-lock-simple" style="color:var(--text)"></i> Приватно — никаких серверов, всё только на вашем устройстве</div>
+          </div>
+        </div>`;
+    },
+  });
+}
+
 Object.assign(window, {
   SETTINGS_DEFAULTS, getSetting, putSetting,
   getCard, updateCard, deleteCard,
-  openModal, closeModal,
+
   requestPersistentStorage, grantPersistence, dismissStorageWarning,
   tryPersistFromSettings, initPersistSettingsRow,
   checkStorageWarning, scheduleAutoBackupReminder,
   loadSettings, saveSettings,
   exportData, exportCardsOnly, exportGroup, openExportDrawer,
   importData, doImportReplace, doImportWordsOnly, doImportMergeHistory, clearData, resetStats,
-  downloadBlob,
+  downloadBlob, openAboutDrawer,
 });

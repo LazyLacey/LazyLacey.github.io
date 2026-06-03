@@ -3,9 +3,10 @@ import { registerSW } from 'virtual:pwa-register';
 const APP_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '—';
 const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 
-['app-version', 'about-modal-version', 'about-version-span'].forEach(id => {
+window._appVersion = isLocal ? 'dev' : APP_VERSION;
+['app-version'].forEach(id => {
   const el = document.getElementById(id);
-  if (el) el.textContent = isLocal ? 'dev' : APP_VERSION;
+  if (el) el.textContent = window._appVersion;
 });
 
 const updateSW = registerSW({

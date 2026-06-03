@@ -47,6 +47,35 @@ function searchRow(inputId, placeholder = 'Поиск...', extraHTML = '') {
   return `<div class="search-row"><i class="ph ph-magnifying-glass"></i><input type="search" id="${inputId}" placeholder="${placeholder}" autocomplete="off">${extraHTML}</div>`;
 }
 
+function showDrawer(title, { subtitle = '', render, onClose } = {}) {
+  const el = document.getElementById('app-drawer');
+  const titleEl = document.getElementById('app-drawer-title');
+  titleEl.textContent = title;
+  titleEl.style.marginBottom = subtitle ? '4px' : '20px';
+  const subEl = document.getElementById('app-drawer-subtitle');
+  subEl.textContent = subtitle;
+  subEl.style.display = subtitle ? '' : 'none';
+  const body = document.getElementById('app-drawer-body');
+  body.innerHTML = '';
+  render?.(body);
+  el._onClose = onClose || null;
+  el.onclick = (e) => { if (e.target === el) dismissDrawer(); };
+  el.classList.add('open');
+}
+
+function closeDrawer() {
+  document.getElementById('app-drawer')?.classList.remove('open');
+}
+
+function dismissDrawer() {
+  const el = document.getElementById('app-drawer');
+  if (!el) return;
+  el.classList.remove('open');
+  const cb = el._onClose;
+  el._onClose = null;
+  cb?.();
+}
+
 window.esc = esc;
 window.diffHighlightInline = diffHighlightInline;
 window.plural = plural;
@@ -54,3 +83,6 @@ window.emptyState = emptyState;
 window.pageTabs = pageTabs;
 window.pageHeader = pageHeader;
 window.searchRow = searchRow;
+window.showDrawer = showDrawer;
+window.closeDrawer = closeDrawer;
+window.dismissDrawer = dismissDrawer;
