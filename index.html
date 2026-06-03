@@ -110,7 +110,7 @@ window._grammarLoadFailed = false;
           <i class="ph ph-funnel"></i><span id="cards-filter-label">Все группы</span>
         </button>
       </div>
-      <div class="list-scroll" id="cards-list"></div>
+      <div class="list-scroll" id="cards-list"><div id="cards-items"></div></div>
     </div>
     <div id="groups-tab-content" style="display:none;flex:1;overflow-y:auto;min-height:0">
       <div class="groups-list" id="groups-list"></div>
@@ -614,6 +614,7 @@ window.addFromCardsPage = addFromCardsPage;
 function showPage(name) {
   if (name === 'groups') { showPage('cards'); switchCardsTab('groups'); return; }
   if (AppState.currentPage === 'cards' && name !== 'cards') {
+    cleanupCardsVirtualScroller?.();
     AppState.cardFilter = null;
     AppState.searchQuery = '';
     const si = document.getElementById('search-input');

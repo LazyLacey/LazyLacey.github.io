@@ -1,3 +1,5 @@
+import VirtualScroller from 'virtual-scroller/dom';
+
 // ===== CARDS & GROUPS =====
 
 function updateFilterBtn() {
@@ -41,10 +43,64 @@ document.getElementById('search-input').addEventListener('input', e => {
 });
 
 // ===== CARDS PAGE =====
+let _vs = null;
+
+function _buildFlatList(filtered) {
+  const byGroup = {};
+  filtered.forEach(c => {
+    const key = c.groupId || 0;
+    if (!byGroup[key]) byGroup[key] = [];
+    byGroup[key].push(c);
+  });
+  const items = [];
+  for (const [gid, cs] of Object.entries(byGroup)) {
+    const g = AppState.groups.find(x => x.id == gid);
+    items.push({ type: 'header', name: g ? g.name : 'Без группы' });
+    cs.forEach(c => items.push({ type: 'card', card: c }));
+  }
+  return items;
+}
+
+function _renderCardItem(item) {
+  if (item.type === 'header') {
+    const el = document.createElement('div');
+    el.className = 'group-label';
+    el.innerHTML = `<div class="group-dot"></div>${esc(item.name)}`;
+    return el;
+  }
+  const c = item.card;
+  const stats = AppState.cardStats.get(c.id) || {};
+  const srsLevel = stats.srsLevel || 0;
+  const cls = srsLevel === 0 ? '' : srsLevel >= 3 ? 'good' : srsLevel === 1 ? 'bad' : '';
+  const barColor = srsLevel === 0 ? 'mid' : srsLevel >= 3 ? 'good' : 'mid';
+  const srsTag = stats.nextReview
+    ? `<div class="srs-badge ${isSrsOverdue(c) ? 'due' : 'pending'}">${formatSrsDate(stats.nextReview)}</div>` : '';
+  const el = document.createElement('div');
+  el.className = 'word-card';
+  el.onclick = () => openEditCard(c.id);
+  el.innerHTML = `
+    <div class="word-main">
+      <div class="word-ro">${esc(c.ro)}</div>
+      <div class="word-ru">${esc(c.ru)}${c.note ? ' · ' + esc(c.note) : ''}</div>
+      <div class="card-mini-bar"><div class="card-mini-bar-fill ${barColor}" style="width:${Math.round(srsLevel / 6 * 100)}%"></div></div>
+    </div>
+    <div class="word-stats">
+      <div class="stat-pill ${cls}">${srsLevel > 0 ? 'ур. ' + srsLevel : 'новое'}</div>
+      ${srsTag}
+    </div>`;
+  return el;
+}
+
+function cleanupCardsVirtualScroller() {
+  _vs?.stop();
+  _vs = null;
+}
+
 function renderCardsPage() {
-  const list = document.getElementById('cards-list');
-  if (!list) return;
-  let filtered = AppState.cards.filter(c => {
+  const container = document.getElementById('cards-items');
+  if (!container) return;
+
+  const filtered = AppState.cards.filter(c => {
     if (AppState.cardFilter !== null && c.groupId !== AppState.cardFilter) return false;
     if (AppState.searchQuery) {
       const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -55,44 +111,26 @@ function renderCardsPage() {
   });
 
   if (filtered.length === 0) {
-    list.innerHTML = emptyState('📭', 'Нет карточек', 'Нажмите «+ Добавить» чтобы создать карточку');
+    cleanupCardsVirtualScroller();
+    container.style.paddingTop = '';
+    container.style.paddingBottom = '';
+    container.innerHTML = emptyState('📭', 'Нет карточек', 'Нажмите «+ Добавить» чтобы создать карточку');
     return;
   }
 
-  const byGroup = {};
-  filtered.forEach(c => {
-    const key = c.groupId || 0;
-    if (!byGroup[key]) byGroup[key] = [];
-    byGroup[key].push(c);
-  });
+  const items = _buildFlatList(filtered);
 
-  let html = '';
-  for (const [gid, cs] of Object.entries(byGroup)) {
-    const g = AppState.groups.find(x => x.id == gid);
-    const gname = g ? g.name : 'Без группы';
-    html += `<div class="group-section"><div class="group-label"><div class="group-dot"></div>${gname}</div>`;
-    cs.forEach(c => {
-      const stats    = AppState.cardStats.get(c.id) || {};
-      const srsLevel = stats.srsLevel || 0;
-      const cls = srsLevel === 0 ? '' : srsLevel >= 3 ? 'good' : srsLevel === 1 ? 'bad' : '';
-      const barColor = srsLevel === 0 ? 'mid' : srsLevel >= 3 ? 'good' : 'mid';
-      const srsTag = stats.nextReview
-        ? `<div class="srs-badge ${isSrsOverdue(c) ? 'due' : 'pending'}">${formatSrsDate(stats.nextReview)}</div>` : '';
-      html += `<div class="word-card" onclick="openEditCard(${c.id})">
-        <div class="word-main">
-          <div class="word-ro">${esc(c.ro)}</div>
-          <div class="word-ru">${esc(c.ru)}${c.note ? ' · ' + esc(c.note) : ''}</div>
-          <div class="card-mini-bar"><div class="card-mini-bar-fill ${barColor}" style="width:${Math.round(srsLevel / 6 * 100)}%"></div></div>
-        </div>
-        <div class="word-stats">
-          <div class="stat-pill ${cls}">${srsLevel > 0 ? 'ур. ' + srsLevel : 'новое'}</div>
-          ${srsTag}
-        </div>
-      </div>`;
-    });
-    html += '</div>';
+  if (_vs) {
+    _vs.setItems(items);
+  } else {
+    container.innerHTML = '';
+    _vs = new VirtualScroller(
+      container,
+      items,
+      _renderCardItem,
+      { getScrollableContainer: () => document.getElementById('cards-list') }
+    );
   }
-  list.innerHTML = html;
 }
 
 // ===== CARD MODAL =====
@@ -351,6 +389,7 @@ Object.assign(window, {
   openGroupFilter,
   setCardFilter,
   renderCardsPage,
+  cleanupCardsVirtualScroller,
   openAddCard,
   openEditCard,
   saveCard,
