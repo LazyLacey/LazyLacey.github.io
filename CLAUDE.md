@@ -5,7 +5,7 @@
 **Fișki** — мобильная PWA для изучения иностранных языков. Vanilla JS, single `index.html`, никаких фреймворков.
 
 - **Stack:** Node 20 (`.nvmrc`), Vite (dev/build), vite-plugin-pwa (workbox), Playwright e2e, GitHub Pages
-- **Тесты:** Playwright, эмуляция Pixel 5, `workers:1 retries:1`, 17 spec-файлов / 174 теста
+- **Тесты:** Playwright, эмуляция Pixel 5, `workers:1 retries:1`, 20 spec-файлов / ~220 тестов
 - **Деплой:** `.github/workflows/deploy.yml` → GitHub Pages; `release-please.yml` → авто-версионирование
 
 > Файловая структура, статус рефакторинга, история фаз — в MCP memory. Вызови `mcp__memory__read_graph` в начале сессии.
@@ -24,7 +24,7 @@
 ## Архитектурные решения
 
 - Поля `ro`/`ru` в карточках — универсальные ключи для всех языков, лейблы берутся из `currentLang()`.
-- При смене языка — `location.reload()`, каждый язык имеет свои три БД с префиксом.
+- Смена языка — через `onLangChange(id)` без `location.reload()` (только финальный reload при первом onboarding). Три БД на язык с префиксом, `switchLangDB()` переключает без reload.
 - Все JS-модули — `type="module"`, функции для onclick-атрибутов явно кладутся на `window`.
 - `grammar-*.js` лежат в `public/js/` (не `js/`) — Vite не может статически анализировать динамический импорт по строке.
 - `readyPacks` в конфиге языка (`languages.js`) — онбординг и drawer берут список паков оттуда, не хардкод.
