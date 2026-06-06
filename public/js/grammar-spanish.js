@@ -1164,7 +1164,7 @@ window.grammarTopics = [
       {
         id: 'subjuntivo-irregular',
         title: 'Неправильные глаголы (DISHES)',
-        body: 'Шесть полностью неправильных глаголов в субхунтиво — запоминают по акрониму DISHES: Dar, Ir, Saber, Haber, Estar, Ser.\n\nHaber: haya, hayas, haya, hayamos, hayáis, hayan (используется в сложных временах: espero que haya venido).',
+        body: 'Шесть полностью неправильных глаголов в субхунтиво — запоминают по акрониму DISHES: Dar, Ir, Saber, Haber, Estar, Ser. Их формы нельзя вывести из правила, нужно запомнить. Haber важен для сложных времён в субхунтиво (espero que haya venido).',
         table: {
           headers: ['', 'dar', 'ir', 'saber', 'estar', 'ser'],
           rows: [
@@ -1808,6 +1808,96 @@ grammarTopics.push({
         { ro: '¿A qué hora sale el próximo tren?', ru: 'Когда отправляется следующий поезд?' },
         { ro: 'Un billete de ida y vuelta, por favor', ru: 'Один билет туда и обратно, пожалуйста' },
         { ro: '¿Dónde está la parada de metro?', ru: 'Где станция метро?' },
+      ],
+    },
+    {
+      id: 'dialogues-shopping',
+      title: 'В магазине',
+      body: 'Продавец спрашивает ¿le puedo ayudar? Покупатель может ответить solo estoy mirando (просто смотрю). Размер одежды — talla, обуви — número. Скидка — descuento, распродажа — rebajas.',
+      examples: [
+        { ro: '— ¿Le puedo ayudar? — Solo estoy mirando, gracias.', ru: '— Могу помочь? — Просто смотрю, спасибо.' },
+        { ro: '¿Tienen esto en talla M?', ru: 'У вас есть это в размере M?' },
+        { ro: '¿Puedo probármelo? ¿Dónde está el probador?', ru: 'Можно примерить? Где примерочная?' },
+        { ro: '¿Cuánto cuesta? / ¿Cuánto vale?', ru: 'Сколько стоит?' },
+        { ro: '¿Tienen descuento? ¿Hay rebajas?', ru: 'Есть скидка? Идёт распродажа?' },
+        { ro: 'Me lo llevo. ¿Puedo pagar con tarjeta?', ru: 'Беру. Можно оплатить картой?' },
+      ],
+    },
+    {
+      id: 'dialogues-health',
+      title: 'У врача и о здоровье',
+      body: 'Боль выражается через doler (me duele la cabeza) или tener dolor de. Симптомы: tener fiebre (температура), tos (кашель), resfriado (насморк). Врач — médico, рецепт — receta, аптека — farmacia.',
+      examples: [
+        { ro: 'Me duele la cabeza y tengo fiebre.', ru: 'У меня болит голова и температура.' },
+        { ro: 'Me duele la garganta desde hace tres días.', ru: 'У меня болит горло уже три дня.' },
+        { ro: 'Tengo tos y mocos.', ru: 'У меня кашель и насморк.' },
+        { ro: '— ¿Necesito receta? — Sí, voy a recetarle algo.', ru: '— Нужен рецепт? — Да, я вам что-нибудь выпишу.' },
+        { ro: 'Soy alérgico/a a la penicilina.', ru: 'У меня аллергия на пенициллин.' },
+        { ro: 'Me siento muy cansado/a y mareado/a.', ru: 'Я чувствую себя очень усталым/ой и кружится голова.' },
+      ],
+    },
+    {
+      id: 'dialogues-phone',
+      title: 'По телефону',
+      body: 'Звонок начинается с ¿Dígame? или ¿Sí? (аналог «алло»). Представляются: soy + имя. Попросить к телефону: ¿está + имя? Если нет — no está, está fuera. Попросить перезвонить: ¿puede llamar más tarde?',
+      examples: [
+        { ro: '— ¿Dígame? — Hola, soy María, ¿está Carlos?', ru: '— Алло? — Привет, это Мария, Карлос дома?' },
+        { ro: '— Lo siento, no está. — ¿Puede llamar más tarde?', ru: '— Извините, его нет. — Он может перезвонить позже?' },
+        { ro: '¿Quiere dejar un mensaje?', ru: 'Хотите оставить сообщение?' },
+        { ro: '¿Puede hablar más despacio, por favor?', ru: 'Вы могли бы говорить помедленнее, пожалуйста?' },
+        { ro: 'La línea está cortando, no le oigo bien.', ru: 'Плохая связь, я вас плохо слышу.' },
+        { ro: 'Le paso con el señor García.', ru: 'Соединяю вас с господином Гарсиа.', note: 'Le — usted' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 28. УСТОЙЧИВЫЕ ВЫРАЖЕНИЯ И ФРАЗЕОЛОГИЯ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'phraseology',
+  title: 'Устойчивые выражения',
+  icon: '🧩',
+  description: 'Глагольные идиомы, дискурсивные связки, повседневные реакции',
+  sections: [
+    {
+      id: 'phrase-verbs',
+      title: 'Глагольные устойчивые сочетания',
+      body: 'Испанские идиомы строятся на tener, hacer, dar, echar, llevar. Смысл часто непредсказуем — tener ganas de (хотеть) буквально «иметь желание». Echar + существительное заменяет глагол: echar una ojeada = mirar.',
+      examples: [
+        { ro: 'tener ganas de + inf.', ru: 'хотеть, иметь желание что-то сделать' },
+        { ro: 'darse cuenta de', ru: 'осознавать, замечать' },
+        { ro: 'hacer caso (de)', ru: 'обращать внимание, слушаться' },
+        { ro: 'echar de menos', ru: 'скучать (по кому-то / чему-то)' },
+        { ro: 'llevar + tiempo + gerundio', ru: 'делать что-то уже X времени', note: 'llevo dos años viviendo aquí' },
+        { ro: 'ponerse + adj.', ru: 'стать, сделаться (об эмоциях)', note: 'se puso rojo = покраснел' },
+      ],
+    },
+    {
+      id: 'phrase-connectors',
+      title: 'Дискурсивные связки',
+      body: 'Связки организуют речь: добавление (además, también, encima), противопоставление (sin embargo, en cambio, aunque), следствие (por lo tanto, así que, entonces), уточнение (es decir, o sea), итог (en resumen, total que).',
+      examples: [
+        { ro: 'Es caro; sin embargo, vale la pena.', ru: 'Это дорого; однако оно того стоит.', note: 'sin embargo = противопоставление' },
+        { ro: 'No tenía ganas, así que me quedé en casa.', ru: 'Не хотелось, поэтому остался дома.', note: 'así que = следствие' },
+        { ro: 'Es simpático, o sea, siempre ayuda.', ru: 'Он приятный, то есть всегда помогает.', note: 'o sea = уточнение' },
+        { ro: 'Además, hay que considerar el precio.', ru: 'К тому же, надо учитывать цену.', note: 'además = добавление' },
+        { ro: 'En resumen, no sé qué hacer.', ru: 'В общем, не знаю, что делать.', note: 'en resumen = итог' },
+        { ro: 'Trabajé todo el día; en cambio, él no hizo nada.', ru: 'Я работал весь день; а он не сделал ничего.', note: 'en cambio = контраст' },
+      ],
+    },
+    {
+      id: 'phrase-everyday',
+      title: 'Повседневные фразы-реакции',
+      body: 'Готовые блоки для реакций на новости, согласия, удивления. Их не конструируют по правилам, а выучивают целиком. ¡Menos mal! — облегчение; ¡Qué va! — отрицание/несогласие; ¡Venga! — согласие или подбадривание.',
+      examples: [
+        { ro: '— Aprobé el examen. — ¡Menos mal! / ¡Qué bien!', ru: '— Я сдал экзамен. — Слава богу! / Как здорово!' },
+        { ro: '— Lo siento. — ¡No pasa nada! / ¡No te preocupes!', ru: '— Мне жаль. — Ничего! / Не переживай!' },
+        { ro: '¡Qué va, eso no puede ser!', ru: 'Да ладно, не может быть!' },
+        { ro: '¡Venga, anímate!', ru: 'Давай, не унывай!', note: 'Venga = подбадривание' },
+        { ro: '— ¿Te apetece salir? — ¡Con mucho gusto!', ru: '— Хочешь выйти? — С большим удовольствием!' },
+        { ro: '¡Menos mal que llegaste a tiempo!', ru: 'Хорошо, что ты успел вовремя!' },
       ],
     },
   ],
