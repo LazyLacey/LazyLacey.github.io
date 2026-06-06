@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.7.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.6.0...v1.7.0) (2026-06-06)
+
+
+### Features
+
+* add grammar files for IT/DE/KO/FR and audit body quality across all languages ([add14ab](https://github.com/LazyLacey/LazyLacey.github.io/commit/add14abb88769579f85ad7f5add1789da5759dae))
+* add grammar test packs for DE/IT/FR/KO, add languages to registry, compact lang picker ([c3801fa](https://github.com/LazyLacey/LazyLacey.github.io/commit/c3801faf7e9284d519bb74f4c25721467d80b19c))
+* complete French grammar and expand Spanish grammar ([0a7b930](https://github.com/LazyLacey/LazyLacey.github.io/commit/0a7b93051aaa125a8f8ca6db6846a5e1c878fcd9))
+
 ## [1.6.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.5.0...v1.6.0) (2026-06-03)
 
 
