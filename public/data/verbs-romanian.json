@@ -1,0 +1,648 @@
+{
+  "type": "verbPack",
+  "name": "Базовые глаголы",
+  "icon": "🔤",
+  "description": "20 самых частых глаголов румынского языка с тремя временами",
+  "verbs": [
+    {
+      "id": "a_fi",
+      "infinitive": "a fi",
+      "translation": "быть",
+      "group": "irregular",
+      "forms": {
+        "prezent": [
+          "sunt",
+          "ești",
+          "este",
+          "suntem",
+          "sunteți",
+          "sunt"
+        ],
+        "trecut": [
+          "am fost",
+          "ai fost",
+          "a fost",
+          "am fost",
+          "ați fost",
+          "au fost"
+        ],
+        "viitor": [
+          "voi fi",
+          "vei fi",
+          "va fi",
+          "vom fi",
+          "veți fi",
+          "vor fi"
+        ]
+      }
+    },
+    {
+      "id": "a_avea",
+      "infinitive": "a avea",
+      "translation": "иметь",
+      "group": "irregular",
+      "forms": {
+        "prezent": [
+          "am",
+          "ai",
+          "are",
+          "avem",
+          "aveți",
+          "au"
+        ],
+        "trecut": [
+          "am avut",
+          "ai avut",
+          "a avut",
+          "am avut",
+          "ați avut",
+          "au avut"
+        ],
+        "viitor": [
+          "voi avea",
+          "vei avea",
+          "va avea",
+          "vom avea",
+          "veți avea",
+          "vor avea"
+        ]
+      }
+    },
+    {
+      "id": "a_vrea",
+      "infinitive": "a vrea",
+      "translation": "хотеть",
+      "group": "irregular",
+      "forms": {
+        "prezent": [
+          "vreau",
+          "vrei",
+          "vrea",
+          "vrem",
+          "vreți",
+          "vor"
+        ],
+        "trecut": [
+          "am vrut",
+          "ai vrut",
+          "a vrut",
+          "am vrut",
+          "ați vrut",
+          "au vrut"
+        ],
+        "viitor": [
+          "voi vrea",
+          "vei vrea",
+          "va vrea",
+          "vom vrea",
+          "veți vrea",
+          "vor vrea"
+        ]
+      }
+    },
+    {
+      "id": "a_putea",
+      "infinitive": "a putea",
+      "translation": "мочь, уметь",
+      "group": "irregular",
+      "forms": {
+        "prezent": [
+          "pot",
+          "poți",
+          "poate",
+          "putem",
+          "puteți",
+          "pot"
+        ],
+        "trecut": [
+          "am putut",
+          "ai putut",
+          "a putut",
+          "am putut",
+          "ați putut",
+          "au putut"
+        ],
+        "viitor": [
+          "voi putea",
+          "vei putea",
+          "va putea",
+          "vom putea",
+          "veți putea",
+          "vor putea"
+        ]
+      }
+    },
+    {
+      "id": "a_sti",
+      "infinitive": "a ști",
+      "translation": "знать",
+      "group": "IV",
+      "forms": {
+        "prezent": [
+          "știu",
+          "știi",
+          "știe",
+          "știm",
+          "știți",
+          "știu"
+        ],
+        "trecut": [
+          "am știut",
+          "ai știut",
+          "a știut",
+          "am știut",
+          "ați știut",
+          "au știut"
+        ],
+        "viitor": [
+          "voi ști",
+          "vei ști",
+          "va ști",
+          "vom ști",
+          "veți ști",
+          "vor ști"
+        ]
+      }
+    },
+    {
+      "id": "a_merge",
+      "infinitive": "a merge",
+      "translation": "идти, ехать",
+      "group": "III",
+      "forms": {
+        "prezent": [
+          "merg",
+          "mergi",
+          "merge",
+          "mergem",
+          "mergeți",
+          "merg"
+        ],
+        "trecut": [
+          "am mers",
+          "ai mers",
+          "a mers",
+          "am mers",
+          "ați mers",
+          "au mers"
+        ],
+        "viitor": [
+          "voi merge",
+          "vei merge",
+          "va merge",
+          "vom merge",
+          "veți merge",
+          "vor merge"
+        ]
+      }
+    },
+    {
+      "id": "a_face",
+      "infinitive": "a face",
+      "translation": "делать",
+      "group": "III",
+      "forms": {
+        "prezent": [
+          "fac",
+          "faci",
+          "face",
+          "facem",
+          "faceți",
+          "fac"
+        ],
+        "trecut": [
+          "am făcut",
+          "ai făcut",
+          "a făcut",
+          "am făcut",
+          "ați făcut",
+          "au făcut"
+        ],
+        "viitor": [
+          "voi face",
+          "vei face",
+          "va face",
+          "vom face",
+          "veți face",
+          "vor face"
+        ]
+      }
+    },
+    {
+      "id": "a_spune",
+      "infinitive": "a spune",
+      "translation": "говорить, сказать",
+      "group": "III",
+      "forms": {
+        "prezent": [
+          "spun",
+          "spui",
+          "spune",
+          "spunem",
+          "spuneți",
+          "spun"
+        ],
+        "trecut": [
+          "am spus",
+          "ai spus",
+          "a spus",
+          "am spus",
+          "ați spus",
+          "au spus"
+        ],
+        "viitor": [
+          "voi spune",
+          "vei spune",
+          "va spune",
+          "vom spune",
+          "veți spune",
+          "vor spune"
+        ]
+      }
+    },
+    {
+      "id": "a_veni",
+      "infinitive": "a veni",
+      "translation": "приходить",
+      "group": "IV",
+      "forms": {
+        "prezent": [
+          "vin",
+          "vii",
+          "vine",
+          "venim",
+          "veniți",
+          "vin"
+        ],
+        "trecut": [
+          "am venit",
+          "ai venit",
+          "a venit",
+          "am venit",
+          "ați venit",
+          "au venit"
+        ],
+        "viitor": [
+          "voi veni",
+          "vei veni",
+          "va veni",
+          "vom veni",
+          "veți veni",
+          "vor veni"
+        ]
+      }
+    },
+    {
+      "id": "a_da",
+      "infinitive": "a da",
+      "translation": "давать",
+      "group": "I",
+      "forms": {
+        "prezent": [
+          "dau",
+          "dai",
+          "dă",
+          "dăm",
+          "dați",
+          "dau"
+        ],
+        "trecut": [
+          "am dat",
+          "ai dat",
+          "a dat",
+          "am dat",
+          "ați dat",
+          "au dat"
+        ],
+        "viitor": [
+          "voi da",
+          "vei da",
+          "va da",
+          "vom da",
+          "veți da",
+          "vor da"
+        ]
+      }
+    },
+    {
+      "id": "a_lua",
+      "infinitive": "a lua",
+      "translation": "брать",
+      "group": "I",
+      "forms": {
+        "prezent": [
+          "iau",
+          "iei",
+          "ia",
+          "luăm",
+          "luați",
+          "iau"
+        ],
+        "trecut": [
+          "am luat",
+          "ai luat",
+          "a luat",
+          "am luat",
+          "ați luat",
+          "au luat"
+        ],
+        "viitor": [
+          "voi lua",
+          "vei lua",
+          "va lua",
+          "vom lua",
+          "veți lua",
+          "vor lua"
+        ]
+      }
+    },
+    {
+      "id": "a_vedea",
+      "infinitive": "a vedea",
+      "translation": "видеть",
+      "group": "II",
+      "forms": {
+        "prezent": [
+          "văd",
+          "vezi",
+          "vede",
+          "vedem",
+          "vedeți",
+          "văd"
+        ],
+        "trecut": [
+          "am văzut",
+          "ai văzut",
+          "a văzut",
+          "am văzut",
+          "ați văzut",
+          "au văzut"
+        ],
+        "viitor": [
+          "voi vedea",
+          "vei vedea",
+          "va vedea",
+          "vom vedea",
+          "veți vedea",
+          "vor vedea"
+        ]
+      }
+    },
+    {
+      "id": "a_vorbi",
+      "infinitive": "a vorbi",
+      "translation": "говорить, разговаривать",
+      "group": "IV",
+      "forms": {
+        "prezent": [
+          "vorbesc",
+          "vorbești",
+          "vorbește",
+          "vorbim",
+          "vorbiți",
+          "vorbesc"
+        ],
+        "trecut": [
+          "am vorbit",
+          "ai vorbit",
+          "a vorbit",
+          "am vorbit",
+          "ați vorbit",
+          "au vorbit"
+        ],
+        "viitor": [
+          "voi vorbi",
+          "vei vorbi",
+          "va vorbi",
+          "vom vorbi",
+          "veți vorbi",
+          "vor vorbi"
+        ]
+      }
+    },
+    {
+      "id": "a_intelege",
+      "infinitive": "a înțelege",
+      "translation": "понимать",
+      "group": "III",
+      "forms": {
+        "prezent": [
+          "înțeleg",
+          "înțelegi",
+          "înțelege",
+          "înțelegem",
+          "înțelegeți",
+          "înțeleg"
+        ],
+        "trecut": [
+          "am înțeles",
+          "ai înțeles",
+          "a înțeles",
+          "am înțeles",
+          "ați înțeles",
+          "au înțeles"
+        ],
+        "viitor": [
+          "voi înțelege",
+          "vei înțelege",
+          "va înțelege",
+          "vom înțelege",
+          "veți înțelege",
+          "vor înțelege"
+        ]
+      }
+    },
+    {
+      "id": "a_manca",
+      "infinitive": "a mânca",
+      "translation": "есть, кушать",
+      "group": "I",
+      "forms": {
+        "prezent": [
+          "mănânc",
+          "mănânci",
+          "mănâncă",
+          "mâncăm",
+          "mâncați",
+          "mănâncă"
+        ],
+        "trecut": [
+          "am mâncat",
+          "ai mâncat",
+          "a mâncat",
+          "am mâncat",
+          "ați mâncat",
+          "au mâncat"
+        ],
+        "viitor": [
+          "voi mânca",
+          "vei mânca",
+          "va mânca",
+          "vom mânca",
+          "veți mânca",
+          "vor mânca"
+        ]
+      }
+    },
+    {
+      "id": "a_bea",
+      "infinitive": "a bea",
+      "translation": "пить",
+      "group": "irregular",
+      "forms": {
+        "prezent": [
+          "beau",
+          "bei",
+          "bea",
+          "bem",
+          "beți",
+          "beau"
+        ],
+        "trecut": [
+          "am băut",
+          "ai băut",
+          "a băut",
+          "am băut",
+          "ați băut",
+          "au băut"
+        ],
+        "viitor": [
+          "voi bea",
+          "vei bea",
+          "va bea",
+          "vom bea",
+          "veți bea",
+          "vor bea"
+        ]
+      }
+    },
+    {
+      "id": "a_locui",
+      "infinitive": "a locui",
+      "translation": "жить, проживать",
+      "group": "IV",
+      "forms": {
+        "prezent": [
+          "locuiesc",
+          "locuiești",
+          "locuiește",
+          "locuim",
+          "locuiți",
+          "locuiesc"
+        ],
+        "trecut": [
+          "am locuit",
+          "ai locuit",
+          "a locuit",
+          "am locuit",
+          "ați locuit",
+          "au locuit"
+        ],
+        "viitor": [
+          "voi locui",
+          "vei locui",
+          "va locui",
+          "vom locui",
+          "veți locui",
+          "vor locui"
+        ]
+      }
+    },
+    {
+      "id": "a_lucra",
+      "infinitive": "a lucra",
+      "translation": "работать",
+      "group": "I",
+      "forms": {
+        "prezent": [
+          "lucrez",
+          "lucrezi",
+          "lucrează",
+          "lucrăm",
+          "lucrați",
+          "lucrează"
+        ],
+        "trecut": [
+          "am lucrat",
+          "ai lucrat",
+          "a lucrat",
+          "am lucrat",
+          "ați lucrat",
+          "au lucrat"
+        ],
+        "viitor": [
+          "voi lucra",
+          "vei lucra",
+          "va lucra",
+          "vom lucra",
+          "veți lucra",
+          "vor lucra"
+        ]
+      }
+    },
+    {
+      "id": "a_citi",
+      "infinitive": "a citi",
+      "translation": "читать",
+      "group": "IV",
+      "forms": {
+        "prezent": [
+          "citesc",
+          "citești",
+          "citește",
+          "citim",
+          "citiți",
+          "citesc"
+        ],
+        "trecut": [
+          "am citit",
+          "ai citit",
+          "a citit",
+          "am citit",
+          "ați citit",
+          "au citit"
+        ],
+        "viitor": [
+          "voi citi",
+          "vei citi",
+          "va citi",
+          "vom citi",
+          "veți citi",
+          "vor citi"
+        ]
+      }
+    },
+    {
+      "id": "a_scrie",
+      "infinitive": "a scrie",
+      "translation": "писать",
+      "group": "III",
+      "forms": {
+        "prezent": [
+          "scriu",
+          "scrii",
+          "scrie",
+          "scriem",
+          "scrieți",
+          "scriu"
+        ],
+        "trecut": [
+          "am scris",
+          "ai scris",
+          "a scris",
+          "am scris",
+          "ați scris",
+          "au scris"
+        ],
+        "viitor": [
+          "voi scrie",
+          "vei scrie",
+          "va scrie",
+          "vom scrie",
+          "veți scrie",
+          "vor scrie"
+        ]
+      }
+    }
+  ]
+}
