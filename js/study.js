@@ -77,7 +77,7 @@ function renderReadyChips() {
       const g = AppState.groups.find(x => x.id === AppState.studyFilter[0]);
       groupLabel = g ? g.name : '?';
     } else {
-      groupLabel = AppState.studyFilter.length + ' ' + plural(AppState.studyFilter.length, 'группа', 'группы', 'групп');
+      groupLabel = plural(AppState.studyFilter.length, 'группа', 'группы', 'групп');
     }
   }
 

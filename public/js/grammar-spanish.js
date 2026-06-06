@@ -29,6 +29,8 @@ window.grammarTopics = [
           { ro: 'la casa', ru: 'дом (ж.р.)', note: 'определённый артикль la' },
           { ro: 'el día', ru: 'день (м.р.)', note: 'исключение — на -a, но мужской' },
           { ro: 'la mano', ru: 'рука (ж.р.)', note: 'исключение — на -o, но женский' },
+          { ro: 'la nación, la ciudad, la libertad', ru: 'нация, город, свобода', note: 'суффиксы -ión/-dad → ж.р.' },
+          { ro: 'el tema, el problema, el mapa', ru: 'тема, проблема, карта — м.р., хотя на -a', note: 'греческого происхождения' },
         ],
       },
       {
@@ -47,6 +49,8 @@ window.grammarTopics = [
           { ro: 'la chica', ru: 'девочка' },
           { ro: 'los chicos', ru: 'мальчики (или смешанная группа)' },
           { ro: 'las chicas', ru: 'девочки' },
+          { ro: 'Voy al trabajo', ru: 'Иду на работу', note: 'a + el = al (слияние)' },
+          { ro: 'Vengo del médico', ru: 'Иду от врача', note: 'de + el = del (слияние)' },
         ],
       },
       {
@@ -65,6 +69,8 @@ window.grammarTopics = [
           { ro: 'una mesa', ru: 'какой-то стол / один стол' },
           { ro: 'unos amigos', ru: 'несколько друзей' },
           { ro: 'unas flores', ru: 'несколько цветков' },
+          { ro: 'Tengo un perro y una gata', ru: 'У меня есть собака и кошка' },
+          { ro: 'Hay unos problemas que resolver', ru: 'Есть некоторые проблемы для решения', note: 'unos/unas = «некоторые»' },
         ],
       },
     ],
@@ -97,6 +103,8 @@ window.grammarTopics = [
           { ro: 'la ciudad → las ciudades', ru: 'город → города' },
           { ro: 'el lápiz → los lápices', ru: 'карандаш → карандаши' },
           { ro: 'el lunes → los lunes', ru: 'понедельник → понедельники' },
+          { ro: 'el actor → los actores', ru: 'актёр → актёры' },
+          { ro: 'el joven → los jóvenes', ru: 'молодой человек → молодые люди', note: 'согласная → +es' },
         ],
       },
       {
@@ -108,6 +116,8 @@ window.grammarTopics = [
           { ro: 'el profesor / la profesora', ru: 'учитель / учительница' },
           { ro: 'el actor / la actriz', ru: 'актёр / актриса' },
           { ro: 'el hombre / la mujer', ru: 'мужчина / женщина' },
+          { ro: 'el rey / la reina', ru: 'король / королева', note: 'суффикс -ina' },
+          { ro: 'el niño / la niña', ru: 'мальчик / девочка' },
         ],
       },
     ],
@@ -139,6 +149,8 @@ window.grammarTopics = [
           { ro: 'una chica alta', ru: 'высокая девочка' },
           { ro: 'un coche grande', ru: 'большая машина' },
           { ro: 'una casa grande', ru: 'большой дом' },
+          { ro: 'unos chicos altos', ru: 'высокие мальчики' },
+          { ro: 'unas chicas inteligentes', ru: 'умные девочки', note: 'inteligente — форма только по числу' },
         ],
       },
       {
@@ -159,6 +171,8 @@ window.grammarTopics = [
           { ro: 'un buen amigo', ru: 'хороший друг', note: 'buen перед существительным' },
           { ro: 'un gran hombre', ru: 'великий человек', note: 'gran = великий' },
           { ro: 'un hombre grande', ru: 'большой/высокий мужчина', note: 'grande после = физически большой' },
+          { ro: 'el mal tiempo', ru: 'плохая погода', note: 'malo → mal перед сущ.' },
+          { ro: 'un viejo amigo / un amigo viejo', ru: 'давний друг / старый (пожилой) друг', note: 'место прилагательного меняет смысл' },
         ],
       },
       {
@@ -201,6 +215,9 @@ window.grammarTopics = [
           { ro: 'Hablo español', ru: 'Я говорю по-испански', note: 'yo опускается' },
           { ro: 'Yo hablo, tú escuchas', ru: 'Я говорю, ты слушаешь', note: 'местоимения для контраста' },
           { ro: 'usted / ustedes', ru: 'вежливое «вы» (единственное и множественное)', note: 'в Латинской Америке ustedes = vosotros' },
+          { ro: 'Ella es profesora', ru: 'Она учительница' },
+          { ro: '¿Y vosotros, qué hacéis?', ru: 'А вы что делаете?', note: 'vosotros — только в Испании' },
+          { ro: '¿Hablan ustedes inglés?', ru: 'Вы говорите по-английски?', note: 'usted/ustedes — вежливо' },
         ],
       },
       {
@@ -302,6 +319,10 @@ window.grammarTopics = [
         examples: [
           { ro: 'Soy de Rusia / Estoy en Rusia', ru: 'Я из России / Я нахожусь в России', note: 'ser = откуда, estar = где сейчас' },
           { ro: 'Es médico / Está cansado', ru: 'Он врач / Он устал', note: 'ser = профессия, estar = состояние' },
+          { ro: 'Somos estudiantes', ru: 'Мы студенты' },
+          { ro: '¿Estáis listos?', ru: 'Вы готовы?' },
+          { ro: 'Son las tres', ru: 'Три часа', note: 'ser для обозначения времени' },
+          { ro: 'Estoy de acuerdo', ru: 'Я согласен', note: 'estar de acuerdo — устойчивое выражение' },
         ],
       },
       {
@@ -359,12 +380,15 @@ window.grammarTopics = [
           { ro: 'Hablo español todos los días', ru: 'Я говорю по-испански каждый день' },
           { ro: 'Comes mucho', ru: 'Ты много ешь' },
           { ro: 'Vivimos en Madrid', ru: 'Мы живём в Мадриде' },
+          { ro: '¿A qué hora trabajas?', ru: 'В котором часу ты работаешь?' },
+          { ro: 'Ella estudia medicina', ru: 'Она учится на врача' },
+          { ro: 'Bebemos agua', ru: 'Мы пьём воду' },
         ],
       },
       {
         id: 'presente-irregular',
         title: 'Неправильные глаголы',
-        body: 'Самые частые неправильные глаголы в настоящем времени.',
+        body: 'Глаголы ser, estar, ir, tener, hacer, venir полностью нерегулярны — каждый имеет уникальные формы, которые не выводятся из инфинитива. Все они относятся к самым частотным в языке, без них невозможно построить базовое предложение.',
         table: {
           headers: ['', 'ser', 'estar', 'tener', 'ir', 'hacer'],
           rows: [
@@ -380,12 +404,15 @@ window.grammarTopics = [
           { ro: 'Tengo veinte años', ru: 'Мне двадцать лет', note: 'tener + años = возраст' },
           { ro: 'Voy al trabajo', ru: 'Я иду на работу' },
           { ro: '¿Qué haces?', ru: 'Что ты делаешь?' },
+          { ro: 'Soy de Rusia', ru: 'Я из России' },
+          { ro: 'Estamos en casa', ru: 'Мы дома' },
+          { ro: 'Van a la playa', ru: 'Они идут на пляж' },
         ],
       },
       {
         id: 'presente-irregular2',
         title: 'Неправильные глаголы (продолжение)',
-        body: 'Ещё важные глаголы с нерегулярными формами в настоящем времени.',
+        body: 'Poder и querer — глаголы с чередованием гласной (o→ue, e→ie) во всех лицах, кроме nosotros/vosotros. Saber нерегулярен только в 1-м лице (sé). Venir нерегулярен по смешанному типу: vengo в 1 л., чередование e→ie в остальных лицах.',
         table: {
           headers: ['', 'poder', 'querer', 'venir', 'saber'],
           rows: [
@@ -402,6 +429,8 @@ window.grammarTopics = [
           { ro: 'Quiero un café', ru: 'Я хочу кофе' },
           { ro: 'Vengo de Rusia', ru: 'Я из России', note: 'venir de = быть из...' },
           { ro: 'No sé', ru: 'Не знаю' },
+          { ro: 'No quiero ir', ru: 'Я не хочу идти' },
+          { ro: '¿Sabes la respuesta?', ru: 'Ты знаешь ответ?' },
         ],
       },
       {
@@ -457,6 +486,9 @@ window.grammarTopics = [
           { ro: 'Ayer hablé con María', ru: 'Вчера я говорил с Марией' },
           { ro: '¿Comiste bien?', ru: 'Ты хорошо поел?' },
           { ro: 'Vivieron en París dos años', ru: 'Они прожили в Париже два года' },
+          { ro: 'Llegué a las ocho', ru: 'Я пришёл в восемь' },
+          { ro: 'Ayer estudié mucho', ru: 'Вчера я много занимался' },
+          { ro: '¿Bebiste agua?', ru: 'Ты пил воду?' },
         ],
       },
       {
@@ -479,6 +511,8 @@ window.grammarTopics = [
           { ro: 'Fue una buena idea', ru: 'Это была хорошая идея', note: 'fue = ser или ir — по контексту' },
           { ro: 'Hizo frío', ru: 'Было холодно' },
           { ro: 'No pude dormir', ru: 'Я не смог уснуть' },
+          { ro: 'Tuve que trabajar todo el día', ru: 'Мне пришлось работать весь день', note: 'tener que = быть вынужденным' },
+          { ro: 'Quise llamarte pero no pude', ru: 'Я хотел тебе позвонить, но не смог' },
         ],
       },
       {
@@ -532,6 +566,10 @@ window.grammarTopics = [
         examples: [
           { ro: 'Mañana hablaré con él', ru: 'Завтра я поговорю с ним' },
           { ro: '¿Vendrás a la fiesta?', ru: 'Ты придёшь на вечеринку?' },
+          { ro: 'Comeremos en casa', ru: 'Мы пообедаем дома' },
+          { ro: '¿Trabajarás mañana?', ru: 'Ты завтра будешь работать?' },
+          { ro: 'El tren llegará a las tres', ru: 'Поезд прибудет в три часа' },
+          { ro: 'Vivirán en Madrid el año que viene', ru: 'В следующем году они будут жить в Мадриде' },
         ],
       },
       {
@@ -556,6 +594,8 @@ window.grammarTopics = [
           { ro: 'No podré venir', ru: 'Я не смогу прийти' },
           { ro: '¿Qué harás el fin de semana?', ru: 'Что ты будешь делать на выходных?' },
           { ro: 'Vendremos a las ocho', ru: 'Мы придём в восемь' },
+          { ro: 'Sabremos la respuesta mañana', ru: 'Завтра мы узнаем ответ', note: 'saber → sabr-' },
+          { ro: '¿Querrás acompañarme?', ru: 'Ты захочешь пойти со мной?', note: 'querer → querr-' },
         ],
       },
     ],
@@ -573,7 +613,7 @@ window.grammarTopics = [
       {
         id: 'numbers-cardinal',
         title: 'Числительные',
-        body: 'Числа от 1 до 20 и далее. Число 1 согласуется с родом: un libro, una mesa.',
+        body: 'Числа 16–19 и 21–29 пишутся слитно: dieciséis, veintiuno. С 31 — раздельно через y: treinta y uno. Uno перед существительными усекается: un libro, una mesa. Millar (тысяча) — без de; millón требует de: un millón de personas.',
         table: {
           headers: ['Число', 'Испанский', 'Число', 'Испанский'],
           rows: [
@@ -629,6 +669,9 @@ window.grammarTopics = [
           { ro: 'el lunes', ru: 'в понедельник (разово)' },
           { ro: 'los lunes', ru: 'по понедельникам' },
           { ro: 'el 15 de mayo', ru: '15 мая' },
+          { ro: 'Hoy es lunes', ru: 'Сегодня понедельник' },
+          { ro: 'Nació el 3 de octubre de 1990', ru: 'Он родился 3 октября 1990 года' },
+          { ro: 'En enero hace mucho frío', ru: 'В январе очень холодно' },
         ],
       },
       {
@@ -705,6 +748,9 @@ window.grammarTopics = [
           { ro: '¿Qué idiomas hablas?', ru: 'Какие языки ты знаешь?', note: 'qué + существительное' },
           { ro: '¿Cuál es tu número de teléfono?', ru: 'Какой твой номер телефона?', note: 'cuál без сущ.' },
           { ro: '¿Cuáles son tus colores favoritos?', ru: 'Какие твои любимые цвета?', note: 'cuáles = мн. число' },
+          { ro: '¿Qué libro prefieres?', ru: 'Какую книгу ты предпочитаешь?', note: 'qué + сущ. = «что за»' },
+          { ro: '¿Cuál es la diferencia?', ru: 'В чём разница?' },
+          { ro: '¿Qué es un bolígrafo?', ru: 'Что такое шариковая ручка?', note: 'qué + ser = определение понятия' },
         ],
       },
     ],
@@ -728,6 +774,8 @@ window.grammarTopics = [
           { ro: 'Todos los veranos íbamos a la playa', ru: 'Каждое лето мы ездили на пляж', note: 'todos los — признак imperfecto' },
           { ro: 'Llovía cuando salí de casa', ru: 'Шёл дождь, когда я вышел из дома', note: 'llovía (фон) + salí (событие)' },
           { ro: 'Quería pedirte un favor', ru: 'Я хотел бы попросить тебя об одолжении', note: 'вежливая просьба' },
+          { ro: 'Eran las dos cuando llegó', ru: 'Было два часа, когда он пришёл', note: 'описание обстоятельств' },
+          { ro: 'Siempre comíamos juntos', ru: 'Мы всегда ели вместе', note: 'siempre — признак imperfecto' },
         ],
       },
       {
@@ -749,6 +797,9 @@ window.grammarTopics = [
           { ro: 'Hablábamos mucho', ru: 'Мы много разговаривали' },
           { ro: 'Comía pizza todos los viernes', ru: 'Каждую пятницу я ел пиццу' },
           { ro: 'Vivían cerca del mar', ru: 'Они жили рядом с морем' },
+          { ro: 'Trabajaba en una empresa grande', ru: 'Я работал в большой компании' },
+          { ro: '¿Estudiabas mucho de joven?', ru: 'Ты много учился в молодости?' },
+          { ro: 'Leíamos libros por la noche', ru: 'По ночам мы читали книги' },
         ],
       },
       {
@@ -770,6 +821,9 @@ window.grammarTopics = [
           { ro: 'Éramos amigos', ru: 'Мы были друзьями' },
           { ro: 'Iba al colegio en autobús', ru: 'Я ходил в школу на автобусе' },
           { ro: 'Veía la tele cada noche', ru: 'Каждый вечер я смотрел телевизор' },
+          { ro: 'Era muy tímido de pequeño', ru: 'В детстве он был очень застенчивым' },
+          { ro: 'Iban de vacaciones a la playa', ru: 'Они ездили в отпуск на пляж' },
+          { ro: 'La veía en el parque', ru: 'Я видел её в парке' },
         ],
       },
     ],
@@ -804,6 +858,8 @@ window.grammarTopics = [
           { ro: '¿Qué vas a hacer mañana?', ru: 'Что ты будешь делать завтра?' },
           { ro: 'Va a ser difícil', ru: 'Это будет трудно' },
           { ro: 'Vamos a ver', ru: 'Посмотрим / Давайте посмотрим', note: 'устойчивое выражение' },
+          { ro: 'Van a abrir un restaurante nuevo', ru: 'Они откроют новый ресторан' },
+          { ro: '¿Cuándo vas a llamar?', ru: 'Когда ты собираешься позвонить?' },
         ],
       },
     ],
@@ -886,12 +942,14 @@ window.grammarTopics = [
           { ro: 'Se levanta a las siete', ru: 'Он встаёт в семь часов' },
           { ro: '¿A qué hora te acuestas?', ru: 'В котором часу ты ложишься спать?' },
           { ro: 'Nos duchamos por la mañana', ru: 'Мы принимаем душ утром' },
+          { ro: 'Me siento bien hoy', ru: 'Сегодня я чувствую себя хорошо', note: 'sentirse = чувствовать себя' },
+          { ro: '¿Os conocéis?', ru: 'Вы знакомы (друг с другом)?', note: 'os = взаимное действие' },
         ],
       },
       {
         id: 'reflexive-common',
         title: 'Частые возвратные глаголы',
-        body: 'Многие глаголы повседневной рутины — возвратные.',
+        body: 'Возвратные глаголы обозначают действие, направленное на самого субъекта. Сравни: levantarse (встать самому) vs levantar algo (поднять что-то). Большинство глаголов рутины возвратны. Местоимение (me/te/se/nos/os/se) стоит перед спрягаемым глаголом или присоединяется к инфинитиву.',
         table: {
           headers: ['Глагол', 'Перевод', 'Глагол', 'Перевод'],
           rows: [
@@ -908,6 +966,8 @@ window.grammarTopics = [
           { ro: 'Se viste rápido', ru: 'Он одевается быстро' },
           { ro: 'Siéntate, por favor', ru: 'Садись, пожалуйста', note: 'повелительное наклонение' },
           { ro: 'Se casaron en junio', ru: 'Они поженились в июне' },
+          { ro: 'Me lavo los dientes dos veces al día', ru: 'Я чищу зубы два раза в день' },
+          { ro: 'Se afeitó esta mañana', ru: 'Он побрился этим утром' },
         ],
       },
       {
@@ -919,6 +979,8 @@ window.grammarTopics = [
           { ro: 'Me tengo que lavar las manos', ru: 'Мне нужно помыть руки', note: 'оба варианта верны' },
           { ro: 'Está duchándose', ru: 'Он принимает душ (прямо сейчас)' },
           { ro: 'Se está duchando', ru: 'Он принимает душ (прямо сейчас)', note: 'тоже верно' },
+          { ro: 'Voy a levantarme temprano', ru: 'Я собираюсь встать рано' },
+          { ro: 'Me voy a levantar temprano', ru: 'Я собираюсь встать рано', note: 'оба порядка одинаково верны' },
         ],
       },
     ],
@@ -950,6 +1012,9 @@ window.grammarTopics = [
           { ro: '¿Ves el libro? — Sí, lo veo', ru: 'Видишь книгу? — Да, вижу её (её = libro, м.р.)' },
           { ro: '¿Conoces a María? — Sí, la conozco', ru: 'Ты знаешь Марию? — Да, знаю (её = María)' },
           { ro: 'Compra los billetes — Cómpralos', ru: 'Купи билеты — Купи их', note: 'к повелительному прикрепляется' },
+          { ro: '¿Me escuchas? — Sí, te escucho', ru: 'Ты меня слушаешь? — Да, слушаю', note: 'me → te при смене говорящего' },
+          { ro: '¿Las ves? — Sí, las veo', ru: 'Ты их видишь? — Да, вижу', note: 'las = вещи ж.р. мн.ч.' },
+          { ro: 'No lo entiendo', ru: 'Я это не понимаю' },
         ],
       },
       {
@@ -969,6 +1034,8 @@ window.grammarTopics = [
           { ro: '¿Me puedes ayudar?', ru: 'Ты можешь мне помочь?' },
           { ro: 'Les escribo un mensaje', ru: 'Я пишу им сообщение' },
           { ro: 'Te lo explico', ru: 'Я тебе это объясняю', note: 'оба местоимения вместе: te (косв.) + lo (прямое)' },
+          { ro: '¿Le dices la verdad?', ru: 'Ты ему говоришь правду?' },
+          { ro: 'Nos manda un regalo', ru: 'Он посылает нам подарок' },
         ],
       },
       {
@@ -979,6 +1046,9 @@ window.grammarTopics = [
           { ro: 'Te lo digo — Я тебе это скажу', ru: 'te (косв.) + lo (прямое)' },
           { ro: '¿Le dices la verdad? → ¿Se la dices?', ru: 'Ты ему говоришь правду? → Говоришь ли ты её ему?', note: 'le → se перед la' },
           { ro: 'Se lo mando mañana', ru: 'Я отошлю ему/ей это завтра' },
+          { ro: 'Me lo das, por favor', ru: 'Дай мне это, пожалуйста', note: 'me (косв.) + lo (прямое)' },
+          { ro: 'Nos lo explicó el profesor', ru: 'Учитель нам это объяснил' },
+          { ro: 'Se las compré', ru: 'Я купил их ей/ему', note: 'le → se перед las' },
         ],
       },
     ],
@@ -996,7 +1066,7 @@ window.grammarTopics = [
       {
         id: 'prepositions-basic',
         title: 'Основные предлоги',
-        body: 'Базовые предлоги места, времени и связи.',
+        body: 'Главная особенность испанских предлогов — так называемый personal a: перед одушевлённым прямым дополнением обязательно ставится a (veo a mi amigo). Предлоги a и de сливаются с определённым артиклем el: a + el = al, de + el = del.',
         table: {
           headers: ['Предлог', 'Значение', 'Примеры'],
           rows: [
@@ -1016,6 +1086,8 @@ window.grammarTopics = [
           { ro: 'a + el = al', ru: 'Voy al trabajo — иду на работу', note: 'слияние a + el → al' },
           { ro: 'de + el = del', ru: 'El libro del profesor — книга учителя', note: 'слияние de + el → del' },
           { ro: 'Desde las ocho hasta las cinco', ru: 'С восьми до пяти' },
+          { ro: 'Vivo con mis padres', ru: 'Я живу с родителями' },
+          { ro: 'Hablo sobre el trabajo', ru: 'Я говорю о работе' },
         ],
       },
       {
@@ -1085,6 +1157,8 @@ window.grammarTopics = [
           { ro: 'Es necesario que comamos bien', ru: 'Необходимо, чтобы мы хорошо питались', note: 'comer → comamos' },
           { ro: 'Espero que vivas cerca', ru: 'Надеюсь, что ты живёшь рядом', note: 'vivir → vivas' },
           { ro: 'No quiero que trabajes tanto', ru: 'Не хочу, чтобы ты так много работал', note: 'trabajar → trabajes' },
+          { ro: 'Te pido que vengas', ru: 'Прошу тебя прийти', note: 'pedir que + субхунтиво' },
+          { ro: 'Ojalá lleguen a tiempo', ru: 'Хотелось бы, чтобы они успели', note: 'ojalá + субхунтиво' },
         ],
       },
       {
@@ -1106,6 +1180,9 @@ window.grammarTopics = [
           { ro: 'Quiero que vayas al médico', ru: 'Хочу, чтобы ты сходил к врачу' },
           { ro: 'Espero que estés bien', ru: 'Надеюсь, что ты в порядке' },
           { ro: 'Es importante que seas honesto', ru: 'Важно, чтобы ты был честным' },
+          { ro: 'No quiero que des ese paso', ru: 'Не хочу, чтобы ты делал этот шаг', note: 'dar → des' },
+          { ro: 'Ojalá sepa la respuesta', ru: 'Хотелось бы, чтобы он знал ответ', note: 'saber → sepa' },
+          { ro: 'Es necesario que estén aquí a las ocho', ru: 'Нужно, чтобы они были здесь в восемь', note: 'estar → estén' },
         ],
       },
     ],
@@ -1150,6 +1227,10 @@ window.grammarTopics = [
         examples: [
           { ro: 'Hablaríamos más, pero no hay tiempo', ru: 'Мы бы говорили дольше, но нет времени' },
           { ro: '¿Comerías sushi?', ru: 'Ты бы поел суши?' },
+          { ro: 'Viviría en España si pudiera', ru: 'Я бы жил в Испании, если бы мог' },
+          { ro: 'Trabajaría menos si ganara más', ru: 'Я бы меньше работал, если бы больше зарабатывал' },
+          { ro: 'Estudiaría más, pero estoy cansado', ru: 'Я бы больше учился, но я устал' },
+          { ro: '¿Beberías más agua si hiciera más calor?', ru: 'Ты бы пил больше воды, если бы было теплее?' },
         ],
       },
       {
@@ -1174,6 +1255,8 @@ window.grammarTopics = [
           { ro: 'Querría una mesa para dos', ru: 'Я бы хотел столик на двоих', note: 'в ресторане — очень вежливо' },
           { ro: 'Haría lo mismo en tu lugar', ru: 'На твоём месте я бы сделал то же самое' },
           { ro: '¿Qué harías si tuvieras un millón?', ru: 'Что бы ты сделал, если бы у тебя был миллион?' },
+          { ro: 'Tendría más tiempo libre', ru: 'У меня было бы больше свободного времени' },
+          { ro: 'Vendría contigo, pero tengo trabajo', ru: 'Я бы пошёл с тобой, но у меня работа' },
         ],
       },
     ],
@@ -1196,6 +1279,8 @@ window.grammarTopics = [
           { ro: '¿Qué estás haciendo?', ru: 'Что ты сейчас делаешь?' },
           { ro: 'Está lloviendo', ru: 'Идёт дождь', note: 'llover → lloviendo' },
           { ro: 'Estamos estudiando español', ru: 'Мы учим испанский (сейчас)' },
+          { ro: 'En este momento estoy durmiendo', ru: 'В данный момент я сплю', note: 'dormir → durmiendo' },
+          { ro: 'Estaba comiendo cuando llegaste', ru: 'Я ел, когда ты пришёл', note: 'estar в imperfecto + gerundio' },
         ],
       },
       {
@@ -1218,6 +1303,9 @@ window.grammarTopics = [
           { ro: 'El niño está durmiendo', ru: 'Ребёнок спит (сейчас)', note: 'dormir → durmiendo' },
           { ro: 'Sigo leyendo el libro', ru: 'Я продолжаю читать книгу', note: 'leer → leyendo' },
           { ro: '¿Estás siguiendo?', ru: 'Ты следишь (понимаешь)?', note: 'seguir → siguiendo' },
+          { ro: 'Estoy pidiendo un taxi', ru: 'Я заказываю такси', note: 'pedir → pidiendo (e→i)' },
+          { ro: 'Está construyendo una casa', ru: 'Он строит дом', note: 'construir → construyendo' },
+          { ro: 'Estamos viviendo momentos especiales', ru: 'Мы переживаем особые моменты' },
         ],
       },
     ],
@@ -1239,6 +1327,9 @@ window.grammarTopics = [
           { ro: '¡Escúchame!', ru: 'Слушай меня!', note: 'tú, утвердительный' },
           { ro: 'Por favor, abra la ventana', ru: 'Откройте, пожалуйста, окно', note: 'usted, вежливо' },
           { ro: '¡No toques eso!', ru: 'Не трогай это!', note: 'tú, отрицательный → субхунтиво' },
+          { ro: '¡Come la verdura!', ru: 'Ешь овощи!', note: 'comer → come (tú)' },
+          { ro: 'Gira a la derecha en el semáforo', ru: 'Поверни направо у светофора', note: 'инструкция' },
+          { ro: 'Por favor, espere un momento', ru: 'Пожалуйста, подождите минуту', note: 'esperar → espere (usted)' },
         ],
       },
       {
@@ -1263,6 +1354,8 @@ window.grammarTopics = [
           { ro: 'Hazlo ahora', ru: 'Сделай это сейчас', note: 'hacer → haz' },
           { ro: 'Di la verdad', ru: 'Говори правду', note: 'decir → di' },
           { ro: 'No vengas tarde', ru: 'Не приходи поздно', note: 'no + vengas (субхунтиво)' },
+          { ro: 'Sé amable con todos', ru: 'Будь добр со всеми', note: 'ser → sé' },
+          { ro: 'Ten paciencia', ru: 'Потерпи / Будь терпелив', note: 'tener → ten' },
         ],
       },
       {
@@ -1284,8 +1377,438 @@ window.grammarTopics = [
           { ro: 'No me lo des', ru: 'Не давай мне это', note: 'me lo стоят перед глаголом' },
           { ro: '¡Escúchenme!', ru: 'Слушайте меня! (ustedes)', note: 'escuchen + me' },
           { ro: 'Hablad más despacio', ru: 'Говорите помедленнее (vosotros)', note: 'hablar → hablad' },
+          { ro: '¡Vayamos al cine!', ru: 'Пойдём в кино!', note: 'ir → vayamos (nosotros)' },
+          { ro: 'Hablen más despacio, por favor', ru: 'Говорите помедленнее, пожалуйста', note: 'hablar → hablen (ustedes)' },
         ],
       },
     ],
   },
 ];
+
+// ─────────────────────────────────────────────
+// 21. ОТРИЦАНИЕ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'negation',
+  title: 'Отрицание',
+  icon: '🚫',
+  description: 'no, tampoco, ni…ni, nada, nadie, nunca — строим отрицательные предложения',
+  sections: [
+    {
+      id: 'negation-no',
+      title: 'No — базовое отрицание',
+      body: 'No ставится перед спряжённым глаголом. В испанском допустимо двойное отрицание — если отрицательное слово стоит после глагола, перед глаголом обязательно стоит no.',
+      table: {
+        headers: ['Отрицание', 'Позиция', 'Пример'],
+        rows: [
+          ['no', 'перед глаголом', 'No hablo ruso.'],
+          ['no … nada', 'no + гл. + nada', 'No como nada.'],
+          ['no … nadie', 'no + гл. + nadie', 'No veo a nadie.'],
+          ['no … nunca/jamás', 'no + гл. + nunca', 'No voy nunca allí.'],
+          ['nunca/nadie/nada + гл.', 'без no', 'Nunca voy allí.'],
+        ],
+      },
+      examples: [
+        { ro: 'No entiendo nada', ru: 'Я ничего не понимаю', note: 'двойное отрицание — норма' },
+        { ro: 'No veo a nadie aquí', ru: 'Я никого здесь не вижу' },
+        { ro: 'Nadie sabe la respuesta', ru: 'Никто не знает ответа', note: 'nadie перед глаголом — no не нужно' },
+        { ro: 'No quiero nada', ru: 'Я ничего не хочу' },
+        { ro: 'No tengo tiempo', ru: 'У меня нет времени' },
+        { ro: 'No sé nada de esto', ru: 'Я ничего об этом не знаю' },
+      ],
+    },
+    {
+      id: 'negation-words',
+      title: 'Отрицательные слова',
+      body: 'Отрицательные слова могут стоять перед глаголом (без no) или после глагола (тогда нужно no перед глаголом).',
+      table: {
+        headers: ['Отрицание', 'Значение', 'Пример'],
+        rows: [
+          ['nada', 'ничего', 'No hay nada / Nada hay'],
+          ['nadie', 'никто', 'No viene nadie / Nadie viene'],
+          ['nunca / jamás', 'никогда', 'No voy nunca / Nunca voy'],
+          ['tampoco', 'тоже нет', '— Yo no voy. — Yo tampoco.'],
+          ['ni … ni …', 'ни … ни …', 'No tengo ni tiempo ni dinero'],
+          ['ningún/ninguna', 'никакой', 'No tengo ningún problema'],
+        ],
+      },
+      examples: [
+        { ro: '— Yo no como carne. — Yo tampoco.', ru: '— Я не ем мяса. — Я тоже.', note: 'tampoco = тоже нет' },
+        { ro: 'No tengo ni hermanos ni hermanas', ru: 'У меня нет ни братьев, ни сестёр' },
+        { ro: 'Nunca he estado en España', ru: 'Я никогда не был в Испании' },
+        { ro: 'No vino nadie a la fiesta', ru: 'На вечеринку никто не пришёл' },
+        { ro: 'No tengo ninguna idea', ru: 'У меня нет никакой идеи', note: 'ningún/ninguna + сущ.' },
+        { ro: 'Jamás lo haré', ru: 'Я никогда этого не сделаю', note: 'jamás = сильнее, чем nunca' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 22. ТЕЛО ЧЕЛОВЕКА И ЗДОРОВЬЕ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'body',
+  title: 'Тело человека',
+  icon: '🫀',
+  description: 'Части тела, конструкция «болит» с doler, поход к врачу',
+  sections: [
+    {
+      id: 'body-parts',
+      title: 'Основные части тела',
+      body: 'Части тела в испанском используются с определённым артиклем (не притяжательным), если понятно, чьё это тело: Me lavo las manos (не mis manos).',
+      table: {
+        headers: ['Часть тела', 'Испанский', 'Часть тела', 'Испанский'],
+        rows: [
+          ['голова', 'la cabeza', 'нога', 'la pierna / el pie'],
+          ['лицо', 'la cara', 'рука', 'el brazo / la mano'],
+          ['глаз', 'el ojo', 'спина', 'la espalda'],
+          ['нос', 'la nariz', 'живот', 'el estómago'],
+          ['рот', 'la boca', 'сердце', 'el corazón'],
+          ['ухо', 'la oreja / el oído', 'горло', 'la garganta'],
+        ],
+      },
+      examples: [
+        { ro: 'Me duele la cabeza', ru: 'У меня болит голова', note: 'doler работает как gustar' },
+        { ro: 'Me lavo las manos', ru: 'Я мою руки', note: 'las manos, не mis manos' },
+        { ro: 'Tiene los ojos azules', ru: 'У него голубые глаза', note: 'los ojos, не sus ojos' },
+        { ro: 'Me rompí el brazo', ru: 'Я сломал руку', note: 'артикль, не притяжательное' },
+        { ro: 'Abre la boca', ru: 'Открой рот' },
+        { ro: 'Le duele la espalda', ru: 'У него/неё болит спина' },
+      ],
+    },
+    {
+      id: 'body-doler',
+      title: 'Конструкция «болит» — doler',
+      body: 'Doler работает как gustar: подлежащее — то, что болит; косвенное дополнение — кому болит.\n\n me/te/le/nos/os/les + duele (ед.ч.) / duelen (мн.ч.)\n\nДля сказать «у меня болит голова» нельзя использовать estar — только doler или tener dolor de.',
+      table: {
+        headers: ['Конструкция', 'Пример', 'Перевод'],
+        rows: [
+          ['me duele + ед.ч.', 'Me duele el estómago', 'У меня болит желудок'],
+          ['me duelen + мн.ч.', 'Me duelen los pies', 'У меня болят ноги'],
+          ['tener dolor de', 'Tengo dolor de cabeza', 'У меня болит голова'],
+          ['tener fiebre', 'Tengo fiebre', 'У меня температура'],
+        ],
+      },
+      examples: [
+        { ro: 'Me duele la garganta', ru: 'У меня болит горло' },
+        { ro: 'Le duelen las rodillas', ru: 'У него/неё болят колени', note: 'duelen — мн.ч.' },
+        { ro: 'Tengo dolor de cabeza', ru: 'У меня болит голова', note: 'альтернативная конструкция' },
+        { ro: '¿Dónde te duele?', ru: 'Где у тебя болит?' },
+        { ro: 'Tengo fiebre y me duele todo el cuerpo', ru: 'У меня температура и болит всё тело' },
+        { ro: 'Necesito ver al médico', ru: 'Мне нужно попасть к врачу' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 23. КОСВЕННАЯ РЕЧЬ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'reported-speech',
+  title: 'Косвенная речь',
+  icon: '💬',
+  description: 'Передача чужих слов: dice que…, dijo que…, смена времён',
+  sections: [
+    {
+      id: 'reported-present',
+      title: 'Настоящее время — dice que…',
+      body: 'Если глагол передачи речи стоит в настоящем времени (dice, pregunta), время в придаточном не меняется.',
+      table: {
+        headers: ['Прямая речь', 'Косвенная речь'],
+        rows: [
+          ['"Estoy cansado"', 'Dice que está cansado.'],
+          ['"Tengo hambre"', 'Dice que tiene hambre.'],
+          ['"Voy al trabajo"', 'Dice que va al trabajo.'],
+          ['"No sé"', 'Dice que no sabe.'],
+        ],
+      },
+      examples: [
+        { ro: 'Dice que está cansado', ru: 'Он говорит, что устал', note: 'настоящее — без смены времени' },
+        { ro: 'Me dice que venga mañana', ru: 'Он говорит мне прийти завтра', note: 'субхунтиво после просьбы' },
+        { ro: 'Pregunta si tienes tiempo', ru: 'Он спрашивает, есть ли у тебя время', note: 'косвенный вопрос через si' },
+        { ro: 'Pregunta dónde vives', ru: 'Он спрашивает, где ты живёшь' },
+        { ro: 'Cuenta que ha viajado mucho', ru: 'Она рассказывает, что много путешествовала' },
+        { ro: 'Explica que no puede venir', ru: 'Он объясняет, что не может прийти' },
+      ],
+    },
+    {
+      id: 'reported-past',
+      title: 'Прошедшее время — dijo que…',
+      body: 'Если глагол передачи речи стоит в прошедшем времени, время в придаточном сдвигается назад:\n— presente → imperfecto\n— pretérito indefinido → pluscuamperfecto\n— futuro → condicional',
+      table: {
+        headers: ['Прямая речь', 'Косвенная речь (dijo que…)'],
+        rows: [
+          ['"Estoy cansado" (presente)', 'Dijo que estaba cansado. (imperfecto)'],
+          ['"Fui al médico" (indefinido)', 'Dijo que había ido al médico. (pluscuam.)'],
+          ['"Vendré mañana" (futuro)', 'Dijo que vendría mañana. (condicional)'],
+        ],
+      },
+      examples: [
+        { ro: 'Dijo que estaba cansado', ru: 'Он сказал, что устал', note: 'está → estaba' },
+        { ro: 'Dijo que vendría mañana', ru: 'Он сказал, что придёт завтра', note: 'vendrá → vendría' },
+        { ro: 'Me preguntó si tenía tiempo', ru: 'Он спросил меня, есть ли у меня время', note: 'tienes → tenía' },
+        { ro: 'Nos dijo que no podía venir', ru: 'Он сказал нам, что не может прийти' },
+        { ro: 'Explicó que había olvidado el libro', ru: 'Он объяснил, что забыл книгу', note: 'pluscuamperfecto' },
+        { ro: 'Dijo que lo haría más tarde', ru: 'Он сказал, что сделает это позже' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 24. РАЗГОВОРНЫЕ МЕХАНИКИ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'conversation-mechanics',
+  title: 'Разговорные механики',
+  icon: '🗣️',
+  description: 'Заполнители пауз, согласие и несогласие, переспрос, реакции',
+  sections: [
+    {
+      id: 'conv-fillers',
+      title: 'Заполнители пауз и частицы',
+      body: 'Испанский разговорный язык богат на слова-связки и усилители. Без них речь звучит книжно.',
+      table: {
+        headers: ['Слово', 'Значение', 'Пример'],
+        rows: [
+          ['pues…', 'ну, итак', 'Pues, no sé... (Ну, не знаю)'],
+          ['bueno', 'ну ладно, хорошо', 'Bueno, vamos. (Ну, пошли)'],
+          ['o sea', 'то есть, иными словами', 'O sea, no vas. (То есть, ты не идёшь.)'],
+          ['es que…', 'дело в том, что...', 'Es que no puedo. (Просто не могу.)'],
+          ['a ver', 'посмотрим, давай-ка', 'A ver, dímelo. (Ну-ка, скажи мне.)'],
+          ['claro', 'конечно, ясно', 'Claro que sí. (Конечно, да.)'],
+          ['¡venga!', 'ладно! давай!', 'Venga, te ayudo. (Ладно, помогу тебе.)'],
+        ],
+      },
+      examples: [
+        { ro: 'Pues no sé qué decirte', ru: 'Ну, не знаю, что тебе сказать' },
+        { ro: 'Bueno, si tú lo dices', ru: 'Ну ладно, раз ты так говоришь' },
+        { ro: 'Es que estoy muy cansado', ru: 'Просто я очень устал', note: 'es que = мягкое объяснение/оправдание' },
+        { ro: 'A ver, ¿cómo te llamas?', ru: 'Ну-ка, как тебя зовут?' },
+        { ro: 'O sea, no vas a venir', ru: 'То есть ты не придёшь?' },
+        { ro: '¡Venga, no te preocupes!', ru: 'Ладно, не волнуйся!' },
+      ],
+    },
+    {
+      id: 'conv-agree',
+      title: 'Согласие, несогласие, переспрос',
+      body: 'Богатый набор реакций делает речь живой. Простое sí/no звучит резко.',
+      table: {
+        headers: ['Фраза', 'Перевод', 'Когда'],
+        rows: [
+          ['Claro / Claro que sí', 'Конечно', 'согласие'],
+          ['Exactamente / Exacto', 'Точно / Именно', 'подтверждение'],
+          ['Tienes razón', 'Ты прав', 'согласие'],
+          ['No estoy de acuerdo', 'Я не согласен', 'несогласие'],
+          ['Depende', 'Зависит', 'уклонение'],
+          ['¿Cómo?', 'Что? Простите?', 'переспрос' ],
+          ['¿Puedes repetir?', 'Можешь повторить?', 'переспрос' ],
+          ['Más despacio, por favor', 'Помедленнее, пожалуйста', 'переспрос' ],
+        ],
+      },
+      examples: [
+        { ro: '¡Claro que sí! Voy contigo', ru: 'Конечно! Я иду с тобой' },
+        { ro: 'Tienes razón, lo haré así', ru: 'Ты прав, я так и сделаю' },
+        { ro: '¿Cómo? No te he escuchado bien', ru: 'Что? Я тебя не очень расслышал' },
+        { ro: 'No estoy de acuerdo con eso', ru: 'Я с этим не согласен' },
+        { ro: '¿Puedes hablar más despacio?', ru: 'Можешь говорить помедленнее?' },
+        { ro: '¿Qué significa esa palabra?', ru: 'Что означает это слово?' },
+      ],
+    },
+    {
+      id: 'conv-reactions',
+      title: 'Устойчивые фразы-реакции',
+      body: 'Многие реакции строятся по модели ¡Qué + прилагательное!: ¡Qué bien!, ¡Qué pena!, ¡Qué raro!. Модель продуктивна — можно подставить любое подходящее прилагательное. Восклицательные предложения в испанском обрамляются ¡ … !.',
+      table: {
+        headers: ['Фраза', 'Перевод', 'Когда'],
+        rows: [
+          ['¡Qué bien!', 'Как хорошо! Отлично!', 'радость' ],
+          ['¡Qué pena!', 'Как жаль!', 'сочувствие' ],
+          ['¡Qué asco!', 'Какая гадость!', 'отвращение' ],
+          ['¡No me digas!', 'Да ты что! Не может быть!', 'удивление' ],
+          ['¡Qué va!', 'Ну что ты! Вовсе нет!', 'возражение' ],
+          ['¡Ánimo!', 'Давай! Не сдавайся!', 'поддержка' ],
+          ['Lo siento', 'Мне жаль', 'извинение/сочувствие' ],
+          ['¡Enhorabuena!', 'Поздравляю!', 'поздравление' ],
+        ],
+      },
+      examples: [
+        { ro: '¡Qué bien que hayas venido!', ru: 'Как хорошо, что ты пришёл!' },
+        { ro: '¡Qué pena! No puedo ir', ru: 'Как жаль! Не смогу пойти' },
+        { ro: '¡No me digas! ¿De verdad?', ru: 'Да ты что! Правда?' },
+        { ro: 'Lo siento mucho', ru: 'Мне очень жаль' },
+        { ro: '¡Enhorabuena por el nuevo trabajo!', ru: 'Поздравляю с новой работой!' },
+        { ro: '¡Ánimo, ya casi llegas!', ru: 'Давай, ты почти у цели!' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 25. ПАССИВНЫЙ ЗАЛОГ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'passive',
+  title: 'Пассивный залог',
+  icon: '🔄',
+  description: 'Pasiva refleja (se + verbo) и pasiva perifrástica (ser + participio)',
+  sections: [
+    {
+      id: 'passive-se',
+      title: 'Pasiva refleja — se + глагол',
+      body: 'Самый частый способ выражения пассива в разговорном испанском — конструкция se + глагол в 3-м лице. Деятель не упоминается. Глагол согласуется с подлежащим в числе.\n\nИспользуется для:\n— Объявлений, вывесок, инструкций\n— Обобщённых утверждений («говорят, что...»)\n— Описания процессов без указания исполнителя',
+      table: {
+        headers: ['Пример', 'Перевод'],
+        rows: [
+          ['Se habla español aquí.', 'Здесь говорят по-испански.'],
+          ['Se venden pisos.', 'Продаются квартиры.'],
+          ['Se alquila habitación.', 'Сдаётся комната.'],
+          ['Se prohibe fumar.', 'Курить запрещено.'],
+          ['Se dice que...', 'Говорят, что...'],
+        ],
+      },
+      examples: [
+        { ro: 'Se habla español en 20 países', ru: 'На испанском говорят в 20 странах' },
+        { ro: 'Se vende piso en el centro', ru: 'Продаётся квартира в центре', note: 'объявление о продаже' },
+        { ro: 'Se alquila habitación', ru: 'Сдаётся комната', note: 'объявление' },
+        { ro: 'Se dice que va a llover', ru: 'Говорят, что будет дождь' },
+        { ro: 'Aquí se come muy bien', ru: 'Здесь очень хорошо кормят', note: 'обобщение' },
+        { ro: 'Se aceptan tarjetas de crédito', ru: 'Принимаются кредитные карты', note: 'множественное число' },
+      ],
+    },
+    {
+      id: 'passive-ser',
+      title: 'Pasiva perifrástica — ser + participio',
+      body: 'Конструкция ser + participio пассива — аналог русского «был сделан». Причастие согласуется с подлежащим в роде и числе. Часто используется в письменном, официальном и журналистском языке.\n\nДеятель вводится через предлог por: La carta fue escrita por el director.',
+      table: {
+        headers: ['Лицо', 'Пример', 'Перевод'],
+        rows: [
+          ['ед.ч. м.р.', 'El libro fue escrito por García Márquez.', 'Книга написана Г. Маркесом.'],
+          ['ед.ч. ж.р.', 'La ley fue aprobada.', 'Закон был принят.'],
+          ['мн.ч. м.р.', 'Los edificios fueron destruidos.', 'Здания были разрушены.'],
+        ],
+      },
+      examples: [
+        { ro: 'La carta fue escrita por ella', ru: 'Письмо было написано ею', note: 'por + деятель' },
+        { ro: 'El puente fue construido en 1900', ru: 'Мост был построен в 1900 году' },
+        { ro: 'Los ladrones fueron detenidos', ru: 'Воры были задержаны' },
+        { ro: 'La novela es leída por millones', ru: 'Роман читается миллионами', note: 'ser в presente = текущее состояние' },
+        { ro: 'El problema ha sido resuelto', ru: 'Проблема была решена', note: 'с haber — сложное время' },
+        { ro: 'Los heridos fueron llevados al hospital', ru: 'Раненые были доставлены в больницу' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 26. СОЮЗЫ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'conjunctions',
+  title: 'Союзы',
+  icon: '🔗',
+  description: 'Сочинительные и подчинительные союзы — pero, sino, aunque, porque, si…',
+  sections: [
+    {
+      id: 'conjunctions-coord',
+      title: 'Сочинительные союзы',
+      body: 'Соединяют равноправные части. Важная пара: pero vs sino.\n\n— pero (но) — противопоставление после утвердительного\n— sino (а, но) — противопоставление после отрицательного: заменяет то, что отвергнуто\n— sino que — то же, но перед придаточным с глаголом',
+      table: {
+        headers: ['Союз', 'Значение', 'Пример'],
+        rows: [
+          ['y / e', 'и (e перед i/hi)', 'pan y agua; padre e hijo'],
+          ['o / u', 'или (u перед o/ho)', 'café o té; mujer u hombre'],
+          ['pero', 'но (после утверд.)', 'Es difícil pero interesante.'],
+          ['sino', 'а, но (после отриц.)', 'No es ruso, sino ucraniano.'],
+          ['sino que', 'а (перед придаточным)', 'No descansó sino que trabajó.'],
+          ['ni … ni', 'ни … ни', 'No tengo ni tiempo ni dinero.'],
+        ],
+      },
+      examples: [
+        { ro: 'Quiero café o té', ru: 'Хочу кофе или чай' },
+        { ro: 'Es cansado pero feliz', ru: 'Он устал, но счастлив', note: 'pero после утвердительного' },
+        { ro: 'No es alemán, sino austriaco', ru: 'Он не немец, а австриец', note: 'sino заменяет отвергнутое' },
+        { ro: 'No fue al cine sino al teatro', ru: 'Он пошёл не в кино, а в театр' },
+        { ro: 'Habla español e italiano', ru: 'Она говорит по-испански и по-итальянски', note: 'e перед i' },
+        { ro: 'No descansó sino que siguió trabajando', ru: 'Он не отдыхал, а продолжал работать', note: 'sino que + глагол' },
+      ],
+    },
+    {
+      id: 'conjunctions-sub',
+      title: 'Подчинительные союзы',
+      body: 'Вводят придаточные предложения. Главный вопрос: после союза нужен индикатив или субхунтиво?\n\n— porque (потому что) → индикатив (факт)\n— para que (чтобы, с целью) → субхунтиво\n— aunque (хотя, даже если) → индикатив (факт) или субхунтиво (гипотеза)\n— cuando (когда) → индикатив (прошлое/настоящее), субхунтиво (будущее!)\n— si (если) → индикатив (реальное), imperfecto subjuntivo (гипотеза)',
+      table: {
+        headers: ['Союз', 'Значение', 'Наклонение'],
+        rows: [
+          ['porque', 'потому что', 'индикатив'],
+          ['para que', 'чтобы (цель)', 'субхунтиво'],
+          ['aunque', 'хотя / даже если', 'инд. (факт) / субх. (гипотеза)'],
+          ['cuando', 'когда', 'инд. (прош./наст.) / субх. (буд.)'],
+          ['si', 'если', 'инд. (реально) / impf. subj. (гипотеза)'],
+          ['como', 'так как, поскольку', 'индикатив'],
+        ],
+      },
+      examples: [
+        { ro: 'No fui porque estaba cansado', ru: 'Я не пошёл, потому что устал', note: 'porque + индикатив' },
+        { ro: 'Te lo digo para que lo sepas', ru: 'Говорю тебе, чтобы ты знал', note: 'para que + субхунтиво' },
+        { ro: 'Aunque es difícil, lo haré', ru: 'Хотя это трудно, я сделаю', note: 'aunque + инд. = реальный факт' },
+        { ro: 'Llámame cuando llegues', ru: 'Позвони мне, когда приедешь', note: 'cuando + субхунтиво (будущее!)' },
+        { ro: 'Si tienes tiempo, ven', ru: 'Если у тебя есть время, приходи', note: 'si + индикатив = реальное условие' },
+        { ro: 'Si tuviera dinero, viajaría', ru: 'Если бы у меня были деньги, я бы путешествовал', note: 'si + impf. subj. = гипотеза' },
+      ],
+    },
+  ],
+});
+
+// ─────────────────────────────────────────────
+// 27. СИТУАТИВНЫЕ ДИАЛОГИ
+// ─────────────────────────────────────────────
+grammarTopics.push({
+  id: 'dialogues',
+  title: 'Ситуативные диалоги',
+  icon: '💬',
+  description: 'Живые фразы для реальных ситуаций — знакомство, кафе, транспорт, покупки',
+  sections: [
+    {
+      id: 'dialogues-intro',
+      title: 'Знакомство',
+      body: 'При знакомстве ¿cómo te llamas? — неформально (к ровеснику), ¿cómo se llama? — формально. Профессию называют без артикля: soy estudiante, soy médico. Возраст через tener: tengo veinte años — буквально «у меня есть 20 лет».',
+      examples: [
+        { ro: '— ¿Cómo te llamas? — Me llamo Ана.', ru: '— Как тебя зовут? — Меня зовут Ана.' },
+        { ro: '— ¿De dónde eres? — Soy de Rusia.', ru: '— Откуда ты? — Я из России.' },
+        { ro: '— ¿A qué te dedicas? — Soy estudiante.', ru: '— Чем ты занимаешься? — Я студент.', note: 'a qué te dedicas = чем занимаешься' },
+        { ro: '— ¿Cuánto tiempo llevas aquí? — Llevo dos años.', ru: '— Как давно ты здесь? — Два года.', note: 'llevar + tiempo = находиться X времени' },
+        { ro: 'Encantado / Encantada de conocerte', ru: 'Приятно познакомиться' },
+        { ro: 'Igualmente', ru: 'Взаимно' },
+      ],
+    },
+    {
+      id: 'dialogues-cafe',
+      title: 'В кафе и ресторане',
+      body: 'Заказ строится на конструкции para mí + блюдо (буквально «для меня»). Официанта привлекают через oiga (формально) или perdona. Счёт просят через ¿me trae la cuenta? Глагол ir a tomar используется официантами вместо querer — это вежливее.',
+      examples: [
+        { ro: '¿Qué van a tomar?', ru: 'Что будете заказывать?', note: 'фраза официанта' },
+        { ro: 'Para mí, un café con leche, por favor', ru: 'Мне кофе с молоком, пожалуйста' },
+        { ro: '¿Me trae la cuenta, por favor?', ru: 'Принесите счёт, пожалуйста?' },
+        { ro: '¿Está incluido el servicio?', ru: 'Сервис включён?' },
+        { ro: 'Querría reservar una mesa para dos personas', ru: 'Я бы хотел забронировать столик на двоих' },
+        { ro: '¿Qué me recomienda?', ru: 'Что вы рекомендуете?', note: 'recomienda = recomendar (usted)' },
+      ],
+    },
+    {
+      id: 'dialogues-transport',
+      title: 'Транспорт и ориентирование',
+      body: 'При запросе пути: ¿cómo se llega a…? (как добраться до). Инструкции: gire a la izquierda/derecha (повернуть — usted), siga todo recto (прямо). Билет: billete de ida (в одну сторону), de ida y vuelta (туда-обратно).',
+      examples: [
+        { ro: 'Perdona, ¿cómo se llega a la estación?', ru: 'Извини, как добраться до вокзала?' },
+        { ro: 'Gira a la izquierda / a la derecha', ru: 'Поверни налево / направо' },
+        { ro: 'Está a cinco minutos a pie', ru: 'Это в пяти минутах пешком' },
+        { ro: '¿A qué hora sale el próximo tren?', ru: 'Когда отправляется следующий поезд?' },
+        { ro: 'Un billete de ida y vuelta, por favor', ru: 'Один билет туда и обратно, пожалуйста' },
+        { ro: '¿Dónde está la parada de metro?', ru: 'Где станция метро?' },
+      ],
+    },
+  ],
+});

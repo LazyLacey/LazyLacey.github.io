@@ -449,7 +449,6 @@ nav {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
 }
-.modal-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 8px auto 8px; }
 .modal-title { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 700; margin-bottom: 0; }
 .drawer-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px; }
 .drawer-close { background: none; border: none; cursor: pointer; color: var(--text3); padding: 4px; display: flex; align-items: center; justify-content: center; border-radius: 8px; transition: color 0.15s, background 0.15s; align-self: flex-start; margin-top: -2px; }
@@ -1274,7 +1273,7 @@ select {
 .theme-drawer {
   background: var(--bg2); border-radius: 24px 24px 0 0;
   border-top: 1px solid var(--border); width: 100%;
-  padding: 0 20px 20px; animation: slideUp 0.25s ease;
+  padding: 20px; animation: slideUp 0.25s ease;
   max-height: 90vh; overflow-y: auto; box-sizing: border-box;
 }
 .theme-grid {

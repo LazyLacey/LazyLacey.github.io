@@ -242,7 +242,6 @@ window._grammarLoadFailed = false;
   <!-- DRAWER (shared bottom sheet) -->
   <div class="theme-drawer-backdrop" id="app-drawer">
     <div class="theme-drawer">
-      <div class="modal-handle"></div>
       <div class="drawer-header">
         <div class="modal-title" id="app-drawer-title"></div>
         <button class="drawer-close" onclick="dismissDrawer()" aria-label="Закрыть"><i class="ph ph-x"></i></button>
@@ -527,7 +526,6 @@ function renderLangPicker() {
       font-size:14px;font-weight:${active ? 600 : 400};cursor:pointer;font-family:inherit">
       <span style="font-size:20px">${lang.flag}</span>
       <span>${lang.name}</span>
-      ${active ? '<i class="ph-fill ph-check" style="font-size:16px;margin-left:2px"></i>' : ''}
     </button>`;
   }).join('');
 }
