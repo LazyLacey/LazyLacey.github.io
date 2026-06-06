@@ -29,7 +29,7 @@ const LANGUAGES = {
     diacriticHints: ['á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', '¡'],
     verbPronouns: ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'],
     readyPacks: [
-      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 45 тем',                fn: "loadReadyPack('data/spanish-cards.json','cards')" },
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1567 слов · 45 тем',               fn: "loadReadyPack('data/spanish-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '20 тем, 200 вопросов',                fn: "loadReadyPack('data/grammar-tests-spanish.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '10 базовых глаголов, 3 времени',       fn: "loadReadyPack('data/verbs-spanish.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
