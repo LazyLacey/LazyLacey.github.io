@@ -14,27 +14,39 @@ test.describe('Language — picker UI', () => {
     await page.click('#nav-settings');
   });
 
-  test('language picker shows both available languages', async ({ page }) => {
-    const btns = page.locator('#lang-picker button');
-    await expect(btns.first()).toBeVisible({ timeout: 3000 });
+  test('language picker row shows current language', async ({ page }) => {
+    const row = page.locator('[data-testid="lang-picker-row"]');
+    await expect(row).toBeVisible({ timeout: 3000 });
+    await expect(row).toContainText('Румынский');
+  });
+
+  test('language picker row opens drawer with all languages', async ({ page }) => {
+    await page.click('[data-testid="lang-picker-row"]');
+    const drawerBody = page.locator('#app-drawer-body');
+    await expect(drawerBody).toBeVisible({ timeout: 3000 });
+    const btns = drawerBody.locator('button');
+    await expect(btns.first()).toBeVisible();
     const count = await btns.count();
-    expect(count).toBe(2);
+    const langCount = await page.evaluate(() => Object.keys(window.LANGUAGES).length);
+    expect(count).toBe(langCount);
   });
 
   test('Romanian is the active language by default', async ({ page }) => {
-    const activeBtns = page.locator('#lang-picker button').filter({ hasText: /Румынский/i });
-    await expect(activeBtns.first()).toBeVisible({ timeout: 3000 });
-    // Active button has accent border (inline style contains var(--accent))
-    const style = await activeBtns.first().getAttribute('style');
+    await page.click('[data-testid="lang-picker-row"]');
+    const drawerBody = page.locator('#app-drawer-body');
+    const activeBtn = drawerBody.locator('button').filter({ hasText: /Румынский/i });
+    await expect(activeBtn).toBeVisible({ timeout: 3000 });
+    const style = await activeBtn.getAttribute('style');
     expect(style).toContain('var(--accent)');
   });
 
-  test('both language buttons show flag and name', async ({ page }) => {
-    const picker = page.locator('#lang-picker');
-    await expect(picker).toContainText('🇷🇴', { timeout: 3000 });
-    await expect(picker).toContainText('🇪🇸');
-    await expect(picker).toContainText('Румынский');
-    await expect(picker).toContainText('Испанский');
+  test('drawer shows flags and names for all languages', async ({ page }) => {
+    await page.click('[data-testid="lang-picker-row"]');
+    const drawerBody = page.locator('#app-drawer-body');
+    await expect(drawerBody).toContainText('🇷🇴', { timeout: 3000 });
+    await expect(drawerBody).toContainText('🇪🇸');
+    await expect(drawerBody).toContainText('Румынский');
+    await expect(drawerBody).toContainText('Испанский');
   });
 });
 
@@ -60,9 +72,13 @@ test.describe('Language — switch to Spanish', () => {
 
   test('active language in picker is Spanish after switching', async ({ page }) => {
     await page.click('#nav-settings');
-    const activeBtns = page.locator('#lang-picker button').filter({ hasText: /Испанский/i });
-    await expect(activeBtns.first()).toBeVisible({ timeout: 3000 });
-    const style = await activeBtns.first().getAttribute('style');
+    const row = page.locator('[data-testid="lang-picker-row"]');
+    await expect(row).toContainText('Испанский', { timeout: 3000 });
+    await row.click();
+    const drawerBody = page.locator('#app-drawer-body');
+    const activeBtn = drawerBody.locator('button').filter({ hasText: /Испанский/i });
+    await expect(activeBtn).toBeVisible({ timeout: 3000 });
+    const style = await activeBtn.getAttribute('style');
     expect(style).toContain('var(--accent)');
   });
 

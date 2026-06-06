@@ -1,0 +1,2137 @@
+{
+  "type": "testPack",
+  "name": "Грамматика итальянского",
+  "icon": "🇮🇹",
+  "description": "Артикли, времена, местоимения, наклонения — 33 темы по 10 вопросов",
+  "topics": {
+    "articles": { "name": "Род и артикли", "icon": "🏷️" },
+    "nouns": { "name": "Существительные", "icon": "📦" },
+    "adjectives": { "name": "Прилагательные", "icon": "🎨" },
+    "pronouns": { "name": "Местоимения", "icon": "👤" },
+    "verbs-present": { "name": "Глаголы. Presente", "icon": "⚡" },
+    "essere-avere": { "name": "Essere или avere?", "icon": "⚖️" },
+    "verbs-passato-prossimo": { "name": "Глаголы. Passato prossimo", "icon": "⏮️" },
+    "verbs-imperfetto": { "name": "Глаголы. Imperfetto", "icon": "🌀" },
+    "verbs-passato-remoto": { "name": "Глаголы. Passato remoto", "icon": "📜" },
+    "verbs-trapassato": { "name": "Trapassato prossimo", "icon": "⏪" },
+    "verbs-future": { "name": "Глаголы. Futuro", "icon": "⏭️" },
+    "verbs-condizionale": { "name": "Condizionale", "icon": "🌈" },
+    "verbs-congiuntivo": { "name": "Congiuntivo", "icon": "🔮" },
+    "periodo-ipotetico": { "name": "Periodo ipotetico", "icon": "🔀" },
+    "imperative": { "name": "Imperativo", "icon": "📢" },
+    "gerundio": { "name": "Gerundio", "icon": "〰️" },
+    "reflexive": { "name": "Возвратные глаголы", "icon": "🔄" },
+    "passive": { "name": "Пассивный залог", "icon": "🪞" },
+    "impersonal": { "name": "Безличные конструкции", "icon": "👻" },
+    "verbi-pronominali": { "name": "Verbi pronominali", "icon": "🎯" },
+    "like": { "name": "Конструкция «нравится»", "icon": "❤️" },
+    "fare-causative": { "name": "Fare + infinito", "icon": "⚙️" },
+    "negation": { "name": "Отрицание", "icon": "🚫" },
+    "questions": { "name": "Вопросы", "icon": "❓" },
+    "numerals": { "name": "Числительные", "icon": "🔢" },
+    "prepositions": { "name": "Предлоги", "icon": "🔗" },
+    "conjunctions": { "name": "Союзы и придаточные", "icon": "🧩" },
+    "time-calendar": { "name": "Дни, месяцы, время суток", "icon": "📅" },
+    "time-clock": { "name": "Который час", "icon": "🕐" },
+    "body": { "name": "Тело человека", "icon": "🫀" },
+    "conversation-mechanics": { "name": "Разговорные механики", "icon": "🗣️" },
+    "dialogues": { "name": "Ситуативные диалоги", "icon": "💬" },
+    "phraseology": { "name": "Устойчивые выражения", "icon": "✨" }
+  },
+  "questions": [
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Какой определённый артикль ставится перед словом «studente» (студент)?",
+      "answer": "lo",
+      "options": ["il", "lo", "l'", "la"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте правильный артикль: ___ zaino (рюкзак)",
+      "answer": "lo"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте правильный артикль: ___ amica (подруга)",
+      "answer": "l'"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Как звучит множественное число артикля перед «studenti» (студенты)?",
+      "answer": "gli",
+      "options": ["i", "gli", "le", "lo"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Слитная форма: di + il = ___",
+      "answer": "del"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Слитная форма: a + la = ___",
+      "answer": "alla"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Слитная форма: in + gli = ___",
+      "answer": "negli"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "В предложении «Sono medico» (Я врач) артикль перед профессией:",
+      "answer": "опускается",
+      "options": ["il", "un", "lo", "опускается"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте неопределённый артикль: ___ psicologo (психолог)",
+      "answer": "uno"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Вставьте правильный артикль и предлог: Vado ___ mercato (Иду на рынок; a + il)",
+      "answer": "al"
+    },
+
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте множественное число: il libro → ___",
+      "answer": "i libri"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте множественное число: la casa → ___",
+      "answer": "le case"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Как образуется множественное число слова «città» (город)?",
+      "answer": "le città",
+      "options": ["le città", "le citì", "le citie", "le cittas"],
+      "explain": "Слова на ударную гласную не изменяются."
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте множественное число: il problema → ___",
+      "answer": "i problemi",
+      "explain": "Греческие слова на -ma мужского рода: множественное на -i."
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Нерегулярное множественное: l'uomo → ___",
+      "answer": "gli uomini"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Множественное число слова «il braccio» (рука):",
+      "answer": "le braccia",
+      "options": ["i bracci", "le braccia", "i braccia", "le bracci"],
+      "explain": "Архаичные латинские формы: мужской род единственного → женский род множественного."
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Какого рода слово «la libertà»? Какой суффикс подсказывает?",
+      "answer": "-tà → женский род"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Множественное число: l'uovo → ___",
+      "answer": "le uova"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Слова с суффиксом -ore относятся к роду:",
+      "answer": "мужской",
+      "options": ["мужской", "женский", "любой", "зависит от контекста"]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Слова «il/la giornalista» имеют ___ род в единственном числе (один ответ для обоих полов).",
+      "answer": "общий"
+    },
+
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Согласуйте прилагательное: Marco e Maria sono stan___ (устали — мужской род множественного)?",
+      "answer": "stanchi"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Какая форма прилагательного «bello» (красивый) ставится перед словом «ragazzo»?",
+      "answer": "bel",
+      "options": ["bello", "bel", "bell'", "bei"]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Форма «bello» перед «zaino»: ___ zaino",
+      "answer": "bello"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Форма «bello» перед «occhi» (глаза): ___ occhi",
+      "answer": "begli"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Сравнительная степень прилагательного «buono» (хороший):",
+      "answer": "migliore",
+      "options": ["più buono", "migliore", "buonissimo", "il migliore"]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Переведите на итальянский: «Марко выше Луки» (utilizzare più…di)",
+      "answer": "Marco è più alto di Luca."
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "«Povera donna» перед существительным означает: ___ (несчастная или бедная без денег?)",
+      "answer": "несчастная (бедная по судьбе)"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Форма «buono» перед «idea» (идея, жен. р.):",
+      "answer": "buon'",
+      "options": ["buon", "buona", "buon'", "bel"]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Превосходная степень: il ristorante ___ caro della città",
+      "answer": "più"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Прилагательное «grande» перед существительным «un ___ uomo» означает: великий. После: «un uomo ___» означает: большой/рослый. Заполните первый пропуск.",
+      "answer": "grande"
+    },
+
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Прямое объектное местоимение для «Marco» (его, единственное число мужского рода):",
+      "answer": "lo",
+      "options": ["li", "lo", "gli", "le"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Замените дополнение местоимением: Vedo Maria → ___ vedo",
+      "answer": "La"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Косвенное местоимение «ему» (3-е лицо мужского рода):",
+      "answer": "gli"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "mi + lo → ___  (pronomi combinati)",
+      "answer": "me lo"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Ci в предложении «Vai a Roma? — Sì, ci vado» заменяет:",
+      "answer": "a Roma (место/направление)",
+      "options": ["noi (мы)", "a Roma (место/направление)", "con te (с тобой)", "di Roma (из Рима)"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Ne в «Quante mele vuoi? — Ne voglio due» заменяет: ___",
+      "answer": "delle mele (партитивное дополнение)"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "gli/le + lo → ___ (combined pronoun)",
+      "answer": "glielo"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Притяжательное «их» всегда имеет форму:",
+      "answer": "loro",
+      "options": ["suo/sua", "loro", "vostro/vostra", "suo"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "«Тот студент» по-итальянски: ___ studente",
+      "answer": "quello"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Относительное местоимение после предлога (вместо che): La città in ___ vivo è grande.",
+      "answer": "cui"
+    },
+
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте «parlare» в 1-м лице ед. числа: io ___",
+      "answer": "parlo"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Глагол «cercare» (искать) во 2-м лице ед. числа: tu ___",
+      "answer": "cerchi",
+      "explain": "Глаголы на -care добавляют h перед -i."
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "choice",
+      "question": "Глагол «finire» (заканчивать) относится к типу -ire с инфиксом -isc-. Форма 1-го лица ед. числа:",
+      "answer": "finisco",
+      "options": ["finio", "finisco", "finisce", "finisci"]
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "«Essere» в 3-м лице множественного числа: loro ___",
+      "answer": "sono"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "«Avere» в 3-м лице ед. числа: lui ___",
+      "answer": "ha"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "«Andare» в 3-м лице множественного числа: loro ___",
+      "answer": "vanno"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "choice",
+      "question": "«Fare» во 2-м лице ед. числа:",
+      "answer": "fai",
+      "options": ["faci", "fai", "fate", "fa"]
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Устойчивое выражение: avere ___ = быть правым",
+      "answer": "ragione"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "«Stare» во 2-м лице ед. числа (Come ___?): tu ___",
+      "answer": "stai"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Глагол «vedere» в 3-м лице множественного числа: loro ___",
+      "answer": "vedono"
+    },
+
+    {
+      "topicId": "essere-avere",
+      "type": "choice",
+      "question": "Какой вспомогательный глагол используется с «andare» в сложных временах?",
+      "answer": "essere",
+      "options": ["avere", "essere", "стоя зависит", "venire"]
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "Выберите вспомогательный: Ho/Sono mangiato la pizza → ___",
+      "answer": "Ho"
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "Выберите вспомогательный: ___ andato al mercato (Я пошёл...)",
+      "answer": "Sono"
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "choice",
+      "question": "С возвратными глаголами в сложных временах всегда используется:",
+      "answer": "essere",
+      "options": ["avere", "essere", "avere или essere", "venire"]
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "Завершите: Maria ___ andata al mercato (с essere, женский род).",
+      "answer": "è"
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "«Ho finito il lavoro» или «Il film ___ finito»? Вставьте вспомогательный глагол.",
+      "answer": "è",
+      "explain": "Непереходное употребление finire → essere."
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "choice",
+      "question": "Глагол «succedere» (случаться) требует вспомогательного:",
+      "answer": "essere",
+      "options": ["avere", "essere", "avere (непереходный)", "venire"]
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "Мнемоника ADVENT: первая буква A = andare/___",
+      "answer": "arrivare"
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "fill",
+      "question": "Le ragazze ___ uscite. Какой вспомогательный и какое окончание причастия?",
+      "answer": "sono … -e (женский род множественного)"
+    },
+    {
+      "topicId": "essere-avere",
+      "type": "choice",
+      "question": "«Ho cambiato idea» (Я передумал) — переходное. «Sono cambiato» (Я изменился) — непереходное. Это пример:",
+      "answer": "глагола, меняющего вспомогательный в зависимости от переходности",
+      "options": ["ошибки", "глагола, меняющего вспомогательный в зависимости от переходности", "всегда essere", "всегда avere"]
+    },
+
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Participio passato глагола «parlare»:",
+      "answer": "parlato"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Нерегулярное participio passato глагола «fare»:",
+      "answer": "fatto"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "choice",
+      "question": "Participio passato глагола «leggere» (читать):",
+      "answer": "letto",
+      "options": ["legguto", "letto", "leggito", "leggiuto"]
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Participio passato «scrivere»:",
+      "answer": "scritto"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Согласование: L'___ visto ieri (видел её вчера — la + ho вид. причастие).",
+      "answer": "ho"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "«Le ho chiamate» — причастие согласовано с «le» (женский род множественного). Заполните: Le ho chiama___",
+      "answer": "te"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "choice",
+      "question": "«I ragazzi sono andati al mare» — окончание причастия объясняется:",
+      "answer": "essere + мужской род множественного",
+      "options": ["avere + прямое дополнение", "essere + мужской род множественного", "essere + женский род", "согласование не нужно"]
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Participio passato «venire»:",
+      "answer": "venuto"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Participio passato «scegliere»:",
+      "answer": "scelto"
+    },
+    {
+      "topicId": "verbs-passato-prossimo",
+      "type": "fill",
+      "question": "Participio passato «chiedere»:",
+      "answer": "chiesto"
+    },
+
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "Проспрягайте «parlare» в imperfetto, 1-е лицо ед. числа: io ___",
+      "answer": "parlavo"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "«Essere» в imperfetto, 3-е лицо ед. числа: lui ___",
+      "answer": "era"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "choice",
+      "question": "«Fare» в imperfetto, 1-е лицо ед. числа:",
+      "answer": "facevo",
+      "options": ["farevo", "facevo", "favo", "fazevo"]
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "«Bere» в imperfetto, 3-е лицо множественного числа: loro ___",
+      "answer": "bevevano"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "Какое время использовать для описания фона в прошлом: passato prossimo или imperfetto?",
+      "answer": "imperfetto"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "choice",
+      "question": "В предложении «Leggevo quando è squillato il telefono» — «leggevo» — это:",
+      "answer": "фоновое незавершённое действие (imperfetto)",
+      "options": ["завершённое событие (passato prossimo)", "фоновое незавершённое действие (imperfetto)", "привычка из настоящего", "состояние будущего"]
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "Выберите время: Da piccola ___ il pianoforte (играла — привычка). Глагол suonare.",
+      "answer": "suonavo"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "«Vedere» в imperfetto, 3-е лицо мн. числа: loro ___",
+      "answer": "vedevano"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "fill",
+      "question": "Было поздно и холодно: Era tardi e ___ freddo. (Fare в imperfetto, 3-е лицо.)",
+      "answer": "faceva"
+    },
+    {
+      "topicId": "verbs-imperfetto",
+      "type": "choice",
+      "question": "«Ieri ho studiato per tre ore» — какое время используется и почему?",
+      "answer": "passato prossimo — конкретный завершённый факт",
+      "options": ["imperfetto — повторяющееся действие", "passato prossimo — конкретный завершённый факт", "futuro — план", "presente — общая привычка"]
+    },
+
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Parlare» в passato remoto, 1-е лицо ед. числа: io ___",
+      "answer": "parlai"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Fare» в passato remoto, 3-е лицо ед. числа: lui ___",
+      "answer": "fece"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "choice",
+      "question": "«Venire» в passato remoto, 3-е лицо множественного числа:",
+      "answer": "vennero",
+      "options": ["venirono", "vennero", "venirono", "venne"]
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Essere» в passato remoto, 1-е лицо ед. числа: io ___",
+      "answer": "fui"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Dire» в passato remoto, 3-е лицо ед. числа: lui ___",
+      "answer": "disse"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "choice",
+      "question": "Passato remoto используется для исторических фактов в:",
+      "answer": "письменном и литературном итальянском",
+      "options": ["только на севере Италии", "только в разговорной речи", "письменном и литературном итальянском", "только в диалектах"]
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Stare» в passato remoto, 1-е лицо ед. числа: io ___",
+      "answer": "stetti"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "«Leggere» в passato remoto, 3-е лицо ед. числа: lui ___",
+      "answer": "lesse"
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "fill",
+      "question": "Переведите: Они приехали со всей Италии (venire, passato remoto, 3-е мн.).",
+      "answer": "Vennero da tutta Italia."
+    },
+    {
+      "topicId": "verbs-passato-remoto",
+      "type": "choice",
+      "question": "На севере Италии для «Сегодня утром я потерял ключи» предпочитают:",
+      "answer": "passato prossimo",
+      "options": ["passato remoto", "passato prossimo", "imperfetto", "trapassato"]
+    },
+
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Образуйте trapassato prossimo: io (mangiare, avere) → io ___",
+      "answer": "avevo mangiato"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Образуйте trapassato prossimo: lei (andare, essere) → lei ___",
+      "answer": "era andata"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "choice",
+      "question": "Trapassato prossimo образуется из:",
+      "answer": "imperfetto вспомогательного + participio passato",
+      "options": ["presente + participio", "futuro + participio", "imperfetto вспомогательного + participio passato", "condizionale + participio"]
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Закончите предложение: Quando siamo arrivati, erano già ___ (partire, 3-е мн., essere).",
+      "answer": "partiti"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Союз, типичный для trapassato, означающий «после того как»: ___ che",
+      "answer": "dopo"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Переведите: Я уже слышал эту историю (già, sentire, avere).",
+      "answer": "Avevo già sentito quella storia."
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "choice",
+      "question": "«Appena era entrata, suonò il telefono» — глагол «era entrata» стоит в:",
+      "answer": "trapassato prossimo",
+      "options": ["passato prossimo", "imperfetto", "trapassato prossimo", "condizionale passato"]
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Нарекомендательное наречие «ещё не» с trapassato: non ___",
+      "answer": "ancora"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "«Rimanere» в trapassato, 1-е лицо ед. числа (essere, м.р.): ___",
+      "answer": "ero rimasto"
+    },
+    {
+      "topicId": "verbs-trapassato",
+      "type": "fill",
+      "question": "Завершите: Non avevo mai ___ il mare prima. (vedere)",
+      "answer": "visto"
+    },
+
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Parlare» в futuro semplice, 1-е лицо ед. числа: io ___",
+      "answer": "parlerò"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Essere» в futuro semplice, 1-е лицо ед. числа: io ___",
+      "answer": "sarò"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "«Venire» в futuro semplice, 1-е лицо ед. числа:",
+      "answer": "verrò",
+      "options": ["venirò", "verrò", "venrò", "verrà"]
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Avere» в futuro semplice, 1-е лицо ед. числа: io ___",
+      "answer": "avrò"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Potere» в futuro semplice, 1-е лицо ед. числа (нерегулярная основа): io ___",
+      "answer": "potrò"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Futuro anteriore образуется из: ___ вспомогательного + participio passato.",
+      "answer": "futuro semplice"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "«Saranno le tre» (Наверное, сейчас около трёх) — это:",
+      "answer": "futuro в значении предположения о настоящем",
+      "options": ["описание реального будущего", "futuro в значении предположения о настоящем", "condizionale", "congiuntivo"]
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Переведите: Когда закончу, позвоню (futuro anteriore + futuro semplice).",
+      "answer": "Quando avrò finito, ti chiamo / ti chiamerò."
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Rimanere» в futuro semplice, 1-е лицо ед. числа: io ___",
+      "answer": "rimarrò"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "«Pagare» в futuro semplice, 1-е лицо ед. числа (с h): io ___",
+      "answer": "pagherò"
+    },
+
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "«Parlare» в condizionale presente, 1-е лицо ед. числа: io ___",
+      "answer": "parlerei"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "«Volere» в condizionale presente, 1-е лицо ед. числа (вежливая просьба): io ___",
+      "answer": "vorrei"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "choice",
+      "question": "«Potrei avere il conto?» — это:",
+      "answer": "вежливый вопрос (condizionale)",
+      "options": ["грамматическая ошибка", "прямой вопрос (presente)", "вежливый вопрос (condizionale)", "конъюнктив"]
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "«Essere» в condizionale presente, 1-е лицо ед. числа: io ___",
+      "answer": "sarei"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "Condizionale passato образуется из: ___ (condizionale presente вспомогательного) + participio.",
+      "answer": "avrei/sarei"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "Переведите: Если бы были деньги, купил бы дом (se + congiuntivo imperfetto + condizionale presente).",
+      "answer": "Se avessi soldi, comprerei una casa."
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "choice",
+      "question": "«Dovresti studiare di più» (condizionale) выражает:",
+      "answer": "мягкий совет",
+      "options": ["приказ", "мягкий совет", "реальное будущее", "прошедшее сожаление"]
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "«Avere» в condizionale presente, 1-е лицо ед. числа: io ___",
+      "answer": "avrei"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "Condizionale passato для упрёка: ___ dovuto dirmelo prima! (avere)",
+      "answer": "Avresti"
+    },
+    {
+      "topicId": "verbs-condizionale",
+      "type": "fill",
+      "question": "«Venire» в condizionale presente, 1-е лицо ед. числа: io ___",
+      "answer": "verrei"
+    },
+
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "«Venire» в congiuntivo presente, 3-е лицо ед. числа (Spero che lui ___): ",
+      "answer": "venga"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "«Essere» в congiuntivo presente, 3-е лицо ед. числа: che lui ___",
+      "answer": "sia"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "choice",
+      "question": "После какого союза ОБЯЗАТЕЛЕН congiuntivo?",
+      "answer": "sebbene (хотя)",
+      "options": ["quando (когда)", "perché (потому что)", "sebbene (хотя)", "mentre (пока)"]
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "Congiuntivo passato: Credo che abbia già ___ (mangiare).",
+      "answer": "mangiato"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "«Essere» в congiuntivo imperfetto, 1-е лицо ед. числа: io ___",
+      "answer": "fossi"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "Credevo che ___ francese. (essere, congiuntivo imperfetto, 3-е ед.)",
+      "answer": "fosse"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "choice",
+      "question": "Если главный глагол стоит в прошедшем времени, а действие придаточного одновременно с ним, используется:",
+      "answer": "congiuntivo imperfetto",
+      "options": ["congiuntivo presente", "congiuntivo passato", "congiuntivo imperfetto", "congiuntivo trapassato"]
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "«Avere» в congiuntivo presente, 3-е лицо ед. числа: che lui ___",
+      "answer": "abbia"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "«Sapere» в congiuntivo presente, 3-е лицо ед. числа: che lui ___",
+      "answer": "sappia"
+    },
+    {
+      "topicId": "verbs-congiuntivo",
+      "type": "fill",
+      "question": "Завершите: Se avesse studiato, avrebbe pass___ l'esame. (congiuntivo trapassato → condizionale passato)",
+      "answer": "ato"
+    },
+
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "choice",
+      "question": "«Se piove, resto a casa» — это тип periodo ipotetico:",
+      "answer": "реальный",
+      "options": ["реальный", "возможный", "нереальный прошедший", "нереальный настоящий"]
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Реальный тип: Se ___ fame, mangia qualcosa. (avere, presente)",
+      "answer": "hai"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Возможный тип: Se ___ soldi, comprerei una moto. (avere, congiuntivo imperfetto)",
+      "answer": "avessi"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Нереальный прошедший тип: Se avessi studiato, ___ passato l'esame. (condizionale passato)",
+      "answer": "avrei"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "choice",
+      "question": "«Se fossi in te, chiederei scusa» — «fossi» — это:",
+      "answer": "congiuntivo imperfetto essere",
+      "options": ["futuro di essere", "congiuntivo passato essere", "congiuntivo imperfetto essere", "condizionale essere"]
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "«Se fosse partita prima, non avrebbe perso il treno» — «fosse partita» — это ___ (время).",
+      "answer": "congiuntivo trapassato"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Переведите: Что бы ты сделал, если бы выиграл в лотерею? (Cosa faresti se…)",
+      "answer": "Cosa faresti se vincessi alla lotteria?"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Нереальный прошедший: Se non avesse piovuto, ___ andati al mare.",
+      "answer": "saremmo"
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "choice",
+      "question": "«Avresti dovuto dirmelo» (без se) выражает:",
+      "answer": "упрёк о нереализованном прошлом",
+      "options": ["реальный план", "вежливую просьбу", "упрёк о нереализованном прошлом", "будущее предположение"]
+    },
+    {
+      "topicId": "periodo-ipotetico",
+      "type": "fill",
+      "question": "Реальный тип — в придаточной части используется: se + ___ indicativo",
+      "answer": "presente"
+    },
+
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "Императив «parlare» для tu: ___!",
+      "answer": "parla"
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "Императив «andare» для tu (краткая форма): ___!",
+      "answer": "va'!"
+    },
+    {
+      "topicId": "imperative",
+      "type": "choice",
+      "question": "Отрицательный императив для tu строится через:",
+      "answer": "non + инфинитив",
+      "options": ["non + imperativo", "non + инфинитив", "non + congiuntivo", "non + participio"]
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "Вежливый императив Lei от «parlare»: ___!",
+      "answer": "parli"
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "Вежливый императив Lei от «venire»: ___!",
+      "answer": "venga"
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "«Di'» + «mi» → ___ (удвоение согласной)",
+      "answer": "dimmi"
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "«Fare» + «ci» → fac___ (da' + ci при удвоении)",
+      "answer": "facci"
+    },
+    {
+      "topicId": "imperative",
+      "type": "choice",
+      "question": "«Non parlare così!» — форма отрицательного императива для tu:",
+      "answer": "non + инфинитив (non parlare)",
+      "options": ["non parla!", "non parli!", "non + инфинитив (non parlare)", "non parlate!"]
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "Imperial voi от «finire»: ___!",
+      "answer": "finite"
+    },
+    {
+      "topicId": "imperative",
+      "type": "fill",
+      "question": "«Aspettare» в вежливом Lei императиве: ___ un momento.",
+      "answer": "Aspetti"
+    },
+
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "Gerundio presente от «parlare»:",
+      "answer": "parlando"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "Gerundio presente от «leggere»:",
+      "answer": "leggendo"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "choice",
+      "question": "Gerundio presente от «fare»:",
+      "answer": "facendo",
+      "options": ["farendo", "facendo", "fazendo", "faendo"]
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "Gerundio presente от «dire»:",
+      "answer": "dicendo"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "«Stare + gerundio» для действия в процессе: Sto ___ (mangiare) = Я сейчас ем.",
+      "answer": "mangiando"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "Gerundio passato с avere: avendo ___ (mangiare) = поев",
+      "answer": "mangiato"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "choice",
+      "question": "«Sbagliando si impara» — герундий здесь выражает:",
+      "answer": "условие / способ",
+      "options": ["причину", "уступку", "условие / способ", "одновременность с будущим"]
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "Прошлое прогрессивное в прошлом: Stavo ___ un film quando hai chiamato. (guardare)",
+      "answer": "guardando"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "«Pur + gerundio» = хотя. Переведите: Хотя и учился, не понял: Pur ___ studiato, non ha capito.",
+      "answer": "avendo"
+    },
+    {
+      "topicId": "gerundio",
+      "type": "fill",
+      "question": "«Bere» в gerundio presente: ___",
+      "answer": "bevendo"
+    },
+
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Alzarsi» в presente, 1-е лицо ед. числа: io mi ___",
+      "answer": "alzo"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Svegliarsi» в presente, 3-е лицо ед. числа: lui ___",
+      "answer": "si sveglia"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "Возвратные глаголы в passato prossimo всегда спрягаются с:",
+      "answer": "essere",
+      "options": ["avere", "essere", "venire", "avere или essere"]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "Завершите: Mi sono alza___ tardi. (м.р. ед.)",
+      "answer": "to"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Ci siamo divert___» (мн. м.р.) = Мы очень повеселились.",
+      "answer": "iti"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "Как по-итальянски «Не злись!» (arrabbiarsi, tu, отрицательный императив):",
+      "answer": "Non arrabbiarti!"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "choice",
+      "question": "«Innamorarsi» (влюбляться) — этот глагол:",
+      "answer": "существует только в возвратной форме",
+      "options": ["переходный", "непереходный невозвратный", "существует только в возвратной форме", "безличный"]
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Sbrigarsi» в tu imperativo: ___!",
+      "answer": "Sbrigati"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Chiamarsi» — значит: ___",
+      "answer": "называться / зваться"
+    },
+    {
+      "topicId": "reflexive",
+      "type": "fill",
+      "question": "«Divertirsi» в voi imperativo: ___!",
+      "answer": "Divertitevi"
+    },
+
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Переведите пассивную конструкцию: «Роман был написан Кальвино» (scrivere, passato prossimo, essere).",
+      "answer": "Il romanzo è stato scritto da Calvino."
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "«La porta è chiusa» означает:",
+      "answer": "Дверь закрыта (состояние)",
+      "options": ["Дверь закрывают (действие)", "Дверь закрыта (состояние)", "Дверь закроют (будущее)", "Дверь закрывала (прошлое)"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Si passivante единственного числа: ___ vende appartamento.",
+      "answer": "Si"
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Si passivante множественного числа: Si ___ appartamenti.",
+      "answer": "vendono"
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "«Venire» в пассиве акцентирует:",
+      "answer": "динамичное действие",
+      "options": ["статичное состояние", "динамичное действие", "будущее", "возможность"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Переведите: «Билеты продаются онлайн» (vendere, venire, presente).",
+      "answer": "I biglietti vengono venduti online."
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Агент в пассивной конструкции вводится предлогом ___",
+      "answer": "da"
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "«Qui si parla italiano» — это конструкция ___ passivante или impersonale?",
+      "answer": "si impersonale"
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Пассив в будущем: La premiera ___ assegnato domani. (essere, futuro)",
+      "answer": "sarà"
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "«Venire» в пассиве НЕ используется в:",
+      "answer": "составных временах (passato prossimo и т.д.)",
+      "options": ["presente", "imperfetto", "futuro", "составных временах (passato prossimo и т.д.)"]
+    },
+
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«В Италии хорошо едят» (si impersonale): In Italia si ___ bene.",
+      "answer": "mangia"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "choice",
+      "question": "Si impersonale: прилагательное при нём стоит в форме:",
+      "answer": "множественного числа мужского рода",
+      "options": ["единственного числа", "множественного числа мужского рода", "согласуется с субъектом", "женского рода"]
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«Нужно учиться каждый день» (bisogna + infinito): ___ studiare ogni giorno.",
+      "answer": "Bisogna"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«Нужно, чтобы ты учился» (bisogna che + congiuntivo): Bisogna che tu ___ ogni giorno.",
+      "answer": "studi"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "choice",
+      "question": "«Basta!» означает:",
+      "answer": "Хватит! Достаточно!",
+      "options": ["Начнём!", "Хватит! Достаточно!", "Конечно!", "Не понимаю!"]
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«Когда устаёшь, плохо спишь» (si impersonale + essere): Quando si ___ stanchi, si dorme male.",
+      "answer": "è"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«È vietato ___» — Курить запрещено. (fumare)",
+      "answer": "fumare"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "«È necessario ___ in anticipo» — Необходимо заранее забронировать. (prenotare)",
+      "answer": "prenotare"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "fill",
+      "question": "Si passivante: «Si parlano tre lingue» — три языка здесь является ___",
+      "answer": "подлежащим"
+    },
+    {
+      "topicId": "impersonal",
+      "type": "choice",
+      "question": "«Si diventa saggi con l'esperienza» — «saggi» стоит во множественном числе мужского рода, потому что:",
+      "answer": "si impersonale требует прилагательное в мн. м.р.",
+      "options": ["нет подлежащего во множественном числе", "si impersonale требует прилагательное в мн. м.р.", "это ошибка", "согласование с авторским субъектом"]
+    },
+
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Farcela» в 1-м лице ед. числа: ___ la faccio",
+      "answer": "ce"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Andarsene» в 1-м лице ед. числа: ___ ne vado",
+      "answer": "me"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "choice",
+      "question": "«Non c'entra niente» означает:",
+      "answer": "Это совсем не относится к делу.",
+      "options": ["Не вхожу.", "Это совсем не относится к делу.", "Не справляюсь.", "Не нравится."]
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Volerci» vs «metterci»: для объективного количества времени — ___, для личного — ___",
+      "answer": "volerci — metterci"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Ci vogliono tre uova» — согласование глагола объясняется: ___ (что = подлежащее)",
+      "answer": "tre uova — множественное число"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Se ne sono andati senza salutare» — passato prossimo с ___",
+      "answer": "essere"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Me ne frego» означает: ___",
+      "answer": "Мне всё равно / Наплевать."
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "choice",
+      "question": "«Cavarsela» означает:",
+      "answer": "выкручиваться, справляться как-то",
+      "options": ["уходить", "выкручиваться, справляться как-то", "требоваться", "иметь отношение"]
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Quanto ci metti per arrivare?» — ответ: Ci ___ venti minuti.",
+      "answer": "metto"
+    },
+    {
+      "topicId": "verbi-pronominali",
+      "type": "fill",
+      "question": "«Ce la siamo ___» (мы справились, ж.р.)",
+      "answer": "fatta"
+    },
+
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Мне нравится пицца» по-итальянски: Mi ___ la pizza.",
+      "answer": "piace"
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Мне нравятся кошки»: Mi ___ i gatti.",
+      "answer": "piacciono"
+    },
+    {
+      "topicId": "like",
+      "type": "choice",
+      "question": "«Mi piace leggere» — «leggere» здесь является:",
+      "answer": "подлежащим (инфинитив = ед. число)",
+      "options": ["дополнением", "подлежащим (инфинитив = ед. число)", "обстоятельством", "сказуемым"]
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Мне понравился фильм» (passato prossimo, essere): Mi ___ piaciuto il film.",
+      "answer": "è"
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Мне понравились фильмы» (passato prossimo): Mi ___ piaciuti i film.",
+      "answer": "sono"
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Марко нравится футбол»: A Marco ___ il calcio.",
+      "answer": "piace"
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "Вежливое предложение «Тебе хотелось бы пойти с нами?» (condizionale): Ti ___ venire con noi?",
+      "answer": "piacerebbe"
+    },
+    {
+      "topicId": "like",
+      "type": "choice",
+      "question": "«Dispiacere» означает:",
+      "answer": "жалеть, сожалеть",
+      "options": ["очень нравиться", "жалеть, сожалеть", "не нравиться совсем", "бояться"]
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Mi piaceva la musica classica da giovane» — piaceva стоит в ___ (время).",
+      "answer": "imperfetto"
+    },
+    {
+      "topicId": "like",
+      "type": "fill",
+      "question": "«Mi dispiace, non posso venire» — это выражает ___",
+      "answer": "сожаление"
+    },
+
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Заставить кого-то ждать»: Ho fatto ___ tutti.",
+      "answer": "aspettare"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Я отдаю машину помыть»: Faccio ___ la macchina.",
+      "answer": "lavare"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "choice",
+      "question": "В «Faccio lavare la macchina al meccanico» предлог «al» вводит:",
+      "answer": "агента действия (механик)",
+      "options": ["прямое дополнение", "агента действия (механик)", "место", "время"]
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Показывать» с fare: far ___ = показывать",
+      "answer": "vedere"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Te lo faccio vedere» — te = тебе, lo = ___ (что?)",
+      "answer": "это / это самое"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Gli/le + lo» при fare → Gli + lo → ___ (combined): Glielo faccio sapere.",
+      "answer": "Glielo"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "choice",
+      "question": "«Mi fa ridere sempre» означает:",
+      "answer": "Он всегда меня смешит.",
+      "options": ["Я всегда смеюсь.", "Он всегда меня смешит.", "Смотри, как я смеюсь!", "Меня смешить всегда."]
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«L'ho fatta piangere» — la → l'. Причастие согласовано: piang___",
+      "answer": "ere → piangere; причастие: pianto → согл.: l'ho fatta = la (piangere не participio, fatta = fare согл. с la)"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "Каузативный fare + инфинитив в императиве: ___ subito! (Сделай это сразу!)",
+      "answer": "Fallo"
+    },
+    {
+      "topicId": "fare-causative",
+      "type": "fill",
+      "question": "«Dare un'occhiata» означает: ___",
+      "answer": "бросить взгляд / посмотреть"
+    },
+
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "Базовое отрицание: ___ capisco = Не понимаю.",
+      "answer": "Non"
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Никогда не»: non ___ mai",
+      "answer": "…"
+    },
+    {
+      "topicId": "negation",
+      "type": "choice",
+      "question": "«Nessuno lo sa» — non опускается, потому что:",
+      "answer": "отрицательное слово стоит перед глаголом",
+      "options": ["предложение утвердительное", "отрицательное слово стоит перед глаголом", "nessuno — не отрицательное слово", "это ошибка"]
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Я ещё не решил»: Non ho ___ deciso.",
+      "answer": "ancora"
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Я туда больше не хожу»: Non ci vado ___.",
+      "answer": "più"
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Я ничего не сказал»: Non ho detto ___.",
+      "answer": "niente"
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Мне не нравится ни кофе ни чай»: Non mi piace ___ il caffè ___ il tè.",
+      "answer": "né … né"
+    },
+    {
+      "topicId": "negation",
+      "type": "choice",
+      "question": "«Cerco di non pensarci» — non стоит перед:",
+      "answer": "инфинитивом",
+      "options": ["спрягаемым глаголом", "инфинитивом", "местоимением", "прилагательным"]
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Ни…ни» по-итальянски: non… ___ … ___",
+      "answer": "né … né"
+    },
+    {
+      "topicId": "negation",
+      "type": "fill",
+      "question": "«Non lo so» — non стоит перед ___",
+      "answer": "местоимением lo"
+    },
+
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Кто?» по-итальянски: ___",
+      "answer": "Chi"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Почему?» по-итальянски: ___",
+      "answer": "Perché"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Вопрос «Сколько это стоит?» по-итальянски:",
+      "answer": "Quanto costa questo?",
+      "options": ["Come costa questo?", "Quale costa questo?", "Quanto costa questo?", "Chi costa questo?"]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Сколько человек придёт?» (жен. р. мн. ч. от quanto): ___ persone vengono?",
+      "answer": "Quante"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "Косвенный вопрос да/нет вводится словом ___ (не «что»): Mi chiedo ___ verrà.",
+      "answer": "se"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Как тебя зовут?» (косвенный вопрос): Dimmi ___ ti chiami.",
+      "answer": "come"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Для вопроса «да/нет» в итальянском порядок слов:",
+      "answer": "не меняется, только интонация",
+      "options": ["глагол выносится на первое место", "не меняется, только интонация", "подлежащее переносится в конец", "добавляется ли?"]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Куда ты идёшь?»: ___ vai?",
+      "answer": "Dove"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Когда приедешь?»: ___ arrivi?",
+      "answer": "Quando"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "«Не знаю, где он живёт» (косвенный): Non so ___ abita.",
+      "answer": "dove"
+    },
+
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Число 21 по-итальянски (слитно): ___",
+      "answer": "ventuno"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Число 28 по-итальянски (слитно, e опускается): ___",
+      "answer": "ventotto"
+    },
+    {
+      "topicId": "numerals",
+      "type": "choice",
+      "question": "«Un milione di persone» — предлог di нужен, потому что:",
+      "answer": "milione требует di перед существительным",
+      "options": ["случайно", "milione требует di перед существительным", "перед числительным всегда di", "di = принадлежность"]
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Порядковое числительное «первый»: ___",
+      "answer": "primo"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Порядковое числительное «одиннадцатый»: ___",
+      "answer": "undicesimo"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "«Два миллиарда долларов»: due ___ di dollari",
+      "answer": "miliardi"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "«Мне двадцать один год»: Ho ___ anni.",
+      "answer": "ventuno"
+    },
+    {
+      "topicId": "numerals",
+      "type": "choice",
+      "question": "Числа 11–10 — порядковые — образуются:",
+      "answer": "основа + -esimo",
+      "options": ["нерегулярно", "основа + -esimo", "основа + -imo", "основа + -ismo"]
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "«Я хочу два (из них)»: Ne voglio ___.",
+      "answer": "due"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "«Мы — тридцать два человека»: Siamo in ___.",
+      "answer": "trentadue"
+    },
+
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Иду в Рим»: Vado ___ Roma.",
+      "answer": "a"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Живу в Италии»: Abito ___ Italia.",
+      "answer": "in"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "«Учу итальянский два года» (и сейчас продолжаю): Studio l'italiano ___ due anni.",
+      "answer": "da",
+      "options": ["per", "da", "in", "di"]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Иду к Марии (к ней домой)»: Vado ___ Maria.",
+      "answer": "da"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Учился два часа» (завершённый период): Ho studiato ___ due ore.",
+      "answer": "per"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Приеду через десять минут»: Arrivo ___ dieci minuti.",
+      "answer": "tra / fra"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "«В США»: Sono stato ___:",
+      "answer": "negli Stati Uniti",
+      "options": ["in Stati Uniti", "a Stati Uniti", "negli Stati Uniti", "nei Stati Uniti"]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Книга на столе»: Il libro è ___ tavolo.",
+      "answer": "sul"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«Иду в банк на машине»: Vado in banca ___ macchina.",
+      "answer": "in"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "«На Сицилии»: ___ Sicilia",
+      "answer": "in"
+    },
+
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Потому что (причина)» по-итальянски: ___",
+      "answer": "perché"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "«Sebbene» (хотя) требует:",
+      "answer": "congiuntivo",
+      "options": ["indicativo", "condizionale", "congiuntivo", "infinito"]
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Не учусь, поэтому не понимаю»: Non studio, ___ non capisco.",
+      "answer": "quindi"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Не знаю, но могу спросить»: Non lo so, ___ posso chiedere.",
+      "answer": "però"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Относительное местоимение после предлога (вместо che): La città ___ cui vivo è piccola.",
+      "answer": "in"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Позвони, когда приедешь»: Chiamami ___ arrivi.",
+      "answer": "quando"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "«Affinché» + congiuntivo переводится как:",
+      "answer": "чтобы (с целью)",
+      "options": ["хотя", "чтобы (с целью)", "потому что", "если"]
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Ни…ни» по-итальянски: ___ … ___",
+      "answer": "né … né"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "«Пока ел, смотрел TV»: ___ mangiavo, guardavo la TV.",
+      "answer": "Mentre"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Относительное «чей»: Lo scrittore, ___ cui romanzo ho letto…",
+      "answer": "il"
+    },
+
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«В понедельник (конкретный день)»: Ci vediamo ___.",
+      "answer": "lunedì"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "choice",
+      "question": "«По воскресеньям» (привычка) по-итальянски:",
+      "answer": "La domenica",
+      "options": ["Domenica", "La domenica", "In domenica", "Di domenica"]
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Родился в марте»: Sono nato ___ marzo.",
+      "answer": "a"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Родился в 1990 году»: È nato ___ 1990.",
+      "answer": "nel"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Пятница» по-итальянски: ___",
+      "answer": "venerdì"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Август» по-итальянски: ___",
+      "answer": "agosto"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "choice",
+      "question": "«Вчера вечером»: ieri ___",
+      "answer": "sera",
+      "options": ["mattina", "pomeriggio", "sera", "notte"]
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Уезжаю 15 августа»: Parto ___ 15 agosto.",
+      "answer": "il"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Следующая пятница»: ___ prossimo",
+      "answer": "venerdì"
+    },
+    {
+      "topicId": "time-calendar",
+      "type": "fill",
+      "question": "«Послезавтра» по-итальянски: ___",
+      "answer": "dopodomani"
+    },
+
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Который час?» — два варианта: Che ore sono? / Che ___ è?",
+      "answer": "ora"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Три часа» (sono): ___ le tre.",
+      "answer": "Sono"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "choice",
+      "question": "«Час» (1:00) по-итальянски:",
+      "answer": "È l'una.",
+      "options": ["Sono le una.", "È l'una.", "È un'ora.", "Sono l'una."]
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«В девять» (в котором часу): ___ nove.",
+      "answer": "alle"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Три часа пятнадцать минут» (разговорно): Sono le tre e ___ quarto.",
+      "answer": "un"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Половина восьмого» (7:30): Sono le sette e ___.",
+      "answer": "mezza"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Без четверти восемь» (7:45): Sono le otto ___ un quarto.",
+      "answer": "meno"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "choice",
+      "question": "В официальном расписании 13:45 скажут:",
+      "answer": "le tredici e quarantacinque",
+      "options": ["l'una e meno un quarto", "le tredici e quarantacinque", "le tredici meno un quarto", "l'una e quarantacinque"]
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Полдень» по-итальянски: ___",
+      "answer": "mezzogiorno"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Музей открыт с 10 до 18»: Il museo è aperto ___ dieci ___ diciotto.",
+      "answer": "dalle … alle"
+    },
+
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«Голова» по-итальянски: ___",
+      "answer": "la testa"
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "Нерегулярное множественное: il braccio → ___",
+      "answer": "le braccia"
+    },
+    {
+      "topicId": "body",
+      "type": "choice",
+      "question": "«У меня болит голова» по-итальянски:",
+      "answer": "Ho mal di testa.",
+      "options": ["Mi fa male la testa. / Ho mal di testa.", "Ho mal di testa.", "Mi è male la testa.", "Mi piace male la testa."]
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«У меня болят зубы»: Mi ___ male i denti.",
+      "answer": "fanno"
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«Мою руки» (артикль вместо притяжательного): Mi lavo ___ mani.",
+      "answer": "le"
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«У него болят ноги»: ___ fanno male le gambe.",
+      "answer": "Gli"
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«Рука (кисть)» и её нерегулярное мн. число: la mano → ___",
+      "answer": "le mani"
+    },
+    {
+      "topicId": "body",
+      "type": "choice",
+      "question": "«У меня температура» по-итальянски:",
+      "answer": "Ho la febbre.",
+      "options": ["Ho la temperatura.", "Ho la febbre.", "Sono caldo.", "Mi è calda la testa."]
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«Он порезал палец»: Si è ___ il dito.",
+      "answer": "tagliato"
+    },
+    {
+      "topicId": "body",
+      "type": "fill",
+      "question": "«Мне плохо»: Mi ___ male.",
+      "answer": "sento"
+    },
+
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "Самый частый итальянский разговорный филлер: ___",
+      "answer": "allora"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "choice",
+      "question": "«Magari!» как восклицание означает:",
+      "answer": "Вот бы! Хотелось бы!",
+      "options": ["Конечно!", "Вот бы! Хотелось бы!", "Ни за что!", "Может быть, нет."]
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«То есть, а точнее»: ___",
+      "answer": "cioè"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«Ну же! Давай!»: ___",
+      "answer": "Dai!"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«Mica» усиливает отрицание. «Non è mica stupido» = ___",
+      "answer": "Он совсем не глупый."
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "Ответ на «Grazie mille!»: ___",
+      "answer": "Figurati! / Prego!"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "choice",
+      "question": "«In bocca al lupo!» — правильный ответ:",
+      "answer": "Crepi!",
+      "options": ["Grazie!", "Prego!", "Crepi!", "Figurati!"]
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«Облегчение: Слава богу!»: ___ male!",
+      "answer": "Meno"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«Вежливый переспрос» по-итальянски: ___",
+      "answer": "Prego?"
+    },
+    {
+      "topicId": "conversation-mechanics",
+      "type": "fill",
+      "question": "«А ведь я был прав»: ___ avevo ragione io.",
+      "answer": "Eppure"
+    },
+
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "Телефонный разговор начинается с: ___",
+      "answer": "Pronto!"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Как тебя зовут?»: Come ___ chiami?",
+      "answer": "ti"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "choice",
+      "question": "«Posso aiutarla?» в магазине — продавец спрашивает:",
+      "answer": "Могу вам помочь?",
+      "options": ["Могу я уйти?", "Могу вам помочь?", "Вы можете помочь?", "Кто следующий?"]
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Просто смотрю» в ответ продавцу: Sto solo ___, grazie.",
+      "answer": "guardando"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Счёт, пожалуйста»: ___ conto, per favore.",
+      "answer": "Il"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Идите прямо, потом поверните налево» (вежливый Lei): Vada ___, poi giri a sinistra.",
+      "answer": "dritto"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "choice",
+      "question": "«Pronto?» в начале телефонного разговора означает:",
+      "answer": "Алло?",
+      "options": ["Готово!", "Алло?", "Сейчас!", "Слушаю!"]
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«У меня аллергия на пенициллин»: Sono ___ alla penicillina.",
+      "answer": "allergico/a"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Откуда ты?»: Di ___ sei?",
+      "answer": "dove"
+    },
+    {
+      "topicId": "dialogues",
+      "type": "fill",
+      "question": "«Где можно купить билет?»: Dove ___ comprare un biglietto?",
+      "answer": "posso"
+    },
+
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Прогуляться» (устойчивое с fare): fare una ___",
+      "answer": "passeggiata"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Prendere in giro qualcuno» означает: ___",
+      "answer": "подшучивать над кем-то"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "«Rendersi conto di» означает:",
+      "answer": "осознавать",
+      "options": ["платить по счёту", "осознавать", "даватать отчёт другим", "считать деньги"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«В общем, не знаю»: ___, non lo so.",
+      "answer": "Insomma"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Кроме того, нужно учитывать стоимость»: ___, bisogna considerare il costo.",
+      "answer": "Inoltre"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Che peccato!» означает: ___",
+      "answer": "Как жаль!"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "«Dai!» в ответ на новость выражает:",
+      "answer": "неверие / удивление",
+      "options": ["восхищение", "неверие / удивление", "сочувствие", "согласие"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Мне нравится Рим, но я предпочитаю Флоренцию»: Mi piace Roma; ___ preferisco Firenze.",
+      "answer": "però"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«С удовольствием!»: ___",
+      "answer": "Volentieri!"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "«Dare fastidio» означает: ___",
+      "answer": "раздражать, мешать"
+    }
+  ]
+}

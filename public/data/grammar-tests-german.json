@@ -1,0 +1,1450 @@
+{
+  "type": "testPack",
+  "name": "Грамматика немецкого",
+  "icon": "🇩🇪",
+  "description": "Артикли, падежи, времена, порядок слов — 20 тем по 10 вопросов",
+  "topics": {
+    "articles": { "name": "Род и артикли", "icon": "🏷️" },
+    "nouns": { "name": "Существительные", "icon": "📦" },
+    "verbs-present": { "name": "Глаголы. Настоящее время", "icon": "⚡" },
+    "modal-verbs": { "name": "Модальные глаголы", "icon": "🎛️" },
+    "adjectives": { "name": "Прилагательные", "icon": "🎨" },
+    "pronouns": { "name": "Местоимения", "icon": "👤" },
+    "numerals": { "name": "Числительные", "icon": "🔢" },
+    "prepositions": { "name": "Предлоги", "icon": "🔗" },
+    "verbs-past": { "name": "Глаголы. Прошедшее время", "icon": "⏮️" },
+    "word-order": { "name": "Порядок слов", "icon": "📐" },
+    "verbs-future": { "name": "Глаголы. Будущее время", "icon": "⏭️" },
+    "separable-verbs": { "name": "Отделяемые и неотделяемые приставки", "icon": "✂️" },
+    "konjunktiv": { "name": "Сослагательное наклонение", "icon": "🔮" },
+    "passive": { "name": "Пассивный залог", "icon": "🪞" },
+    "relative-clauses": { "name": "Относительные предложения", "icon": "🔄" },
+    "infinitive-clauses": { "name": "Инфинитивные конструкции", "icon": "🔁" },
+    "questions": { "name": "Вопросы", "icon": "❓" },
+    "conjunctions": { "name": "Союзы и связки", "icon": "🧩" },
+    "separable-advanced": { "name": "Особые случаи с глаголами", "icon": "⚙️" },
+    "phraseology": { "name": "Устойчивые выражения", "icon": "💬" }
+  },
+  "questions": [
+
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Какой артикль у слова «собака» (Hund) в именительном падеже?",
+      "answer": "der",
+      "options": ["der", "die", "das", "ein"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "___ Frau (определённый артикль, Nominativ)",
+      "answer": "die",
+      "explain": "Frau — женский род, определённый артикль Nominativ → die"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "___ Kind (определённый артикль, Nominativ)",
+      "answer": "das",
+      "explain": "Kind — средний род → das"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Вставьте правильный артикль: Ich sehe ___ Mann. (Akkusativ)",
+      "answer": "den",
+      "options": ["der", "den", "dem", "des"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Ich helfe ___ Frau. (определённый артикль, Dativ)",
+      "answer": "der",
+      "explain": "Dativ женского рода: die → der"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Das ist das Buch ___ Mannes. (Genitiv)",
+      "answer": "des",
+      "explain": "Genitiv мужского рода: der → des"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Как переводится «kein»?",
+      "answer": "никакой / ни одного",
+      "options": ["никакой / ни одного", "каждый", "какой-то", "один"]
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Ich habe ___ Geld. (kein, Akkusativ, ср.р.)",
+      "answer": "kein",
+      "explain": "kein в Akkusativ среднего рода — нулевое окончание: kein"
+    },
+    {
+      "topicId": "articles",
+      "type": "fill",
+      "question": "Er hat ___ Bruder. (kein, Akkusativ, м.р.)",
+      "answer": "keinen",
+      "explain": "kein в Akkusativ мужского рода → keinen"
+    },
+    {
+      "topicId": "articles",
+      "type": "choice",
+      "question": "Какой артикль множественного числа (все роды) в именительном падеже?",
+      "answer": "die",
+      "options": ["die", "der", "das", "den"]
+    },
+
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Какое множественное число у «das Kind»?",
+      "answer": "die Kinder",
+      "options": ["die Kinder", "die Kinds", "die Kinde", "die Kindern"]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Множественное число: der Hund → die ___",
+      "answer": "Hunde",
+      "explain": "Hund образует множественное число с -e: die Hunde"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Множественное число: das Buch → die ___",
+      "answer": "Bücher",
+      "explain": "Buch → Bücher (-er + умлаут)"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Какой падеж отвечает на вопрос «Wem?» (кому?)",
+      "answer": "Dativ",
+      "options": ["Dativ", "Akkusativ", "Genitiv", "Nominativ"]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Das ist das Auto ___ Mannes. (Genitiv — окончание сущ.)",
+      "answer": "des Mannes",
+      "explain": "В Genitiv мужского рода добавляется -es: des Mannes"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "К какому склонению относится «der Student»?",
+      "answer": "N-склонение (слабое)",
+      "options": ["N-склонение (слабое)", "Сильное склонение", "Смешанное склонение", "Женское склонение"]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Ich helfe dem ___ (Student, Dativ, n-склонение)",
+      "answer": "Studenten",
+      "explain": "N-склонение: во всех падежах кроме Nominativ — Studenten"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Множественное число: die Frau → die ___",
+      "answer": "Frauen",
+      "explain": "Frau → Frauen (-en окончание)"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Какое окончание получает слово «der Junge» в Akkusativ?",
+      "answer": "den Jungen",
+      "options": ["den Jungen", "den Junge", "dem Jungen", "den Junges"]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Ich gebe ___ Frau das Buch. (Dativ, определённый артикль)",
+      "answer": "der",
+      "explain": "Dativ женского рода: der"
+    },
+
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: du ___ (machen)",
+      "answer": "machst",
+      "explain": "Основа mach- + окончание -st для du"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: er ___ (arbeiten)",
+      "answer": "arbeitet",
+      "explain": "Основа arbeit- + -et (добавляется -e перед -t для благозвучия)"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "choice",
+      "question": "Какая форма глагола «fahren» для «du»?",
+      "answer": "fährst",
+      "options": ["fährst", "fahrst", "fährt", "fahrt"]
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: er ___ (lesen)",
+      "answer": "liest",
+      "explain": "Сильный глагол lesen: e → ie в du/er: er liest"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: ich ___ (sein)",
+      "answer": "bin",
+      "explain": "Sein — нерегулярный глагол: ich bin"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "choice",
+      "question": "Выберите правильную форму: Wir ___ Deutsch.",
+      "answer": "lernen",
+      "options": ["lernen", "lernst", "lernt", "lerne"]
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: du ___ (haben)",
+      "answer": "hast",
+      "explain": "Haben нерегулярен: du hast (выпадает -b-)"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: er ___ (sein)",
+      "answer": "ist",
+      "explain": "Sein: er ist"
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "choice",
+      "question": "Какое чередование происходит у сильных глаголов с «a» в du/er?",
+      "answer": "a → ä",
+      "options": ["a → ä", "a → e", "a → i", "a → o"]
+    },
+    {
+      "topicId": "verbs-present",
+      "type": "fill",
+      "question": "Проспрягайте: ihr ___ (machen)",
+      "answer": "macht",
+      "explain": "Для ihr окончание -t: ihr macht"
+    },
+
+    {
+      "topicId": "modal-verbs",
+      "type": "choice",
+      "question": "Какой модальный глагол выражает «уметь / мочь»?",
+      "answer": "können",
+      "options": ["können", "müssen", "sollen", "dürfen"]
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Вставьте модальный глагол: Er ___ schlafen. (хочет)",
+      "answer": "will",
+      "explain": "Желание → wollen. Er will — форма 3-го лица"
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Проспрягайте: ich ___ (können)",
+      "answer": "kann",
+      "explain": "Модальные: 1-е и 3-е лицо ед.ч. одинаковы и без окончания: ich kann"
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "choice",
+      "question": "Что означает «Du musst das nicht tun»?",
+      "answer": "Тебе не нужно этого делать",
+      "options": ["Тебе не нужно этого делать", "Тебе нельзя этого делать", "Ты не должен хотеть это делать", "Ты не умеешь этого делать"]
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Вставьте глагол: Hier ___ man nicht rauchen. (запрет)",
+      "answer": "darf",
+      "explain": "Запрет: darf nicht. Hier darf man nicht rauchen."
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Проспрягайте: du ___ (müssen)",
+      "answer": "musst",
+      "explain": "müssen: du musst"
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "choice",
+      "question": "Какой глагол используется для вежливого желания (я хотел бы...)?",
+      "answer": "möchten",
+      "options": ["möchten", "wollen", "sollen", "dürfen"]
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Ich ___ Deutsch sprechen. (умею)",
+      "answer": "kann",
+      "explain": "Умение → können: ich kann"
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "choice",
+      "question": "Где стоит инфинитив главного глагола при модальном глаголе?",
+      "answer": "В конце предложения",
+      "options": ["В конце предложения", "На первом месте", "Перед модальным глаголом", "После подлежащего"]
+    },
+    {
+      "topicId": "modal-verbs",
+      "type": "fill",
+      "question": "Проспрягайте: wir ___ (wollen)",
+      "answer": "wollen",
+      "explain": "wollen во множественном числе — обычное окончание: wir wollen"
+    },
+
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Выберите правильное окончание: Der ___ Mann schläft. (klein)",
+      "answer": "kleine",
+      "options": ["kleine", "kleiner", "kleines", "kleinen"]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Ich sehe den ___ Hund. (klein, Akkusativ, после определённого артикля)",
+      "answer": "kleinen",
+      "explain": "После определённого артикля в Akk. м.р. → -en: kleinen"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Ein ___ Hund bellt. (klein, Nominativ, после ein)",
+      "answer": "kleiner",
+      "explain": "После ein в Nom. м.р. — сильное окончание: kleiner (артикль не указывает род)"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Как образуется сравнительная степень прилагательного?",
+      "answer": "adj. + -er",
+      "options": ["adj. + -er", "am + adj. + -sten", "adj. + -st", "mehr + adj."]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Как сказать «она старше меня»? Sie ist ___ als ich.",
+      "answer": "älter",
+      "explain": "alt → älter (умлаут + -er)"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Превосходная степень «gut» в предикативной форме: am ___",
+      "answer": "besten",
+      "explain": "Нерегулярная форма: gut → besser → am besten"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Выберите правильную форму: Ich habe ein ___ Kind. (klein, Akkusativ)",
+      "answer": "kleines",
+      "options": ["kleines", "kleine", "kleinen", "kleiner"]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Ich helfe dem ___ Kind. (klein, Dativ, определённый артикль)",
+      "answer": "kleinen",
+      "explain": "После определённого артикля в Dat. ср.р. → -en: kleinen"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Сравнительная степень: schnell → ___",
+      "answer": "schneller",
+      "explain": "schnell + -er = schneller"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Как сказать «вдобавок / больше»? (нерегулярная форма «viel»)",
+      "answer": "mehr",
+      "options": ["mehr", "vieler", "am vielsten", "vielst"]
+    },
+
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Er liebt ___. (меня, Akkusativ)",
+      "answer": "mich",
+      "explain": "ich → mich в Akkusativ"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Ich helfe ___. (тебе, Dativ)",
+      "answer": "dir",
+      "explain": "du → dir в Dativ"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Какая форма «er» в Akkusativ?",
+      "answer": "ihn",
+      "options": ["ihn", "ihm", "er", "sein"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Das ist mein Buch. Это ___ книга. (притяжательное, я)",
+      "answer": "mein",
+      "explain": "Притяжательное от ich → mein (Nom. ср.р. — нулевое окончание)"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Ich schreibe ___ eine Nachricht. (ей, Dativ)",
+      "answer": "ihr",
+      "explain": "sie (она) → ihr в Dativ"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Какая форма возвратного местоимения для er/sie/es?",
+      "answer": "sich",
+      "options": ["sich", "mich", "dich", "uns"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Ich freue ___. (возвратное, ich)",
+      "answer": "mich",
+      "explain": "Возвратное Akkusativ для ich → mich"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Das sind ___ Kinder. (наши, Nominativ мн.ч.)",
+      "answer": "unsere",
+      "explain": "unser + -e для множественного числа Nominativ: unsere"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Что означает формальное «Sie» (с заглавной буквы)?",
+      "answer": "Вежливое «Вы»",
+      "options": ["Вежливое «Вы»", "Они", "Она", "Вы (неформальное)"]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Kannst du ___ helfen? (нам, Dativ)",
+      "answer": "uns",
+      "explain": "wir → uns в Dativ"
+    },
+
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Как будет «тринадцать» по-немецки?",
+      "answer": "dreizehn",
+      "explain": "13 = drei + zehn = dreizehn"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Как будет «двадцать один» по-немецки?",
+      "answer": "einundzwanzig",
+      "explain": "Схема: единица + und + десяток: ein + und + zwanzig"
+    },
+    {
+      "topicId": "numerals",
+      "type": "choice",
+      "question": "Как по-немецки «двенадцать»?",
+      "answer": "zwölf",
+      "options": ["zwölf", "zweizig", "zweizehn", "zwelf"]
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Порядковое числительное «первый»: der ___",
+      "answer": "erste",
+      "explain": "erste — нерегулярная форма (не einste)"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Порядковое числительное «третий»: der ___",
+      "answer": "dritte",
+      "explain": "dritte — нерегулярная форма"
+    },
+    {
+      "topicId": "numerals",
+      "type": "choice",
+      "question": "Как образуются порядковые числительные от 2 до 19?",
+      "answer": "числительное + -te",
+      "options": ["числительное + -te", "числительное + -ste", "числительное + -er", "числительное + -en"]
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Сегодня пятое мая: Heute ist der ___ Mai.",
+      "answer": "fünfte",
+      "explain": "fünf + -te = fünfte (2–19 → -te)"
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Двадцать первого марта: am ___ März (Dativ)",
+      "answer": "einundzwanzigsten",
+      "explain": "Dativ в датах: einundzwanzigste → -sten"
+    },
+    {
+      "topicId": "numerals",
+      "type": "choice",
+      "question": "Как по-немецки «тридцать три»?",
+      "answer": "dreiunddreißig",
+      "options": ["dreiunddreißig", "dreißigdrei", "dreißigdritt", "dreidreißig"]
+    },
+    {
+      "topicId": "numerals",
+      "type": "fill",
+      "question": "Ich bin ___ Jahre alt. (двадцать три года)",
+      "answer": "dreiundzwanzig",
+      "explain": "23 = drei + und + zwanzig = dreiundzwanzig"
+    },
+
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "Какой падеж всегда требует предлог «für»?",
+      "answer": "Akkusativ",
+      "options": ["Akkusativ", "Dativ", "Genitiv", "Nominativ"]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "Ich fahre ___ dem Zug. (на поезде)",
+      "answer": "mit",
+      "explain": "mit + Dativ = mit dem Zug"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "Das Buch liegt auf ___ Tisch. (wo? — Dativ, der Tisch)",
+      "answer": "dem",
+      "explain": "wo? → Dativ: auf + dem Tisch"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "Какой вопрос указывает на Akkusativ у двойных предлогов?",
+      "answer": "wohin? (куда?)",
+      "options": ["wohin? (куда?)", "wo? (где?)", "wann? (когда?)", "wer? (кто?)"]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "Ich lege das Buch auf ___ Tisch. (wohin? — Akkusativ, der Tisch)",
+      "answer": "den",
+      "explain": "wohin? → Akkusativ: auf + den Tisch"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "Seit ___ Jahr lerne ich Deutsch. (ein Jahr, Dativ)",
+      "answer": "einem",
+      "explain": "seit всегда + Dativ: seit einem Jahr"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "Какой предлог означает «несмотря на» и требует Genitiv?",
+      "answer": "trotz",
+      "options": ["trotz", "wegen", "statt", "während"]
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "Wir gehen ___ den Park. (через)",
+      "answer": "durch",
+      "explain": "durch + Akkusativ = durch den Park"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "fill",
+      "question": "___ des schlechten Wetters bleiben wir zu Hause. (из-за)",
+      "answer": "Wegen",
+      "explain": "wegen + Genitiv"
+    },
+    {
+      "topicId": "prepositions",
+      "type": "choice",
+      "question": "Какой предлог используется с Dativ и означает «с» (совместно)?",
+      "answer": "mit",
+      "options": ["mit", "ohne", "für", "durch"]
+    },
+
+    {
+      "topicId": "verbs-past",
+      "type": "choice",
+      "question": "Какой вспомогательный глагол используется с «gehen» в Perfekt?",
+      "answer": "sein",
+      "options": ["sein", "haben", "werden", "bleiben"]
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Partizip II от «machen»: ge___t",
+      "answer": "gemacht",
+      "explain": "Правильный глагол: ge- + основа + -t: gemacht"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Partizip II от «schreiben»?",
+      "answer": "geschrieben",
+      "explain": "Сильный глагол: schreiben → geschrieben"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "choice",
+      "question": "Какую форму Partizip II образует «besuchen»?",
+      "answer": "besucht (без ge-)",
+      "options": ["besucht (без ge-)", "gebesucht", "begesucht", "besuchen"]
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Ich ___ gestern Pizza gegessen. (Perfekt, ich)",
+      "answer": "habe",
+      "explain": "essen → haben: ich habe gegessen"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Er ___ nach Hause gegangen. (Perfekt, er)",
+      "answer": "ist",
+      "explain": "gehen → sein: er ist gegangen"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "choice",
+      "question": "Форма «sein» в Präteritum для «ich»?",
+      "answer": "war",
+      "options": ["war", "wurde", "bin", "sei"]
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Präteritum от «haben» для «er»: er ___",
+      "answer": "hatte",
+      "explain": "haben → Präteritum: ich hatte, er hatte"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "fill",
+      "question": "Partizip II от «fahren»?",
+      "answer": "gefahren",
+      "explain": "Сильный глагол: fahren → gefahren"
+    },
+    {
+      "topicId": "verbs-past",
+      "type": "choice",
+      "question": "Какой глагол образует Perfekt с «sein»: bleiben или kaufen?",
+      "answer": "bleiben",
+      "options": ["bleiben", "kaufen", "essen", "lesen"]
+    },
+
+    {
+      "topicId": "word-order",
+      "type": "choice",
+      "question": "На каком месте стоит спрягаемый глагол в немецком главном предложении?",
+      "answer": "На втором",
+      "options": ["На втором", "На первом", "В конце", "После подлежащего"]
+    },
+    {
+      "topicId": "word-order",
+      "type": "fill",
+      "question": "Поставьте слова в правильный порядок: Heute / ich / ins Kino / gehe → ___",
+      "answer": "Heute gehe ich ins Kino.",
+      "explain": "Heute на 1-м месте → инверсия: глагол на 2-м, подлежащее на 3-м"
+    },
+    {
+      "topicId": "word-order",
+      "type": "choice",
+      "question": "Как называется правило, при котором глагол всегда на 2-м месте?",
+      "answer": "Правило V2",
+      "options": ["Правило V2", "Глагольная рамка", "Инверсия", "Придаточный порядок"]
+    },
+    {
+      "topicId": "word-order",
+      "type": "fill",
+      "question": "В глагольной рамке инфинитив или Partizip II стоят ___ предложения.",
+      "answer": "в конце",
+      "explain": "Satzklammer: вспомогательный/модальный глагол — на 2-м месте, основной — в конце"
+    },
+    {
+      "topicId": "word-order",
+      "type": "choice",
+      "question": "Где стоит глагол в придаточном предложении с «weil»?",
+      "answer": "В самом конце",
+      "options": ["В самом конце", "На первом месте", "На втором месте", "Перед союзом"]
+    },
+    {
+      "topicId": "word-order",
+      "type": "fill",
+      "question": "Ich lerne Deutsch, weil ich in Deutschland arbeiten ___.",
+      "answer": "will",
+      "explain": "В придаточном с weil глагол уходит в конец: will"
+    },
+    {
+      "topicId": "word-order",
+      "type": "fill",
+      "question": "Ich rufe dich morgen ___. (anrufen — приставка в конце)",
+      "answer": "an",
+      "explain": "Отделяемый глагол: an- уходит в конец рамки"
+    },
+    {
+      "topicId": "word-order",
+      "type": "choice",
+      "question": "Wenn es regnet, ___ ich zu Hause. (инверсия после придаточного)",
+      "answer": "bleibe ich",
+      "options": ["bleibe ich", "ich bleibe", "bleiben ich", "ich bleiben"]
+    },
+    {
+      "topicId": "word-order",
+      "type": "fill",
+      "question": "Er hat das Buch schon fertig ___. (lesen, Partizip II)",
+      "answer": "gelesen",
+      "explain": "Partizip II в конце глагольной рамки: gelesen"
+    },
+    {
+      "topicId": "word-order",
+      "type": "choice",
+      "question": "Какой элемент в немецком предложении никогда не может стоять на 1-м месте?",
+      "answer": "Ничего такого нет — на 1-е место можно ставить что угодно",
+      "options": ["Ничего такого нет — на 1-е место можно ставить что угодно", "Обстоятельство", "Подлежащее", "Дополнение"]
+    },
+
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "Как образуется Futur I?",
+      "answer": "werden + инфинитив в конце",
+      "options": ["werden + инфинитив в конце", "sein + Partizip II", "haben + Infinitiv", "werde + Past Participle"]
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Форма «werden» для «du»: du ___",
+      "answer": "wirst",
+      "explain": "Спряжение werden: du wirst"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Ich ___ morgen kommen. (Futur I, ich)",
+      "answer": "werde",
+      "explain": "Futur I: ich werde + инфинитив"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "Как в разговорном немецком часто выражают будущее?",
+      "answer": "Настоящее время + временной указатель (morgen, nächste Woche)",
+      "options": ["Настоящее время + временной указатель (morgen, nächste Woche)", "Только werden + Infinitiv", "sein + Infinitiv", "Modalverb + Infinitiv"]
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Es ___ regnen. (Futur I, прогноз погоды, es)",
+      "answer": "wird",
+      "explain": "es wird regnen — werden для es: wird"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Wir ___ das Problem lösen. (Futur I, wir)",
+      "answer": "werden",
+      "explain": "wir werden — форма мн.ч."
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "«Er wird wohl krank sein» — что это выражает?",
+      "answer": "Предположение о настоящем",
+      "options": ["Предположение о настоящем", "Будущее время", "Прошедшее время", "Пожелание"]
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Nächstes Jahr ___ ich umziehen. (я переберусь, Futur I)",
+      "answer": "werde",
+      "explain": "Futur I: ich werde umziehen"
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "fill",
+      "question": "Das ___ nicht leicht sein. (это будет нелегко, Futur I, das)",
+      "answer": "wird",
+      "explain": "das wird — форма 3-го лица ед.ч."
+    },
+    {
+      "topicId": "verbs-future",
+      "type": "choice",
+      "question": "Форма «werden» для «ihr»?",
+      "answer": "werdet",
+      "options": ["werdet", "werden", "wirst", "wird"]
+    },
+
+    {
+      "topicId": "separable-verbs",
+      "type": "choice",
+      "question": "Где стоит отделяемая приставка в главном предложении?",
+      "answer": "В конце предложения",
+      "options": ["В конце предложения", "Перед глаголом", "На первом месте", "После подлежащего"]
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Er ___ um 7 auf. (aufstehen, Präsens, er)",
+      "answer": "steht",
+      "explain": "aufstehen: er steht... auf (приставка в конце)"
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Ich ___ dich ___. (anrufen, ich, Präsens — приставка в конце)",
+      "answer": "rufe ... an",
+      "explain": "anrufen → ich rufe ... an"
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "choice",
+      "question": "Какой Partizip II у глагола «aufstehen»?",
+      "answer": "aufgestanden",
+      "options": ["aufgestanden", "aufgestehen", "geaufstanden", "aufstehen"]
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Partizip II от «anrufen»: ___",
+      "answer": "angerufen",
+      "explain": "Отделяемый глагол: an + ge + rufen = angerufen"
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "choice",
+      "question": "Приставки каких глаголов никогда не отделяются?",
+      "answer": "be-, er-, ver-, zer-, ent-, ge-, miss-",
+      "options": ["be-, er-, ver-, zer-, ent-, ge-, miss-", "auf-, ab-, an-, aus-, ein-", "vor-, nach-, mit-, weg-", "um-, vor-, durch-"]
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Partizip II от «besuchen»: ___ (без ge-)",
+      "answer": "besucht",
+      "explain": "Неотделяемая приставка be-: Partizip II без ge-: besucht"
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Ich ___ das nicht. (verstehen, Präsens, ich — неотделяемый)",
+      "answer": "verstehe",
+      "explain": "verstehen — неотделяемый (ver-): ich verstehe"
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "choice",
+      "question": "Где ударение у отделяемых приставок?",
+      "answer": "На приставке",
+      "options": ["На приставке", "На корне глагола", "На окончании", "Зависит от контекста"]
+    },
+    {
+      "topicId": "separable-verbs",
+      "type": "fill",
+      "question": "Bitte mach das Licht ___! (ausmachen — приставка в конце)",
+      "answer": "aus",
+      "explain": "ausmachen → mach ... aus"
+    },
+
+    {
+      "topicId": "konjunktiv",
+      "type": "choice",
+      "question": "Как образуется Konjunktiv II с würde?",
+      "answer": "würde + инфинитив в конце",
+      "options": ["würde + инфинитив в конце", "würde + Partizip II", "wäre + Infinitiv", "hätte + Infinitiv"]
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Форма würde для «du»: du ___",
+      "answer": "würdest",
+      "explain": "würde-спряжение: du würdest"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Konjunktiv II от «sein» для «ich»: ich ___",
+      "answer": "wäre",
+      "explain": "sein → war → wäre (умлаут): ich wäre"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "choice",
+      "question": "Как переводится «Hätten Sie einen Moment Zeit?»?",
+      "answer": "Нашлась бы у вас минутка?",
+      "options": ["Нашлась бы у вас минутка?", "У вас есть минутка?", "Вы хотели бы остановиться?", "Вы бы подождали?"]
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Konjunktiv II от «können» для «er»: er ___",
+      "answer": "könnte",
+      "explain": "können → konnte → könnte (умлаут)"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Wenn ich Zeit ___, würde ich mehr lesen. (haben, Konjunktiv II)",
+      "answer": "hätte",
+      "explain": "haben → hatte → hätte"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "choice",
+      "question": "Что выражает конструкция «Wenn ich du wäre, würde ich nicht gehen»?",
+      "answer": "Нереальное условие (гипотетическая ситуация)",
+      "options": ["Нереальное условие (гипотетическая ситуация)", "Реальное условие в настоящем", "Просьба", "Прошедшее время"]
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Ich ___ gern mitkommen. (Konjunktiv II — я бы с удовольствием пошёл, würde)",
+      "answer": "würde",
+      "explain": "ich würde + Infinitiv: ich würde gern mitkommen"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "fill",
+      "question": "Das ___ sein. (könnte — это возможно)",
+      "answer": "könnte",
+      "explain": "können → Konjunktiv II: könnte"
+    },
+    {
+      "topicId": "konjunktiv",
+      "type": "choice",
+      "question": "Форма Konjunktiv II от «haben» для «ich»?",
+      "answer": "hätte",
+      "options": ["hätte", "habe", "hatte", "wäre"]
+    },
+
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "Как образуется Vorgangspassiv (процессный пассив) в Präsens?",
+      "answer": "wird + Partizip II",
+      "options": ["wird + Partizip II", "ist + Partizip II", "hat + Partizip II", "werden + Infinitiv"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Das Haus ___ gebaut. (пассив Präsens, строится)",
+      "answer": "wird",
+      "explain": "Präsens Passiv: wird + Partizip II"
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Das Fenster ___ geöffnet. (пассив Präteritum, окно открыли)",
+      "answer": "wurde",
+      "explain": "Präteritum Passiv: wurde + Partizip II"
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "Как указывается деятель в пассивной конструкции?",
+      "answer": "von + Dativ",
+      "options": ["von + Dativ", "durch + Akkusativ", "mit + Dativ", "für + Akkusativ"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Das Geschäft ___ geschlossen. (Zustandspassiv — состояние, sein)",
+      "answer": "ist",
+      "explain": "Zustandspassiv (состояние) = sein + Partizip II"
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "Чем отличается «wird geöffnet» от «ist geöffnet»?",
+      "answer": "wird = процесс (открывают), ist = состояние (открыто)",
+      "options": ["wird = процесс (открывают), ist = состояние (открыто)", "Смысл одинаковый", "wird = прошлое, ist = настоящее", "wird = формально, ist = разговорно"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Das Buch ___ von ihm gelesen. (пассив Präsens, он читает книгу)",
+      "answer": "wird",
+      "explain": "Passiv Präsens: wird gelesen"
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Die Aufgabe ___ erledigt. (задача выполнена — состояние)",
+      "answer": "ist",
+      "explain": "Zustandspassiv: sein + Partizip II → ist erledigt"
+    },
+    {
+      "topicId": "passive",
+      "type": "choice",
+      "question": "Как выглядит пассив Perfekt?",
+      "answer": "ist + Partizip II + worden",
+      "options": ["ist + Partizip II + worden", "hat + Partizip II + worden", "wurde + Partizip II", "wird + Partizip II + sein"]
+    },
+    {
+      "topicId": "passive",
+      "type": "fill",
+      "question": "Die Stadt ___ 1850 gegründet. (пассив Präteritum)",
+      "answer": "wurde",
+      "explain": "Passiv Präteritum: wurde + Partizip II"
+    },
+
+    {
+      "topicId": "relative-clauses",
+      "type": "choice",
+      "question": "Какое относительное местоимение используется для мужского рода в Nominativ?",
+      "answer": "der",
+      "options": ["der", "die", "das", "den"]
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Der Mann, ___ dort steht, ist mein Vater. (м.р., Nominativ)",
+      "answer": "der",
+      "explain": "Мужской род, Nominativ → der"
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Die Frau, ___ ich sehe, ist Ärztin. (ж.р., Akkusativ)",
+      "answer": "die",
+      "explain": "Женский род, Akkusativ → die"
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "choice",
+      "question": "Какое относительное местоимение для Genitiv мужского рода?",
+      "answer": "dessen",
+      "options": ["dessen", "deren", "dem", "des"]
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Das Kind, ___ ich helfe, heißt Max. (ср.р., Dativ)",
+      "answer": "dem",
+      "explain": "Средний род, Dativ → dem"
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Die Frau, ___ Mann Arzt ist, kommt. (Genitiv ж.р.)",
+      "answer": "deren",
+      "explain": "Genitiv женского рода → deren"
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "choice",
+      "question": "Какое относительное местоимение для Dativ множественного числа?",
+      "answer": "denen",
+      "options": ["denen", "die", "den", "deren"]
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Die Bücher, ___ ich lese, sind interessant. (мн.ч., Akkusativ)",
+      "answer": "die",
+      "explain": "Множественное число, Akkusativ → die"
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "choice",
+      "question": "Как определяется падеж относительного местоимения?",
+      "answer": "По роли в придаточном предложении",
+      "options": ["По роли в придаточном предложении", "По роду антецедента", "По числу антецедента", "Всегда Nominativ"]
+    },
+    {
+      "topicId": "relative-clauses",
+      "type": "fill",
+      "question": "Der Mann, ___ Buch ich lese, ist Autor. (Genitiv м.р.)",
+      "answer": "dessen",
+      "explain": "Genitiv мужского рода → dessen"
+    },
+
+    {
+      "topicId": "infinitive-clauses",
+      "type": "choice",
+      "question": "Как пишется «zu» у отделяемых глаголов в инфинитивной конструкции?",
+      "answer": "zu вставляется между приставкой и основой: aufzustehen",
+      "options": ["zu вставляется между приставкой и основой: aufzustehen", "zu перед глаголом: zu aufstehen", "zu не используется", "zu в конце: aufstehzu"]
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "Ich versuche, Deutsch zu ___. (lernen)",
+      "answer": "lernen",
+      "explain": "versuchen + zu + Infinitiv: zu lernen"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "Ich lerne Deutsch, ___ in Berlin zu arbeiten. (чтобы)",
+      "answer": "um",
+      "explain": "Цель: um ... zu + Infinitiv"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "choice",
+      "question": "Что означает конструкция «ohne...zu»?",
+      "answer": "не + деепричастие (без того чтобы)",
+      "options": ["не + деепричастие (без того чтобы)", "чтобы", "вместо того чтобы", "после того как"]
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "Er geht weg, ___ ein Wort zu sagen. (не говоря ни слова)",
+      "answer": "ohne",
+      "explain": "ohne...zu = не делая чего-то"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "Er vergaß, die Tür ab___schließen. (zu вставляется)",
+      "answer": "abzuschließen",
+      "explain": "abschließen: ab + zu + schließen = abzuschließen"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "choice",
+      "question": "Что означает «statt...zu»?",
+      "answer": "Вместо того чтобы",
+      "options": ["Вместо того чтобы", "Чтобы", "Не делая", "После того как"]
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "___ zu lernen, spielt er Computerspiele. (вместо того чтобы)",
+      "answer": "Statt",
+      "explain": "statt...zu + Infinitiv = вместо того чтобы"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "fill",
+      "question": "Es ist wichtig, pünktlich zu ___. (sein)",
+      "answer": "sein",
+      "explain": "es ist + Adj. + zu + Infinitiv: zu sein"
+    },
+    {
+      "topicId": "infinitive-clauses",
+      "type": "choice",
+      "question": "Что нужно после «vorhaben» (планировать)?",
+      "answer": "zu + Infinitiv",
+      "options": ["zu + Infinitiv", "Infinitiv без zu", "Partizip II", "Konjunktiv"]
+    },
+
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Какое вопросительное слово означает «откуда»?",
+      "answer": "woher",
+      "options": ["woher", "wohin", "wo", "wann"]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "___ machst du? (что делаешь?)",
+      "answer": "Was",
+      "explain": "что → was"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "___ gehst du? (куда идёшь?)",
+      "answer": "Wohin",
+      "explain": "куда → wohin"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Как образуется вопрос «да/нет» в немецком?",
+      "answer": "Глагол выносится на 1-е место",
+      "options": ["Глагол выносится на 1-е место", "Добавляется вопросительное слово", "Глагол уходит в конец", "Порядок слов не меняется"]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "— Du sprichst kein Deutsch? — ___ (да, говорю! — ответ на отрицательный вопрос)",
+      "answer": "Doch",
+      "explain": "Doch — утвердительный ответ на отрицательный вопрос"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "___ lernst du Deutsch? (почему?)",
+      "answer": "Warum",
+      "explain": "почему → warum"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Что спрашивает «Wessen Tasche ist das?»?",
+      "answer": "Чья это сумка?",
+      "options": ["Чья это сумка?", "Где эта сумка?", "Какая это сумка?", "Кому эта сумка?"]
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "___ Film siehst du? (какой фильм — welch-)",
+      "answer": "Welchen",
+      "explain": "welch- склоняется: Akkusativ м.р. → welchen"
+    },
+    {
+      "topicId": "questions",
+      "type": "fill",
+      "question": "___ kostet das? (сколько стоит?)",
+      "answer": "Was",
+      "explain": "Сколько стоит? → Was kostet das?"
+    },
+    {
+      "topicId": "questions",
+      "type": "choice",
+      "question": "Как спросить «кому» (косвенный вопрос)?",
+      "answer": "wem",
+      "options": ["wem", "wen", "wer", "wessen"]
+    },
+
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "Какой сочинительный союз означает «потому что» и не меняет порядок слов?",
+      "answer": "denn",
+      "options": ["denn", "weil", "obwohl", "dass"]
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Nicht er, ___ sie kommt. (а, напротив)",
+      "answer": "sondern",
+      "explain": "sondern = а, напротив (после отрицания)"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Ich lerne, ___ ich eine Prüfung habe. (потому что, глагол в конец)",
+      "answer": "weil",
+      "explain": "weil — подчинительный союз, глагол уходит в конец"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "Какой союз используется для однократного действия в прошлом («когда я был ребёнком»)?",
+      "answer": "als",
+      "options": ["als", "wenn", "wann", "ob"]
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Ich weiß nicht, ___ er kommt. (ли он придёт)",
+      "answer": "ob",
+      "explain": "ob = ли; косвенный вопрос"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Es regnet, ___ bleibe ich zu Hause. (поэтому — союзное наречие с инверсией)",
+      "answer": "deshalb",
+      "explain": "deshalb — союзное наречие: вызывает инверсию"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "Что означает союзное наречие «trotzdem»?",
+      "answer": "тем не менее / несмотря на это",
+      "options": ["тем не менее / несмотря на это", "поэтому", "кроме того", "следовательно"]
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "Sie bleibt zu Hause, ___ es schön ist. (хотя)",
+      "answer": "obwohl",
+      "explain": "obwohl = хотя (подчинительный союз)"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "fill",
+      "question": "___ er gegessen hatte, schlief er ein. (после того как)",
+      "answer": "Nachdem",
+      "explain": "nachdem + Plusquamperfekt = после того как"
+    },
+    {
+      "topicId": "conjunctions",
+      "type": "choice",
+      "question": "Сочинительный союз «und» — что происходит с порядком слов?",
+      "answer": "Порядок слов не меняется",
+      "options": ["Порядок слов не меняется", "Глагол уходит в конец", "Происходит инверсия", "Глагол выходит на первое место"]
+    },
+
+    {
+      "topicId": "separable-advanced",
+      "type": "choice",
+      "question": "Как образуется Partizip II отделяемого глагола «aufstehen»?",
+      "answer": "aufgestanden (ge- между приставкой и основой)",
+      "options": ["aufgestanden (ge- между приставкой и основой)", "geaufstanden", "aufstehen", "aufgestehen"]
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Er ist früh auf___standen. (ge вставить)",
+      "answer": "aufgestanden",
+      "explain": "auf + ge + standen = aufgestanden"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Partizip II от «einladen»: ___",
+      "answer": "eingeladen",
+      "explain": "ein + ge + laden = eingeladen"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "choice",
+      "question": "Что происходит с отделяемым глаголом в придаточном предложении?",
+      "answer": "Глагол не разделяется — стоит целиком в конце",
+      "options": ["Глагол не разделяется — стоит целиком в конце", "Приставка уходит в начало", "Приставка отделяется как обычно", "Используется инфинитив"]
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Ich weiß, dass er mit___ ist. (mitkommen, Partizip II)",
+      "answer": "mitgekommen",
+      "explain": "mit + ge + kommen = mitgekommen"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Sie hat mich an___. (anrufen, Perfekt, angerufen)",
+      "answer": "angerufen",
+      "explain": "anrufen → an + ge + rufen = angerufen"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "choice",
+      "question": "Какой вспомогательный глагол используется с «abfahren» в Perfekt?",
+      "answer": "sein",
+      "options": ["sein", "haben", "werden", "dürfen"]
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Wann seid ihr ab___? (abfahren, Partizip II)",
+      "answer": "abgefahren",
+      "explain": "abfahren → ab + ge + fahren = abgefahren; sein-Verb"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "fill",
+      "question": "Ich habe vor, morgen früh auf___stehen. (zu + Partizip — auf-zu-stehen)",
+      "answer": "aufzustehen",
+      "explain": "vorhaben + zu: auf + zu + stehen = aufzustehen"
+    },
+    {
+      "topicId": "separable-advanced",
+      "type": "choice",
+      "question": "Er hat vergessen, mich ___. (anzurufen — выбрать правильную форму)",
+      "answer": "anzurufen",
+      "options": ["anzurufen", "anrufen", "angerufen", "zu anrufen"]
+    },
+
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "Как перевести устойчивое выражение «eine Entscheidung treffen»?",
+      "answer": "принять решение",
+      "options": ["принять решение", "встретить решение", "сделать выбор", "найти решение"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "Er hat immer ___. (быть правым — Recht haben)",
+      "answer": "Recht",
+      "explain": "Recht haben = быть правым"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "Das macht keinen ___. (это неинтересно — Spaß machen)",
+      "answer": "Spaß",
+      "explain": "Spaß machen = нравиться, быть весёлым. keinen Spaß = неинтересно"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "Что означает «Wie bitte?»?",
+      "answer": "Простите? (переспрос)",
+      "options": ["Простите? (переспрос)", "Как пожалуйста?", "Что за вопрос?", "Говорите пожалуйста"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "Что ответить больному? ___ Besserung! (скорейшего выздоровления)",
+      "answer": "Gute",
+      "explain": "Gute Besserung! = Скорейшего выздоровления!"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "Что означает «Das geht nicht»?",
+      "answer": "Это невозможно / так не получится",
+      "options": ["Это невозможно / так не получится", "Это идёт", "Нет проблем", "Всё ясно"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "Kannst du mir ___ geben? (сообщить — Bescheid geben)",
+      "answer": "Bescheid",
+      "explain": "Bescheid geben/sagen = сообщить, дать знать"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "Hast du ___ vor dem Hund? (бояться — Angst haben)",
+      "answer": "Angst",
+      "explain": "Angst haben vor = бояться чего-то"
+    },
+    {
+      "topicId": "phraseology",
+      "type": "choice",
+      "question": "Что означает дискурсивная связка «einerseits... andererseits»?",
+      "answer": "с одной стороны... с другой стороны",
+      "options": ["с одной стороны... с другой стороны", "во-первых... во-вторых", "тем не менее... однако", "прежде всего... наконец"]
+    },
+    {
+      "topicId": "phraseology",
+      "type": "fill",
+      "question": "___ Glückwunsch zum Geburtstag! (поздравляю с днём рождения)",
+      "answer": "Herzlichen",
+      "explain": "Herzlichen Glückwunsch! = Поздравляю! С праздником!"
+    }
+  ]
+}

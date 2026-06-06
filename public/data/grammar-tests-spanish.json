@@ -2,7 +2,7 @@
   "type": "testPack",
   "name": "Грамматика испанского",
   "icon": "🇪🇸",
-  "description": "A1–A2: артикли, ser/estar, времена, числа, вопросы, предлоги — 10 тем по 10 вопросов",
+  "description": "A1–B1: артикли, ser/estar, времена, числа, вопросы, предлоги, существительные, прилагательные, местоимения, субхунтиво, кондисиональ и другие темы — 20 тем по 10 вопросов",
   "topics": {
     "articles": {
       "name": "Артикли и род",
@@ -43,6 +43,46 @@
     "prepositions": {
       "name": "Предлоги",
       "icon": "🔗"
+    },
+    "nouns": {
+      "name": "Существительные",
+      "icon": "📦"
+    },
+    "adjectives": {
+      "name": "Прилагательные",
+      "icon": "🎨"
+    },
+    "pronouns": {
+      "name": "Местоимения",
+      "icon": "👤"
+    },
+    "futuro-proximo": {
+      "name": "Ir a + infinitivo",
+      "icon": "🚀"
+    },
+    "hay-gustar": {
+      "name": "Hay и gustar",
+      "icon": "❤️"
+    },
+    "object-pronouns": {
+      "name": "Местоимения дополнения",
+      "icon": "🔀"
+    },
+    "subjuntivo": {
+      "name": "Presente de Subjuntivo",
+      "icon": "🔮"
+    },
+    "condicional": {
+      "name": "Condicional Simple",
+      "icon": "🌀"
+    },
+    "estar-gerundio": {
+      "name": "Estar + gerundio",
+      "icon": "〰️"
+    },
+    "imperativo": {
+      "name": "Imperativo",
+      "icon": "📢"
     }
   },
   "questions": [
@@ -332,8 +372,9 @@
         "iba",
         "era",
         "fue",
-        "iba"
-      ]
+        "fuera"
+      ],
+      "explain": "ir и ser в pretérito совпадают; fuera — субхунтиво; iba/era — имперфект"
     },
     {
       "topicId": "preterito",
@@ -609,7 +650,7 @@
     {
       "topicId": "numbers",
       "type": "choice",
-      "question": "«Son las tres y media» — это:",
+      "question": "«Son las tres y media de la tarde» — это:",
       "answer": "15:30",
       "options": [
         "03:15",
@@ -910,6 +951,853 @@
         "около",
         "с (начальная точка)",
         "после"
+      ]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте мн. число: el libro → ___",
+      "answer": "los libros",
+      "explain": "слово на гласную: + s"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте мн. число: la ciudad → ___",
+      "answer": "las ciudades",
+      "explain": "слово на согласную: + es"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте мн. число: el lápiz → ___",
+      "answer": "los lápices",
+      "explain": "-z → -ces во мн. числе"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "el lunes во мн. числе:",
+      "answer": "los lunes",
+      "options": [
+        "los luneses",
+        "los lunes",
+        "los lunés",
+        "les lunes"
+      ],
+      "explain": "слова на безударную -s не изменяются"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Форма женского рода: el amigo → la ___",
+      "answer": "amiga",
+      "explain": "-o → -a для образования женского рода"
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Форма женского рода: el profesor → la ___",
+      "answer": "profesora",
+      "explain": "согласная + a для образования женского рода"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Как правильно образовать мн. число от el actor?",
+      "answer": "los actores",
+      "options": [
+        "los actors",
+        "los actores",
+        "los actors",
+        "los actóres"
+      ]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Образуйте мн. число: la voz → ___",
+      "answer": "las voces",
+      "explain": "-z → -ces во мн. числе"
+    },
+    {
+      "topicId": "nouns",
+      "type": "choice",
+      "question": "Как по-испански «мужчина» и «женщина» (разные слова)?",
+      "answer": "el hombre / la mujer",
+      "options": [
+        "el hombre / la hombra",
+        "el hombre / la mujer",
+        "el macho / la femina",
+        "el varón / la varona"
+      ]
+    },
+    {
+      "topicId": "nouns",
+      "type": "fill",
+      "question": "Форма женского рода: el rey → la ___",
+      "answer": "reina",
+      "explain": "суффикс -ina для образования женского рода"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Согласуйте: un chico alto → una chica ___",
+      "answer": "alta",
+      "explain": "-o → -a для женского рода"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Согласуйте (мн. ч. ж.р.): chicas altas — заменить на chicos: chicos ___",
+      "answer": "altos"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Прилагательное grande во мн. числе:",
+      "answer": "grandes",
+      "options": [
+        "grandos",
+        "grandes",
+        "grandas",
+        "grand"
+      ],
+      "explain": "прилагательные не на -o: только + s во мн. числе"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Прилагательное bueno перед существительным мужского рода: ___ amigo",
+      "answer": "buen",
+      "explain": "bueno → buen перед существительным м.р."
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Как сказать «хороший друг»?",
+      "answer": "un buen amigo",
+      "options": [
+        "un amigo bueno",
+        "un buen amigo",
+        "un bueno amigo",
+        "un amigo bien"
+      ],
+      "explain": "bueno → buen стоит перед существительным"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Сравнительная степень: «высокий» → «___ alto que»",
+      "answer": "más",
+      "explain": "más + прилагательное + que = сравнительная степень"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Превосходная степень: «самый высокий» = ___ más alto",
+      "answer": "el",
+      "explain": "el/la más + прилагательное"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "Нерегулярная форма сравнительной степени от bueno:",
+      "answer": "mejor",
+      "options": [
+        "más bueno",
+        "mejor",
+        "buenísimo",
+        "más bien"
+      ]
+    },
+    {
+      "topicId": "adjectives",
+      "type": "fill",
+      "question": "Нерегулярная форма сравнительной степени от malo:",
+      "answer": "peor"
+    },
+    {
+      "topicId": "adjectives",
+      "type": "choice",
+      "question": "«un viejo amigo» vs «un amigo viejo» — разница?",
+      "answer": "viejo перед сущ. = давний друг; после = пожилой",
+      "options": [
+        "Нет разницы, только стилистика",
+        "viejo перед сущ. = давний друг; после = пожилой",
+        "оба означают пожилой",
+        "оба означают давний"
+      ]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Личное местоимение 1-го лица мн.ч. в испанском:",
+      "answer": "nosotros",
+      "options": [
+        "vosotros",
+        "nosotros",
+        "ellos",
+        "ustedes"
+      ]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Краткая притяжательная форма для «yo»: ___ libro (моя книга)",
+      "answer": "mi",
+      "explain": "mi не изменяется по роду"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Краткая притяжательная форма для «nosotros» (м.р.): ___ casa",
+      "answer": "nuestra",
+      "explain": "nuestro согласуется в роде: nuestra casa"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Как сказать «Книга моя» (полная форма притяжательного)?",
+      "answer": "El libro es mío",
+      "options": [
+        "El libro es mi",
+        "El libro es mío",
+        "El libro es de mío",
+        "El libro es mía"
+      ]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Указательное местоимение «этот» (м.р., близко): ___ libro",
+      "answer": "este"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Указательное местоимение «та» (ж.р., чуть дальше): ___ silla",
+      "answer": "esa"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "Три степени удалённости в указательных местоимениях:",
+      "answer": "este, ese, aquel",
+      "options": [
+        "este, aquel, este",
+        "ese, este, aquel",
+        "este, ese, aquel",
+        "este, eso, aquello"
+      ]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Уsted используется с формой глагола как ___-е лицо",
+      "answer": "3",
+      "explain": "usted грамматически — 3-е лицо ед. числа"
+    },
+    {
+      "topicId": "pronouns",
+      "type": "choice",
+      "question": "В каком случае личное местоимение yo можно опустить?",
+      "answer": "Когда из окончания глагола понятно лицо",
+      "options": [
+        "Никогда нельзя опускать",
+        "Когда из окончания глагола понятно лицо",
+        "Только в письменной речи",
+        "Только во множественном числе"
+      ]
+    },
+    {
+      "topicId": "pronouns",
+      "type": "fill",
+      "question": "Полная форма притяжательного от tú (м.р., ед.ч.): El bolígrafo es ___",
+      "answer": "tuyo"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "Конструкция «собираюсь есть» (yo): ___ a comer",
+      "answer": "voy",
+      "explain": "voy a + инфинитив"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Ты собираешься учиться» (tú): ___ a estudiar",
+      "answer": "vas"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Будет дождь»: ___ a llover",
+      "answer": "va"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "choice",
+      "question": "«Мы будем учиться» с ir a + infinitivo:",
+      "answer": "Vamos a estudiar",
+      "options": [
+        "Vamos estudiar",
+        "Vamos a estudiar",
+        "Vamos de estudiar",
+        "Iremos a estudiar"
+      ]
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Что ты будешь делать завтра?»: ¿Qué ___ a hacer mañana?",
+      "answer": "vas"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Они придут» (ir a + infinitivo): ___ a venir",
+      "answer": "van"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "choice",
+      "question": "Чем ir a + infinitivo отличается от futuro simple?",
+      "answer": "Выражает ближайшее будущее / планы и намерения",
+      "options": [
+        "Ничем, они взаимозаменяемы всегда",
+        "Выражает ближайшее будущее / планы и намерения",
+        "Используется только для прошлого",
+        "Только для третьего лица"
+      ]
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Посмотрим» (устойчивое выражение): ___ a ver",
+      "answer": "Vamos",
+      "explain": "Vamos a ver — устойчивое выражение"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "fill",
+      "question": "«Это будет трудно»: ___ a ser difícil",
+      "answer": "va"
+    },
+    {
+      "topicId": "futuro-proximo",
+      "type": "choice",
+      "question": "Выберите правильную форму: «Я собираюсь позвонить маме»",
+      "answer": "Voy a llamar a mi madre",
+      "options": [
+        "Voy llamar a mi madre",
+        "Voy a llamar a mi madre",
+        "Voy a llamo a mi madre",
+        "Iré a llamar a mi madre"
+      ]
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«На столе есть книга»: ___ un libro en la mesa",
+      "answer": "Hay"
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Здесь нет хлеба»: No ___ pan aquí",
+      "answer": "hay"
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "choice",
+      "question": "Как hay изменяется для множественного числа?",
+      "answer": "Не изменяется — hay для ед. и мн. числа",
+      "options": [
+        "hays для мн. числа",
+        "Не изменяется — hay для ед. и мн. числа",
+        "han для мн. числа",
+        "están для мн. числа"
+      ]
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Было много машин»: ___ muchos coches",
+      "answer": "Había",
+      "explain": "había — прошедшее время от hay"
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Мне нравится кофе»: ___ gusta el café",
+      "answer": "Me"
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Мне нравятся книги»: Me ___ los libros",
+      "answer": "gustan",
+      "explain": "gustan — мн. число, так как los libros — мн. ч."
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "choice",
+      "question": "«Тебе нравится музыка?»",
+      "answer": "¿Te gusta la música?",
+      "options": [
+        "¿Gustas la música?",
+        "¿Te gusta la música?",
+        "¿Te gustas la música?",
+        "¿Tú gusta la música?"
+      ]
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Ему очень нравится танцевать»: Le ___ bailar",
+      "answer": "encanta",
+      "explain": "encantar — аналог gustar, bailar = инфинитив = ед. число"
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "choice",
+      "question": "Почему говорят «Me gustan los libros», а не «Me gusta los libros»?",
+      "answer": "Глагол согласуется с los libros (мн. число)",
+      "options": [
+        "Потому что это ошибка",
+        "Глагол согласуется с los libros (мн. число)",
+        "Потому что me требует мн. числа",
+        "Оба варианта одинаково верны"
+      ]
+    },
+    {
+      "topicId": "hay-gustar",
+      "type": "fill",
+      "question": "«Нам нравится испанский»: ___ gusta el español",
+      "answer": "Nos"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Видишь книгу? — Да, ___ вижу» (libro — м.р.)",
+      "answer": "lo veo",
+      "explain": "lo — прямое дополнение, м.р."
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Ты знаешь Марию? — Да, ___ знаю» (María — ж.р.)",
+      "answer": "la conozco",
+      "explain": "la — прямое дополнение, ж.р."
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "choice",
+      "question": "Прямое дополнение для «их» (мн.ч. ж.р.):",
+      "answer": "las",
+      "options": [
+        "los",
+        "las",
+        "les",
+        "le"
+      ]
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Я даю Хуану книгу»: ___ doy el libro a Juan",
+      "answer": "Le",
+      "explain": "le — косвенное дополнение (кому?)"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Я пишу им сообщение»: ___ escribo un mensaje",
+      "answer": "Les",
+      "explain": "les — косвенное дополнение мн. числа"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "choice",
+      "question": "Порядок местоимений в «Я тебе это объясняю»:",
+      "answer": "Te lo explico",
+      "options": [
+        "Lo te explico",
+        "Te lo explico",
+        "Explico lo te",
+        "Explico te lo"
+      ],
+      "explain": "косвенное (te) → прямое (lo)"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "le + lo → ___ (правило замены перед прямым дополнением)",
+      "answer": "se lo",
+      "explain": "le/les перед lo/la/los/las заменяется на se"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Я это не понимаю»: No ___ entiendo",
+      "answer": "lo"
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "choice",
+      "question": "«¿Le dices la verdad? → ¿___ la dices?» (замена le перед la)",
+      "answer": "Se",
+      "options": [
+        "Le",
+        "Lo",
+        "Se",
+        "Les"
+      ]
+    },
+    {
+      "topicId": "object-pronouns",
+      "type": "fill",
+      "question": "«Ты меня слушаешь? — Да, ___ escucho» (tú → yo)",
+      "answer": "te",
+      "explain": "me при смене говорящего становится te"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "hablar → yo (subjuntivo): ___",
+      "answer": "hable",
+      "explain": "hablar: hablo → hable (-ar → окончания -er)"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "comer → tú (subjuntivo): ___",
+      "answer": "comas",
+      "explain": "comer: como → coma (-er → окончания -ar)"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "vivir → ellos (subjuntivo): ___",
+      "answer": "vivan"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "choice",
+      "question": "Выберите правильную форму: «Хочу, чтобы ты пришёл»",
+      "answer": "Quiero que vengas",
+      "options": [
+        "Quiero que vienes",
+        "Quiero que vengas",
+        "Quiero que vendrás",
+        "Quiero que vas"
+      ]
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "«Важно, чтобы ты учился»: Es importante que ___",
+      "answer": "estudies",
+      "explain": "estudiar → estudie, estudies…"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "ir → tú (subjuntivo): ___",
+      "answer": "vayas",
+      "explain": "ir нерегулярный: vaya, vayas, vaya…"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "choice",
+      "question": "Нерегулярные глаголы субхунтиво (акроним DISHES):",
+      "answer": "Dar, Ir, Saber, Haber, Estar, Ser",
+      "options": [
+        "Dar, Ir, Ser, Haber, Estar, Saber",
+        "Dar, Ir, Saber, Haber, Estar, Ser",
+        "Deber, Ir, Saber, Haber, Estar, Ser",
+        "Dar, Ir, Salir, Haber, Estar, Ser"
+      ]
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "ser → él (subjuntivo): ___",
+      "answer": "sea"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "fill",
+      "question": "«Ojalá ты был прав»: Ojalá ___ razón",
+      "answer": "tengas",
+      "explain": "ojalá всегда требует субхунтиво"
+    },
+    {
+      "topicId": "subjuntivo",
+      "type": "choice",
+      "question": "После какого выражения НЕ нужен субхунтиво?",
+      "answer": "Creo que viene (я думаю, что он придёт)",
+      "options": [
+        "Quiero que venga",
+        "Es necesario que estudie",
+        "Creo que viene (я думаю, что он придёт)",
+        "Ojalá llueva"
+      ],
+      "explain": "creo que (утвердительное) + индикатив; no creo que → субхунтиво"
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "hablar → yo (condicional): ___",
+      "answer": "hablaría",
+      "explain": "инфинитив + -ía"
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "comer → tú (condicional): ___",
+      "answer": "comerías"
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "vivir → ellos (condicional): ___",
+      "answer": "vivirían"
+    },
+    {
+      "topicId": "condicional",
+      "type": "choice",
+      "question": "«Не мог бы ты повторить?» — вежливая форма:",
+      "answer": "¿Podrías repetir?",
+      "options": [
+        "¿Puedes repetir?",
+        "¿Podrías repetir?",
+        "¿Puedes repetirías?",
+        "¿Podías repetir?"
+      ]
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "«Я бы хотел кофе» (gustar): Me ___",
+      "answer": "gustaría",
+      "explain": "gustar → gustaría в кондисиональ = «я бы хотел»"
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "hacer → yo (condicional): ___",
+      "answer": "haría",
+      "explain": "нерегулярная основа har-"
+    },
+    {
+      "topicId": "condicional",
+      "type": "choice",
+      "question": "tener → ella (condicional) — нерегулярная основа:",
+      "answer": "tendría",
+      "options": [
+        "teniría",
+        "tendría",
+        "tenerría",
+        "tenería"
+      ]
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "«Если бы у меня были деньги, я бы путешествовал»: Si tuviera dinero, ___",
+      "answer": "viajaría"
+    },
+    {
+      "topicId": "condicional",
+      "type": "fill",
+      "question": "venir → yo (condicional): ___",
+      "answer": "vendría",
+      "explain": "нерегулярная основа vendr-"
+    },
+    {
+      "topicId": "condicional",
+      "type": "choice",
+      "question": "«Тебе следовало бы отдохнуть» (deber, tú):",
+      "answer": "Deberías descansar",
+      "options": [
+        "Debes descansar",
+        "Deberías descansar",
+        "Debías descansar",
+        "Deberás descansar"
+      ]
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "Герундий от hablar: ___",
+      "answer": "hablando",
+      "explain": "-ar → -ando"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "Герундий от comer: ___",
+      "answer": "comiendo",
+      "explain": "-er → -iendo"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "Герундий от vivir: ___",
+      "answer": "viviendo"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "choice",
+      "question": "Герундий от leer:",
+      "answer": "leyendo",
+      "options": [
+        "leiendo",
+        "leyendo",
+        "leendo",
+        "leyiendo"
+      ],
+      "explain": "гласная + iendo → yendo: le-iendo → leyendo"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "Герундий от dormir (o→u): ___",
+      "answer": "durmiendo",
+      "explain": "-ir с чередованием o→u: dormir → durmiendo"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "«Я ем прямо сейчас»: ___ comiendo",
+      "answer": "Estoy"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "«Что ты сейчас делаешь?»: ¿Qué ___ haciendo?",
+      "answer": "estás"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "choice",
+      "question": "Герундий от pedir (e→i):",
+      "answer": "pidiendo",
+      "options": [
+        "pediendo",
+        "pidiendo",
+        "pidendo",
+        "pidiéndо"
+      ]
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "fill",
+      "question": "«Идёт дождь»: Está ___",
+      "answer": "lloviendo",
+      "explain": "llover → lloviendo"
+    },
+    {
+      "topicId": "estar-gerundio",
+      "type": "choice",
+      "question": "Разница: «Trabajo en casa» vs «Estoy trabajando en casa»:",
+      "answer": "Estoy trabajando = действие прямо сейчас; Trabajo = привычка",
+      "options": [
+        "Нет разницы, оба означают одно",
+        "Estoy trabajando = действие прямо сейчас; Trabajo = привычка",
+        "Trabajo = сейчас; Estoy trabajando = привычка",
+        "Estoy trabajando используется только в прошлом"
+      ]
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "Форма imperativo tú от hablar: ___",
+      "answer": "habla",
+      "explain": "tú imperativo = 3-е лицо ед.ч. presente"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "Форма imperativo tú от comer: ___",
+      "answer": "come"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "choice",
+      "question": "Форма imperativo tú от venir (нерегулярная):",
+      "answer": "ven",
+      "options": [
+        "viene",
+        "ven",
+        "venid",
+        "venga"
+      ]
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "Форма imperativo tú от hacer (нерегулярная): ___",
+      "answer": "haz"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "Форма imperativo usted от hablar: ___",
+      "answer": "hable",
+      "explain": "usted imperativo = presente de subjuntivo"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "choice",
+      "question": "Форма imperativo vosotros от hablar:",
+      "answer": "hablad",
+      "options": [
+        "hablen",
+        "hablad",
+        "habláis",
+        "hable"
+      ],
+      "explain": "vosotros: инфинитив − r + d"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "Отрицательная форма imperativo tú от hablar: No ___",
+      "answer": "hables",
+      "explain": "отрицательный imperativo = no + presente de subjuntivo"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "choice",
+      "question": "«Не приходи поздно» (tú, отрицательная форма):",
+      "answer": "No vengas tarde",
+      "options": [
+        "No ven tarde",
+        "No vengas tarde",
+        "No viene tarde",
+        "No vendría tarde"
+      ]
+    },
+    {
+      "topicId": "imperativo",
+      "type": "fill",
+      "question": "«Дай мне это» (tú) с присоединённым местоимением: ___",
+      "answer": "Dámelo",
+      "explain": "da + me + lo, ударение на da"
+    },
+    {
+      "topicId": "imperativo",
+      "type": "choice",
+      "question": "Форма imperativo tú от decir (нерегулярная):",
+      "answer": "di",
+      "options": [
+        "deci",
+        "di",
+        "dice",
+        "decid"
       ]
     }
   ]

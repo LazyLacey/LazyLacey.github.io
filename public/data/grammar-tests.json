@@ -115,6 +115,10 @@
     "register": {
       "name": "Стиль и регистр",
       "icon": "🎭"
+    },
+    "time-clock": {
+      "name": "Который час",
+      "icon": "🕐"
     }
   },
   "questions": [
@@ -151,7 +155,8 @@
       "options": [
         "среднего",
         "мужского",
-        "женского"
+        "женского",
+        "не имеет рода"
       ],
       "answer": "среднего",
       "explain": "Ср.р.: ед.ч. как м.р. (un oraș), мн.ч. как ж.р. (orașe)"
@@ -2473,23 +2478,17 @@
     },
     {
       "topicId": "diminutives",
-      "type": "choice",
-      "question": "Уменьшительные в просьбах взрослых используются для:",
-      "options": [
-        "Смягчения / вежливости",
-        "Обращения только к детям",
-        "Уменьшения объёма",
-        "Формального стиля"
-      ],
-      "answer": "Смягчения / вежливости",
-      "explain": "Un picuț de timp? = Чуть-чуть времени? (звучит мягче)"
+      "type": "fill",
+      "question": "Уменьшительное от «mic» (маленький):",
+      "answer": "micuț",
+      "explain": "mic + -uț → micuț; прилагательные тоже образуют уменьшительные"
     },
     {
       "topicId": "diminutives",
       "type": "fill",
-      "question": "Уменьшительное от «puțin» (немного)?",
-      "answer": "puțintel",
-      "explain": "puțin → puțintel = совсем чуточку"
+      "question": "Уменьшительное от «mână» (рука):",
+      "answer": "mânuță",
+      "explain": "mân- + -uță → mânuță"
     },
     {
       "topicId": "word-order",
@@ -2764,6 +2763,94 @@
         "Mă doare piciorul"
       ],
       "explain": "mă doare = у меня болит; piciorul = нога"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "Как спросить «который час?»",
+      "answer": "Cât e ceasul?",
+      "explain": "Cât e ceasul? — стандартный вопрос о времени"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "choice",
+      "question": "«Ровно час» по-румынски:",
+      "options": [
+        "e ora unu",
+        "sunt orele unu",
+        "e ora unul",
+        "este un oră"
+      ],
+      "answer": "e ora unu",
+      "explain": "1:00 — единственное число: e ora unu"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Два часа» по-румынски:",
+      "answer": "sunt orele două",
+      "explain": "Для 2–12 часов: sunt orele + числительное"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Половина пятого» (4:30):",
+      "answer": "sunt orele patru și jumătate",
+      "explain": "и + jumătate (половина) = без округления"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Без четверти пять» (4:45):",
+      "answer": "sunt orele cinci fără un sfert",
+      "explain": "fără = без; un sfert = четверть"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "choice",
+      "question": "«Три пятнадцать» (3:15) по-румынски:",
+      "options": [
+        "sunt orele trei și un sfert",
+        "sunt orele trei și cincisprezece",
+        "e ora trei sfert",
+        "sunt orele trei fără un sfert"
+      ],
+      "answer": "sunt orele trei și un sfert",
+      "explain": "un sfert = четверть часа; și = и (после часа)"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "Как сказать «ровно» при указании времени?",
+      "answer": "fix",
+      "explain": "e ora trei fix = ровно три часа"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Добрый вечер» по-румынски:",
+      "answer": "Bună seara!",
+      "explain": "seara — вечер с определённым артиклем"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "choice",
+      "question": "«В котором часу» (вопрос о времени события):",
+      "options": [
+        "La ce oră?",
+        "Cât e ceasul?",
+        "Când e ora?",
+        "La câte ore?"
+      ],
+      "answer": "La ce oră?",
+      "explain": "La ce oră pleacă? = В котором часу отходит?"
+    },
+    {
+      "topicId": "time-clock",
+      "type": "fill",
+      "question": "«Полдень» по-румынски (одно слово):",
+      "answer": "amiază",
+      "explain": "la amiază = в полдень"
     }
   ]
 }

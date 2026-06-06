@@ -168,7 +168,10 @@ window._grammarLoadFailed = false;
     </div>
     <div class="settings-section">
       <div class="settings-section-title">Язык</div>
-      <div id="lang-picker" style="display:flex;gap:8px;flex-wrap:wrap;padding:4px 0 8px"></div>
+      <div class="setting-row" data-testid="lang-picker-row" style="cursor:pointer" onclick="openLangDrawer()">
+        <div><div class="setting-label" id="lang-picker-label">…</div><div class="setting-sub">Нажмите чтобы сменить язык</div></div>
+        <i class="ph ph-caret-right" style="color:var(--text3);font-size:18px;flex-shrink:0"></i>
+      </div>
     </div>
     <div class="settings-section">
       <div class="settings-section-title">Внешний вид</div>
@@ -183,7 +186,7 @@ window._grammarLoadFailed = false;
         <div><div class="setting-label">Кол-во сессий</div><div class="setting-sub">Для повторения ошибок</div></div>
         <input class="setting-input" type="number" id="setting-error-sessions" min="1" max="10" value="3">
       </div>
-      <div class="setting-row">
+      <div class="setting-row" id="hard-mode-row">
         <div><div class="setting-label">Hard mode <i class="ph ph-fire"></i></div><div class="setting-sub" id="hard-mode-sub">Диакритика обязательна (ă, â, î, ș, ț)</div></div>
         <label class="toggle" style="flex-shrink:0"><input type="checkbox" id="setting-hard-mode"><span class="toggle-track"></span></label>
       </div>
@@ -502,8 +505,10 @@ function _applyLangLabels() {
   const lang = currentLang();
   const title = document.getElementById('ready-study-title');
   if (title) title.innerHTML = `Учим<br>${lang.targetLabel.toLowerCase()}`;
+  const hardRow = document.getElementById('hard-mode-row');
+  if (hardRow) hardRow.style.display = lang.diacriticHints?.length ? '' : 'none';
   const hardSub = document.getElementById('hard-mode-sub');
-  if (hardSub) hardSub.textContent = `Диакритика обязательна (${lang.diacriticHints.join(', ')})`;
+  if (hardSub) hardSub.textContent = `Диакритика обязательна (${(lang.diacriticHints || []).join(', ')})`;
 
   const readyLangLabel = document.getElementById('ready-lang-label');
   if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
@@ -513,22 +518,34 @@ function _applyLangLabels() {
 }
 
 function renderLangPicker() {
-  const container = document.getElementById('lang-picker');
-  if (!container || !window.LANGUAGES) return;
+  const label = document.getElementById('lang-picker-label');
+  if (!label || !window.LANGUAGES) return;
   const cur = currentLang();
-  container.innerHTML = Object.values(window.LANGUAGES).map(lang => {
-    const active = lang.id === cur.id;
-    return `<button onclick="switchLang('${lang.id}')" style="
-      display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;
-      border:2px solid ${active ? 'var(--accent)' : 'var(--border)'};
-      background:${active ? 'var(--accent-a15)' : 'transparent'};
-      color:${active ? 'var(--accent)' : 'var(--text2)'};
-      font-size:14px;font-weight:${active ? 600 : 400};cursor:pointer;font-family:inherit">
-      <span style="font-size:20px">${lang.flag}</span>
-      <span>${lang.name}</span>
-    </button>`;
-  }).join('');
+  label.textContent = `${cur.flag} ${cur.name}`;
 }
+
+function openLangDrawer() {
+  if (!window.LANGUAGES) return;
+  const cur = currentLang();
+  showDrawer('Язык обучения', {
+    render(body) {
+      body.style.cssText = 'display:grid;grid-template-columns:repeat(3,1fr);gap:8px';
+      Object.values(window.LANGUAGES).forEach(lang => {
+        const active = lang.id === cur.id;
+        const btn = document.createElement('button');
+        btn.style.cssText = `display:flex;flex-direction:column;align-items:center;gap:4px;padding:12px 8px;border-radius:12px;
+          border:2px solid ${active ? 'var(--accent)' : 'var(--border)'};
+          background:${active ? 'var(--accent-a15)' : 'transparent'};
+          color:${active ? 'var(--accent)' : 'var(--text2)'};
+          font-size:12px;font-weight:${active ? 600 : 400};cursor:pointer;font-family:inherit`;
+        btn.innerHTML = `<span style="font-size:26px">${lang.flag}</span><span>${lang.name}</span>`;
+        btn.onclick = () => { dismissDrawer(); switchLang(lang.id); };
+        body.appendChild(btn);
+      });
+    }
+  });
+}
+window.openLangDrawer = openLangDrawer;
 
 function switchLang(id) {
   if (id === currentLang().id) return;
