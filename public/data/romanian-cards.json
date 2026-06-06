@@ -502,20 +502,6 @@
       "note": ""
     },
     {
-      "id": 48,
-      "groupId": 6,
-      "ro": "frumos",
-      "ru": "красивый",
-      "note": ""
-    },
-    {
-      "id": 49,
-      "groupId": 6,
-      "ro": "urât",
-      "ru": "некрасивый",
-      "note": ""
-    },
-    {
       "id": 50,
       "groupId": 6,
       "ro": "nou",
@@ -1409,13 +1395,6 @@
       "groupId": 4,
       "ro": "meniu",
       "ru": "меню",
-      "note": ""
-    },
-    {
-      "id": 178,
-      "groupId": 4,
-      "ro": "restaurant",
-      "ru": "ресторан",
       "note": ""
     },
     {
@@ -2403,13 +2382,6 @@
       "groupId": 23,
       "ro": "boală",
       "ru": "болезнь",
-      "note": ""
-    },
-    {
-      "id": 320,
-      "groupId": 23,
-      "ro": "medic",
-      "ru": "врач",
       "note": ""
     },
     {
@@ -5465,20 +5437,6 @@
       "note": ""
     },
     {
-      "id": 757,
-      "groupId": 21,
-      "ro": "deja",
-      "ru": "уже",
-      "note": ""
-    },
-    {
-      "id": 758,
-      "groupId": 21,
-      "ro": "încă",
-      "ru": "ещё",
-      "note": ""
-    },
-    {
       "id": 759,
       "groupId": 21,
       "ro": "tocmai",
@@ -5497,20 +5455,6 @@
       "groupId": 21,
       "ro": "mereu",
       "ru": "всегда",
-      "note": ""
-    },
-    {
-      "id": 762,
-      "groupId": 21,
-      "ro": "niciodată",
-      "ru": "никогда",
-      "note": ""
-    },
-    {
-      "id": 763,
-      "groupId": 21,
-      "ro": "uneori",
-      "ru": "иногда",
       "note": ""
     },
     {
@@ -5857,20 +5801,6 @@
       "note": ""
     },
     {
-      "id": 813,
-      "groupId": 16,
-      "ro": "barbă",
-      "ru": "борода",
-      "note": ""
-    },
-    {
-      "id": 814,
-      "groupId": 16,
-      "ro": "mustață",
-      "ru": "усы",
-      "note": ""
-    },
-    {
       "id": 815,
       "groupId": 16,
       "ro": "gene",
@@ -5967,20 +5897,6 @@
       "ro": "vezică",
       "ru": "мочевой пузырь",
       "note": ""
-    },
-    {
-      "id": 829,
-      "groupId": 6,
-      "ro": "înalt",
-      "ru": "высокий",
-      "note": ""
-    },
-    {
-      "id": 830,
-      "groupId": 6,
-      "ro": "scund",
-      "ru": "низкий",
-      "note": "о росте"
     },
     {
       "id": 831,
@@ -6655,13 +6571,6 @@
       "note": ""
     },
     {
-      "id": 927,
-      "groupId": 31,
-      "ro": "traducător",
-      "ru": "переводчик",
-      "note": ""
-    },
-    {
       "id": 928,
       "groupId": 31,
       "ro": "legalizare",
@@ -6771,13 +6680,6 @@
       "groupId": 28,
       "ro": "însă",
       "ru": "однако",
-      "note": ""
-    },
-    {
-      "id": 944,
-      "groupId": 28,
-      "ro": "totuși",
-      "ru": "всё же",
       "note": ""
     },
     {
@@ -7299,13 +7201,6 @@
       "note": ""
     },
     {
-      "id": 1019,
-      "groupId": 6,
-      "ro": "gras",
-      "ru": "толстый / жирный",
-      "note": "о человеке или еде"
-    },
-    {
       "id": 1020,
       "groupId": 33,
       "ro": "cerc",
@@ -7464,13 +7359,6 @@
       "groupId": 15,
       "ro": "pământ",
       "ru": "земля",
-      "note": ""
-    },
-    {
-      "id": 1043,
-      "groupId": 15,
-      "ro": "piatră",
-      "ru": "камень",
       "note": ""
     },
     {
@@ -8003,13 +7891,6 @@
       "groupId": 5,
       "ro": "a zbura",
       "ru": "летать",
-      "note": ""
-    },
-    {
-      "id": 1120,
-      "groupId": 6,
-      "ro": "tânăr",
-      "ru": "молодой",
       "note": ""
     },
     {
@@ -9140,13 +9021,6 @@
       "note": ""
     },
     {
-      "id": 1282,
-      "groupId": 36,
-      "ro": "biserică",
-      "ru": "церковь",
-      "note": ""
-    },
-    {
       "id": 1283,
       "groupId": 36,
       "ro": "cruce",
@@ -9669,13 +9543,6 @@
       "groupId": 21,
       "ro": "aprilie",
       "ru": "апрель",
-      "note": ""
-    },
-    {
-      "id": 1358,
-      "groupId": 21,
-      "ro": "mai",
-      "ru": "ещё / больше",
       "note": ""
     },
     {
@@ -11356,6 +11223,41 @@
       "groupId": 22,
       "ro": "numai",
       "ru": "только",
+      "note": ""
+    },
+    {
+      "id": 1601,
+      "groupId": 27,
+      "ro": "undeva",
+      "ru": "где-то",
+      "note": ""
+    },
+    {
+      "id": 1602,
+      "groupId": 27,
+      "ro": "cândva",
+      "ru": "когда-то",
+      "note": ""
+    },
+    {
+      "id": 1603,
+      "groupId": 27,
+      "ro": "cumva",
+      "ru": "как-то",
+      "note": ""
+    },
+    {
+      "id": 1607,
+      "groupId": 27,
+      "ro": "oricând",
+      "ru": "когда угодно",
+      "note": ""
+    },
+    {
+      "id": 1608,
+      "groupId": 27,
+      "ro": "oricum",
+      "ru": "как угодно",
       "note": ""
     }
   ]
