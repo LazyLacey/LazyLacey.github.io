@@ -1,0 +1,228 @@
+{
+  "type": "verbPack",
+  "name": "Базовые глаголы",
+  "icon": "🔤",
+  "description": "20 самых частых глаголов немецкого с 3 временами",
+  "verbs": [
+    {
+      "id": "sein",
+      "infinitive": "sein",
+      "translation": "быть",
+      "icon": "✨",
+      "forms": {
+        "Präsens": ["bin", "bist", "ist", "sind", "seid", "sind"],
+        "Präteritum": ["war", "warst", "war", "waren", "wart", "waren"],
+        "Futur I": ["werde sein", "wirst sein", "wird sein", "werden sein", "werdet sein", "werden sein"]
+      }
+    },
+    {
+      "id": "haben",
+      "infinitive": "haben",
+      "translation": "иметь",
+      "icon": "🤲",
+      "forms": {
+        "Präsens": ["habe", "hast", "hat", "haben", "habt", "haben"],
+        "Präteritum": ["hatte", "hattest", "hatte", "hatten", "hattet", "hatten"],
+        "Futur I": ["werde haben", "wirst haben", "wird haben", "werden haben", "werdet haben", "werden haben"]
+      }
+    },
+    {
+      "id": "werden",
+      "infinitive": "werden",
+      "translation": "становиться",
+      "icon": "🌱",
+      "forms": {
+        "Präsens": ["werde", "wirst", "wird", "werden", "werdet", "werden"],
+        "Präteritum": ["wurde", "wurdest", "wurde", "wurden", "wurdet", "wurden"],
+        "Futur I": ["werde werden", "wirst werden", "wird werden", "werden werden", "werdet werden", "werden werden"]
+      }
+    },
+    {
+      "id": "können",
+      "infinitive": "können",
+      "translation": "мочь, уметь",
+      "icon": "💪",
+      "forms": {
+        "Präsens": ["kann", "kannst", "kann", "können", "könnt", "können"],
+        "Präteritum": ["konnte", "konntest", "konnte", "konnten", "konntet", "konnten"],
+        "Futur I": ["werde können", "wirst können", "wird können", "werden können", "werdet können", "werden können"]
+      }
+    },
+    {
+      "id": "wollen",
+      "infinitive": "wollen",
+      "translation": "хотеть",
+      "icon": "❤️",
+      "forms": {
+        "Präsens": ["will", "willst", "will", "wollen", "wollt", "wollen"],
+        "Präteritum": ["wollte", "wolltest", "wollte", "wollten", "wolltet", "wollten"],
+        "Futur I": ["werde wollen", "wirst wollen", "wird wollen", "werden wollen", "werdet wollen", "werden wollen"]
+      }
+    },
+    {
+      "id": "gehen",
+      "infinitive": "gehen",
+      "translation": "идти",
+      "icon": "🚶",
+      "forms": {
+        "Präsens": ["gehe", "gehst", "geht", "gehen", "geht", "gehen"],
+        "Präteritum": ["ging", "gingst", "ging", "gingen", "gingt", "gingen"],
+        "Futur I": ["werde gehen", "wirst gehen", "wird gehen", "werden gehen", "werdet gehen", "werden gehen"]
+      }
+    },
+    {
+      "id": "kommen",
+      "infinitive": "kommen",
+      "translation": "приходить",
+      "icon": "🏠",
+      "forms": {
+        "Präsens": ["komme", "kommst", "kommt", "kommen", "kommt", "kommen"],
+        "Präteritum": ["kam", "kamst", "kam", "kamen", "kamt", "kamen"],
+        "Futur I": ["werde kommen", "wirst kommen", "wird kommen", "werden kommen", "werdet kommen", "werden kommen"]
+      }
+    },
+    {
+      "id": "sagen",
+      "infinitive": "sagen",
+      "translation": "говорить, сказать",
+      "icon": "💬",
+      "forms": {
+        "Präsens": ["sage", "sagst", "sagt", "sagen", "sagt", "sagen"],
+        "Präteritum": ["sagte", "sagtest", "sagte", "sagten", "sagtet", "sagten"],
+        "Futur I": ["werde sagen", "wirst sagen", "wird sagen", "werden sagen", "werdet sagen", "werden sagen"]
+      }
+    },
+    {
+      "id": "machen",
+      "infinitive": "machen",
+      "translation": "делать",
+      "icon": "🛠️",
+      "forms": {
+        "Präsens": ["mache", "machst", "macht", "machen", "macht", "machen"],
+        "Präteritum": ["machte", "machtest", "machte", "machten", "machtet", "machten"],
+        "Futur I": ["werde machen", "wirst machen", "wird machen", "werden machen", "werdet machen", "werden machen"]
+      }
+    },
+    {
+      "id": "sehen",
+      "infinitive": "sehen",
+      "translation": "видеть",
+      "icon": "👁️",
+      "forms": {
+        "Präsens": ["sehe", "siehst", "sieht", "sehen", "seht", "sehen"],
+        "Präteritum": ["sah", "sahst", "sah", "sahen", "saht", "sahen"],
+        "Futur I": ["werde sehen", "wirst sehen", "wird sehen", "werden sehen", "werdet sehen", "werden sehen"]
+      }
+    },
+    {
+      "id": "wissen",
+      "infinitive": "wissen",
+      "translation": "знать",
+      "icon": "🧠",
+      "forms": {
+        "Präsens": ["weiß", "weißt", "weiß", "wissen", "wisst", "wissen"],
+        "Präteritum": ["wusste", "wusstest", "wusste", "wussten", "wusstet", "wussten"],
+        "Futur I": ["werde wissen", "wirst wissen", "wird wissen", "werden wissen", "werdet wissen", "werden wissen"]
+      }
+    },
+    {
+      "id": "sprechen",
+      "infinitive": "sprechen",
+      "translation": "разговаривать",
+      "icon": "🗣️",
+      "forms": {
+        "Präsens": ["spreche", "sprichst", "spricht", "sprechen", "sprecht", "sprechen"],
+        "Präteritum": ["sprach", "sprachst", "sprach", "sprachen", "spracht", "sprachen"],
+        "Futur I": ["werde sprechen", "wirst sprechen", "wird sprechen", "werden sprechen", "werdet sprechen", "werden sprechen"]
+      }
+    },
+    {
+      "id": "essen",
+      "infinitive": "essen",
+      "translation": "есть, кушать",
+      "icon": "🍽️",
+      "forms": {
+        "Präsens": ["esse", "isst", "isst", "essen", "esst", "essen"],
+        "Präteritum": ["aß", "aßest", "aß", "aßen", "aßt", "aßen"],
+        "Futur I": ["werde essen", "wirst essen", "wird essen", "werden essen", "werdet essen", "werden essen"]
+      }
+    },
+    {
+      "id": "trinken",
+      "infinitive": "trinken",
+      "translation": "пить",
+      "icon": "🥤",
+      "forms": {
+        "Präsens": ["trinke", "trinkst", "trinkt", "trinken", "trinkt", "trinken"],
+        "Präteritum": ["trank", "trankst", "trank", "tranken", "trankt", "tranken"],
+        "Futur I": ["werde trinken", "wirst trinken", "wird trinken", "werden trinken", "werdet trinken", "werden trinken"]
+      }
+    },
+    {
+      "id": "wohnen",
+      "infinitive": "wohnen",
+      "translation": "жить, проживать",
+      "icon": "🏡",
+      "forms": {
+        "Präsens": ["wohne", "wohnst", "wohnt", "wohnen", "wohnt", "wohnen"],
+        "Präteritum": ["wohnte", "wohntest", "wohnte", "wohnten", "wohntet", "wohnten"],
+        "Futur I": ["werde wohnen", "wirst wohnen", "wird wohnen", "werden wohnen", "werdet wohnen", "werden wohnen"]
+      }
+    },
+    {
+      "id": "geben",
+      "infinitive": "geben",
+      "translation": "давать",
+      "icon": "🎁",
+      "forms": {
+        "Präsens": ["gebe", "gibst", "gibt", "geben", "gebt", "geben"],
+        "Präteritum": ["gab", "gabst", "gab", "gaben", "gabt", "gaben"],
+        "Futur I": ["werde geben", "wirst geben", "wird geben", "werden geben", "werdet geben", "werden geben"]
+      }
+    },
+    {
+      "id": "nehmen",
+      "infinitive": "nehmen",
+      "translation": "брать",
+      "icon": "✋",
+      "forms": {
+        "Präsens": ["nehme", "nimmst", "nimmt", "nehmen", "nehmt", "nehmen"],
+        "Präteritum": ["nahm", "nahmst", "nahm", "nahmen", "nahmt", "nahmen"],
+        "Futur I": ["werde nehmen", "wirst nehmen", "wird nehmen", "werden nehmen", "werdet nehmen", "werden nehmen"]
+      }
+    },
+    {
+      "id": "arbeiten",
+      "infinitive": "arbeiten",
+      "translation": "работать",
+      "icon": "💼",
+      "forms": {
+        "Präsens": ["arbeite", "arbeitest", "arbeitet", "arbeiten", "arbeitet", "arbeiten"],
+        "Präteritum": ["arbeitete", "arbeitetest", "arbeitete", "arbeiteten", "arbeitetet", "arbeiteten"],
+        "Futur I": ["werde arbeiten", "wirst arbeiten", "wird arbeiten", "werden arbeiten", "werdet arbeiten", "werden arbeiten"]
+      }
+    },
+    {
+      "id": "lesen",
+      "infinitive": "lesen",
+      "translation": "читать",
+      "icon": "📖",
+      "forms": {
+        "Präsens": ["lese", "liest", "liest", "lesen", "lest", "lesen"],
+        "Präteritum": ["las", "lasest", "las", "lasen", "last", "lasen"],
+        "Futur I": ["werde lesen", "wirst lesen", "wird lesen", "werden lesen", "werdet lesen", "werden lesen"]
+      }
+    },
+    {
+      "id": "schreiben",
+      "infinitive": "schreiben",
+      "translation": "писать",
+      "icon": "✏️",
+      "forms": {
+        "Präsens": ["schreibe", "schreibst", "schreibt", "schreiben", "schreibt", "schreiben"],
+        "Präteritum": ["schrieb", "schriebst", "schrieb", "schrieben", "schriebt", "schrieben"],
+        "Futur I": ["werde schreiben", "wirst schreiben", "wird schreiben", "werden schreiben", "werdet schreiben", "werden schreiben"]
+      }
+    }
+  ]
+}

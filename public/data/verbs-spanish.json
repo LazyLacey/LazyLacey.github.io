@@ -2,7 +2,7 @@
   "type": "verbPack",
   "name": "Базовые глаголы",
   "icon": "🔤",
-  "_comment": "Пак глаголов для испанского. Три времени: presente, pretérito, futuro. Порядок: yo, tú, él/ella, nosotros, vosotros, ellos/ellas.",
+  "description": "20 самых частых глаголов испанского с 3 временами",
   "verbs": [
     {
       "id": "ser",
@@ -10,30 +10,9 @@
       "translation": "быть (постоянные характеристики)",
       "icon": "🟡",
       "forms": {
-        "presente": [
-          "soy",
-          "eres",
-          "es",
-          "somos",
-          "sois",
-          "son"
-        ],
-        "pretérito": [
-          "fui",
-          "fuiste",
-          "fue",
-          "fuimos",
-          "fuisteis",
-          "fueron"
-        ],
-        "futuro": [
-          "seré",
-          "serás",
-          "será",
-          "seremos",
-          "seréis",
-          "serán"
-        ]
+        "presente": ["soy", "eres", "es", "somos", "sois", "son"],
+        "pretérito": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+        "futuro": ["seré", "serás", "será", "seremos", "seréis", "serán"]
       }
     },
     {
@@ -42,30 +21,9 @@
       "translation": "быть (состояние, местонахождение)",
       "icon": "📍",
       "forms": {
-        "presente": [
-          "estoy",
-          "estás",
-          "está",
-          "estamos",
-          "estáis",
-          "están"
-        ],
-        "pretérito": [
-          "estuve",
-          "estuviste",
-          "estuvo",
-          "estuvimos",
-          "estuvisteis",
-          "estuvieron"
-        ],
-        "futuro": [
-          "estaré",
-          "estarás",
-          "estará",
-          "estaremos",
-          "estaréis",
-          "estarán"
-        ]
+        "presente": ["estoy", "estás", "está", "estamos", "estáis", "están"],
+        "pretérito": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"],
+        "futuro": ["estaré", "estarás", "estará", "estaremos", "estaréis", "estarán"]
       }
     },
     {
@@ -74,30 +32,9 @@
       "translation": "иметь",
       "icon": "🤲",
       "forms": {
-        "presente": [
-          "tengo",
-          "tienes",
-          "tiene",
-          "tenemos",
-          "tenéis",
-          "tienen"
-        ],
-        "pretérito": [
-          "tuve",
-          "tuviste",
-          "tuvo",
-          "tuvimos",
-          "tuvisteis",
-          "tuvieron"
-        ],
-        "futuro": [
-          "tendré",
-          "tendrás",
-          "tendrá",
-          "tendremos",
-          "tendréis",
-          "tendrán"
-        ]
+        "presente": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"],
+        "pretérito": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"],
+        "futuro": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"]
       }
     },
     {
@@ -106,30 +43,9 @@
       "translation": "идти, ехать",
       "icon": "🚶",
       "forms": {
-        "presente": [
-          "voy",
-          "vas",
-          "va",
-          "vamos",
-          "vais",
-          "van"
-        ],
-        "pretérito": [
-          "fui",
-          "fuiste",
-          "fue",
-          "fuimos",
-          "fuisteis",
-          "fueron"
-        ],
-        "futuro": [
-          "iré",
-          "irás",
-          "irá",
-          "iremos",
-          "iréis",
-          "irán"
-        ]
+        "presente": ["voy", "vas", "va", "vamos", "vais", "van"],
+        "pretérito": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+        "futuro": ["iré", "irás", "irá", "iremos", "iréis", "irán"]
       }
     },
     {
@@ -138,30 +54,9 @@
       "translation": "делать",
       "icon": "🛠️",
       "forms": {
-        "presente": [
-          "hago",
-          "haces",
-          "hace",
-          "hacemos",
-          "hacéis",
-          "hacen"
-        ],
-        "pretérito": [
-          "hice",
-          "hiciste",
-          "hizo",
-          "hicimos",
-          "hicisteis",
-          "hicieron"
-        ],
-        "futuro": [
-          "haré",
-          "harás",
-          "hará",
-          "haremos",
-          "haréis",
-          "harán"
-        ]
+        "presente": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"],
+        "pretérito": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"],
+        "futuro": ["haré", "harás", "hará", "haremos", "haréis", "harán"]
       }
     },
     {
@@ -170,30 +65,9 @@
       "translation": "мочь, уметь",
       "icon": "💪",
       "forms": {
-        "presente": [
-          "puedo",
-          "puedes",
-          "puede",
-          "podemos",
-          "podéis",
-          "pueden"
-        ],
-        "pretérito": [
-          "pude",
-          "pudiste",
-          "pudo",
-          "pudimos",
-          "pudisteis",
-          "pudieron"
-        ],
-        "futuro": [
-          "podré",
-          "podrás",
-          "podrá",
-          "podremos",
-          "podréis",
-          "podrán"
-        ]
+        "presente": ["puedo", "puedes", "puede", "podemos", "podéis", "pueden"],
+        "pretérito": ["pude", "pudiste", "pudo", "pudimos", "pudisteis", "pudieron"],
+        "futuro": ["podré", "podrás", "podrá", "podremos", "podréis", "podrán"]
       }
     },
     {
@@ -202,30 +76,9 @@
       "translation": "хотеть, любить",
       "icon": "❤️",
       "forms": {
-        "presente": [
-          "quiero",
-          "quieres",
-          "quiere",
-          "queremos",
-          "queréis",
-          "quieren"
-        ],
-        "pretérito": [
-          "quise",
-          "quisiste",
-          "quiso",
-          "quisimos",
-          "quisisteis",
-          "quisieron"
-        ],
-        "futuro": [
-          "querré",
-          "querrás",
-          "querrá",
-          "querremos",
-          "querréis",
-          "querrán"
-        ]
+        "presente": ["quiero", "quieres", "quiere", "queremos", "queréis", "quieren"],
+        "pretérito": ["quise", "quisiste", "quiso", "quisimos", "quisisteis", "quisieron"],
+        "futuro": ["querré", "querrás", "querrá", "querremos", "querréis", "querrán"]
       }
     },
     {
@@ -234,30 +87,9 @@
       "translation": "приходить, приезжать",
       "icon": "🏠",
       "forms": {
-        "presente": [
-          "vengo",
-          "vienes",
-          "viene",
-          "venimos",
-          "venís",
-          "vienen"
-        ],
-        "pretérito": [
-          "vine",
-          "viniste",
-          "vino",
-          "vinimos",
-          "vinisteis",
-          "vinieron"
-        ],
-        "futuro": [
-          "vendré",
-          "vendrás",
-          "vendrá",
-          "vendremos",
-          "vendréis",
-          "vendrán"
-        ]
+        "presente": ["vengo", "vienes", "viene", "venimos", "venís", "vienen"],
+        "pretérito": ["vine", "viniste", "vino", "vinimos", "vinisteis", "vinieron"],
+        "futuro": ["vendré", "vendrás", "vendrá", "vendremos", "vendréis", "vendrán"]
       }
     },
     {
@@ -266,30 +98,9 @@
       "translation": "знать (факты, умения)",
       "icon": "🧠",
       "forms": {
-        "presente": [
-          "sé",
-          "sabes",
-          "sabe",
-          "sabemos",
-          "sabéis",
-          "saben"
-        ],
-        "pretérito": [
-          "supe",
-          "supiste",
-          "supo",
-          "supimos",
-          "supisteis",
-          "supieron"
-        ],
-        "futuro": [
-          "sabré",
-          "sabrás",
-          "sabrá",
-          "sabremos",
-          "sabréis",
-          "sabrán"
-        ]
+        "presente": ["sé", "sabes", "sabe", "sabemos", "sabéis", "saben"],
+        "pretérito": ["supe", "supiste", "supo", "supimos", "supisteis", "supieron"],
+        "futuro": ["sabré", "sabrás", "sabrá", "sabremos", "sabréis", "sabrán"]
       }
     },
     {
@@ -298,30 +109,119 @@
       "translation": "говорить",
       "icon": "💬",
       "forms": {
-        "presente": [
-          "hablo",
-          "hablas",
-          "habla",
-          "hablamos",
-          "habláis",
-          "hablan"
-        ],
-        "pretérito": [
-          "hablé",
-          "hablaste",
-          "habló",
-          "hablamos",
-          "hablasteis",
-          "hablaron"
-        ],
-        "futuro": [
-          "hablaré",
-          "hablarás",
-          "hablará",
-          "hablaremos",
-          "hablaréis",
-          "hablarán"
-        ]
+        "presente": ["hablo", "hablas", "habla", "hablamos", "habláis", "hablan"],
+        "pretérito": ["hablé", "hablaste", "habló", "hablamos", "hablasteis", "hablaron"],
+        "futuro": ["hablaré", "hablarás", "hablará", "hablaremos", "hablaréis", "hablarán"]
+      }
+    },
+    {
+      "id": "dar",
+      "infinitive": "dar",
+      "translation": "давать",
+      "icon": "🎁",
+      "forms": {
+        "presente": ["doy", "das", "da", "damos", "dais", "dan"],
+        "pretérito": ["di", "diste", "dio", "dimos", "disteis", "dieron"],
+        "futuro": ["daré", "darás", "dará", "daremos", "daréis", "darán"]
+      }
+    },
+    {
+      "id": "ver",
+      "infinitive": "ver",
+      "translation": "видеть",
+      "icon": "👁️",
+      "forms": {
+        "presente": ["veo", "ves", "ve", "vemos", "veis", "ven"],
+        "pretérito": ["vi", "viste", "vio", "vimos", "visteis", "vieron"],
+        "futuro": ["veré", "verás", "verá", "veremos", "veréis", "verán"]
+      }
+    },
+    {
+      "id": "vivir",
+      "infinitive": "vivir",
+      "translation": "жить",
+      "icon": "🏡",
+      "forms": {
+        "presente": ["vivo", "vives", "vive", "vivimos", "vivís", "viven"],
+        "pretérito": ["viví", "viviste", "vivió", "vivimos", "vivisteis", "vivieron"],
+        "futuro": ["viviré", "vivirás", "vivirá", "viviremos", "viviréis", "vivirán"]
+      }
+    },
+    {
+      "id": "trabajar",
+      "infinitive": "trabajar",
+      "translation": "работать",
+      "icon": "💼",
+      "forms": {
+        "presente": ["trabajo", "trabajas", "trabaja", "trabajamos", "trabajáis", "trabajan"],
+        "pretérito": ["trabajé", "trabajaste", "trabajó", "trabajamos", "trabajasteis", "trabajaron"],
+        "futuro": ["trabajaré", "trabajarás", "trabajará", "trabajaremos", "trabajaréis", "trabajarán"]
+      }
+    },
+    {
+      "id": "comer",
+      "infinitive": "comer",
+      "translation": "есть, кушать",
+      "icon": "🍽️",
+      "forms": {
+        "presente": ["como", "comes", "come", "comemos", "coméis", "comen"],
+        "pretérito": ["comí", "comiste", "comió", "comimos", "comisteis", "comieron"],
+        "futuro": ["comeré", "comerás", "comerá", "comeremos", "comeréis", "comerán"]
+      }
+    },
+    {
+      "id": "beber",
+      "infinitive": "beber",
+      "translation": "пить",
+      "icon": "🥤",
+      "forms": {
+        "presente": ["bebo", "bebes", "bebe", "bebemos", "bebéis", "beben"],
+        "pretérito": ["bebí", "bebiste", "bebió", "bebimos", "bebisteis", "bebieron"],
+        "futuro": ["beberé", "beberás", "beberá", "beberemos", "beberéis", "beberán"]
+      }
+    },
+    {
+      "id": "leer",
+      "infinitive": "leer",
+      "translation": "читать",
+      "icon": "📖",
+      "forms": {
+        "presente": ["leo", "lees", "lee", "leemos", "leéis", "leen"],
+        "pretérito": ["leí", "leíste", "leyó", "leímos", "leísteis", "leyeron"],
+        "futuro": ["leeré", "leerás", "leerá", "leeremos", "leeréis", "leerán"]
+      }
+    },
+    {
+      "id": "escribir",
+      "infinitive": "escribir",
+      "translation": "писать",
+      "icon": "✏️",
+      "forms": {
+        "presente": ["escribo", "escribes", "escribe", "escribimos", "escribís", "escriben"],
+        "pretérito": ["escribí", "escribiste", "escribió", "escribimos", "escribisteis", "escribieron"],
+        "futuro": ["escribiré", "escribirás", "escribirá", "escribiremos", "escribiréis", "escribirán"]
+      }
+    },
+    {
+      "id": "pensar",
+      "infinitive": "pensar",
+      "translation": "думать",
+      "icon": "💭",
+      "forms": {
+        "presente": ["pienso", "piensas", "piensa", "pensamos", "pensáis", "piensan"],
+        "pretérito": ["pensé", "pensaste", "pensó", "pensamos", "pensasteis", "pensaron"],
+        "futuro": ["pensaré", "pensarás", "pensará", "pensaremos", "pensaréis", "pensarán"]
+      }
+    },
+    {
+      "id": "llamar",
+      "infinitive": "llamar",
+      "translation": "звонить, называть",
+      "icon": "📞",
+      "forms": {
+        "presente": ["llamo", "llamas", "llama", "llamamos", "llamáis", "llaman"],
+        "pretérito": ["llamé", "llamaste", "llamó", "llamamos", "llamasteis", "llamaron"],
+        "futuro": ["llamaré", "llamarás", "llamará", "llamaremos", "llamaréis", "llamarán"]
       }
     }
   ]

@@ -1,0 +1,228 @@
+{
+  "type": "verbPack",
+  "name": "Базовые глаголы",
+  "icon": "🔤",
+  "description": "20 самых частых глаголов итальянского с 3 временами",
+  "verbs": [
+    {
+      "id": "essere",
+      "infinitive": "essere",
+      "translation": "быть",
+      "icon": "✨",
+      "forms": {
+        "Presente": ["sono", "sei", "è", "siamo", "siete", "sono"],
+        "Imperfetto": ["ero", "eri", "era", "eravamo", "eravate", "erano"],
+        "Futuro": ["sarò", "sarai", "sarà", "saremo", "sarete", "saranno"]
+      }
+    },
+    {
+      "id": "avere",
+      "infinitive": "avere",
+      "translation": "иметь",
+      "icon": "🤲",
+      "forms": {
+        "Presente": ["ho", "hai", "ha", "abbiamo", "avete", "hanno"],
+        "Imperfetto": ["avevo", "avevi", "aveva", "avevamo", "avevate", "avevano"],
+        "Futuro": ["avrò", "avrai", "avrà", "avremo", "avrete", "avranno"]
+      }
+    },
+    {
+      "id": "fare",
+      "infinitive": "fare",
+      "translation": "делать",
+      "icon": "🛠️",
+      "forms": {
+        "Presente": ["faccio", "fai", "fa", "facciamo", "fate", "fanno"],
+        "Imperfetto": ["facevo", "facevi", "faceva", "facevamo", "facevate", "facevano"],
+        "Futuro": ["farò", "farai", "farà", "faremo", "farete", "faranno"]
+      }
+    },
+    {
+      "id": "dire",
+      "infinitive": "dire",
+      "translation": "говорить, сказать",
+      "icon": "💬",
+      "forms": {
+        "Presente": ["dico", "dici", "dice", "diciamo", "dite", "dicono"],
+        "Imperfetto": ["dicevo", "dicevi", "diceva", "dicevamo", "dicevate", "dicevano"],
+        "Futuro": ["dirò", "dirai", "dirà", "diremo", "direte", "diranno"]
+      }
+    },
+    {
+      "id": "potere",
+      "infinitive": "potere",
+      "translation": "мочь, уметь",
+      "icon": "💪",
+      "forms": {
+        "Presente": ["posso", "puoi", "può", "possiamo", "potete", "possono"],
+        "Imperfetto": ["potevo", "potevi", "poteva", "potevamo", "potevate", "potevano"],
+        "Futuro": ["potrò", "potrai", "potrà", "potremo", "potrete", "potranno"]
+      }
+    },
+    {
+      "id": "volere",
+      "infinitive": "volere",
+      "translation": "хотеть",
+      "icon": "❤️",
+      "forms": {
+        "Presente": ["voglio", "vuoi", "vuole", "vogliamo", "volete", "vogliono"],
+        "Imperfetto": ["volevo", "volevi", "voleva", "volevamo", "volevate", "volevano"],
+        "Futuro": ["vorrò", "vorrai", "vorrà", "vorremo", "vorrete", "vorranno"]
+      }
+    },
+    {
+      "id": "andare",
+      "infinitive": "andare",
+      "translation": "идти, ехать",
+      "icon": "🚶",
+      "forms": {
+        "Presente": ["vado", "vai", "va", "andiamo", "andate", "vanno"],
+        "Imperfetto": ["andavo", "andavi", "andava", "andavamo", "andavate", "andavano"],
+        "Futuro": ["andrò", "andrai", "andrà", "andremo", "andrete", "andranno"]
+      }
+    },
+    {
+      "id": "venire",
+      "infinitive": "venire",
+      "translation": "приходить",
+      "icon": "🏠",
+      "forms": {
+        "Presente": ["vengo", "vieni", "viene", "veniamo", "venite", "vengono"],
+        "Imperfetto": ["venivo", "venivi", "veniva", "venivamo", "venivate", "venivano"],
+        "Futuro": ["verrò", "verrai", "verrà", "verremo", "verrete", "verranno"]
+      }
+    },
+    {
+      "id": "dare",
+      "infinitive": "dare",
+      "translation": "давать",
+      "icon": "🎁",
+      "forms": {
+        "Presente": ["do", "dai", "dà", "diamo", "date", "danno"],
+        "Imperfetto": ["davo", "davi", "dava", "davamo", "davate", "davano"],
+        "Futuro": ["darò", "darai", "darà", "daremo", "darete", "daranno"]
+      }
+    },
+    {
+      "id": "vedere",
+      "infinitive": "vedere",
+      "translation": "видеть",
+      "icon": "👁️",
+      "forms": {
+        "Presente": ["vedo", "vedi", "vede", "vediamo", "vedete", "vedono"],
+        "Imperfetto": ["vedevo", "vedevi", "vedeva", "vedevamo", "vedevate", "vedevano"],
+        "Futuro": ["vedrò", "vedrai", "vedrà", "vedremo", "vedrete", "vedranno"]
+      }
+    },
+    {
+      "id": "sapere",
+      "infinitive": "sapere",
+      "translation": "знать",
+      "icon": "🧠",
+      "forms": {
+        "Presente": ["so", "sai", "sa", "sappiamo", "sapete", "sanno"],
+        "Imperfetto": ["sapevo", "sapevi", "sapeva", "sapevamo", "sapevate", "sapevano"],
+        "Futuro": ["saprò", "saprai", "saprà", "sapremo", "saprete", "sapranno"]
+      }
+    },
+    {
+      "id": "parlare",
+      "infinitive": "parlare",
+      "translation": "разговаривать",
+      "icon": "🗣️",
+      "forms": {
+        "Presente": ["parlo", "parli", "parla", "parliamo", "parlate", "parlano"],
+        "Imperfetto": ["parlavo", "parlavi", "parlava", "parlavamo", "parlavate", "parlavano"],
+        "Futuro": ["parlerò", "parlerai", "parlerà", "parleremo", "parlerete", "parleranno"]
+      }
+    },
+    {
+      "id": "mangiare",
+      "infinitive": "mangiare",
+      "translation": "есть, кушать",
+      "icon": "🍽️",
+      "forms": {
+        "Presente": ["mangio", "mangi", "mangia", "mangiamo", "mangiate", "mangiano"],
+        "Imperfetto": ["mangiavo", "mangiavi", "mangiava", "mangiavamo", "mangiavate", "mangiavano"],
+        "Futuro": ["mangerò", "mangerai", "mangerà", "mangeremo", "mangerete", "mangeranno"]
+      }
+    },
+    {
+      "id": "bere",
+      "infinitive": "bere",
+      "translation": "пить",
+      "icon": "🥤",
+      "forms": {
+        "Presente": ["bevo", "bevi", "beve", "beviamo", "bevete", "bevono"],
+        "Imperfetto": ["bevevo", "bevevi", "beveva", "bevevamo", "bevevate", "bevevano"],
+        "Futuro": ["berrò", "berrai", "berrà", "berremo", "berrete", "berranno"]
+      }
+    },
+    {
+      "id": "scrivere",
+      "infinitive": "scrivere",
+      "translation": "писать",
+      "icon": "✏️",
+      "forms": {
+        "Presente": ["scrivo", "scrivi", "scrive", "scriviamo", "scrivete", "scrivono"],
+        "Imperfetto": ["scrivevo", "scrivevi", "scriveva", "scrivevamo", "scrivevate", "scrivevano"],
+        "Futuro": ["scriverò", "scriverai", "scriverà", "scriveremo", "scriverete", "scriveranno"]
+      }
+    },
+    {
+      "id": "vivere",
+      "infinitive": "vivere",
+      "translation": "жить",
+      "icon": "🏡",
+      "forms": {
+        "Presente": ["vivo", "vivi", "vive", "viviamo", "vivete", "vivono"],
+        "Imperfetto": ["vivevo", "vivevi", "viveva", "vivevamo", "vivevate", "vivevano"],
+        "Futuro": ["vivrò", "vivrai", "vivrà", "vivremo", "vivrete", "vivranno"]
+      }
+    },
+    {
+      "id": "lavorare",
+      "infinitive": "lavorare",
+      "translation": "работать",
+      "icon": "💼",
+      "forms": {
+        "Presente": ["lavoro", "lavori", "lavora", "lavoriamo", "lavorate", "lavorano"],
+        "Imperfetto": ["lavoravo", "lavoravi", "lavorava", "lavoravamo", "lavoravate", "lavoravano"],
+        "Futuro": ["lavorerò", "lavorerai", "lavorerà", "lavoreremo", "lavorerete", "lavoreranno"]
+      }
+    },
+    {
+      "id": "leggere",
+      "infinitive": "leggere",
+      "translation": "читать",
+      "icon": "📖",
+      "forms": {
+        "Presente": ["leggo", "leggi", "legge", "leggiamo", "leggete", "leggono"],
+        "Imperfetto": ["leggevo", "leggevi", "leggeva", "leggevamo", "leggevate", "leggevano"],
+        "Futuro": ["leggerò", "leggerai", "leggerà", "leggeremo", "leggerete", "leggeranno"]
+      }
+    },
+    {
+      "id": "pensare",
+      "infinitive": "pensare",
+      "translation": "думать",
+      "icon": "💭",
+      "forms": {
+        "Presente": ["penso", "pensi", "pensa", "pensiamo", "pensate", "pensano"],
+        "Imperfetto": ["pensavo", "pensavi", "pensava", "pensavamo", "pensavate", "pensavano"],
+        "Futuro": ["penserò", "penserai", "penserà", "penseremo", "penserete", "penseranno"]
+      }
+    },
+    {
+      "id": "prendere",
+      "infinitive": "prendere",
+      "translation": "брать",
+      "icon": "✋",
+      "forms": {
+        "Presente": ["prendo", "prendi", "prende", "prendiamo", "prendete", "prendono"],
+        "Imperfetto": ["prendevo", "prendevi", "prendeva", "prendevamo", "prendevate", "prendevano"],
+        "Futuro": ["prenderò", "prenderai", "prenderà", "prenderemo", "prenderete", "prenderanno"]
+      }
+    }
+  ]
+}

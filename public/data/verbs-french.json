@@ -1,0 +1,228 @@
+{
+  "type": "verbPack",
+  "name": "Базовые глаголы",
+  "icon": "🔤",
+  "description": "20 самых частых глаголов французского с 3 временами",
+  "verbs": [
+    {
+      "id": "être",
+      "infinitive": "être",
+      "translation": "быть",
+      "icon": "✨",
+      "forms": {
+        "Présent": ["suis", "es", "est", "sommes", "êtes", "sont"],
+        "Imparfait": ["étais", "étais", "était", "étions", "étiez", "étaient"],
+        "Futur": ["serai", "seras", "sera", "serons", "serez", "seront"]
+      }
+    },
+    {
+      "id": "avoir",
+      "infinitive": "avoir",
+      "translation": "иметь",
+      "icon": "🤲",
+      "forms": {
+        "Présent": ["ai", "as", "a", "avons", "avez", "ont"],
+        "Imparfait": ["avais", "avais", "avait", "avions", "aviez", "avaient"],
+        "Futur": ["aurai", "auras", "aura", "aurons", "aurez", "auront"]
+      }
+    },
+    {
+      "id": "faire",
+      "infinitive": "faire",
+      "translation": "делать",
+      "icon": "🛠️",
+      "forms": {
+        "Présent": ["fais", "fais", "fait", "faisons", "faites", "font"],
+        "Imparfait": ["faisais", "faisais", "faisait", "faisions", "faisiez", "faisaient"],
+        "Futur": ["ferai", "feras", "fera", "ferons", "ferez", "feront"]
+      }
+    },
+    {
+      "id": "dire",
+      "infinitive": "dire",
+      "translation": "говорить, сказать",
+      "icon": "💬",
+      "forms": {
+        "Présent": ["dis", "dis", "dit", "disons", "dites", "disent"],
+        "Imparfait": ["disais", "disais", "disait", "disions", "disiez", "disaient"],
+        "Futur": ["dirai", "diras", "dira", "dirons", "direz", "diront"]
+      }
+    },
+    {
+      "id": "pouvoir",
+      "infinitive": "pouvoir",
+      "translation": "мочь, уметь",
+      "icon": "💪",
+      "forms": {
+        "Présent": ["peux", "peux", "peut", "pouvons", "pouvez", "peuvent"],
+        "Imparfait": ["pouvais", "pouvais", "pouvait", "pouvions", "pouviez", "pouvaient"],
+        "Futur": ["pourrai", "pourras", "pourra", "pourrons", "pourrez", "pourront"]
+      }
+    },
+    {
+      "id": "vouloir",
+      "infinitive": "vouloir",
+      "translation": "хотеть",
+      "icon": "❤️",
+      "forms": {
+        "Présent": ["veux", "veux", "veut", "voulons", "voulez", "veulent"],
+        "Imparfait": ["voulais", "voulais", "voulait", "voulions", "vouliez", "voulaient"],
+        "Futur": ["voudrai", "voudras", "voudra", "voudrons", "voudrez", "voudront"]
+      }
+    },
+    {
+      "id": "aller",
+      "infinitive": "aller",
+      "translation": "идти, ехать",
+      "icon": "🚶",
+      "forms": {
+        "Présent": ["vais", "vas", "va", "allons", "allez", "vont"],
+        "Imparfait": ["allais", "allais", "allait", "allions", "alliez", "allaient"],
+        "Futur": ["irai", "iras", "ira", "irons", "irez", "iront"]
+      }
+    },
+    {
+      "id": "venir",
+      "infinitive": "venir",
+      "translation": "приходить",
+      "icon": "🏠",
+      "forms": {
+        "Présent": ["viens", "viens", "vient", "venons", "venez", "viennent"],
+        "Imparfait": ["venais", "venais", "venait", "venions", "veniez", "venaient"],
+        "Futur": ["viendrai", "viendras", "viendra", "viendrons", "viendrez", "viendront"]
+      }
+    },
+    {
+      "id": "voir",
+      "infinitive": "voir",
+      "translation": "видеть",
+      "icon": "👁️",
+      "forms": {
+        "Présent": ["vois", "vois", "voit", "voyons", "voyez", "voient"],
+        "Imparfait": ["voyais", "voyais", "voyait", "voyions", "voyiez", "voyaient"],
+        "Futur": ["verrai", "verras", "verra", "verrons", "verrez", "verront"]
+      }
+    },
+    {
+      "id": "savoir",
+      "infinitive": "savoir",
+      "translation": "знать",
+      "icon": "🧠",
+      "forms": {
+        "Présent": ["sais", "sais", "sait", "savons", "savez", "savent"],
+        "Imparfait": ["savais", "savais", "savait", "savions", "saviez", "savaient"],
+        "Futur": ["saurai", "sauras", "saura", "saurons", "saurez", "sauront"]
+      }
+    },
+    {
+      "id": "parler",
+      "infinitive": "parler",
+      "translation": "разговаривать",
+      "icon": "🗣️",
+      "forms": {
+        "Présent": ["parle", "parles", "parle", "parlons", "parlez", "parlent"],
+        "Imparfait": ["parlais", "parlais", "parlait", "parlions", "parliez", "parlaient"],
+        "Futur": ["parlerai", "parleras", "parlera", "parlerons", "parlerez", "parleront"]
+      }
+    },
+    {
+      "id": "manger",
+      "infinitive": "manger",
+      "translation": "есть, кушать",
+      "icon": "🍽️",
+      "forms": {
+        "Présent": ["mange", "manges", "mange", "mangeons", "mangez", "mangent"],
+        "Imparfait": ["mangeais", "mangeais", "mangeait", "mangions", "mangiez", "mangeaient"],
+        "Futur": ["mangerai", "mangeras", "mangera", "mangerons", "mangerez", "mangeront"]
+      }
+    },
+    {
+      "id": "boire",
+      "infinitive": "boire",
+      "translation": "пить",
+      "icon": "🥤",
+      "forms": {
+        "Présent": ["bois", "bois", "boit", "buvons", "buvez", "boivent"],
+        "Imparfait": ["buvais", "buvais", "buvait", "buvions", "buviez", "buvaient"],
+        "Futur": ["boirai", "boiras", "boira", "boirons", "boirez", "boiront"]
+      }
+    },
+    {
+      "id": "habiter",
+      "infinitive": "habiter",
+      "translation": "жить, проживать",
+      "icon": "🏡",
+      "forms": {
+        "Présent": ["habite", "habites", "habite", "habitons", "habitez", "habitent"],
+        "Imparfait": ["habitais", "habitais", "habitait", "habitions", "habitiez", "habitaient"],
+        "Futur": ["habiterai", "habiteras", "habitera", "habiterons", "habiterez", "habiteront"]
+      }
+    },
+    {
+      "id": "écrire",
+      "infinitive": "écrire",
+      "translation": "писать",
+      "icon": "✏️",
+      "forms": {
+        "Présent": ["écris", "écris", "écrit", "écrivons", "écrivez", "écrivent"],
+        "Imparfait": ["écrivais", "écrivais", "écrivait", "écrivions", "écriviez", "écrivaient"],
+        "Futur": ["écrirai", "écriras", "écrira", "écrirons", "écrirez", "écriront"]
+      }
+    },
+    {
+      "id": "donner",
+      "infinitive": "donner",
+      "translation": "давать",
+      "icon": "🎁",
+      "forms": {
+        "Présent": ["donne", "donnes", "donne", "donnons", "donnez", "donnent"],
+        "Imparfait": ["donnais", "donnais", "donnait", "donnions", "donniez", "donnaient"],
+        "Futur": ["donnerai", "donneras", "donnera", "donnerons", "donnerez", "donneront"]
+      }
+    },
+    {
+      "id": "prendre",
+      "infinitive": "prendre",
+      "translation": "брать",
+      "icon": "✋",
+      "forms": {
+        "Présent": ["prends", "prends", "prend", "prenons", "prenez", "prennent"],
+        "Imparfait": ["prenais", "prenais", "prenait", "prenions", "preniez", "prenaient"],
+        "Futur": ["prendrai", "prendras", "prendra", "prendrons", "prendrez", "prendront"]
+      }
+    },
+    {
+      "id": "travailler",
+      "infinitive": "travailler",
+      "translation": "работать",
+      "icon": "💼",
+      "forms": {
+        "Présent": ["travaille", "travailles", "travaille", "travaillons", "travaillez", "travaillent"],
+        "Imparfait": ["travaillais", "travaillais", "travaillait", "travaillions", "travailliez", "travaillaient"],
+        "Futur": ["travaillerai", "travailleras", "travaillera", "travaillerons", "travaillerez", "travailleront"]
+      }
+    },
+    {
+      "id": "lire",
+      "infinitive": "lire",
+      "translation": "читать",
+      "icon": "📖",
+      "forms": {
+        "Présent": ["lis", "lis", "lit", "lisons", "lisez", "lisent"],
+        "Imparfait": ["lisais", "lisais", "lisait", "lisions", "lisiez", "lisaient"],
+        "Futur": ["lirai", "liras", "lira", "lirons", "lirez", "liront"]
+      }
+    },
+    {
+      "id": "penser",
+      "infinitive": "penser",
+      "translation": "думать",
+      "icon": "💭",
+      "forms": {
+        "Présent": ["pense", "penses", "pense", "pensons", "pensez", "pensent"],
+        "Imparfait": ["pensais", "pensais", "pensait", "pensions", "pensiez", "pensaient"],
+        "Futur": ["penserai", "penseras", "pensera", "penserons", "penserez", "penseront"]
+      }
+    }
+  ]
+}
