@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.8.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.7.0...v1.8.0) (2026-06-07)
+
+
+### Features
+
+* add verb packs for DE/IT/FR and standardize all packs to 20 verbs ([1722257](https://github.com/LazyLacey/LazyLacey.github.io/commit/17222570161852b389dba693104538df7acbbaca))
+* hide verb trainer tab for languages without verbTrainer flag ([3024a9e](https://github.com/LazyLacey/LazyLacey.github.io/commit/3024a9e6f352dfddf5f7b9203d3f86b1ababb080))
+
+
+### Bug Fixes
+
+* **data:** audit romanian cards — remove duplicates, pad Вопросы group ([b5457ad](https://github.com/LazyLacey/LazyLacey.github.io/commit/b5457ad386594135aacb0acc6399a27227133469))
+* **data:** audit spanish cards — remove duplicate, add omonym notes ([105e8e4](https://github.com/LazyLacey/LazyLacey.github.io/commit/105e8e43697fc1269023b2542b6201b7f6affd4a))
+
 ## [1.7.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.6.0...v1.7.0) (2026-06-06)
 
 
