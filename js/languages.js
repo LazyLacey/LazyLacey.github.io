@@ -103,6 +103,7 @@ const LANGUAGES = {
     diacriticHints: [],
     verbPronouns: ['나', '너', '그/그녀', '우리', '여러분', '그들'],
     readyPacks: [
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1400 слов · 45 тем',                fn: "loadReadyPack('data/korean-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '30 тем, 300 вопросов',                fn: "loadReadyPack('data/grammar-tests-korean.json','tests')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
     ],
