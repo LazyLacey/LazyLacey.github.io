@@ -9,6 +9,7 @@ const LANGUAGES = {
     dbPrefix: 'Romanian',
     grammarFile: 'js/grammar-romanian.js',
     diacriticHints: ['ă', 'â', 'î', 'ș', 'ț'],
+    verbTrainer: true,
     verbPronouns: ['eu', 'tu', 'el/ea', 'noi', 'voi', 'ei/ele'],
     readyPacks: [
       { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1600 слов · 42 темы',               fn: "loadReadyPack('data/romanian-cards.json','cards')" },
@@ -27,6 +28,7 @@ const LANGUAGES = {
     dbPrefix: 'Spanish',
     grammarFile: 'js/grammar-spanish.js',
     diacriticHints: ['á', 'é', 'í', 'ó', 'ú', 'ñ', '¿', '¡'],
+    verbTrainer: true,
     verbPronouns: ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos/ellas'],
     readyPacks: [
       { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1567 слов · 45 тем',               fn: "loadReadyPack('data/spanish-cards.json','cards')" },

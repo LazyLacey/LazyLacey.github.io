@@ -507,6 +507,9 @@ function _applyLangLabels() {
   if (title) title.innerHTML = `Учим<br>${lang.targetLabel.toLowerCase()}`;
   const hardRow = document.getElementById('hard-mode-row');
   if (hardRow) hardRow.style.display = lang.diacriticHints?.length ? '' : 'none';
+  const verbTab = document.getElementById('gr-tab-verbs');
+  if (verbTab) verbTab.style.display = lang.verbTrainer ? '' : 'none';
+  if (!lang.verbTrainer && verbTab?.classList.contains('active')) switchGrammarTab('rules');
   const hardSub = document.getElementById('hard-mode-sub');
   if (hardSub) hardSub.textContent = `Диакритика обязательна (${(lang.diacriticHints || []).join(', ')})`;
 
