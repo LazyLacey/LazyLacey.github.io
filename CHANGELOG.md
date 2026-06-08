@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.0...v1.12.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* audit korean card pack — move bracket notes from ru to note field ([7cb4327](https://github.com/LazyLacey/LazyLacey.github.io/commit/7cb432783a5f627f16a13fb084bf590e7437a97e))
+
 ## [1.12.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.11.1...v1.12.0) (2026-06-08)
 
 
