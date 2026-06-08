@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.11.1...v1.12.0) (2026-06-08)
+
+
+### Features
+
+* add check for updates button in About drawer ([c4b92d1](https://github.com/LazyLacey/LazyLacey.github.io/commit/c4b92d16ef696252c4236e48ac27f742e81396e3))
+
 ## [1.11.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.11.0...v1.11.1) (2026-06-08)
 
 
