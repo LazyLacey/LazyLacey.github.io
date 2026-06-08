@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.12.2](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.1...v1.12.2) (2026-06-08)
+
+
+### Bug Fixes
+
+* audit french card pack — fix brackets in ru/ro, disambiguate duplicates ([725b673](https://github.com/LazyLacey/LazyLacey.github.io/commit/725b67360a88fc7dcb54fde1866ed3e71e20598c))
+* audit german card pack — fix brackets in ru, disambiguate duplicates ([557cc9e](https://github.com/LazyLacey/LazyLacey.github.io/commit/557cc9ec0b9dd817b480b323a70a28f60bddf5e8))
+* audit italian card pack — fix brackets in ru, disambiguate duplicates ([e725b52](https://github.com/LazyLacey/LazyLacey.github.io/commit/e725b52d66d5282a571e3ec96837a2aba26eeff6))
+* audit romanian card pack — clean up duplicate notes and foreign words in note ([ccfa7a0](https://github.com/LazyLacey/LazyLacey.github.io/commit/ccfa7a07316311ed06b0a194b4a138fa15819951))
+
 ## [1.12.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.0...v1.12.1) (2026-06-08)
 
 
