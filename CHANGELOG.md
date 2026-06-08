@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.9.0...v1.10.0) (2026-06-08)
+
+
+### Features
+
+* add French card pack (1472 cards, 45 groups) ([7a376bb](https://github.com/LazyLacey/LazyLacey.github.io/commit/7a376bbfa3ed4933ff9435a3642ee236a56bc317))
+* add Italian card pack (1492 cards, 45 groups) ([e30fdd2](https://github.com/LazyLacey/LazyLacey.github.io/commit/e30fdd2a2186ff99c81d1b2de2c4c2bdf1b3b22e))
+
 ## [1.9.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.8.0...v1.9.0) (2026-06-08)
 
 
