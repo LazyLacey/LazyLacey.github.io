@@ -196,9 +196,8 @@ async function renderVerbQuestion() {
 
   const tenseTabs = Object.keys(VTS.verb.forms).map(t => {
     const isDone = !!progress[`${VTS.packId}:${VTS.verbId}:${t}`];
-    const hint = TENSE_HINTS[t] ? `<span class="vb-tense-hint">${esc(TENSE_HINTS[t])}</span>` : '';
     const cls = `vb-tense-btn${t === VTS.tense ? ' active' : ''}${isDone ? ' done' : ''}`;
-    return `<button class="${cls}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}${hint}</button>`;
+    return `<button class="${cls}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}</button>`;
   }).join('');
 
   c.innerHTML = `<div style="display:flex;flex-direction:column;flex:1;overflow:hidden">
