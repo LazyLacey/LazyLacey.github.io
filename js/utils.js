@@ -4,16 +4,31 @@ function esc(s) {
 
 function diffHighlightInline(input, correct, hardMode = false) {
   const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
-  const a = input.toLowerCase().slice(0, correct.length);
-  let html = 'Правильно: <strong>';
-  for (let k = 0; k < correct.length; k++) {
-    const ca = k < a.length ? a[k] : '';
-    const cc = correct[k];
-    const match = hardMode ? ca === cc.toLowerCase() : norm(ca) === norm(cc);
-    html += match
-      ? `<span style="color:var(--green)">${esc(cc)}</span>`
-      : `<span style="color:var(--red)">${esc(cc)}</span>`;
+  const key = c => hardMode ? c.toLowerCase() : norm(c);
+
+  const a = input, b = correct;
+  const m = a.length, n = b.length;
+
+  // LCS DP table
+  const dp = Array.from({ length: m + 1 }, () => new Uint16Array(n + 1));
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = key(a[i-1]) === key(b[j-1])
+        ? dp[i-1][j-1] + 1
+        : Math.max(dp[i-1][j], dp[i][j-1]);
+
+  // Backtrack: which positions in correct are matched
+  const matched = new Set();
+  let i = m, j = n;
+  while (i > 0 && j > 0) {
+    if (key(a[i-1]) === key(b[j-1])) { matched.add(j - 1); i--; j--; }
+    else if (dp[i-1][j] >= dp[i][j-1]) i--;
+    else j--;
   }
+
+  let html = 'Правильно: <strong>';
+  for (let k = 0; k < b.length; k++)
+    html += `<span style="color:${matched.has(k) ? 'var(--green)' : 'var(--red)'}">${esc(b[k])}</span>`;
   html += '</strong>';
   return html;
 }

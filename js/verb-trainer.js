@@ -4,6 +4,8 @@ const VTS = {
 };
 
 const TENSE_LABELS = { prezent: 'Prezent', trecut: 'Trecut', viitor: 'Viitor' };
+const TENSE_HINTS = { '현재': 'настоящее', '과거': 'прошедшее', '미래': 'будущее' };
+const PRONOUN_HINTS = { '합쇼체': 'официальный', '해요체': 'вежливый', '해체': 'неформальный' };
 
 async function vbSaveProgress(packId, verbId, tense, correct, total) {
   if (!verbsDb) return;
@@ -194,9 +196,9 @@ async function renderVerbQuestion() {
 
   const tenseTabs = Object.keys(VTS.verb.forms).map(t => {
     const isDone = !!progress[`${VTS.packId}:${VTS.verbId}:${t}`];
-    const check = isDone ? `<span class="vb-tense-check">✓</span>` : '';
+    const hint = TENSE_HINTS[t] ? `<span class="vb-tense-hint">${esc(TENSE_HINTS[t])}</span>` : '';
     const cls = `vb-tense-btn${t === VTS.tense ? ' active' : ''}${isDone ? ' done' : ''}`;
-    return `<button class="${cls}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}${check}</button>`;
+    return `<button class="${cls}" onclick="vbSwitchTense('${t}')">${TENSE_LABELS[t]||t}${hint}</button>`;
   }).join('');
 
   c.innerHTML = `<div style="display:flex;flex-direction:column;flex:1;overflow:hidden">
@@ -211,7 +213,7 @@ async function renderVerbQuestion() {
     <div class="flashcard-area" id="vb-card-area">
       <div class="flashcard">
         <div class="card-group-tag">${esc(VTS.verb.infinitive)} — ${esc(VTS.verb.translation)}</div>
-        <div class="card-question-label">Спрягите глагол:</div>
+        <div class="card-question-label">${currentLang().id === 'korean' ? 'Образуйте форму:' : 'Спрягите глагол:'}</div>
         <div class="card-question" style="font-size:28px">${esc(q.pronoun)}</div>
       </div>
     </div>
