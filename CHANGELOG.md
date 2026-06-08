@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.10.0...v1.11.0) (2026-06-08)
+
+
+### Features
+
+* korean verb trainer + accent color scheme for tense tabs ([2c29e0b](https://github.com/LazyLacey/LazyLacey.github.io/commit/2c29e0bf8058aa99454b2af965e42d044927e9d7))
+
 ## [1.10.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.9.0...v1.10.0) (2026-06-08)
 
 
