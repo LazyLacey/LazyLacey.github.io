@@ -1,0 +1,10492 @@
+{
+  "version": 1,
+  "exported": "2026-06-08",
+  "groups": [
+    {
+      "id": 1,
+      "name": "Цвета"
+    },
+    {
+      "id": 2,
+      "name": "Числа и счёт"
+    },
+    {
+      "id": 3,
+      "name": "Время"
+    },
+    {
+      "id": 4,
+      "name": "Семья"
+    },
+    {
+      "id": 5,
+      "name": "Тело"
+    },
+    {
+      "id": 6,
+      "name": "Одежда"
+    },
+    {
+      "id": 7,
+      "name": "Еда"
+    },
+    {
+      "id": 8,
+      "name": "Фрукты и овощи"
+    },
+    {
+      "id": 9,
+      "name": "Напитки"
+    },
+    {
+      "id": 10,
+      "name": "Дом"
+    },
+    {
+      "id": 11,
+      "name": "Посуда и кухня"
+    },
+    {
+      "id": 12,
+      "name": "Природа"
+    },
+    {
+      "id": 13,
+      "name": "Животные"
+    },
+    {
+      "id": 14,
+      "name": "Погода"
+    },
+    {
+      "id": 15,
+      "name": "Город"
+    },
+    {
+      "id": 16,
+      "name": "Транспорт"
+    },
+    {
+      "id": 17,
+      "name": "Направления"
+    },
+    {
+      "id": 18,
+      "name": "Работа и офис"
+    },
+    {
+      "id": 19,
+      "name": "Профессии"
+    },
+    {
+      "id": 20,
+      "name": "Учёба"
+    },
+    {
+      "id": 21,
+      "name": "Технологии"
+    },
+    {
+      "id": 22,
+      "name": "Здоровье"
+    },
+    {
+      "id": 23,
+      "name": "Спорт"
+    },
+    {
+      "id": 24,
+      "name": "Путешествия"
+    },
+    {
+      "id": 25,
+      "name": "Магазин"
+    },
+    {
+      "id": 26,
+      "name": "Финансы"
+    },
+    {
+      "id": 27,
+      "name": "Государство"
+    },
+    {
+      "id": 28,
+      "name": "Культура и досуг"
+    },
+    {
+      "id": 29,
+      "name": "Глаголы движения"
+    },
+    {
+      "id": 30,
+      "name": "Глаголы действия"
+    },
+    {
+      "id": 31,
+      "name": "Глаголы состояния"
+    },
+    {
+      "id": 32,
+      "name": "Прилагательные"
+    },
+    {
+      "id": 33,
+      "name": "Наречия"
+    },
+    {
+      "id": 34,
+      "name": "Предлоги и союзы"
+    },
+    {
+      "id": 35,
+      "name": "Местоимения"
+    },
+    {
+      "id": 36,
+      "name": "Служебные слова"
+    },
+    {
+      "id": 37,
+      "name": "Вопросы"
+    },
+    {
+      "id": 38,
+      "name": "Общение"
+    },
+    {
+      "id": 39,
+      "name": "Эмоции"
+    },
+    {
+      "id": 40,
+      "name": "Внешность"
+    },
+    {
+      "id": 41,
+      "name": "Материалы"
+    },
+    {
+      "id": 42,
+      "name": "Фигуры"
+    },
+    {
+      "id": 43,
+      "name": "Инструменты"
+    },
+    {
+      "id": 44,
+      "name": "Жильё"
+    },
+    {
+      "id": 45,
+      "name": "Реалии Франции"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "ro": "rouge",
+      "ru": "красный",
+      "note": ""
+    },
+    {
+      "id": 2,
+      "groupId": 1,
+      "ro": "bleu",
+      "ru": "синий",
+      "note": ""
+    },
+    {
+      "id": 3,
+      "groupId": 1,
+      "ro": "vert",
+      "ru": "зелёный",
+      "note": ""
+    },
+    {
+      "id": 4,
+      "groupId": 1,
+      "ro": "jaune",
+      "ru": "жёлтый",
+      "note": ""
+    },
+    {
+      "id": 5,
+      "groupId": 1,
+      "ro": "orange",
+      "ru": "оранжевый",
+      "note": ""
+    },
+    {
+      "id": 6,
+      "groupId": 1,
+      "ro": "violet",
+      "ru": "фиолетовый",
+      "note": ""
+    },
+    {
+      "id": 7,
+      "groupId": 1,
+      "ro": "rose",
+      "ru": "розовый",
+      "note": ""
+    },
+    {
+      "id": 8,
+      "groupId": 1,
+      "ro": "noir",
+      "ru": "чёрный",
+      "note": ""
+    },
+    {
+      "id": 9,
+      "groupId": 1,
+      "ro": "blanc",
+      "ru": "белый",
+      "note": ""
+    },
+    {
+      "id": 10,
+      "groupId": 1,
+      "ro": "gris",
+      "ru": "серый",
+      "note": ""
+    },
+    {
+      "id": 11,
+      "groupId": 1,
+      "ro": "marron",
+      "ru": "коричневый",
+      "note": ""
+    },
+    {
+      "id": 12,
+      "groupId": 1,
+      "ro": "beige",
+      "ru": "бежевый",
+      "note": ""
+    },
+    {
+      "id": 13,
+      "groupId": 1,
+      "ro": "bleu clair",
+      "ru": "голубой",
+      "note": ""
+    },
+    {
+      "id": 14,
+      "groupId": 1,
+      "ro": "doré",
+      "ru": "золотой",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "groupId": 1,
+      "ro": "argenté",
+      "ru": "серебристый",
+      "note": ""
+    },
+    {
+      "id": 16,
+      "groupId": 1,
+      "ro": "bordeaux",
+      "ru": "бордовый",
+      "note": ""
+    },
+    {
+      "id": 17,
+      "groupId": 2,
+      "ro": "zéro",
+      "ru": "ноль",
+      "note": ""
+    },
+    {
+      "id": 18,
+      "groupId": 2,
+      "ro": "un",
+      "ru": "один",
+      "note": ""
+    },
+    {
+      "id": 19,
+      "groupId": 2,
+      "ro": "deux",
+      "ru": "два",
+      "note": ""
+    },
+    {
+      "id": 20,
+      "groupId": 2,
+      "ro": "trois",
+      "ru": "три",
+      "note": ""
+    },
+    {
+      "id": 21,
+      "groupId": 2,
+      "ro": "quatre",
+      "ru": "четыре",
+      "note": ""
+    },
+    {
+      "id": 22,
+      "groupId": 2,
+      "ro": "cinq",
+      "ru": "пять",
+      "note": ""
+    },
+    {
+      "id": 23,
+      "groupId": 2,
+      "ro": "six",
+      "ru": "шесть",
+      "note": ""
+    },
+    {
+      "id": 24,
+      "groupId": 2,
+      "ro": "sept",
+      "ru": "семь",
+      "note": ""
+    },
+    {
+      "id": 25,
+      "groupId": 2,
+      "ro": "huit",
+      "ru": "восемь",
+      "note": ""
+    },
+    {
+      "id": 26,
+      "groupId": 2,
+      "ro": "neuf",
+      "ru": "девять",
+      "note": ""
+    },
+    {
+      "id": 27,
+      "groupId": 2,
+      "ro": "dix",
+      "ru": "десять",
+      "note": ""
+    },
+    {
+      "id": 28,
+      "groupId": 2,
+      "ro": "onze",
+      "ru": "одиннадцать",
+      "note": ""
+    },
+    {
+      "id": 29,
+      "groupId": 2,
+      "ro": "douze",
+      "ru": "двенадцать",
+      "note": ""
+    },
+    {
+      "id": 30,
+      "groupId": 2,
+      "ro": "treize",
+      "ru": "тринадцать",
+      "note": ""
+    },
+    {
+      "id": 31,
+      "groupId": 2,
+      "ro": "quatorze",
+      "ru": "четырнадцать",
+      "note": ""
+    },
+    {
+      "id": 32,
+      "groupId": 2,
+      "ro": "quinze",
+      "ru": "пятнадцать",
+      "note": ""
+    },
+    {
+      "id": 33,
+      "groupId": 2,
+      "ro": "vingt",
+      "ru": "двадцать",
+      "note": ""
+    },
+    {
+      "id": 34,
+      "groupId": 2,
+      "ro": "trente",
+      "ru": "тридцать",
+      "note": ""
+    },
+    {
+      "id": 35,
+      "groupId": 2,
+      "ro": "quarante",
+      "ru": "сорок",
+      "note": ""
+    },
+    {
+      "id": 36,
+      "groupId": 2,
+      "ro": "cinquante",
+      "ru": "пятьдесят",
+      "note": ""
+    },
+    {
+      "id": 37,
+      "groupId": 2,
+      "ro": "soixante",
+      "ru": "шестьдесят",
+      "note": ""
+    },
+    {
+      "id": 38,
+      "groupId": 2,
+      "ro": "soixante-dix",
+      "ru": "семьдесят",
+      "note": ""
+    },
+    {
+      "id": 39,
+      "groupId": 2,
+      "ro": "quatre-vingts",
+      "ru": "восемьдесят",
+      "note": ""
+    },
+    {
+      "id": 40,
+      "groupId": 2,
+      "ro": "quatre-vingt-dix",
+      "ru": "девяносто",
+      "note": ""
+    },
+    {
+      "id": 41,
+      "groupId": 2,
+      "ro": "cent",
+      "ru": "сто",
+      "note": ""
+    },
+    {
+      "id": 42,
+      "groupId": 2,
+      "ro": "mille",
+      "ru": "тысяча",
+      "note": ""
+    },
+    {
+      "id": 43,
+      "groupId": 2,
+      "ro": "million",
+      "ru": "миллион",
+      "note": ""
+    },
+    {
+      "id": 44,
+      "groupId": 2,
+      "ro": "premier",
+      "ru": "первый",
+      "note": ""
+    },
+    {
+      "id": 45,
+      "groupId": 2,
+      "ro": "deuxième",
+      "ru": "второй",
+      "note": ""
+    },
+    {
+      "id": 46,
+      "groupId": 2,
+      "ro": "troisième",
+      "ru": "третий",
+      "note": ""
+    },
+    {
+      "id": 47,
+      "groupId": 2,
+      "ro": "moitié",
+      "ru": "половина",
+      "note": ""
+    },
+    {
+      "id": 48,
+      "groupId": 3,
+      "ro": "seconde",
+      "ru": "секунда",
+      "note": ""
+    },
+    {
+      "id": 49,
+      "groupId": 3,
+      "ro": "minute",
+      "ru": "minute",
+      "note": ""
+    },
+    {
+      "id": 50,
+      "groupId": 3,
+      "ro": "heure",
+      "ru": "час",
+      "note": ""
+    },
+    {
+      "id": 51,
+      "groupId": 3,
+      "ro": "jour",
+      "ru": "день",
+      "note": ""
+    },
+    {
+      "id": 52,
+      "groupId": 3,
+      "ro": "nuit",
+      "ru": "ночь",
+      "note": ""
+    },
+    {
+      "id": 53,
+      "groupId": 3,
+      "ro": "matin",
+      "ru": "утро",
+      "note": ""
+    },
+    {
+      "id": 54,
+      "groupId": 3,
+      "ro": "après-midi",
+      "ru": "послеполудень",
+      "note": ""
+    },
+    {
+      "id": 55,
+      "groupId": 3,
+      "ro": "soir",
+      "ru": "вечер",
+      "note": ""
+    },
+    {
+      "id": 56,
+      "groupId": 3,
+      "ro": "semaine",
+      "ru": "неделя",
+      "note": ""
+    },
+    {
+      "id": 57,
+      "groupId": 3,
+      "ro": "mois",
+      "ru": "месяц",
+      "note": ""
+    },
+    {
+      "id": 58,
+      "groupId": 3,
+      "ro": "an",
+      "ru": "год",
+      "note": ""
+    },
+    {
+      "id": 59,
+      "groupId": 3,
+      "ro": "siècle",
+      "ru": "век",
+      "note": ""
+    },
+    {
+      "id": 60,
+      "groupId": 3,
+      "ro": "aujourd'hui",
+      "ru": "сегодня",
+      "note": ""
+    },
+    {
+      "id": 61,
+      "groupId": 3,
+      "ro": "hier",
+      "ru": "вчера",
+      "note": ""
+    },
+    {
+      "id": 62,
+      "groupId": 3,
+      "ro": "demain",
+      "ru": "завтра",
+      "note": ""
+    },
+    {
+      "id": 63,
+      "groupId": 3,
+      "ro": "après-demain",
+      "ru": "послезавтра",
+      "note": ""
+    },
+    {
+      "id": 64,
+      "groupId": 3,
+      "ro": "maintenant",
+      "ru": "сейчас",
+      "note": ""
+    },
+    {
+      "id": 67,
+      "groupId": 3,
+      "ro": "lundi",
+      "ru": "понедельник",
+      "note": ""
+    },
+    {
+      "id": 68,
+      "groupId": 3,
+      "ro": "mardi",
+      "ru": "вторник",
+      "note": ""
+    },
+    {
+      "id": 69,
+      "groupId": 3,
+      "ro": "mercredi",
+      "ru": "среда",
+      "note": ""
+    },
+    {
+      "id": 70,
+      "groupId": 3,
+      "ro": "jeudi",
+      "ru": "четверг",
+      "note": ""
+    },
+    {
+      "id": 71,
+      "groupId": 3,
+      "ro": "vendredi",
+      "ru": "пятница",
+      "note": ""
+    },
+    {
+      "id": 72,
+      "groupId": 3,
+      "ro": "samedi",
+      "ru": "суббота",
+      "note": ""
+    },
+    {
+      "id": 73,
+      "groupId": 3,
+      "ro": "dimanche",
+      "ru": "воскресенье",
+      "note": ""
+    },
+    {
+      "id": 74,
+      "groupId": 3,
+      "ro": "janvier",
+      "ru": "январь",
+      "note": ""
+    },
+    {
+      "id": 75,
+      "groupId": 3,
+      "ro": "février",
+      "ru": "февраль",
+      "note": ""
+    },
+    {
+      "id": 76,
+      "groupId": 3,
+      "ro": "mars",
+      "ru": "март",
+      "note": ""
+    },
+    {
+      "id": 77,
+      "groupId": 3,
+      "ro": "avril",
+      "ru": "апрель",
+      "note": ""
+    },
+    {
+      "id": 78,
+      "groupId": 3,
+      "ro": "mai",
+      "ru": "май",
+      "note": ""
+    },
+    {
+      "id": 79,
+      "groupId": 3,
+      "ro": "juin",
+      "ru": "июнь",
+      "note": ""
+    },
+    {
+      "id": 80,
+      "groupId": 3,
+      "ro": "juillet",
+      "ru": "июль",
+      "note": ""
+    },
+    {
+      "id": 81,
+      "groupId": 3,
+      "ro": "août",
+      "ru": "август",
+      "note": ""
+    },
+    {
+      "id": 82,
+      "groupId": 3,
+      "ro": "septembre",
+      "ru": "сентябрь",
+      "note": ""
+    },
+    {
+      "id": 83,
+      "groupId": 3,
+      "ro": "octobre",
+      "ru": "октябрь",
+      "note": ""
+    },
+    {
+      "id": 84,
+      "groupId": 3,
+      "ro": "novembre",
+      "ru": "ноябрь",
+      "note": ""
+    },
+    {
+      "id": 85,
+      "groupId": 3,
+      "ro": "décembre",
+      "ru": "декабрь",
+      "note": ""
+    },
+    {
+      "id": 86,
+      "groupId": 3,
+      "ro": "printemps",
+      "ru": "весна",
+      "note": ""
+    },
+    {
+      "id": 87,
+      "groupId": 3,
+      "ro": "été",
+      "ru": "лето",
+      "note": ""
+    },
+    {
+      "id": 88,
+      "groupId": 3,
+      "ro": "automne",
+      "ru": "осень",
+      "note": ""
+    },
+    {
+      "id": 89,
+      "groupId": 3,
+      "ro": "hiver",
+      "ru": "зима",
+      "note": ""
+    },
+    {
+      "id": 90,
+      "groupId": 4,
+      "ro": "mère",
+      "ru": "мать",
+      "note": ""
+    },
+    {
+      "id": 91,
+      "groupId": 4,
+      "ro": "père",
+      "ru": "отец",
+      "note": ""
+    },
+    {
+      "id": 92,
+      "groupId": 4,
+      "ro": "fils",
+      "ru": "сын",
+      "note": ""
+    },
+    {
+      "id": 93,
+      "groupId": 4,
+      "ro": "fille",
+      "ru": "дочь",
+      "note": ""
+    },
+    {
+      "id": 94,
+      "groupId": 4,
+      "ro": "frère",
+      "ru": "брат",
+      "note": ""
+    },
+    {
+      "id": 95,
+      "groupId": 4,
+      "ro": "sœur",
+      "ru": "сестра",
+      "note": ""
+    },
+    {
+      "id": 96,
+      "groupId": 4,
+      "ro": "grand-père",
+      "ru": "дедушка",
+      "note": ""
+    },
+    {
+      "id": 97,
+      "groupId": 4,
+      "ro": "grand-mère",
+      "ru": "бабушка",
+      "note": ""
+    },
+    {
+      "id": 98,
+      "groupId": 4,
+      "ro": "petit-fils",
+      "ru": "внук",
+      "note": ""
+    },
+    {
+      "id": 99,
+      "groupId": 4,
+      "ro": "oncle",
+      "ru": "дядя",
+      "note": ""
+    },
+    {
+      "id": 100,
+      "groupId": 4,
+      "ro": "tante",
+      "ru": "тётя",
+      "note": ""
+    },
+    {
+      "id": 101,
+      "groupId": 4,
+      "ro": "cousin",
+      "ru": "двоюродный брат",
+      "note": ""
+    },
+    {
+      "id": 102,
+      "groupId": 4,
+      "ro": "cousine",
+      "ru": "двоюродная сестра",
+      "note": ""
+    },
+    {
+      "id": 103,
+      "groupId": 4,
+      "ro": "mari",
+      "ru": "муж",
+      "note": ""
+    },
+    {
+      "id": 104,
+      "groupId": 4,
+      "ro": "femme",
+      "ru": "жена",
+      "note": ""
+    },
+    {
+      "id": 105,
+      "groupId": 4,
+      "ro": "fiancé",
+      "ru": "жених",
+      "note": ""
+    },
+    {
+      "id": 106,
+      "groupId": 4,
+      "ro": "fiancée",
+      "ru": "невеста",
+      "note": ""
+    },
+    {
+      "id": 107,
+      "groupId": 4,
+      "ro": "parents",
+      "ru": "родители",
+      "note": ""
+    },
+    {
+      "id": 108,
+      "groupId": 4,
+      "ro": "famille",
+      "ru": "семья",
+      "note": ""
+    },
+    {
+      "id": 109,
+      "groupId": 4,
+      "ro": "enfant",
+      "ru": "ребёнок",
+      "note": ""
+    },
+    {
+      "id": 110,
+      "groupId": 4,
+      "ro": "bébé",
+      "ru": "младенец",
+      "note": ""
+    },
+    {
+      "id": 111,
+      "groupId": 4,
+      "ro": "adulte",
+      "ru": "взрослый",
+      "note": ""
+    },
+    {
+      "id": 112,
+      "groupId": 4,
+      "ro": "personne âgée",
+      "ru": "пожилой человек",
+      "note": ""
+    },
+    {
+      "id": 113,
+      "groupId": 4,
+      "ro": "parent",
+      "ru": "родственник",
+      "note": ""
+    },
+    {
+      "id": 114,
+      "groupId": 4,
+      "ro": "beau-frère",
+      "ru": "зять / шурин",
+      "note": ""
+    },
+    {
+      "id": 115,
+      "groupId": 4,
+      "ro": "beau-père",
+      "ru": "свёкор / тесть",
+      "note": ""
+    },
+    {
+      "id": 116,
+      "groupId": 4,
+      "ro": "belle-mère",
+      "ru": "свекровь / тёща",
+      "note": ""
+    },
+    {
+      "id": 117,
+      "groupId": 4,
+      "ro": "jumeau",
+      "ru": "близнец",
+      "note": ""
+    },
+    {
+      "id": 118,
+      "groupId": 4,
+      "ro": "orphelin",
+      "ru": "сирота",
+      "note": ""
+    },
+    {
+      "id": 119,
+      "groupId": 4,
+      "ro": "veuf",
+      "ru": "вдовец",
+      "note": ""
+    },
+    {
+      "id": 120,
+      "groupId": 5,
+      "ro": "tête",
+      "ru": "голова",
+      "note": ""
+    },
+    {
+      "id": 121,
+      "groupId": 5,
+      "ro": "cheveux",
+      "ru": "волосы",
+      "note": ""
+    },
+    {
+      "id": 122,
+      "groupId": 5,
+      "ro": "visage",
+      "ru": "лицо",
+      "note": ""
+    },
+    {
+      "id": 123,
+      "groupId": 5,
+      "ro": "œil",
+      "ru": "глаз",
+      "note": ""
+    },
+    {
+      "id": 124,
+      "groupId": 5,
+      "ro": "nez",
+      "ru": "нос",
+      "note": ""
+    },
+    {
+      "id": 125,
+      "groupId": 5,
+      "ro": "oreille",
+      "ru": "ухо",
+      "note": ""
+    },
+    {
+      "id": 126,
+      "groupId": 5,
+      "ro": "bouche",
+      "ru": "рот",
+      "note": ""
+    },
+    {
+      "id": 127,
+      "groupId": 5,
+      "ro": "dent",
+      "ru": "зуб",
+      "note": ""
+    },
+    {
+      "id": 128,
+      "groupId": 5,
+      "ro": "langue",
+      "ru": "язык",
+      "note": ""
+    },
+    {
+      "id": 129,
+      "groupId": 5,
+      "ro": "cou",
+      "ru": "шея",
+      "note": ""
+    },
+    {
+      "id": 130,
+      "groupId": 5,
+      "ro": "épaule",
+      "ru": "плечо",
+      "note": ""
+    },
+    {
+      "id": 131,
+      "groupId": 5,
+      "ro": "bras",
+      "ru": "рука (от плеча)",
+      "note": ""
+    },
+    {
+      "id": 132,
+      "groupId": 5,
+      "ro": "coude",
+      "ru": "локоть",
+      "note": ""
+    },
+    {
+      "id": 133,
+      "groupId": 5,
+      "ro": "poignet",
+      "ru": "запястье",
+      "note": ""
+    },
+    {
+      "id": 134,
+      "groupId": 5,
+      "ro": "main",
+      "ru": "рука (кисть)",
+      "note": ""
+    },
+    {
+      "id": 135,
+      "groupId": 5,
+      "ro": "doigt",
+      "ru": "палец",
+      "note": ""
+    },
+    {
+      "id": 136,
+      "groupId": 5,
+      "ro": "ongle",
+      "ru": "ноготь",
+      "note": ""
+    },
+    {
+      "id": 137,
+      "groupId": 5,
+      "ro": "poitrine",
+      "ru": "грудь",
+      "note": ""
+    },
+    {
+      "id": 138,
+      "groupId": 5,
+      "ro": "dos",
+      "ru": "спина",
+      "note": ""
+    },
+    {
+      "id": 139,
+      "groupId": 5,
+      "ro": "estomac",
+      "ru": "желудок",
+      "note": ""
+    },
+    {
+      "id": 140,
+      "groupId": 5,
+      "ro": "ventre",
+      "ru": "живот",
+      "note": ""
+    },
+    {
+      "id": 141,
+      "groupId": 5,
+      "ro": "côté",
+      "ru": "бок",
+      "note": ""
+    },
+    {
+      "id": 142,
+      "groupId": 5,
+      "ro": "jambe",
+      "ru": "нога (вся)",
+      "note": ""
+    },
+    {
+      "id": 143,
+      "groupId": 5,
+      "ro": "genou",
+      "ru": "колено",
+      "note": ""
+    },
+    {
+      "id": 144,
+      "groupId": 5,
+      "ro": "cheville",
+      "ru": "лодыжка",
+      "note": ""
+    },
+    {
+      "id": 145,
+      "groupId": 5,
+      "ro": "pied",
+      "ru": "стопа",
+      "note": ""
+    },
+    {
+      "id": 146,
+      "groupId": 5,
+      "ro": "orteil",
+      "ru": "палец ноги",
+      "note": ""
+    },
+    {
+      "id": 147,
+      "groupId": 5,
+      "ro": "peau",
+      "ru": "кожа",
+      "note": ""
+    },
+    {
+      "id": 148,
+      "groupId": 5,
+      "ro": "muscle",
+      "ru": "мышца",
+      "note": ""
+    },
+    {
+      "id": 149,
+      "groupId": 5,
+      "ro": "os",
+      "ru": "кость",
+      "note": ""
+    },
+    {
+      "id": 150,
+      "groupId": 5,
+      "ro": "cœur",
+      "ru": "сердце",
+      "note": ""
+    },
+    {
+      "id": 151,
+      "groupId": 5,
+      "ro": "poumon",
+      "ru": "лёгкое",
+      "note": ""
+    },
+    {
+      "id": 152,
+      "groupId": 5,
+      "ro": "foie",
+      "ru": "печень",
+      "note": ""
+    },
+    {
+      "id": 153,
+      "groupId": 5,
+      "ro": "rein",
+      "ru": "почка",
+      "note": ""
+    },
+    {
+      "id": 154,
+      "groupId": 5,
+      "ro": "cerveau",
+      "ru": "мозг",
+      "note": ""
+    },
+    {
+      "id": 155,
+      "groupId": 5,
+      "ro": "sang",
+      "ru": "кров",
+      "note": ""
+    },
+    {
+      "id": 156,
+      "groupId": 5,
+      "ro": "nerf",
+      "ru": "нерв",
+      "note": ""
+    },
+    {
+      "id": 157,
+      "groupId": 5,
+      "ro": "veine",
+      "ru": "вена",
+      "note": ""
+    },
+    {
+      "id": 158,
+      "groupId": 5,
+      "ro": "artère",
+      "ru": "артерия",
+      "note": ""
+    },
+    {
+      "id": 159,
+      "groupId": 5,
+      "ro": "articulation",
+      "ru": "сустав",
+      "note": ""
+    },
+    {
+      "id": 160,
+      "groupId": 5,
+      "ro": "colonne vertébrale",
+      "ru": "позвоночник",
+      "note": ""
+    },
+    {
+      "id": 161,
+      "groupId": 5,
+      "ro": "côte",
+      "ru": "ребро",
+      "note": ""
+    },
+    {
+      "id": 162,
+      "groupId": 5,
+      "ro": "hanche",
+      "ru": "бедро",
+      "note": ""
+    },
+    {
+      "id": 163,
+      "groupId": 5,
+      "ro": "mollet",
+      "ru": "икра ноги",
+      "note": ""
+    },
+    {
+      "id": 164,
+      "groupId": 5,
+      "ro": "talon",
+      "ru": "пятка",
+      "note": ""
+    },
+    {
+      "id": 165,
+      "groupId": 5,
+      "ro": "poing",
+      "ru": "кулак",
+      "note": ""
+    },
+    {
+      "id": 166,
+      "groupId": 5,
+      "ro": "sourcil",
+      "ru": "бровь",
+      "note": ""
+    },
+    {
+      "id": 167,
+      "groupId": 5,
+      "ro": "cils",
+      "ru": "ресницы",
+      "note": ""
+    },
+    {
+      "id": 168,
+      "groupId": 5,
+      "ro": "front",
+      "ru": "лоб",
+      "note": ""
+    },
+    {
+      "id": 169,
+      "groupId": 5,
+      "ro": "menton",
+      "ru": "подбородок",
+      "note": ""
+    },
+    {
+      "id": 170,
+      "groupId": 5,
+      "ro": "joue",
+      "ru": "щека",
+      "note": ""
+    },
+    {
+      "id": 171,
+      "groupId": 5,
+      "ro": "lèvre",
+      "ru": "губа",
+      "note": ""
+    },
+    {
+      "id": 172,
+      "groupId": 5,
+      "ro": "lèvres",
+      "ru": "губы",
+      "note": ""
+    },
+    {
+      "id": 173,
+      "groupId": 5,
+      "ro": "pupille",
+      "ru": "зрачок",
+      "note": ""
+    },
+    {
+      "id": 174,
+      "groupId": 5,
+      "ro": "narine",
+      "ru": "ноздря",
+      "note": ""
+    },
+    {
+      "id": 175,
+      "groupId": 6,
+      "ro": "chemise",
+      "ru": "рубашка",
+      "note": ""
+    },
+    {
+      "id": 176,
+      "groupId": 6,
+      "ro": "t-shirt",
+      "ru": "футболка",
+      "note": ""
+    },
+    {
+      "id": 177,
+      "groupId": 6,
+      "ro": "pull",
+      "ru": "свитер",
+      "note": ""
+    },
+    {
+      "id": 178,
+      "groupId": 6,
+      "ro": "veste",
+      "ru": "куртка / пиджак",
+      "note": ""
+    },
+    {
+      "id": 179,
+      "groupId": 6,
+      "ro": "manteau",
+      "ru": "пальто",
+      "note": ""
+    },
+    {
+      "id": 180,
+      "groupId": 6,
+      "ro": "imperméable",
+      "ru": "дождевик",
+      "note": ""
+    },
+    {
+      "id": 181,
+      "groupId": 6,
+      "ro": "pantalon",
+      "ru": "брюки",
+      "note": ""
+    },
+    {
+      "id": 182,
+      "groupId": 6,
+      "ro": "jean",
+      "ru": "джинсы",
+      "note": ""
+    },
+    {
+      "id": 183,
+      "groupId": 6,
+      "ro": "jupe",
+      "ru": "юбка",
+      "note": ""
+    },
+    {
+      "id": 184,
+      "groupId": 6,
+      "ro": "robe",
+      "ru": "платье",
+      "note": ""
+    },
+    {
+      "id": 185,
+      "groupId": 6,
+      "ro": "costume",
+      "ru": "костюм",
+      "note": ""
+    },
+    {
+      "id": 186,
+      "groupId": 6,
+      "ro": "chaussures",
+      "ru": "туфли / обувь",
+      "note": ""
+    },
+    {
+      "id": 187,
+      "groupId": 6,
+      "ro": "bottes",
+      "ru": "сапоги",
+      "note": ""
+    },
+    {
+      "id": 188,
+      "groupId": 6,
+      "ro": "sandales",
+      "ru": "сандалии",
+      "note": ""
+    },
+    {
+      "id": 189,
+      "groupId": 6,
+      "ro": "pantoufles",
+      "ru": "тапочки",
+      "note": ""
+    },
+    {
+      "id": 190,
+      "groupId": 6,
+      "ro": "chaussettes",
+      "ru": "носки",
+      "note": ""
+    },
+    {
+      "id": 191,
+      "groupId": 6,
+      "ro": "sous-vêtements",
+      "ru": "нижнее бельё",
+      "note": ""
+    },
+    {
+      "id": 192,
+      "groupId": 6,
+      "ro": "soutien-gorge",
+      "ru": "бюстгальтер",
+      "note": ""
+    },
+    {
+      "id": 193,
+      "groupId": 6,
+      "ro": "pyjama",
+      "ru": "пижама",
+      "note": ""
+    },
+    {
+      "id": 194,
+      "groupId": 6,
+      "ro": "chapeau",
+      "ru": "шляпа",
+      "note": ""
+    },
+    {
+      "id": 195,
+      "groupId": 6,
+      "ro": "bonnet",
+      "ru": "шапка",
+      "note": ""
+    },
+    {
+      "id": 196,
+      "groupId": 6,
+      "ro": "écharpe",
+      "ru": "шарф",
+      "note": ""
+    },
+    {
+      "id": 197,
+      "groupId": 6,
+      "ro": "gants",
+      "ru": "перчатки",
+      "note": ""
+    },
+    {
+      "id": 198,
+      "groupId": 6,
+      "ro": "ceinture",
+      "ru": "ремень",
+      "note": ""
+    },
+    {
+      "id": 199,
+      "groupId": 6,
+      "ro": "cravate",
+      "ru": "галстук",
+      "note": ""
+    },
+    {
+      "id": 200,
+      "groupId": 6,
+      "ro": "sac",
+      "ru": "сумка",
+      "note": ""
+    },
+    {
+      "id": 202,
+      "groupId": 6,
+      "ro": "lunettes",
+      "ru": "очки",
+      "note": ""
+    },
+    {
+      "id": 203,
+      "groupId": 6,
+      "ro": "bague",
+      "ru": "кольцо",
+      "note": ""
+    },
+    {
+      "id": 204,
+      "groupId": 6,
+      "ro": "montre",
+      "ru": "часы",
+      "note": ""
+    },
+    {
+      "id": 205,
+      "groupId": 6,
+      "ro": "collier",
+      "ru": "ожерелье",
+      "note": ""
+    },
+    {
+      "id": 206,
+      "groupId": 6,
+      "ro": "boucles d'oreilles",
+      "ru": "серьги",
+      "note": ""
+    },
+    {
+      "id": 207,
+      "groupId": 6,
+      "ro": "bouton",
+      "ru": "пуговица",
+      "note": ""
+    },
+    {
+      "id": 208,
+      "groupId": 6,
+      "ro": "fermeture éclair",
+      "ru": "молния (застёжка)",
+      "note": ""
+    },
+    {
+      "id": 209,
+      "groupId": 6,
+      "ro": "poche",
+      "ru": "карман",
+      "note": ""
+    },
+    {
+      "id": 210,
+      "groupId": 7,
+      "ro": "pain",
+      "ru": "хлеб",
+      "note": ""
+    },
+    {
+      "id": 211,
+      "groupId": 7,
+      "ro": "pâtes",
+      "ru": "паста / макароны",
+      "note": ""
+    },
+    {
+      "id": 212,
+      "groupId": 7,
+      "ro": "riz",
+      "ru": "рис",
+      "note": ""
+    },
+    {
+      "id": 213,
+      "groupId": 7,
+      "ro": "viande",
+      "ru": "мясо",
+      "note": ""
+    },
+    {
+      "id": 214,
+      "groupId": 7,
+      "ro": "poulet",
+      "ru": "курица",
+      "note": "мясо"
+    },
+    {
+      "id": 215,
+      "groupId": 7,
+      "ro": "porc",
+      "ru": "свинина",
+      "note": ""
+    },
+    {
+      "id": 216,
+      "groupId": 7,
+      "ro": "bœuf",
+      "ru": "говядина",
+      "note": ""
+    },
+    {
+      "id": 217,
+      "groupId": 7,
+      "ro": "poisson",
+      "ru": "рыба",
+      "note": "мясо"
+    },
+    {
+      "id": 218,
+      "groupId": 7,
+      "ro": "œuf",
+      "ru": "яйцо",
+      "note": ""
+    },
+    {
+      "id": 219,
+      "groupId": 7,
+      "ro": "fromage",
+      "ru": "сыр",
+      "note": ""
+    },
+    {
+      "id": 220,
+      "groupId": 7,
+      "ro": "beurre",
+      "ru": "масло (сливочное)",
+      "note": ""
+    },
+    {
+      "id": 221,
+      "groupId": 7,
+      "ro": "huile",
+      "ru": "масло (растительное)",
+      "note": ""
+    },
+    {
+      "id": 223,
+      "groupId": 7,
+      "ro": "crème",
+      "ru": "сливки",
+      "note": ""
+    },
+    {
+      "id": 224,
+      "groupId": 7,
+      "ro": "yaourt",
+      "ru": "йогурт",
+      "note": ""
+    },
+    {
+      "id": 225,
+      "groupId": 7,
+      "ro": "sucre",
+      "ru": "сахар",
+      "note": ""
+    },
+    {
+      "id": 226,
+      "groupId": 7,
+      "ro": "sel",
+      "ru": "соль",
+      "note": ""
+    },
+    {
+      "id": 227,
+      "groupId": 7,
+      "ro": "poivre",
+      "ru": "перец",
+      "note": ""
+    },
+    {
+      "id": 228,
+      "groupId": 7,
+      "ro": "vinaigre",
+      "ru": "уксус",
+      "note": ""
+    },
+    {
+      "id": 229,
+      "groupId": 7,
+      "ro": "miel",
+      "ru": "мёд",
+      "note": ""
+    },
+    {
+      "id": 230,
+      "groupId": 7,
+      "ro": "farine",
+      "ru": "мука",
+      "note": ""
+    },
+    {
+      "id": 231,
+      "groupId": 7,
+      "ro": "soupe",
+      "ru": "суп",
+      "note": ""
+    },
+    {
+      "id": 232,
+      "groupId": 7,
+      "ro": "salade",
+      "ru": "салат",
+      "note": ""
+    },
+    {
+      "id": 233,
+      "groupId": 7,
+      "ro": "steak",
+      "ru": "стейк",
+      "note": ""
+    },
+    {
+      "id": 234,
+      "groupId": 7,
+      "ro": "saucisse",
+      "ru": "сосиска",
+      "note": ""
+    },
+    {
+      "id": 235,
+      "groupId": 7,
+      "ro": "jambon",
+      "ru": "ветчина",
+      "note": ""
+    },
+    {
+      "id": 236,
+      "groupId": 7,
+      "ro": "saumon",
+      "ru": "лосось",
+      "note": ""
+    },
+    {
+      "id": 237,
+      "groupId": 7,
+      "ro": "thon",
+      "ru": "тунец",
+      "note": ""
+    },
+    {
+      "id": 238,
+      "groupId": 7,
+      "ro": "crevette",
+      "ru": "креветка",
+      "note": ""
+    },
+    {
+      "id": 239,
+      "groupId": 7,
+      "ro": "calmar",
+      "ru": "кальмар",
+      "note": ""
+    },
+    {
+      "id": 240,
+      "groupId": 7,
+      "ro": "moules",
+      "ru": "мидии",
+      "note": ""
+    },
+    {
+      "id": 241,
+      "groupId": 7,
+      "ro": "homard",
+      "ru": "омар",
+      "note": ""
+    },
+    {
+      "id": 242,
+      "groupId": 7,
+      "ro": "pomme de terre",
+      "ru": "картофель",
+      "note": ""
+    },
+    {
+      "id": 243,
+      "groupId": 7,
+      "ro": "tomate",
+      "ru": "помидор",
+      "note": ""
+    },
+    {
+      "id": 244,
+      "groupId": 7,
+      "ro": "oignon",
+      "ru": "лук",
+      "note": ""
+    },
+    {
+      "id": 245,
+      "groupId": 7,
+      "ro": "ail",
+      "ru": "чеснок",
+      "note": ""
+    },
+    {
+      "id": 246,
+      "groupId": 7,
+      "ro": "champignon",
+      "ru": "гриб",
+      "note": ""
+    },
+    {
+      "id": 247,
+      "groupId": 7,
+      "ro": "olive",
+      "ru": "олива",
+      "note": ""
+    },
+    {
+      "id": 248,
+      "groupId": 7,
+      "ro": "maïs",
+      "ru": "кукуруза",
+      "note": ""
+    },
+    {
+      "id": 249,
+      "groupId": 7,
+      "ro": "haricot",
+      "ru": "фасоль",
+      "note": ""
+    },
+    {
+      "id": 250,
+      "groupId": 7,
+      "ro": "lentille",
+      "ru": "чечевица",
+      "note": ""
+    },
+    {
+      "id": 251,
+      "groupId": 7,
+      "ro": "basilic",
+      "ru": "базилик",
+      "note": ""
+    },
+    {
+      "id": 252,
+      "groupId": 7,
+      "ro": "persil",
+      "ru": "петрушка",
+      "note": ""
+    },
+    {
+      "id": 253,
+      "groupId": 7,
+      "ro": "romarin",
+      "ru": "romarin",
+      "note": ""
+    },
+    {
+      "id": 254,
+      "groupId": 7,
+      "ro": "cannelle",
+      "ru": "корица",
+      "note": ""
+    },
+    {
+      "id": 255,
+      "groupId": 7,
+      "ro": "vanille",
+      "ru": "ваниль",
+      "note": ""
+    },
+    {
+      "id": 256,
+      "groupId": 7,
+      "ro": "chocolat",
+      "ru": "шоколад",
+      "note": ""
+    },
+    {
+      "id": 257,
+      "groupId": 7,
+      "ro": "gâteau",
+      "ru": "торт / пирог",
+      "note": ""
+    },
+    {
+      "id": 258,
+      "groupId": 7,
+      "ro": "biscuit",
+      "ru": "печенье",
+      "note": ""
+    },
+    {
+      "id": 259,
+      "groupId": 7,
+      "ro": "glace",
+      "ru": "мороженое",
+      "note": ""
+    },
+    {
+      "id": 260,
+      "groupId": 7,
+      "ro": "crêpe",
+      "ru": "блин",
+      "note": ""
+    },
+    {
+      "id": 261,
+      "groupId": 7,
+      "ro": "croissant",
+      "ru": "круассан",
+      "note": ""
+    },
+    {
+      "id": 262,
+      "groupId": 7,
+      "ro": "baguette",
+      "ru": "багет",
+      "note": ""
+    },
+    {
+      "id": 263,
+      "groupId": 7,
+      "ro": "quiche",
+      "ru": "киш",
+      "note": ""
+    },
+    {
+      "id": 264,
+      "groupId": 7,
+      "ro": "ratatouille",
+      "ru": "ратататуй",
+      "note": ""
+    },
+    {
+      "id": 265,
+      "groupId": 7,
+      "ro": "bouillabaisse",
+      "ru": "буйабес",
+      "note": ""
+    },
+    {
+      "id": 266,
+      "groupId": 7,
+      "ro": "cassoulet",
+      "ru": "кассуле",
+      "note": ""
+    },
+    {
+      "id": 267,
+      "groupId": 7,
+      "ro": "sauce",
+      "ru": "соус",
+      "note": ""
+    },
+    {
+      "id": 268,
+      "groupId": 7,
+      "ro": "vinaigrette",
+      "ru": "винегрет",
+      "note": ""
+    },
+    {
+      "id": 269,
+      "groupId": 7,
+      "ro": "mayonnaise",
+      "ru": "майонез",
+      "note": ""
+    },
+    {
+      "id": 270,
+      "groupId": 8,
+      "ro": "pomme",
+      "ru": "яблоко",
+      "note": ""
+    },
+    {
+      "id": 271,
+      "groupId": 8,
+      "ro": "poire",
+      "ru": "груша",
+      "note": ""
+    },
+    {
+      "id": 272,
+      "groupId": 8,
+      "ro": "banane",
+      "ru": "банан",
+      "note": ""
+    },
+    {
+      "id": 273,
+      "groupId": 8,
+      "ro": "orange",
+      "ru": "апельсин",
+      "note": ""
+    },
+    {
+      "id": 274,
+      "groupId": 8,
+      "ro": "citron",
+      "ru": "лимон",
+      "note": ""
+    },
+    {
+      "id": 275,
+      "groupId": 8,
+      "ro": "fraise",
+      "ru": "клубника",
+      "note": ""
+    },
+    {
+      "id": 276,
+      "groupId": 8,
+      "ro": "cerise",
+      "ru": "вишня",
+      "note": ""
+    },
+    {
+      "id": 277,
+      "groupId": 8,
+      "ro": "raisin",
+      "ru": "виноград",
+      "note": ""
+    },
+    {
+      "id": 278,
+      "groupId": 8,
+      "ro": "pêche",
+      "ru": "персик",
+      "note": ""
+    },
+    {
+      "id": 279,
+      "groupId": 8,
+      "ro": "abricot",
+      "ru": "абрикос",
+      "note": ""
+    },
+    {
+      "id": 280,
+      "groupId": 8,
+      "ro": "melon",
+      "ru": "дыня",
+      "note": ""
+    },
+    {
+      "id": 281,
+      "groupId": 8,
+      "ro": "pastèque",
+      "ru": "арбуз",
+      "note": ""
+    },
+    {
+      "id": 282,
+      "groupId": 8,
+      "ro": "figue",
+      "ru": "инжир",
+      "note": ""
+    },
+    {
+      "id": 283,
+      "groupId": 8,
+      "ro": "mangue",
+      "ru": "манго",
+      "note": ""
+    },
+    {
+      "id": 284,
+      "groupId": 8,
+      "ro": "kiwi",
+      "ru": "киви",
+      "note": ""
+    },
+    {
+      "id": 285,
+      "groupId": 8,
+      "ro": "ananas",
+      "ru": "ананас",
+      "note": ""
+    },
+    {
+      "id": 286,
+      "groupId": 8,
+      "ro": "framboise",
+      "ru": "малина",
+      "note": ""
+    },
+    {
+      "id": 287,
+      "groupId": 8,
+      "ro": "myrtille",
+      "ru": "черника",
+      "note": ""
+    },
+    {
+      "id": 288,
+      "groupId": 8,
+      "ro": "prune",
+      "ru": "слива",
+      "note": ""
+    },
+    {
+      "id": 289,
+      "groupId": 8,
+      "ro": "grenade",
+      "ru": "гранат",
+      "note": ""
+    },
+    {
+      "id": 290,
+      "groupId": 8,
+      "ro": "mandarine",
+      "ru": "мандарин",
+      "note": ""
+    },
+    {
+      "id": 291,
+      "groupId": 8,
+      "ro": "pamplemousse",
+      "ru": "грейпфрут",
+      "note": ""
+    },
+    {
+      "id": 292,
+      "groupId": 8,
+      "ro": "avocat",
+      "ru": "авокадо",
+      "note": ""
+    },
+    {
+      "id": 293,
+      "groupId": 8,
+      "ro": "noix de coco",
+      "ru": "кокос",
+      "note": ""
+    },
+    {
+      "id": 294,
+      "groupId": 8,
+      "ro": "carotte",
+      "ru": "морковь",
+      "note": ""
+    },
+    {
+      "id": 295,
+      "groupId": 8,
+      "ro": "concombre",
+      "ru": "огурец",
+      "note": ""
+    },
+    {
+      "id": 296,
+      "groupId": 8,
+      "ro": "courgette",
+      "ru": "кабачок",
+      "note": ""
+    },
+    {
+      "id": 297,
+      "groupId": 8,
+      "ro": "aubergine",
+      "ru": "баклажан",
+      "note": ""
+    },
+    {
+      "id": 298,
+      "groupId": 8,
+      "ro": "poivron",
+      "ru": "перец (овощ)",
+      "note": ""
+    },
+    {
+      "id": 299,
+      "groupId": 8,
+      "ro": "épinards",
+      "ru": "шпинат",
+      "note": ""
+    },
+    {
+      "id": 300,
+      "groupId": 8,
+      "ro": "chou",
+      "ru": "капуста",
+      "note": ""
+    },
+    {
+      "id": 301,
+      "groupId": 8,
+      "ro": "brocoli",
+      "ru": "брокколи",
+      "note": ""
+    },
+    {
+      "id": 302,
+      "groupId": 8,
+      "ro": "chou-fleur",
+      "ru": "цветная капуста",
+      "note": ""
+    },
+    {
+      "id": 303,
+      "groupId": 8,
+      "ro": "petits pois",
+      "ru": "горошек",
+      "note": ""
+    },
+    {
+      "id": 304,
+      "groupId": 8,
+      "ro": "asperge",
+      "ru": "спаржа",
+      "note": ""
+    },
+    {
+      "id": 305,
+      "groupId": 8,
+      "ro": "céleri",
+      "ru": "сельдерей",
+      "note": ""
+    },
+    {
+      "id": 306,
+      "groupId": 8,
+      "ro": "laitue",
+      "ru": "латук",
+      "note": ""
+    },
+    {
+      "id": 307,
+      "groupId": 8,
+      "ro": "navet",
+      "ru": "репа",
+      "note": ""
+    },
+    {
+      "id": 308,
+      "groupId": 8,
+      "ro": "betterave",
+      "ru": "свёкла",
+      "note": ""
+    },
+    {
+      "id": 309,
+      "groupId": 8,
+      "ro": "citrouille",
+      "ru": "тыква",
+      "note": ""
+    },
+    {
+      "id": 310,
+      "groupId": 8,
+      "ro": "artichaut",
+      "ru": "артишок",
+      "note": ""
+    },
+    {
+      "id": 311,
+      "groupId": 8,
+      "ro": "poireau",
+      "ru": "лук-порей",
+      "note": ""
+    },
+    {
+      "id": 312,
+      "groupId": 9,
+      "ro": "eau",
+      "ru": "вода",
+      "note": ""
+    },
+    {
+      "id": 313,
+      "groupId": 9,
+      "ro": "café",
+      "ru": "кофе",
+      "note": ""
+    },
+    {
+      "id": 314,
+      "groupId": 9,
+      "ro": "thé",
+      "ru": "чай",
+      "note": ""
+    },
+    {
+      "id": 315,
+      "groupId": 9,
+      "ro": "jus",
+      "ru": "сок",
+      "note": ""
+    },
+    {
+      "id": 316,
+      "groupId": 9,
+      "ro": "lait",
+      "ru": "молоко",
+      "note": ""
+    },
+    {
+      "id": 317,
+      "groupId": 9,
+      "ro": "vin",
+      "ru": "вино",
+      "note": ""
+    },
+    {
+      "id": 318,
+      "groupId": 9,
+      "ro": "bière",
+      "ru": "пиво",
+      "note": ""
+    },
+    {
+      "id": 319,
+      "groupId": 9,
+      "ro": "champagne",
+      "ru": "шампанское",
+      "note": ""
+    },
+    {
+      "id": 320,
+      "groupId": 9,
+      "ro": "cidre",
+      "ru": "сидр",
+      "note": ""
+    },
+    {
+      "id": 321,
+      "groupId": 9,
+      "ro": "cocktail",
+      "ru": "коктейль",
+      "note": ""
+    },
+    {
+      "id": 322,
+      "groupId": 9,
+      "ro": "limonade",
+      "ru": "лимонад",
+      "note": ""
+    },
+    {
+      "id": 323,
+      "groupId": 9,
+      "ro": "eau gazeuse",
+      "ru": "газированная вода",
+      "note": ""
+    },
+    {
+      "id": 324,
+      "groupId": 9,
+      "ro": "eau plate",
+      "ru": "негазированная вода",
+      "note": ""
+    },
+    {
+      "id": 325,
+      "groupId": 9,
+      "ro": "cognac",
+      "ru": "коньяк",
+      "note": ""
+    },
+    {
+      "id": 326,
+      "groupId": 9,
+      "ro": "pastis",
+      "ru": "пастис",
+      "note": ""
+    },
+    {
+      "id": 327,
+      "groupId": 9,
+      "ro": "réalité café",
+      "ru": "кафе в реальности",
+      "note": ""
+    },
+    {
+      "id": 328,
+      "groupId": 9,
+      "ro": "expresso",
+      "ru": "эспрессо",
+      "note": ""
+    },
+    {
+      "id": 329,
+      "groupId": 9,
+      "ro": "cappuccino",
+      "ru": "капучино",
+      "note": ""
+    },
+    {
+      "id": 330,
+      "groupId": 9,
+      "ro": "chocolat chaud",
+      "ru": "горячий шоколад",
+      "note": ""
+    },
+    {
+      "id": 331,
+      "groupId": 9,
+      "ro": "infusion",
+      "ru": "травяной чай",
+      "note": ""
+    },
+    {
+      "id": 332,
+      "groupId": 10,
+      "ro": "maison",
+      "ru": "дом",
+      "note": ""
+    },
+    {
+      "id": 333,
+      "groupId": 10,
+      "ro": "appartement",
+      "ru": "квартира",
+      "note": ""
+    },
+    {
+      "id": 334,
+      "groupId": 10,
+      "ro": "pièce",
+      "ru": "комната",
+      "note": ""
+    },
+    {
+      "id": 335,
+      "groupId": 10,
+      "ro": "cuisine",
+      "ru": "кухня",
+      "note": ""
+    },
+    {
+      "id": 336,
+      "groupId": 10,
+      "ro": "salle de bain",
+      "ru": "ванная",
+      "note": ""
+    },
+    {
+      "id": 337,
+      "groupId": 10,
+      "ro": "chambre",
+      "ru": "спальня",
+      "note": ""
+    },
+    {
+      "id": 338,
+      "groupId": 10,
+      "ro": "salon",
+      "ru": "гостиная",
+      "note": ""
+    },
+    {
+      "id": 339,
+      "groupId": 10,
+      "ro": "couloir",
+      "ru": "коридор",
+      "note": ""
+    },
+    {
+      "id": 340,
+      "groupId": 10,
+      "ro": "entrée",
+      "ru": "прихожая",
+      "note": ""
+    },
+    {
+      "id": 341,
+      "groupId": 10,
+      "ro": "balcon",
+      "ru": "балкон",
+      "note": ""
+    },
+    {
+      "id": 342,
+      "groupId": 10,
+      "ro": "terrasse",
+      "ru": "терраса",
+      "note": ""
+    },
+    {
+      "id": 343,
+      "groupId": 10,
+      "ro": "jardin",
+      "ru": "сад",
+      "note": ""
+    },
+    {
+      "id": 344,
+      "groupId": 10,
+      "ro": "garage",
+      "ru": "гараж",
+      "note": ""
+    },
+    {
+      "id": 345,
+      "groupId": 10,
+      "ro": "cave",
+      "ru": "подвал",
+      "note": ""
+    },
+    {
+      "id": 346,
+      "groupId": 10,
+      "ro": "grenier",
+      "ru": "чердак",
+      "note": ""
+    },
+    {
+      "id": 347,
+      "groupId": 10,
+      "ro": "escalier",
+      "ru": "лестница",
+      "note": ""
+    },
+    {
+      "id": 348,
+      "groupId": 10,
+      "ro": "ascenseur",
+      "ru": "лифт",
+      "note": ""
+    },
+    {
+      "id": 349,
+      "groupId": 10,
+      "ro": "porte",
+      "ru": "дверь",
+      "note": ""
+    },
+    {
+      "id": 350,
+      "groupId": 10,
+      "ro": "fenêtre",
+      "ru": "окно",
+      "note": ""
+    },
+    {
+      "id": 351,
+      "groupId": 10,
+      "ro": "sol",
+      "ru": "пол",
+      "note": ""
+    },
+    {
+      "id": 352,
+      "groupId": 10,
+      "ro": "plafond",
+      "ru": "потолок",
+      "note": ""
+    },
+    {
+      "id": 353,
+      "groupId": 10,
+      "ro": "mur",
+      "ru": "стена",
+      "note": ""
+    },
+    {
+      "id": 354,
+      "groupId": 10,
+      "ro": "toit",
+      "ru": "крыша",
+      "note": ""
+    },
+    {
+      "id": 355,
+      "groupId": 10,
+      "ro": "lit",
+      "ru": "кровать",
+      "note": ""
+    },
+    {
+      "id": 356,
+      "groupId": 10,
+      "ro": "canapé",
+      "ru": "диван",
+      "note": ""
+    },
+    {
+      "id": 357,
+      "groupId": 10,
+      "ro": "fauteuil",
+      "ru": "кресло",
+      "note": ""
+    },
+    {
+      "id": 358,
+      "groupId": 10,
+      "ro": "table",
+      "ru": "стол",
+      "note": ""
+    },
+    {
+      "id": 359,
+      "groupId": 10,
+      "ro": "chaise",
+      "ru": "стул",
+      "note": ""
+    },
+    {
+      "id": 360,
+      "groupId": 10,
+      "ro": "armoire",
+      "ru": "шкаф",
+      "note": ""
+    },
+    {
+      "id": 361,
+      "groupId": 10,
+      "ro": "tiroir",
+      "ru": "ящик",
+      "note": ""
+    },
+    {
+      "id": 362,
+      "groupId": 10,
+      "ro": "étagère",
+      "ru": "полка",
+      "note": ""
+    },
+    {
+      "id": 363,
+      "groupId": 10,
+      "ro": "lampe",
+      "ru": "лампа",
+      "note": ""
+    },
+    {
+      "id": 364,
+      "groupId": 10,
+      "ro": "miroir",
+      "ru": "зеркало",
+      "note": ""
+    },
+    {
+      "id": 365,
+      "groupId": 10,
+      "ro": "tapis",
+      "ru": "ковёр",
+      "note": ""
+    },
+    {
+      "id": 366,
+      "groupId": 10,
+      "ro": "rideau",
+      "ru": "штора",
+      "note": ""
+    },
+    {
+      "id": 367,
+      "groupId": 10,
+      "ro": "coussin",
+      "ru": "подушка",
+      "note": ""
+    },
+    {
+      "id": 368,
+      "groupId": 10,
+      "ro": "couverture",
+      "ru": "одеяло",
+      "note": ""
+    },
+    {
+      "id": 369,
+      "groupId": 10,
+      "ro": "drap",
+      "ru": "простыня",
+      "note": ""
+    },
+    {
+      "id": 370,
+      "groupId": 10,
+      "ro": "tableau",
+      "ru": "картина",
+      "note": ""
+    },
+    {
+      "id": 371,
+      "groupId": 10,
+      "ro": "réfrigérateur",
+      "ru": "холодильник",
+      "note": ""
+    },
+    {
+      "id": 372,
+      "groupId": 10,
+      "ro": "lave-linge",
+      "ru": "стиральная машина",
+      "note": ""
+    },
+    {
+      "id": 373,
+      "groupId": 10,
+      "ro": "lave-vaisselle",
+      "ru": "посудомоечная машина",
+      "note": ""
+    },
+    {
+      "id": 374,
+      "groupId": 10,
+      "ro": "four",
+      "ru": "духовка",
+      "note": ""
+    },
+    {
+      "id": 375,
+      "groupId": 10,
+      "ro": "cuisinière",
+      "ru": "плита",
+      "note": ""
+    },
+    {
+      "id": 376,
+      "groupId": 10,
+      "ro": "micro-ondes",
+      "ru": "микроволновка",
+      "note": ""
+    },
+    {
+      "id": 377,
+      "groupId": 10,
+      "ro": "télévision",
+      "ru": "телевизор",
+      "note": ""
+    },
+    {
+      "id": 378,
+      "groupId": 10,
+      "ro": "radio",
+      "ru": "радио",
+      "note": ""
+    },
+    {
+      "id": 381,
+      "groupId": 10,
+      "ro": "climatiseur",
+      "ru": "кондиционер",
+      "note": ""
+    },
+    {
+      "id": 382,
+      "groupId": 10,
+      "ro": "chauffage",
+      "ru": "отопление",
+      "note": ""
+    },
+    {
+      "id": 383,
+      "groupId": 10,
+      "ro": "robinet",
+      "ru": "кран",
+      "note": ""
+    },
+    {
+      "id": 384,
+      "groupId": 10,
+      "ro": "douche",
+      "ru": "душ",
+      "note": ""
+    },
+    {
+      "id": 385,
+      "groupId": 10,
+      "ro": "baignoire",
+      "ru": "ванна",
+      "note": ""
+    },
+    {
+      "id": 386,
+      "groupId": 10,
+      "ro": "WC",
+      "ru": "туалет",
+      "note": ""
+    },
+    {
+      "id": 387,
+      "groupId": 11,
+      "ro": "assiette",
+      "ru": "тарелка",
+      "note": ""
+    },
+    {
+      "id": 388,
+      "groupId": 11,
+      "ro": "verre",
+      "ru": "стакан",
+      "note": ""
+    },
+    {
+      "id": 389,
+      "groupId": 11,
+      "ro": "tasse",
+      "ru": "чашка",
+      "note": ""
+    },
+    {
+      "id": 390,
+      "groupId": 11,
+      "ro": "couteau",
+      "ru": "нож",
+      "note": ""
+    },
+    {
+      "id": 391,
+      "groupId": 11,
+      "ro": "fourchette",
+      "ru": "вилка",
+      "note": ""
+    },
+    {
+      "id": 392,
+      "groupId": 11,
+      "ro": "cuillère",
+      "ru": "ложка",
+      "note": ""
+    },
+    {
+      "id": 393,
+      "groupId": 11,
+      "ro": "casserole",
+      "ru": "кастрюля",
+      "note": ""
+    },
+    {
+      "id": 394,
+      "groupId": 11,
+      "ro": "poêle",
+      "ru": "сковорода",
+      "note": ""
+    },
+    {
+      "id": 395,
+      "groupId": 11,
+      "ro": "couvercle",
+      "ru": "крышка",
+      "note": ""
+    },
+    {
+      "id": 396,
+      "groupId": 11,
+      "ro": "passoire",
+      "ru": "дуршлаг",
+      "note": ""
+    },
+    {
+      "id": 397,
+      "groupId": 11,
+      "ro": "planche à découper",
+      "ru": "разделочная доска",
+      "note": ""
+    },
+    {
+      "id": 398,
+      "groupId": 11,
+      "ro": "louche",
+      "ru": "половник",
+      "note": ""
+    },
+    {
+      "id": 399,
+      "groupId": 11,
+      "ro": "mixeur",
+      "ru": "блендер",
+      "note": ""
+    },
+    {
+      "id": 400,
+      "groupId": 11,
+      "ro": "grille-pain",
+      "ru": "тостер",
+      "note": ""
+    },
+    {
+      "id": 401,
+      "groupId": 11,
+      "ro": "tire-bouchon",
+      "ru": "штопор",
+      "note": ""
+    },
+    {
+      "id": 402,
+      "groupId": 11,
+      "ro": "bouteille",
+      "ru": "бутылка",
+      "note": ""
+    },
+    {
+      "id": 403,
+      "groupId": 11,
+      "ro": "bocal",
+      "ru": "банка",
+      "note": ""
+    },
+    {
+      "id": 404,
+      "groupId": 11,
+      "ro": "plateau",
+      "ru": "поднос",
+      "note": ""
+    },
+    {
+      "id": 405,
+      "groupId": 11,
+      "ro": "serviette",
+      "ru": "салфетка",
+      "note": ""
+    },
+    {
+      "id": 406,
+      "groupId": 11,
+      "ro": "nappe",
+      "ru": "скатерть",
+      "note": ""
+    },
+    {
+      "id": 407,
+      "groupId": 11,
+      "ro": "carafe",
+      "ru": "кувшин",
+      "note": ""
+    },
+    {
+      "id": 408,
+      "groupId": 11,
+      "ro": "théière",
+      "ru": "чайник (заварной)",
+      "note": ""
+    },
+    {
+      "id": 409,
+      "groupId": 11,
+      "ro": "bouilloire",
+      "ru": "электрочайник",
+      "note": ""
+    },
+    {
+      "id": 410,
+      "groupId": 11,
+      "ro": "plat",
+      "ru": "противень",
+      "note": ""
+    },
+    {
+      "id": 411,
+      "groupId": 12,
+      "ro": "montagne",
+      "ru": "гора",
+      "note": ""
+    },
+    {
+      "id": 412,
+      "groupId": 12,
+      "ro": "colline",
+      "ru": "холм",
+      "note": ""
+    },
+    {
+      "id": 413,
+      "groupId": 12,
+      "ro": "vallée",
+      "ru": "долина",
+      "note": ""
+    },
+    {
+      "id": 414,
+      "groupId": 12,
+      "ro": "rivière",
+      "ru": "река",
+      "note": ""
+    },
+    {
+      "id": 415,
+      "groupId": 12,
+      "ro": "lac",
+      "ru": "озеро",
+      "note": ""
+    },
+    {
+      "id": 416,
+      "groupId": 12,
+      "ro": "mer",
+      "ru": "море",
+      "note": ""
+    },
+    {
+      "id": 417,
+      "groupId": 12,
+      "ro": "océan",
+      "ru": "океан",
+      "note": ""
+    },
+    {
+      "id": 418,
+      "groupId": 12,
+      "ro": "plage",
+      "ru": "пляж",
+      "note": ""
+    },
+    {
+      "id": 419,
+      "groupId": 12,
+      "ro": "île",
+      "ru": "остров",
+      "note": ""
+    },
+    {
+      "id": 420,
+      "groupId": 12,
+      "ro": "péninsule",
+      "ru": "полуостров",
+      "note": ""
+    },
+    {
+      "id": 421,
+      "groupId": 12,
+      "ro": "plaine",
+      "ru": "равнина",
+      "note": ""
+    },
+    {
+      "id": 422,
+      "groupId": 12,
+      "ro": "désert",
+      "ru": "пустыня",
+      "note": ""
+    },
+    {
+      "id": 423,
+      "groupId": 12,
+      "ro": "forêt",
+      "ru": "лес",
+      "note": ""
+    },
+    {
+      "id": 424,
+      "groupId": 12,
+      "ro": "jungle",
+      "ru": "джунгли",
+      "note": ""
+    },
+    {
+      "id": 425,
+      "groupId": 12,
+      "ro": "prairie",
+      "ru": "луг",
+      "note": ""
+    },
+    {
+      "id": 426,
+      "groupId": 12,
+      "ro": "champ",
+      "ru": "поле",
+      "note": ""
+    },
+    {
+      "id": 427,
+      "groupId": 12,
+      "ro": "rocher",
+      "ru": "скала",
+      "note": ""
+    },
+    {
+      "id": 428,
+      "groupId": 12,
+      "ro": "pierre",
+      "ru": "камень",
+      "note": ""
+    },
+    {
+      "id": 429,
+      "groupId": 12,
+      "ro": "sable",
+      "ru": "песок",
+      "note": ""
+    },
+    {
+      "id": 430,
+      "groupId": 12,
+      "ro": "boue",
+      "ru": "грязь",
+      "note": ""
+    },
+    {
+      "id": 431,
+      "groupId": 12,
+      "ro": "terre",
+      "ru": "земля / почва",
+      "note": ""
+    },
+    {
+      "id": 432,
+      "groupId": 12,
+      "ro": "ciel",
+      "ru": "небо",
+      "note": ""
+    },
+    {
+      "id": 433,
+      "groupId": 12,
+      "ro": "soleil",
+      "ru": "солнце",
+      "note": ""
+    },
+    {
+      "id": 434,
+      "groupId": 12,
+      "ro": "lune",
+      "ru": "lune",
+      "note": ""
+    },
+    {
+      "id": 435,
+      "groupId": 12,
+      "ro": "étoiles",
+      "ru": "звёзды",
+      "note": ""
+    },
+    {
+      "id": 436,
+      "groupId": 12,
+      "ro": "volcan",
+      "ru": "вулкан",
+      "note": ""
+    },
+    {
+      "id": 437,
+      "groupId": 12,
+      "ro": "cascade",
+      "ru": "водопад",
+      "note": ""
+    },
+    {
+      "id": 438,
+      "groupId": 12,
+      "ro": "marais",
+      "ru": "болото",
+      "note": ""
+    },
+    {
+      "id": 439,
+      "groupId": 12,
+      "ro": "glacier",
+      "ru": "ледник",
+      "note": ""
+    },
+    {
+      "id": 440,
+      "groupId": 12,
+      "ro": "falaise",
+      "ru": "утёс",
+      "note": ""
+    },
+    {
+      "id": 441,
+      "groupId": 12,
+      "ro": "grotte",
+      "ru": "пещера",
+      "note": ""
+    },
+    {
+      "id": 442,
+      "groupId": 12,
+      "ro": "planète",
+      "ru": "планète",
+      "note": ""
+    },
+    {
+      "id": 443,
+      "groupId": 12,
+      "ro": "atmosphère",
+      "ru": "атмосфера",
+      "note": ""
+    },
+    {
+      "id": 444,
+      "groupId": 12,
+      "ro": "arbre",
+      "ru": "дерево",
+      "note": ""
+    },
+    {
+      "id": 445,
+      "groupId": 12,
+      "ro": "fleur",
+      "ru": "цветок",
+      "note": ""
+    },
+    {
+      "id": 446,
+      "groupId": 12,
+      "ro": "herbe",
+      "ru": "трава",
+      "note": ""
+    },
+    {
+      "id": 447,
+      "groupId": 12,
+      "ro": "feuille",
+      "ru": "лист",
+      "note": ""
+    },
+    {
+      "id": 448,
+      "groupId": 12,
+      "ro": "racine",
+      "ru": "корень",
+      "note": ""
+    },
+    {
+      "id": 449,
+      "groupId": 12,
+      "ro": "branche",
+      "ru": "ветка",
+      "note": ""
+    },
+    {
+      "id": 450,
+      "groupId": 12,
+      "ro": "écorce",
+      "ru": "кора",
+      "note": ""
+    },
+    {
+      "id": 451,
+      "groupId": 13,
+      "ro": "chien",
+      "ru": "собака",
+      "note": ""
+    },
+    {
+      "id": 452,
+      "groupId": 13,
+      "ro": "chat",
+      "ru": "кошка",
+      "note": ""
+    },
+    {
+      "id": 453,
+      "groupId": 13,
+      "ro": "cheval",
+      "ru": "лошадь",
+      "note": ""
+    },
+    {
+      "id": 454,
+      "groupId": 13,
+      "ro": "vache",
+      "ru": "корова",
+      "note": ""
+    },
+    {
+      "id": 455,
+      "groupId": 13,
+      "ro": "cochon",
+      "ru": "свинья",
+      "note": ""
+    },
+    {
+      "id": 456,
+      "groupId": 13,
+      "ro": "mouton",
+      "ru": "овца",
+      "note": ""
+    },
+    {
+      "id": 457,
+      "groupId": 13,
+      "ro": "chèvre",
+      "ru": "коза",
+      "note": ""
+    },
+    {
+      "id": 458,
+      "groupId": 13,
+      "ro": "poule",
+      "ru": "курица",
+      "note": "птица"
+    },
+    {
+      "id": 459,
+      "groupId": 13,
+      "ro": "lapin",
+      "ru": "кролик",
+      "note": ""
+    },
+    {
+      "id": 460,
+      "groupId": 13,
+      "ro": "souris",
+      "ru": "мышь",
+      "note": ""
+    },
+    {
+      "id": 461,
+      "groupId": 13,
+      "ro": "rat",
+      "ru": "крыса",
+      "note": ""
+    },
+    {
+      "id": 462,
+      "groupId": 13,
+      "ro": "lion",
+      "ru": "лев",
+      "note": ""
+    },
+    {
+      "id": 463,
+      "groupId": 13,
+      "ro": "tigre",
+      "ru": "тигр",
+      "note": ""
+    },
+    {
+      "id": 464,
+      "groupId": 13,
+      "ro": "ours",
+      "ru": "медведь",
+      "note": ""
+    },
+    {
+      "id": 465,
+      "groupId": 13,
+      "ro": "loup",
+      "ru": "волк",
+      "note": ""
+    },
+    {
+      "id": 466,
+      "groupId": 13,
+      "ro": "renard",
+      "ru": "лисица",
+      "note": ""
+    },
+    {
+      "id": 467,
+      "groupId": 13,
+      "ro": "cerf",
+      "ru": "олень",
+      "note": ""
+    },
+    {
+      "id": 468,
+      "groupId": 13,
+      "ro": "éléphant",
+      "ru": "слон",
+      "note": ""
+    },
+    {
+      "id": 469,
+      "groupId": 13,
+      "ro": "girafe",
+      "ru": "жираф",
+      "note": ""
+    },
+    {
+      "id": 470,
+      "groupId": 13,
+      "ro": "singe",
+      "ru": "обезьяна",
+      "note": ""
+    },
+    {
+      "id": 471,
+      "groupId": 13,
+      "ro": "gorille",
+      "ru": "горилла",
+      "note": ""
+    },
+    {
+      "id": 472,
+      "groupId": 13,
+      "ro": "zèbre",
+      "ru": "зебра",
+      "note": ""
+    },
+    {
+      "id": 473,
+      "groupId": 13,
+      "ro": "rhinocéros",
+      "ru": "носорог",
+      "note": ""
+    },
+    {
+      "id": 474,
+      "groupId": 13,
+      "ro": "hippopotame",
+      "ru": "бегемот",
+      "note": ""
+    },
+    {
+      "id": 475,
+      "groupId": 13,
+      "ro": "léopard",
+      "ru": "леопард",
+      "note": ""
+    },
+    {
+      "id": 476,
+      "groupId": 13,
+      "ro": "crocodile",
+      "ru": "крокodил",
+      "note": ""
+    },
+    {
+      "id": 477,
+      "groupId": 13,
+      "ro": "serpent",
+      "ru": "змея",
+      "note": ""
+    },
+    {
+      "id": 478,
+      "groupId": 13,
+      "ro": "lézard",
+      "ru": "ящерица",
+      "note": ""
+    },
+    {
+      "id": 479,
+      "groupId": 13,
+      "ro": "grenouille",
+      "ru": "лягушка",
+      "note": ""
+    },
+    {
+      "id": 480,
+      "groupId": 13,
+      "ro": "aigle",
+      "ru": "орёл",
+      "note": ""
+    },
+    {
+      "id": 481,
+      "groupId": 13,
+      "ro": "hibou",
+      "ru": "сова",
+      "note": ""
+    },
+    {
+      "id": 482,
+      "groupId": 13,
+      "ro": "perroquet",
+      "ru": "попугай",
+      "note": ""
+    },
+    {
+      "id": 483,
+      "groupId": 13,
+      "ro": "pingouin",
+      "ru": "пингвин",
+      "note": ""
+    },
+    {
+      "id": 484,
+      "groupId": 13,
+      "ro": "dauphin",
+      "ru": "дельфин",
+      "note": ""
+    },
+    {
+      "id": 485,
+      "groupId": 13,
+      "ro": "baleine",
+      "ru": "кит",
+      "note": ""
+    },
+    {
+      "id": 486,
+      "groupId": 14,
+      "ro": "temps",
+      "ru": "погода",
+      "note": ""
+    },
+    {
+      "id": 488,
+      "groupId": 14,
+      "ro": "ensoleillé",
+      "ru": "солнечный",
+      "note": ""
+    },
+    {
+      "id": 489,
+      "groupId": 14,
+      "ro": "nuage",
+      "ru": "облако",
+      "note": ""
+    },
+    {
+      "id": 490,
+      "groupId": 14,
+      "ro": "nuageux",
+      "ru": "облачный",
+      "note": ""
+    },
+    {
+      "id": 491,
+      "groupId": 14,
+      "ro": "pluie",
+      "ru": "дождь",
+      "note": ""
+    },
+    {
+      "id": 492,
+      "groupId": 14,
+      "ro": "pluvieux",
+      "ru": "дождливый",
+      "note": ""
+    },
+    {
+      "id": 493,
+      "groupId": 14,
+      "ro": "neige",
+      "ru": "снег",
+      "note": ""
+    },
+    {
+      "id": 494,
+      "groupId": 14,
+      "ro": "grêle",
+      "ru": "град",
+      "note": ""
+    },
+    {
+      "id": 495,
+      "groupId": 14,
+      "ro": "brouillard",
+      "ru": "туман",
+      "note": ""
+    },
+    {
+      "id": 496,
+      "groupId": 14,
+      "ro": "vent",
+      "ru": "ветер",
+      "note": ""
+    },
+    {
+      "id": 497,
+      "groupId": 14,
+      "ro": "venteux",
+      "ru": "ветреный",
+      "note": ""
+    },
+    {
+      "id": 498,
+      "groupId": 14,
+      "ro": "chaud",
+      "ru": "жара",
+      "note": ""
+    },
+    {
+      "id": 499,
+      "groupId": 14,
+      "ro": "froid",
+      "ru": "холод",
+      "note": ""
+    },
+    {
+      "id": 500,
+      "groupId": 14,
+      "ro": "orage",
+      "ru": "гроза",
+      "note": ""
+    },
+    {
+      "id": 501,
+      "groupId": 14,
+      "ro": "éclair",
+      "ru": "молния",
+      "note": ""
+    },
+    {
+      "id": 502,
+      "groupId": 14,
+      "ro": "tonnerre",
+      "ru": "гром",
+      "note": ""
+    },
+    {
+      "id": 503,
+      "groupId": 14,
+      "ro": "arc-en-ciel",
+      "ru": "радуга",
+      "note": ""
+    },
+    {
+      "id": 504,
+      "groupId": 14,
+      "ro": "glace",
+      "ru": "лёд",
+      "note": ""
+    },
+    {
+      "id": 505,
+      "groupId": 14,
+      "ro": "givre",
+      "ru": "иней",
+      "note": ""
+    },
+    {
+      "id": 506,
+      "groupId": 14,
+      "ro": "ouragan",
+      "ru": "ураган",
+      "note": ""
+    },
+    {
+      "id": 507,
+      "groupId": 14,
+      "ro": "inondation",
+      "ru": "наводнение",
+      "note": ""
+    },
+    {
+      "id": 508,
+      "groupId": 14,
+      "ro": "sécheresse",
+      "ru": "засуха",
+      "note": ""
+    },
+    {
+      "id": 509,
+      "groupId": 14,
+      "ro": "humidité",
+      "ru": "влажность",
+      "note": ""
+    },
+    {
+      "id": 510,
+      "groupId": 14,
+      "ro": "température",
+      "ru": "температура",
+      "note": ""
+    },
+    {
+      "id": 511,
+      "groupId": 15,
+      "ro": "ville",
+      "ru": "город",
+      "note": ""
+    },
+    {
+      "id": 512,
+      "groupId": 15,
+      "ro": "rue",
+      "ru": "улица",
+      "note": ""
+    },
+    {
+      "id": 513,
+      "groupId": 15,
+      "ro": "place",
+      "ru": "площадь",
+      "note": ""
+    },
+    {
+      "id": 514,
+      "groupId": 15,
+      "ro": "parc",
+      "ru": "парк",
+      "note": ""
+    },
+    {
+      "id": 515,
+      "groupId": 15,
+      "ro": "pont",
+      "ru": "мост",
+      "note": ""
+    },
+    {
+      "id": 516,
+      "groupId": 15,
+      "ro": "feu de circulation",
+      "ru": "светофор",
+      "note": ""
+    },
+    {
+      "id": 517,
+      "groupId": 15,
+      "ro": "trottoir",
+      "ru": "тротуар",
+      "note": ""
+    },
+    {
+      "id": 518,
+      "groupId": 15,
+      "ro": "carrefour",
+      "ru": "перекрёсток",
+      "note": ""
+    },
+    {
+      "id": 519,
+      "groupId": 15,
+      "ro": "ruelle",
+      "ru": "переулок",
+      "note": ""
+    },
+    {
+      "id": 520,
+      "groupId": 15,
+      "ro": "immeuble",
+      "ru": "здание",
+      "note": ""
+    },
+    {
+      "id": 521,
+      "groupId": 15,
+      "ro": "gratte-ciel",
+      "ru": "небоскрёб",
+      "note": ""
+    },
+    {
+      "id": 522,
+      "groupId": 15,
+      "ro": "restaurant",
+      "ru": "ресторан",
+      "note": ""
+    },
+    {
+      "id": 523,
+      "groupId": 15,
+      "ro": "café",
+      "ru": "кафе",
+      "note": ""
+    },
+    {
+      "id": 524,
+      "groupId": 15,
+      "ro": "supermarché",
+      "ru": "супермаркет",
+      "note": ""
+    },
+    {
+      "id": 525,
+      "groupId": 15,
+      "ro": "banque",
+      "ru": "банк",
+      "note": ""
+    },
+    {
+      "id": 526,
+      "groupId": 15,
+      "ro": "bureau de poste",
+      "ru": "почта",
+      "note": ""
+    },
+    {
+      "id": 527,
+      "groupId": 15,
+      "ro": "hôpital",
+      "ru": "больница",
+      "note": ""
+    },
+    {
+      "id": 528,
+      "groupId": 15,
+      "ro": "pharmacie",
+      "ru": "аптека",
+      "note": ""
+    },
+    {
+      "id": 530,
+      "groupId": 15,
+      "ro": "fontaine",
+      "ru": "фонтан",
+      "note": ""
+    },
+    {
+      "id": 531,
+      "groupId": 15,
+      "ro": "statue",
+      "ru": "статуя",
+      "note": ""
+    },
+    {
+      "id": 532,
+      "groupId": 15,
+      "ro": "monument",
+      "ru": "монумент",
+      "note": ""
+    },
+    {
+      "id": 533,
+      "groupId": 15,
+      "ro": "mairie",
+      "ru": "мэрия",
+      "note": ""
+    },
+    {
+      "id": 534,
+      "groupId": 15,
+      "ro": "police",
+      "ru": "полиция",
+      "note": ""
+    },
+    {
+      "id": 535,
+      "groupId": 15,
+      "ro": "pompiers",
+      "ru": "пожарная служба",
+      "note": ""
+    },
+    {
+      "id": 536,
+      "groupId": 15,
+      "ro": "parking",
+      "ru": "парковка",
+      "note": ""
+    },
+    {
+      "id": 537,
+      "groupId": 15,
+      "ro": "gare",
+      "ru": "вокзал",
+      "note": ""
+    },
+    {
+      "id": 538,
+      "groupId": 15,
+      "ro": "aéroport",
+      "ru": "аэропорт",
+      "note": ""
+    },
+    {
+      "id": 539,
+      "groupId": 15,
+      "ro": "port",
+      "ru": "порт",
+      "note": ""
+    },
+    {
+      "id": 540,
+      "groupId": 15,
+      "ro": "centre-ville",
+      "ru": "центр города",
+      "note": ""
+    },
+    {
+      "id": 541,
+      "groupId": 15,
+      "ro": "banlieue",
+      "ru": "пригород",
+      "note": ""
+    },
+    {
+      "id": 542,
+      "groupId": 15,
+      "ro": "quartier",
+      "ru": "район",
+      "note": ""
+    },
+    {
+      "id": 543,
+      "groupId": 16,
+      "ro": "voiture",
+      "ru": "машина",
+      "note": ""
+    },
+    {
+      "id": 544,
+      "groupId": 16,
+      "ro": "moto",
+      "ru": "мотоцикл",
+      "note": ""
+    },
+    {
+      "id": 545,
+      "groupId": 16,
+      "ro": "vélo",
+      "ru": "велосипед",
+      "note": ""
+    },
+    {
+      "id": 546,
+      "groupId": 16,
+      "ro": "bus",
+      "ru": "автобус",
+      "note": ""
+    },
+    {
+      "id": 547,
+      "groupId": 16,
+      "ro": "tramway",
+      "ru": "трамвай",
+      "note": ""
+    },
+    {
+      "id": 548,
+      "groupId": 16,
+      "ro": "métro",
+      "ru": "метро",
+      "note": ""
+    },
+    {
+      "id": 549,
+      "groupId": 16,
+      "ro": "train",
+      "ru": "поезд",
+      "note": ""
+    },
+    {
+      "id": 550,
+      "groupId": 16,
+      "ro": "avion",
+      "ru": "самолёт",
+      "note": ""
+    },
+    {
+      "id": 551,
+      "groupId": 16,
+      "ro": "hélicoptère",
+      "ru": "вертолёт",
+      "note": ""
+    },
+    {
+      "id": 552,
+      "groupId": 16,
+      "ro": "bateau",
+      "ru": "корабль",
+      "note": ""
+    },
+    {
+      "id": 553,
+      "groupId": 16,
+      "ro": "barque",
+      "ru": "лодка",
+      "note": ""
+    },
+    {
+      "id": 554,
+      "groupId": 16,
+      "ro": "taxi",
+      "ru": "такси",
+      "note": ""
+    },
+    {
+      "id": 555,
+      "groupId": 16,
+      "ro": "camion",
+      "ru": "грузовик",
+      "note": ""
+    },
+    {
+      "id": 556,
+      "groupId": 16,
+      "ro": "ambulance",
+      "ru": "скорая помощь",
+      "note": ""
+    },
+    {
+      "id": 557,
+      "groupId": 16,
+      "ro": "camion de pompiers",
+      "ru": "пожарная машина",
+      "note": ""
+    },
+    {
+      "id": 558,
+      "groupId": 16,
+      "ro": "moteur",
+      "ru": "двигатель",
+      "note": ""
+    },
+    {
+      "id": 559,
+      "groupId": 16,
+      "ro": "roue",
+      "ru": "колесо",
+      "note": ""
+    },
+    {
+      "id": 560,
+      "groupId": 16,
+      "ro": "volant",
+      "ru": "руль",
+      "note": ""
+    },
+    {
+      "id": 561,
+      "groupId": 16,
+      "ro": "frein",
+      "ru": "тормоз",
+      "note": ""
+    },
+    {
+      "id": 562,
+      "groupId": 16,
+      "ro": "accélérateur",
+      "ru": "педаль газа",
+      "note": ""
+    },
+    {
+      "id": 563,
+      "groupId": 16,
+      "ro": "essence",
+      "ru": "бензин",
+      "note": ""
+    },
+    {
+      "id": 564,
+      "groupId": 16,
+      "ro": "permis de conduire",
+      "ru": "водительское удостоверение",
+      "note": ""
+    },
+    {
+      "id": 565,
+      "groupId": 16,
+      "ro": "autoroute",
+      "ru": "шоссе",
+      "note": ""
+    },
+    {
+      "id": 566,
+      "groupId": 16,
+      "ro": "billet",
+      "ru": "билет",
+      "note": ""
+    },
+    {
+      "id": 567,
+      "groupId": 17,
+      "ro": "nord",
+      "ru": "север",
+      "note": ""
+    },
+    {
+      "id": 568,
+      "groupId": 17,
+      "ro": "sud",
+      "ru": "юг",
+      "note": ""
+    },
+    {
+      "id": 569,
+      "groupId": 17,
+      "ro": "est",
+      "ru": "восток",
+      "note": ""
+    },
+    {
+      "id": 570,
+      "groupId": 17,
+      "ro": "ouest",
+      "ru": "запад",
+      "note": ""
+    },
+    {
+      "id": 571,
+      "groupId": 17,
+      "ro": "droite",
+      "ru": "вправо / правая сторона",
+      "note": ""
+    },
+    {
+      "id": 572,
+      "groupId": 17,
+      "ro": "gauche",
+      "ru": "влево / левая сторона",
+      "note": ""
+    },
+    {
+      "id": 573,
+      "groupId": 17,
+      "ro": "tout droit",
+      "ru": "прямо",
+      "note": ""
+    },
+    {
+      "id": 576,
+      "groupId": 17,
+      "ro": "en haut",
+      "ru": "наверху",
+      "note": ""
+    },
+    {
+      "id": 577,
+      "groupId": 17,
+      "ro": "en bas",
+      "ru": "внизу",
+      "note": ""
+    },
+    {
+      "id": 578,
+      "groupId": 17,
+      "ro": "près",
+      "ru": "рядом",
+      "note": ""
+    },
+    {
+      "id": 579,
+      "groupId": 17,
+      "ro": "loin",
+      "ru": "далеко",
+      "note": ""
+    },
+    {
+      "id": 580,
+      "groupId": 17,
+      "ro": "en face",
+      "ru": "напротив",
+      "note": ""
+    },
+    {
+      "id": 581,
+      "groupId": 17,
+      "ro": "à côté",
+      "ru": "рядом / сбоку",
+      "note": ""
+    },
+    {
+      "id": 582,
+      "groupId": 17,
+      "ro": "au-delà",
+      "ru": "дальше / за",
+      "note": ""
+    },
+    {
+      "id": 583,
+      "groupId": 17,
+      "ro": "vers",
+      "ru": "в направлении",
+      "note": ""
+    },
+    {
+      "id": 584,
+      "groupId": 17,
+      "ro": "autour",
+      "ru": "вокруг",
+      "note": ""
+    },
+    {
+      "id": 585,
+      "groupId": 18,
+      "ro": "travail",
+      "ru": "работа",
+      "note": ""
+    },
+    {
+      "id": 586,
+      "groupId": 18,
+      "ro": "bureau",
+      "ru": "офис",
+      "note": ""
+    },
+    {
+      "id": 587,
+      "groupId": 18,
+      "ro": "entreprise",
+      "ru": "компания",
+      "note": ""
+    },
+    {
+      "id": 588,
+      "groupId": 18,
+      "ro": "patron",
+      "ru": "начальник",
+      "note": ""
+    },
+    {
+      "id": 589,
+      "groupId": 18,
+      "ro": "employé",
+      "ru": "сотрудник",
+      "note": ""
+    },
+    {
+      "id": 590,
+      "groupId": 18,
+      "ro": "collègue",
+      "ru": "коллега",
+      "note": ""
+    },
+    {
+      "id": 591,
+      "groupId": 18,
+      "ro": "réunion",
+      "ru": "совещание",
+      "note": ""
+    },
+    {
+      "id": 592,
+      "groupId": 18,
+      "ro": "projet",
+      "ru": "проект",
+      "note": ""
+    },
+    {
+      "id": 593,
+      "groupId": 18,
+      "ro": "délai",
+      "ru": "дедлайн",
+      "note": ""
+    },
+    {
+      "id": 594,
+      "groupId": 18,
+      "ro": "salaire",
+      "ru": "зарплата",
+      "note": ""
+    },
+    {
+      "id": 595,
+      "groupId": 18,
+      "ro": "contrat",
+      "ru": "договор",
+      "note": ""
+    },
+    {
+      "id": 596,
+      "groupId": 18,
+      "ro": "congé",
+      "ru": "отпуск",
+      "note": ""
+    },
+    {
+      "id": 597,
+      "groupId": 18,
+      "ro": "arrêt maladie",
+      "ru": "больничный",
+      "note": ""
+    },
+    {
+      "id": 598,
+      "groupId": 18,
+      "ro": "heures supplémentaires",
+      "ru": "сверхурочные",
+      "note": ""
+    },
+    {
+      "id": 599,
+      "groupId": 18,
+      "ro": "promotion",
+      "ru": "повышение",
+      "note": ""
+    },
+    {
+      "id": 600,
+      "groupId": 18,
+      "ro": "licenciement",
+      "ru": "увольнement",
+      "note": ""
+    },
+    {
+      "id": 601,
+      "groupId": 18,
+      "ro": "recrutement",
+      "ru": "найм",
+      "note": ""
+    },
+    {
+      "id": 602,
+      "groupId": 18,
+      "ro": "CV",
+      "ru": "резюме",
+      "note": ""
+    },
+    {
+      "id": 603,
+      "groupId": 18,
+      "ro": "entretien",
+      "ru": "собеседование",
+      "note": ""
+    },
+    {
+      "id": 604,
+      "groupId": 18,
+      "ro": "bureau de travail",
+      "ru": "письменный стол",
+      "note": ""
+    },
+    {
+      "id": 605,
+      "groupId": 18,
+      "ro": "document",
+      "ru": "документ",
+      "note": ""
+    },
+    {
+      "id": 606,
+      "groupId": 18,
+      "ro": "classeur",
+      "ru": "папка",
+      "note": ""
+    },
+    {
+      "id": 607,
+      "groupId": 18,
+      "ro": "stylo",
+      "ru": "ручка",
+      "note": ""
+    },
+    {
+      "id": 608,
+      "groupId": 18,
+      "ro": "crayon",
+      "ru": "карандаш",
+      "note": ""
+    },
+    {
+      "id": 609,
+      "groupId": 18,
+      "ro": "imprimante",
+      "ru": "принтер",
+      "note": ""
+    },
+    {
+      "id": 610,
+      "groupId": 18,
+      "ro": "photocopieuse",
+      "ru": "ксерокс",
+      "note": ""
+    },
+    {
+      "id": 611,
+      "groupId": 18,
+      "ro": "vidéoconférence",
+      "ru": "видеоконференция",
+      "note": ""
+    },
+    {
+      "id": 612,
+      "groupId": 18,
+      "ro": "email",
+      "ru": "электронная почта",
+      "note": ""
+    },
+    {
+      "id": 613,
+      "groupId": 18,
+      "ro": "appel téléphonique",
+      "ru": "телефонный звонок",
+      "note": ""
+    },
+    {
+      "id": 614,
+      "groupId": 18,
+      "ro": "rendez-vous",
+      "ru": "встреча / запись",
+      "note": ""
+    },
+    {
+      "id": 615,
+      "groupId": 19,
+      "ro": "médecin",
+      "ru": "врач",
+      "note": ""
+    },
+    {
+      "id": 616,
+      "groupId": 19,
+      "ro": "infirmier",
+      "ru": "медбрат",
+      "note": ""
+    },
+    {
+      "id": 617,
+      "groupId": 19,
+      "ro": "enseignant",
+      "ru": "учитель",
+      "note": ""
+    },
+    {
+      "id": 618,
+      "groupId": 19,
+      "ro": "professeur",
+      "ru": "профессор",
+      "note": ""
+    },
+    {
+      "id": 619,
+      "groupId": 19,
+      "ro": "ingénieur",
+      "ru": "инженер",
+      "note": ""
+    },
+    {
+      "id": 620,
+      "groupId": 19,
+      "ro": "architecte",
+      "ru": "архитектор",
+      "note": ""
+    },
+    {
+      "id": 621,
+      "groupId": 19,
+      "ro": "avocat",
+      "ru": "адвокат",
+      "note": ""
+    },
+    {
+      "id": 622,
+      "groupId": 19,
+      "ro": "juge",
+      "ru": "судья",
+      "note": ""
+    },
+    {
+      "id": 623,
+      "groupId": 19,
+      "ro": "policier",
+      "ru": "полицейский",
+      "note": ""
+    },
+    {
+      "id": 624,
+      "groupId": 19,
+      "ro": "pompier",
+      "ru": "пожарный",
+      "note": ""
+    },
+    {
+      "id": 625,
+      "groupId": 19,
+      "ro": "soldat",
+      "ru": "солдат",
+      "note": ""
+    },
+    {
+      "id": 626,
+      "groupId": 19,
+      "ro": "pilote",
+      "ru": "пилот",
+      "note": ""
+    },
+    {
+      "id": 627,
+      "groupId": 19,
+      "ro": "chauffeur",
+      "ru": "водитель",
+      "note": ""
+    },
+    {
+      "id": 628,
+      "groupId": 19,
+      "ro": "mécanicien",
+      "ru": "механик",
+      "note": ""
+    },
+    {
+      "id": 629,
+      "groupId": 19,
+      "ro": "électricien",
+      "ru": "электрик",
+      "note": ""
+    },
+    {
+      "id": 630,
+      "groupId": 19,
+      "ro": "plombier",
+      "ru": "сантехник",
+      "note": ""
+    },
+    {
+      "id": 631,
+      "groupId": 19,
+      "ro": "charpentier",
+      "ru": "плотник",
+      "note": ""
+    },
+    {
+      "id": 632,
+      "groupId": 19,
+      "ro": "maçon",
+      "ru": "каменщик",
+      "note": ""
+    },
+    {
+      "id": 633,
+      "groupId": 19,
+      "ro": "cuisinier",
+      "ru": "повар",
+      "note": ""
+    },
+    {
+      "id": 634,
+      "groupId": 19,
+      "ro": "serveur",
+      "ru": "официант",
+      "note": ""
+    },
+    {
+      "id": 635,
+      "groupId": 19,
+      "ro": "coiffeur",
+      "ru": "парikмахер",
+      "note": ""
+    },
+    {
+      "id": 636,
+      "groupId": 19,
+      "ro": "commerçant",
+      "ru": "торговец",
+      "note": ""
+    },
+    {
+      "id": 637,
+      "groupId": 19,
+      "ro": "comptable",
+      "ru": "бухгалтер",
+      "note": ""
+    },
+    {
+      "id": 638,
+      "groupId": 19,
+      "ro": "journaliste",
+      "ru": "журналист",
+      "note": ""
+    },
+    {
+      "id": 639,
+      "groupId": 19,
+      "ro": "écrivain",
+      "ru": "писатель",
+      "note": ""
+    },
+    {
+      "id": 640,
+      "groupId": 19,
+      "ro": "artiste",
+      "ru": "художник / артист",
+      "note": ""
+    },
+    {
+      "id": 641,
+      "groupId": 19,
+      "ro": "musicien",
+      "ru": "музыкант",
+      "note": ""
+    },
+    {
+      "id": 642,
+      "groupId": 19,
+      "ro": "acteur",
+      "ru": "актёр",
+      "note": ""
+    },
+    {
+      "id": 643,
+      "groupId": 19,
+      "ro": "scientifique",
+      "ru": "учёный",
+      "note": ""
+    },
+    {
+      "id": 644,
+      "groupId": 19,
+      "ro": "programmeur",
+      "ru": "программист",
+      "note": ""
+    },
+    {
+      "id": 645,
+      "groupId": 20,
+      "ro": "école",
+      "ru": "школа",
+      "note": ""
+    },
+    {
+      "id": 646,
+      "groupId": 20,
+      "ro": "université",
+      "ru": "университет",
+      "note": ""
+    },
+    {
+      "id": 647,
+      "groupId": 20,
+      "ro": "classe",
+      "ru": "класс",
+      "note": ""
+    },
+    {
+      "id": 648,
+      "groupId": 20,
+      "ro": "salle de classe",
+      "ru": "аудитория",
+      "note": ""
+    },
+    {
+      "id": 649,
+      "groupId": 20,
+      "ro": "bibliothèque",
+      "ru": "библиотека",
+      "note": ""
+    },
+    {
+      "id": 650,
+      "groupId": 20,
+      "ro": "laboratoire",
+      "ru": "лаборатория",
+      "note": ""
+    },
+    {
+      "id": 651,
+      "groupId": 20,
+      "ro": "cours",
+      "ru": "урок / курс",
+      "note": ""
+    },
+    {
+      "id": 652,
+      "groupId": 20,
+      "ro": "devoirs",
+      "ru": "домашнее задание",
+      "note": ""
+    },
+    {
+      "id": 653,
+      "groupId": 20,
+      "ro": "examen",
+      "ru": "экзамен",
+      "note": ""
+    },
+    {
+      "id": 654,
+      "groupId": 20,
+      "ro": "note",
+      "ru": "оценка",
+      "note": ""
+    },
+    {
+      "id": 655,
+      "groupId": 20,
+      "ro": "diplôme",
+      "ru": "диплom",
+      "note": ""
+    },
+    {
+      "id": 656,
+      "groupId": 20,
+      "ro": "licence",
+      "ru": "степень бакалавра",
+      "note": ""
+    },
+    {
+      "id": 657,
+      "groupId": 20,
+      "ro": "matière",
+      "ru": "предмет",
+      "note": ""
+    },
+    {
+      "id": 658,
+      "groupId": 20,
+      "ro": "mathématiques",
+      "ru": "математика",
+      "note": ""
+    },
+    {
+      "id": 659,
+      "groupId": 20,
+      "ro": "histoire",
+      "ru": "история",
+      "note": ""
+    },
+    {
+      "id": 660,
+      "groupId": 20,
+      "ro": "sciences",
+      "ru": "науки",
+      "note": ""
+    },
+    {
+      "id": 661,
+      "groupId": 20,
+      "ro": "langue",
+      "ru": "язык",
+      "note": ""
+    },
+    {
+      "id": 662,
+      "groupId": 20,
+      "ro": "littérature",
+      "ru": "литература",
+      "note": ""
+    },
+    {
+      "id": 663,
+      "groupId": 20,
+      "ro": "géographie",
+      "ru": "география",
+      "note": ""
+    },
+    {
+      "id": 665,
+      "groupId": 20,
+      "ro": "art",
+      "ru": "искусство",
+      "note": ""
+    },
+    {
+      "id": 666,
+      "groupId": 20,
+      "ro": "éducation physique",
+      "ru": "физкультура",
+      "note": ""
+    },
+    {
+      "id": 667,
+      "groupId": 20,
+      "ro": "étudiant",
+      "ru": "студент",
+      "note": ""
+    },
+    {
+      "id": 668,
+      "groupId": 20,
+      "ro": "manuel",
+      "ru": "учебник",
+      "note": ""
+    },
+    {
+      "id": 669,
+      "groupId": 20,
+      "ro": "cahier",
+      "ru": "тетрадь",
+      "note": ""
+    },
+    {
+      "id": 670,
+      "groupId": 21,
+      "ro": "ordinateur",
+      "ru": "компьютер",
+      "note": ""
+    },
+    {
+      "id": 671,
+      "groupId": 21,
+      "ro": "smartphone",
+      "ru": "смартфон",
+      "note": ""
+    },
+    {
+      "id": 672,
+      "groupId": 21,
+      "ro": "tablette",
+      "ru": "планшет",
+      "note": ""
+    },
+    {
+      "id": 673,
+      "groupId": 21,
+      "ro": "internet",
+      "ru": "интернет",
+      "note": ""
+    },
+    {
+      "id": 674,
+      "groupId": 21,
+      "ro": "site web",
+      "ru": "сайт",
+      "note": ""
+    },
+    {
+      "id": 675,
+      "groupId": 21,
+      "ro": "application",
+      "ru": "приложение",
+      "note": ""
+    },
+    {
+      "id": 676,
+      "groupId": 21,
+      "ro": "réseaux sociaux",
+      "ru": "социальные сети",
+      "note": ""
+    },
+    {
+      "id": 678,
+      "groupId": 21,
+      "ro": "mot de passe",
+      "ru": "пароль",
+      "note": ""
+    },
+    {
+      "id": 679,
+      "groupId": 21,
+      "ro": "écran",
+      "ru": "экран",
+      "note": ""
+    },
+    {
+      "id": 680,
+      "groupId": 21,
+      "ro": "clavier",
+      "ru": "клавиатура",
+      "note": ""
+    },
+    {
+      "id": 681,
+      "groupId": 21,
+      "ro": "souris",
+      "ru": "мышь",
+      "note": "компьютерная"
+    },
+    {
+      "id": 682,
+      "groupId": 21,
+      "ro": "batterie",
+      "ru": "батарея",
+      "note": ""
+    },
+    {
+      "id": 683,
+      "groupId": 21,
+      "ro": "chargeur",
+      "ru": "зарядник",
+      "note": ""
+    },
+    {
+      "id": 684,
+      "groupId": 21,
+      "ro": "WiFi",
+      "ru": "Wi-Fi",
+      "note": ""
+    },
+    {
+      "id": 685,
+      "groupId": 21,
+      "ro": "Bluetooth",
+      "ru": "Bluetooth",
+      "note": ""
+    },
+    {
+      "id": 686,
+      "groupId": 21,
+      "ro": "cloud",
+      "ru": "облако",
+      "note": ""
+    },
+    {
+      "id": 687,
+      "groupId": 21,
+      "ro": "intelligence artificielle",
+      "ru": "искусственный интеллект",
+      "note": ""
+    },
+    {
+      "id": 688,
+      "groupId": 21,
+      "ro": "logiciel",
+      "ru": "программное обеспечение",
+      "note": ""
+    },
+    {
+      "id": 689,
+      "groupId": 21,
+      "ro": "matériel",
+      "ru": "аппаратура",
+      "note": ""
+    },
+    {
+      "id": 690,
+      "groupId": 21,
+      "ro": "imprimante",
+      "ru": "принтер",
+      "note": ""
+    },
+    {
+      "id": 691,
+      "groupId": 21,
+      "ro": "scanner",
+      "ru": "сканер",
+      "note": ""
+    },
+    {
+      "id": 692,
+      "groupId": 21,
+      "ro": "appareil photo",
+      "ru": "фотокамера",
+      "note": ""
+    },
+    {
+      "id": 693,
+      "groupId": 21,
+      "ro": "caméra",
+      "ru": "видеокамера",
+      "note": ""
+    },
+    {
+      "id": 695,
+      "groupId": 22,
+      "ro": "santé",
+      "ru": "здоровье",
+      "note": ""
+    },
+    {
+      "id": 696,
+      "groupId": 22,
+      "ro": "maladie",
+      "ru": "болезнь",
+      "note": ""
+    },
+    {
+      "id": 697,
+      "groupId": 22,
+      "ro": "douleur",
+      "ru": "боль",
+      "note": ""
+    },
+    {
+      "id": 698,
+      "groupId": 22,
+      "ro": "fièvre",
+      "ru": "температура / жар",
+      "note": ""
+    },
+    {
+      "id": 699,
+      "groupId": 22,
+      "ro": "toux",
+      "ru": "кашель",
+      "note": ""
+    },
+    {
+      "id": 700,
+      "groupId": 22,
+      "ro": "rhume",
+      "ru": "простуда",
+      "note": ""
+    },
+    {
+      "id": 701,
+      "groupId": 22,
+      "ro": "grippe",
+      "ru": "грипп",
+      "note": ""
+    },
+    {
+      "id": 702,
+      "groupId": 22,
+      "ro": "allergie",
+      "ru": "аллергия",
+      "note": ""
+    },
+    {
+      "id": 703,
+      "groupId": 22,
+      "ro": "mal de tête",
+      "ru": "головная боль",
+      "note": ""
+    },
+    {
+      "id": 704,
+      "groupId": 22,
+      "ro": "mal d'estomac",
+      "ru": "боль в животе",
+      "note": ""
+    },
+    {
+      "id": 705,
+      "groupId": 22,
+      "ro": "nausée",
+      "ru": "тошнота",
+      "note": ""
+    },
+    {
+      "id": 706,
+      "groupId": 22,
+      "ro": "vertige",
+      "ru": "головокружение",
+      "note": ""
+    },
+    {
+      "id": 707,
+      "groupId": 22,
+      "ro": "blessure",
+      "ru": "рана",
+      "note": ""
+    },
+    {
+      "id": 708,
+      "groupId": 22,
+      "ro": "fracture",
+      "ru": "перелom",
+      "note": ""
+    },
+    {
+      "id": 709,
+      "groupId": 22,
+      "ro": "brûlure",
+      "ru": "ожог",
+      "note": ""
+    },
+    {
+      "id": 710,
+      "groupId": 22,
+      "ro": "opération",
+      "ru": "операция",
+      "note": ""
+    },
+    {
+      "id": 711,
+      "groupId": 22,
+      "ro": "médicament",
+      "ru": "лекарство",
+      "note": ""
+    },
+    {
+      "id": 712,
+      "groupId": 22,
+      "ro": "pilule",
+      "ru": "таблетка",
+      "note": ""
+    },
+    {
+      "id": 713,
+      "groupId": 22,
+      "ro": "sirop",
+      "ru": "сироп",
+      "note": ""
+    },
+    {
+      "id": 714,
+      "groupId": 22,
+      "ro": "injection",
+      "ru": "укол",
+      "note": ""
+    },
+    {
+      "id": 715,
+      "groupId": 22,
+      "ro": "vaccin",
+      "ru": "вакцинация",
+      "note": ""
+    },
+    {
+      "id": 716,
+      "groupId": 22,
+      "ro": "ordonnance",
+      "ru": "рецепт",
+      "note": ""
+    },
+    {
+      "id": 717,
+      "groupId": 22,
+      "ro": "ambulance",
+      "ru": "скорая помощь",
+      "note": ""
+    },
+    {
+      "id": 718,
+      "groupId": 22,
+      "ro": "urgences",
+      "ru": "приёмный покой",
+      "note": ""
+    },
+    {
+      "id": 719,
+      "groupId": 22,
+      "ro": "consultation",
+      "ru": "медицинский осмотр",
+      "note": ""
+    },
+    {
+      "id": 720,
+      "groupId": 22,
+      "ro": "diagnostic",
+      "ru": "диагноз",
+      "note": ""
+    },
+    {
+      "id": 721,
+      "groupId": 22,
+      "ro": "prévention",
+      "ru": "профилактика",
+      "note": ""
+    },
+    {
+      "id": 722,
+      "groupId": 22,
+      "ro": "régime",
+      "ru": "диета",
+      "note": ""
+    },
+    {
+      "id": 723,
+      "groupId": 22,
+      "ro": "exercice physique",
+      "ru": "физические упражнения",
+      "note": ""
+    },
+    {
+      "id": 724,
+      "groupId": 22,
+      "ro": "bien-être",
+      "ru": "благополучие",
+      "note": ""
+    },
+    {
+      "id": 725,
+      "groupId": 22,
+      "ro": "stress",
+      "ru": "стресс",
+      "note": ""
+    },
+    {
+      "id": 726,
+      "groupId": 22,
+      "ro": "insomnie",
+      "ru": "бессонница",
+      "note": ""
+    },
+    {
+      "id": 727,
+      "groupId": 23,
+      "ro": "sport",
+      "ru": "спорт",
+      "note": ""
+    },
+    {
+      "id": 728,
+      "groupId": 23,
+      "ro": "football",
+      "ru": "футбол",
+      "note": ""
+    },
+    {
+      "id": 729,
+      "groupId": 23,
+      "ro": "basketball",
+      "ru": "баскетбол",
+      "note": ""
+    },
+    {
+      "id": 730,
+      "groupId": 23,
+      "ro": "tennis",
+      "ru": "теннис",
+      "note": ""
+    },
+    {
+      "id": 731,
+      "groupId": 23,
+      "ro": "natation",
+      "ru": "плавание",
+      "note": ""
+    },
+    {
+      "id": 732,
+      "groupId": 23,
+      "ro": "athlétisme",
+      "ru": "лёгкая атлетика",
+      "note": ""
+    },
+    {
+      "id": 733,
+      "groupId": 23,
+      "ro": "cyclisme",
+      "ru": "велоспорт",
+      "note": ""
+    },
+    {
+      "id": 734,
+      "groupId": 23,
+      "ro": "ski",
+      "ru": "лыжи",
+      "note": ""
+    },
+    {
+      "id": 735,
+      "groupId": 23,
+      "ro": "volleyball",
+      "ru": "волейбол",
+      "note": ""
+    },
+    {
+      "id": 736,
+      "groupId": 23,
+      "ro": "rugby",
+      "ru": "регби",
+      "note": ""
+    },
+    {
+      "id": 737,
+      "groupId": 23,
+      "ro": "golf",
+      "ru": "гольф",
+      "note": ""
+    },
+    {
+      "id": 738,
+      "groupId": 23,
+      "ro": "boxe",
+      "ru": "бокс",
+      "note": ""
+    },
+    {
+      "id": 739,
+      "groupId": 23,
+      "ro": "arts martiaux",
+      "ru": "боевые искусства",
+      "note": ""
+    },
+    {
+      "id": 740,
+      "groupId": 23,
+      "ro": "yoga",
+      "ru": "йога",
+      "note": ""
+    },
+    {
+      "id": 741,
+      "groupId": 23,
+      "ro": "gymnastique",
+      "ru": "гимнастique",
+      "note": ""
+    },
+    {
+      "id": 742,
+      "groupId": 23,
+      "ro": "entraînement",
+      "ru": "тренировка",
+      "note": ""
+    },
+    {
+      "id": 743,
+      "groupId": 23,
+      "ro": "salle de sport",
+      "ru": "спортзал",
+      "note": ""
+    },
+    {
+      "id": 744,
+      "groupId": 23,
+      "ro": "équipe",
+      "ru": "команда",
+      "note": ""
+    },
+    {
+      "id": 745,
+      "groupId": 23,
+      "ro": "match",
+      "ru": "матч",
+      "note": ""
+    },
+    {
+      "id": 746,
+      "groupId": 23,
+      "ro": "championnat",
+      "ru": "чемпионат",
+      "note": ""
+    },
+    {
+      "id": 747,
+      "groupId": 23,
+      "ro": "record",
+      "ru": "рекорд",
+      "note": ""
+    },
+    {
+      "id": 748,
+      "groupId": 23,
+      "ro": "supporter",
+      "ru": "болельщик",
+      "note": ""
+    },
+    {
+      "id": 749,
+      "groupId": 23,
+      "ro": "athlète",
+      "ru": "спортсмен",
+      "note": ""
+    },
+    {
+      "id": 750,
+      "groupId": 24,
+      "ro": "voyage",
+      "ru": "путешествие",
+      "note": ""
+    },
+    {
+      "id": 751,
+      "groupId": 24,
+      "ro": "vacances",
+      "ru": "отпуск",
+      "note": ""
+    },
+    {
+      "id": 752,
+      "groupId": 24,
+      "ro": "tourisme",
+      "ru": "туризм",
+      "note": ""
+    },
+    {
+      "id": 753,
+      "groupId": 24,
+      "ro": "touriste",
+      "ru": "турист",
+      "note": ""
+    },
+    {
+      "id": 754,
+      "groupId": 24,
+      "ro": "hôtel",
+      "ru": "гостиница",
+      "note": ""
+    },
+    {
+      "id": 755,
+      "groupId": 24,
+      "ro": "auberge de jeunesse",
+      "ru": "хостел",
+      "note": ""
+    },
+    {
+      "id": 756,
+      "groupId": 24,
+      "ro": "réservation",
+      "ru": "бронирование",
+      "note": ""
+    },
+    {
+      "id": 757,
+      "groupId": 24,
+      "ro": "vol",
+      "ru": "рейс",
+      "note": ""
+    },
+    {
+      "id": 758,
+      "groupId": 24,
+      "ro": "valise",
+      "ru": "чемодан",
+      "note": ""
+    },
+    {
+      "id": 759,
+      "groupId": 24,
+      "ro": "passeport",
+      "ru": "паспорт",
+      "note": ""
+    },
+    {
+      "id": 760,
+      "groupId": 24,
+      "ro": "visa",
+      "ru": "виза",
+      "note": ""
+    },
+    {
+      "id": 761,
+      "groupId": 24,
+      "ro": "douane",
+      "ru": "таможня",
+      "note": ""
+    },
+    {
+      "id": 762,
+      "groupId": 24,
+      "ro": "frontière",
+      "ru": "граница",
+      "note": ""
+    },
+    {
+      "id": 763,
+      "groupId": 24,
+      "ro": "change",
+      "ru": "обмен валюты",
+      "note": ""
+    },
+    {
+      "id": 764,
+      "groupId": 24,
+      "ro": "carte",
+      "ru": "карта",
+      "note": ""
+    },
+    {
+      "id": 765,
+      "groupId": 24,
+      "ro": "guide touristique",
+      "ru": "путеводитель",
+      "note": ""
+    },
+    {
+      "id": 767,
+      "groupId": 24,
+      "ro": "église",
+      "ru": "церковь",
+      "note": ""
+    },
+    {
+      "id": 769,
+      "groupId": 24,
+      "ro": "excursion",
+      "ru": "экскурсия",
+      "note": ""
+    },
+    {
+      "id": 770,
+      "groupId": 24,
+      "ro": "souvenir",
+      "ru": "сувенir",
+      "note": ""
+    },
+    {
+      "id": 771,
+      "groupId": 24,
+      "ro": "photo",
+      "ru": "фотография",
+      "note": ""
+    },
+    {
+      "id": 772,
+      "groupId": 24,
+      "ro": "itinéraire",
+      "ru": "маршрут",
+      "note": ""
+    },
+    {
+      "id": 773,
+      "groupId": 24,
+      "ro": "croisière",
+      "ru": "круиз",
+      "note": ""
+    },
+    {
+      "id": 774,
+      "groupId": 24,
+      "ro": "tour",
+      "ru": "тур",
+      "note": ""
+    },
+    {
+      "id": 775,
+      "groupId": 24,
+      "ro": "camping",
+      "ru": "кемпинг",
+      "note": ""
+    },
+    {
+      "id": 776,
+      "groupId": 24,
+      "ro": "auberge",
+      "ru": "постоялый двор",
+      "note": ""
+    },
+    {
+      "id": 777,
+      "groupId": 24,
+      "ro": "billet d'avion",
+      "ru": "авиабилет",
+      "note": ""
+    },
+    {
+      "id": 778,
+      "groupId": 24,
+      "ro": "sac à dos",
+      "ru": "рюкзак",
+      "note": ""
+    },
+    {
+      "id": 779,
+      "groupId": 25,
+      "ro": "magasin",
+      "ru": "магазин",
+      "note": ""
+    },
+    {
+      "id": 780,
+      "groupId": 25,
+      "ro": "marché",
+      "ru": "рынок",
+      "note": ""
+    },
+    {
+      "id": 781,
+      "groupId": 25,
+      "ro": "centre commercial",
+      "ru": "торговый центр",
+      "note": ""
+    },
+    {
+      "id": 782,
+      "groupId": 25,
+      "ro": "vendeur",
+      "ru": "продавец",
+      "note": ""
+    },
+    {
+      "id": 783,
+      "groupId": 25,
+      "ro": "caisse",
+      "ru": "касса",
+      "note": ""
+    },
+    {
+      "id": 784,
+      "groupId": 25,
+      "ro": "prix",
+      "ru": "цена",
+      "note": ""
+    },
+    {
+      "id": 785,
+      "groupId": 25,
+      "ro": "réduction",
+      "ru": "скидка",
+      "note": ""
+    },
+    {
+      "id": 786,
+      "groupId": 25,
+      "ro": "promotion",
+      "ru": "акция",
+      "note": ""
+    },
+    {
+      "id": 787,
+      "groupId": 25,
+      "ro": "ticket de caisse",
+      "ru": "чек",
+      "note": ""
+    },
+    {
+      "id": 788,
+      "groupId": 25,
+      "ro": "achat",
+      "ru": "покупка",
+      "note": ""
+    },
+    {
+      "id": 789,
+      "groupId": 25,
+      "ro": "chariot",
+      "ru": "тележка",
+      "note": ""
+    },
+    {
+      "id": 790,
+      "groupId": 25,
+      "ro": "sac plastique",
+      "ru": "пакет",
+      "note": ""
+    },
+    {
+      "id": 791,
+      "groupId": 25,
+      "ro": "taille",
+      "ru": "размер",
+      "note": ""
+    },
+    {
+      "id": 792,
+      "groupId": 25,
+      "ro": "vitrine",
+      "ru": "витрина",
+      "note": ""
+    },
+    {
+      "id": 793,
+      "groupId": 25,
+      "ro": "marchandise",
+      "ru": "товар",
+      "note": ""
+    },
+    {
+      "id": 794,
+      "groupId": 25,
+      "ro": "marque",
+      "ru": "марка / бренд",
+      "note": ""
+    },
+    {
+      "id": 795,
+      "groupId": 25,
+      "ro": "qualité",
+      "ru": "качество",
+      "note": ""
+    },
+    {
+      "id": 796,
+      "groupId": 25,
+      "ro": "garantie",
+      "ru": "гарантия",
+      "note": ""
+    },
+    {
+      "id": 797,
+      "groupId": 25,
+      "ro": "remboursement",
+      "ru": "возврат",
+      "note": ""
+    },
+    {
+      "id": 798,
+      "groupId": 25,
+      "ro": "soldes",
+      "ru": "распродажа",
+      "note": ""
+    },
+    {
+      "id": 799,
+      "groupId": 26,
+      "ro": "argent",
+      "ru": "деньги",
+      "note": ""
+    },
+    {
+      "id": 800,
+      "groupId": 26,
+      "ro": "euro",
+      "ru": "евро",
+      "note": ""
+    },
+    {
+      "id": 801,
+      "groupId": 26,
+      "ro": "billet",
+      "ru": "купюра",
+      "note": ""
+    },
+    {
+      "id": 802,
+      "groupId": 26,
+      "ro": "pièce",
+      "ru": "монета",
+      "note": ""
+    },
+    {
+      "id": 803,
+      "groupId": 26,
+      "ro": "compte",
+      "ru": "счёт",
+      "note": ""
+    },
+    {
+      "id": 805,
+      "groupId": 26,
+      "ro": "distributeur",
+      "ru": "банкомат",
+      "note": ""
+    },
+    {
+      "id": 806,
+      "groupId": 26,
+      "ro": "carte de crédit",
+      "ru": "кредитная карта",
+      "note": ""
+    },
+    {
+      "id": 807,
+      "groupId": 26,
+      "ro": "carte de débit",
+      "ru": "дебетовая карта",
+      "note": ""
+    },
+    {
+      "id": 808,
+      "groupId": 26,
+      "ro": "virement",
+      "ru": "банковский перевод",
+      "note": ""
+    },
+    {
+      "id": 809,
+      "groupId": 26,
+      "ro": "épargne",
+      "ru": "сбережения",
+      "note": ""
+    },
+    {
+      "id": 810,
+      "groupId": 26,
+      "ro": "investissement",
+      "ru": "инвестиции",
+      "note": ""
+    },
+    {
+      "id": 811,
+      "groupId": 26,
+      "ro": "dette",
+      "ru": "долг",
+      "note": ""
+    },
+    {
+      "id": 812,
+      "groupId": 26,
+      "ro": "prêt",
+      "ru": "кредит",
+      "note": ""
+    },
+    {
+      "id": 813,
+      "groupId": 26,
+      "ro": "hypothèque",
+      "ru": "ипотека",
+      "note": ""
+    },
+    {
+      "id": 814,
+      "groupId": 26,
+      "ro": "impôts",
+      "ru": "налоги",
+      "note": ""
+    },
+    {
+      "id": 815,
+      "groupId": 26,
+      "ro": "facture",
+      "ru": "счёт-фактура",
+      "note": ""
+    },
+    {
+      "id": 816,
+      "groupId": 26,
+      "ro": "retraite",
+      "ru": "пенсия",
+      "note": ""
+    },
+    {
+      "id": 817,
+      "groupId": 26,
+      "ro": "assurance",
+      "ru": "страховка",
+      "note": ""
+    },
+    {
+      "id": 818,
+      "groupId": 26,
+      "ro": "bourse",
+      "ru": "биржа",
+      "note": ""
+    },
+    {
+      "id": 819,
+      "groupId": 26,
+      "ro": "inflation",
+      "ru": "инфляция",
+      "note": ""
+    },
+    {
+      "id": 820,
+      "groupId": 26,
+      "ro": "budget",
+      "ru": "бюджет",
+      "note": ""
+    },
+    {
+      "id": 821,
+      "groupId": 27,
+      "ro": "état",
+      "ru": "государство",
+      "note": ""
+    },
+    {
+      "id": 822,
+      "groupId": 27,
+      "ro": "nation",
+      "ru": "нация",
+      "note": ""
+    },
+    {
+      "id": 823,
+      "groupId": 27,
+      "ro": "pays",
+      "ru": "страна",
+      "note": ""
+    },
+    {
+      "id": 824,
+      "groupId": 27,
+      "ro": "gouvernement",
+      "ru": "правительство",
+      "note": ""
+    },
+    {
+      "id": 825,
+      "groupId": 27,
+      "ro": "président",
+      "ru": "президент",
+      "note": ""
+    },
+    {
+      "id": 826,
+      "groupId": 27,
+      "ro": "premier ministre",
+      "ru": "премьер-министр",
+      "note": ""
+    },
+    {
+      "id": 827,
+      "groupId": 27,
+      "ro": "parlement",
+      "ru": "парламент",
+      "note": ""
+    },
+    {
+      "id": 828,
+      "groupId": 27,
+      "ro": "sénat",
+      "ru": "сенат",
+      "note": ""
+    },
+    {
+      "id": 829,
+      "groupId": 27,
+      "ro": "ministère",
+      "ru": "министерство",
+      "note": ""
+    },
+    {
+      "id": 830,
+      "groupId": 27,
+      "ro": "loi",
+      "ru": "закон",
+      "note": ""
+    },
+    {
+      "id": 831,
+      "groupId": 27,
+      "ro": "constitution",
+      "ru": "конституция",
+      "note": ""
+    },
+    {
+      "id": 832,
+      "groupId": 27,
+      "ro": "élection",
+      "ru": "выборы",
+      "note": ""
+    },
+    {
+      "id": 833,
+      "groupId": 27,
+      "ro": "parti",
+      "ru": "партия",
+      "note": ""
+    },
+    {
+      "id": 834,
+      "groupId": 27,
+      "ro": "démocratie",
+      "ru": "демократия",
+      "note": ""
+    },
+    {
+      "id": 835,
+      "groupId": 27,
+      "ro": "république",
+      "ru": "république",
+      "note": ""
+    },
+    {
+      "id": 836,
+      "groupId": 27,
+      "ro": "monarchie",
+      "ru": "монархия",
+      "note": ""
+    },
+    {
+      "id": 837,
+      "groupId": 27,
+      "ro": "citoyenneté",
+      "ru": "гражданство",
+      "note": ""
+    },
+    {
+      "id": 839,
+      "groupId": 27,
+      "ro": "ambassade",
+      "ru": "посольство",
+      "note": ""
+    },
+    {
+      "id": 840,
+      "groupId": 27,
+      "ro": "armée",
+      "ru": "армия",
+      "note": ""
+    },
+    {
+      "id": 841,
+      "groupId": 27,
+      "ro": "guerre",
+      "ru": "война",
+      "note": ""
+    },
+    {
+      "id": 842,
+      "groupId": 27,
+      "ro": "paix",
+      "ru": "мир",
+      "note": ""
+    },
+    {
+      "id": 843,
+      "groupId": 27,
+      "ro": "traité",
+      "ru": "договор",
+      "note": ""
+    },
+    {
+      "id": 844,
+      "groupId": 27,
+      "ro": "droits de l'homme",
+      "ru": "права человека",
+      "note": ""
+    },
+    {
+      "id": 845,
+      "groupId": 27,
+      "ro": "justice",
+      "ru": "справедливость / правосудие",
+      "note": ""
+    },
+    {
+      "id": 846,
+      "groupId": 27,
+      "ro": "immigration",
+      "ru": "иммиграция",
+      "note": ""
+    },
+    {
+      "id": 848,
+      "groupId": 27,
+      "ro": "capitale",
+      "ru": "столица",
+      "note": ""
+    },
+    {
+      "id": 849,
+      "groupId": 27,
+      "ro": "région",
+      "ru": "регион",
+      "note": ""
+    },
+    {
+      "id": 850,
+      "groupId": 28,
+      "ro": "cinéma",
+      "ru": "кино",
+      "note": ""
+    },
+    {
+      "id": 851,
+      "groupId": 28,
+      "ro": "théâtre",
+      "ru": "театр",
+      "note": ""
+    },
+    {
+      "id": 852,
+      "groupId": 28,
+      "ro": "concert",
+      "ru": "концерт",
+      "note": ""
+    },
+    {
+      "id": 853,
+      "groupId": 28,
+      "ro": "opéra",
+      "ru": "опера",
+      "note": ""
+    },
+    {
+      "id": 854,
+      "groupId": 28,
+      "ro": "musée",
+      "ru": "музей",
+      "note": ""
+    },
+    {
+      "id": 855,
+      "groupId": 28,
+      "ro": "galerie",
+      "ru": "галерея",
+      "note": ""
+    },
+    {
+      "id": 856,
+      "groupId": 28,
+      "ro": "festival",
+      "ru": "фестиваль",
+      "note": ""
+    },
+    {
+      "id": 857,
+      "groupId": 28,
+      "ro": "exposition",
+      "ru": "выставка",
+      "note": ""
+    },
+    {
+      "id": 858,
+      "groupId": 28,
+      "ro": "spectacle",
+      "ru": "спектакль",
+      "note": ""
+    },
+    {
+      "id": 859,
+      "groupId": 28,
+      "ro": "film",
+      "ru": "фильм",
+      "note": ""
+    },
+    {
+      "id": 860,
+      "groupId": 28,
+      "ro": "livre",
+      "ru": "книга",
+      "note": ""
+    },
+    {
+      "id": 861,
+      "groupId": 28,
+      "ro": "roman",
+      "ru": "роман",
+      "note": ""
+    },
+    {
+      "id": 862,
+      "groupId": 28,
+      "ro": "poésie",
+      "ru": "поэзие",
+      "note": ""
+    },
+    {
+      "id": 863,
+      "groupId": 28,
+      "ro": "musique",
+      "ru": "музыка",
+      "note": ""
+    },
+    {
+      "id": 864,
+      "groupId": 28,
+      "ro": "chanson",
+      "ru": "песня",
+      "note": ""
+    },
+    {
+      "id": 865,
+      "groupId": 28,
+      "ro": "danse",
+      "ru": "танец",
+      "note": ""
+    },
+    {
+      "id": 866,
+      "groupId": 28,
+      "ro": "jeu",
+      "ru": "игра",
+      "note": ""
+    },
+    {
+      "id": 867,
+      "groupId": 28,
+      "ro": "jeu vidéo",
+      "ru": "видеоигра",
+      "note": ""
+    },
+    {
+      "id": 868,
+      "groupId": 28,
+      "ro": "photographie",
+      "ru": "фотография",
+      "note": ""
+    },
+    {
+      "id": 869,
+      "groupId": 28,
+      "ro": "peinture",
+      "ru": "живопись",
+      "note": ""
+    },
+    {
+      "id": 870,
+      "groupId": 28,
+      "ro": "sculpture",
+      "ru": "скульптура",
+      "note": ""
+    },
+    {
+      "id": 871,
+      "groupId": 28,
+      "ro": "tradition",
+      "ru": "традиция",
+      "note": ""
+    },
+    {
+      "id": 872,
+      "groupId": 28,
+      "ro": "fête",
+      "ru": "праздник",
+      "note": ""
+    },
+    {
+      "id": 873,
+      "groupId": 28,
+      "ro": "carnaval",
+      "ru": "карнавал",
+      "note": ""
+    },
+    {
+      "id": 874,
+      "groupId": 28,
+      "ro": "Noël",
+      "ru": "Рождество",
+      "note": ""
+    },
+    {
+      "id": 875,
+      "groupId": 28,
+      "ro": "Pâques",
+      "ru": "Пасха",
+      "note": ""
+    },
+    {
+      "id": 876,
+      "groupId": 28,
+      "ro": "anniversaire",
+      "ru": "день рождения",
+      "note": ""
+    },
+    {
+      "id": 877,
+      "groupId": 28,
+      "ro": "cérémonie",
+      "ru": "церемония",
+      "note": ""
+    },
+    {
+      "id": 878,
+      "groupId": 28,
+      "ro": "costume",
+      "ru": "костюм",
+      "note": ""
+    },
+    {
+      "id": 879,
+      "groupId": 28,
+      "ro": "folklore",
+      "ru": "фольклор",
+      "note": ""
+    },
+    {
+      "id": 880,
+      "groupId": 28,
+      "ro": "patrimoine",
+      "ru": "наследие",
+      "note": ""
+    },
+    {
+      "id": 881,
+      "groupId": 28,
+      "ro": "gastronomie",
+      "ru": "гастрономия",
+      "note": ""
+    },
+    {
+      "id": 882,
+      "groupId": 28,
+      "ro": "art de vivre",
+      "ru": "искусство жить",
+      "note": ""
+    },
+    {
+      "id": 883,
+      "groupId": 29,
+      "ro": "aller",
+      "ru": "идти / ехать",
+      "note": ""
+    },
+    {
+      "id": 884,
+      "groupId": 29,
+      "ro": "venir",
+      "ru": "приходить",
+      "note": ""
+    },
+    {
+      "id": 885,
+      "groupId": 29,
+      "ro": "courir",
+      "ru": "бежать",
+      "note": ""
+    },
+    {
+      "id": 886,
+      "groupId": 29,
+      "ro": "marcher",
+      "ru": "ходить / гулять",
+      "note": ""
+    },
+    {
+      "id": 887,
+      "groupId": 29,
+      "ro": "sauter",
+      "ru": "прыгать",
+      "note": ""
+    },
+    {
+      "id": 888,
+      "groupId": 29,
+      "ro": "voler",
+      "ru": "летать",
+      "note": ""
+    },
+    {
+      "id": 889,
+      "groupId": 29,
+      "ro": "nager",
+      "ru": "плавать",
+      "note": ""
+    },
+    {
+      "id": 890,
+      "groupId": 29,
+      "ro": "grimper",
+      "ru": "карабкаться",
+      "note": ""
+    },
+    {
+      "id": 891,
+      "groupId": 29,
+      "ro": "ramper",
+      "ru": "ползти",
+      "note": ""
+    },
+    {
+      "id": 892,
+      "groupId": 29,
+      "ro": "tourner",
+      "ru": "поворачивать",
+      "note": ""
+    },
+    {
+      "id": 893,
+      "groupId": 29,
+      "ro": "rentrer",
+      "ru": "возвращаться",
+      "note": ""
+    },
+    {
+      "id": 894,
+      "groupId": 29,
+      "ro": "partir",
+      "ru": "уезжать",
+      "note": ""
+    },
+    {
+      "id": 895,
+      "groupId": 29,
+      "ro": "arriver",
+      "ru": "приезжать",
+      "note": ""
+    },
+    {
+      "id": 896,
+      "groupId": 29,
+      "ro": "entrer",
+      "ru": "входить",
+      "note": ""
+    },
+    {
+      "id": 897,
+      "groupId": 29,
+      "ro": "sortir",
+      "ru": "выходить",
+      "note": ""
+    },
+    {
+      "id": 898,
+      "groupId": 29,
+      "ro": "monter",
+      "ru": "подниматься",
+      "note": ""
+    },
+    {
+      "id": 899,
+      "groupId": 29,
+      "ro": "descendre",
+      "ru": "спускаться",
+      "note": ""
+    },
+    {
+      "id": 900,
+      "groupId": 29,
+      "ro": "traverser",
+      "ru": "пересекать",
+      "note": ""
+    },
+    {
+      "id": 901,
+      "groupId": 29,
+      "ro": "suivre",
+      "ru": "следовать",
+      "note": ""
+    },
+    {
+      "id": 902,
+      "groupId": 29,
+      "ro": "poursuivre",
+      "ru": "преследовать",
+      "note": ""
+    },
+    {
+      "id": 903,
+      "groupId": 29,
+      "ro": "s'approcher",
+      "ru": "приближаться",
+      "note": ""
+    },
+    {
+      "id": 904,
+      "groupId": 29,
+      "ro": "s'éloigner",
+      "ru": "удаляться",
+      "note": ""
+    },
+    {
+      "id": 905,
+      "groupId": 29,
+      "ro": "danser",
+      "ru": "танцевать",
+      "note": ""
+    },
+    {
+      "id": 906,
+      "groupId": 29,
+      "ro": "skier",
+      "ru": "кататься на лыжах",
+      "note": ""
+    },
+    {
+      "id": 907,
+      "groupId": 29,
+      "ro": "conduire",
+      "ru": "водить машину",
+      "note": ""
+    },
+    {
+      "id": 908,
+      "groupId": 29,
+      "ro": "pédaler",
+      "ru": "крутить педали",
+      "note": ""
+    },
+    {
+      "id": 909,
+      "groupId": 29,
+      "ro": "ramer",
+      "ru": "грести",
+      "note": ""
+    },
+    {
+      "id": 910,
+      "groupId": 29,
+      "ro": "errer",
+      "ru": "бродить",
+      "note": ""
+    },
+    {
+      "id": 911,
+      "groupId": 29,
+      "ro": "se promener",
+      "ru": "прогуливаться",
+      "note": ""
+    },
+    {
+      "id": 912,
+      "groupId": 29,
+      "ro": "s'arrêter",
+      "ru": "останавливаться",
+      "note": ""
+    },
+    {
+      "id": 913,
+      "groupId": 30,
+      "ro": "faire",
+      "ru": "делать",
+      "note": ""
+    },
+    {
+      "id": 914,
+      "groupId": 30,
+      "ro": "mettre",
+      "ru": "класть",
+      "note": ""
+    },
+    {
+      "id": 915,
+      "groupId": 30,
+      "ro": "prendre",
+      "ru": "брать",
+      "note": ""
+    },
+    {
+      "id": 916,
+      "groupId": 30,
+      "ro": "donner",
+      "ru": "давать",
+      "note": ""
+    },
+    {
+      "id": 917,
+      "groupId": 30,
+      "ro": "porter",
+      "ru": "носить / нести",
+      "note": ""
+    },
+    {
+      "id": 918,
+      "groupId": 30,
+      "ro": "tenir",
+      "ru": "держать",
+      "note": ""
+    },
+    {
+      "id": 919,
+      "groupId": 30,
+      "ro": "ouvrir",
+      "ru": "открывать",
+      "note": ""
+    },
+    {
+      "id": 920,
+      "groupId": 30,
+      "ro": "fermer",
+      "ru": "закрывать",
+      "note": ""
+    },
+    {
+      "id": 921,
+      "groupId": 30,
+      "ro": "pousser",
+      "ru": "толкать",
+      "note": ""
+    },
+    {
+      "id": 922,
+      "groupId": 30,
+      "ro": "tirer",
+      "ru": "тянуть",
+      "note": ""
+    },
+    {
+      "id": 923,
+      "groupId": 30,
+      "ro": "lever",
+      "ru": "поднимать",
+      "note": ""
+    },
+    {
+      "id": 924,
+      "groupId": 30,
+      "ro": "baisser",
+      "ru": "опускать",
+      "note": ""
+    },
+    {
+      "id": 925,
+      "groupId": 30,
+      "ro": "lancer",
+      "ru": "бросать",
+      "note": ""
+    },
+    {
+      "id": 926,
+      "groupId": 30,
+      "ro": "ramasser",
+      "ru": "подбирать",
+      "note": ""
+    },
+    {
+      "id": 927,
+      "groupId": 30,
+      "ro": "couper",
+      "ru": "резать",
+      "note": ""
+    },
+    {
+      "id": 928,
+      "groupId": 30,
+      "ro": "casser",
+      "ru": "ломать",
+      "note": ""
+    },
+    {
+      "id": 929,
+      "groupId": 30,
+      "ro": "construire",
+      "ru": "строить",
+      "note": ""
+    },
+    {
+      "id": 930,
+      "groupId": 30,
+      "ro": "détruire",
+      "ru": "разрушать",
+      "note": ""
+    },
+    {
+      "id": 931,
+      "groupId": 30,
+      "ro": "nettoyer",
+      "ru": "чистить",
+      "note": ""
+    },
+    {
+      "id": 932,
+      "groupId": 30,
+      "ro": "laver",
+      "ru": "мыть",
+      "note": ""
+    },
+    {
+      "id": 933,
+      "groupId": 30,
+      "ro": "sécher",
+      "ru": "сушить",
+      "note": ""
+    },
+    {
+      "id": 934,
+      "groupId": 30,
+      "ro": "repasser",
+      "ru": "гладить (бельё)",
+      "note": ""
+    },
+    {
+      "id": 935,
+      "groupId": 30,
+      "ro": "cuisiner",
+      "ru": "готовить",
+      "note": ""
+    },
+    {
+      "id": 936,
+      "groupId": 30,
+      "ro": "manger",
+      "ru": "есть",
+      "note": ""
+    },
+    {
+      "id": 937,
+      "groupId": 30,
+      "ro": "boire",
+      "ru": "пить",
+      "note": ""
+    },
+    {
+      "id": 938,
+      "groupId": 30,
+      "ro": "dormir",
+      "ru": "спать",
+      "note": ""
+    },
+    {
+      "id": 939,
+      "groupId": 30,
+      "ro": "se réveiller",
+      "ru": "просыпаться",
+      "note": ""
+    },
+    {
+      "id": 940,
+      "groupId": 30,
+      "ro": "se lever",
+      "ru": "вставать",
+      "note": ""
+    },
+    {
+      "id": 941,
+      "groupId": 30,
+      "ro": "s'asseoir",
+      "ru": "садиться",
+      "note": ""
+    },
+    {
+      "id": 942,
+      "groupId": 30,
+      "ro": "s'allonger",
+      "ru": "ложиться",
+      "note": ""
+    },
+    {
+      "id": 943,
+      "groupId": 30,
+      "ro": "s'habiller",
+      "ru": "одеваться",
+      "note": ""
+    },
+    {
+      "id": 944,
+      "groupId": 30,
+      "ro": "se déshabiller",
+      "ru": "раздеваться",
+      "note": ""
+    },
+    {
+      "id": 945,
+      "groupId": 30,
+      "ro": "se laver",
+      "ru": "мыться",
+      "note": ""
+    },
+    {
+      "id": 946,
+      "groupId": 30,
+      "ro": "se maquiller",
+      "ru": "краситься",
+      "note": ""
+    },
+    {
+      "id": 947,
+      "groupId": 30,
+      "ro": "se coiffer",
+      "ru": "причёсываться",
+      "note": ""
+    },
+    {
+      "id": 948,
+      "groupId": 30,
+      "ro": "se raser",
+      "ru": "бриться",
+      "note": ""
+    },
+    {
+      "id": 949,
+      "groupId": 30,
+      "ro": "travailler",
+      "ru": "работать",
+      "note": ""
+    },
+    {
+      "id": 950,
+      "groupId": 30,
+      "ro": "étudier",
+      "ru": "учиться",
+      "note": ""
+    },
+    {
+      "id": 951,
+      "groupId": 30,
+      "ro": "lire",
+      "ru": "читать",
+      "note": ""
+    },
+    {
+      "id": 952,
+      "groupId": 30,
+      "ro": "écrire",
+      "ru": "писать",
+      "note": ""
+    },
+    {
+      "id": 953,
+      "groupId": 30,
+      "ro": "dessiner",
+      "ru": "рисовать",
+      "note": ""
+    },
+    {
+      "id": 954,
+      "groupId": 30,
+      "ro": "jouer d'un instrument",
+      "ru": "играть на инструменте",
+      "note": ""
+    },
+    {
+      "id": 955,
+      "groupId": 30,
+      "ro": "chanter",
+      "ru": "петь",
+      "note": ""
+    },
+    {
+      "id": 957,
+      "groupId": 30,
+      "ro": "jouer",
+      "ru": "играть",
+      "note": ""
+    },
+    {
+      "id": 958,
+      "groupId": 30,
+      "ro": "regarder",
+      "ru": "смотреть",
+      "note": ""
+    },
+    {
+      "id": 959,
+      "groupId": 30,
+      "ro": "écouter",
+      "ru": "слушать",
+      "note": ""
+    },
+    {
+      "id": 960,
+      "groupId": 30,
+      "ro": "parler",
+      "ru": "говорить",
+      "note": ""
+    },
+    {
+      "id": 961,
+      "groupId": 30,
+      "ro": "téléphoner",
+      "ru": "звонить",
+      "note": ""
+    },
+    {
+      "id": 962,
+      "groupId": 30,
+      "ro": "envoyer",
+      "ru": "отправлять",
+      "note": ""
+    },
+    {
+      "id": 963,
+      "groupId": 30,
+      "ro": "recevoir",
+      "ru": "получать",
+      "note": ""
+    },
+    {
+      "id": 964,
+      "groupId": 30,
+      "ro": "acheter",
+      "ru": "покупать",
+      "note": ""
+    },
+    {
+      "id": 965,
+      "groupId": 30,
+      "ro": "vendre",
+      "ru": "продavать",
+      "note": ""
+    },
+    {
+      "id": 966,
+      "groupId": 30,
+      "ro": "payer",
+      "ru": "платить",
+      "note": ""
+    },
+    {
+      "id": 967,
+      "groupId": 30,
+      "ro": "gagner",
+      "ru": "зарабатывать",
+      "note": ""
+    },
+    {
+      "id": 968,
+      "groupId": 30,
+      "ro": "dépenser",
+      "ru": "тратить",
+      "note": ""
+    },
+    {
+      "id": 969,
+      "groupId": 30,
+      "ro": "voyager",
+      "ru": "путешествовать",
+      "note": ""
+    },
+    {
+      "id": 970,
+      "groupId": 30,
+      "ro": "réserver",
+      "ru": "бронировать",
+      "note": ""
+    },
+    {
+      "id": 971,
+      "groupId": 30,
+      "ro": "photographier",
+      "ru": "фотографировать",
+      "note": ""
+    },
+    {
+      "id": 972,
+      "groupId": 30,
+      "ro": "filmer",
+      "ru": "снимать видео",
+      "note": ""
+    },
+    {
+      "id": 973,
+      "groupId": 30,
+      "ro": "enregistrer",
+      "ru": "записывать",
+      "note": ""
+    },
+    {
+      "id": 974,
+      "groupId": 30,
+      "ro": "imprimer",
+      "ru": "печатать",
+      "note": ""
+    },
+    {
+      "id": 975,
+      "groupId": 30,
+      "ro": "télécharger",
+      "ru": "скачивать",
+      "note": ""
+    },
+    {
+      "id": 976,
+      "groupId": 30,
+      "ro": "uploader",
+      "ru": "загружать",
+      "note": ""
+    },
+    {
+      "id": 977,
+      "groupId": 30,
+      "ro": "chercher",
+      "ru": "искать",
+      "note": ""
+    },
+    {
+      "id": 978,
+      "groupId": 30,
+      "ro": "trouver",
+      "ru": "находить",
+      "note": ""
+    },
+    {
+      "id": 979,
+      "groupId": 30,
+      "ro": "perdre",
+      "ru": "терять",
+      "note": ""
+    },
+    {
+      "id": 980,
+      "groupId": 30,
+      "ro": "oublier",
+      "ru": "забывать",
+      "note": ""
+    },
+    {
+      "id": 981,
+      "groupId": 30,
+      "ro": "se souvenir",
+      "ru": "помнить",
+      "note": ""
+    },
+    {
+      "id": 982,
+      "groupId": 30,
+      "ro": "aider",
+      "ru": "помогать",
+      "note": ""
+    },
+    {
+      "id": 983,
+      "groupId": 30,
+      "ro": "demander",
+      "ru": "просить / спрашивать",
+      "note": ""
+    },
+    {
+      "id": 984,
+      "groupId": 30,
+      "ro": "répondre",
+      "ru": "отвечать",
+      "note": ""
+    },
+    {
+      "id": 985,
+      "groupId": 30,
+      "ro": "expliquer",
+      "ru": "объяснять",
+      "note": ""
+    },
+    {
+      "id": 986,
+      "groupId": 30,
+      "ro": "enseigner",
+      "ru": "обучать",
+      "note": ""
+    },
+    {
+      "id": 987,
+      "groupId": 30,
+      "ro": "apprendre",
+      "ru": "учить / узнавать",
+      "note": ""
+    },
+    {
+      "id": 989,
+      "groupId": 30,
+      "ro": "penser",
+      "ru": "думать",
+      "note": ""
+    },
+    {
+      "id": 991,
+      "groupId": 30,
+      "ro": "décider",
+      "ru": "решать",
+      "note": ""
+    },
+    {
+      "id": 992,
+      "groupId": 30,
+      "ro": "choisir",
+      "ru": "выбирать",
+      "note": ""
+    },
+    {
+      "id": 993,
+      "groupId": 30,
+      "ro": "changer",
+      "ru": "менять",
+      "note": ""
+    },
+    {
+      "id": 994,
+      "groupId": 30,
+      "ro": "améliorer",
+      "ru": "улучшать",
+      "note": ""
+    },
+    {
+      "id": 995,
+      "groupId": 30,
+      "ro": "réparer",
+      "ru": "ремонтировать",
+      "note": ""
+    },
+    {
+      "id": 996,
+      "groupId": 30,
+      "ro": "vérifier",
+      "ru": "проверять",
+      "note": ""
+    },
+    {
+      "id": 997,
+      "groupId": 30,
+      "ro": "attendre",
+      "ru": "ждать",
+      "note": ""
+    },
+    {
+      "id": 998,
+      "groupId": 30,
+      "ro": "rencontrer",
+      "ru": "встречать",
+      "note": ""
+    },
+    {
+      "id": 999,
+      "groupId": 30,
+      "ro": "inviter",
+      "ru": "приглашать",
+      "note": ""
+    },
+    {
+      "id": 1000,
+      "groupId": 30,
+      "ro": "refuser",
+      "ru": "отказывать",
+      "note": ""
+    },
+    {
+      "id": 1001,
+      "groupId": 30,
+      "ro": "accepter",
+      "ru": "принимать",
+      "note": ""
+    },
+    {
+      "id": 1002,
+      "groupId": 30,
+      "ro": "permettre",
+      "ru": "разрешать",
+      "note": ""
+    },
+    {
+      "id": 1003,
+      "groupId": 30,
+      "ro": "interdire",
+      "ru": "запрещать",
+      "note": ""
+    },
+    {
+      "id": 1004,
+      "groupId": 30,
+      "ro": "protéger",
+      "ru": "защищать",
+      "note": ""
+    },
+    {
+      "id": 1005,
+      "groupId": 30,
+      "ro": "attaquer",
+      "ru": "атаковать",
+      "note": ""
+    },
+    {
+      "id": 1006,
+      "groupId": 30,
+      "ro": "combattre",
+      "ru": "бороться",
+      "note": ""
+    },
+    {
+      "id": 1007,
+      "groupId": 30,
+      "ro": "marquer",
+      "ru": "забивать гол",
+      "note": ""
+    },
+    {
+      "id": 1008,
+      "groupId": 30,
+      "ro": "jeter",
+      "ru": "выбрасывать",
+      "note": ""
+    },
+    {
+      "id": 1009,
+      "groupId": 30,
+      "ro": "cueillir",
+      "ru": "собирать",
+      "note": ""
+    },
+    {
+      "id": 1010,
+      "groupId": 30,
+      "ro": "cultiver",
+      "ru": "выращивать",
+      "note": ""
+    },
+    {
+      "id": 1011,
+      "groupId": 30,
+      "ro": "planter",
+      "ru": "сажать",
+      "note": ""
+    },
+    {
+      "id": 1012,
+      "groupId": 31,
+      "ro": "être",
+      "ru": "быть",
+      "note": ""
+    },
+    {
+      "id": 1013,
+      "groupId": 31,
+      "ro": "avoir",
+      "ru": "иметь",
+      "note": ""
+    },
+    {
+      "id": 1014,
+      "groupId": 31,
+      "ro": "rester",
+      "ru": "оставаться",
+      "note": ""
+    },
+    {
+      "id": 1015,
+      "groupId": 31,
+      "ro": "sembler",
+      "ru": "казаться",
+      "note": ""
+    },
+    {
+      "id": 1016,
+      "groupId": 31,
+      "ro": "devenir",
+      "ru": "становиться",
+      "note": ""
+    },
+    {
+      "id": 1017,
+      "groupId": 31,
+      "ro": "exister",
+      "ru": "существовать",
+      "note": ""
+    },
+    {
+      "id": 1018,
+      "groupId": 31,
+      "ro": "vivre",
+      "ru": "жить",
+      "note": ""
+    },
+    {
+      "id": 1019,
+      "groupId": 31,
+      "ro": "mourir",
+      "ru": "умирать",
+      "note": ""
+    },
+    {
+      "id": 1020,
+      "groupId": 31,
+      "ro": "naître",
+      "ru": "рождаться",
+      "note": ""
+    },
+    {
+      "id": 1021,
+      "groupId": 31,
+      "ro": "grandir",
+      "ru": "расти",
+      "note": ""
+    },
+    {
+      "id": 1022,
+      "groupId": 31,
+      "ro": "aimer",
+      "ru": "любить",
+      "note": ""
+    },
+    {
+      "id": 1023,
+      "groupId": 31,
+      "ro": "détester",
+      "ru": "ненавидеть",
+      "note": ""
+    },
+    {
+      "id": 1024,
+      "groupId": 31,
+      "ro": "plaire",
+      "ru": "нравиться",
+      "note": ""
+    },
+    {
+      "id": 1025,
+      "groupId": 31,
+      "ro": "vouloir",
+      "ru": "хотеть",
+      "note": ""
+    },
+    {
+      "id": 1026,
+      "groupId": 31,
+      "ro": "pouvoir",
+      "ru": "мочь",
+      "note": ""
+    },
+    {
+      "id": 1027,
+      "groupId": 31,
+      "ro": "devoir",
+      "ru": "должен",
+      "note": ""
+    },
+    {
+      "id": 1028,
+      "groupId": 31,
+      "ro": "savoir",
+      "ru": "знать (умение)",
+      "note": ""
+    },
+    {
+      "id": 1029,
+      "groupId": 31,
+      "ro": "connaître",
+      "ru": "знать (человека)",
+      "note": ""
+    },
+    {
+      "id": 1030,
+      "groupId": 31,
+      "ro": "comprendre",
+      "ru": "понимать",
+      "note": ""
+    },
+    {
+      "id": 1031,
+      "groupId": 31,
+      "ro": "sentir",
+      "ru": "чувствовать",
+      "note": ""
+    },
+    {
+      "id": 1032,
+      "groupId": 31,
+      "ro": "voir",
+      "ru": "видеть",
+      "note": ""
+    },
+    {
+      "id": 1033,
+      "groupId": 31,
+      "ro": "entendre",
+      "ru": "слышать",
+      "note": ""
+    },
+    {
+      "id": 1034,
+      "groupId": 31,
+      "ro": "goûter",
+      "ru": "пробовать на вкус",
+      "note": ""
+    },
+    {
+      "id": 1035,
+      "groupId": 31,
+      "ro": "toucher",
+      "ru": "трогать",
+      "note": ""
+    },
+    {
+      "id": 1036,
+      "groupId": 31,
+      "ro": "craindre",
+      "ru": "бояться",
+      "note": ""
+    },
+    {
+      "id": 1037,
+      "groupId": 31,
+      "ro": "s'inquiéter",
+      "ru": "беспокоиться",
+      "note": ""
+    },
+    {
+      "id": 1038,
+      "groupId": 31,
+      "ro": "espérer",
+      "ru": "надеяться",
+      "note": ""
+    },
+    {
+      "id": 1039,
+      "groupId": 31,
+      "ro": "croire",
+      "ru": "верить",
+      "note": ""
+    },
+    {
+      "id": 1040,
+      "groupId": 31,
+      "ro": "douter",
+      "ru": "сомневаться",
+      "note": ""
+    },
+    {
+      "id": 1041,
+      "groupId": 31,
+      "ro": "se surprendre",
+      "ru": "удивляться",
+      "note": ""
+    },
+    {
+      "id": 1042,
+      "groupId": 31,
+      "ro": "s'ennuyer",
+      "ru": "скучать",
+      "note": ""
+    },
+    {
+      "id": 1043,
+      "groupId": 31,
+      "ro": "s'amuser",
+      "ru": "веселиться",
+      "note": ""
+    },
+    {
+      "id": 1044,
+      "groupId": 31,
+      "ro": "se reposer",
+      "ru": "отдыхать",
+      "note": ""
+    },
+    {
+      "id": 1045,
+      "groupId": 31,
+      "ro": "se fatiguer",
+      "ru": "уставать",
+      "note": ""
+    },
+    {
+      "id": 1046,
+      "groupId": 31,
+      "ro": "appartenir",
+      "ru": "принадлежать",
+      "note": ""
+    },
+    {
+      "id": 1047,
+      "groupId": 31,
+      "ro": "dépendre",
+      "ru": "зависеть",
+      "note": ""
+    },
+    {
+      "id": 1048,
+      "groupId": 31,
+      "ro": "manquer",
+      "ru": "недоставать",
+      "note": ""
+    },
+    {
+      "id": 1051,
+      "groupId": 32,
+      "ro": "long",
+      "ru": "длинный",
+      "note": ""
+    },
+    {
+      "id": 1052,
+      "groupId": 32,
+      "ro": "court",
+      "ru": "короткий",
+      "note": ""
+    },
+    {
+      "id": 1053,
+      "groupId": 32,
+      "ro": "large",
+      "ru": "широкий",
+      "note": ""
+    },
+    {
+      "id": 1054,
+      "groupId": 32,
+      "ro": "étroit",
+      "ru": "узкий",
+      "note": ""
+    },
+    {
+      "id": 1055,
+      "groupId": 32,
+      "ro": "lourd",
+      "ru": "тяжёлый",
+      "note": ""
+    },
+    {
+      "id": 1056,
+      "groupId": 32,
+      "ro": "léger",
+      "ru": "лёгкий",
+      "note": ""
+    },
+    {
+      "id": 1057,
+      "groupId": 32,
+      "ro": "rapide",
+      "ru": "быстрый",
+      "note": ""
+    },
+    {
+      "id": 1058,
+      "groupId": 32,
+      "ro": "lent",
+      "ru": "медленный",
+      "note": ""
+    },
+    {
+      "id": 1059,
+      "groupId": 32,
+      "ro": "fort",
+      "ru": "сильный",
+      "note": ""
+    },
+    {
+      "id": 1060,
+      "groupId": 32,
+      "ro": "faible",
+      "ru": "слабый",
+      "note": ""
+    },
+    {
+      "id": 1061,
+      "groupId": 32,
+      "ro": "dur",
+      "ru": "твёрдый",
+      "note": ""
+    },
+    {
+      "id": 1062,
+      "groupId": 32,
+      "ro": "doux",
+      "ru": "мягкий / нежный",
+      "note": ""
+    },
+    {
+      "id": 1063,
+      "groupId": 32,
+      "ro": "chaud",
+      "ru": "горячий",
+      "note": ""
+    },
+    {
+      "id": 1064,
+      "groupId": 32,
+      "ro": "froid",
+      "ru": "холодный",
+      "note": ""
+    },
+    {
+      "id": 1065,
+      "groupId": 32,
+      "ro": "frais",
+      "ru": "свежий",
+      "note": ""
+    },
+    {
+      "id": 1066,
+      "groupId": 32,
+      "ro": "sec",
+      "ru": "сухой",
+      "note": ""
+    },
+    {
+      "id": 1067,
+      "groupId": 32,
+      "ro": "mouillé",
+      "ru": "мокрый",
+      "note": ""
+    },
+    {
+      "id": 1068,
+      "groupId": 32,
+      "ro": "plein",
+      "ru": "полный",
+      "note": ""
+    },
+    {
+      "id": 1069,
+      "groupId": 32,
+      "ro": "vide",
+      "ru": "пустой",
+      "note": ""
+    },
+    {
+      "id": 1070,
+      "groupId": 32,
+      "ro": "ouvert",
+      "ru": "открытый",
+      "note": ""
+    },
+    {
+      "id": 1071,
+      "groupId": 32,
+      "ro": "fermé",
+      "ru": "закрытый",
+      "note": ""
+    },
+    {
+      "id": 1072,
+      "groupId": 32,
+      "ro": "neuf",
+      "ru": "новый",
+      "note": ""
+    },
+    {
+      "id": 1074,
+      "groupId": 32,
+      "ro": "moderne",
+      "ru": "современный",
+      "note": ""
+    },
+    {
+      "id": 1075,
+      "groupId": 32,
+      "ro": "ancien",
+      "ru": "древний",
+      "note": ""
+    },
+    {
+      "id": 1076,
+      "groupId": 32,
+      "ro": "cher",
+      "ru": "дорогой",
+      "note": ""
+    },
+    {
+      "id": 1077,
+      "groupId": 32,
+      "ro": "bon marché",
+      "ru": "дешёвый",
+      "note": ""
+    },
+    {
+      "id": 1078,
+      "groupId": 32,
+      "ro": "facile",
+      "ru": "лёгкий / простой",
+      "note": ""
+    },
+    {
+      "id": 1079,
+      "groupId": 32,
+      "ro": "difficile",
+      "ru": "трудный",
+      "note": ""
+    },
+    {
+      "id": 1080,
+      "groupId": 32,
+      "ro": "bon",
+      "ru": "хороший",
+      "note": ""
+    },
+    {
+      "id": 1081,
+      "groupId": 32,
+      "ro": "mauvais",
+      "ru": "плохой",
+      "note": ""
+    },
+    {
+      "id": 1082,
+      "groupId": 32,
+      "ro": "propre",
+      "ru": "чистый",
+      "note": ""
+    },
+    {
+      "id": 1083,
+      "groupId": 32,
+      "ro": "sale",
+      "ru": "грязный",
+      "note": ""
+    },
+    {
+      "id": 1084,
+      "groupId": 32,
+      "ro": "ordonné",
+      "ru": "аккуратный",
+      "note": ""
+    },
+    {
+      "id": 1085,
+      "groupId": 32,
+      "ro": "désordonné",
+      "ru": "беспорядочный",
+      "note": ""
+    },
+    {
+      "id": 1086,
+      "groupId": 32,
+      "ro": "sain",
+      "ru": "здоровый",
+      "note": ""
+    },
+    {
+      "id": 1087,
+      "groupId": 32,
+      "ro": "malade",
+      "ru": "больной",
+      "note": ""
+    },
+    {
+      "id": 1088,
+      "groupId": 32,
+      "ro": "fatigué",
+      "ru": "усталый",
+      "note": ""
+    },
+    {
+      "id": 1089,
+      "groupId": 32,
+      "ro": "heureux",
+      "ru": "счастливый",
+      "note": ""
+    },
+    {
+      "id": 1090,
+      "groupId": 32,
+      "ro": "triste",
+      "ru": "грustный",
+      "note": ""
+    },
+    {
+      "id": 1091,
+      "groupId": 32,
+      "ro": "en colère",
+      "ru": "злой",
+      "note": ""
+    },
+    {
+      "id": 1092,
+      "groupId": 32,
+      "ro": "effrayé",
+      "ru": "испуганный",
+      "note": ""
+    },
+    {
+      "id": 1093,
+      "groupId": 32,
+      "ro": "surpris",
+      "ru": "удивлённый",
+      "note": ""
+    },
+    {
+      "id": 1094,
+      "groupId": 32,
+      "ro": "intéressant",
+      "ru": "интересный",
+      "note": ""
+    },
+    {
+      "id": 1095,
+      "groupId": 32,
+      "ro": "ennuyeux",
+      "ru": "скучный",
+      "note": ""
+    },
+    {
+      "id": 1096,
+      "groupId": 32,
+      "ro": "utile",
+      "ru": "полезный",
+      "note": ""
+    },
+    {
+      "id": 1097,
+      "groupId": 32,
+      "ro": "inutile",
+      "ru": "бесполезный",
+      "note": ""
+    },
+    {
+      "id": 1098,
+      "groupId": 32,
+      "ro": "juste",
+      "ru": "правильный",
+      "note": ""
+    },
+    {
+      "id": 1099,
+      "groupId": 32,
+      "ro": "faux",
+      "ru": "неправильный",
+      "note": ""
+    },
+    {
+      "id": 1100,
+      "groupId": 32,
+      "ro": "vrai",
+      "ru": "истинный",
+      "note": ""
+    },
+    {
+      "id": 1101,
+      "groupId": 32,
+      "ro": "possible",
+      "ru": "возможный",
+      "note": ""
+    },
+    {
+      "id": 1102,
+      "groupId": 32,
+      "ro": "impossible",
+      "ru": "невозможный",
+      "note": ""
+    },
+    {
+      "id": 1103,
+      "groupId": 32,
+      "ro": "nécessaire",
+      "ru": "необходимый",
+      "note": ""
+    },
+    {
+      "id": 1104,
+      "groupId": 32,
+      "ro": "important",
+      "ru": "важный",
+      "note": ""
+    },
+    {
+      "id": 1105,
+      "groupId": 32,
+      "ro": "urgent",
+      "ru": "срочный",
+      "note": ""
+    },
+    {
+      "id": 1106,
+      "groupId": 32,
+      "ro": "sûr",
+      "ru": "безопасный",
+      "note": ""
+    },
+    {
+      "id": 1107,
+      "groupId": 32,
+      "ro": "dangereux",
+      "ru": "опасный",
+      "note": ""
+    },
+    {
+      "id": 1108,
+      "groupId": 32,
+      "ro": "calme",
+      "ru": "спокойный",
+      "note": ""
+    },
+    {
+      "id": 1109,
+      "groupId": 32,
+      "ro": "bruyant",
+      "ru": "шумный",
+      "note": ""
+    },
+    {
+      "id": 1110,
+      "groupId": 32,
+      "ro": "silencieux",
+      "ru": "тихий",
+      "note": ""
+    },
+    {
+      "id": 1111,
+      "groupId": 32,
+      "ro": "populaire",
+      "ru": "популярный",
+      "note": ""
+    },
+    {
+      "id": 1112,
+      "groupId": 32,
+      "ro": "célèbre",
+      "ru": "знаменитый",
+      "note": ""
+    },
+    {
+      "id": 1113,
+      "groupId": 32,
+      "ro": "inconnu",
+      "ru": "неизвестный",
+      "note": ""
+    },
+    {
+      "id": 1114,
+      "groupId": 32,
+      "ro": "intelligent",
+      "ru": "умный",
+      "note": ""
+    },
+    {
+      "id": 1115,
+      "groupId": 32,
+      "ro": "stupide",
+      "ru": "глупый",
+      "note": ""
+    },
+    {
+      "id": 1116,
+      "groupId": 32,
+      "ro": "gentil",
+      "ru": "добрый",
+      "note": ""
+    },
+    {
+      "id": 1117,
+      "groupId": 32,
+      "ro": "méchant",
+      "ru": "злой",
+      "note": ""
+    },
+    {
+      "id": 1118,
+      "groupId": 32,
+      "ro": "honnête",
+      "ru": "честный",
+      "note": ""
+    },
+    {
+      "id": 1119,
+      "groupId": 32,
+      "ro": "courageux",
+      "ru": "смелый",
+      "note": ""
+    },
+    {
+      "id": 1120,
+      "groupId": 32,
+      "ro": "timide",
+      "ru": "робкий",
+      "note": ""
+    },
+    {
+      "id": 1121,
+      "groupId": 32,
+      "ro": "généreux",
+      "ru": "щедрый",
+      "note": ""
+    },
+    {
+      "id": 1122,
+      "groupId": 32,
+      "ro": "avare",
+      "ru": "жадный",
+      "note": ""
+    },
+    {
+      "id": 1123,
+      "groupId": 32,
+      "ro": "travailleur",
+      "ru": "трудолюбивый",
+      "note": ""
+    },
+    {
+      "id": 1124,
+      "groupId": 32,
+      "ro": "paresseux",
+      "ru": "ленивый",
+      "note": ""
+    },
+    {
+      "id": 1125,
+      "groupId": 32,
+      "ro": "patient",
+      "ru": "терпеливый",
+      "note": ""
+    },
+    {
+      "id": 1126,
+      "groupId": 32,
+      "ro": "impatient",
+      "ru": "нетерпеlivый",
+      "note": ""
+    },
+    {
+      "id": 1127,
+      "groupId": 32,
+      "ro": "sympathique",
+      "ru": "приятный",
+      "note": ""
+    },
+    {
+      "id": 1128,
+      "groupId": 32,
+      "ro": "antipathique",
+      "ru": "неприятный",
+      "note": ""
+    },
+    {
+      "id": 1129,
+      "groupId": 32,
+      "ro": "drôle",
+      "ru": "забавный",
+      "note": ""
+    },
+    {
+      "id": 1130,
+      "groupId": 32,
+      "ro": "sérieux",
+      "ru": "серьёзный",
+      "note": ""
+    },
+    {
+      "id": 1131,
+      "groupId": 32,
+      "ro": "bizarre",
+      "ru": "странный",
+      "note": ""
+    },
+    {
+      "id": 1132,
+      "groupId": 32,
+      "ro": "normal",
+      "ru": "обычный",
+      "note": ""
+    },
+    {
+      "id": 1133,
+      "groupId": 32,
+      "ro": "spécial",
+      "ru": "особенный",
+      "note": ""
+    },
+    {
+      "id": 1134,
+      "groupId": 32,
+      "ro": "commun",
+      "ru": "общий / обычный",
+      "note": ""
+    },
+    {
+      "id": 1135,
+      "groupId": 32,
+      "ro": "privé",
+      "ru": "частный",
+      "note": ""
+    },
+    {
+      "id": 1136,
+      "groupId": 32,
+      "ro": "public",
+      "ru": "общественный",
+      "note": ""
+    },
+    {
+      "id": 1137,
+      "groupId": 32,
+      "ro": "national",
+      "ru": "национальный",
+      "note": ""
+    },
+    {
+      "id": 1138,
+      "groupId": 32,
+      "ro": "international",
+      "ru": "международный",
+      "note": ""
+    },
+    {
+      "id": 1139,
+      "groupId": 32,
+      "ro": "local",
+      "ru": "местный",
+      "note": ""
+    },
+    {
+      "id": 1140,
+      "groupId": 32,
+      "ro": "global",
+      "ru": "глобальный",
+      "note": ""
+    },
+    {
+      "id": 1141,
+      "groupId": 33,
+      "ro": "très",
+      "ru": "очень",
+      "note": ""
+    },
+    {
+      "id": 1142,
+      "groupId": 33,
+      "ro": "peu",
+      "ru": "мало",
+      "note": ""
+    },
+    {
+      "id": 1143,
+      "groupId": 33,
+      "ro": "assez",
+      "ru": "достаточно",
+      "note": ""
+    },
+    {
+      "id": 1144,
+      "groupId": 33,
+      "ro": "trop",
+      "ru": "слишком",
+      "note": ""
+    },
+    {
+      "id": 1145,
+      "groupId": 33,
+      "ro": "presque",
+      "ru": "почти",
+      "note": ""
+    },
+    {
+      "id": 1146,
+      "groupId": 33,
+      "ro": "environ",
+      "ru": "примерно",
+      "note": ""
+    },
+    {
+      "id": 1147,
+      "groupId": 33,
+      "ro": "seulement",
+      "ru": "только",
+      "note": ""
+    },
+    {
+      "id": 1148,
+      "groupId": 33,
+      "ro": "aussi",
+      "ru": "тоже",
+      "note": ""
+    },
+    {
+      "id": 1149,
+      "groupId": 33,
+      "ro": "encore",
+      "ru": "ещё",
+      "note": ""
+    },
+    {
+      "id": 1150,
+      "groupId": 33,
+      "ro": "déjà",
+      "ru": "уже",
+      "note": ""
+    },
+    {
+      "id": 1151,
+      "groupId": 33,
+      "ro": "jamais",
+      "ru": "никогда",
+      "note": ""
+    },
+    {
+      "id": 1152,
+      "groupId": 33,
+      "ro": "toujours",
+      "ru": "всегда",
+      "note": ""
+    },
+    {
+      "id": 1153,
+      "groupId": 33,
+      "ro": "souvent",
+      "ru": "часто",
+      "note": ""
+    },
+    {
+      "id": 1154,
+      "groupId": 33,
+      "ro": "rarement",
+      "ru": "редко",
+      "note": ""
+    },
+    {
+      "id": 1155,
+      "groupId": 33,
+      "ro": "parfois",
+      "ru": "иногда",
+      "note": ""
+    },
+    {
+      "id": 1156,
+      "groupId": 33,
+      "ro": "tôt",
+      "ru": "рано",
+      "note": ""
+    },
+    {
+      "id": 1157,
+      "groupId": 33,
+      "ro": "tard",
+      "ru": "поздно",
+      "note": ""
+    },
+    {
+      "id": 1158,
+      "groupId": 33,
+      "ro": "tout de suite",
+      "ru": "сразу",
+      "note": ""
+    },
+    {
+      "id": 1159,
+      "groupId": 33,
+      "ro": "lentement",
+      "ru": "медленно",
+      "note": ""
+    },
+    {
+      "id": 1160,
+      "groupId": 33,
+      "ro": "rapidement",
+      "ru": "быстро",
+      "note": ""
+    },
+    {
+      "id": 1161,
+      "groupId": 33,
+      "ro": "bien",
+      "ru": "хорошо",
+      "note": ""
+    },
+    {
+      "id": 1162,
+      "groupId": 33,
+      "ro": "mal",
+      "ru": "плохо",
+      "note": ""
+    },
+    {
+      "id": 1163,
+      "groupId": 33,
+      "ro": "ensemble",
+      "ru": "вместе",
+      "note": ""
+    },
+    {
+      "id": 1164,
+      "groupId": 33,
+      "ro": "seul",
+      "ru": "один / в одиночку",
+      "note": ""
+    },
+    {
+      "id": 1165,
+      "groupId": 33,
+      "ro": "partout",
+      "ru": "везде",
+      "note": ""
+    },
+    {
+      "id": 1166,
+      "groupId": 33,
+      "ro": "quelque part",
+      "ru": "где-то",
+      "note": ""
+    },
+    {
+      "id": 1167,
+      "groupId": 33,
+      "ro": "nulle part",
+      "ru": "нигде",
+      "note": ""
+    },
+    {
+      "id": 1168,
+      "groupId": 33,
+      "ro": "ici",
+      "ru": "здесь",
+      "note": ""
+    },
+    {
+      "id": 1169,
+      "groupId": 33,
+      "ro": "là",
+      "ru": "там",
+      "note": ""
+    },
+    {
+      "id": 1170,
+      "groupId": 33,
+      "ro": "exactement",
+      "ru": "точно",
+      "note": ""
+    },
+    {
+      "id": 1171,
+      "groupId": 33,
+      "ro": "peut-être",
+      "ru": "может быть",
+      "note": ""
+    },
+    {
+      "id": 1172,
+      "groupId": 33,
+      "ro": "probablement",
+      "ru": "вероятно",
+      "note": ""
+    },
+    {
+      "id": 1173,
+      "groupId": 33,
+      "ro": "certainement",
+      "ru": "конечно",
+      "note": ""
+    },
+    {
+      "id": 1174,
+      "groupId": 33,
+      "ro": "de toute façon",
+      "ru": "в любом случае",
+      "note": ""
+    },
+    {
+      "id": 1175,
+      "groupId": 33,
+      "ro": "en plus",
+      "ru": "кроме того",
+      "note": ""
+    },
+    {
+      "id": 1176,
+      "groupId": 33,
+      "ro": "cependant",
+      "ru": "однако",
+      "note": ""
+    },
+    {
+      "id": 1180,
+      "groupId": 33,
+      "ro": "ensuite",
+      "ru": "потом",
+      "note": ""
+    },
+    {
+      "id": 1182,
+      "groupId": 33,
+      "ro": "dernièrement",
+      "ru": "в последнее время",
+      "note": ""
+    },
+    {
+      "id": 1183,
+      "groupId": 33,
+      "ro": "habituellement",
+      "ru": "обычно",
+      "note": ""
+    },
+    {
+      "id": 1184,
+      "groupId": 33,
+      "ro": "tout juste",
+      "ru": "только что",
+      "note": ""
+    },
+    {
+      "id": 1185,
+      "groupId": 34,
+      "ro": "de",
+      "ru": "из / о",
+      "note": ""
+    },
+    {
+      "id": 1186,
+      "groupId": 34,
+      "ro": "à",
+      "ru": "в / к",
+      "note": ""
+    },
+    {
+      "id": 1187,
+      "groupId": 34,
+      "ro": "en",
+      "ru": "в",
+      "note": ""
+    },
+    {
+      "id": 1188,
+      "groupId": 34,
+      "ro": "avec",
+      "ru": "с",
+      "note": ""
+    },
+    {
+      "id": 1189,
+      "groupId": 34,
+      "ro": "sur",
+      "ru": "на",
+      "note": ""
+    },
+    {
+      "id": 1190,
+      "groupId": 34,
+      "ro": "pour",
+      "ru": "для / за",
+      "note": ""
+    },
+    {
+      "id": 1191,
+      "groupId": 34,
+      "ro": "entre",
+      "ru": "между",
+      "note": ""
+    },
+    {
+      "id": 1192,
+      "groupId": 34,
+      "ro": "sans",
+      "ru": "без",
+      "note": ""
+    },
+    {
+      "id": 1193,
+      "groupId": 34,
+      "ro": "après",
+      "ru": "после",
+      "note": ""
+    },
+    {
+      "id": 1194,
+      "groupId": 34,
+      "ro": "avant",
+      "ru": "до",
+      "note": ""
+    },
+    {
+      "id": 1195,
+      "groupId": 34,
+      "ro": "pendant",
+      "ru": "во время",
+      "note": ""
+    },
+    {
+      "id": 1196,
+      "groupId": 34,
+      "ro": "à travers",
+      "ru": "через",
+      "note": ""
+    },
+    {
+      "id": 1197,
+      "groupId": 34,
+      "ro": "près de",
+      "ru": "рядом с",
+      "note": ""
+    },
+    {
+      "id": 1198,
+      "groupId": 34,
+      "ro": "loin de",
+      "ru": "далеко от",
+      "note": ""
+    },
+    {
+      "id": 1199,
+      "groupId": 34,
+      "ro": "dedans",
+      "ru": "внутри",
+      "note": ""
+    },
+    {
+      "id": 1200,
+      "groupId": 34,
+      "ro": "dehors",
+      "ru": "снаружи",
+      "note": ""
+    },
+    {
+      "id": 1201,
+      "groupId": 34,
+      "ro": "au-dessus",
+      "ru": "над",
+      "note": ""
+    },
+    {
+      "id": 1202,
+      "groupId": 34,
+      "ro": "en dessous",
+      "ru": "под",
+      "note": ""
+    },
+    {
+      "id": 1203,
+      "groupId": 34,
+      "ro": "devant",
+      "ru": "перед",
+      "note": ""
+    },
+    {
+      "id": 1204,
+      "groupId": 34,
+      "ro": "derrière",
+      "ru": "за / позади",
+      "note": ""
+    },
+    {
+      "id": 1205,
+      "groupId": 34,
+      "ro": "et",
+      "ru": "и",
+      "note": ""
+    },
+    {
+      "id": 1206,
+      "groupId": 34,
+      "ro": "ou",
+      "ru": "или",
+      "note": ""
+    },
+    {
+      "id": 1207,
+      "groupId": 34,
+      "ro": "mais",
+      "ru": "но",
+      "note": ""
+    },
+    {
+      "id": 1209,
+      "groupId": 34,
+      "ro": "si",
+      "ru": "если",
+      "note": ""
+    },
+    {
+      "id": 1210,
+      "groupId": 34,
+      "ro": "parce que",
+      "ru": "потому что",
+      "note": ""
+    },
+    {
+      "id": 1212,
+      "groupId": 34,
+      "ro": "pendant que",
+      "ru": "пока",
+      "note": ""
+    },
+    {
+      "id": 1214,
+      "groupId": 34,
+      "ro": "depuis",
+      "ru": "с / с тех пор",
+      "note": ""
+    },
+    {
+      "id": 1215,
+      "groupId": 34,
+      "ro": "jusqu'à",
+      "ru": "до",
+      "note": ""
+    },
+    {
+      "id": 1216,
+      "groupId": 35,
+      "ro": "je",
+      "ru": "я",
+      "note": ""
+    },
+    {
+      "id": 1217,
+      "groupId": 35,
+      "ro": "tu",
+      "ru": "ты",
+      "note": ""
+    },
+    {
+      "id": 1218,
+      "groupId": 35,
+      "ro": "il",
+      "ru": "он",
+      "note": ""
+    },
+    {
+      "id": 1219,
+      "groupId": 35,
+      "ro": "elle",
+      "ru": "она",
+      "note": ""
+    },
+    {
+      "id": 1220,
+      "groupId": 35,
+      "ro": "nous",
+      "ru": "мы",
+      "note": ""
+    },
+    {
+      "id": 1221,
+      "groupId": 35,
+      "ro": "vous",
+      "ru": "вы",
+      "note": ""
+    },
+    {
+      "id": 1222,
+      "groupId": 35,
+      "ro": "ils",
+      "ru": "они (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1223,
+      "groupId": 35,
+      "ro": "elles",
+      "ru": "они (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1224,
+      "groupId": 35,
+      "ro": "me",
+      "ru": "мне / меня",
+      "note": ""
+    },
+    {
+      "id": 1225,
+      "groupId": 35,
+      "ro": "te",
+      "ru": "тебе / тебя",
+      "note": ""
+    },
+    {
+      "id": 1226,
+      "groupId": 35,
+      "ro": "le",
+      "ru": "его",
+      "note": ""
+    },
+    {
+      "id": 1227,
+      "groupId": 35,
+      "ro": "la",
+      "ru": "её",
+      "note": ""
+    },
+    {
+      "id": 1228,
+      "groupId": 35,
+      "ro": "lui",
+      "ru": "ему / ей",
+      "note": ""
+    },
+    {
+      "id": 1229,
+      "groupId": 35,
+      "ro": "nous (acc)",
+      "ru": "нас / нам",
+      "note": ""
+    },
+    {
+      "id": 1230,
+      "groupId": 35,
+      "ro": "vous (acc)",
+      "ru": "вас / вам",
+      "note": ""
+    },
+    {
+      "id": 1231,
+      "groupId": 35,
+      "ro": "les",
+      "ru": "их",
+      "note": ""
+    },
+    {
+      "id": 1232,
+      "groupId": 35,
+      "ro": "ce",
+      "ru": "это",
+      "note": ""
+    },
+    {
+      "id": 1233,
+      "groupId": 35,
+      "ro": "ça",
+      "ru": "это / то",
+      "note": ""
+    },
+    {
+      "id": 1234,
+      "groupId": 35,
+      "ro": "quelqu'un",
+      "ru": "кто-то",
+      "note": ""
+    },
+    {
+      "id": 1235,
+      "groupId": 35,
+      "ro": "personne",
+      "ru": "никто",
+      "note": ""
+    },
+    {
+      "id": 1236,
+      "groupId": 35,
+      "ro": "tout le monde",
+      "ru": "все",
+      "note": ""
+    },
+    {
+      "id": 1237,
+      "groupId": 35,
+      "ro": "chacun",
+      "ru": "каждый",
+      "note": ""
+    },
+    {
+      "id": 1238,
+      "groupId": 35,
+      "ro": "quelque chose",
+      "ru": "что-то",
+      "note": ""
+    },
+    {
+      "id": 1239,
+      "groupId": 35,
+      "ro": "rien",
+      "ru": "ничего",
+      "note": ""
+    },
+    {
+      "id": 1240,
+      "groupId": 35,
+      "ro": "beaucoup",
+      "ru": "много",
+      "note": ""
+    },
+    {
+      "id": 1241,
+      "groupId": 35,
+      "ro": "peu",
+      "ru": "мало",
+      "note": ""
+    },
+    {
+      "id": 1242,
+      "groupId": 35,
+      "ro": "tout",
+      "ru": "всё",
+      "note": ""
+    },
+    {
+      "id": 1243,
+      "groupId": 35,
+      "ro": "lui-même",
+      "ru": "сам",
+      "note": ""
+    },
+    {
+      "id": 1244,
+      "groupId": 35,
+      "ro": "autre",
+      "ru": "другой",
+      "note": ""
+    },
+    {
+      "id": 1245,
+      "groupId": 35,
+      "ro": "même",
+      "ru": "тот же / такой же",
+      "note": ""
+    },
+    {
+      "id": 1247,
+      "groupId": 35,
+      "ro": "que",
+      "ru": "который",
+      "note": ""
+    },
+    {
+      "id": 1248,
+      "groupId": 35,
+      "ro": "ce que",
+      "ru": "то что",
+      "note": ""
+    },
+    {
+      "id": 1249,
+      "groupId": 35,
+      "ro": "dont",
+      "ru": "чей",
+      "note": ""
+    },
+    {
+      "id": 1250,
+      "groupId": 35,
+      "ro": "les deux",
+      "ru": "оба",
+      "note": ""
+    },
+    {
+      "id": 1251,
+      "groupId": 36,
+      "ro": "le (article)",
+      "ru": "определённый артикль (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1252,
+      "groupId": 36,
+      "ro": "la (article)",
+      "ru": "определённый артикль (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1253,
+      "groupId": 36,
+      "ro": "les (article)",
+      "ru": "определённый артикль (мн.ч.)",
+      "note": ""
+    },
+    {
+      "id": 1254,
+      "groupId": 36,
+      "ro": "un",
+      "ru": "неопределённый артикль (м.р.)",
+      "note": ""
+    },
+    {
+      "id": 1255,
+      "groupId": 36,
+      "ro": "une",
+      "ru": "неопределённый артикль (ж.р.)",
+      "note": ""
+    },
+    {
+      "id": 1256,
+      "groupId": 36,
+      "ro": "des",
+      "ru": "неопределённый артикль (мн.ч.)",
+      "note": ""
+    },
+    {
+      "id": 1257,
+      "groupId": 36,
+      "ro": "ne...pas",
+      "ru": "отрицание",
+      "note": ""
+    },
+    {
+      "id": 1258,
+      "groupId": 36,
+      "ro": "oui",
+      "ru": "да",
+      "note": ""
+    },
+    {
+      "id": 1259,
+      "groupId": 36,
+      "ro": "non",
+      "ru": "нет",
+      "note": ""
+    },
+    {
+      "id": 1260,
+      "groupId": 36,
+      "ro": "si (yes)",
+      "ru": "да (ответ на отрицание)",
+      "note": ""
+    },
+    {
+      "id": 1261,
+      "groupId": 36,
+      "ro": "voilà",
+      "ru": "вот",
+      "note": ""
+    },
+    {
+      "id": 1262,
+      "groupId": 36,
+      "ro": "il y a",
+      "ru": "есть (существует)",
+      "note": ""
+    },
+    {
+      "id": 1263,
+      "groupId": 36,
+      "ro": "c'est",
+      "ru": "это есть",
+      "note": ""
+    },
+    {
+      "id": 1264,
+      "groupId": 36,
+      "ro": "ne...jamais",
+      "ru": "никогда не",
+      "note": ""
+    },
+    {
+      "id": 1265,
+      "groupId": 36,
+      "ro": "ne...rien",
+      "ru": "ничего не",
+      "note": ""
+    },
+    {
+      "id": 1266,
+      "groupId": 36,
+      "ro": "ne...personne",
+      "ru": "никого не",
+      "note": ""
+    },
+    {
+      "id": 1267,
+      "groupId": 36,
+      "ro": "ne...plus",
+      "ru": "больше не",
+      "note": ""
+    },
+    {
+      "id": 1278,
+      "groupId": 36,
+      "ro": "vraiment",
+      "ru": "действительно",
+      "note": ""
+    },
+    {
+      "id": 1279,
+      "groupId": 36,
+      "ro": "bien sûr",
+      "ru": "конечно",
+      "note": ""
+    },
+    {
+      "id": 1280,
+      "groupId": 36,
+      "ro": "pourtant",
+      "ru": "однако",
+      "note": ""
+    },
+    {
+      "id": 1281,
+      "groupId": 36,
+      "ro": "donc",
+      "ru": "итак",
+      "note": ""
+    },
+    {
+      "id": 1282,
+      "groupId": 36,
+      "ro": "alors",
+      "ru": "тогда / ну",
+      "note": ""
+    },
+    {
+      "id": 1284,
+      "groupId": 36,
+      "ro": "enfin",
+      "ru": "ну / наконец",
+      "note": ""
+    },
+    {
+      "id": 1285,
+      "groupId": 36,
+      "ro": "quand même",
+      "ru": "всё равно",
+      "note": ""
+    },
+    {
+      "id": 1287,
+      "groupId": 36,
+      "ro": "plutôt",
+      "ru": "скорее",
+      "note": ""
+    },
+    {
+      "id": 1288,
+      "groupId": 36,
+      "ro": "voire",
+      "ru": "даже",
+      "note": ""
+    },
+    {
+      "id": 1289,
+      "groupId": 37,
+      "ro": "qui",
+      "ru": "кто",
+      "note": ""
+    },
+    {
+      "id": 1290,
+      "groupId": 37,
+      "ro": "que / quoi",
+      "ru": "что",
+      "note": ""
+    },
+    {
+      "id": 1291,
+      "groupId": 37,
+      "ro": "où",
+      "ru": "где",
+      "note": ""
+    },
+    {
+      "id": 1292,
+      "groupId": 37,
+      "ro": "quand",
+      "ru": "когда",
+      "note": ""
+    },
+    {
+      "id": 1293,
+      "groupId": 37,
+      "ro": "pourquoi",
+      "ru": "почему",
+      "note": ""
+    },
+    {
+      "id": 1294,
+      "groupId": 37,
+      "ro": "comment",
+      "ru": "как",
+      "note": ""
+    },
+    {
+      "id": 1295,
+      "groupId": 37,
+      "ro": "combien",
+      "ru": "сколько",
+      "note": ""
+    },
+    {
+      "id": 1296,
+      "groupId": 37,
+      "ro": "quel",
+      "ru": "какой",
+      "note": ""
+    },
+    {
+      "id": 1297,
+      "groupId": 37,
+      "ro": "lequel",
+      "ru": "который из",
+      "note": ""
+    },
+    {
+      "id": 1298,
+      "groupId": 37,
+      "ro": "à quelle heure",
+      "ru": "в котором часу",
+      "note": ""
+    },
+    {
+      "id": 1299,
+      "groupId": 37,
+      "ro": "d'où",
+      "ru": "откуда",
+      "note": ""
+    },
+    {
+      "id": 1300,
+      "groupId": 37,
+      "ro": "jusqu'à quand",
+      "ru": "до каких пор",
+      "note": ""
+    },
+    {
+      "id": 1301,
+      "groupId": 37,
+      "ro": "avec qui",
+      "ru": "с кем",
+      "note": ""
+    },
+    {
+      "id": 1302,
+      "groupId": 37,
+      "ro": "pour qui",
+      "ru": "для кого",
+      "note": ""
+    },
+    {
+      "id": 1303,
+      "groupId": 37,
+      "ro": "de qui",
+      "ru": "чей",
+      "note": ""
+    },
+    {
+      "id": 1304,
+      "groupId": 37,
+      "ro": "comment ça",
+      "ru": "как так",
+      "note": ""
+    },
+    {
+      "id": 1305,
+      "groupId": 37,
+      "ro": "vraiment",
+      "ru": "правда?",
+      "note": ""
+    },
+    {
+      "id": 1306,
+      "groupId": 37,
+      "ro": "c'est quoi",
+      "ru": "что это такое",
+      "note": ""
+    },
+    {
+      "id": 1307,
+      "groupId": 37,
+      "ro": "n'est-ce pas",
+      "ru": "не правда ли",
+      "note": ""
+    },
+    {
+      "id": 1308,
+      "groupId": 37,
+      "ro": "tu peux",
+      "ru": "можешь",
+      "note": ""
+    },
+    {
+      "id": 1309,
+      "groupId": 37,
+      "ro": "il y a",
+      "ru": "есть ли",
+      "note": ""
+    },
+    {
+      "id": 1310,
+      "groupId": 38,
+      "ro": "bonjour",
+      "ru": "добрый день",
+      "note": ""
+    },
+    {
+      "id": 1311,
+      "groupId": 38,
+      "ro": "bonsoir",
+      "ru": "добрый вечер",
+      "note": ""
+    },
+    {
+      "id": 1312,
+      "groupId": 38,
+      "ro": "bonne nuit",
+      "ru": "спокойной ночи",
+      "note": ""
+    },
+    {
+      "id": 1313,
+      "groupId": 38,
+      "ro": "salut",
+      "ru": "привет / пока",
+      "note": ""
+    },
+    {
+      "id": 1314,
+      "groupId": 38,
+      "ro": "au revoir",
+      "ru": "до свидания",
+      "note": ""
+    },
+    {
+      "id": 1315,
+      "groupId": 38,
+      "ro": "à bientôt",
+      "ru": "до скорого",
+      "note": ""
+    },
+    {
+      "id": 1316,
+      "groupId": 38,
+      "ro": "à demain",
+      "ru": "до завтра",
+      "note": ""
+    },
+    {
+      "id": 1317,
+      "groupId": 38,
+      "ro": "comment ça va",
+      "ru": "как дела",
+      "note": ""
+    },
+    {
+      "id": 1318,
+      "groupId": 38,
+      "ro": "ça va",
+      "ru": "хорошо",
+      "note": ""
+    },
+    {
+      "id": 1319,
+      "groupId": 38,
+      "ro": "merci",
+      "ru": "спасибо",
+      "note": ""
+    },
+    {
+      "id": 1320,
+      "groupId": 38,
+      "ro": "de rien",
+      "ru": "пожалуйста",
+      "note": ""
+    },
+    {
+      "id": 1321,
+      "groupId": 38,
+      "ro": "s'il vous plaît",
+      "ru": "пожалуйста (просьба)",
+      "note": ""
+    },
+    {
+      "id": 1322,
+      "groupId": 38,
+      "ro": "excusez-moi",
+      "ru": "извините",
+      "note": ""
+    },
+    {
+      "id": 1323,
+      "groupId": 38,
+      "ro": "je suis désolé",
+      "ru": "сожалею",
+      "note": ""
+    },
+    {
+      "id": 1324,
+      "groupId": 38,
+      "ro": "félicitations",
+      "ru": "поздравляю",
+      "note": ""
+    },
+    {
+      "id": 1325,
+      "groupId": 38,
+      "ro": "bienvenue",
+      "ru": "добро пожаловать",
+      "note": ""
+    },
+    {
+      "id": 1326,
+      "groupId": 38,
+      "ro": "enchanté",
+      "ru": "приятно познакомиться",
+      "note": ""
+    },
+    {
+      "id": 1327,
+      "groupId": 38,
+      "ro": "je m'appelle",
+      "ru": "меня зовут",
+      "note": ""
+    },
+    {
+      "id": 1328,
+      "groupId": 38,
+      "ro": "je ne comprends pas",
+      "ru": "не понимаю",
+      "note": ""
+    },
+    {
+      "id": 1329,
+      "groupId": 38,
+      "ro": "pouvez-vous répéter",
+      "ru": "можете повторить",
+      "note": ""
+    },
+    {
+      "id": 1330,
+      "groupId": 38,
+      "ro": "parlez-vous français",
+      "ru": "вы говорите по-французски",
+      "note": ""
+    },
+    {
+      "id": 1331,
+      "groupId": 38,
+      "ro": "un peu",
+      "ru": "немного",
+      "note": ""
+    },
+    {
+      "id": 1332,
+      "groupId": 38,
+      "ro": "plus lentement",
+      "ru": "медленнее",
+      "note": ""
+    },
+    {
+      "id": 1333,
+      "groupId": 38,
+      "ro": "compris",
+      "ru": "понял",
+      "note": ""
+    },
+    {
+      "id": 1335,
+      "groupId": 38,
+      "ro": "c'est juste",
+      "ru": "верно",
+      "note": ""
+    },
+    {
+      "id": 1336,
+      "groupId": 38,
+      "ro": "c'est faux",
+      "ru": "неверно",
+      "note": ""
+    },
+    {
+      "id": 1338,
+      "groupId": 38,
+      "ro": "ça dépend",
+      "ru": "зависит",
+      "note": ""
+    },
+    {
+      "id": 1339,
+      "groupId": 38,
+      "ro": "d'accord",
+      "ru": "договорились",
+      "note": ""
+    },
+    {
+      "id": 1340,
+      "groupId": 38,
+      "ro": "c'est bon",
+      "ru": "хорошо / ладно",
+      "note": ""
+    },
+    {
+      "id": 1341,
+      "groupId": 38,
+      "ro": "on y va",
+      "ru": "пошли",
+      "note": ""
+    },
+    {
+      "id": 1342,
+      "groupId": 38,
+      "ro": "attends",
+      "ru": "подожди",
+      "note": ""
+    },
+    {
+      "id": 1343,
+      "groupId": 38,
+      "ro": "allez",
+      "ru": "ну давай",
+      "note": ""
+    },
+    {
+      "id": 1344,
+      "groupId": 38,
+      "ro": "oh là là",
+      "ru": "ой-ой-ой",
+      "note": ""
+    },
+    {
+      "id": 1345,
+      "groupId": 38,
+      "ro": "mon Dieu",
+      "ru": "Боже мой",
+      "note": ""
+    },
+    {
+      "id": 1346,
+      "groupId": 38,
+      "ro": "c'est super",
+      "ru": "это супер",
+      "note": ""
+    },
+    {
+      "id": 1347,
+      "groupId": 38,
+      "ro": "bravo",
+      "ru": "браво",
+      "note": ""
+    },
+    {
+      "id": 1348,
+      "groupId": 38,
+      "ro": "par exemple",
+      "ru": "например",
+      "note": ""
+    },
+    {
+      "id": 1349,
+      "groupId": 38,
+      "ro": "c'est-à-dire",
+      "ru": "то есть",
+      "note": ""
+    },
+    {
+      "id": 1350,
+      "groupId": 38,
+      "ro": "autrement dit",
+      "ru": "другими словами",
+      "note": ""
+    },
+    {
+      "id": 1351,
+      "groupId": 38,
+      "ro": "selon moi",
+      "ru": "по-моему",
+      "note": ""
+    },
+    {
+      "id": 1352,
+      "groupId": 38,
+      "ro": "je ne sais pas",
+      "ru": "не знаю",
+      "note": ""
+    },
+    {
+      "id": 1353,
+      "groupId": 38,
+      "ro": "peu importe",
+      "ru": "неважно",
+      "note": ""
+    },
+    {
+      "id": 1354,
+      "groupId": 38,
+      "ro": "de rien (réponse)",
+      "ru": "не за что",
+      "note": ""
+    },
+    {
+      "id": 1355,
+      "groupId": 38,
+      "ro": "pas de problème",
+      "ru": "нет проблем",
+      "note": ""
+    },
+    {
+      "id": 1357,
+      "groupId": 38,
+      "ro": "sans aucun doute",
+      "ru": "без сомнения",
+      "note": ""
+    },
+    {
+      "id": 1358,
+      "groupId": 39,
+      "ro": "bonheur",
+      "ru": "счастье",
+      "note": ""
+    },
+    {
+      "id": 1359,
+      "groupId": 39,
+      "ro": "tristesse",
+      "ru": "грусть",
+      "note": ""
+    },
+    {
+      "id": 1360,
+      "groupId": 39,
+      "ro": "peur",
+      "ru": "страх",
+      "note": ""
+    },
+    {
+      "id": 1361,
+      "groupId": 39,
+      "ro": "colère",
+      "ru": "злость",
+      "note": ""
+    },
+    {
+      "id": 1362,
+      "groupId": 39,
+      "ro": "surprise",
+      "ru": "удивление",
+      "note": ""
+    },
+    {
+      "id": 1363,
+      "groupId": 39,
+      "ro": "dégoût",
+      "ru": "отвращение",
+      "note": ""
+    },
+    {
+      "id": 1364,
+      "groupId": 39,
+      "ro": "joie",
+      "ru": "радость",
+      "note": ""
+    },
+    {
+      "id": 1365,
+      "groupId": 39,
+      "ro": "amour",
+      "ru": "любовь",
+      "note": ""
+    },
+    {
+      "id": 1366,
+      "groupId": 39,
+      "ro": "haine",
+      "ru": "ненависть",
+      "note": ""
+    },
+    {
+      "id": 1367,
+      "groupId": 39,
+      "ro": "jalousie",
+      "ru": "ревность",
+      "note": ""
+    },
+    {
+      "id": 1368,
+      "groupId": 39,
+      "ro": "envie",
+      "ru": "зависть",
+      "note": ""
+    },
+    {
+      "id": 1369,
+      "groupId": 39,
+      "ro": "fierté",
+      "ru": "гордость",
+      "note": ""
+    },
+    {
+      "id": 1370,
+      "groupId": 39,
+      "ro": "honte",
+      "ru": "стыд",
+      "note": ""
+    },
+    {
+      "id": 1371,
+      "groupId": 39,
+      "ro": "culpabilité",
+      "ru": "чувство вины",
+      "note": ""
+    },
+    {
+      "id": 1372,
+      "groupId": 39,
+      "ro": "solitude",
+      "ru": "одиночество",
+      "note": ""
+    },
+    {
+      "id": 1373,
+      "groupId": 39,
+      "ro": "nostalgie",
+      "ru": "ностальгия",
+      "note": ""
+    },
+    {
+      "id": 1374,
+      "groupId": 39,
+      "ro": "espoir",
+      "ru": "надежда",
+      "note": ""
+    },
+    {
+      "id": 1375,
+      "groupId": 39,
+      "ro": "confiance",
+      "ru": "доверие",
+      "note": ""
+    },
+    {
+      "id": 1376,
+      "groupId": 39,
+      "ro": "méfiance",
+      "ru": "недоверие",
+      "note": ""
+    },
+    {
+      "id": 1377,
+      "groupId": 39,
+      "ro": "curiosité",
+      "ru": "любопытство",
+      "note": ""
+    },
+    {
+      "id": 1378,
+      "groupId": 39,
+      "ro": "excitation",
+      "ru": "возбуждение",
+      "note": ""
+    },
+    {
+      "id": 1379,
+      "groupId": 39,
+      "ro": "ennui",
+      "ru": "скука",
+      "note": ""
+    },
+    {
+      "id": 1380,
+      "groupId": 39,
+      "ro": "frustration",
+      "ru": "разочарование",
+      "note": ""
+    },
+    {
+      "id": 1382,
+      "groupId": 39,
+      "ro": "anxiété",
+      "ru": "тревога",
+      "note": ""
+    },
+    {
+      "id": 1383,
+      "groupId": 39,
+      "ro": "dépression",
+      "ru": "депрессия",
+      "note": ""
+    },
+    {
+      "id": 1384,
+      "groupId": 39,
+      "ro": "euphorie",
+      "ru": "эйфория",
+      "note": ""
+    },
+    {
+      "id": 1385,
+      "groupId": 39,
+      "ro": "sérénité",
+      "ru": "безмятежность",
+      "note": ""
+    },
+    {
+      "id": 1386,
+      "groupId": 39,
+      "ro": "compassion",
+      "ru": "сострадание",
+      "note": ""
+    },
+    {
+      "id": 1387,
+      "groupId": 39,
+      "ro": "gratitude",
+      "ru": "благодарность",
+      "note": ""
+    },
+    {
+      "id": 1388,
+      "groupId": 39,
+      "ro": "regret",
+      "ru": "сожаление",
+      "note": ""
+    },
+    {
+      "id": 1389,
+      "groupId": 39,
+      "ro": "rancœur",
+      "ru": "обида",
+      "note": ""
+    },
+    {
+      "id": 1390,
+      "groupId": 39,
+      "ro": "affection",
+      "ru": "привязанность",
+      "note": ""
+    },
+    {
+      "id": 1391,
+      "groupId": 39,
+      "ro": "enthousiasme",
+      "ru": "энтузиазм",
+      "note": ""
+    },
+    {
+      "id": 1392,
+      "groupId": 39,
+      "ro": "découragement",
+      "ru": "уныние",
+      "note": ""
+    },
+    {
+      "id": 1393,
+      "groupId": 39,
+      "ro": "satisfaction",
+      "ru": "удовлетворение",
+      "note": ""
+    },
+    {
+      "id": 1394,
+      "groupId": 39,
+      "ro": "embarras",
+      "ru": "смущение",
+      "note": ""
+    },
+    {
+      "id": 1395,
+      "groupId": 39,
+      "ro": "étonnement",
+      "ru": "изумление",
+      "note": ""
+    },
+    {
+      "id": 1396,
+      "groupId": 39,
+      "ro": "indifférence",
+      "ru": "равнодушие",
+      "note": ""
+    },
+    {
+      "id": 1397,
+      "groupId": 39,
+      "ro": "empathie",
+      "ru": "эмпатия",
+      "note": ""
+    },
+    {
+      "id": 1398,
+      "groupId": 39,
+      "ro": "sympathie",
+      "ru": "симпатие",
+      "note": ""
+    },
+    {
+      "id": 1399,
+      "groupId": 39,
+      "ro": "antipathie",
+      "ru": "антипатия",
+      "note": ""
+    },
+    {
+      "id": 1400,
+      "groupId": 39,
+      "ro": "optimisme",
+      "ru": "оптимизм",
+      "note": ""
+    },
+    {
+      "id": 1401,
+      "groupId": 39,
+      "ro": "pessimisme",
+      "ru": "пессимизм",
+      "note": ""
+    },
+    {
+      "id": 1402,
+      "groupId": 39,
+      "ro": "douleur",
+      "ru": "боль (душевная)",
+      "note": ""
+    },
+    {
+      "id": 1403,
+      "groupId": 39,
+      "ro": "pitié",
+      "ru": "жалость",
+      "note": ""
+    },
+    {
+      "id": 1404,
+      "groupId": 39,
+      "ro": "contentement",
+      "ru": "довольство",
+      "note": ""
+    },
+    {
+      "id": 1405,
+      "groupId": 39,
+      "ro": "mélancolie",
+      "ru": "меланхолия",
+      "note": ""
+    },
+    {
+      "id": 1406,
+      "groupId": 40,
+      "ro": "jeune",
+      "ru": "молодой",
+      "note": ""
+    },
+    {
+      "id": 1407,
+      "groupId": 40,
+      "ro": "vieux",
+      "ru": "старый",
+      "note": ""
+    },
+    {
+      "id": 1408,
+      "groupId": 40,
+      "ro": "beau",
+      "ru": "красивый",
+      "note": ""
+    },
+    {
+      "id": 1409,
+      "groupId": 40,
+      "ro": "laid",
+      "ru": "некрасивый",
+      "note": ""
+    },
+    {
+      "id": 1410,
+      "groupId": 40,
+      "ro": "grand",
+      "ru": "высокий",
+      "note": ""
+    },
+    {
+      "id": 1411,
+      "groupId": 40,
+      "ro": "petit",
+      "ru": "маленький",
+      "note": ""
+    },
+    {
+      "id": 1412,
+      "groupId": 40,
+      "ro": "mince",
+      "ru": "худой",
+      "note": ""
+    },
+    {
+      "id": 1413,
+      "groupId": 40,
+      "ro": "gros",
+      "ru": "толстый",
+      "note": ""
+    },
+    {
+      "id": 1414,
+      "groupId": 40,
+      "ro": "barbe",
+      "ru": "борода",
+      "note": ""
+    },
+    {
+      "id": 1415,
+      "groupId": 40,
+      "ro": "moustache",
+      "ru": "усы",
+      "note": ""
+    },
+    {
+      "id": 1416,
+      "groupId": 40,
+      "ro": "cheveux raides",
+      "ru": "прямые волосы",
+      "note": ""
+    },
+    {
+      "id": 1417,
+      "groupId": 40,
+      "ro": "cheveux bouclés",
+      "ru": "вьющиеся волосы",
+      "note": ""
+    },
+    {
+      "id": 1418,
+      "groupId": 40,
+      "ro": "cheveux ondulés",
+      "ru": "волнистые волосы",
+      "note": ""
+    },
+    {
+      "id": 1419,
+      "groupId": 40,
+      "ro": "blond",
+      "ru": "блондин / светловолосый",
+      "note": ""
+    },
+    {
+      "id": 1420,
+      "groupId": 40,
+      "ro": "brun",
+      "ru": "брюнет / тёмный",
+      "note": ""
+    },
+    {
+      "id": 1421,
+      "groupId": 40,
+      "ro": "roux",
+      "ru": "рыжеволосый",
+      "note": ""
+    },
+    {
+      "id": 1422,
+      "groupId": 40,
+      "ro": "cheveux gris",
+      "ru": "седой",
+      "note": ""
+    },
+    {
+      "id": 1423,
+      "groupId": 40,
+      "ro": "yeux bleus",
+      "ru": "голубые глаза",
+      "note": ""
+    },
+    {
+      "id": 1424,
+      "groupId": 40,
+      "ro": "yeux verts",
+      "ru": "зелёные глаза",
+      "note": ""
+    },
+    {
+      "id": 1425,
+      "groupId": 40,
+      "ro": "yeux marron",
+      "ru": "карие глаза",
+      "note": ""
+    },
+    {
+      "id": 1426,
+      "groupId": 40,
+      "ro": "taches de rousseur",
+      "ru": "веснушки",
+      "note": ""
+    },
+    {
+      "id": 1427,
+      "groupId": 40,
+      "ro": "tatouage",
+      "ru": "татуировка",
+      "note": ""
+    },
+    {
+      "id": 1428,
+      "groupId": 41,
+      "ro": "bois",
+      "ru": "дерево (материал)",
+      "note": ""
+    },
+    {
+      "id": 1429,
+      "groupId": 41,
+      "ro": "métal",
+      "ru": "металл",
+      "note": ""
+    },
+    {
+      "id": 1430,
+      "groupId": 41,
+      "ro": "fer",
+      "ru": "железо",
+      "note": ""
+    },
+    {
+      "id": 1431,
+      "groupId": 41,
+      "ro": "acier",
+      "ru": "сталь",
+      "note": ""
+    },
+    {
+      "id": 1432,
+      "groupId": 41,
+      "ro": "cuivre",
+      "ru": "медь",
+      "note": ""
+    },
+    {
+      "id": 1433,
+      "groupId": 41,
+      "ro": "aluminium",
+      "ru": "алюминий",
+      "note": ""
+    },
+    {
+      "id": 1434,
+      "groupId": 41,
+      "ro": "or",
+      "ru": "золото",
+      "note": ""
+    },
+    {
+      "id": 1435,
+      "groupId": 41,
+      "ro": "argent",
+      "ru": "серебро",
+      "note": ""
+    },
+    {
+      "id": 1436,
+      "groupId": 41,
+      "ro": "plastique",
+      "ru": "пластик",
+      "note": ""
+    },
+    {
+      "id": 1437,
+      "groupId": 41,
+      "ro": "verre",
+      "ru": "стекло",
+      "note": ""
+    },
+    {
+      "id": 1438,
+      "groupId": 41,
+      "ro": "papier",
+      "ru": "бумага",
+      "note": ""
+    },
+    {
+      "id": 1439,
+      "groupId": 41,
+      "ro": "carton",
+      "ru": "картон",
+      "note": ""
+    },
+    {
+      "id": 1440,
+      "groupId": 41,
+      "ro": "tissu",
+      "ru": "ткань",
+      "note": ""
+    },
+    {
+      "id": 1441,
+      "groupId": 41,
+      "ro": "coton",
+      "ru": "хлопок",
+      "note": ""
+    },
+    {
+      "id": 1442,
+      "groupId": 41,
+      "ro": "laine",
+      "ru": "шерсть",
+      "note": ""
+    },
+    {
+      "id": 1443,
+      "groupId": 41,
+      "ro": "soie",
+      "ru": "шёлк",
+      "note": ""
+    },
+    {
+      "id": 1444,
+      "groupId": 41,
+      "ro": "cuir",
+      "ru": "кожа",
+      "note": ""
+    },
+    {
+      "id": 1445,
+      "groupId": 41,
+      "ro": "caoutchouc",
+      "ru": "резина",
+      "note": ""
+    },
+    {
+      "id": 1446,
+      "groupId": 41,
+      "ro": "pierre",
+      "ru": "камень",
+      "note": ""
+    },
+    {
+      "id": 1447,
+      "groupId": 41,
+      "ro": "brique",
+      "ru": "кирпич",
+      "note": ""
+    },
+    {
+      "id": 1448,
+      "groupId": 42,
+      "ro": "cercle",
+      "ru": "круг",
+      "note": ""
+    },
+    {
+      "id": 1449,
+      "groupId": 42,
+      "ro": "carré",
+      "ru": "квадрат",
+      "note": ""
+    },
+    {
+      "id": 1450,
+      "groupId": 42,
+      "ro": "rectangle",
+      "ru": "прямоугольник",
+      "note": ""
+    },
+    {
+      "id": 1451,
+      "groupId": 42,
+      "ro": "triangle",
+      "ru": "треугольник",
+      "note": ""
+    },
+    {
+      "id": 1452,
+      "groupId": 42,
+      "ro": "ovale",
+      "ru": "овал",
+      "note": ""
+    },
+    {
+      "id": 1453,
+      "groupId": 42,
+      "ro": "sphère",
+      "ru": "шар",
+      "note": ""
+    },
+    {
+      "id": 1454,
+      "groupId": 42,
+      "ro": "cube",
+      "ru": "куб",
+      "note": ""
+    },
+    {
+      "id": 1455,
+      "groupId": 42,
+      "ro": "cylindre",
+      "ru": "цилиндр",
+      "note": ""
+    },
+    {
+      "id": 1456,
+      "groupId": 42,
+      "ro": "cône",
+      "ru": "конус",
+      "note": ""
+    },
+    {
+      "id": 1457,
+      "groupId": 42,
+      "ro": "pyramide",
+      "ru": "пирамида",
+      "note": ""
+    },
+    {
+      "id": 1458,
+      "groupId": 42,
+      "ro": "ligne",
+      "ru": "линия",
+      "note": ""
+    },
+    {
+      "id": 1459,
+      "groupId": 42,
+      "ro": "point",
+      "ru": "точка",
+      "note": ""
+    },
+    {
+      "id": 1460,
+      "groupId": 42,
+      "ro": "angle",
+      "ru": "угол",
+      "note": ""
+    },
+    {
+      "id": 1461,
+      "groupId": 42,
+      "ro": "diagonale",
+      "ru": "диagonale",
+      "note": ""
+    },
+    {
+      "id": 1462,
+      "groupId": 42,
+      "ro": "parallèle",
+      "ru": "параллельный",
+      "note": ""
+    },
+    {
+      "id": 1463,
+      "groupId": 42,
+      "ro": "perpendiculaire",
+      "ru": "перпендикулярный",
+      "note": ""
+    },
+    {
+      "id": 1464,
+      "groupId": 43,
+      "ro": "marteau",
+      "ru": "молоток",
+      "note": ""
+    },
+    {
+      "id": 1465,
+      "groupId": 43,
+      "ro": "clou",
+      "ru": "гвоздь",
+      "note": ""
+    },
+    {
+      "id": 1466,
+      "groupId": 43,
+      "ro": "tournevis",
+      "ru": "отвёртка",
+      "note": ""
+    },
+    {
+      "id": 1467,
+      "groupId": 43,
+      "ro": "vis",
+      "ru": "винт / шуруп",
+      "note": ""
+    },
+    {
+      "id": 1468,
+      "groupId": 43,
+      "ro": "perceuse",
+      "ru": "дрель",
+      "note": ""
+    },
+    {
+      "id": 1469,
+      "groupId": 43,
+      "ro": "scie",
+      "ru": "пила",
+      "note": ""
+    },
+    {
+      "id": 1470,
+      "groupId": 43,
+      "ro": "pince",
+      "ru": "плоскогубцы",
+      "note": ""
+    },
+    {
+      "id": 1471,
+      "groupId": 43,
+      "ro": "clé anglaise",
+      "ru": "гаечный ключ",
+      "note": ""
+    },
+    {
+      "id": 1472,
+      "groupId": 43,
+      "ro": "mètre ruban",
+      "ru": "рулетка",
+      "note": ""
+    },
+    {
+      "id": 1473,
+      "groupId": 43,
+      "ro": "niveau",
+      "ru": "уровень",
+      "note": ""
+    },
+    {
+      "id": 1474,
+      "groupId": 43,
+      "ro": "ciseaux",
+      "ru": "ножницы",
+      "note": ""
+    },
+    {
+      "id": 1475,
+      "groupId": 43,
+      "ro": "ruban adhésif",
+      "ru": "скотч",
+      "note": ""
+    },
+    {
+      "id": 1476,
+      "groupId": 43,
+      "ro": "colle",
+      "ru": "клей",
+      "note": ""
+    },
+    {
+      "id": 1477,
+      "groupId": 43,
+      "ro": "pinceau",
+      "ru": "кисть",
+      "note": ""
+    },
+    {
+      "id": 1478,
+      "groupId": 43,
+      "ro": "échelle",
+      "ru": "лестница",
+      "note": ""
+    },
+    {
+      "id": 1479,
+      "groupId": 43,
+      "ro": "brouette",
+      "ru": "тачка",
+      "note": ""
+    },
+    {
+      "id": 1480,
+      "groupId": 43,
+      "ro": "pelle",
+      "ru": "лопата",
+      "note": ""
+    },
+    {
+      "id": 1481,
+      "groupId": 43,
+      "ro": "râteau",
+      "ru": "грабли",
+      "note": ""
+    },
+    {
+      "id": 1482,
+      "groupId": 43,
+      "ro": "arrosoir",
+      "ru": "лейка",
+      "note": ""
+    },
+    {
+      "id": 1483,
+      "groupId": 44,
+      "ro": "loyer",
+      "ru": "аренда",
+      "note": ""
+    },
+    {
+      "id": 1484,
+      "groupId": 44,
+      "ro": "locataire",
+      "ru": "жилец",
+      "note": ""
+    },
+    {
+      "id": 1485,
+      "groupId": 44,
+      "ro": "propriétaire",
+      "ru": "владелец",
+      "note": ""
+    },
+    {
+      "id": 1486,
+      "groupId": 44,
+      "ro": "contrat de location",
+      "ru": "договор аренды",
+      "note": ""
+    },
+    {
+      "id": 1487,
+      "groupId": 44,
+      "ro": "caution",
+      "ru": "залог",
+      "note": ""
+    },
+    {
+      "id": 1488,
+      "groupId": 44,
+      "ro": "copropriété",
+      "ru": "кондоминиум",
+      "note": ""
+    },
+    {
+      "id": 1489,
+      "groupId": 44,
+      "ro": "immeuble",
+      "ru": "многоквартирный дом",
+      "note": ""
+    },
+    {
+      "id": 1490,
+      "groupId": 44,
+      "ro": "villa",
+      "ru": "вилла",
+      "note": ""
+    },
+    {
+      "id": 1491,
+      "groupId": 44,
+      "ro": "rez-de-chaussée",
+      "ru": "первый этаж",
+      "note": ""
+    },
+    {
+      "id": 1492,
+      "groupId": 44,
+      "ro": "étage",
+      "ru": "этаж",
+      "note": ""
+    },
+    {
+      "id": 1493,
+      "groupId": 44,
+      "ro": "attique",
+      "ru": "мансарда",
+      "note": ""
+    },
+    {
+      "id": 1494,
+      "groupId": 44,
+      "ro": "studio",
+      "ru": "студия",
+      "note": ""
+    },
+    {
+      "id": 1495,
+      "groupId": 44,
+      "ro": "deux-pièces",
+      "ru": "двухкомнатная квартира",
+      "note": ""
+    },
+    {
+      "id": 1496,
+      "groupId": 44,
+      "ro": "chambre simple",
+      "ru": "однокомнатная",
+      "note": ""
+    },
+    {
+      "id": 1497,
+      "groupId": 44,
+      "ro": "chambre double",
+      "ru": "двухместная комната",
+      "note": ""
+    },
+    {
+      "id": 1498,
+      "groupId": 44,
+      "ro": "gardien",
+      "ru": "консьерж",
+      "note": ""
+    },
+    {
+      "id": 1499,
+      "groupId": 44,
+      "ro": "boîte aux lettres",
+      "ru": "почтовый ящик",
+      "note": ""
+    },
+    {
+      "id": 1500,
+      "groupId": 44,
+      "ro": "interphone",
+      "ru": "домофон",
+      "note": ""
+    },
+    {
+      "id": 1501,
+      "groupId": 44,
+      "ro": "sonnette",
+      "ru": "дверной звонок",
+      "note": ""
+    },
+    {
+      "id": 1502,
+      "groupId": 44,
+      "ro": "clé",
+      "ru": "ключ",
+      "note": ""
+    },
+    {
+      "id": 1503,
+      "groupId": 45,
+      "ro": "baguette",
+      "ru": "багет",
+      "note": "длинный французский хлеб, символ Франции"
+    },
+    {
+      "id": 1504,
+      "groupId": 45,
+      "ro": "croissant",
+      "ru": "круассан",
+      "note": "слоёная выпечка в форме полумесяца"
+    },
+    {
+      "id": 1505,
+      "groupId": 45,
+      "ro": "café au lait",
+      "ru": "кофе с молоком",
+      "note": "традиционный французский завтрак"
+    },
+    {
+      "id": 1506,
+      "groupId": 45,
+      "ro": "apéro",
+      "ru": "аперитив",
+      "note": "традиционный вечерний ритуал перед едой"
+    },
+    {
+      "id": 1507,
+      "groupId": 45,
+      "ro": "fromage",
+      "ru": "сыр",
+      "note": "Франция — страна с сотнями сортов сыра"
+    },
+    {
+      "id": 1508,
+      "groupId": 45,
+      "ro": "Hexagone",
+      "ru": "Шестиугольник",
+      "note": "неформальное название Франции из-за её формы"
+    },
+    {
+      "id": 1509,
+      "groupId": 45,
+      "ro": "grande école",
+      "ru": "элитный вуз",
+      "note": "престижное высшее учебное заведение"
+    },
+    {
+      "id": 1510,
+      "groupId": 45,
+      "ro": "bise",
+      "ru": "поцелуй в щёку",
+      "note": "традиционное французское приветствие"
+    },
+    {
+      "id": 1511,
+      "groupId": 45,
+      "ro": "je ne sais quoi",
+      "ru": "что-то неуловимое",
+      "note": "неопределённое качество"
+    },
+    {
+      "id": 1512,
+      "groupId": 45,
+      "ro": "art de vivre",
+      "ru": "искусство жить",
+      "note": "французская философия жизни"
+    },
+    {
+      "id": 1513,
+      "groupId": 45,
+      "ro": "café",
+      "ru": "кафе",
+      "note": "центр французской общественной жизни"
+    },
+    {
+      "id": 1514,
+      "groupId": 45,
+      "ro": "boulangerie",
+      "ru": "булочная",
+      "note": "магазин свежего хлеба, открытый ежедневно"
+    },
+    {
+      "id": 1515,
+      "groupId": 45,
+      "ro": "marché",
+      "ru": "рынок",
+      "note": "традиционный рынок свежих продуктов"
+    },
+    {
+      "id": 1516,
+      "groupId": 45,
+      "ro": "Tour de France",
+      "ru": "Тур де Франс",
+      "note": "знаменитая велогонка"
+    },
+    {
+      "id": 1517,
+      "groupId": 45,
+      "ro": "Bastille",
+      "ru": "Бастилия",
+      "note": "символ Французской революции"
+    },
+    {
+      "id": 1518,
+      "groupId": 45,
+      "ro": "joie de vivre",
+      "ru": "радость жизни",
+      "note": "французское отношение к жизни"
+    },
+    {
+      "id": 1519,
+      "groupId": 45,
+      "ro": "fête nationale",
+      "ru": "День взятия Бастилии",
+      "note": "14 июля — национальный праздник"
+    },
+    {
+      "id": 1520,
+      "groupId": 45,
+      "ro": "bistrot",
+      "ru": "бистро",
+      "note": "небольшой ресторан / кафе"
+    }
+  ]
+}
