@@ -50,6 +50,7 @@ const LANGUAGES = {
     verbTrainer: true,
     verbPronouns: ['ich', 'du', 'er/sie/es', 'wir', 'ihr', 'sie/Sie'],
     readyPacks: [
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 45 тем',               fn: "loadReadyPack('data/german-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '20 тем, 200 вопросов',                fn: "loadReadyPack('data/grammar-tests-german.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '20 базовых глаголов, 3 времени',       fn: "loadReadyPack('data/verbs-german.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
