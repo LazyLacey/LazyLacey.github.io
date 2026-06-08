@@ -625,6 +625,16 @@ function showBackupReminder() {
   banner.querySelector('#_br_settings').addEventListener('click', () => { showPage('settings'); close(); });
 }
 
+async function checkForUpdates() {
+  const btn = document.getElementById('check-updates-btn');
+  if (btn) { btn.textContent = '…'; btn.style.pointerEvents = 'none'; }
+  window._swNeedRefresh = false;
+  await window._checkForUpdates?.();
+  await new Promise(r => setTimeout(r, 2500));
+  if (btn) { btn.textContent = 'Проверить обновления'; btn.style.pointerEvents = ''; }
+  if (!window._swNeedRefresh) showToast('Актуальная версия ✓');
+}
+
 function openAboutDrawer() {
   showDrawer('О приложении', {
     render: (body) => {
@@ -636,7 +646,8 @@ function openAboutDrawer() {
           <div style="margin-bottom:14px"><img src="assets/icon-source.png" width="72" height="72" style="display:block;margin:0 auto"></div>
           <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800;color:var(--text);margin-bottom:4px">Fișki</div>
           <div style="font-size:13px;color:var(--text3);margin-bottom:2px">${esc(langName)}</div>
-          <div style="font-size:12px;color:var(--text3)">Версия <span>${esc(version)}</span></div>
+          <div style="font-size:12px;color:var(--text3);margin-bottom:10px">Версия <span>${esc(version)}</span></div>
+          <button id="check-updates-btn" onclick="checkForUpdates()" style="background:none;border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--text3);cursor:pointer;font-family:'DM Sans',sans-serif">Проверить обновления</button>
         </div>
         <div style="background:var(--bg3);border-radius:12px;padding:16px;margin-bottom:16px">
           <div style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text3);margin-bottom:12px">Что умеет приложение</div>
@@ -675,5 +686,5 @@ Object.assign(window, {
   loadSettings, saveSettings,
   exportData, exportCardsOnly, exportGroup, openExportDrawer,
   importData, doImportReplace, doImportWordsOnly, doImportMergeHistory, clearData, resetStats,
-  downloadBlob, openAboutDrawer,
+  downloadBlob, openAboutDrawer, checkForUpdates,
 });

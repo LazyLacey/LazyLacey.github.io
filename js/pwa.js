@@ -9,8 +9,17 @@ window._appVersion = isLocal ? 'dev' : APP_VERSION;
   if (el) el.textContent = window._appVersion;
 });
 
+window._swNeedRefresh = false;
+window._checkForUpdates = async () => {
+  const reg = await navigator.serviceWorker?.getRegistration();
+  if (reg) await reg.update();
+};
+
 const updateSW = registerSW({
-  onNeedRefresh() { showUpdateBanner(() => updateSW(true)); },
+  onNeedRefresh() {
+    window._swNeedRefresh = true;
+    showUpdateBanner(() => updateSW(true));
+  },
   onOfflineReady() {},
 });
 
