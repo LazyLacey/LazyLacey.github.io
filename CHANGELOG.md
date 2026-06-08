@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.9.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.8.0...v1.9.0) (2026-06-08)
+
+
+### Features
+
+* add German card pack (1517 cards, 45 groups) ([2d495d2](https://github.com/LazyLacey/LazyLacey.github.io/commit/2d495d211e0019167094c84ecf79a831f1f8a3f9))
+* add Korean card pack (1406 cards, 45 groups) ([0aac29a](https://github.com/LazyLacey/LazyLacey.github.io/commit/0aac29acb24cbe8ad75c5b4fee26195f997e145e))
+
 ## [1.8.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.7.0...v1.8.0) (2026-06-07)
 
 
