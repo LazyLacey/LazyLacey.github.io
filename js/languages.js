@@ -69,6 +69,7 @@ const LANGUAGES = {
     verbTrainer: true,
     verbPronouns: ['io', 'tu', 'lui/lei', 'noi', 'voi', 'loro'],
     readyPacks: [
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 45 тем',               fn: "loadReadyPack('data/italian-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '33 темы, 330 вопросов',               fn: "loadReadyPack('data/grammar-tests-italian.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '20 базовых глаголов, 3 времени',       fn: "loadReadyPack('data/verbs-italian.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
@@ -87,6 +88,7 @@ const LANGUAGES = {
     verbTrainer: true,
     verbPronouns: ['je', 'tu', 'il/elle', 'nous', 'vous', 'ils/elles'],
     readyPacks: [
+      { phIcon: 'ph-cards-three', color: '#7b79ff', title: 'Карточки',             sub: '~1500 слов · 45 тем',               fn: "loadReadyPack('data/french-cards.json','cards')" },
       { phIcon: 'ph-book-open',   color: '#30d158', title: 'Грамматика — тесты',   sub: '29 тем, 290 вопросов',                fn: "loadReadyPack('data/grammar-tests-french.json','tests')" },
       { phIcon: 'ph-text-aa',     color: '#ff6b35', title: 'Глаголы',               sub: '20 базовых глаголов, 3 времени',       fn: "loadReadyPack('data/verbs-french.json','verbs')" },
       { phIcon: 'ph-sparkle',     color: '#f4c430', title: 'Промпты для нейросети', sub: 'Сгенерируйте свои карточки и тесты', fn: 'obDownloadPrompts()', download: true },
