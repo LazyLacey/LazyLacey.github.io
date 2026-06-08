@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.11.0...v1.11.1) (2026-06-08)
+
+
+### Bug Fixes
+
+* remove Russian translation hints from Korean tense tabs ([7efe7aa](https://github.com/LazyLacey/LazyLacey.github.io/commit/7efe7aaa5a029397f68395f844b416b2e1aa8a47))
+
 ## [1.11.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.10.0...v1.11.0) (2026-06-08)
 
 
