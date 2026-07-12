@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <link rel="apple-touch-startup-image" href="assets/splash.png">
 <title>Fișki — учим слова</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="/icons/phosphor/regular/style.css">
@@ -178,6 +178,10 @@ window._grammarLoadFailed = false;
       <div class="setting-row" style="flex-direction:column;align-items:flex-start;gap:10px;padding:12px 16px">
         <div class="setting-label" style="margin:0">Цветовая тема — <span id="current-theme-label" style="color:var(--accent);font-weight:600"></span></div>
         <div id="theme-dots-row" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+      </div>
+      <div class="setting-row">
+        <div><div class="setting-label">Режим для слабовидящих</div><div class="setting-sub">Крупнее текст, читаемый шрифт слов, синий вместо красного</div></div>
+        <label class="toggle" style="flex-shrink:0"><input type="checkbox" id="setting-farsighted" onchange="applyFarsightedMode(this.checked)"><span class="toggle-track"></span></label>
       </div>
     </div>
     <div class="settings-section">
@@ -516,7 +520,7 @@ function _applyLangLabels() {
   const readyLangLabel = document.getElementById('ready-lang-label');
   if (readyLangLabel) readyLangLabel.textContent = lang.nativeName || lang.name;
   const typeInp = document.getElementById('type-answer');
-  if (typeInp) typeInp.placeholder = `Введите по-${lang.targetLabel.toLowerCase()}...`;
+  if (typeInp) typeInp.placeholder = `Введите по-${lang.adverbLabel}...`;
   renderLangPicker();
 }
 
