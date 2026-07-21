@@ -212,7 +212,7 @@ async function renderVerbQuestion() {
     <div class="flashcard-area" id="vb-card-area">
       <div class="flashcard">
         <div class="card-group-tag">${esc(VTS.verb.infinitive)} — ${esc(VTS.verb.translation)}</div>
-        <div class="card-question-label">${currentLang().id === 'korean' ? 'Образуйте форму:' : 'Спрягите глагол:'}</div>
+        <div class="card-question-label">Спрягите глагол:</div>
         <div class="card-question" style="font-size:28px">${esc(q.pronoun)}</div>
       </div>
     </div>
