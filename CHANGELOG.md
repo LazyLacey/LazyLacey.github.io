@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.1](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.13.0...v1.13.1) (2026-07-23)
+
+
+### Bug Fixes
+
+* apply --vision-scale inside the compact-mode media query ([6a99056](https://github.com/LazyLacey/LazyLacey.github.io/commit/6a99056588ec2277b90567a25c060d17a12ae722))
+* apply --vision-scale inside the compact-mode media query ([8d1793f](https://github.com/LazyLacey/LazyLacey.github.io/commit/8d1793f6028bd569acfa97844a3bb97b9315ff60))
+
 ## [1.13.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.2...v1.13.0) (2026-07-23)
 
 
