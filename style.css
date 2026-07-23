@@ -1349,18 +1349,18 @@ select {
   .flashcard-area { padding: 6px 16px 8px; }
   .flashcard { padding: 14px 18px; margin-bottom: 10px; border-radius: 16px; }
   .flashcard::before { display: none; }
-  .card-group-tag { margin-bottom: 8px; font-size: 10px; padding: 3px 10px; }
-  .card-question-label { margin-bottom: 4px; font-size: 11px; }
-  .card-question { font-size: 20px; margin-bottom: 4px; }
-  .card-hint { font-size: 12px; }
-  .answer-reveal { padding: 10px 12px; font-size: 13px; }
+  .card-group-tag { margin-bottom: 8px; font-size: calc(10px * var(--vision-scale)); padding: 3px 10px; }
+  .card-question-label { margin-bottom: 4px; font-size: calc(11px * var(--vision-scale)); }
+  .card-question { font-size: calc(20px * var(--vision-scale)); margin-bottom: 4px; }
+  .card-hint { font-size: calc(12px * var(--vision-scale)); }
+  .answer-reveal { padding: 10px 12px; font-size: calc(13px * var(--vision-scale)); }
   .type-area {padding-left: 16px; padding-right: 16px;}
 
   /* Verb session compact — purely media-query driven */
   .vb-tense-tabs { padding: 3px 16px 3px; gap: 3px; }
   .vb-tense-btn {
     padding: 3px 2px;
-    font-size: 10px;
+    font-size: calc(10px * var(--vision-scale));
     border-radius: 6px;
     line-height: 1.3;
     letter-spacing: -0.1px;
@@ -1370,8 +1370,8 @@ select {
   .vb-card-strip { display: flex !important; }
 
   .gt-question-type { display: none; }
-  .gt-question-text { font-size: 13px; }
-  .vb-card-strip-verb { font-size: 15px; }
+  .gt-question-text { font-size: calc(13px * var(--vision-scale)); }
+  .vb-card-strip-verb { font-size: calc(15px * var(--vision-scale)); }
 }
 
 
