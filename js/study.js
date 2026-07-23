@@ -421,7 +421,7 @@ function renderStudy() {
 
   area.innerHTML = `<div class="flashcard">
     ${g ? `<div class="card-group-tag">${esc(g.name)}</div>` : ''}
-    <div class="card-question-label">Как по-${currentLang().targetLabel.toLowerCase()}?</div>
+    <div class="card-question-label">Как по-${currentLang().adverbLabel}?</div>
     <div class="card-question">${esc(card.ru)}</div>
     ${card.note ? `<div class="card-hint">${esc(card.note)}</div>` : ''}
     ${AppState.settings.hardMode && AppState.studyMode === 'type' ? `<div class="card-hint" style="margin-top:10px;color:var(--red);opacity:0.7;font-size:12px"><i class="ph ph-fire"></i> Hard mode: диакритика обязательна</div>` : ''}

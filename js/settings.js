@@ -133,6 +133,9 @@ function loadSettings() {
     const t = localStorage.getItem('appTheme') || '';
     updateThemeUI(t);
   } catch(e) {}
+  try {
+    document.getElementById('setting-farsighted').checked = localStorage.getItem('farsightedMode') === '1';
+  } catch(e) {}
 }
 
 async function saveSettings() {

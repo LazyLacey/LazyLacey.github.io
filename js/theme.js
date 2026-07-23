@@ -51,6 +51,26 @@ function initTheme() {
   } catch(e) {}
 }
 
-Object.assign(window, { applyTheme, updateThemeUI, renderThemeDots });
+// ===== ACCESSIBILITY: РЕЖИМ ДЛЯ СЛАБОВИДЯЩИХ =====
+function applyFarsightedMode(enabled) {
+  if (enabled) {
+    document.documentElement.setAttribute('data-farsighted', '1');
+  } else {
+    document.documentElement.removeAttribute('data-farsighted');
+  }
+  try { localStorage.setItem('farsightedMode', enabled ? '1' : ''); } catch(e) {}
+  const cb = document.getElementById('setting-farsighted');
+  if (cb) cb.checked = enabled;
+}
+
+function initFarsightedMode() {
+  try {
+    const saved = localStorage.getItem('farsightedMode') === '1';
+    applyFarsightedMode(saved);
+  } catch(e) {}
+}
+
+Object.assign(window, { applyTheme, updateThemeUI, renderThemeDots, applyFarsightedMode });
 
 initTheme();
+initFarsightedMode();
