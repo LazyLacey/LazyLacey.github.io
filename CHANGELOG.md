@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.13.0](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.2...v1.13.0) (2026-07-23)
+
+
+### Features
+
+* add low-vision accessibility mode ([7d74cc1](https://github.com/LazyLacey/LazyLacey.github.io/commit/7d74cc10454516d91a4976b3966a06ad800bb47b))
+* add low-vision accessibility mode ([f34294d](https://github.com/LazyLacey/LazyLacey.github.io/commit/f34294df6feaecc7117dcd6826a05cf73f21ad69))
+* **korean:** drop verb trainer, expand irregular-verb drilling in grammar tests ([ce54c4c](https://github.com/LazyLacey/LazyLacey.github.io/commit/ce54c4cb6c55e8fde44550f78d11161e5da339ea))
+
 ## [1.12.2](https://github.com/LazyLacey/LazyLacey.github.io/compare/v1.12.1...v1.12.2) (2026-06-08)
 
 
